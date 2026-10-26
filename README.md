@@ -7,7 +7,7 @@ outputs of the review.
 - Protocol: PROSPERO CRD420261344978
 - Repository: https://github.com/fzampier/esophageal-balloon-srma
 - License: code under MIT; everything else under CC BY 4.0 (`LICENSE`)
-- Exported 2026-10-26 from commit a58d250 of the authors' working repository.
+- Exported 2026-10-26 from commit 7ecc912 of the authors' working repository.
   `MANIFEST.csv` lists every file with its size in bytes and its SHA-256.
 
 ## How the data were produced
