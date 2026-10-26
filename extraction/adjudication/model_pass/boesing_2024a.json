@@ -1,0 +1,372 @@
+{
+  "study_id": "boesing_2024a",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[peep elso peepelso reference condition 1]",
+      "decision": "glm",
+      "reason": "PEEPELSO (fixed 10 cmH2O, set first as the conventional state) is the within-patient reference condition; the codebook codes the conventional state reference_condition, not comparator.",
+      "evidence": "Methods 2.1 Study protocol, p. 2; CODEBOOK Arms"
+    },
+    {
+      "target": "arms[peep cstat rs peepcstat rs alternative titration]",
+      "decision": "glm",
+      "reason": "PEEPCstat,RS is a second PEEP-setting strategy under test (decremental trial for best compliance), which the schema names alternative_titration_condition.",
+      "evidence": "Methods 2.1, p. 2; schema arms.role description"
+    },
+    {
+      "target": "outcomes[oxygenation pha continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Values 7.4±0.1 x3 and pairwise p 0.088/0.317/0.393 match in both; DeepSeek adds verbatim p, n_pairs and test. Domain is reserved; unit and label ruled separately.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "291d1b14bc",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "43f7023811",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "a9576b7d0f",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "b5d5e38b0b",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "f5c95d8292",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "6eaae32a38",
+      "decision": "glm",
+      "reason": "The table prints no unit for pHa; 'pH' as a unit is not in the paper.",
+      "evidence": "p. 4, Table 2, row pHa"
+    },
+    {
+      "id": "18305832f3",
+      "decision": "glm",
+      "reason": "'PEEP titration strategy' is verbatim (Table 2 header); DeepSeek's 'during study protocol' is not (the text reads 'During the study protocol').",
+      "evidence": "p. 4, Table 2 header; Methods 2.1"
+    },
+    {
+      "id": "e8c769baa2",
+      "decision": "glm",
+      "reason": "'PEEP titration strategy' is verbatim (Table 2 header); DeepSeek's 'during study protocol' is not (the text reads 'During the study protocol').",
+      "evidence": "p. 4, Table 2 header; Methods 2.1"
+    },
+    {
+      "id": "57750d2d4f",
+      "decision": "glm",
+      "reason": "'PEEP titration strategy' is verbatim (Table 2 header); DeepSeek's 'during study protocol' is not (the text reads 'During the study protocol').",
+      "evidence": "p. 4, Table 2 header; Methods 2.1"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac output l min continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "7.4±1.8, 6.4±1.8, 6.2±1.8 L/min and both contrasts p<0.001 match in both; DeepSeek adds n_pairs and test. Name and label ruled separately.",
+      "evidence": "p. 3 Results 3.2; p. 5, Fig. 3A"
+    },
+    {
+      "id": "1b7ee93290",
+      "decision": "glm",
+      "reason": "'Cardiac Output [L/min]' is the verbatim Fig. 3A axis label and more complete than 'Cardiac output'.",
+      "evidence": "p. 5, Fig. 3A"
+    },
+    {
+      "target": "outcomes[hemodynamics norepinephrine g kg min continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "0.2±0.3 x3 and p 0.342/0.081/>0.999 match in both; DeepSeek adds verbatim p, n_pairs and test. Name and label ruled separately.",
+      "evidence": "p. 4, Table 2, row Norepinephrine"
+    },
+    {
+      "id": "9f2b0c2bc6",
+      "decision": "glm",
+      "reason": "'Norepinephrine [μg/kg/min]' is the verbatim, complete Table 2 row label.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEP 10±0.0, 16.2±4.7, 17.3±4.7; p <0.001/<0.001/0.302 (table SD 4.7 for PEEPPtpexp; the abstract prints 4.0, both reviewers follow the table). All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the PEEP readings kept under DeepSeek's entry (outcomes[ventilator settings peep continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mechanical power continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Mechanical power 5.3±1.3, 6.8±2.0, 6.9±2.3 J/min; p<0.001 x2; primary endpoint. Mechanical power is coded respiratory_mechanics (as both reviewers coded it in boesing_2022), not other. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 3 Results 3.1; p. 4, Fig. 1A"
+    },
+    {
+      "target": "outcomes[other mechanical power j min continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Mechanical power readings kept under DeepSeek's entry (outcomes[respiratory mechanics mechanical power continuou @crossover condition]).",
+      "evidence": "p. 3 Results 3.1; p. 4, Fig. 1A"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mptp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: MPtp 3.8±1.5, 4.7±1.9, 5.1±2.1; p <0.001/<0.001/0.107; respiratory_mechanics rather than other. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[other mptp j min transpulmonary mechanical power @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the MPtp readings kept under DeepSeek's entry (outcomes[respiratory mechanics mptp continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mp cstat rs continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: MP/Cstat,RS 0.35±0.23, 0.39±0.22, 0.41±0.26; p 0.098/0.027/>0.999; respiratory_mechanics rather than other. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[other mp cstat rs j min ml cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the MP/Cstat,RS readings kept under DeepSeek's entry (outcomes[respiratory mechanics mp cstat rs continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure lung stress continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Lung stress 16.6±7.0, 19.5±7.2, 21.2±8.0 cmH2O; p 0.011/<0.001; lung stress is a transpulmonary pressure, so transpulmonary_pressure rather than other. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 3 Results 3.1; p. 4, Fig. 1B"
+    },
+    {
+      "target": "outcomes[other lung stress cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Lung stress readings kept under DeepSeek's entry (outcomes[transpulmonary pressure lung stress continuous @crossover condition]).",
+      "evidence": "p. 3 Results 3.1; p. 4, Fig. 1B"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Pplat 22.9±5.8, 27.9±6.0, 29.0±7.6; p <0.001/<0.001/0.257. Plateau pressure is respiratory_mechanics per the codebook; GLM codes it ventilator_settings. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings pplat cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Pplat readings kept under DeepSeek's entry (outcomes[respiratory mechanics pplat continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pmean continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Pmean 15.7±2.3, 21.4±4.9, 22.3±5.5; p <0.001/<0.001/0.292. Mean airway pressure is a mechanics reading, not a delivered setting (ventilator_settings is PEEP, FiO2, VT, rate). All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings pmean cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Pmean readings kept under DeepSeek's entry (outcomes[respiratory mechanics pmean continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pdriv continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Pdriv 12.9±5.8, 11.7±5.4, 11.7±5.2; p 0.246/0.207/>0.999. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pdriv cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Pdriv readings kept under DeepSeek's entry (outcomes[respiratory mechanics pdriv continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpinsp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptpinsp 4.9±5.6, 7.8±4.4, 8.4±4.7; p 0.053/0.001/0.707. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpinsp cm h2o continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Ptpinsp readings kept under DeepSeek's entry (outcomes[transpulmonary pressure ptpinsp continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpexp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptpexp -4.7±4.5, -0.5±3.9, -0.2±1.1; p <0.001/<0.001/>0.999. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpexp cm h2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Ptpexp readings kept under DeepSeek's entry (outcomes[transpulmonary pressure ptpexp continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpdriv continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptpdriv 9.6±5.7, 8.3±5.0, 8.6±4.6; p 0.019/0.076/0.459. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpdriv cm h2o continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Ptpdriv readings kept under DeepSeek's entry (outcomes[transpulmonary pressure ptpdriv continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat rs continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Cstat,RS 19.9±9.9, 21.6±10.5, 21.7±10.9; p 0.246/0.207/>0.999. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat rs ml cm h2o continu @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Cstat,RS readings kept under DeepSeek's entry (outcomes[respiratory mechanics cstat rs continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat l continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Cstat,L 32.1±21.9, 34.5±20.5, 32.6±20.0; p 0.144/0.342/>0.999. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat l ml cm h2o continuo @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Cstat,L readings kept under DeepSeek's entry (outcomes[respiratory mechanics cstat l continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat cw continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Cstat,CW 76.9±44.4, 77.4±53.4, 96.5±68.3; p >0.999/>0.999/0.912. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat cw ml cm h2o continu @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Cstat,CW readings kept under DeepSeek's entry (outcomes[respiratory mechanics cstat cw continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2 104±47, 123±52, 116±47; p 0.003/0.173/0.464. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the PaO2 readings kept under DeepSeek's entry (outcomes[oxygenation pao2 continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: PaCO2 43.5±6.7, 40.9±4.9, 41.1±5.4; p 0.002/0.003/0.713. Its domain (other vs oxygenation) is the same class as the reserved pHa domain conflict; apply that co-author ruling here. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the PaCO2 readings kept under DeepSeek's entry (outcomes[other paco2 continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Oxygen delivery 978±266, 853±197, 829±214 mL/min; p<0.001 x2. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 3 Results 3.2; p. 5, Fig. 3B"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery do2 ml min continuo @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the Oxygen delivery readings kept under DeepSeek's entry (outcomes[hemodynamics oxygen delivery continuous @crossover condition]).",
+      "evidence": "p. 3 Results 3.2; p. 5, Fig. 3B"
+    },
+    {
+      "target": "outcomes[hemodynamics sv continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: SV 80.6±22.4, 70.5±23.5, 68.3±23.3; p <0.001/<0.001/0.333. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics sv ml continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the SV readings kept under DeepSeek's entry (outcomes[hemodynamics sv continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: HR 98.6±21.1, 95.7±21.7, 96.1±19.5; p 0.469/0.469/0.840. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics hr beats min continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the HR readings kept under DeepSeek's entry (outcomes[hemodynamics hr continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics map continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: MAP 84.7±12.2, 83.7±13.2, 83.2±12.7; p 0.911 x3. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics map mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the MAP readings kept under DeepSeek's entry (outcomes[hemodynamics map continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: CVP 13.8±3.3, 16.3±4.6, 16.7±4.0; p 0.007/0.003/0.613. All values match in both reviewers' entries; DeepSeek's adds n_pairs, verbatim p values and the table's unit spelling.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry restates the CVP readings kept under DeepSeek's entry (outcomes[hemodynamics cvp continuous @crossover condition]).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "id": "00ea56cc85",
+      "decision": "deepseek",
+      "reason": "The PEEPPtpexp target is a single value, end-expiratory transpulmonary pressure 0 cmH2O, so the numeric range is 0 to 0; GLM leaves the stated number unrecorded.",
+      "evidence": "Abstract; Methods 2.1, p. 2"
+    },
+    {
+      "id": "f03f2a3d5d",
+      "decision": "deepseek",
+      "reason": "Target end-expiratory transpulmonary pressure of 0 cmH2O: low bound 0.",
+      "evidence": "Abstract; Methods 2.1, p. 2"
+    },
+    {
+      "id": "a852d5aa97",
+      "decision": "unclear",
+      "reason": "The paper does report timing: 'Days on V-V ECMO before study [days] 2 ± 1' (Table 1). GLM converts it to 48 ± 24 hours (flagged derived), which the project's no-unit-conversion-at-extraction rule forbids; DeepSeek records nothing. Co-author: record 2 ± 1 days (mean ± SD, n=20, reference ECMO start = 'other') as reported, or accept GLM's derived hours.",
+      "evidence": "p. 3, Table 1, row 'Days on V-V ECMO before study'"
+    }
+  ]
+}

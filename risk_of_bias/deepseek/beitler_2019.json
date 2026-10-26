@@ -1,0 +1,303 @@
+{
+  "record_meta": {
+    "study_id": "beitler_2019",
+    "reviewer": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "assessment_date": "2026-09-28",
+    "source_file": "studies/fulltext/beitler2019.pdf",
+    "schema_version": "1.0.0"
+  },
+  "study_id": "beitler_2019",
+  "tool": "rob2_parallel",
+  "results": [
+    {
+      "result_id": "mortality",
+      "outcome": "Mortality at longest follow-up (all-cause mortality through 1 year)",
+      "numerical_result": "44/100 (44.0%) vs 44/96 (45.8%); risk difference −1.8% (95% CI −15.8% to 12.1%); P = .89",
+      "result_location": "Table 3, p E9 (Secondary Clinical End Points, 'Mortality through 1 y'); also reported on p E7",
+      "answers": {
+        "1.1": {
+          "response": "Y",
+          "support": "Enrolled patients were randomized to either PEEP titration strategy in a 1:1 ratio using a random sorting algorithm with maximum allowable deviation of 6.5% (PASS Sample Size Software, NCSS).",
+          "location": "p E2, Methods, Patients"
+        },
+        "1.2": {
+          "response": "Y",
+          "support": "Randomization was performed through central web-based software using a balanced randomization scheme by site.",
+          "location": "p E2, Methods, Patients"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "I looked for substantial baseline imbalance or a reported problem with the randomization process and found only differences compatible with chance (e.g., female sex 37.3% vs 55.1%), with no key prognostic factor reported as imbalanced.",
+          "location": "Table 2, p E6"
+        },
+        "2.1": {
+          "response": "PY",
+          "support": "I looked for a description of blinding of participants and found none; the two interventions were different PEEP titration strategies with no sham procedure described, so participants were probably aware of the assigned strategy.",
+          "location": "p E2-E3, Methods (PES-Guided PEEP Group; Empirical PEEP-FiO2 Group)"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "Crossover to the PES-guided strategy was prohibited. PL measurements were not disclosed to the treating team nor considered in selecting PEEP.",
+          "location": "p E3, Methods, Empirical PEEP-FiO2 Group"
+        },
+        "2.3": {
+          "response": "N",
+          "support": "Protocol adherence was high: 93.3% of observed PEEP values in the PES-guided PEEP group and 94.6% of values in the empirical PEEP-FiO2 group were within ±2 cm H2O of the protocol-specified value for the observed FIO2.",
+          "location": "p E6, Ventilator Management and Respiratory Physiology"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "2.3 was answered No (no deviations from intended intervention arose from the trial context), so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 2 (conditional structure)"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "2.4 is not applicable because 2.3 was answered No, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 2 (conditional structure)"
+        },
+        "2.6": {
+          "response": "PN",
+          "support": "Primary analyses were performed according to randomization group. Patients for whom consent was withdrawn were excluded from all analyses.",
+          "location": "p E5, Statistical Analyses"
+        },
+        "2.7": {
+          "response": "N",
+          "support": "Consent was withdrawn for 2 patients assigned to the PEEP-FiO2 strategy prior to protocol initiation, leaving 102 and 98 patients in the PES-guided and PEEP-FiO2 groups, respectively, for inclusion in the primary analysis (Figure 1).",
+          "location": "p E5, Results, Study Population; Figure 1, p E3"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "Complete outcome data were available for all study participants except for 60-day mortality, for which 1 patient assigned to PES-guided PEEP was lost to follow-up, and 1-year mortality, for which 2 patients from each group were lost to follow-up.",
+          "location": "Table 3, footnote a, p E9; Figure 1, p E3"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "3.1 was answered Yes (data available for nearly all randomized participants), so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "3.2 is not applicable because 3.1 was answered Yes, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "3.3 is not applicable because 3.1 was answered Yes, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "I looked for an inappropriate method of measuring the outcome and found none; death by 1 year was ascertained as a standard clinical outcome for all participants with follow-up.",
+          "location": "p E7, Clinical End Points; Table 3, p E9"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "I looked for differences between intervention groups in the method or timing of outcome ascertainment and found none; the same follow-up schedule and data-collection procedures were used in both groups.",
+          "location": "p E7, Clinical End Points"
+        },
+        "4.3": {
+          "response": "PY",
+          "support": "The report does not describe blinding of outcome assessors; in this open-label trial deaths were ascertained by study and clinical personnel who knew the assigned PEEP strategy.",
+          "location": "p E7, Clinical End Points"
+        },
+        "4.4": {
+          "response": "N",
+          "support": "I looked for any judgement involved in ascertaining the outcome and found none; the outcome is all-cause mortality, an objective event unlikely to be influenced by knowledge of the intervention received.",
+          "location": "Table 3, p E9"
+        },
+        "4.5": {
+          "response": "NA",
+          "support": "4.4 was answered No (assessment of all-cause mortality could not be influenced by knowledge of the intervention), so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 4 (conditional structure)"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "The trial protocol and statistical analysis plan were published previously and are provided in Supplement 1; these documents are not printed in the article, so the reported analyses could not be compared with the pre-specified plan.",
+          "location": "p E2, Methods; p E5, Statistical Analyses"
+        },
+        "5.2": {
+          "response": "NI",
+          "support": "Analysis intentions are not available in the report and mortality was measured at more than one time point (28 days, 60 days, 1 year), so it could not be verified that all intended eligible measurements are reported.",
+          "location": "p E7, Secondary End Points; Table 3, p E9"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "Analysis intentions are not available in the report, so it could not be determined whether the reported analysis of 1-year mortality (Fisher exact test) was the only eligible analysis performed.",
+          "location": "p E5, Statistical Analyses; Table 3, p E9"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Low",
+          "rationale": "Sequence generation used a random sorting algorithm and allocation was administered by central web-based software; baseline differences between groups are compatible with chance."
+        },
+        "D2": {
+          "judgement": "Some concerns",
+          "rationale": "The trial was open label (participants and carers aware), but protocol adherence was high, no deviations arose from the trial context, and crossover was prohibited. However, 2 participants who withdrew consent were excluded after randomization, so the analysis was not a strict intention-to-treat analysis (2.6 = PN, 2.7 = N); the algorithm therefore suggests some concerns rather than low risk."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "196 of 202 randomized participants (97%) contributed 1-year mortality data; the extent of missing outcome data is too small for the participants' outcomes to have made an important difference to the result."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "All-cause mortality was ascertained objectively with the same methods in both groups, and knowledge of the assigned intervention could not plausibly influence assessment."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "The protocol and statistical analysis plan are referenced but not printed in the article, so the pre-specification of this result and the completeness of the reported measurements and analyses could not be verified (NI to 5.1-5.3). The endpoints are described as prespecified and all three mortality time points are reported, so there is no positive evidence of selective reporting."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "No domain is at high risk of bias; some concerns arise from the small post-randomization exclusion of consent-withdrawing participants (D2) and from the inability to verify the pre-specified analysis plan because the protocol/SAP is not printed in the article (D5). These do not substantially lower confidence in this null result."
+      }
+    },
+    {
+      "result_id": "vfd",
+      "outcome": "Ventilator-free days through day 28",
+      "numerical_result": "median 15.5 (IQR 0 to 23) vs 17.5 (IQR 0 to 23); median difference 0 (95% CI 0 to 0); P = .93",
+      "result_location": "Table 3, p E9 (Secondary Clinical End Points, 'Ventilator-free days through day 28'); also reported on p E7",
+      "answers": {
+        "1.1": {
+          "response": "Y",
+          "support": "Enrolled patients were randomized to either PEEP titration strategy in a 1:1 ratio using a random sorting algorithm with maximum allowable deviation of 6.5% (PASS Sample Size Software, NCSS).",
+          "location": "p E2, Methods, Patients"
+        },
+        "1.2": {
+          "response": "Y",
+          "support": "Randomization was performed through central web-based software using a balanced randomization scheme by site.",
+          "location": "p E2, Methods, Patients"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "I looked for substantial baseline imbalance or a reported problem with the randomization process and found only differences compatible with chance (e.g., female sex 37.3% vs 55.1%), with no key prognostic factor reported as imbalanced.",
+          "location": "Table 2, p E6"
+        },
+        "2.1": {
+          "response": "PY",
+          "support": "I looked for a description of blinding of participants and found none; the two interventions were different PEEP titration strategies with no sham procedure described, so participants were probably aware of the assigned strategy.",
+          "location": "p E2-E3, Methods (PES-Guided PEEP Group; Empirical PEEP-FiO2 Group)"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "Crossover to the PES-guided strategy was prohibited. PL measurements were not disclosed to the treating team nor considered in selecting PEEP.",
+          "location": "p E3, Methods, Empirical PEEP-FiO2 Group"
+        },
+        "2.3": {
+          "response": "N",
+          "support": "Protocol adherence was high: 93.3% of observed PEEP values in the PES-guided PEEP group and 94.6% of values in the empirical PEEP-FiO2 group were within ±2 cm H2O of the protocol-specified value for the observed FIO2.",
+          "location": "p E6, Ventilator Management and Respiratory Physiology"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "2.3 was answered No (no deviations from intended intervention arose from the trial context), so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 2 (conditional structure)"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "2.4 is not applicable because 2.3 was answered No, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 2 (conditional structure)"
+        },
+        "2.6": {
+          "response": "PN",
+          "support": "Primary analyses were performed according to randomization group. Patients for whom consent was withdrawn were excluded from all analyses.",
+          "location": "p E5, Statistical Analyses"
+        },
+        "2.7": {
+          "response": "N",
+          "support": "Consent was withdrawn for 2 patients assigned to the PEEP-FiO2 strategy prior to protocol initiation, leaving 102 and 98 patients in the PES-guided and PEEP-FiO2 groups, respectively, for inclusion in the primary analysis (Figure 1).",
+          "location": "p E5, Results, Study Population; Figure 1, p E3"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "Complete outcome data were available for all study participants except for 60-day mortality, for which 1 patient assigned to PES-guided PEEP was lost to follow-up, and 1-year mortality, for which 2 patients from each group were lost to follow-up.",
+          "location": "Table 3, footnote a, p E9; Table 3, p E9 (n = 102 and n = 98)"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "3.1 was answered Yes (data available for nearly all randomized participants), so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "3.2 is not applicable because 3.1 was answered Yes, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "3.3 is not applicable because 3.1 was answered Yes, so this conditional question does not apply.",
+          "location": "RoB 2 cribsheet, Domain 3 (conditional structure)"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "I looked for an inappropriate method of measuring ventilator-free days and found none; the outcome is a standard composite of death and days free from mechanical ventilation through day 28.",
+          "location": "p E4, Secondary End Points; Table 3, p E9"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "Ventilator-free days and shock-free days through day 28 are composite end points that assign a value of 0 free days for patients who died before day 28.",
+          "location": "Table 3, footnote f, p E9; Table 1, p E4"
+        },
+        "4.3": {
+          "response": "PY",
+          "support": "The report does not describe blinded assessment of ventilator-free days; ventilator liberation was determined by the treating team, which was aware of the assigned PEEP strategy.",
+          "location": "p E2, Methods, Protocol Elements Common to Both Treatment Groups"
+        },
+        "4.4": {
+          "response": "PY",
+          "support": "I looked for blinded assessment of ventilator liberation and found none; liberation from the ventilator was determined by the unblinded treating team, whose decisions determine ventilator-free days.",
+          "location": "p E2, Methods, Protocol Elements Common to Both Treatment Groups"
+        },
+        "4.5": {
+          "response": "PN",
+          "support": "FIO2 ≤0.4, PEEP ≤10 cm H2O, patient able to trigger ventilator, and no hemodynamic instability (criteria listed identically for both treatment groups for initiating weaning on pressure support mode).",
+          "location": "Table 1, p E4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "The trial protocol and statistical analysis plan were published previously and are provided in Supplement 1; these documents are not printed in the article, so the reported analyses could not be compared with the pre-specified plan.",
+          "location": "p E2, Methods; p E5, Statistical Analyses"
+        },
+        "5.2": {
+          "response": "NI",
+          "support": "Analysis intentions are not available in the report; ventilator-free days (with deaths assigned 0 free days) and days free from mechanical ventilation among survivors were both reported, so selection from eligible measurements could not be excluded.",
+          "location": "Table 3, p E9; p E4, Secondary End Points"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "Analysis intentions are not available in the report, so it could not be determined whether the reported analysis of ventilator-free days (Mann-Whitney U test with Hodges-Lehmann median difference) was the only eligible analysis performed.",
+          "location": "p E5, Statistical Analyses; Table 3, p E9"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Low",
+          "rationale": "Sequence generation used a random sorting algorithm and allocation was administered by central web-based software; baseline differences between groups are compatible with chance."
+        },
+        "D2": {
+          "judgement": "Some concerns",
+          "rationale": "The trial was open label (participants and carers aware), but protocol adherence was high, no deviations arose from the trial context, and crossover was prohibited. However, 2 participants who withdrew consent were excluded after randomization, so the analysis was not a strict intention-to-treat analysis (2.6 = PN, 2.7 = N); the algorithm therefore suggests some concerns rather than low risk."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "Ventilator-free days through day 28 were derived for all analysed randomized participants (102 PES-guided and 98 empirical PEEP-FiO2), with 0 free days assigned to patients who died; no outcome data were missing."
+        },
+        "D4": {
+          "judgement": "Some concerns",
+          "rationale": "The measurement was defined identically in both groups, but the treating team was unblinded and ventilator liberation is a provider decision outcome that knowledge of allocation could have influenced (4.4 = PY); there is no evidence that assessment actually was influenced because weaning criteria were protocol-specified and identical in both groups (4.5 = PN), so the concern is some rather than high."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "Analysis intentions are not available in the article (protocol/SAP referenced but not printed), so pre-specification and completeness of the reported measurement and analysis of ventilator-free days could not be verified (NI to 5.1-5.3); the outcome is described as a prespecified secondary endpoint and both the composite and survivor-specific results are reported, with no positive evidence of selective reporting."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "No domain is at high risk of bias; some concerns arise from the small post-randomization exclusion of consent-withdrawing participants (D2), the unblinded provider decision underlying ventilator liberation (D4) and the inability to verify the pre-specified analysis plan because the protocol/SAP is not printed in the article (D5). Together these do not substantially lower confidence in this null result."
+      }
+    }
+  ],
+  "nih": null
+}

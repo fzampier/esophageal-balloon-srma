@@ -1,0 +1,3786 @@
+{
+ "record_meta": {
+  "study_id": "boesing_2024a",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/1-s2.0-S0883944123001557-main.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 140 reviewer differences: 93 in scope. Settled by human rulings 9, model rulings 89, content-neutral rules 3; 38 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 1 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Boesing",
+  "year": 2024,
+  "title": "Effects of different positive end-expiratory pressure titration strategies on mechanical power during ultraprotective ventilation in ARDS patients treated with veno-venous extracorporeal membrane oxygenation: A prospective interventional study",
+  "journal": "Journal of Critical Care",
+  "doi": "10.1016/j.jcrc.2023.154406",
+  "pmid": null,
+  "trial_registration": "DRKS00013967",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Exclusion criteria for the study were age younger than 18 years, and end-stage chronic cardiopulmonary failure.",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "All patients were ventilated with an Engström Carescape™ R860 ventilator (GE Healthcare, Munich, Germany) in a volume-controlled mode with a VT of 3 mL/kg predicted body weight",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "during the first three days of V–V ECMO treatment in the intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine, University Medical Centre Mannheim",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Another dynamic recruitment maneuver was performed prior to ventilation with PEEP targeting an end-expiratory transpulmonary pressure of 0 cm H2O (PEEPPtpexp) and respiratory mechanics and hemodynamics were recorded.",
+     "location": "Methods, Study protocol, para 1"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Cstat,RS [mL/cm H2O] 19.9 ± 9.9 21.6 ± 10.5 21.7 ± 10.9",
+     "location": "p. 4, Table 2, row: Cstat,RS"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+     "location": "Results, para 1"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "This prospective interventional study was conducted as part of a multipurpose study [3]",
+     "location": "Methods, Material and methods, para 1"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "J Crit Care 79 (2024) 154406",
+     "location": "p. 1, header"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "crossover_physiologic",
+  "study_design_verbatim": {
+   "value": "This prospective interventional study",
+   "provenance": {
+    "quote": "This prospective interventional study was conducted as part of a multipurpose study [3]",
+    "location": "Methods, Material and methods, para 1"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": {
+   "value": null,
+   "provenance": null
+  },
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "derived": true,
+   "derivation": "Single institution named (University Medical Centre Mannheim); no explicit centre count stated.",
+   "provenance": {
+    "quote": "in the intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine, University Medical Centre Mannheim, Medical Faculty Mannheim of the University of Heidelberg in Mannheim, Germany",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "countries": [
+   "Germany"
+  ],
+  "location_provenance": {
+   "quote": "University Medical Centre Mannheim, Medical Faculty Mannheim of the University of Heidelberg in Mannheim, Germany",
+   "location": "Methods, Material and methods, para 2"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": {
+   "value": "Details for the sample size calculation are given in the Supplement.",
+   "provenance": {
+    "quote": "Details for the sample size calculation are given in the Supplement.",
+    "location": "Methods, Statistical analysis, para 1"
+   }
+  },
+  "stopped_early": null,
+  "stopping_rule": {
+   "value": null,
+   "provenance": null
+  },
+  "setting": {
+   "value": "Intensive Care Unit",
+   "provenance": {
+    "quote": "during the first three days of V–V ECMO treatment in the intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "enrolment_start": null,
+  "enrolment_end": null,
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. PRMR is supported by the Brazilian Council for Scientific and Technological Development and the Rio de Janeiro State Research Foundation.",
+   "provenance": {
+    "quote": "This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",
+    "location": "Funding section"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 20,
+   "provenance": {
+    "quote": "We enrolled 20 patients with severe ARDS according to the Berlin definition [23] during the first three days of V–V ECMO treatment",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "n_analysed": {
+   "value": 20,
+   "provenance": {
+    "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+    "location": "Results, para 1"
+   }
+  },
+  "population_description": {
+   "value": "20 patients with severe ARDS according to the Berlin definition treated with V–V ECMO, studied during the first three days of ECMO treatment",
+   "provenance": {
+    "quote": "We enrolled 20 patients with severe ARDS according to the Berlin definition [23] during the first three days of V–V ECMO treatment",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "severe ARDS according to the Berlin definition; V–V ECMO initiated according to current ELSO guidelines as well as the inclusion criteria of the EOLIA trial; study inclusion in the first 72 h of ECMO treatment",
+   "provenance": {
+    "quote": "V–V ECMO was initiated in patients according to current ELSO guidelines (ELSO) [19] as well as the inclusion criteria of the ECMO to rescue Lung Injury in severe ARDS (EOLIA) trial [24].",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "age younger than 18 years, and end-stage chronic cardiopulmonary failure",
+   "provenance": {
+    "quote": "Exclusion criteria for the study were age younger than 18 years, and end-stage chronic cardiopulmonary failure.",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "age": {
+   "value_type": "mean",
+   "value": 56,
+   "dispersion_type": "sd",
+   "dispersion": 10,
+   "n": 20,
+   "unit": "years",
+   "provenance": {
+    "quote": "Age [years] 56 ± 10",
+    "location": "p. 3, Table 1, row: Age [years]"
+   }
+  },
+  "sex_female": {
+   "n": 7,
+   "total": 20,
+   "derived": true,
+   "derivation": "20 patients minus 13 male; the table reports male sex only",
+   "provenance": {
+    "quote": "Male [n] 13 (65%)",
+    "location": "Table 1, row: Male, p. 3"
+   }
+  },
+  "sex_male": {
+   "n": 13,
+   "total": 20,
+   "percent_as_reported": 65,
+   "provenance": {
+    "quote": "Male [n] 13 (65%)",
+    "location": "p. 3, Table 1, row: Male [n]"
+   }
+  },
+  "bmi": {
+   "value_type": "mean",
+   "value": 31.1,
+   "dispersion_type": "sd",
+   "dispersion": 9.0,
+   "n": 20,
+   "unit": "kg/m2",
+   "provenance": {
+    "quote": "Body mass index [kg/m2] 31.1 ± 9.0",
+    "location": "p. 3, Table 1, row: Body mass index [kg/m2]"
+   }
+  },
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "Berlin definition",
+   "provenance": {
+    "quote": "We enrolled 20 patients with severe ARDS according to the Berlin definition [23]",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "n_ards": {
+   "n": 20,
+   "total": 20,
+   "provenance": {
+    "quote": "We enrolled 20 patients with severe ARDS according to the Berlin definition [23]",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "not_reported",
+  "cause_of_respiratory_failure": {
+   "value": "Bacterial pneumonia 14 (70%); Influenza pneumonia 3 (15%); Non-pulmonary sepsis 3 (15%)",
+   "provenance": {
+    "quote": "Cause of ARDS [n] Bacterial pneumonia 14 (70%) Influenza pneumonia 3 (15%) Non-pulmonary sepsis 3 (15%)",
+    "location": "p. 3, Table 1, rows: Cause of ARDS"
+   }
+  },
+  "pao2_fio2_baseline": null,
+  "apache_ii": {
+   "value_type": "mean",
+   "value": 30,
+   "dispersion_type": "sd",
+   "dispersion": 7,
+   "n": 20,
+   "unit": "points",
+   "provenance": {
+    "quote": "APACHE II [0–71 points] 30 ± 7",
+    "location": "p. 3, Table 1, row: APACHE II"
+   }
+  },
+  "sofa": {
+   "value_type": "mean",
+   "value": 14,
+   "dispersion_type": "sd",
+   "dispersion": 3,
+   "n": 20,
+   "unit": "points",
+   "provenance": {
+    "quote": "SOFA [0–24 points] 14 ± 3",
+    "location": "p. 3, Table 1, row: SOFA"
+   }
+  },
+  "saps_ii": {
+   "value_type": "mean",
+   "value": 70,
+   "dispersion_type": "sd",
+   "dispersion": 12,
+   "n": 20,
+   "unit": "points",
+   "provenance": {
+    "quote": "SAPS II [0–163 points] 70 ± 12",
+    "location": "p. 3, Table 1, row: SAPS II"
+   }
+  },
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": {
+   "n": 20,
+   "total": 20,
+   "provenance": {
+    "quote": "All patients were sedated (Richmond Agitation-Sedation Score of −5) and paralyzed throughout the study period.",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "n_ecmo": {
+   "n": 20,
+   "total": 20,
+   "provenance": {
+    "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+    "location": "Results, para 1"
+   }
+  },
+  "n_vasopressors": null,
+  "additional_baseline": [
+   {
+    "name_verbatim": "RESP [− 22–15 points]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": -5,
+     "dispersion_type": "iqr",
+     "dispersion_low": -9,
+     "dispersion_high": -1,
+     "n": 20,
+     "provenance": {
+      "quote": "RESP [− 22–15 points] -5 (−9 - -1)",
+      "location": "p. 3, Table 1, row: RESP"
+     }
+    }
+   },
+   {
+    "name_verbatim": "PRESERVE [0–14 points]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 5,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 20,
+     "provenance": {
+      "quote": "PRESERVE [0–14 points] 5 ± 2",
+      "location": "p. 3, Table 1, row: PRESERVE"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Mechanical ventilation before study [days]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 5,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 20,
+     "unit": "days",
+     "provenance": {
+      "quote": "Mechanical ventilation before study [days] 5 ± 3",
+      "location": "p. 3, Table 1, row: Mechanical ventilation before study"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Days on V–V ECMO before study [days]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 2,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 20,
+     "unit": "days",
+     "provenance": {
+      "quote": "Days on V–V ECMO before study [days] 2 ± 1",
+      "location": "p. 3, Table 1, row: Days on V–V ECMO before study"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Presence of septic shock [n]",
+    "arm_label": null,
+    "count": {
+     "n": 7,
+     "total": 20,
+     "percent_as_reported": 35,
+     "provenance": {
+      "quote": "Presence of septic shock [n] 7 (35%)",
+      "location": "p. 3, Table 1, row: Presence of septic shock"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Total fluid balance [L]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 1.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": -0.1,
+     "dispersion_high": 4.9,
+     "n": 20,
+     "unit": "L",
+     "provenance": {
+      "quote": "Total fluid balance [L] 1.5 (− 0.1–4.9)",
+      "location": "p. 3, Table 1, row: Total fluid balance"
+     }
+    }
+   },
+   {
+    "name_verbatim": "V–V ECMO blood flow [L/min]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 3.9,
+     "dispersion_type": "sd",
+     "dispersion": 0.8,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "V–V ECMO blood flow [L/min] 3.9 ± 0.8",
+      "location": "p. 3, Table 1, row: V–V ECMO blood flow"
+     }
+    }
+   },
+   {
+    "name_verbatim": "V–V ECMO gas flow [L/min]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 3.9,
+     "dispersion_type": "sd",
+     "dispersion": 1.2,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "V–V ECMO gas flow [L/min] 3.9 ± 1.2",
+      "location": "p. 3, Table 1, row: V–V ECMO gas flow"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Duration of V–V ECMO support [days]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 12.7,
+     "dispersion_type": "sd",
+     "dispersion": 5.2,
+     "n": 20,
+     "unit": "days",
+     "provenance": {
+      "quote": "Duration of V–V ECMO support [days] 12.7 ± 5.2",
+      "location": "p. 3, Table 1, row: Duration of V–V ECMO support"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Length of ICU stay [days]",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 39,
+     "dispersion_type": "sd",
+     "dispersion": 21,
+     "n": 20,
+     "unit": "days",
+     "provenance": {
+      "quote": "Length of ICU stay [days] 39 ± 21",
+      "location": "p. 3, Table 1, row: Length of ICU stay"
+     }
+    }
+   },
+   {
+    "name_verbatim": "ICU Mortality [n]",
+    "arm_label": null,
+    "count": {
+     "n": 7,
+     "total": 20,
+     "percent_as_reported": 35,
+     "provenance": {
+      "quote": "ICU Mortality [n] 7 (35%)",
+      "location": "p. 3, Table 1, row: ICU Mortality"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "NutriVent™, Sidam Biomedical Solutions, Mirandola, Italy",
+   "provenance": {
+    "quote": "Esophageal pressure was measured with an esophageal balloon catheter (NutriVent™, Sidam Biomedical Solutions, Mirandola, Italy)",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "balloon_inflation_volume_ml": {
+   "value_type": null,
+   "value": 2,
+   "dispersion_type": "none",
+   "n": 20,
+   "unit": "mL air",
+   "provenance": {
+    "quote": "filled with 2 mL of air as indicated by the manufacturer",
+    "location": "Methods, Material and methods, para 2"
+   }
+  },
+  "balloon_calibration": {
+   "method": "manufacturer_recommended_volume",
+   "method_verbatim": {
+    "value": "filled with 2 mL of air as indicated by the manufacturer and connected to the ventilator. Correct positioning was verified by a ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2 as previously described [25].",
+    "provenance": {
+     "quote": "filled with 2 mL of air as indicated by the manufacturer and connected to the ventilator. Correct positioning was verified by a ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2 as previously described [25].",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "position_verification": {
+    "value": "ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2 (occlusion test as previously described [25])",
+    "provenance": {
+     "quote": "Correct positioning was verified by a ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2 as previously described [25].",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "occlusion_ratio_acceptance": {
+    "value": "0.8–1.2",
+    "provenance": {
+     "quote": "a ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2",
+     "location": "Methods, Material and methods, para 2"
+    }
+   }
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "MP, transpulmonary mechanical power (MPtp), lung stress, mechanics of the respiratory system and hemodynamics were calculated according to the standard formulas detailed in the Supplement.",
+    "provenance": {
+     "quote": "MP, transpulmonary mechanical power (MPtp), lung stress, mechanics of the respiratory system and hemodynamics were calculated according to the standard formulas detailed in the Supplement.",
+     "location": "Methods, Study protocol, para 1"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_zero",
+   "strategy_verbatim": {
+    "value": "ventilation with PEEP targeting an end-expiratory transpulmonary pressure of 0 cm H2O (PEEPPtpexp)",
+    "provenance": {
+     "quote": "Another dynamic recruitment maneuver was performed prior to ventilation with PEEP targeting an end-expiratory transpulmonary pressure of 0 cm H2O (PEEPPtpexp) and respiratory mechanics and hemodynamics were recorded.",
+     "location": "Methods, Study protocol, para 1"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "end-expiratory transpulmonary pressure of 0 cm H2O",
+     "location": "Methods, Study protocol, para 2"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "end-expiratory transpulmonary pressure of 0 cm H2O",
+     "location": "Methods, Study protocol, para 2"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "once, during a single study session",
+    "provenance": {
+     "quote": "PEEP was initially set to 10 cm H2O representing the lowest ELSO recommendation (PEEPELSO) [19] and respiratory mechanics as well as hemodynamics were measured. A dynamic recruitment maneuver ... was performed followed by a decremental PEEP trial ... The identified PEEP with the highest Cstat,RS (PEEPCstat,RS) was set after a dynamic recruitment maneuver followed by measurements ... Another dynamic recruitment maneuver was performed prior to ventilation with PEEP targeting an end-expiratory transpulmonary pressure of 0 cm H2O (PEEPPtpexp)",
+     "location": "Methods, Study protocol, para 1"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": true,
+   "recruitment_manoeuvre_detail": {
+    "value": "A dynamic recruitment maneuver to standardize the history of lung volume [27] was performed followed by a decremental PEEP trial. Briefly, PEEP was gradually increased to 35 cm H2O in a pressure-controlled mode with a Pdriv of 15 cm H2O over a period of 5 min.",
+    "provenance": {
+     "quote": "A dynamic recruitment maneuver to standardize the history of lung volume [27] was performed followed by a decremental PEEP trial. Briefly, PEEP was gradually increased to 35 cm H2O in a pressure-controlled mode with a Pdriv of 15 cm H2O over a period of 5 min.",
+     "location": "Methods, Study protocol, para 1"
+    }
+   },
+   "tidal_volume_target": {
+    "value": "VT of 3 mL/kg predicted body weight, RR 12/min, I:E ratio 1:1, FiO2 50%",
+    "provenance": {
+     "quote": "in a volume-controlled mode with a VT of 3 mL/kg predicted body weight, a respiratory rate (RR) of 12/min, an inspiration-to-expiration ratio of 1:1 and a fraction of inspired oxygen of 50%",
+     "location": "Methods, Material and methods, para 2"
+    }
+   },
+   "plateau_or_ptp_ceiling": null,
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "V–V ECMO circuit settings were not changed during the study period; between each experimental step a 30-min equilibration period was allowed",
+    "provenance": {
+     "quote": "V–V ECMO circuit settings were not changed during the study period (Table S1). ... Between each experimental step we allowed for a 30-min equilibration period.",
+     "location": "Methods, Study protocol, para 1"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "other",
+   "hours_from_reference": {
+    "value_type": "mean",
+    "value": 48,
+    "dispersion_type": "sd",
+    "dispersion": 24,
+    "n": 20,
+    "unit": "hours",
+    "derived": true,
+    "derivation": "Paper reports 'Days on V–V ECMO before study [days] 2 ± 1' and inclusion 'in the first 72 h of ECMO treatment'; hours derived from reported days (2 days = 48 h). Reference event is ECMO start, coded 'other'.",
+    "provenance": {
+     "quote": "Days on V–V ECMO before study [days] 2 ± 1 ... At the time of study inclusion in the first 72 h of ECMO treatment",
+     "location": "p. 3, Table 1, row: Days on V–V ECMO before study; Methods, Material and methods, para 2"
+    }
+   },
+   "timing_verbatim": {
+    "value": "At the time of study inclusion in the first 72 h of ECMO treatment",
+    "provenance": {
+     "quote": "At the time of study inclusion in the first 72 h of ECMO treatment, clinical characteristics and scores were recorded for each patient.",
+     "location": "Methods, Material and methods, para 2"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "single study session with 30-min equilibration periods between conditions; short-term physiologic measurements only",
+   "provenance": {
+    "quote": "Between each experimental step we allowed for a 30-min equilibration period.",
+    "location": "Methods, Study protocol, para 1"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "fixed_peep",
+   "best_compliance_peep"
+  ],
+  "comparator_verbatim": {
+   "value": "(A) a PEEP of 10 cmH2O representing the lowest recommendation by the Extracorporeal Life Support Organization (PEEPELSO), (B) the highest static compliance of the respiratory system (PEEPCstat,RS)",
+   "provenance": {
+    "quote": "PEEP was titrated according to: (A) a PEEP of 10 cmH2O representing the lowest recommendation by the Extracorporeal Life Support Organization (PEEPELSO), (B) the highest static compliance of the respiratory system (PEEPCstat,RS), and (C) a target end-expiratory transpulmonary pressure of 0 cmH2O (PEEPPtpexp).",
+    "location": "Abstract, Material and methods"
+   }
+  },
+  "crossover_order": {
+   "value": "Fixed sequence, not randomised: PEEPELSO first, then decremental PEEP trial identifying PEEPCstat,RS, then PEEPPtpexp. 'the sequence of different PEEP titration strategies was not randomized'",
+   "provenance": {
+    "quote": "First, the sequence of different PEEP titration strategies was not randomized, possibly affecting the results due to the longitudinal design with repeated measurements.",
+    "location": "Discussion, Limitations, para 1"
+   }
+  },
+  "washout_or_stabilisation": {
+   "value": "30-min equilibration period after a dynamic recruitment manoeuvre between different PEEP titration strategies",
+   "provenance": {
+    "quote": "we used a 30-min equilibration period after a dynamic recruitment maneuver between different PEEP titration strategies to standardize the history of lung volume [27] and minimize potential interactions [49]",
+    "location": "Discussion, Limitations, para 1"
+   }
+  }
+ },
+ "arms": [
+  {
+   "label": "peep_elso",
+   "label_verbatim": "PEEPELSO",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+     "location": "Results, para 1"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 10.0,
+    "dispersion_type": "sd",
+    "dispersion": 0.0,
+    "n": 20,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP [cm H2O] 10 ± 0.0",
+     "location": "p. 4, Table 2, row: PEEP"
+    }
+   }
+  },
+  {
+   "label": "peep_cstat_rs",
+   "label_verbatim": "PEEPCstat,RS",
+   "role": "alternative_titration_condition",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+     "location": "Results, para 1"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 16.2,
+    "dispersion_type": "sd",
+    "dispersion": 4.7,
+    "n": 20,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP [cm H2O] 10 ± 0.0 16.2 ± 4.7 17.3 ± 4.7",
+     "location": "p. 4, Table 2, row: PEEP"
+    }
+   }
+  },
+  {
+   "label": "peep_ptpexp",
+   "label_verbatim": "PEEPPtpexp",
+   "role": "intervention",
+   "sequence_position": 3,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Twenty patients with severe ARDS treated with V–V ECMO were included in the analysis.",
+     "location": "Results, para 1"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 17.3,
+    "dispersion_type": "sd",
+    "dispersion": 4.7,
+    "n": 20,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "PEEP [cm H2O] — 17.3 ± 4.7",
+     "location": "Table 2, row: PEEP"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "other",
+   "name_verbatim": "pHa",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "PEEP titration strategy"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 7.4,
+     "dispersion_type": "sd",
+     "dispersion": 0.1,
+     "n": 20,
+     "provenance": {
+      "quote": "pHa 7.4 ± 0.1 7.4 ± 0.1 7.4 ± 0.1 0.088 0.317 0.393",
+      "location": "p. 4, Table 2, row: pHa"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 7.4,
+     "dispersion_type": "sd",
+     "dispersion": 0.1,
+     "n": 20,
+     "provenance": {
+      "quote": "pHa 7.4 ± 0.1 7.4 ± 0.1 7.4 ± 0.1 0.088 0.317 0.393",
+      "location": "p. 4, Table 2, row: pHa"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 7.4,
+     "dispersion_type": "sd",
+     "dispersion": 0.1,
+     "n": 20,
+     "provenance": {
+      "quote": "pHa 7.4 ± 0.1 7.4 ± 0.1 7.4 ± 0.1 0.088 0.317 0.393",
+      "location": "p. 4, Table 2, row: pHa"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "p_value": 0.088,
+     "provenance": {
+      "quote": "0.088",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value_verbatim": "0.088",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "p_value": 0.317,
+     "provenance": {
+      "quote": "0.317",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value_verbatim": "0.317",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "p_value": 0.393,
+     "provenance": {
+      "quote": "0.393",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value_verbatim": "0.393",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    }
+   ],
+   "effect_estimates": [],
+   "measurement_context": null,
+   "provenance": {
+    "quote": "pHa — 7.4 ± 0.1, 7.4 ± 0.1, 7.4 ± 0.1",
+    "location": "Table 2, row: pHa"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Cardiac Output [L/min]",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "PEEP titration strategy"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Measured by transpulmonary thermodilution.",
+    "provenance": {
+     "quote": "Hemodynamic parameters were obtained with transpulmonary thermodilution",
+     "location": "Methods, para 2"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 7.4,
+     "dispersion_type": "sd",
+     "dispersion": 1.8,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "cardiac output (CO) was higher when using PEEPELSO compared to PEEPCstat,RS (7.4 ± 1.8 vs. 6.4 ± 1.8 L/min, p < 0.001) and PEEPPtpexp (7.4 ± 1.8 vs. 6.2 ± 1.8 L/min, p < 0.001) (Fig. 3A)",
+      "location": "Results, section 3.2, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 6.4,
+     "dispersion_type": "sd",
+     "dispersion": 1.8,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "cardiac output (CO) was higher when using PEEPELSO compared to PEEPCstat,RS (7.4 ± 1.8 vs. 6.4 ± 1.8 L/min, p < 0.001) and PEEPPtpexp (7.4 ± 1.8 vs. 6.2 ± 1.8 L/min, p < 0.001) (Fig. 3A)",
+      "location": "Results, section 3.2, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 6.2,
+     "dispersion_type": "sd",
+     "dispersion": 1.8,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "cardiac output (CO) was higher when using PEEPELSO compared to PEEPCstat,RS (7.4 ± 1.8 vs. 6.4 ± 1.8 L/min, p < 0.001) and PEEPPtpexp (7.4 ± 1.8 vs. 6.2 ± 1.8 L/min, p < 0.001) (Fig. 3A)",
+      "location": "Results, section 3.2, para 1"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "p_value_verbatim": "<0.001",
+     "unit": "L/min",
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 2"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "p_value_verbatim": "<0.001",
+     "unit": "L/min",
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 2"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "cardiac output (CO) was higher when using PEEPELSO compared to PEEPCstat,RS (7.4 ± 1.8 vs. 6.4 ± 1.8 L/min, p < 0.001) and PEEPPtpexp (7.4 ± 1.8 vs. 6.2 ± 1.8 L/min, p < 0.001)",
+    "location": "Results, para 2"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Norepinephrine [μg/kg/min]",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "PEEP titration strategy"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 0.2,
+     "dispersion_type": "sd",
+     "dispersion": 0.3,
+     "n": 20,
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "Norepinephrine [μg/kg/min] 0.2 ± 0.3 0.2 ± 0.3 0.2 ± 0.3 0.342 0.081 > 0.999",
+      "location": "p. 4, Table 2, row: Norepinephrine"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 0.2,
+     "dispersion_type": "sd",
+     "dispersion": 0.3,
+     "n": 20,
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "Norepinephrine [μg/kg/min] 0.2 ± 0.3 0.2 ± 0.3 0.2 ± 0.3 0.342 0.081 > 0.999",
+      "location": "p. 4, Table 2, row: Norepinephrine"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 0.2,
+     "dispersion_type": "sd",
+     "dispersion": 0.3,
+     "n": 20,
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "Norepinephrine [μg/kg/min] 0.2 ± 0.3 0.2 ± 0.3 0.2 ± 0.3 0.342 0.081 > 0.999",
+      "location": "p. 4, Table 2, row: Norepinephrine"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "p_value": 0.342,
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "0.342",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value_verbatim": "0.342",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "p_value": 0.081,
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "0.081",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value_verbatim": "0.081",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "p_value_verbatim": ">0.999",
+     "unit": "μg/kg/min",
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     },
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "derived": false,
+     "derivation": null
+    }
+   ],
+   "effect_estimates": [],
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Norepinephrine [μg/kg/min] — 0.2 ± 0.3, 0.2 ± 0.3, 0.2 ± 0.3",
+    "location": "Table 2, row: Norepinephrine"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Mechanical power",
+   "definition_verbatim": null,
+   "is_primary_outcome": true,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "During ultraprotective ventilation with VT 3 mL/kg PBW, RR 12/min, after 30-min equilibration at each PEEP strategy; patients sedated (RASS -5) and paralyzed.",
+    "provenance": {
+     "quote": "All patients were sedated (Richmond Agitation-Sedation Score of −5) and paralyzed throughout the study period. Between each experimental step we allowed for a 30-min equilibration period.",
+     "location": "Methods, para 2 and Study protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 5.3,
+     "dispersion_type": "sd",
+     "dispersion": 1.3,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "MP and MPtp were lower with PEEPELSO compared to PEEPCstat,RS (5.3 ± 1.3 vs. 6.8 ± 2.0 J/min, p < 0.001) and PEEPPtpexp (5.3 ± 1.3 vs. 6.9 ± 2.3 J/min, p < 0.001, respectively)",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 6.8,
+     "dispersion_type": "sd",
+     "dispersion": 2.0,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "MP and MPtp were lower with PEEPELSO compared to PEEPCstat,RS (5.3 ± 1.3 vs. 6.8 ± 2.0 J/min, p < 0.001)",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 6.9,
+     "dispersion_type": "sd",
+     "dispersion": 2.3,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "and PEEPPtpexp (5.3 ± 1.3 vs. 6.9 ± 2.3 J/min, p < 0.001, respectively)",
+      "location": "Results, para 1"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "MP and MPtp were lower with PEEPELSO compared to PEEPCstat,RS (5.3 ± 1.3 vs. 6.8 ± 2.0 J/min, p < 0.001) and PEEPPtpexp (5.3 ± 1.3 vs. 6.9 ± 2.3 J/min, p < 0.001, respectively)",
+    "location": "Results, para 1"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Lung stress",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "During ultraprotective ventilation, after 30-min equilibration.",
+    "provenance": {
+     "quote": "Between each experimental step we allowed for a 30-min equilibration period.",
+     "location": "Methods, Study protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 16.6,
+     "dispersion_type": "sd",
+     "dispersion": 7.0,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "16.6 ± 7.0",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 19.5,
+     "dispersion_type": "sd",
+     "dispersion": 7.2,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "19.5 ± 7.2",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 21.2,
+     "dispersion_type": "sd",
+     "dispersion": 8.0,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "21.2 ± 8.0",
+      "location": "Results, para 1"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.011,
+     "p_value_verbatim": "0.011",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p = 0.011",
+      "location": "Results, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PEEPELSO resulted in lower lung stress compared to PEEPCstat,RS (16.6 ± 7.0 vs. 19.5 ± 7.2 cm H2O, p = 0.011) and PEEPPtpexp (16.6 ± 7.0 vs. 21.2 ± 8.0 cm H2O, p < 0.001)",
+    "location": "Results, para 1"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 0.0,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP [cm H2O] — 10 ± 0.0",
+      "location": "Table 2, row: PEEP"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 16.2,
+     "dispersion_type": "sd",
+     "dispersion": 4.7,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP [cm H2O] — 16.2 ± 4.7",
+      "location": "Table 2, row: PEEP"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 17.3,
+     "dispersion_type": "sd",
+     "dispersion": 4.7,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP [cm H2O] — 17.3 ± 4.7",
+      "location": "Table 2, row: PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.302,
+     "p_value_verbatim": "0.302",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.302",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PEEP [cm H2O] — 10 ± 0.0, 16.2 ± 4.7, 17.3 ± 4.7",
+    "location": "Table 2, row: PEEP"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Pplat",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 22.9,
+     "dispersion_type": "sd",
+     "dispersion": 5.8,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pplat [cm H2O] — 22.9 ± 5.8",
+      "location": "Table 2, row: Pplat"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 27.9,
+     "dispersion_type": "sd",
+     "dispersion": 6.0,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pplat [cm H2O] — 27.9 ± 6.0",
+      "location": "Table 2, row: Pplat"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 29.0,
+     "dispersion_type": "sd",
+     "dispersion": 7.6,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pplat [cm H2O] — 29.0 ± 7.6",
+      "location": "Table 2, row: Pplat"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.257,
+     "p_value_verbatim": "0.257",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.257",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pplat [cm H2O] — 22.9 ± 5.8, 27.9 ± 6.0, 29.0 ± 7.6",
+    "location": "Table 2, row: Pplat"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Pmean",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 15.7,
+     "dispersion_type": "sd",
+     "dispersion": 2.3,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pmean [cm H2O] — 15.7 ± 2.3",
+      "location": "Table 2, row: Pmean"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 21.4,
+     "dispersion_type": "sd",
+     "dispersion": 4.9,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pmean [cm H2O] — 21.4 ± 4.9",
+      "location": "Table 2, row: Pmean"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 22.3,
+     "dispersion_type": "sd",
+     "dispersion": 5.5,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pmean [cm H2O] — 22.3 ± 5.5",
+      "location": "Table 2, row: Pmean"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.292,
+     "p_value_verbatim": "0.292",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.292",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pmean [cm H2O] — 15.7 ± 2.3, 21.4 ± 4.9, 22.3 ± 5.5",
+    "location": "Table 2, row: Pmean"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Pdriv",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 12.9,
+     "dispersion_type": "sd",
+     "dispersion": 5.8,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pdriv [cm H2O] — 12.9 ± 5.8",
+      "location": "Table 2, row: Pdriv"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 11.7,
+     "dispersion_type": "sd",
+     "dispersion": 5.4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pdriv [cm H2O] — 11.7 ± 5.4",
+      "location": "Table 2, row: Pdriv"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 11.7,
+     "dispersion_type": "sd",
+     "dispersion": 5.2,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pdriv [cm H2O] — 11.7 ± 5.2",
+      "location": "Table 2, row: Pdriv"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.246,
+     "p_value_verbatim": "0.246",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.246",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.207,
+     "p_value_verbatim": "0.207",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.207",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pdriv [cm H2O] — 12.9 ± 5.8, 11.7 ± 5.4, 11.7 ± 5.2",
+    "location": "Table 2, row: Pdriv"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Ptpinsp",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 4.9,
+     "dispersion_type": "sd",
+     "dispersion": 5.6,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpinsp [cm H2O] — 4.9 ± 5.6",
+      "location": "Table 2, row: Ptpinsp"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 7.8,
+     "dispersion_type": "sd",
+     "dispersion": 4.4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpinsp [cm H2O] — 7.8 ± 4.4",
+      "location": "Table 2, row: Ptpinsp"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 8.4,
+     "dispersion_type": "sd",
+     "dispersion": 4.7,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpinsp [cm H2O] — 8.4 ± 4.7",
+      "location": "Table 2, row: Ptpinsp"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.053,
+     "p_value_verbatim": "0.053",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.053",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.001,
+     "p_value_verbatim": "0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.707,
+     "p_value_verbatim": "0.707",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.707",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Ptpinsp [cm H2O] — 4.9 ± 5.6, 7.8 ± 4.4, 8.4 ± 4.7",
+    "location": "Table 2, row: Ptpinsp"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Ptpexp",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": -4.7,
+     "dispersion_type": "sd",
+     "dispersion": 4.5,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpexp [cm H2O] — - 4.7 ± 4.5",
+      "location": "Table 2, row: Ptpexp"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": -0.5,
+     "dispersion_type": "sd",
+     "dispersion": 3.9,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpexp [cm H2O] — - 0.5 ± 3.9",
+      "location": "Table 2, row: Ptpexp"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": -0.2,
+     "dispersion_type": "sd",
+     "dispersion": 1.1,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpexp [cm H2O] — - 0.2 ± 1.1",
+      "location": "Table 2, row: Ptpexp"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Ptpexp [cm H2O] — - 4.7 ± 4.5, - 0.5 ± 3.9, - 0.2 ± 1.1",
+    "location": "Table 2, row: Ptpexp"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Ptpdriv",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 9.6,
+     "dispersion_type": "sd",
+     "dispersion": 5.7,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpdriv [cm H2O] — 9.6 ± 5.7",
+      "location": "Table 2, row: Ptpdriv"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 8.3,
+     "dispersion_type": "sd",
+     "dispersion": 5.0,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpdriv [cm H2O] — 8.3 ± 5.0",
+      "location": "Table 2, row: Ptpdriv"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 8.6,
+     "dispersion_type": "sd",
+     "dispersion": 4.6,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Ptpdriv [cm H2O] — 8.6 ± 4.6",
+      "location": "Table 2, row: Ptpdriv"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.019,
+     "p_value_verbatim": "0.019",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.019",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.076,
+     "p_value_verbatim": "0.076",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.076",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.459,
+     "p_value_verbatim": "0.459",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.459",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Ptpdriv [cm H2O] — 9.6 ± 5.7, 8.3 ± 5.0, 8.6 ± 4.6",
+    "location": "Table 2, row: Ptpdriv"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "MP/Cstat,RS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 0.35,
+     "dispersion_type": "sd",
+     "dispersion": 0.23,
+     "n": 20,
+     "unit": "J/min/mL/cm H2O",
+     "provenance": {
+      "quote": "MP/Cstat,RS [J/min/mL/cm H2O] — 0.35 ± 0.23",
+      "location": "Table 2, row: MP/Cstat,RS"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 0.39,
+     "dispersion_type": "sd",
+     "dispersion": 0.22,
+     "n": 20,
+     "unit": "J/min/mL/cm H2O",
+     "provenance": {
+      "quote": "MP/Cstat,RS [J/min/mL/cm H2O] — 0.39 ± 0.22",
+      "location": "Table 2, row: MP/Cstat,RS"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 0.41,
+     "dispersion_type": "sd",
+     "dispersion": 0.26,
+     "n": 20,
+     "unit": "J/min/mL/cm H2O",
+     "provenance": {
+      "quote": "MP/Cstat,RS [J/min/mL/cm H2O] — 0.41 ± 0.26",
+      "location": "Table 2, row: MP/Cstat,RS"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.098,
+     "p_value_verbatim": "0.098",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min/mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.098",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.027,
+     "p_value_verbatim": "0.027",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min/mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.027",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min/mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "MP/Cstat,RS [J/min/mL/cm H2O] — 0.35 ± 0.23, 0.39 ± 0.22, 0.41 ± 0.26",
+    "location": "Table 2, row: MP/Cstat,RS"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "MPtp",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 3.8,
+     "dispersion_type": "sd",
+     "dispersion": 1.5,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "MPtp [J/min] — 3.8 ± 1.5",
+      "location": "Table 2, row: MPtp"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 4.7,
+     "dispersion_type": "sd",
+     "dispersion": 1.9,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "MPtp [J/min] — 4.7 ± 1.9",
+      "location": "Table 2, row: MPtp"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 5.1,
+     "dispersion_type": "sd",
+     "dispersion": 2.1,
+     "n": 20,
+     "unit": "J/min",
+     "provenance": {
+      "quote": "MPtp [J/min] — 5.1 ± 2.1",
+      "location": "Table 2, row: MPtp"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.107,
+     "p_value_verbatim": "0.107",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "J/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.107",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "MPtp [J/min] — 3.8 ± 1.5, 4.7 ± 1.9, 5.1 ± 2.1",
+    "location": "Table 2, row: MPtp"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Cstat,RS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 19.9,
+     "dispersion_type": "sd",
+     "dispersion": 9.9,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,RS [mL/cm H2O] — 19.9 ± 9.9",
+      "location": "Table 2, row: Cstat,RS"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 21.6,
+     "dispersion_type": "sd",
+     "dispersion": 10.5,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,RS [mL/cm H2O] — 21.6 ± 10.5",
+      "location": "Table 2, row: Cstat,RS"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 21.7,
+     "dispersion_type": "sd",
+     "dispersion": 10.9,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,RS [mL/cm H2O] — 21.7 ± 10.9",
+      "location": "Table 2, row: Cstat,RS"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.246,
+     "p_value_verbatim": "0.246",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.246",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.207,
+     "p_value_verbatim": "0.207",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.207",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Cstat,RS [mL/cm H2O] — 19.9 ± 9.9, 21.6 ± 10.5, 21.7 ± 10.9",
+    "location": "Table 2, row: Cstat,RS"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Cstat,L",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 32.1,
+     "dispersion_type": "sd",
+     "dispersion": 21.9,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,L [mL/cm H2O] — 32.1 ± 21.9",
+      "location": "Table 2, row: Cstat,L"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 34.5,
+     "dispersion_type": "sd",
+     "dispersion": 20.5,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,L [mL/cm H2O] — 34.5 ± 20.5",
+      "location": "Table 2, row: Cstat,L"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 32.6,
+     "dispersion_type": "sd",
+     "dispersion": 20.0,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,L [mL/cm H2O] — 32.6 ± 20.0",
+      "location": "Table 2, row: Cstat,L"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.144,
+     "p_value_verbatim": "0.144",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.144",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.342,
+     "p_value_verbatim": "0.342",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.342",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Cstat,L [mL/cm H2O] — 32.1 ± 21.9, 34.5 ± 20.5, 32.6 ± 20.0",
+    "location": "Table 2, row: Cstat,L"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Cstat,CW",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 76.9,
+     "dispersion_type": "sd",
+     "dispersion": 44.4,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,CW [mL/cm H2O] — 76.9 ± 44.4",
+      "location": "Table 2, row: Cstat,CW"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 77.4,
+     "dispersion_type": "sd",
+     "dispersion": 53.4,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,CW [mL/cm H2O] — 77.4 ± 53.4",
+      "location": "Table 2, row: Cstat,CW"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 96.5,
+     "dispersion_type": "sd",
+     "dispersion": 68.3,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Cstat,CW [mL/cm H2O] — 96.5 ± 68.3",
+      "location": "Table 2, row: Cstat,CW"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "> 0.999",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.912,
+     "p_value_verbatim": "0.912",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.912",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Cstat,CW [mL/cm H2O] — 76.9 ± 44.4, 77.4 ± 53.4, 96.5 ± 68.3",
+    "location": "Table 2, row: Cstat,CW"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 104,
+     "dispersion_type": "sd",
+     "dispersion": 47,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2 [mmHg] — 104 ± 47",
+      "location": "Table 2, row: PaO2"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 123,
+     "dispersion_type": "sd",
+     "dispersion": 52,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2 [mmHg] — 123 ± 52",
+      "location": "Table 2, row: PaO2"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 116,
+     "dispersion_type": "sd",
+     "dispersion": 47,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2 [mmHg] — 116 ± 47",
+      "location": "Table 2, row: PaO2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.003,
+     "p_value_verbatim": "0.003",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.003",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.173,
+     "p_value_verbatim": "0.173",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.173",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.464,
+     "p_value_verbatim": "0.464",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.464",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PaO2 [mmHg] — 104 ± 47, 123 ± 52, 116 ± 47",
+    "location": "Table 2, row: PaO2"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 43.5,
+     "dispersion_type": "sd",
+     "dispersion": 6.7,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 [mmHg] — 43.5 ± 6.7",
+      "location": "Table 2, row: PaCO2"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 40.9,
+     "dispersion_type": "sd",
+     "dispersion": 4.9,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 [mmHg] — 40.9 ± 4.9",
+      "location": "Table 2, row: PaCO2"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 41.1,
+     "dispersion_type": "sd",
+     "dispersion": 5.4,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 [mmHg] — 41.1 ± 5.4",
+      "location": "Table 2, row: PaCO2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.002,
+     "p_value_verbatim": "0.002",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.002",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.003,
+     "p_value_verbatim": "0.003",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.003",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.713,
+     "p_value_verbatim": "0.713",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.713",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PaCO2 [mmHg] — 43.5 ± 6.7, 40.9 ± 4.9, 41.1 ± 5.4",
+    "location": "Table 2, row: PaCO2"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "HR",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 98.6,
+     "dispersion_type": "sd",
+     "dispersion": 21.1,
+     "n": 20,
+     "unit": "beats/min",
+     "provenance": {
+      "quote": "HR [beats/min] — 98.6 ± 21.1",
+      "location": "Table 2, row: HR"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 95.7,
+     "dispersion_type": "sd",
+     "dispersion": 21.7,
+     "n": 20,
+     "unit": "beats/min",
+     "provenance": {
+      "quote": "HR [beats/min] — 95.7 ± 21.7",
+      "location": "Table 2, row: HR"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 96.1,
+     "dispersion_type": "sd",
+     "dispersion": 19.5,
+     "n": 20,
+     "unit": "beats/min",
+     "provenance": {
+      "quote": "HR [beats/min] — 96.1 ± 19.5",
+      "location": "Table 2, row: HR"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.469,
+     "p_value_verbatim": "0.469",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "beats/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.469",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.469,
+     "p_value_verbatim": "0.469",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "beats/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.469",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.84,
+     "p_value_verbatim": "0.840",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "beats/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.840",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "HR [beats/min] — 98.6 ± 21.1, 95.7 ± 21.7, 96.1 ± 19.5",
+    "location": "Table 2, row: HR"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "MAP",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 84.7,
+     "dispersion_type": "sd",
+     "dispersion": 12.2,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP [mmHg] — 84.7 ± 12.2",
+      "location": "Table 2, row: MAP"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 83.7,
+     "dispersion_type": "sd",
+     "dispersion": 13.2,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP [mmHg] — 83.7 ± 13.2",
+      "location": "Table 2, row: MAP"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 83.2,
+     "dispersion_type": "sd",
+     "dispersion": 12.7,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP [mmHg] — 83.2 ± 12.7",
+      "location": "Table 2, row: MAP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.911,
+     "p_value_verbatim": "0.911",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.911",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.911,
+     "p_value_verbatim": "0.911",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.911",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.911,
+     "p_value_verbatim": "0.911",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.911",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "MAP [mmHg] — 84.7 ± 12.2, 83.7 ± 13.2, 83.2 ± 12.7",
+    "location": "Table 2, row: MAP"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "CVP",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 13.8,
+     "dispersion_type": "sd",
+     "dispersion": 3.3,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "CVP [mmHg] — 13.8 ± 3.3",
+      "location": "Table 2, row: CVP"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 16.3,
+     "dispersion_type": "sd",
+     "dispersion": 4.6,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "CVP [mmHg] — 16.3 ± 4.6",
+      "location": "Table 2, row: CVP"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 16.7,
+     "dispersion_type": "sd",
+     "dispersion": 4.0,
+     "n": 20,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "CVP [mmHg] — 16.7 ± 4.0",
+      "location": "Table 2, row: CVP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.007,
+     "p_value_verbatim": "0.007",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.007",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.003,
+     "p_value_verbatim": "0.003",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.003",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.613,
+     "p_value_verbatim": "0.613",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.613",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "CVP [mmHg] — 13.8 ± 3.3, 16.3 ± 4.6, 16.7 ± 4.0",
+    "location": "Table 2, row: CVP"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "SV",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 80.6,
+     "dispersion_type": "sd",
+     "dispersion": 22.4,
+     "n": 20,
+     "unit": "mL",
+     "provenance": {
+      "quote": "SV [mL] — 80.6 ± 22.4",
+      "location": "Table 2, row: SV"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 70.5,
+     "dispersion_type": "sd",
+     "dispersion": 23.5,
+     "n": 20,
+     "unit": "mL",
+     "provenance": {
+      "quote": "SV [mL] — 70.5 ± 23.5",
+      "location": "Table 2, row: SV"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 68.3,
+     "dispersion_type": "sd",
+     "dispersion": 23.3,
+     "n": 20,
+     "unit": "mL",
+     "provenance": {
+      "quote": "SV [mL] — 68.3 ± 23.3",
+      "location": "Table 2, row: SV"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPCstat,RS"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "< 0.001",
+      "location": "Table 2, p-value column: PEEPELSO vs. PEEPPtpexp"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_cstat_rs minus peep_ptpexp",
+     "arm_label_a": "peep_cstat_rs",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.333,
+     "p_value_verbatim": "0.333",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "0.333",
+      "location": "Table 2, p-value column: PEEPCstat,RS vs. PEEPPtpexp"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "SV [mL] — 80.6 ± 22.4, 70.5 ± 23.5, 68.3 ± 23.3",
+    "location": "Table 2, row: SV"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Oxygen delivery",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "during study protocol"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Calculated from cardiac output and arterial oxygen content.",
+    "provenance": {
+     "quote": "hemodynamic parameters and gas-exchange were measured",
+     "location": "Methods, Statistical analysis"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_elso",
+     "value_type": "mean",
+     "value": 978,
+     "dispersion_type": "sd",
+     "dispersion": 266,
+     "n": 20,
+     "unit": "mL/min",
+     "provenance": {
+      "quote": "978 ± 266",
+      "location": "Results, para 2"
+     }
+    },
+    {
+     "arm_label": "peep_cstat_rs",
+     "value_type": "mean",
+     "value": 853,
+     "dispersion_type": "sd",
+     "dispersion": 197,
+     "n": 20,
+     "unit": "mL/min",
+     "provenance": {
+      "quote": "853 ± 197",
+      "location": "Results, para 2"
+     }
+    },
+    {
+     "arm_label": "peep_ptpexp",
+     "value_type": "mean",
+     "value": 829,
+     "dispersion_type": "sd",
+     "dispersion": 214,
+     "n": 20,
+     "unit": "mL/min",
+     "provenance": {
+      "quote": "829 ± 214",
+      "location": "Results, para 2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_cstat_rs",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_cstat_rs",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 2"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_elso minus peep_ptpexp",
+     "arm_label_a": "peep_elso",
+     "arm_label_b": "peep_ptpexp",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "repeated measures one-way ANOVA followed by Holm-Sidak's post-hoc test",
+     "unit": "mL/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "p < 0.001",
+      "location": "Results, para 2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "oxygen delivery (DO2), which was reduced with PEEPCstat,RS and PEEPPtpexp (978 ± 266 vs. 853 ± 197 mL/min, p < 0.001 and 978 ± 266 vs. 829 ± 214 mL/min, p < 0.001, respectively)",
+    "location": "Results, para 2"
+   }
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": null,
+  "placement_failure_reasons": {
+   "value": null,
+   "provenance": null
+  },
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": {
+   "value": null,
+   "provenance": null
+  },
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": {
+   "value": null,
+   "provenance": null
+  },
+  "protocol_deviations": {
+   "value": null,
+   "provenance": null
+  },
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "unclear",
+  "ptp_target_subgroups": [
+   "absolute_zero_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_only: all 20 enrolled with severe ARDS per Berlin definition. obese_population: mean BMI 31.1 kg/m2 ≥ 30 per codebook rule. timing_subgroup unclear: timing is measured from ECMO start (mean 2 ± 1 days before study), not from intubation, ICU admission, or ARDS onset; the codebook reserves early/late labels for those reference events. ptp_target_subgroups: only the PEEPPtpexp condition targets end-expiratory transpulmonary pressure (0 cmH2O); the other two conditions are fixed PEEP and best compliance, which are not transpulmonary-pressure targets."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "COHORTS.md suspects a mannheim_boesing cluster of boesing_2022 (n=40) and boesing_2024a (n=55) sharing a supine/prone esophageal-pressure-guided protocol, with boesing_2024b described as the VV-ECMO population. This report does not match that description: it is an n=20 VV-ECMO study (all patients on V–V ECMO, no prone positioning protocol), registered DRKS00013967 (registered 02/09/2018), ethics 2016-601 N-MA, University Medical Centre Mannheim. The prone-positioning study by the same group is cited here as reference [17] (Boesing C et al., Crit Care 2022;26:82), a separate publication and apparently a separate protocol. The COHORTS.md description of boesing_2024a (n=55, supine/prone protocol) appears inconsistent with the actual content of this PDF; the cluster assignment needs adjudication against the other Boesing records. Compared: trial registration (DRKS00013967, this paper), population (VV-ECMO, n=20), and the cited 2022 prone study as a distinct reference.",
+  "unclear_items": [
+   "extraction_flags.cohort_id / overlap: COHORTS.md's description of boesing_2024a (n=55, supine/prone protocol) does not match this report (n=20, VV-ECMO); cohort clustering among boesing_2022/2024a/2024b needs adjudication.",
+   "intervention.ptp_computation.method: coded absolute_pes_subtraction, but the paper only says formulas are 'detailed in the Supplement'; the Supplement was not provided.",
+   "intervention.balloon_calibration.method: filling volume was manufacturer-recommended (2 mL air) with validity checked by an occlusion ratio of 0.8–1.2; the enum does not cleanly cover this combination, so manufacturer_recommended_volume was coded with the occlusion check in position_verification.",
+   "design.randomised: coded false because the paper states the sequence of PEEP titration strategies was not randomized; no other randomisation is described.",
+   "arms[peep_ptpexp].peep_applied_cmh2o dispersion: abstract reports 17.3 ± 4.0 cmH2O but Table 2 reports 17.3 ± 4.7 cmH2O; Table 2 value recorded, discrepancy flagged.",
+   "feasibility.n_placement_attempted / n_placement_successful: esophageal pressure was measured in all 20 patients but placement success is not explicitly reported; left null rather than derived.",
+   "population.covid19_population: not_reported; cause-of-ARDS breakdown lists only bacterial pneumonia, influenza pneumonia, and non-pulmonary sepsis.",
+   "outcomes: ICU mortality (7/20, 35%) is reported only in Table 1 as a cohort-level variable and has no per-condition data; recorded in population.additional_baseline rather than as an outcome entry.",
+   "subgroup_flags.timing_subgroup: coded unclear because the reference event is ECMO start, not one of the codebook's qualifying events."
+  ],
+  "data_only_in_figure": [
+   "Mechanical Power per condition shown in Fig. 1A (values also in Abstract text)",
+   "Lung Stress per condition shown in Fig. 1B (values in Results text)",
+   "Cardiac Output per condition shown in Fig. 3A (values in Results text)",
+   "Oxygen delivery per condition shown in Fig. 3B (values in Results text)",
+   "Individual changes in CO and DO2 per strategy (Fig. S5, Fig. S6, Supplement)",
+   "Individual PEEP differences between strategies (Fig. S3, Supplement)"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Correlations reported: ΔPEEP vs ΔMechanical Power (rho = 0.929, r2 = 0.893, p < 0.001); MP vs lung stress (rho = 0.659, r2 = 0.441, p < 0.001); MP vs MPtp (rho = 0.890, r2 = 0.820, p < 0.001) — these are across-strategy correlations, not condition contrasts, so they are not recorded as paired_effects. The study was conducted as part of a multipurpose study (reference [3], Graf PT et al., J Intensive Care 2022) — potential cohort overlap with that report should be checked if it enters the review. No omnibus ANOVA p-values are printed per variable; Table 2 reports only Holm-Sidak-adjusted pairwise p-values. ECMO blood-flow and gas-flow rates did not differ between strategies (Table S1, Supplement not provided)."
+ }
+}

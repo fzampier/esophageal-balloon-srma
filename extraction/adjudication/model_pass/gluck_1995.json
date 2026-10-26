@@ -1,0 +1,54 @@
+{
+  "study_id": "gluck_1995",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[duration mechanical ventilation duration of mech @duration until event]",
+      "decision": "glm",
+      "reason": "Both versions carry the same paired contrast (1.68 days, n=23, paired t-test, p<.05); GLM's timepoint label 'after study entry' is verbatim, DeepSeek leaves it null. The clinical-arm value itself is a co-author ruling (7.81), not decided here; note the paper computes the 1.68-day difference against 7.02, not 7.81.",
+      "evidence": "p. 12, Results para 2"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning weaning decisio @duration until event]",
+      "decision": "deepseek",
+      "reason": "GLM's entry records only a total of 138 per arm and no events; the 92% correct is pooled across both protocols, not per arm. The per-arm intolerance counts are kept under DeepSeek's 'Weaning decisions not tolerated'.",
+      "evidence": "p. 10, Results para 1"
+    },
+    {
+      "target": "outcomes[other aggressiveness of weaning protocol more ag @duration until event]",
+      "decision": "glm",
+      "reason": "Esophageal more aggressive 56/138, clinical more aggressive 16/138, McNemar chi2 = (56-16-1)^2/72 = 21.1, p<.001 all match Table 6, which exists only as an image.",
+      "evidence": "p. 11, Table 6 (page image)"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation calculated durat @duration until event]",
+      "decision": "glm",
+      "reason": "Drop: 7.81 +/- 2.8 days for the clinical protocol is already the clinical arm of the duration-of-ventilation outcome; keeping it here records the same reading twice.",
+      "evidence": "p. 12, Results para 2"
+    },
+    {
+      "target": "outcomes[other comparison of esophageal and clinical wean @end of study]",
+      "decision": "glm",
+      "reason": "Drop: restates the McNemar aggressiveness comparison kept, with its per-protocol counts, under the aggressiveness outcome.",
+      "evidence": "p. 10 Results para 1; p. 11 Table 6"
+    },
+    {
+      "target": "outcomes[other weaning decisions not tolerated dichotomou @end of study]",
+      "decision": "deepseek",
+      "reason": "Five of 138 clinical-protocol and six of 138 esophageal-protocol decisions were not tolerated; both protocols were scored at each of the 138 decisions.",
+      "evidence": "p. 10 Results para 1; p. 11 Table 6 note"
+    },
+    {
+      "id": "7f0d05487c",
+      "decision": "glm",
+      "reason": "The comparator is a scored clinical-parameter weaning protocol with one step of clinician latitude, not unstructured usual care; 'other' fits, 'clinician_discretion_usual_care' does not.",
+      "evidence": "Methods, weaning protocols"
+    },
+    {
+      "id": "db82ba423a",
+      "decision": "deepseek",
+      "reason": "The balloon was placed once the patient met the inclusion requirements, i.e. at study entry; the codebook codes timing known only relative to entry as enrolment.",
+      "evidence": "Methods para 2; CODEBOOK timing ruling"
+    }
+  ]
+}

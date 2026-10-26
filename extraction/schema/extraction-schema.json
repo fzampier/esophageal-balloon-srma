@@ -1,0 +1,690 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fzampier/esophageal_balloon_metanalysis/extraction-schema/v1.2.0",
+  "title": "Esophageal Balloon SR/MA — Study Extraction Record",
+  "description": "One record per study report. Populated independently by two LLM reviewers, then diffed and adjudicated. Absent data is null. Never infer; never convert units or summary statistics at extraction time.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_meta", "citation", "eligibility", "design", "population", "intervention", "comparator", "arms", "outcomes", "feasibility", "subgroup_flags", "extraction_flags"],
+
+  "properties": {
+
+    "record_meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["study_id", "extractor", "model", "extraction_date", "source_file", "schema_version"],
+      "properties": {
+        "study_id": {
+          "type": "string",
+          "pattern": "^[a-z]+(_[a-z]+)?_[0-9]{4}[a-z]?$",
+          "description": "firstauthor_year, lowercase, no accents. Append a letter for same-author-same-year collisions. Example: talmor_2008, baedorf_kassis_2016."
+        },
+        "extractor": { "enum": ["glm", "deepseek", "human", "reconciled"] },
+        "model": { "type": "string", "description": "Exact model identifier, e.g. glm-5.3-flash or deepseek-v4-flash-vision-exp. On a reconciled record, the model or person that performed the adjudication." },
+        "extraction_date": { "type": "string", "format": "date" },
+        "source_file": { "type": "string", "description": "Path relative to repository root, e.g. studies/fulltext/talmor2008.pdf" },
+        "schema_version": { "const": "1.2.0", "description": "Must equal the schema's own version. A record built against an older schema fails validation rather than silently claiming currency. See CHANGELOG.md." },
+        "adjudication_notes": { "type": ["string", "null"], "description": "Reconciled records only: what was disputed and how it was resolved." }
+      }
+    },
+
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["first_author", "year", "title", "journal", "is_primary_report"],
+      "properties": {
+        "first_author": { "type": "string" },
+        "year": { "type": "integer", "minimum": 1980, "maximum": 2030 },
+        "title": { "type": "string" },
+        "journal": { "type": "string" },
+        "doi": { "type": ["string", "null"] },
+        "pmid": { "type": ["string", "null"] },
+        "trial_registration": { "type": ["string", "null"], "description": "NCT or equivalent identifier, verbatim." },
+        "trial_acronym": { "type": ["string", "null"], "description": "e.g. EPVent, EPVent-2." },
+        "is_primary_report": {
+          "type": "boolean",
+          "description": "True if this is the principal report of the cohort. False for secondary analyses, reanalyses, and long-term follow-up papers of a cohort reported elsewhere in this review."
+        },
+        "report_type": {
+          "enum": ["primary", "secondary_analysis", "reanalysis", "long_term_followup", "pooled_analysis", "substudy"]
+        }
+      }
+    },
+
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Each protocol criterion assessed independently. include_final must be false if any criterion fails.",
+      "required": ["include_final", "criteria"],
+      "properties": {
+        "include_final": { "type": "boolean" },
+        "primary_exclusion_reason": {
+          "type": ["string", "null"],
+          "enum": ["pediatric", "non_human", "case_report_or_series_under_5", "diagnostic_use_only_no_ventilator_change", "abstract_without_full_publication", "not_invasively_ventilated", "not_icu", "no_clinical_or_clinically_relevant_outcome", "balloon_not_used_to_guide_peep", "not_english", "duplicate_of_included_cohort", null]
+        },
+        "criteria": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["adults_18_plus", "invasive_mechanical_ventilation", "icu_setting", "balloon_guided_peep_titration", "reports_eligible_outcome", "sample_size_at_least_5", "eligible_design", "full_publication_english"],
+          "properties": {
+            "adults_18_plus": { "$ref": "#/$defs/criterionJudgement" },
+            "invasive_mechanical_ventilation": { "$ref": "#/$defs/criterionJudgement" },
+            "icu_setting": { "$ref": "#/$defs/criterionJudgement" },
+            "balloon_guided_peep_titration": {
+              "allOf": [{ "$ref": "#/$defs/criterionJudgement" }],
+              "description": "Esophageal manometry must have influenced ventilator management. Purely descriptive or diagnostic measurement fails this criterion."
+            },
+            "reports_eligible_outcome": { "$ref": "#/$defs/criterionJudgement" },
+            "sample_size_at_least_5": { "$ref": "#/$defs/criterionJudgement" },
+            "eligible_design": { "$ref": "#/$defs/criterionJudgement" },
+            "full_publication_english": { "$ref": "#/$defs/criterionJudgement" }
+          }
+        }
+      }
+    },
+
+    "design": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["study_design", "comparison_structure", "centers", "countries"],
+      "properties": {
+        "study_design": {
+          "enum": ["rct", "cluster_rct", "prospective_cohort", "retrospective_cohort", "case_control", "crossover_physiologic", "before_after_single_group", "other"]
+        },
+        "study_design_verbatim": { "$ref": "#/$defs/stringField" },
+        "comparison_structure": {
+          "enum": ["parallel_arms", "within_patient_crossover", "single_group_no_comparison"],
+          "description": "parallel_arms: different patients receive different strategies. within_patient_crossover: the same patients are studied under two or more PEEP strategies, including simple before/after physiologic protocols. single_group_no_comparison: one strategy only, outcomes described but not contrasted."
+        },
+        "randomised": { "type": ["boolean", "null"] },
+        "allocation_ratio": { "type": ["string", "null"] },
+        "blinding": { "$ref": "#/$defs/stringField" },
+        "centers": { "enum": ["single", "multi", "not_reported"] },
+        "n_centers": { "$ref": "#/$defs/integerField" },
+        "countries": { "type": "array", "items": { "type": "string" }, "description": "Country names in English. Empty array if not reported. If inferred from a city or institution rather than stated, say so in location_provenance." },
+        "location_provenance": { "$ref": "#/$defs/provenance", "description": "Source for countries and centres, including when the country was inferred from an institution name." },
+        "planned_sample_size": { "$ref": "#/$defs/integerField" },
+        "sample_size_calculation": { "$ref": "#/$defs/stringField", "description": "The power calculation as stated: assumed effect, power, alpha." },
+        "stopped_early": { "type": ["boolean", "null"], "description": "True if enrolment ended before the planned sample size was reached, for any reason." },
+        "stopping_rule": { "$ref": "#/$defs/stringField", "description": "Why it stopped and under what rule — interim boundary, futility, slow enrolment, funding. A trial stopped early for benefit at an interim analysis will overstate its effect, so this is load-bearing for interpretation." },
+        "setting": { "$ref": "#/$defs/stringField", "description": "Unit type, e.g. medical ICU, surgical ICU, mixed ICU." },
+        "enrolment_start": { "type": ["string", "null"], "description": "YYYY-MM or YYYY." },
+        "enrolment_end": { "type": ["string", "null"] },
+        "consecutive_enrolment": { "type": ["boolean", "null"] },
+        "funding_source": { "$ref": "#/$defs/stringField" },
+        "industry_funded": { "type": ["boolean", "null"] },
+        "conflicts_of_interest_declared": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["n_enrolled", "n_analysed", "population_description"],
+      "properties": {
+        "n_enrolled": { "$ref": "#/$defs/integerField" },
+        "n_analysed": { "$ref": "#/$defs/integerField" },
+        "population_description": { "$ref": "#/$defs/stringField", "description": "Verbatim description of who was studied." },
+        "inclusion_criteria": { "$ref": "#/$defs/stringField" },
+        "exclusion_criteria": { "$ref": "#/$defs/stringField" },
+        "age": { "$ref": "#/$defs/continuousStat" },
+        "sex_female": { "$ref": "#/$defs/countStat" },
+        "sex_male": { "$ref": "#/$defs/countStat", "description": "Record whichever sex the paper reports. Do not derive one from the other." },
+        "bmi": { "$ref": "#/$defs/continuousStat" },
+        "weight_kg": { "$ref": "#/$defs/continuousStat", "description": "Actual or measured body weight. Predicted body weight goes in its own field." },
+        "predicted_body_weight_kg": { "$ref": "#/$defs/continuousStat" },
+        "ards_status": {
+          "enum": ["all_ards", "mixed_some_ards", "no_ards", "not_reported"],
+          "description": "Whether the enrolled population was defined by ARDS."
+        },
+        "ards_definition_used": { "$ref": "#/$defs/stringField", "description": "e.g. Berlin 2012, AECC 1994, Kigali." },
+        "n_ards": { "$ref": "#/$defs/countStat" },
+        "ards_severity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mild": { "$ref": "#/$defs/countStat" },
+            "moderate": { "$ref": "#/$defs/countStat" },
+            "severe": { "$ref": "#/$defs/countStat" }
+          }
+        },
+        "covid19_population": { "enum": ["all", "some", "none", "not_reported", "not_applicable"] },
+        "cause_of_respiratory_failure": { "$ref": "#/$defs/stringField" },
+        "pao2_fio2_baseline": { "$ref": "#/$defs/continuousStat" },
+        "apache_ii": { "$ref": "#/$defs/continuousStat" },
+        "sofa": { "$ref": "#/$defs/continuousStat" },
+        "saps_ii": { "$ref": "#/$defs/continuousStat" },
+        "n_prone_positioning": { "$ref": "#/$defs/countStat" },
+        "n_neuromuscular_blockade": { "$ref": "#/$defs/countStat" },
+        "n_ecmo": { "$ref": "#/$defs/countStat" },
+        "n_vasopressors": { "$ref": "#/$defs/countStat" },
+        "additional_baseline": {
+          "type": "array",
+          "description": "Reported baseline characteristics with no dedicated field: blood gases, lactate, heart rate, blood pressure, central venous pressure, organ-failure counts, comorbidities. Use this rather than dropping them. Name each verbatim as the paper does.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name_verbatim"],
+            "properties": {
+              "name_verbatim": { "type": "string" },
+              "arm_label": { "type": ["string", "null"], "description": "Null when reported for the whole cohort." },
+              "continuous": { "$ref": "#/$defs/continuousStat" },
+              "count": { "$ref": "#/$defs/countStat" }
+            }
+          }
+        },
+        "baseline_by_arm": {
+          "type": "array",
+          "description": "Baseline characteristics reported separately per arm. When a paper reports characteristics only by arm — the norm in two-arm trials — this is the primary record and the cohort-level fields above stay null. Do not pool arms to fill the cohort-level fields; that is a derivation the analysis should make, not the extractor.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["arm_label"],
+            "properties": {
+              "arm_label": { "type": "string" },
+              "n": { "$ref": "#/$defs/integerField" },
+              "age": { "$ref": "#/$defs/continuousStat" },
+              "sex_female": { "$ref": "#/$defs/countStat" },
+              "bmi": { "$ref": "#/$defs/continuousStat" },
+              "pao2_fio2_baseline": { "$ref": "#/$defs/continuousStat" },
+              "apache_ii": { "$ref": "#/$defs/continuousStat" },
+              "sofa": { "$ref": "#/$defs/continuousStat" }
+            }
+          }
+        }
+      }
+    },
+
+    "intervention": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The esophageal-pressure-guided strategy. This section carries the methodological heterogeneity that drives the review's interpretation.",
+      "required": ["balloon_calibration", "ptp_computation", "peep_titration_target"],
+      "properties": {
+        "device_brand": { "$ref": "#/$defs/stringField", "description": "Catheter or balloon product name and manufacturer, verbatim." },
+        "balloon_inflation_volume_ml": { "$ref": "#/$defs/continuousStat" },
+        "balloon_calibration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method"],
+          "properties": {
+            "method": {
+              "enum": ["baydur_occlusion_test", "dynamic_occlusion_test", "minimal_volume", "best_compliance_or_pressure_volume_filling", "manufacturer_recommended_volume", "fixed_volume_no_validation", "signal_quality_verification_only", "not_reported", "other"],
+              "description": "How balloon filling volume was chosen. fixed_volume_no_validation: a stated filling volume with no occlusion test or acceptance criterion, common in older reports. signal_quality_verification_only: no filling calibration reported, but signal validity checked by other means such as cardiac oscillations or a gastric pressure rise — record the detail in position_verification. Reserve not_reported for silence on both filling and validity."
+            },
+            "method_verbatim": { "$ref": "#/$defs/stringField" },
+            "position_verification": { "$ref": "#/$defs/stringField", "description": "How placement was confirmed: cardiac oscillations, chest radiograph, occlusion ratio, depth." },
+            "occlusion_ratio_acceptance": { "$ref": "#/$defs/stringField", "description": "Acceptance threshold, e.g. ratio 0.8 to 1.2." }
+          }
+        },
+        "ptp_computation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method"],
+          "properties": {
+            "method": {
+              "enum": ["absolute_pes_subtraction", "elastance_derived", "release_derived", "both_absolute_and_elastance", "not_reported", "other"],
+              "description": "absolute_pes_subtraction: PL = Paw − Pes, the Talmor/EPVent approach. elastance_derived: PL = Paw × (E_lung / E_respiratory_system). release_derived: PL from airway pressure at zero flow after PEEP release."
+            },
+            "method_verbatim": { "$ref": "#/$defs/stringField" },
+            "pes_correction_applied": { "$ref": "#/$defs/stringField", "description": "Any correction for mediastinal weight or baseline offset, e.g. a fixed 5 cmH2O subtraction." }
+          }
+        },
+        "peep_titration_target": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "The rule the intervention arm followed. Record verbatim numeric targets.",
+          "required": ["strategy"],
+          "properties": {
+            "strategy": {
+              "enum": ["end_expiratory_ptp_positive_range", "end_expiratory_ptp_zero", "end_inspiratory_ptp_limit", "driving_ptp_target", "combined_end_expiratory_and_end_inspiratory", "other", "not_reported"]
+            },
+            "strategy_verbatim": { "$ref": "#/$defs/stringField" },
+            "end_expiratory_ptp_target_low_cmh2o": { "$ref": "#/$defs/numberField" },
+            "end_expiratory_ptp_target_high_cmh2o": { "$ref": "#/$defs/numberField" },
+            "end_inspiratory_ptp_limit_cmh2o": { "$ref": "#/$defs/numberField" },
+            "driving_ptp_limit_cmh2o": { "$ref": "#/$defs/numberField" },
+            "peep_upper_limit_cmh2o": { "$ref": "#/$defs/numberField" },
+            "titration_frequency": { "$ref": "#/$defs/stringField", "description": "How often PEEP was re-titrated, e.g. every 4 hours, daily, once." }
+          }
+        },
+        "co_interventions": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recruitment_manoeuvre": { "type": ["boolean", "null"] },
+            "recruitment_manoeuvre_detail": { "$ref": "#/$defs/stringField" },
+            "tidal_volume_target": { "$ref": "#/$defs/stringField", "description": "Verbatim, e.g. 6 mL/kg predicted body weight." },
+            "plateau_or_ptp_ceiling": { "$ref": "#/$defs/stringField" },
+            "protocolised_weaning": { "type": ["boolean", "null"] },
+            "other_co_interventions": { "$ref": "#/$defs/stringField" }
+          }
+        },
+        "timing": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "When balloon-guided management began. Needed for the timing subgroup.",
+          "properties": {
+            "reference_event": { "enum": ["icu_admission", "intubation", "ards_onset", "enrolment", "not_reported", "other", null] },
+            "hours_from_reference": { "$ref": "#/$defs/continuousStat" },
+            "timing_verbatim": { "$ref": "#/$defs/stringField" }
+          }
+        },
+        "duration_of_pes_guidance": { "$ref": "#/$defs/stringField", "description": "How long the strategy was applied, verbatim." }
+      }
+    },
+
+    "comparator": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "For parallel_arms, the control strategy. For within_patient_crossover, the reference condition the patients were studied under first or as baseline.",
+      "required": ["comparator_types"],
+      "properties": {
+        "comparator_types": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Every comparator strategy the study runs. An array because within-patient studies commonly apply more than one — for example a clinician-set baseline and a decremental PEEP trial in the same patients.",
+          "items": {
+            "enum": ["ardsnet_low_peep_fio2_table", "ardsnet_high_peep_fio2_table", "empirical_high_peep", "clinician_discretion_usual_care", "best_compliance_peep", "decremental_peep_trial", "fixed_peep", "zeep", "no_comparator", "other", "not_reported"]
+          }
+        },
+        "comparator_verbatim": { "$ref": "#/$defs/stringField" },
+        "crossover_order": { "$ref": "#/$defs/stringField", "description": "within_patient_crossover only: sequence and whether it was randomised." },
+        "washout_or_stabilisation": { "$ref": "#/$defs/stringField", "description": "within_patient_crossover only: time held at each condition before measurement." }
+      }
+    },
+
+    "arms": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Labelled arms for parallel_arms designs, or labelled conditions for within_patient_crossover. Outcome data entries reference these labels exactly.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "role"],
+        "properties": {
+          "label": { "type": "string", "description": "Short stable label used by outcomes[].data[].arm_label, e.g. 'pes_guided' or 'ardsnet_low_peep'." },
+          "label_verbatim": { "type": ["string", "null"], "description": "How the paper names this arm or condition." },
+          "role": {
+            "enum": ["intervention", "comparator", "reference_condition", "single_group", "alternative_titration_condition", "injury_probe_condition", "positional_variant", "other_condition"],
+            "description": "alternative_titration_condition: a second PEEP-setting strategy also under test, such as a decremental PEEP trial run alongside esophageal guidance. injury_probe_condition: a condition applied to demonstrate a mechanism rather than as a candidate therapy, such as ZEEP. positional_variant: the same strategy at a different body position, such as head-of-bed 30 degrees or prone."
+          },
+          "sequence_position": { "type": ["integer", "null"], "description": "within_patient_crossover only: where this condition fell in the applied sequence, 1-based." },
+          "n_randomised": { "$ref": "#/$defs/integerField" },
+          "n_analysed": { "$ref": "#/$defs/integerField" },
+          "peep_applied_cmh2o": { "$ref": "#/$defs/continuousStat", "description": "PEEP actually delivered in this arm or condition, if reported." }
+        }
+      }
+    },
+
+    "outcomes": {
+      "type": "array",
+      "description": "One entry per outcome per timepoint. A study reporting 28-day and 60-day mortality yields two entries.",
+      "items": { "$ref": "#/$defs/outcome" }
+    },
+
+    "feasibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Technical success, safety of the balloon itself, and protocol adherence. Explicitly required by the protocol.",
+      "properties": {
+        "n_placement_attempted": { "$ref": "#/$defs/integerField" },
+        "n_placement_successful": { "$ref": "#/$defs/integerField" },
+        "placement_failure_reasons": { "$ref": "#/$defs/stringField" },
+        "n_measurement_not_obtainable": { "$ref": "#/$defs/integerField", "description": "Balloon placed successfully but no usable measurement obtained — inadequate sedation, unstable signal, artefact. Distinct from failed placement and from protocol deviation." },
+        "measurement_failure_reasons": { "$ref": "#/$defs/stringField" },
+        "balloon_related_complications": {
+          "type": "array",
+          "description": "Adverse events attributed to the balloon or its placement, not to ventilation generally.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["event"],
+            "properties": {
+              "event": { "type": "string", "description": "Verbatim event name, e.g. epistaxis, arrhythmia, esophageal perforation, malposition." },
+              "n_events": { "$ref": "#/$defs/integerField" },
+              "n_at_risk": { "$ref": "#/$defs/integerField" },
+              "provenance": { "$ref": "#/$defs/provenance" }
+            }
+          }
+        },
+        "complications_explicitly_none": { "type": ["boolean", "null"], "description": "True only if the paper states no balloon-related complications occurred. Distinct from silence." },
+        "protocol_adherence": { "$ref": "#/$defs/stringField", "description": "Verbatim adherence measure, e.g. percentage of timepoints within target Ptp range." },
+        "protocol_deviations": { "$ref": "#/$defs/stringField" },
+        "n_crossover_between_arms": { "$ref": "#/$defs/integerField" },
+        "n_lost_to_followup": { "$ref": "#/$defs/integerField" }
+      }
+    },
+
+    "subgroup_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Precomputed classifications for the protocol's planned subgroup analyses. Each must be supportable by fields recorded elsewhere in this record.",
+      "required": ["ards_subgroup", "obesity_subgroup", "timing_subgroup", "ptp_target_subgroups"],
+      "properties": {
+        "ards_subgroup": { "enum": ["ards_only", "mixed", "non_ards", "unclear"] },
+        "obesity_subgroup": {
+          "enum": ["obese_population", "mixed_bmi", "non_obese_population", "unclear"],
+          "description": "obese_population if enrolment required obesity or mean BMI is at least 30 kg/m2."
+        },
+        "timing_subgroup": {
+          "enum": ["early_within_48h", "late_after_48h", "mixed", "unclear"],
+          "description": "Time from the intervention's stated reference event to start of balloon-guided management."
+        },
+        "ptp_target_subgroups": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Every transpulmonary pressure target strategy the study applies. An array because within-patient studies often apply two titration strategies to the same patients. A study contributes to each subgroup it lists.",
+          "items": {
+            "enum": ["absolute_positive_end_expiratory_ptp", "absolute_zero_end_expiratory_ptp", "elastance_derived", "driving_ptp", "other", "unclear"]
+          }
+        },
+        "classification_notes": { "type": ["string", "null"], "description": "Why each borderline classification was chosen." }
+      }
+    },
+
+    "reported_subgroups": {
+      "type": "array",
+      "description": "Subgroup analyses the paper itself reports. Do not create these; only transcribe.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["subgroup_variable", "outcome_name"],
+        "properties": {
+          "subgroup_variable": { "type": "string" },
+          "outcome_name": { "type": "string" },
+          "prespecified": { "type": ["boolean", "null"] },
+          "result_verbatim": { "type": ["string", "null"] },
+          "interaction_p_value": { "type": ["number", "null"] },
+          "provenance": { "$ref": "#/$defs/provenance" }
+        }
+      }
+    },
+
+    "extraction_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cohort_id", "overlapping_cohort_with", "unclear_items"],
+      "properties": {
+        "cohort_id": {
+          "type": ["string", "null"],
+          "description": "Stable label for the underlying patient cohort, shared by every report of it: epvent1, epvent2, mgh_lung_rescue, mannheim_boesing, angers. Reports sharing a cohort_id contribute to a pooled estimate at most once. Null only when the cohort is unique to this report.",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "overlapping_cohort_with": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "study_id values of other records in this review that report the same patients, in whole or part. Empty array if none. Check trial registration numbers, enrolment dates, and centre names before concluding none."
+        },
+        "overlap_evidence": { "type": ["string", "null"] },
+        "unclear_items": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Fields the extractor could not resolve confidently, with a note on why."
+        },
+        "data_only_in_figure": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Outcomes whose numbers appear only in a figure and would require digitisation."
+        },
+        "contact_author_needed": { "type": "boolean" },
+        "general_notes": { "type": ["string", "null"] }
+      }
+    }
+  },
+
+  "$defs": {
+
+    "provenance": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["quote", "location"],
+      "description": "Required whenever a value is present. Omit or set null only when the value is null.",
+      "properties": {
+        "quote": { "type": "string", "minLength": 3, "description": "Verbatim text from the source: the sentence, or the table row and cell contents. Do not paraphrase." },
+        "location": { "type": "string", "description": "Where it was found, e.g. 'p. 2098, Table 2, row: 28-day mortality' or 'Methods, Ventilator protocol, para 2'." }
+      }
+    },
+
+    "criterionJudgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["met"],
+      "properties": {
+        "met": { "enum": ["yes", "no", "unclear"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "stringField": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": ["string", "null"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "integerField": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": ["integer", "null"] },
+        "derived": { "type": "boolean", "default": false },
+        "derivation": { "type": ["string", "null"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "numberField": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": ["number", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "derived": { "type": "boolean", "default": false },
+        "derivation": { "type": ["string", "null"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "continuousStat": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "description": "A continuous summary exactly as reported. Do not convert median to mean or IQR to SD.",
+      "required": ["value_type", "value"],
+      "properties": {
+        "value_type": { "enum": ["mean", "median", "geometric_mean", null] },
+        "value": { "type": ["number", "null"] },
+        "dispersion_type": { "enum": ["sd", "se", "iqr", "range", "ci95", "none", null] },
+        "dispersion_low": { "type": ["number", "null"], "description": "Lower bound for iqr, range, or ci95." },
+        "dispersion_high": { "type": ["number", "null"], "description": "Upper bound for iqr, range, or ci95." },
+        "dispersion": { "type": ["number", "null"], "description": "Single value for sd or se." },
+        "secondary_dispersion_type": { "enum": ["sd", "se", "iqr", "range", "ci95", null], "description": "A second dispersion for the same value, when the paper reports two — for example mean with SD in a table and a 95% CI in the text. Do not discard the second." },
+        "secondary_dispersion": { "type": ["number", "null"] },
+        "secondary_dispersion_low": { "type": ["number", "null"] },
+        "secondary_dispersion_high": { "type": ["number", "null"] },
+        "n": { "type": ["integer", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "derived": { "type": "boolean", "default": false },
+        "derivation": { "type": ["string", "null"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "countStat": {
+      "type": ["object", "null"],
+      "description": "A count with its denominator. Record the denominator even when it equals the arm n.",
+      "additionalProperties": false,
+      "required": ["n"],
+      "properties": {
+        "n": { "type": ["integer", "null"] },
+        "total": { "type": ["integer", "null"] },
+        "percent_as_reported": { "type": ["number", "null"] },
+        "derived": { "type": "boolean", "default": false },
+        "derivation": { "type": ["string", "null"] },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "timepoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": ["fixed_day", "icu_discharge", "hospital_discharge", "end_of_study", "baseline", "minutes_hours_after_intervention", "crossover_condition", "duration_until_event", "repeated_measures", "not_reported"],
+          "description": "duration_until_event is for time-to-event durations such as ICU length of stay — the value is an elapsed time, not a moment of measurement. crossover_condition is for a measurement taken under one condition of a within-patient sequence, where the arm label carries the meaning and elapsed time does not. repeated_measures is for a trajectory analysed across several times at once."
+        },
+        "sequence_position": { "type": ["integer", "null"], "description": "crossover_condition only: where this condition fell in the applied sequence, 1-based. Order can matter and is otherwise unrecoverable." },
+        "days": { "type": ["number", "null"], "description": "Numeric days for fixed_day, e.g. 28, 60, 90, 365." },
+        "hours": { "type": ["number", "null"], "description": "For short-term physiologic measurements, e.g. 0, 5, 24, 48." },
+        "label_verbatim": { "type": ["string", "null"], "description": "How the paper names the timepoint." }
+      }
+    },
+
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "name_verbatim", "measure_type", "timepoint", "data"],
+      "properties": {
+        "domain": {
+          "enum": [
+            "mortality",
+            "ventilator_free_days",
+            "icu_free_days",
+            "organ_failure_free_days",
+            "duration_mechanical_ventilation",
+            "icu_length_of_stay",
+            "hospital_length_of_stay",
+            "oxygenation",
+            "dead_space",
+            "respiratory_mechanics",
+            "lung_volume",
+            "transpulmonary_pressure",
+            "esophageal_pressure",
+            "ventilator_settings",
+            "hemodynamics",
+            "barotrauma",
+            "adverse_event",
+            "successful_extubation_or_weaning",
+            "rescue_therapy",
+            "other"
+          ],
+          "description": "Keep the free-days domains separate from their length-of-stay counterparts: they run in opposite directions, and merging them would invert the sign of an effect downstream. esophageal_pressure is the measured pleural surrogate and is distinct from the derived transpulmonary_pressure. ventilator_settings covers delivered PEEP, FiO2, tidal volume, rate — outcomes of the titration rather than of the patient. lung_volume covers EELV and functional residual capacity."
+        },
+        "name_verbatim": { "type": "string", "description": "The outcome as the paper names it." },
+        "definition_verbatim": { "type": ["string", "null"], "description": "The paper's definition, if stated. Especially important for ventilator-free days and barotrauma." },
+        "is_primary_outcome": { "type": ["boolean", "null"] },
+        "measure_type": { "enum": ["dichotomous", "continuous", "time_to_event"] },
+        "timepoint": { "$ref": "#/$defs/timepoint" },
+        "is_longest_reported_mortality": {
+          "type": ["boolean", "null"],
+          "description": "Set true on exactly one mortality outcome per study: the one at the longest available follow-up. The protocol's primary pooled analysis uses this."
+        },
+        "measurement_context": {
+          "allOf": [{ "$ref": "#/$defs/stringField" }],
+          "description": "For physiologic outcomes, the conditions of measurement, e.g. 'after 5 minutes at each PEEP level, paralysed'. Carries provenance because it is a summary rather than a quoted label."
+        },
+        "data": {
+          "type": "array",
+          "description": "One entry per arm or condition. For single_group_no_comparison, one entry.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["arm_label"],
+            "properties": {
+              "arm_label": { "type": "string", "description": "Must match a label in arms[]." },
+              "events": { "type": ["integer", "null"], "description": "dichotomous only." },
+              "total": { "type": ["integer", "null"], "description": "Denominator for this arm at this timepoint." },
+              "value_type": { "enum": ["mean", "median", null], "description": "continuous only." },
+              "value": { "type": ["number", "null"] },
+              "dispersion_type": { "enum": ["sd", "se", "iqr", "range", "ci95", "none", null] },
+              "dispersion": { "type": ["number", "null"] },
+              "dispersion_low": { "type": ["number", "null"] },
+              "dispersion_high": { "type": ["number", "null"] },
+              "n": { "type": ["integer", "null"], "description": "continuous only: number contributing to this summary." },
+              "unit": { "type": ["string", "null"] },
+              "derived": { "type": "boolean", "default": false },
+              "derivation": { "type": ["string", "null"] },
+              "within_arm_change": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "description": "A paired change from baseline within this arm, as reported — for example a tidal-volume reduction with a paired t-test P value in one arm of a parallel trial. Distinct from paired_effects, which contrasts two conditions.",
+                "properties": {
+                  "value": { "type": ["number", "null"] },
+                  "dispersion_type": { "enum": ["sd", "se", "iqr", "range", "ci95", "none", null] },
+                  "dispersion": { "type": ["number", "null"] },
+                  "ci_low": { "type": ["number", "null"] },
+                  "ci_high": { "type": ["number", "null"] },
+                  "p_value": { "type": ["number", "null"] },
+                  "p_value_verbatim": { "type": ["string", "null"] },
+                  "test_used": { "type": ["string", "null"] },
+                  "unit": { "type": ["string", "null"] },
+                  "provenance": { "$ref": "#/$defs/provenance" }
+                }
+              },
+              "provenance": { "$ref": "#/$defs/provenance" }
+            }
+          }
+        },
+        "paired_effects": {
+          "type": "array",
+          "description": "within_patient_crossover only: every paired contrast the paper reports for this outcome. A study comparing k conditions can report up to k(k-1)/2 contrasts, so this is an array — recording only one would make the two reviewers pick different contrasts arbitrarily. Also holds omnibus tests across all conditions.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["contrast_type"],
+            "properties": {
+              "contrast_type": {
+                "enum": ["pairwise", "omnibus"],
+                "description": "pairwise: a contrast between two named conditions. omnibus: a single test across three or more conditions, e.g. repeated-measures ANOVA, where no pair is named."
+              },
+              "contrast": { "type": ["string", "null"], "description": "For pairwise, the two arm labels and their direction, e.g. 'pes_guided minus conventional_peep'. For omnibus, the conditions spanned." },
+              "arm_label_a": { "type": ["string", "null"], "description": "pairwise only: the arm the difference is measured from. Must match a label in arms[]." },
+              "arm_label_b": { "type": ["string", "null"], "description": "pairwise only: the arm subtracted. Must match a label in arms[]." },
+              "mean_difference": { "type": ["number", "null"] },
+              "sd_of_difference": { "type": ["number", "null"] },
+              "se_of_difference": { "type": ["number", "null"] },
+              "ci_low": { "type": ["number", "null"] },
+              "ci_high": { "type": ["number", "null"] },
+              "n_pairs": { "type": ["integer", "null"] },
+              "p_value": { "type": ["number", "null"] },
+              "p_value_verbatim": { "type": ["string", "null"], "description": "Use for thresholded reporting such as '<0.0001'. Record this rather than discarding the p-value." },
+              "test_used": { "type": ["string", "null"] },
+              "unit": { "type": ["string", "null"] },
+              "derived": { "type": "boolean", "default": false },
+              "derivation": { "type": ["string", "null"] },
+              "provenance": { "$ref": "#/$defs/provenance" }
+            }
+          }
+        },
+        "effect_estimates": {
+          "type": "array",
+          "description": "Every between-group effect the paper reports for this outcome, as reported. Do not compute one. An array because papers commonly report an unadjusted and an adjusted estimate, and the adjusted one may carry the significant result. An entry with type null and only a p-value is valid and is how a bare between-group P value with no effect measure is recorded.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "type": { "enum": ["risk_ratio", "odds_ratio", "hazard_ratio", "risk_difference", "mean_difference", "standardised_mean_difference", "other", null] },
+              "value": { "type": ["number", "null"] },
+              "ci_low": { "type": ["number", "null"] },
+              "ci_high": { "type": ["number", "null"] },
+              "ci_level": { "type": ["number", "null"], "default": 95 },
+              "p_value": { "type": ["number", "null"] },
+              "p_value_verbatim": { "type": ["string", "null"], "description": "Use for thresholded reporting such as '<0.001'." },
+              "adjusted": { "type": ["boolean", "null"] },
+              "adjustment_covariates": { "type": ["string", "null"] },
+              "test_used": { "type": ["string", "null"] },
+              "provenance": { "$ref": "#/$defs/provenance" }
+            }
+          }
+        },
+        "provenance": { "$ref": "#/$defs/provenance", "description": "Provenance for the outcome as a whole; per-arm provenance is preferred where values differ in location." }
+      }
+    }
+  }
+}

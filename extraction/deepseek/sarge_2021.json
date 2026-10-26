@@ -1,0 +1,1291 @@
+{
+  "record_meta": {
+    "study_id": "sarge_2021",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/effect-of-esophageal-pressure-guided-positive-end-expiratory-pressure-on-survival-from-acute-respiratory-distress.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Sarge",
+    "year": 2021,
+    "title": "Effect of Esophageal Pressure–guided Positive End-Expiratory Pressure on Survival from Acute Respiratory Distress Syndrome: A Risk-based and Mechanistic Reanalysis of the EPVent-2 Trial",
+    "journal": "American Journal of Respiratory and Critical Care Medicine",
+    "doi": "10.1164/rccm.202009-3539OC",
+    "pmid": null,
+    "trial_registration": "NCT01681225",
+    "trial_acronym": "EPVent-2",
+    "is_primary_report": false,
+    "report_type": "secondary_analysis"
+  },
+  "eligibility": {
+    "include_final": false,
+    "primary_exclusion_reason": "pediatric",
+    "criteria": {
+      "adults_18_plus": {
+        "met": "no",
+        "provenance": {
+          "quote": "Patients were eligible for the trial if aged 16 years or older",
+          "location": "p. 1154, Methods, Study Participants"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "undergoing invasive mechanical ventilation for early moderate or severe ARDS",
+          "location": "p. 1154, Methods, Study Participants"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "multicenter randomized trial of esophageal pressure-guided ventilation versus empirical high PEEP in patients with moderate to severe ARDS",
+          "location": "p. 1153, Abstract, Objectives"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In the Pes-guided PEEP group, Pes was measured at least once daily, and PEEP was adjusted to achieve end-expiratory PL between 0 and 6 cm H2O according to a PL–FIO2 table",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Treatment effect on 60-day mortality differed by baseline multiorgan dysfunction",
+          "location": "p. 1153, Abstract, Measurements and Main Results"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In total, 200 patients were enrolled in EPVent-2 and included in this analysis.",
+          "location": "p. 1155, Results, Patient Characteristics"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This post hoc reanalysis of the EPVent-2 trial",
+          "location": "p. 1153, Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Am J Respir Crit Care Med Vol 204, Iss 10, pp 1153–1163, Nov 15, 2021",
+          "location": "p. 1153, footer"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "other",
+    "study_design_verbatim": {
+      "value": "Post hoc reanalysis of a randomized clinical trial",
+      "provenance": {
+        "quote": "This post hoc reanalysis of the EPVent-2 trial",
+        "location": "p. 1153, Abstract, Methods"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "multi",
+    "n_centers": {
+      "value": null,
+      "provenance": null
+    },
+    "countries": [
+      "United States",
+      "Israel",
+      "Canada"
+    ],
+    "location_provenance": {
+      "quote": "Department of Anesthesia, Critical Care, and Pain Medicine ... Boston, Massachusetts; ... Soroka Clinical Research Center, Soroka University Medical Center, Beer-Sheva, Israel; ... St. Joseph's Hospital, McMaster University, Hamilton, Ontario, Canada",
+      "location": "p. 1153, author affiliations"
+    },
+    "planned_sample_size": {
+      "value": null,
+      "provenance": null
+    },
+    "sample_size_calculation": {
+      "value": null,
+      "provenance": null
+    },
+    "stopped_early": null,
+    "stopping_rule": {
+      "value": null,
+      "provenance": null
+    },
+    "setting": {
+      "value": null,
+      "provenance": null
+    },
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Supported by the NHLBI (grants UM1-HL108724 and R21-HL145506).",
+      "provenance": {
+        "quote": "Supported by the NHLBI (grants UM1-HL108724 and R21-HL145506).",
+        "location": "p. 1153, Funding"
+      }
+    },
+    "industry_funded": null,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 200,
+      "provenance": {
+        "quote": "In total, 200 patients were enrolled in EPVent-2 and included in this analysis.",
+        "location": "p. 1155, Results, Patient Characteristics"
+      }
+    },
+    "n_analysed": {
+      "value": 200,
+      "provenance": {
+        "quote": "All 200 trial participants were included.",
+        "location": "p. 1153, Abstract, Measurements and Main Results"
+      }
+    },
+    "population_description": {
+      "value": "All patients enrolled in EPVent-2 (NCT01681225) were included. Patients were eligible for the trial if aged 16 years or older and undergoing invasive mechanical ventilation for early moderate or severe ARDS (PaO2:FIO2 < 200 mm Hg).",
+      "provenance": {
+        "quote": "In total, 200 patients were enrolled in EPVent-2 and included in this analysis. Patients were eligible for the trial if aged 16 years or older and undergoing invasive mechanical ventilation for early moderate or severe ARDS (PaO2:FIO2< 200 mm Hg).",
+        "location": "p. 1154-1155, Methods, Study Participants and Results, Patient Characteristics"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients were eligible for the trial if aged 16 years or older and undergoing invasive mechanical ventilation for early moderate or severe ARDS (PaO2:FIO2 < 200 mm Hg).",
+      "provenance": {
+        "quote": "Patients were eligible for the trial if aged 16 years or older and undergoing invasive mechanical ventilation for early moderate or severe ARDS (PaO2:FIO2< 200 mm Hg).",
+        "location": "p. 1154, Methods, Study Participants"
+      }
+    },
+    "exclusion_criteria": {
+      "value": null,
+      "provenance": null
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": null,
+      "provenance": null
+    },
+    "n_ards": {
+      "n": 200,
+      "total": 200,
+      "derived": true,
+      "derivation": "All participants met ARDS inclusion criterion (PaO2:FIO2 < 200 mm Hg).",
+      "provenance": {
+        "quote": "early moderate or severe ARDS (PaO2:FIO2< 200 mm Hg)",
+        "location": "p. 1154, Methods, Study Participants"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": null,
+      "provenance": null
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Age",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 57,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42,
+          "dispersion_high": 67,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age: 57 (42 to 67)",
+            "location": "Table 1, row: Age, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Age",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 58,
+          "dispersion_type": "iqr",
+          "dispersion_low": 47,
+          "dispersion_high": 67,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age: 58 (47 to 67)",
+            "location": "Table 1, row: Age, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Sex, F, n (%)",
+        "arm_label": "low_apache_ii",
+        "count": {
+          "n": 52,
+          "total": 99,
+          "percent_as_reported": 52.5,
+          "provenance": {
+            "quote": "Sex, F, n (%): 52 (52.5)",
+            "location": "Table 1, row: Sex, F, n (%), column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Sex, F, n (%)",
+        "arm_label": "high_apache_ii",
+        "count": {
+          "n": 40,
+          "total": 101,
+          "percent_as_reported": 39.6,
+          "provenance": {
+            "quote": "Sex, F, n (%): 40 (39.6)",
+            "location": "Table 1, row: Sex, F, n (%), column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Body mass index, kg/m2",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 31.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26.4,
+          "dispersion_high": 39.7,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "Body mass index, kg/m2: 31.1 (26.4 to 39.7)",
+            "location": "Table 1, row: Body mass index, kg/m2, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Body mass index, kg/m2",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 28.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24.8,
+          "dispersion_high": 33.4,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "Body mass index, kg/m2: 28.3 (24.8 to 33.4)",
+            "location": "Table 1, row: Body mass index, kg/m2, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "APACHE-II at enrollment",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "mean",
+          "value": 21,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "provenance": {
+            "quote": "APACHE-II at enrollment: 21 (4)",
+            "location": "Table 1, row: APACHE-II at enrollment, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "APACHE-II at enrollment",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "mean",
+          "value": 33,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "provenance": {
+            "quote": "APACHE-II at enrollment: 33 (4)",
+            "location": "Table 1, row: APACHE-II at enrollment, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "SOFA at enrollment",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 8.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 10,
+          "provenance": {
+            "quote": "SOFA at enrollment: 8.5 (6 to 10)",
+            "location": "Table 1, row: SOFA at enrollment, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "SOFA at enrollment",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 15,
+          "provenance": {
+            "quote": "SOFA at enrollment: 13 (12 to 15)",
+            "location": "Table 1, row: SOFA at enrollment, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2:FIO2",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 95,
+          "dispersion_type": "iqr",
+          "dispersion_low": 75,
+          "dispersion_high": 132,
+          "provenance": {
+            "quote": "PaO2:FIO2: 95 (75 to 132)",
+            "location": "Table 1, row: PaO2:FIO2, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2:FIO2",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 86,
+          "dispersion_type": "iqr",
+          "dispersion_low": 69,
+          "dispersion_high": 119,
+          "provenance": {
+            "quote": "PaO2:FIO2: 86 (69 to 119)",
+            "location": "Table 1, row: PaO2:FIO2, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Set PEEP, cm H2O",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 16,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O: 14 (10 to 16)",
+            "location": "Table 1, row: Set PEEP, cm H2O, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Set PEEP, cm H2O",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 16,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O: 14 (10 to 16)",
+            "location": "Table 1, row: Set PEEP, cm H2O, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Transpulmonary pressure at end-expiration, cm H2O",
+        "arm_label": "low_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": -1,
+          "dispersion_type": "iqr",
+          "dispersion_low": -4,
+          "dispersion_high": 2,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary pressure at end-expiration: -1 (-4 to 2)",
+            "location": "Table 1, row: Transpulmonary pressure at end-expiration, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Transpulmonary pressure at end-expiration, cm H2O",
+        "arm_label": "high_apache_ii",
+        "continuous": {
+          "value_type": "median",
+          "value": -1,
+          "dispersion_type": "iqr",
+          "dispersion_low": -3,
+          "dispersion_high": 1,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary pressure at end-expiration: -1 (-3 to 1)",
+            "location": "Table 1, row: Transpulmonary pressure at end-expiration, column: High APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressors, n (%)",
+        "arm_label": "low_apache_ii",
+        "count": {
+          "n": 45,
+          "total": 99,
+          "percent_as_reported": 45.5,
+          "provenance": {
+            "quote": "Vasopressors: 45 (45.5)",
+            "location": "Table 1, row: Vasopressors, column: Low APACHE-II"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressors, n (%)",
+        "arm_label": "high_apache_ii",
+        "count": {
+          "n": 69,
+          "total": 101,
+          "percent_as_reported": 68.3,
+          "provenance": {
+            "quote": "Vasopressors: 69 (68.3)",
+            "location": "Table 1, row: Vasopressors, column: High APACHE-II"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "pes_guided",
+        "n": {
+          "value": 102,
+          "derived": false,
+          "derivation": null,
+          "provenance": null
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27.06,
+          "dispersion_type": "sd",
+          "dispersion": 7.7,
+          "provenance": {
+            "quote": "APACHE II ... (Pes-guided vs. empirical high PEEP: 27.06 7.7 vs. 27.76 7.4; P=0.35)",
+            "location": "p. 1155, Results, Baseline Illness Severity and Risk of Death"
+          }
+        }
+      },
+      {
+        "arm_label": "empirical_high_peep",
+        "n": {
+          "value": 98,
+          "derived": false,
+          "derivation": null,
+          "provenance": null
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27.76,
+          "dispersion_type": "sd",
+          "dispersion": 7.4,
+          "provenance": {
+            "quote": "APACHE II ... (Pes-guided vs. empirical high PEEP: 27.06 7.7 vs. 27.76 7.4; P=0.35)",
+            "location": "p. 1155, Results, Baseline Illness Severity and Risk of Death"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": null,
+      "provenance": null
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": {
+        "value": null,
+        "provenance": null
+      },
+      "position_verification": {
+        "value": null,
+        "provenance": null
+      },
+      "occlusion_ratio_acceptance": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "PL = airway − pleural pressure",
+        "provenance": {
+          "quote": "PL = airway2 pleural pressure",
+          "location": "p. 1154, Abstract, Rationale"
+        }
+      },
+      "pes_correction_applied": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP was adjusted to achieve end-expiratory PL between 0 and 6 cm H2O according to a PL–FIO2 table",
+        "provenance": {
+          "quote": "In the Pes-guided PEEP group, Pes was measured at least once daily, and PEEP was adjusted to achieve end-expiratory PL between 0 and 6 cm H2O according to a PL–FIO2 table",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "between 0 and 6 cm H2O",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 6,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "between 0 and 6 cm H2O",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 20,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "End-inspiratory PL was not to exceed 20 cm H2O.",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "driving_ptp_limit_cmh2o": {
+        "value": null,
+        "provenance": null
+      },
+      "peep_upper_limit_cmh2o": {
+        "value": null,
+        "provenance": null
+      },
+      "titration_frequency": {
+        "value": "at least once daily",
+        "provenance": {
+          "quote": "Pes was measured at least once daily",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": {
+        "value": null,
+        "provenance": null
+      },
+      "tidal_volume_target": {
+        "value": "VT of 6 (range, 4–8) ml/kg predicted body weight",
+        "provenance": {
+          "quote": "In both groups, VT of 6 (range, 4–8) ml/kg predicted body weight and ventilator weaning were determined by protocol.",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "End-inspiratory PL was not to exceed 20 cm H2O.",
+        "provenance": {
+          "quote": "End-inspiratory PL was not to exceed 20 cm H2O.",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": {
+        "value_type": null,
+        "value": null,
+        "provenance": null
+      },
+      "timing_verbatim": {
+        "value": "Trial participants were randomly assigned to one of two PEEP titration strategies",
+        "provenance": {
+          "quote": "Trial participants were randomly assigned to one of two PEEP titration strategies",
+          "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Protocol-directed ventilator titration continued through Day 28 or until successful extubation, discharge, or study withdrawal.",
+      "provenance": {
+        "quote": "Protocol-directed ventilator titration continued through Day 28 or until successful extubation, discharge, or study withdrawal.",
+        "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "empirical_high_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "In the comparator group, PEEP was set according to an empirical high PEEP–FIO2 table, and plateau airway pressure was not to exceed 35 cm H2O.",
+      "provenance": {
+        "quote": "In the empirical high-PEEP group, PEEP was set according to a PEEP–FIO2 table, and plateau airway pressure was not to exceed 35 cm H2O.",
+        "location": "p. 1154, Methods, EPVent-2 Trial Procedures"
+      }
+    },
+    "crossover_order": {
+      "value": null,
+      "provenance": null
+    },
+    "washout_or_stabilisation": {
+      "value": null,
+      "provenance": null
+    }
+  },
+  "arms": [
+    {
+      "label": "pes_guided",
+      "label_verbatim": "Pes-guided PEEP",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 102,
+        "provenance": {
+          "quote": "33/102 (32.4%)",
+          "location": "Figure 2, row: Mortality at day 28, Overall, column: Pes-guided PEEP"
+        }
+      },
+      "n_analysed": {
+        "value": 102,
+        "provenance": {
+          "quote": "33/102 (32.4%)",
+          "location": "Figure 2, row: Mortality at day 28, Overall, column: Pes-guided PEEP"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "empirical_high_peep",
+      "label_verbatim": "Empirical high PEEP",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 98,
+        "provenance": {
+          "quote": "30/98 (30.6%)",
+          "location": "Figure 2, row: Mortality at day 28, Overall, column: Empirical high PEEP"
+        }
+      },
+      "n_analysed": {
+        "value": 98,
+        "provenance": {
+          "quote": "30/98 (30.6%)",
+          "location": "Figure 2, row: Mortality at day 28, Overall, column: Empirical high PEEP"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality at day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-d mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 33,
+          "total": 102,
+          "provenance": {
+            "quote": "33/102 (32.4%)",
+            "location": "Figure 2, row: Mortality at day 28, Overall, column: Pes-guided PEEP"
+          }
+        },
+        {
+          "arm_label": "empirical_high_peep",
+          "events": 30,
+          "total": 98,
+          "provenance": {
+            "quote": "30/98 (30.6%)",
+            "location": "Figure 2, row: Mortality at day 28, Overall, column: Empirical high PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "odds_ratio",
+          "value": 1.08,
+          "ci_low": 0.6,
+          "ci_high": 1.97,
+          "ci_level": 95,
+          "p_value": 0.79,
+          "adjusted": false,
+          "test_used": "logistic regression",
+          "provenance": {
+            "quote": "Overall: 1.08 (0.60–1.97)    0.79",
+            "location": "Figure 2, row: Mortality at day 28, Overall"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 0.5,
+          "ci_low": 0.19,
+          "ci_high": 1.34,
+          "adjusted": false,
+          "provenance": {
+            "quote": "Low APACHE-II: 0.50 (0.19–1.34)",
+            "location": "Figure 2, row: Mortality at day 28, Low APACHE-II"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 1.87,
+          "ci_low": 0.84,
+          "ci_high": 4.16,
+          "adjusted": false,
+          "provenance": {
+            "quote": "High APACHE-II: 1.87 (0.84–4.16)",
+            "location": "Figure 2, row: Mortality at day 28, High APACHE-II"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality at day 60",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "label_verbatim": "60-day mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 38,
+          "total": 101,
+          "provenance": {
+            "quote": "38/101 (37.6%)",
+            "location": "Figure 2, row: Mortality at day 60, Overall, column: Pes-guided PEEP"
+          }
+        },
+        {
+          "arm_label": "empirical_high_peep",
+          "events": 37,
+          "total": 98,
+          "provenance": {
+            "quote": "37/98 (37.8%)",
+            "location": "Figure 2, row: Mortality at day 60, Overall, column: Empirical high PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "odds_ratio",
+          "value": 0.99,
+          "ci_low": 0.56,
+          "ci_high": 1.77,
+          "p_value": 0.98,
+          "adjusted": false,
+          "provenance": {
+            "quote": "Overall: 0.99 (0.56–1.77)    0.98",
+            "location": "Figure 2, row: Mortality at day 60, Overall"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 0.38,
+          "ci_low": 0.16,
+          "ci_high": 0.94,
+          "adjusted": false,
+          "provenance": {
+            "quote": "Low APACHE-II: 0.38 (0.16–0.94)",
+            "location": "Figure 2, row: Mortality at day 60, Low APACHE-II"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 2.16,
+          "ci_low": 0.97,
+          "ci_high": 4.81,
+          "adjusted": false,
+          "provenance": {
+            "quote": "High APACHE-II: 2.16 (0.97–4.81)",
+            "location": "Figure 2, row: Mortality at day 60, High APACHE-II"
+          }
+        },
+        {
+          "type": "hazard_ratio",
+          "value": 0.43,
+          "ci_low": 0.2,
+          "ci_high": 0.92,
+          "adjusted": false,
+          "provenance": {
+            "quote": "HR for a low APACHE-II score, 0.43, 95% confidence interval [CI], 0.20–0.92",
+            "location": "p. 1157, Results, Heterogeneity of Treatment Effect on Mortality"
+          }
+        },
+        {
+          "type": "hazard_ratio",
+          "value": 1.69,
+          "ci_low": 0.93,
+          "ci_high": 3.05,
+          "adjusted": false,
+          "provenance": {
+            "quote": "HR for high APACHE-II score, 1.69; 95% CI 0.93–3.05",
+            "location": "p. 1157, Results, Heterogeneity of Treatment Effect on Mortality"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality at 1 year",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 365,
+        "label_verbatim": "1-year mortality"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 44,
+          "total": 100,
+          "provenance": {
+            "quote": "44/100 (44.0%)",
+            "location": "Figure 2, row: Mortality at 1 year, Overall, column: Pes-guided PEEP"
+          }
+        },
+        {
+          "arm_label": "empirical_high_peep",
+          "events": 44,
+          "total": 96,
+          "provenance": {
+            "quote": "44/96 (45.8%)",
+            "location": "Figure 2, row: Mortality at 1 year, Overall, column: Empirical high PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "odds_ratio",
+          "value": 0.93,
+          "ci_low": 0.53,
+          "ci_high": 1.63,
+          "p_value": 0.8,
+          "adjusted": false,
+          "provenance": {
+            "quote": "Overall: 0.93 (0.53–1.63)    0.80",
+            "location": "Figure 2, row: Mortality at 1 year, Overall"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 0.46,
+          "ci_low": 0.2,
+          "ci_high": 1.06,
+          "adjusted": false,
+          "provenance": {
+            "quote": "Low APACHE-II: 0.46 (0.20–1.06)",
+            "location": "Figure 2, row: Mortality at 1 year, Low APACHE-II"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 1.77,
+          "ci_low": 0.8,
+          "ci_high": 3.95,
+          "adjusted": false,
+          "provenance": {
+            "quote": "High APACHE-II: 1.77 (0.80–3.95)",
+            "location": "Figure 2, row: Mortality at 1 year, High APACHE-II"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "Ventilator-free days",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through Day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 15.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 23,
+          "n": 102,
+          "unit": "days",
+          "provenance": {
+            "quote": "15.5 (0–23)",
+            "location": "Figure 2, row: Ventilator-free days, Overall, column: Pes-guided PEEP"
+          }
+        },
+        {
+          "arm_label": "empirical_high_peep",
+          "value_type": "median",
+          "value": 17.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 23,
+          "n": 98,
+          "unit": "days",
+          "provenance": {
+            "quote": "17.5 (0–23)",
+            "location": "Figure 2, row: Ventilator-free days, Overall, column: Empirical high PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0.98,
+          "ci_low": 0.9,
+          "ci_high": 1.06,
+          "p_value": 0.57,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "Overall: 0.98 (0.90–1.06)    0.57",
+            "location": "Figure 2, row: Ventilator-free days, Overall"
+          }
+        },
+        {
+          "type": "other",
+          "value": 1.25,
+          "ci_low": 1.13,
+          "ci_high": 1.38,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "Low APACHE-II: 1.25 (1.13–1.38)",
+            "location": "Figure 2, row: Ventilator-free days, Low APACHE-II"
+          }
+        },
+        {
+          "type": "other",
+          "value": 0.69,
+          "ci_low": 0.61,
+          "ci_high": 0.77,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "High APACHE-II: 0.69 (0.61–0.77)",
+            "location": "Figure 2, row: Ventilator-free days, High APACHE-II"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "organ_failure_free_days",
+      "name_verbatim": "Shock-free days",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through Day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 21,
+          "n": 102,
+          "unit": "days",
+          "provenance": {
+            "quote": "14 (0–21)",
+            "location": "Figure 2, row: Shock-free days, Overall, column: Pes-guided PEEP"
+          }
+        },
+        {
+          "arm_label": "empirical_high_peep",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 21,
+          "n": 98,
+          "unit": "days",
+          "provenance": {
+            "quote": "17 (0–21)",
+            "location": "Figure 2, row: Shock-free days, Overall, column: Empirical high PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0.9,
+          "ci_low": 0.84,
+          "ci_high": 0.98,
+          "p_value": 0.01,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "Overall: 0.90 (0.84–0.98)    0.01",
+            "location": "Figure 2, row: Shock-free days, Overall"
+          }
+        },
+        {
+          "type": "other",
+          "value": 1.1,
+          "ci_low": 0.99,
+          "ci_high": 1.22,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "Low APACHE-II: 1.10 (0.99–1.22)",
+            "location": "Figure 2, row: Shock-free days, Low APACHE-II"
+          }
+        },
+        {
+          "type": "other",
+          "value": 0.67,
+          "ci_low": 0.59,
+          "ci_high": 0.76,
+          "adjusted": false,
+          "test_used": "Poisson regression",
+          "provenance": {
+            "quote": "High APACHE-II: 0.67 (0.59–0.76)",
+            "location": "Figure 2, row: Shock-free days, High APACHE-II"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 200,
+      "provenance": {
+        "quote": "In total, 200 patients were enrolled in EPVent-2 and included in this analysis.",
+        "location": "p. 1155, Results, Patient Characteristics"
+      }
+    },
+    "n_placement_successful": {
+      "value": 199,
+      "derived": true,
+      "derivation": "200 enrolled, 1 unsuccessful insertion, so 199 successful.",
+      "provenance": {
+        "quote": "PL data were missing in one patient, in whom the esophageal balloon catheter could not be inserted successfully",
+        "location": "p. 1155, Results, Patient Characteristics"
+      }
+    },
+    "placement_failure_reasons": {
+      "value": "Esophageal balloon catheter could not be inserted successfully.",
+      "provenance": {
+        "quote": "in whom the esophageal balloon catheter could not be inserted successfully",
+        "location": "p. 1155, Results, Patient Characteristics"
+      }
+    },
+    "n_measurement_not_obtainable": {
+      "value": null,
+      "provenance": null
+    },
+    "measurement_failure_reasons": {
+      "value": null,
+      "provenance": null
+    },
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": {
+      "value": null,
+      "provenance": null
+    },
+    "protocol_deviations": {
+      "value": null,
+      "provenance": null
+    },
+    "n_crossover_between_arms": {
+      "value": null,
+      "provenance": null
+    },
+    "n_lost_to_followup": {
+      "value": null,
+      "provenance": null
+    }
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "mixed_bmi",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "Timing subgroup early because median time intubated prior to enrollment was 21.5h and 21h for APACHE-II subgroups, and intervention began at enrollment. BMI mixed: low APACHE-II median BMI 31.1, high APACHE-II 28.3. ARDS subgroup: all had ARDS by eligibility. PTP target: end-expiratory PL between 0 and 6 cmH2O using absolute Pes subtraction."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "APACHE-II (dichotomized by median 27.5)",
+      "outcome_name": "Mortality at day 28",
+      "prespecified": false,
+      "result_verbatim": "Low APACHE-II: 0.50 (0.19–1.34); High APACHE-II: 1.87 (0.84–4.16); P for interaction = 0.04",
+      "interaction_p_value": 0.04,
+      "provenance": {
+        "quote": "Low APACHE-II: 8/51 (15.7%) 13/48 (27.1%) 0.50 (0.19–1.34); High APACHE-II: 25/51 (49.0%) 17/50 (34.0%) 1.87 (0.84–4.16); 0.04*",
+        "location": "Figure 2, row: Mortality at day 28"
+      }
+    },
+    {
+      "subgroup_variable": "APACHE-II (dichotomized by median 27.5)",
+      "outcome_name": "Mortality at day 60",
+      "prespecified": false,
+      "result_verbatim": "Low APACHE-II: 0.38 (0.16–0.94); High APACHE-II: 2.16 (0.97–4.81); P for interaction <0.01",
+      "interaction_p_value": 0.01,
+      "provenance": {
+        "quote": "Low APACHE-II: 10/50 (20.0%) 19/48 (39.6%) 0.38 (0.16–0.94); High APACHE-II: 28/51 (54.9%) 18/50 (36.0%) 2.16 (0.97–4.81); < 0.01*",
+        "location": "Figure 2, row: Mortality at day 60"
+      }
+    },
+    {
+      "subgroup_variable": "APACHE-II (continuous)",
+      "outcome_name": "Mortality at day 60",
+      "prespecified": false,
+      "result_verbatim": "P for interaction of treatment group with APACHE-II as a continuous variable = 0.03",
+      "interaction_p_value": 0.03,
+      "provenance": {
+        "quote": "P = 0.03 for interaction of treatment group with APACHE-II as a continuous variable",
+        "location": "p. 1156, Results, Heterogeneity of Treatment Effect on Mortality"
+      }
+    },
+    {
+      "subgroup_variable": "APACHE-II (dichotomized by median 27.5)",
+      "outcome_name": "Mortality at 1 year",
+      "prespecified": false,
+      "result_verbatim": "Low APACHE-II: 0.46 (0.20–1.06); High APACHE-II: 1.77 (0.80–3.95); P for interaction = 0.02",
+      "interaction_p_value": 0.02,
+      "provenance": {
+        "quote": "Low APACHE-II: 14/50 (28.0%) 22/48 (45.8%) 0.46 (0.20–1.06); High APACHE-II: 30/50 (60.0%) 22/48 (45.8%) 1.77 (0.80–3.95); 0.02*",
+        "location": "Figure 2, row: Mortality at 1 year"
+      }
+    },
+    {
+      "subgroup_variable": "APACHE-II (dichotomized by median 27.5)",
+      "outcome_name": "Ventilator-free days through Day 28",
+      "prespecified": false,
+      "result_verbatim": "Low APACHE-II: 21 (6–24) vs 17.5 (0–24), IRR 1.25 (1.13–1.38); High APACHE-II: 0 (0–21) vs 17.5 (0–22), IRR 0.69 (0.61–0.77); P for interaction <0.01",
+      "interaction_p_value": 0.01,
+      "provenance": {
+        "quote": "Low APACHE-II: 1.25 (1.13–1.38); High APACHE-II: 0.69 (0.61–0.77); < 0.01*",
+        "location": "Figure 2, row: Ventilator-free days"
+      }
+    },
+    {
+      "subgroup_variable": "APACHE-II (dichotomized by median 27.5)",
+      "outcome_name": "Shock-free days through Day 28",
+      "prespecified": false,
+      "result_verbatim": "Low APACHE-II: 20 (11–23) vs 18 (0–22), IRR 1.10 (0.99–1.22); High APACHE-II: 3 (0–18) vs 16 (0–20), IRR 0.67 (0.59–0.76); P for interaction <0.01",
+      "interaction_p_value": 0.01,
+      "provenance": {
+        "quote": "Low APACHE-II: 1.10 (0.99–1.22); High APACHE-II: 0.67 (0.59–0.76); < 0.01*",
+        "location": "Figure 2, row: Shock-free days"
+      }
+    },
+    {
+      "subgroup_variable": "SOFA-cardiovascular subscore",
+      "outcome_name": "Mortality at day 60",
+      "prespecified": false,
+      "result_verbatim": "P for interaction of SOFA-CV with treatment group = 0.12",
+      "interaction_p_value": 0.12,
+      "provenance": {
+        "quote": "The effect of Pes-guided PEEP on 60-day mortality did not depend on baseline hemodynamic instability, assessed via SOFA-CV score (P=0.12 for interaction of SOFA-CV with treatment group in Cox model)",
+        "location": "p. 1157, Results, Effects of Baseline Shock Severity on Mortality and Secondary Endpoints"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": "epvent2",
+    "overlapping_cohort_with": [
+      "beitler_2019"
+    ],
+    "overlap_evidence": "This trial registration (NCT01681225) matches EPVent-2 primary report beitler_2019; same cohort.",
+    "unclear_items": [
+      "adults_18_plus: Eligibility allowed age 16+ rather than 18+, so strictly fails the adult criterion; however likely all participants were adults.",
+      "icu_setting: The paper does not explicitly state ICU but implies it from the trial context.",
+      "baseline_by_arm: Only APACHE-II was reported by treatment group; other baseline characteristics were reported by APACHE-II subgroup and recorded in additional_baseline.",
+      "The interaction p-values for VFD and shock-free days are reported as '<0.01' in Figure 2; recorded as 0.01 in interaction_p_value."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Post hoc reanalysis of EPVent-2. Reports risk-based heterogeneity of treatment effect. Mechanistic analyses of end-expiratory PL and mortality are not between-group estimates and are not captured as effect_estimates."
+  }
+}

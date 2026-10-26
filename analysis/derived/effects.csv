@@ -1,0 +1,572 @@
+study_id,domain,name_verbatim,timepoint_label,measure_type,effect_type,effect_value,effect_ci_low,effect_ci_high,effect_p_value,effect_p_verbatim,effect_adjusted,adjustment_covariates,test_used
+baedorf_kassis_2016,mortality,28 day mortality,died by 28 days,dichotomous,,,,,0.085,,,,chi-square analysis with Fisher's exact test
+baedorf_kassis_2016,ventilator_settings,PEEPtotal,Baseline,continuous,,,,,0.8,,,,
+baedorf_kassis_2016,ventilator_settings,PEEPtotal,5 min,continuous,,,,,,<0.0001,,,
+baedorf_kassis_2016,ventilator_settings,PEEPtotal,24 h,continuous,,,,,,<0.0001,,,
+baedorf_kassis_2016,ventilator_settings,Tidal volume,Baseline,continuous,,,,,1.0,,,,
+baedorf_kassis_2016,ventilator_settings,Tidal volume,5 min,continuous,,,,,0.2,,,,
+baedorf_kassis_2016,ventilator_settings,Tidal volume,24 h,continuous,,,,,0.07,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Respiratory system (DPRS),Baseline,continuous,,,,,1.0,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Respiratory system (DPRS),5 min,continuous,,,,,0.2,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Respiratory system (DPRS),24 h,continuous,,,,,0.3,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Respiratory system (DPRS),24 h,continuous,,,,,0.57,,,,comparison of baseline-to-24 h change between groups
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Respiratory system (DPRS),24 h,continuous,,,,,0.015,,,,"ANOVA repeated measures, interaction term (time × physiological measurement)"
+baedorf_kassis_2016,transpulmonary_pressure,Driving pressure Transpulmonary (DPL),Baseline,continuous,,,,,0.8,,,,
+baedorf_kassis_2016,transpulmonary_pressure,Driving pressure Transpulmonary (DPL),24 h,continuous,,,,,0.02,,,,
+baedorf_kassis_2016,transpulmonary_pressure,Driving pressure Transpulmonary (DPL),24 h,continuous,,,,,0.004,,,,comparison of baseline-to-24 h change between groups
+baedorf_kassis_2016,transpulmonary_pressure,Driving pressure Transpulmonary (DPL),24 h,continuous,,,,,,<0.001,,,"ANOVA repeated measures, interaction term (time × physiological measurement)"
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Chest wall (DPCW),Baseline,continuous,,,,,0.7,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Chest wall (DPCW),5 min,continuous,,,,,0.7,,,,
+baedorf_kassis_2016,respiratory_mechanics,Driving pressure Chest wall (DPCW),24 h,continuous,,,,,0.1,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Respiratory system (ERS),Baseline,continuous,,,,,1.0,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Respiratory system (ERS),5 min,continuous,,,,,0.5,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Respiratory system (ERS),24 h,continuous,,,,,0.07,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Respiratory system (ERS),24 h,continuous,,,,,0.01,,,,comparison of baseline-to-24 h change between groups
+baedorf_kassis_2016,respiratory_mechanics,Elastance Pulmonary (EL),Baseline,continuous,,,,,0.9,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Pulmonary (EL),5 min,continuous,,,,,0.6,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Pulmonary (EL),24 h,continuous,,,,,0.007,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Pulmonary (EL),24 h,continuous,,,,,0.0002,,,,comparison of baseline-to-24 h change between groups
+baedorf_kassis_2016,respiratory_mechanics,Elastance Chest wall,Baseline,continuous,,,,,0.7,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Chest wall,5 min,continuous,,,,,1.0,,,,
+baedorf_kassis_2016,respiratory_mechanics,Elastance Chest wall,24 h,continuous,,,,,0.2,,,,
+baedorf_kassis_2016,transpulmonary_pressure,Transpulmonary driving pressure (DPL),5 min,continuous,,,,,0.35,0.35,False,,ANOVA
+beitler_2019,other,"Probability of more favorable outcome, a ranked composite incorporating death and days free from mechanical ventilation among survivors",through day 28,continuous,other,49.6,41.7,57.5,0.92,,,,Mann-Whitney U test; probability of more favorable outcome (probabilistic index)
+beitler_2019,mortality,Mortality through day 28,Mortality through day 28,dichotomous,risk_difference,1.7,-11.1,14.6,0.88,,False,,Fisher exact test; absolute risk difference with asymptotic 95% CIs
+beitler_2019,mortality,Mortality through day 60,Mortality through day 60,dichotomous,risk_difference,-0.1,-13.6,13.3,,>.99,False,,Fisher exact test
+beitler_2019,mortality,Mortality through 1 y,Mortality through 1 y,dichotomous,risk_difference,-1.8,-15.8,12.1,0.89,,False,,Fisher exact test
+beitler_2019,ventilator_free_days,Days free from mechanical ventilation among survivors through day 28,through day 28,continuous,other,0,-1,2,0.85,,,,Hodges-Lehmann estimator
+beitler_2019,ventilator_free_days,Ventilator-free days through day 28,through day 28,continuous,other,0,0,0,0.93,,,,Hodges-Lehmann estimator
+beitler_2019,icu_length_of_stay,ICU length of stay through day 28,through day 28,continuous,other,1,-1,3,0.24,,,,Hodges-Lehmann estimator
+beitler_2019,hospital_length_of_stay,Hospital length of stay through day 28,through day 28,continuous,other,0,-1,3,0.58,,,,Hodges-Lehmann estimator
+beitler_2019,hospital_length_of_stay,Hospital length of stay through day 60,through day 60,continuous,other,1,-2,4,0.47,,,,Hodges-Lehmann estimator
+beitler_2019,rescue_therapy,Rescue therapy administered,during the trial,dichotomous,risk_difference,-8.3,-15.8,-0.8,0.04,,,,Fisher exact test
+beitler_2019,rescue_therapy,Prone positioning,during the trial,dichotomous,risk_difference,-2.1,-6.0,1.8,0.36,,,,Fisher exact test
+beitler_2019,rescue_therapy,Inhaled pulmonary vasodilator,during the trial,dichotomous,risk_difference,-7.3,-14.1,-0.4,0.046,,,,Fisher exact test
+beitler_2019,rescue_therapy,Extracorporeal membrane oxygenation,during the trial,dichotomous,risk_difference,-2.1,-6.0,1.8,0.36,,,,Fisher exact test
+beitler_2019,adverse_event,Acute kidney injury requiring renal replacement therapy in the first 28 d,in the first 28 d,dichotomous,risk_difference,-12.3,-24.7,0.0,0.056,,False,,Fisher exact test
+beitler_2019,barotrauma,Pneumothorax,,dichotomous,risk_difference,0.9,-3.4,5.2,,>.99,False,,Fisher exact test
+beitler_2019,barotrauma,Barotrauma,,dichotomous,risk_difference,0.8,-5.5,7.1,,>.99,False,,Fisher exact test
+beitler_2019,rescue_therapy,Recruitment maneuvers,during trial,dichotomous,risk_difference,0.0,-2.8,2.7,,>.99,,,Fisher exact test
+beitler_2019,organ_failure_free_days,Shock-free days through day 28,through day 28,continuous,other,0,-2,0,0.47,,,,Hodges-Lehmann estimator
+dong_2023,mortality,"28-d mortality rate, n (%)",28-d,dichotomous,,,,,0.368,,,,
+dong_2023,rescue_therapy,"Prone position, n (%)",during ICU stay,dichotomous,,,,,0.516,,,,
+dong_2023,rescue_therapy,"ECMO, n (%)",during ICU stay,dichotomous,,,,,0.74,,,,
+dong_2023,oxygenation,PaO2:FiO2,Baseline,continuous,,,,,0.217,,,,
+dong_2023,oxygenation,PaO2:FiO2,72h,continuous,,,,,0.388,,,,one-way ANOVA
+dong_2023,respiratory_mechanics,Cts (ml/cmH2O),Baseline,continuous,,,,,0.033,,,,
+dong_2023,respiratory_mechanics,Cts (ml/cmH2O),72h,continuous,,,,,,<0.001,,,one-way ANOVA
+dong_2023,ventilator_settings,PEEP (cm of water),Baseline,continuous,,,,,1,,,,
+dong_2023,ventilator_settings,PEEP (cm of water),72h,continuous,,,,,0.009,,,,one-way ANOVA
+dong_2023,transpulmonary_pressure,Transpulmonary end-expiratory pressure (cmH2O),Baseline,continuous,,,,,0.775,,,,
+dong_2023,transpulmonary_pressure,Transpulmonary end-expiratory pressure (cmH2O),72h,continuous,,,,,0.079,,,,one-way ANOVA
+dong_2023,transpulmonary_pressure,Transpulmonary end-inspiratory pressure (cmH2O),72h,continuous,,,,,0.929,,,,one-way ANOVA
+dong_2023,esophageal_pressure,Esophageal end-expiratory pressure (cmH2O),72h,continuous,,,,,0.04,,,,one-way ANOVA
+dong_2023,duration_mechanical_ventilation,MV duration,"MV duration (mean days ± SD, d)",continuous,,,,,0.168,,,,
+dong_2023,icu_length_of_stay,ICU duration,"ICU duration (mean days ± SD,d)",continuous,,,,,0.279,,,,
+dong_2023,other,Right heart systolic dysfunction (multivariate logistic regression),72h,dichotomous,odds_ratio,0.03,0.0,0.07,0.029,,True,"backward stepwise logistic regression: titration method, Vt, Pmean, compliance (Crs), PEEP, respiratory rate, PaCO2, pH, driving pressure, transpulmonary end-inspiratory pressure",multivariate logistic regression (backward stepwise selection)
+dong_2023,rescue_therapy,"The length of prone position (mean hours ± SD, h)",duration,continuous,,,,,0.534,,,,
+dong_2023,rescue_therapy,"The length of ECMO (mean hours ± SD,h)",duration,continuous,,,,,0.663,,,,
+dong_2023,oxygenation,PaO2 (mmHg),Baseline,continuous,,,,,0.093,,,,
+dong_2023,oxygenation,PaO2 (mmHg),72h,continuous,,,,,0.215,,,,
+dong_2023,ventilator_settings,FiO2,Baseline,continuous,,,,,1,,,,
+dong_2023,ventilator_settings,FiO2,72h,continuous,,,,,0.163,,,,
+dong_2023,ventilator_settings,Tidal volume (ml),Baseline,continuous,,,,,0.631,,,,
+dong_2023,ventilator_settings,Tidal volume (ml),72h,continuous,,,,,0.217,,,,
+dong_2023,ventilator_settings,Respiratory rate (bpm),Baseline,continuous,,,,,1,,,,
+dong_2023,ventilator_settings,Respiratory rate (bpm),72h,continuous,,,,,0.963,,,,
+dong_2023,respiratory_mechanics,Peak inspiratory pressure (cmH2O),Baseline,continuous,,,,,0.482,,,,
+dong_2023,respiratory_mechanics,Peak inspiratory pressure (cmH2O),72h,continuous,,,,,0.03,,,,
+dong_2023,respiratory_mechanics,Mean airway pressure (cmH2O),Baseline,continuous,,,,,0.704,,,,
+dong_2023,respiratory_mechanics,Mean airway pressure (cmH2O),72h,continuous,,,,,0.047,,,,
+dong_2023,respiratory_mechanics,Plateau pressure (cmH2O),Baseline,continuous,,,,,0.075,,,,
+dong_2023,respiratory_mechanics,Plateau pressure (cmH2O),72h,continuous,,,,,0.435,,,,
+dong_2023,respiratory_mechanics,Drive pressure (cmH2O),Baseline,continuous,,,,,0.068,,,,
+dong_2023,respiratory_mechanics,Drive pressure (cmH2O),72h,continuous,,,,,0.995,,,,
+dong_2023,transpulmonary_pressure,Transpulmonary end-inspiratory pressure (cmH2O),Baseline,continuous,,,,,0.282,,,,
+dong_2023,esophageal_pressure,Esophageal end-inspiratory pressure (cmH2O),Baseline,continuous,,,,,0.443,,,,
+dong_2023,esophageal_pressure,Esophageal end-inspiratory pressure (cmH2O),72h,continuous,,,,,0.027,,,,
+dong_2023,esophageal_pressure,Esophageal end-expiratory pressure (cmH2O),Baseline,continuous,,,,,0.303,,,,
+dong_2023,hemodynamics,Cardiac index,Baseline,continuous,,,,,0.892,,,,
+dong_2023,hemodynamics,Cardiac index,72h,continuous,,,,,0.402,,,,
+dong_2023,hemodynamics,LVEF(%),Baseline,continuous,,,,,0.894,,,,
+dong_2023,hemodynamics,LVEF(%),72h,continuous,,,,,0.667,,,,
+dong_2023,other,Tei index,Baseline,continuous,,,,,0.556,,,,
+dong_2023,other,Tei index,72h,continuous,,,,,0.068,,,,
+dong_2023,other,TAPSE (mm),Baseline,continuous,,,,,0.723,,,,
+dong_2023,other,TAPSE (mm),72h,continuous,,,,,0.001,<0.001,,,
+dong_2023,other,RVFAC (%),Baseline,continuous,,,,,0.741,,,,
+dong_2023,other,RVFAC (%),72h,continuous,,,,,0.049,,,,
+dong_2023,other,TAM (cm/s),Baseline,continuous,,,,,0.614,,,,
+dong_2023,other,TAM (cm/s),72h,continuous,,,,,0.102,,,,
+dong_2023,other,Inferior vena cava variability,Baseline,continuous,,,,,0.106,,,,
+dong_2023,other,Inferior vena cava variability,72h,continuous,,,,,0.357,,,,
+dong_2023,other,RVEDA,Baseline,continuous,,,,,0.761,,,,
+dong_2023,other,RVEDA,72h,continuous,,,,,0.291,,,,
+dong_2023,other,R/L,Baseline,continuous,,,,,0.899,,,,
+dong_2023,other,R/L,72h,continuous,,,,,0.34,,,,
+dong_2023,other,E/A,Baseline,continuous,,,,,0.095,,,,
+dong_2023,other,E/A,72h,continuous,,,,,0.046,,,,
+dong_2023,other,E/e,Baseline,continuous,,,,,0.407,,,,
+dong_2023,other,E/e,72h,continuous,,,,,0.172,,,,
+estoos_2023,adverse_event,RV dysfunction post-cannulation,post-cannulation,dichotomous,odds_ratio,0.06,0.01,0.27,0.0008,,False,,univariate logistic regression
+estoos_2023,adverse_event,RV dysfunction post-cannulation,post-cannulation,dichotomous,odds_ratio,0.07,0.004,0.47,0.02,,True,"age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",multivariate logistic regression
+estoos_2023,adverse_event,RV dysfunction post-cannulation,post-cannulation,dichotomous,,,,,0.0001,,,,Fischer exact test
+estoos_2023,successful_extubation_or_weaning,Survival to decannulation,Survival to decannulation,dichotomous,odds_ratio,3.39,1.23,9.79,0.02,,False,,univariate logistic regression
+estoos_2023,successful_extubation_or_weaning,Survival to decannulation,Survival to decannulation,dichotomous,odds_ratio,2.86,0.75,12.06,0.13,,True,"age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",multivariate logistic regression
+estoos_2023,successful_extubation_or_weaning,Survival to decannulation,Survival to decannulation,dichotomous,,,,,0.022,,,,Fischer exact test
+estoos_2023,mortality,Survival to discharge,Survival to discharge,dichotomous,odds_ratio,2.02,0.75,5.58,0.17,,False,,univariate logistic regression
+estoos_2023,mortality,Survival to discharge,Survival to discharge,dichotomous,odds_ratio,1.94,0.5,8.13,0.34,,True,"age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",multivariate logistic regression
+estoos_2023,mortality,Survival to discharge,Survival to discharge,dichotomous,,,,,0.211,,,,Fischer exact test
+estoos_2023,mortality,Overall mortality,Overall mortality,dichotomous,,,,,0.211,,,,Fischer exact test
+estoos_2023,barotrauma,Barotrauma on ECMO,on ECMO,dichotomous,odds_ratio,0.49,0.14,1.62,0.24,,False,,univariate logistic regression
+estoos_2023,barotrauma,Barotrauma on ECMO,on ECMO,dichotomous,odds_ratio,0.86,0.2,3.52,0.84,,True,"age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",multivariate logistic regression
+estoos_2023,barotrauma,Barotrauma on ECMO,on ECMO,dichotomous,,,,,0.598,,,,Fischer exact test
+estoos_2023,barotrauma,Pneumothorax,on ECMO,dichotomous,,,,,0.756,,,,Fischer exact test
+estoos_2023,barotrauma,Chest tube inserted,on ECMO,dichotomous,,,,,0.737,,,,Fischer exact test
+estoos_2023,other,ECMO duration,ECMO duration (days),continuous,,,,,0.497,,,,Mann-Whitney U test
+estoos_2023,icu_length_of_stay,ICU LOS,ICU LOS (days),continuous,,,,,0.174,,,,Mann-Whitney U test
+estoos_2023,hospital_length_of_stay,Hospital LOS,Hospital LOS (days),continuous,,,,,0.553,,,,Mann-Whitney U test
+estoos_2023,ventilator_settings,Mean PEEP on ECMO day 2,ECMO day 2,continuous,,,,,,<0.0001,,,Mann-Whitney U test
+estoos_2023,ventilator_settings,Mean PEEP on ECMO day 7,ECMO day 7,continuous,,,,,0.079,,,,Mann-Whitney U test
+estoos_2023,respiratory_mechanics,Mean driving pressure on ECMO day 2,ECMO day 2,continuous,,,,,0.665,,,,Mann-Whitney U test
+estoos_2023,respiratory_mechanics,Mean driving pressure on ECMO day 7,ECMO day 7,continuous,,,,,0.37,,,,Mann-Whitney U test
+estoos_2023,successful_extubation_or_weaning,Extubated on ECMO,on ECMO,dichotomous,,,,,,<0.0001,,,Fischer exact test
+estoos_2023,successful_extubation_or_weaning,Reintubated,,dichotomous,,,,,0.0004,,,,Fischer exact test
+estoos_2023,rescue_therapy,Proning on ECMO,,dichotomous,,,,,0.011,,,,Fischer exact test
+estoos_2023,oxygenation,ABG prior to cannulation: pO2,ABG prior to cannulation,continuous,,,,,0.16,,,,Mann-Whitney U test
+estoos_2023,other,Tracheostomy,during ECMO,dichotomous,,,,,0.458,,False,,Fischer exact test
+estoos_2023,adverse_event,VTE,during ECMO,dichotomous,,,,,0.616,,False,,Fischer exact test
+estoos_2023,hemodynamics,Vasopressors,during ECMO,dichotomous,,,,,0.152,,False,,Fischer exact test
+estoos_2023,other,CRRT,during ECMO,dichotomous,,,,,0.616,,False,,Fischer exact test
+estoos_2023,other,Sedative infusion at ECMO day 2,ECMO day 2,dichotomous,,,,,0.35,,False,,Fischer exact test
+estoos_2023,other,Sedative infusion at ECMO day 7,ECMO day 7,dichotomous,,,,,0.006,,False,,Fischer exact test
+estoos_2023,other,RASS at ECMO day 2,ECMO day 2,continuous,,,,,0.219,,False,,Mann-Whitney U test
+estoos_2023,other,RASS at ECMO day 7,ECMO day 7,continuous,,,,,0.365,,False,,Mann-Whitney U test
+estoos_2023,other,ECMO FSO2 at 48 h,48 h,continuous,,,,,0.001,,False,,Mann-Whitney U test
+estoos_2023,other,ECMO blood flow at 48 h,48 h,continuous,,,,,0.558,,False,,Mann-Whitney U test
+estoos_2023,other,ECMO sweep gas flow at 48 h,48 h,continuous,,,,,0.923,,False,,Mann-Whitney U test
+estoos_2023,other,ECMO RPM at 48 h,48 h,continuous,,,,,0.855,,False,,Mann-Whitney U test
+estoos_2023,adverse_event,Blood culture positivity,post-cannulation,dichotomous,,,,,0.612,,False,,Fischer exact test
+estoos_2023,adverse_event,Urine culture positivity,post-cannulation,dichotomous,,,,,,>0.999,False,,Fischer exact test
+estoos_2023,adverse_event,Sputum culture positivity,post-cannulation,dichotomous,,,,,0.767,,False,,Fischer exact test
+florio_2020,mortality,28-day mortality,"28-day mortality, n (%)",dichotomous,hazard_ratio,0.31,0.13,0.78,0.001,,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,mortality,3-month mortality,"3-month mortality, n (%)",dichotomous,hazard_ratio,0.35,0.16,0.74,0.006,,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,mortality,6-month mortality,"6-month mortality, n (%)",dichotomous,hazard_ratio,0.35,0.16,0.74,0.006,,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,mortality,1-year mortality,"1-year mortality, n (%)",dichotomous,hazard_ratio,0.35,0.16,0.74,0.006,,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,mortality,ICU mortality,"ICU mortality, n (%)",dichotomous,hazard_ratio,0.29,0.12,0.67,0.004,,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,mortality,Hospital mortality,"Hospital mortality, n (%)",dichotomous,hazard_ratio,0.22,0.1,0.51,,<0.001,True,"APACHE, age, BMI, PaO2/FiO2",Cox proportional hazard model
+florio_2020,ventilator_free_days,Ventilation-free days,"Ventilation-free days, days, mean (CI 95%)",continuous,,,,,0.859,,,,
+florio_2020,icu_length_of_stay,ICU length of stay,"ICU length of stay, days",continuous,,,,,,< 0.001,,,
+florio_2020,icu_free_days,Days not in ICU at day 28,"Days not in ICU at day 28, days, mean (CI 95%)",continuous,,,,,0.413,,,,
+florio_2020,hospital_length_of_stay,Hospital length of stay,"Hospital length of stay, days",continuous,,,,,,< 0.001,,,
+florio_2020,other,Days not in hospital at day 28,"Days not in hospital at day 28, days, mean (CI 95%)",continuous,,,,,0.121,,,,
+florio_2020,successful_extubation_or_weaning,Reintubation,"Reintubation, n (%)",dichotomous,,,,,0.868,,,,
+florio_2020,other,Tracheostomy,"Tracheostomy, n (%)",dichotomous,,,,,0.061,,,,
+florio_2020,other,AKI,"AKI, n (%)",dichotomous,,,,,0.902,,,,
+florio_2020,other,RRT,"RRT, n (%)",dichotomous,,,,,0.884,,,,
+florio_2020,oxygenation,PaO2/FiO2,"Pa/FiO2, mmHg, mean (CI 95%), Day 1",continuous,,,,,0.003,,,,
+grasso_2012,transpulmonary_pressure,PPLATL (end-inspiratory plateau pressure of the lung),Conventional ventilation,continuous,,,,,0.0001,* P = 0.0001,,,unpaired T test (ECMO vs no ECMO)
+grasso_2012,respiratory_mechanics,EL (static lung elastance),Conventional ventilation,continuous,,,,,0.001,,,,unpaired T test
+grasso_2012,respiratory_mechanics,ECW (static chest wall elastance),Conventional ventilation,continuous,,,,,0.0001,,,,unpaired T test
+grasso_2012,respiratory_mechanics,PPLATCW (cmH2O),Conventional ventilation,continuous,,,,,0.0001,* P = 0.0001,,,unpaired T test (ECMO vs no ECMO)
+grasso_2012,respiratory_mechanics,ECW/ERS,Conventional ventilation,continuous,,,,,0.0001,* P = 0.0001,,,unpaired T test (ECMO vs no ECMO)
+maia_2026,transpulmonary_pressure,"Expiratory transpulmonary pressure, baseline",Baseline,continuous,,,,,0.35,,False,,Kruskal-Wallis test
+maia_2026,oxygenation,"PaO2/FiO2, baseline",Baseline,continuous,,,,,0.07,,False,,Kruskal-Wallis test
+maia_2026,mortality,28-day mortality,28-day mortality,dichotomous,,,,,0.15,,False,,Fisher exact test (four-group comparison)
+maia_2026,ventilator_free_days,Ventilator free days,Ventilator free days,continuous,,,,,0.7,,False,,Kruskal-Wallis test
+maia_2026,icu_length_of_stay,ICU LOS,ICU LOS,continuous,,,,,0.73,,False,,Kruskal-Wallis test
+maia_2026,hospital_length_of_stay,Hospital LOS,Hospital LOS,continuous,,,,,0.81,,False,,Kruskal-Wallis test
+maia_2026,barotrauma,Barotrauma,Barotrauma,dichotomous,,,,,1,,False,,Fisher exact test
+maia_2026,rescue_therapy,Prone position,Prone position,dichotomous,,,,,0.36,,False,,Fisher exact test
+maia_2026,other,Time of sedation,Time of sedation,continuous,,,,,0.7,,False,,Kruskal-Wallis test
+maia_2026,other,Time of neuromuscular blocking agents,Time of neuromuscular blocking agents,continuous,,,,,0.89,,False,,Kruskal-Wallis test
+maia_2026,other,Time in vasopressors,Time in vasopressors,continuous,,,,,0.42,,False,,Kruskal-Wallis test
+maia_2026,other,Time of corticosteroids use,Time of corticosteroids use,continuous,,,,,0.93,,False,,Kruskal-Wallis test
+maia_2026,respiratory_mechanics,"Crs (respiratory system static compliance), baseline",Baseline,continuous,,,,,0.12,,False,,Kruskal-Wallis test
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,0.03,-2.74,2.8,0.98,,True,Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2),
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,1.9,-0.98,4.78,0.2,,True,Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2),
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,1.42,-1.35,4.19,0.31,,True,Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2),
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,0.52,-3.28,4.31,0.79,,True,"Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,-0.16,-3.98,3.66,0.93,,True,"Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,mean_difference,2.45,-1.35,6.24,0.21,,True,"Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,other,-0.36,-2.07,1.36,0.69,,True,Group x day interaction term (Table 5S),
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,other,1.38,-0.35,3.11,0.13,,True,Group x day interaction term (Table 5S),
+maia_2026,respiratory_mechanics,Mean respiratory system compliance (Crs) from Day 0 to Day 3,Mean Crs from Day 0 to Day 3,continuous,other,-0.74,-2.45,0.98,0.41,,True,Group x day interaction term (Table 5S),
+maia_2026,respiratory_mechanics,"Pplat (plateau pressure), baseline",Baseline,continuous,,,,,0.1,,False,,Kruskal-Wallis test
+maia_2026,respiratory_mechanics,"Pplat titrated PEEP, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.55,,False,,Kruskal-Wallis test
+maia_2026,respiratory_mechanics,"Driving pressure, baseline",Baseline,continuous,,,,,0.06,,False,,Kruskal-Wallis test
+maia_2026,respiratory_mechanics,"Driving pressure titrated PEEP, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.93,,False,,Kruskal-Wallis test
+maia_2026,transpulmonary_pressure,"Inspiratory transpulmonary pressure, baseline",Baseline,continuous,,,,,0.13,,False,,Kruskal-Wallis test
+maia_2026,transpulmonary_pressure,"Inspiratory transpulmonary pressure, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.34,,False,,Kruskal-Wallis test
+maia_2026,transpulmonary_pressure,"Expiratory transpulmonary pressure, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.08,,False,,Kruskal-Wallis test
+maia_2026,oxygenation,"PaO2/FiO2, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.04,,False,,Kruskal-Wallis test
+maia_2026,oxygenation,"PaO2, baseline",Baseline,continuous,,,,,0.44,,False,,Kruskal-Wallis test
+maia_2026,oxygenation,"PaO2, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.37,,False,,Kruskal-Wallis test
+maia_2026,other,"PaCO2, baseline",Baseline,continuous,,,,,0.1,,False,,Kruskal-Wallis test
+maia_2026,other,"PaCO2, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.03,,False,,Kruskal-Wallis test
+maia_2026,other,"pH, baseline",Baseline,continuous,,,,,0.15,,False,,Kruskal-Wallis test
+maia_2026,other,"pH, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.17,,False,,Kruskal-Wallis test
+maia_2026,ventilator_settings,"PEEP, baseline",Baseline,continuous,,,,,0.5,,False,,Kruskal-Wallis test
+maia_2026,ventilator_settings,"PEEP, median (D0 to D3)",Median (D0 to D3),continuous,,,,,0.87,,False,,Kruskal-Wallis test
+mezidi_2018,ventilator_settings,PEEP set on ventilator (late),Late prone position,continuous,,,,,0.23,,,,repeated measures 2-factor ANOVA
+mezidi_2018,ventilator_settings,PEEP set on ventilator (late),Late prone position,continuous,,,,,0.5,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Paw,ee (late)",Late prone position,continuous,,,,,0.09,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Paw,ee (late)",Late prone position,continuous,,,,,0.26,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Paw,ei (late)",Late prone position,continuous,,,,,0.28,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Paw,ei (late)",Late prone position,continuous,,,,,0.67,,,,repeated measures 2-factor ANOVA
+mezidi_2018,esophageal_pressure,"Pes,ee (late)",Late prone position,continuous,,,,,0.47,,,,repeated measures 2-factor ANOVA
+mezidi_2018,esophageal_pressure,"Pes,ee (late)",Late prone position,continuous,,,,,0.07,,,,repeated measures 2-factor ANOVA
+mezidi_2018,esophageal_pressure,"Pes,ei (late)",Late prone position,continuous,,,,,0.2,,,,repeated measures 2-factor ANOVA
+mezidi_2018,esophageal_pressure,"Pes,ei (late)",Late prone position,continuous,,,,,0.07,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,"Pga,ee (late)",Late prone position,continuous,,,,,0.96,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,"Pga,ee (late)",Late prone position,continuous,,,,,0.77,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,"Pga,ei (late)",Late prone position,continuous,,,,,0.96,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,"Pga,ei (late)",Late prone position,continuous,,,,,0.75,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ee (late)",Late prone position,continuous,,,,,0.22,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ee (late)",Late prone position,continuous,,,,,0.38,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ei (late)",Late prone position,continuous,,,,,0.69,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ei (late)",Late prone position,continuous,,,,,0.11,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ei_Elastance (late)",Late prone position,continuous,,,,,0.47,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,"PL,ei_Elastance (late)",Late prone position,continuous,,,,,0.16,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,DPrs (late),Late prone position,continuous,,,,,0.51,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,DPrs (late),Late prone position,continuous,,,,,0.17,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,DPcw (late),Late prone position,continuous,,,,,0.02,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,DPcw (late),Late prone position,continuous,,,,,0.42,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,DPL (late),Late prone position,continuous,,,,,0.19,,,,repeated measures 2-factor ANOVA
+mezidi_2018,transpulmonary_pressure,DPL (late),Late prone position,continuous,,,,,0.14,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,rs (late)",Late prone position,continuous,,,,,0.41,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,rs (late)",Late prone position,continuous,,,,,0.24,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,cw (late)",Late prone position,continuous,,,,,0.04,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,cw (late)",Late prone position,continuous,,,,,0.37,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,L (late)",Late prone position,continuous,,,,,0.18,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,"Est,L (late)",Late prone position,continuous,,,,,0.12,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,PaCO2 (late),Late prone position,continuous,,,,,0.42,,,,repeated measures 2-factor ANOVA
+mezidi_2018,other,PaCO2 (late),Late prone position,continuous,,,,,0.43,,,,repeated measures 2-factor ANOVA
+mezidi_2018,oxygenation,PaO2/FIO2 ratio (late),Late prone position,continuous,,,,,0.82,,,,repeated measures 2-factor ANOVA
+mezidi_2018,oxygenation,PaO2/FIO2 ratio (late),Late prone position,continuous,,,,,0.27,,,,repeated measures 2-factor ANOVA
+mezidi_2018,lung_volume,EELV (late),Late prone position,continuous,,,,,0.63,,,,repeated measures 2-factor ANOVA
+mezidi_2018,lung_volume,EELV (late),Late prone position,continuous,,,,,0.28,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,Sternal lung regions (late),Late prone position,continuous,,,,,0.42,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,Sternal lung regions (late),Late prone position,continuous,,,,,0.89,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,Spinal lung regions (late),Late prone position,continuous,,,,,0.57,,,,repeated measures 2-factor ANOVA
+mezidi_2018,respiratory_mechanics,Spinal lung regions (late),Late prone position,continuous,,,,,0.51,,,,repeated measures 2-factor ANOVA
+obi_2018,successful_extubation_or_weaning,Percentage of subjects weaned from the ventilator at day 30,day 30,dichotomous,,,,,0.67,0.67,False,,Pearson χ2 or Fisher exact test
+obi_2018,ventilator_settings,"PEEP, cmH2O (post-adjustment)",Postadjustment measure,continuous,,,,,0.38,.38,,,Student t test (between groups)
+obi_2018,respiratory_mechanics,"Cstat (static effective compliance, post-adjustment)",Postadjustment measure,continuous,,,,,0.76,.76,,,Student t test (between groups)
+obi_2018,ventilator_settings,"Pressure support, cmH2O (post-adjustment)",Postadjustment measure,continuous,,,,,0.23,.23,,,Student t test (between groups)
+obi_2018,ventilator_settings,FiO2 (post-adjustment),Postadjustment measure,continuous,,,,,0.49,.49,,,Student t test (between groups)
+obi_2018,ventilator_settings,"VT/IBW, cm3/kg (tidal volume per ideal body weight, post-adjustment)",Postadjustment measure,continuous,,,,,0.66,.66,,,Student t test (between groups)
+obi_2018,ventilator_settings,"RR, breaths/min (post-adjustment)",Postadjustment measure,continuous,,,,,0.73,.73,,,Student t test (between groups)
+obi_2018,duration_mechanical_ventilation,Time to wean from mechanical ventilation (among successfully weaned subjects),time to wean,time_to_event,,,,,0.012,0.012,False,,Mann-Whitney U test
+obi_2018,duration_mechanical_ventilation,Time to achieve ventilator independence (entire cohort),time to wean (entire cohort),time_to_event,,,,,0.892,0.892,False,,Log-rank test
+obi_2018,ventilator_settings,"PS, cmH2O",Initial measure,continuous,,,,,0.77,.77,False,,Student t test
+obi_2018,ventilator_settings,"PEEP, cmH2O",Initial measure,continuous,,,,,0.67,.67,False,,Student t test
+obi_2018,ventilator_settings,FiO2,Initial measure,continuous,,,,,0.77,.77,False,,Student t test
+obi_2018,respiratory_mechanics,Cstat,Initial measure,continuous,,,,,0.54,.54,False,,Student t test
+obi_2018,ventilator_settings,"RR, breaths/min",Initial measure,continuous,,,,,0.84,.84,False,,Student t test
+obi_2018,ventilator_settings,"VT, cm3",Initial measure,continuous,,,,,0.35,.35,False,,Student t test
+obi_2018,ventilator_settings,"VT/IBW, cm3/kg",Initial measure,continuous,,,,,0.82,.82,False,,Student t test
+sarge_2021,mortality,Mortality at day 28,Mortality at day 28,dichotomous,odds_ratio,1.08,0.6,1.97,0.79,0.79,False,,unadjusted subgroup logistic model (overall population)
+sarge_2021,mortality,Mortality at day 28,Mortality at day 28,dichotomous,odds_ratio,0.5,0.19,1.34,,,False,,"unadjusted subgroup logistic model, Low APACHE-II"
+sarge_2021,mortality,Mortality at day 28,Mortality at day 28,dichotomous,odds_ratio,1.87,0.84,4.16,,,False,,"unadjusted subgroup logistic model, High APACHE-II"
+sarge_2021,mortality,Mortality at day 28,Mortality at day 28,dichotomous,,,,,0.04,0.04,False,,P value for interaction term (APACHE-II × treatment group)
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,odds_ratio,0.99,0.56,1.77,0.98,0.98,False,,unadjusted logistic model (overall population)
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,odds_ratio,0.38,0.16,0.94,,,False,,"unadjusted subgroup logistic model, Low APACHE-II"
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,odds_ratio,2.16,0.97,4.81,,,False,,"unadjusted subgroup logistic model, High APACHE-II"
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,hazard_ratio,0.43,0.2,0.92,,,False,,"Cox proportional hazards model, Low APACHE-II subgroup"
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,hazard_ratio,1.69,0.93,3.05,,,False,,"Cox proportional hazards model, High APACHE-II subgroup"
+sarge_2021,mortality,Mortality at day 60,Mortality at day 60,dichotomous,,,,,0.03,0.03,False,,"interaction of treatment group with APACHE-II as a continuous variable, Cox model"
+sarge_2021,mortality,Mortality at 1 year,Mortality at 1 year,dichotomous,odds_ratio,0.93,0.53,1.63,0.8,0.80,False,,unadjusted logistic model (overall population)
+sarge_2021,mortality,Mortality at 1 year,Mortality at 1 year,dichotomous,odds_ratio,0.46,0.2,1.06,,,False,,"unadjusted subgroup logistic model, Low APACHE-II"
+sarge_2021,mortality,Mortality at 1 year,Mortality at 1 year,dichotomous,odds_ratio,1.77,0.8,3.95,,,False,,"unadjusted subgroup logistic model, High APACHE-II"
+sarge_2021,mortality,Mortality at 1 year,Mortality at 1 year,dichotomous,,,,,0.02,0.02,False,,P value for interaction term
+sarge_2021,ventilator_free_days,Ventilator-free days,through Day 28,continuous,other,0.98,0.9,1.06,0.57,0.57,False,,"Poisson regression, incidence rate ratio, overall population"
+sarge_2021,ventilator_free_days,Ventilator-free days,through Day 28,continuous,other,1.25,1.13,1.38,,,False,,"Poisson regression, Low APACHE-II"
+sarge_2021,ventilator_free_days,Ventilator-free days,through Day 28,continuous,other,0.69,0.61,0.77,,,False,,"Poisson regression, High APACHE-II"
+sarge_2021,ventilator_free_days,Ventilator-free days,through Day 28,continuous,,,,,0.01,<0.01,False,,"P value for interaction term, Poisson regression"
+sarge_2021,organ_failure_free_days,Shock-free days,through Day 28,continuous,other,0.9,0.84,0.98,0.01,0.01,False,,"Poisson regression, incidence rate ratio, overall population"
+sarge_2021,organ_failure_free_days,Shock-free days,through Day 28,continuous,other,1.1,0.99,1.22,,,False,,"Poisson regression, Low APACHE-II"
+sarge_2021,organ_failure_free_days,Shock-free days,through Day 28,continuous,other,0.67,0.59,0.76,,,False,,"Poisson regression, High APACHE-II"
+sarge_2021,organ_failure_free_days,Shock-free days,through Day 28,continuous,,,,,0.01,<0.01,False,,"P value for interaction term, Poisson regression"
+sun_2024,mortality,28-day mortality rate,28-day mortality rate,dichotomous,,,,,0.065,,,,chi-square test
+sun_2024,ventilator_settings,PEEP,After intervention,continuous,,,,,,<0.001,,,independent t-test (t = 6.783)
+sun_2024,oxygenation,PaO2,Before intervention,continuous,,,,,0.434,,,,independent t-test (t = 0.786)
+sun_2024,oxygenation,PaO2,After intervention,continuous,,,,,0.001,,,,independent t-test (t = 3.284)
+sun_2024,oxygenation,PaCO2,Before intervention,continuous,,,,,0.217,,,,independent t-test (t = 1.241)
+sun_2024,oxygenation,PaCO2,After intervention,continuous,,,,,0.261,,,,independent t-test (t = 1.130)
+sun_2024,duration_mechanical_ventilation,duration of mechanical ventilation,Ventilation duration,continuous,,,,,,<0.001,,,independent t-test (t = 6.451)
+sun_2024,hospital_length_of_stay,length of hospital stay,Hospital stay,continuous,,,,,,<0.001,,,independent t-test (t = 4.299)
+sun_2024,other,incidence of ventilator-associated pneumonia (VAP),VAP incidence,dichotomous,,,,,0.534,,,,chi-square test (χ² = 0.381)
+sun_2024,dead_space,dead space in the respiratory tract (Vd/Vt),48 h after initiation of mechanical ventilation,continuous,,,,,0.015,,,,independent t-test (t = 2.467)
+sun_2024,oxygenation,oxygenation index (OI),Before intervention,continuous,,,,,0.585,,,,independent t-test (t = 0.547)
+sun_2024,oxygenation,oxygenation index (OI),After intervention,continuous,,,,,,<0.001,,,independent t-test (t = 5.027)
+sun_2024,other,pulmonary shunt fraction (Qs/Qt),Before intervention,continuous,,,,,0.101,,,,independent t-test (t = 1.653)
+sun_2024,other,pulmonary shunt fraction (Qs/Qt),After intervention,continuous,,,,,,<0.001,,,independent t-test (t = 6.869)
+sun_2024,hemodynamics,mean arterial pressure (MAP),48 h after initiation of mechanical ventilation,continuous,,,,,0.391,,,,independent t-test (t = 0.861)
+sun_2024,hemodynamics,central venous pressure (CVP),48 h after initiation of mechanical ventilation,continuous,,,,,0.137,,,,independent t-test (t = 1.498)
+sun_2024,hemodynamics,heart rate,48 h after initiation of mechanical ventilation,continuous,,,,,0.21,,,,independent t-test (t = 1.260)
+sun_2024,mortality,60-day mortality,60-day follow-up,dichotomous,hazard_ratio,0.565,0.32,0.999,0.046,0.046,,,
+talmor_2008,oxygenation,PaO2:FiO2,Baseline,continuous,,,,,0.89,,,,
+talmor_2008,oxygenation,PaO2:FiO2,72 Hr,continuous,mean_difference,88,78.1,98.3,0.002,,False,,Student's t-test
+talmor_2008,respiratory_mechanics,Respiratory-system compliance (ml/cm of water),Baseline,continuous,,,,,0.94,,,,
+talmor_2008,respiratory_mechanics,Respiratory-system compliance (ml/cm of water),72 Hr,continuous,,,,,0.005,,False,,Student's t-test
+talmor_2008,dead_space,Ratio of physiological dead space to tidal volume,Baseline,continuous,,,,,0.95,,,,
+talmor_2008,dead_space,Ratio of physiological dead space to tidal volume,72 Hr,continuous,,,,,0.29,,,,repeated-measures analysis of variance
+talmor_2008,dead_space,Ratio of physiological dead space to tidal volume,72 Hr,continuous,,,,,0.27,,False,,
+talmor_2008,ventilator_settings,FiO2,Baseline,continuous,,,,,0.02,,,,
+talmor_2008,ventilator_settings,FiO2,72 Hr,continuous,,,,,0.07,,False,,
+talmor_2008,ventilator_settings,Tidal volume (ml),Baseline,continuous,,,,,0.8,,,,
+talmor_2008,ventilator_settings,Tidal volume (ml),72 Hr,continuous,,,,,0.03,,False,,
+talmor_2008,ventilator_settings,Tidal volume (ml per kg of predicted body weight),Baseline,continuous,,,,,0.12,,,,
+talmor_2008,ventilator_settings,Tidal volume (ml per kg of predicted body weight),72 Hr,continuous,,,,,0.31,,False,,
+talmor_2008,transpulmonary_pressure,Transpulmonary end-inspiratory pressure (cm of water),Baseline,continuous,,,,,0.61,,,,
+talmor_2008,transpulmonary_pressure,Transpulmonary end-inspiratory pressure (cm of water),72 Hr,continuous,,,,,0.58,,False,,
+talmor_2008,transpulmonary_pressure,Transpulmonary end-expiratory pressure (cm of water),Baseline,continuous,,,,,0.49,,,,
+talmor_2008,transpulmonary_pressure,Transpulmonary end-expiratory pressure (cm of water),72 Hr,continuous,,,,,0.06,,False,,
+talmor_2008,esophageal_pressure,Esophageal end-inspiratory pressure (cm of water),Baseline,continuous,,,,,0.68,,,,
+talmor_2008,esophageal_pressure,Esophageal end-inspiratory pressure (cm of water),72 Hr,continuous,,,,,0.03,,False,,
+talmor_2008,esophageal_pressure,Esophageal end-expiratory pressure (cm of water),Baseline,continuous,,,,,0.79,,,,
+talmor_2008,esophageal_pressure,Esophageal end-expiratory pressure (cm of water),72 Hr,continuous,,,,,0.008,,False,,
+talmor_2008,mortality,28-Day mortality — no. (%),28-Day mortality,dichotomous,risk_ratio,0.43,0.17,1.07,0.06,,False,,Poisson regression with conservative robust error variance
+talmor_2008,mortality,28-Day mortality — no. (%),28-Day mortality,dichotomous,risk_ratio,0.46,0.19,1.0,0.049,,True,baseline APACHE II score,Poisson regression with conservative robust error variance
+talmor_2008,mortality,28-Day mortality — no. (%),28-Day mortality,dichotomous,,,,,0.055,,,,
+talmor_2008,mortality,180-Day mortality — no. (%),180-Day mortality,dichotomous,risk_ratio,0.59,0.29,1.2,,,False,,
+talmor_2008,mortality,180-Day mortality — no. (%),180-Day mortality,dichotomous,hazard_ratio,0.52,0.22,1.25,,,True,baseline APACHE II score,Cox proportional-regression model
+talmor_2008,mortality,180-Day mortality — no. (%),180-Day mortality,dichotomous,,,,,0.13,,,,
+talmor_2008,ventilator_free_days,No. of ventilator-free days at 28 days,No. of ventilator-free days at 28 days,continuous,,,,,0.5,,,,
+talmor_2008,icu_free_days,No. of ICU-free days at 28 days,No. of ICU-free days at 28 days,continuous,,,,,0.96,,,,
+talmor_2008,icu_length_of_stay,Length of ICU stay — days,,continuous,,,,,0.16,,,,
+talmor_2008,duration_mechanical_ventilation,No. of days of ventilation among survivors,,continuous,,,,,0.71,,False,,
+talmor_2008,oxygenation,PaO2:FiO2,,continuous,,,,,0.04,,False,,
+talmor_2008,oxygenation,PaO2:FiO2,"24, 48, and 72 hours",continuous,,,,,0.001,,False,,repeated-measures analysis of variance
+talmor_2008,respiratory_mechanics,Respiratory-system compliance,"24, 48, and 72 hours",continuous,,,,,0.01,,False,,repeated-measures analysis of variance
+talmor_2008,oxygenation,PaO2,,continuous,,,,,0.03,,False,,
+talmor_2008,ventilator_settings,PEEP,,continuous,,,,,,<0.001,False,,
+talmor_2008,ventilator_settings,PEEP,,continuous,mean_difference,7.7,5.5,9.9,,,False,,
+talmor_2008,ventilator_settings,PEEP,"24, 48, and 72 hours",continuous,,,,,,<0.001,False,,repeated-measures analysis of variance
+talmor_2008,ventilator_settings,Respiratory rate,,continuous,,,,,0.2,,False,,
+talmor_2008,ventilator_settings,Inspiratory time,,continuous,,,,,0.27,,False,,
+talmor_2008,ventilator_settings,PEEPtotal,,continuous,,,,,,<0.001,False,,
+talmor_2008,respiratory_mechanics,Peak inspiratory pressure,,continuous,,,,,0.007,,False,,
+talmor_2008,respiratory_mechanics,Mean airway pressure,,continuous,,,,,0.001,,False,,
+talmor_2008,respiratory_mechanics,Plateau pressure,,continuous,,,,,0.07,,False,,
+talmor_2008,respiratory_mechanics,Plateau pressure,"24, 48, and 72 hours",continuous,,,,,0.003,,False,,repeated-measures analysis of variance
+talmor_2008,transpulmonary_pressure,Transpulmonary end-inspiratory pressure,"24, 48, and 72 hours",continuous,,,,,0.13,,False,,repeated-measures analysis of variance
+talmor_2008,transpulmonary_pressure,Transpulmonary end-expiratory pressure,"24, 48, and 72 hours",continuous,,,,,,<0.001,False,,repeated-measures analysis of variance
+tang_2026,mortality,ICU mortality,ICU mortality,dichotomous,,,,,0.744,,,,
+tang_2026,duration_mechanical_ventilation,IMV duration (hr),IMV duration (hr),continuous,,,,,0.303,,,,
+tang_2026,icu_length_of_stay,ICU duration (d),ICU duration (d),continuous,,,,,0.317,,,,
+tang_2026,hemodynamics,Right ventricular ejection fraction dynamic change,within 72 hours after randomization,continuous,,,,,0.043,,False,,"ANOVA, interaction (P0)"
+tang_2026,hemodynamics,Cpa dynamic changes during first 72 hours (primary endpoint),during the first 72 hours of intervention following enrollment,continuous,,,,,0.039,,False,,analysis of variance for continuous variables (intergroup difference P1)
+tang_2026,oxygenation,"Oxygen delivery index (Do2I), dynamic change during 72 hr",during the 72 hours of monitoring after randomization,continuous,,,,,0.026,,,,analysis of variance for continuous variables (group x time interaction/trend)
+tang_2026,oxygenation,"Oxygen consumption index (Vo2I), dynamic change during 72 hr",during the 72 hours of monitoring,continuous,,,,,0.007,,,,analysis of variance for continuous variables (group x time interaction)
+tang_2026,oxygenation,"Oxygen consumption index (Vo2I), dynamic change during 72 hr",during the 72 hours of monitoring,continuous,,,,,0.049,,,,intergroup comparison (analysis of variance for continuous variables)
+tang_2026,other,"Paco2 (mm Hg), comparison between groups during 72 hr",during the 72 hours of monitoring,continuous,,,,,0.027,,,,analysis of variance for continuous variables (intergroup comparison)
+tang_2026,other,"Right ventricular end-diastolic transverse diameter/left ventricular end-diastolic transverse diameter (RVED/LVED), 5-day trend",daily TTE for 5 consecutive days after randomization,continuous,,,,,0.044,,,,analysis of variance for continuous variables (intergroup difference)
+tang_2026,other,"Tricuspid annular plane systolic excursion (TAPSE), 5-day trend",during the 5 days,continuous,,,,,0.047,,,,analysis of variance for continuous variables (trend)
+tang_2026,other,"Left ventricular ejection fraction (EF), 5-day trend",during the 5 days after randomization,continuous,,,,,0.048,,,,analysis of variance for continuous variables (trend)
+tonelli_2023,oxygenation,pO2,PEEPLOW phase,continuous,,,,,0.1,0.1,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,ventilator_settings,PEEP,PEEPLOW phase,continuous,,,,,0.2,0.2,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"EL, lung elastance",ZEEP phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"EL, lung elastance",PEEPLOW phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"EL, lung elastance",PEEPTITRATED phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EE, end-expiratory transpulmonary pressure",ZEEP phase,continuous,,,,,0.66,0.66,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EE, end-expiratory transpulmonary pressure",PEEPLOW phase,continuous,,,,,0.75,0.75,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EE, end-expiratory transpulmonary pressure",PEEPTITRATED phase,continuous,,,,,0.04,0.04,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EI, end-inspiratory transpulmonary pressure",ZEEP phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EI, end-inspiratory transpulmonary pressure",PEEPLOW phase,continuous,,,,,0.01,0.01,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,transpulmonary_pressure,"PL,EI, end-inspiratory transpulmonary pressure",PEEPTITRATED phase,continuous,,,,,0.001,0.001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPL, transpulmonary driving pressure",ZEEP phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPL, transpulmonary driving pressure",PEEPLOW phase,continuous,,,,,0.02,0.02,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPL, transpulmonary driving pressure",PEEPTITRATED phase,continuous,,,,,0.0001,0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Etot, respiratory system elastance",ZEEP phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Etot, respiratory system elastance",PEEPLOW phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Etot, respiratory system elastance",PEEPTITRATED phase,continuous,,,,,,<0.0001,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Ecw, chest wall elastance",ZEEP phase,continuous,,,,,0.12,0.12,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Ecw, chest wall elastance",PEEPLOW phase,continuous,,,,,0.09,0.09,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"Ecw, chest wall elastance",PEEPTITRATED phase,continuous,,,,,0.1,0.1,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPaw, driving pressure",ZEEP phase,continuous,,,,,0.56,0.56,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPaw, driving pressure",PEEPLOW phase,continuous,,,,,0.9,0.9,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,respiratory_mechanics,"ΔPaw, driving pressure",PEEPTITRATED phase,continuous,,,,,0.01,0.01,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,oxygenation,pO2,ZEEP phase,continuous,,,,,0.3,0.3,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,oxygenation,pO2,PEEPTITRATED phase,continuous,,,,,0.01,0.01,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,ventilator_settings,PEEP,PEEPTITRATED phase,continuous,,,,,0.03,0.03,False,"1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",Wilcoxon test
+tonelli_2023,ventilator_settings,PEEP,PEEPTITRATED phase,continuous,,,,,,<0.001,False,,
+tonelli_2023,other,pCO2,ZEEP phase,continuous,,,,,0.06,0.06,,,Wilcoxon rank-sum test
+tonelli_2023,other,pCO2,PEEPLOW phase,continuous,,,,,0.18,0.18,,,Wilcoxon rank-sum test
+tonelli_2023,other,pCO2,PEEPTITRATED phase,continuous,,,,,0.08,0.08,,,Wilcoxon rank-sum test
+tonelli_2023,other,pH,ZEEP phase,continuous,,,,,0.07,0.07,,,Wilcoxon rank-sum test
+tonelli_2023,other,pH,PEEPLOW phase,continuous,,,,,0.3,0.3,,,Wilcoxon rank-sum test
+tonelli_2023,other,pH,PEEPTITRATED phase,continuous,,,,,0.34,0.34,,,Wilcoxon rank-sum test
+wang_2018,other,PH,The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,duration_mechanical_ventilation,Mechanical ventilation time (day),Mechanical ventilation time,continuous,,,,,,< 0.05,,,
+wang_2018,icu_length_of_stay,Live time of ICU (day),Live time of ICU,continuous,,,,,,> 0.05,,,
+wang_2018,ventilator_settings,PEEP (cm H2O),The group on the same day,continuous,,,,,,< 0.05,,,two samples t-test
+wang_2018,transpulmonary_pressure,Ptrans-exp (cm H2O),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-exp of selecting the best PEEP (total measurement),For the total measurement,continuous,,,,,,< 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-ins (end-inspiratory transpulmonary pressure),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,Ppeak (airway peak pressure),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,CL (compliance of the lung),The group on the same day,continuous,,,,,,< 0.05,,,
+wang_2018,respiratory_mechanics,CL when the best PEEP was set (total measurement),When the best PEEP was set,continuous,,,,,,< 0.05,,,
+wang_2018,oxygenation,PaO2/FiO2 (mm Hg),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,oxygenation,Oxygenation index of titrating PEEP (total measurement),For the total measurement,continuous,,,,,,< 0.05,,,
+wang_2018,other,PaCO2 (mm Hg),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,other,Lac (mmol/l),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,CVP (mm Hg),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,HR (beat/min),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,SBP (mm Hg),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,DBP (mm Hg),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,other,hs-CRP (mg/l),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,other,hs-CRP (mg/l),On the sixth day,continuous,,,,,,> 0.05,,,
+wang_2018,other,PCT (ng/ml),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,other,PCT (ng/ml),On the sixth day,continuous,,,,,,> 0.05,,,
+wang_2018,other,IL-6 (ng/L),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,other,IL-8 (ng/L),The group on the same day,continuous,,,,,,> 0.05,,,
+wang_2018,ventilator_settings,PEEP,24 h,continuous,,,,,,< 0.05,,,
+wang_2018,ventilator_settings,PEEP,48 h,continuous,,,,,,< 0.05,,,
+wang_2018,ventilator_settings,PEEP,72 h,continuous,,,,,,< 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-exp,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-exp,48 h,continuous,,,,,,< 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-exp,72 h,continuous,,,,,,< 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-ins,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-ins,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,transpulmonary_pressure,Ptrans-ins,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,Ppeak,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,Ppeak,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,Ppeak,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,respiratory_mechanics,CL,24 h,continuous,,,,,,< 0.05,,,
+wang_2018,respiratory_mechanics,CL,48 h,continuous,,,,,,< 0.05,,,
+wang_2018,respiratory_mechanics,CL,72 h,continuous,,,,,,< 0.05,,,
+wang_2018,oxygenation,PaO2/FiO2,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,oxygenation,PaO2/FiO2,48 h,continuous,,,,,,< 0.05,,,
+wang_2018,oxygenation,PaO2/FiO2,72 h,continuous,,,,,,< 0.05,,,
+wang_2018,other,PH,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,PH,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,PH,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,PaCO2,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,PaCO2,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,PaCO2,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,Lac,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,Lac,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,Lac,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,CVP,24 h,continuous,,,,,,< 0.05,,,
+wang_2018,hemodynamics,CVP,48 h,continuous,,,,,,< 0.05,,,
+wang_2018,hemodynamics,CVP,72 h,continuous,,,,,,< 0.05,,,
+wang_2018,hemodynamics,HR,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,HR,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,HR,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,SBP,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,SBP,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,SBP,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,DBP,24 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,DBP,48 h,continuous,,,,,,> 0.05,,,
+wang_2018,hemodynamics,DBP,72 h,continuous,,,,,,> 0.05,,,
+wang_2018,other,hs-CRP,The third day,continuous,,,,,,> 0.05,,,
+wang_2018,other,PCT,The third day,continuous,,,,,,> 0.05,,,
+wang_2018,other,IL-6,The third day,continuous,,,,,,< 0.05,,,
+wang_2018,other,IL-8,The third day,continuous,,,,,,< 0.05,,,
+wang_2020,successful_extubation_or_weaning,Proportion of patients successfully weaned from venovenous ECMO,Primary endpoint,dichotomous,,,,,0.017,,,,
+wang_2020,mortality,60-d mortality,60-d mortality,dichotomous,,,,,0.03,,,,
+wang_2020,mortality,Mortality at 6 mo,Mortality at 6 mo,dichotomous,,,,,0.049,,,,
+wang_2020,other,"ECMO duration, d",,continuous,,,,,0.004,,,,
+wang_2020,ventilator_free_days,"Ventilator-free days at day 60, d",,continuous,,,,,0.282,,,,
+wang_2020,icu_length_of_stay,"ICU length of stay, d",,continuous,,,,,0.495,,,,
+wang_2020,hospital_length_of_stay,"Hospital length of stay, d",,continuous,,,,,0.373,,,,
+wang_2020,rescue_therapy,Continuous renal replacement therapy,,dichotomous,,,,,0.665,,,,
+wang_2020,other,Tracheostomy,,dichotomous,,,,,0.564,,,,
+wang_2020,barotrauma,Barotrauma,,dichotomous,,,,,0.483,,,,
+wang_2020,adverse_event,Ventilator-associated pneumonia,,dichotomous,,,,,0.152,,,,
+wang_2020,adverse_event,Multiple organ failure,,dichotomous,,,,,0.021,,,,
+wang_2020,oxygenation,Pao2:Fio2 ratio (mm Hg),Ventilation Function of Patients at Randomization,continuous,,,,,0.797,,,,
+wang_2020,ventilator_settings,Positive end-expiratory pressure (mm H2O),Ventilation Function of Patients at Randomization,continuous,,,,,0.715,,,,
+wang_2020,respiratory_mechanics,Driving pressure (cm H2O),Ventilation Function of Patients at Randomization,continuous,,,,,0.774,,,,
+wang_2020,respiratory_mechanics,Plateau pressure (cm H2O),Ventilation Function of Patients at Randomization,continuous,,,,,0.953,,,,
+wang_2020,ventilator_settings,Fio2,,continuous,,,,,0.619,,,,
+wang_2020,ventilator_settings,Tidal volume,,continuous,,,,,0.373,,,,
+wang_2020,ventilator_settings,Tidal volume (mL/predicted body weight),,continuous,,,,,0.785,,,,
+wang_2020,ventilator_settings,Respiratory rate,,continuous,,,,,0.998,,,,
+wang_2020,respiratory_mechanics,Peak airway pressure,,continuous,,,,,0.826,,,,
+wang_2020,respiratory_mechanics,Compliance,,continuous,,,,,0.613,,,,
+wang_2020,other,pH,,continuous,,,,,0.354,,,,
+wang_2020,oxygenation,Pao2,,continuous,,,,,0.846,,,,
+wang_2020,other,Paco2,,continuous,,,,,0.611,,,,
+wang_2020,other,Bicarbonate,,continuous,,,,,0.588,,,,
+wang_2020,oxygenation,Arterial oxygen saturation,,continuous,,,,,0.825,,,,
+zhao_2025,mortality,28‐day mortality rate,28‐day mortality rate,dichotomous,odds_ratio,0.63,0.08,4.73,0.653,,True,age and APACHE II score,multivariate logistic regression (EPM treatment strategies variable)
+zhao_2025,mortality,28‐day mortality rate,28‐day mortality rate,dichotomous,,,,,0.042,,,,chi‐squared test
+zhao_2025,duration_mechanical_ventilation,Mechanical ventilation duration,Mechanical ventilation duration (d),continuous,,,,,0.013,,,,independent sample t test
+zhao_2025,icu_length_of_stay,ICU length of stay,ICU length of stay (d),continuous,,,,,0.018,,,,independent sample t test
+zhao_2025,other,VAP incidence,VAP incidence,dichotomous,,,,,0.038,,,,chi‐squared test
+zhao_2025,successful_extubation_or_weaning,Weaning success rate,Weaning success rate,dichotomous,,,,,0.032,,,,chi‐squared test
+zhao_2025,successful_extubation_or_weaning,First weaning failure rate,First weaning failure rate,dichotomous,,,,,0.042,,,,chi‐squared test
+zhao_2025,other,Tracheotomy rate,Tracheotomy rate,dichotomous,,,,,0.048,,,,chi‐squared test
+zhao_2025,oxygenation,PaO2/FiO2 ratio,Baseline,continuous,,,,,0.887,,,,independent sample t test
+zhao_2025,oxygenation,PaO2/FiO2 ratio,24 h,continuous,,,,,0.028,,,,independent sample t test
+zhao_2025,oxygenation,PaO2/FiO2 ratio,48 h,continuous,,,,,0.016,,,,independent sample t test
+zhao_2025,oxygenation,PaO2/FiO2 ratio,72 h,continuous,mean_difference,73.41,,,0.008,,False,,
+zhao_2025,transpulmonary_pressure,End‐inspiratory PL,Baseline,continuous,,,,,0.832,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐inspiratory PL,24 h,continuous,,,,,0.012,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐inspiratory PL,48 h,continuous,,,,,0.008,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐inspiratory PL,72 h,continuous,,,,,0.006,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐expiratory PL,Baseline,continuous,,,,,0.951,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐expiratory PL,24 h,continuous,,,,,0.037,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐expiratory PL,48 h,continuous,,,,,0.014,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,End‐expiratory PL,72 h,continuous,,,,,0.02,,,,independent sample t test
+zhao_2025,esophageal_pressure,End‐expiratory pes,Baseline,continuous,,,,,0.872,,,,independent sample t test
+zhao_2025,esophageal_pressure,End‐expiratory pes,24 h,continuous,,,,,0.042,,,,independent sample t test
+zhao_2025,esophageal_pressure,End‐expiratory pes,48 h,continuous,,,,,0.038,,,,independent sample t test
+zhao_2025,esophageal_pressure,End‐expiratory pes,72 h,continuous,,,,,0.032,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Pplat,Baseline,continuous,,,,,0.832,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Pplat,72 h,continuous,,,,,0.006,,,,independent sample t test
+zhao_2025,ventilator_settings,PEEP,Baseline,continuous,,,,,0.733,,,,independent sample t test
+zhao_2025,ventilator_settings,PEEP,24 h,continuous,,,,,0.026,,,,independent sample t test
+zhao_2025,ventilator_settings,PEEP,48 h,continuous,,,,,0.048,,,,independent sample t test
+zhao_2025,ventilator_settings,PEEP,72 h,continuous,,,,,0.401,,,,independent sample t test
+zhao_2025,other,Cumulative fluid balance,72 h,continuous,,,,,0.005,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,ΔPL,,continuous,,,,,0.733,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,ΔPL,,continuous,,,,,0.015,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,ΔPL,,continuous,,,,,0.009,,,,independent sample t test
+zhao_2025,transpulmonary_pressure,ΔPL,,continuous,,,,,0.007,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Pplat,,continuous,,,,,0.013,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Pplat,,continuous,,,,,0.008,,,,independent sample t test
+zhao_2025,respiratory_mechanics,ΔP,,continuous,,,,,0.872,,,,independent sample t test
+zhao_2025,respiratory_mechanics,ΔP,,continuous,,,,,0.016,,,,independent sample t test
+zhao_2025,respiratory_mechanics,ΔP,,continuous,,,,,0.011,,,,independent sample t test
+zhao_2025,respiratory_mechanics,ΔP,,continuous,,,,,0.008,,,,independent sample t test
+zhao_2025,ventilator_settings,VT,,continuous,,,,,0.667,,,,independent sample t test
+zhao_2025,ventilator_settings,VT,,continuous,,,,,0.021,,,,independent sample t test
+zhao_2025,ventilator_settings,VT,,continuous,,,,,0.013,,,,independent sample t test
+zhao_2025,ventilator_settings,VT,,continuous,,,,,0.006,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Cst,,continuous,,,,,0.943,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Cst,,continuous,,,,,0.024,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Cst,,continuous,,,,,0.015,,,,independent sample t test
+zhao_2025,respiratory_mechanics,Cst,,continuous,,,,,0.009,,,,independent sample t test
+zhao_2025,respiratory_mechanics,CL,,continuous,,,,,0.767,,,,independent sample t test
+zhao_2025,respiratory_mechanics,CL,,continuous,,,,,0.027,,,,independent sample t test
+zhao_2025,respiratory_mechanics,CL,,continuous,,,,,0.013,,,,independent sample t test
+zhao_2025,respiratory_mechanics,CL,,continuous,,,,,0.007,,,,independent sample t test
+zhao_2025,oxygenation,PaCO2,,continuous,,,,,0.709,,,,independent sample t test
+zhao_2025,oxygenation,PaCO2,,continuous,,,,,0.496,,,,independent sample t test
+zhao_2025,oxygenation,PaCO2,,continuous,,,,,0.248,,,,independent sample t test
+zhao_2025,oxygenation,PaCO2,,continuous,,,,,0.612,,,,independent sample t test
+zhao_2025,oxygenation,pH,,continuous,,,,,0.391,,,,independent sample t test
+zhao_2025,oxygenation,pH,,continuous,,,,,0.307,,,,independent sample t test
+zhao_2025,oxygenation,pH,,continuous,,,,,0.224,,,,independent sample t test
+zhao_2025,oxygenation,pH,,continuous,,,,,0.758,,,,independent sample t test
+zhao_2025,other,Daily fluid intake,,continuous,,,,,0.353,,,,independent sample t test
+zhao_2025,other,Daily fluid intake,,continuous,,,,,0.169,,,,independent sample t test
+zhao_2025,other,Daily fluid intake,,continuous,,,,,0.598,,,,independent sample t test
+zhao_2025,other,Daily fluid output,,continuous,,,,,0.362,,,,independent sample t test
+zhao_2025,other,Daily fluid output,,continuous,,,,,0.038,,,,independent sample t test
+zhao_2025,other,Daily fluid output,,continuous,,,,,0.016,,,,independent sample t test
+zhao_2025,other,Daily fluid balance,,continuous,,,,,0.035,,,,independent sample t test
+zhao_2025,other,Daily fluid balance,,continuous,,,,,0.022,,,,independent sample t test
+zhao_2025,other,Daily fluid balance,,continuous,,,,,0.011,,,,independent sample t test
+zhao_2025,other,Cumulative fluid balance,,continuous,,,,,0.035,,,,independent sample t test
+zhao_2025,other,Cumulative fluid balance,,continuous,,,,,0.009,,,,independent sample t test
+zhao_2025,adverse_event,Stress ulcer,,dichotomous,,,,,0.609,,,,chi-squared test
+zhao_2025,adverse_event,New-onset arrhythmia,,dichotomous,,,,,0.569,,,,chi-squared test
+zhao_2025,adverse_event,Acute kidney injury,,dichotomous,,,,,0.595,,,,chi-squared test
+zhao_2025,adverse_event,Thrombosis,,dichotomous,,,,,0.729,,,,chi-squared test
+zhao_2025,rescue_therapy,ECCOR,,dichotomous,,,,,,,,,
+zhao_2025,rescue_therapy,VV-ECMO,,dichotomous,,,,,,,,,

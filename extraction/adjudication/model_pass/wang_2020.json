@@ -1,0 +1,270 @@
+{
+  "study_id": "wang_2020",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[successful extubation or weaning proportion of p @end of study]",
+      "decision": "deepseek",
+      "reason": "37/52 vs 24/50, p 0.017 identical. GLM adds test_used 'chi-square test (not specified for this comparison)', a test the paper does not attribute to this comparison (Methods allow chi-square or Fisher). DeepSeek's definition_verbatim is also the fuller quotation. Domain is reserved for the co-authors.",
+      "evidence": "p. 6 (1285), Table 2; p. 3 Measurements and Statistical Analysis"
+    },
+    {
+      "target": "outcomes[mortality 60 d mortality dichotomous @60d]",
+      "decision": "glm",
+      "reason": "17/52 vs 27/50, p 0.030 identical; GLM's timepoint label '60-d mortality' is the paper's wording.",
+      "evidence": "p. 6 (1285), Table 2; p. 3 Results"
+    },
+    {
+      "target": "outcomes[mortality mortality at 6 mo dichotomous @180d]",
+      "decision": "glm",
+      "reason": "19/52 vs 28/50, p 0.049 identical; a fixed_day timepoint needs numeric days, and GLM's 180 for '6 mo' follows the schema's own examples (365 for 1 year); DeepSeek leaves days null, which blocks duration ranking for is_longest_reported_mortality.",
+      "evidence": "p. 6 (1285), Table 2; schema timepoint.days"
+    },
+    {
+      "target": "outcomes[other ecmo duration d continuous @duration until event]",
+      "decision": "deepseek",
+      "reason": "ECMO duration 11 (8-15) vs 16 (10-25), p 0.004 identical; GLM's test_used is the generic 'Mann-Whitney U test or Student t test (as appropriate)'. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "id": "6419877341",
+      "decision": "glm",
+      "reason": "Verbatim row label is 'ECMO duration, d, median (IQR)'; 'ECMO duration, d' keeps the unit.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator free days ventilator free days at day @60d]",
+      "decision": "deepseek",
+      "reason": "VFD at day 60: 36 (0-47) vs 0 (0-44), p 0.282 identical; window 60 days in both. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "id": "e3549882ac",
+      "decision": "glm",
+      "reason": "Verbatim row label 'Ventilator-free days at day 60, d' is the more complete name.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[icu length of stay icu length of stay d continuo @duration until event]",
+      "decision": "deepseek",
+      "reason": "ICU LOS 29 (19-42) vs 25 (16-44), p 0.495 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "id": "c47220803c",
+      "decision": "glm",
+      "reason": "Verbatim row label 'ICU length of stay, d' is more complete.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[hospital length of stay hospital length of stay @duration until event]",
+      "decision": "deepseek",
+      "reason": "Hospital LOS 33 (19-45) vs 26 (21-44), p 0.373 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "id": "b8cfbbbb50",
+      "decision": "glm",
+      "reason": "Verbatim row label 'Hospital length of stay, d' is more complete.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[rescue therapy continuous renal replacement ther @end of study]",
+      "decision": "deepseek",
+      "reason": "CRRT 23/52 vs 20/50, p 0.665 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[other tracheostomy dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Tracheostomy 30/52 vs 26/50, p 0.564 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[barotrauma barotrauma dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Barotrauma 3/52 vs 5/50, p 0.483 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[adverse event ventilator associated pneumonia di @end of study]",
+      "decision": "deepseek",
+      "reason": "VAP 12/52 vs 18/50, p 0.152 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2"
+    },
+    {
+      "target": "outcomes[adverse event multiple organ failure dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Multiple organ failure as cause of death 10/52 vs 20/50, p 0.021 identical. GLM's timepoint label_verbatim is the table row label (e.g. ', n (%)' or ', median (IQR)'), not a timepoint wording, so DeepSeek's null label is the correct reading.",
+      "evidence": "p. 6 (1285), Table 2 (Cause of death section)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio mm hg continuous @baseline]",
+      "decision": "glm",
+      "reason": "PaO2:FiO2 57.2 (51.0-68.0) vs 57.0 (51.0-67.0) identical. GLM's verbatim row name and 'at Randomization' label are kept; DeepSeek's between-group p-value is taken by id.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "id": "067db213ae",
+      "decision": "deepseek",
+      "reason": "Table 3 reports p = 0.797 for this comparison; GLM omitted it.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings positive end expiratory pres @baseline]",
+      "decision": "glm",
+      "reason": "PEEP 14.4 +/- 3.9 vs 14.6 +/- 3.7 identical (row printed 'mm H2O', unit cm H2O). GLM's verbatim row name and 'at Randomization' label are kept; DeepSeek's between-group p-value is taken by id.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "id": "fbebfb9309",
+      "decision": "deepseek",
+      "reason": "Table 3 reports p = 0.715; GLM omitted it.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @baseline]",
+      "decision": "glm",
+      "reason": "Driving pressure 15.1 +/- 3.6 vs 14.9 +/- 4.0 identical. GLM's verbatim row name and 'at Randomization' label are kept; DeepSeek's between-group p-value is taken by id.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "id": "4c194dc945",
+      "decision": "deepseek",
+      "reason": "Table 3 reports p = 0.774; GLM omitted it.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure cm h2o co @baseline]",
+      "decision": "glm",
+      "reason": "Plateau pressure 29.4 +/- 4.5 vs 29.5 +/- 5.4 identical. GLM's verbatim row name and 'at Randomization' label are kept; DeepSeek's between-group p-value is taken by id.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "id": "602ef781f0",
+      "decision": "deepseek",
+      "reason": "Table 3 reports p = 0.953; GLM omitted it.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics compliance ml cm h2o conti @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: compliance 24.9 +/- 10.3 vs 25.8 +/- 8.8 is kept under DeepSeek's 'Compliance' entry, which also carries the reported p = 0.613.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics compliance continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Compliance 24.9 +/- 10.3 vs 25.8 +/- 8.8, p 0.613 match; it replaces GLM's duplicate, which lacks the p-value.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics time course of respiratory @repeated measures]",
+      "decision": "unclear",
+      "reason": "Figure 2 gives a between-group p (superscript b) for each of six variables: PEEP <0.001, peak airway pressure 0.819, driving pressure <0.001, tidal volume 0.001, respiratory rate 0.393, mechanical power 0.001. GLM bundles them into one outcome with empty data entries, records only three, and gives mechanical power '<0.001' where the panel prints 0.001; DeepSeek has nothing. A co-author should decide whether to record one repeated-measures outcome per variable with its p^b (superscripts are not defined in the caption) or drop them.",
+      "evidence": "p. 7 (1286), Figure 2 panels A-F (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "FiO2 0.996 +/- 0.019 vs 0.994 +/- 0.024, p 0.619 match; GLM omitted it.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Tidal volume 392 +/- 49 vs 384 +/- 49 mL, p 0.373 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml predicted bo @baseline]",
+      "decision": "deepseek",
+      "reason": "Tidal volume per PBW 6.0 +/- 0.5 vs 6.0 +/- 0.4, p 0.785 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Respiratory rate 28.9 +/- 5.8 vs 29.5 +/- 5.4, p 0.998 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peak airway pressure conti @baseline]",
+      "decision": "deepseek",
+      "reason": "Peak airway pressure 33.3 +/- 4.9 vs 33.5 +/- 5.7, p 0.826 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[other ph continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "pH 7.38 (7.29-7.42) vs 7.38 (7.31-7.44), p 0.354 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "PaO2 57.0 (51.0-68.0) vs 57.0 (50.8-67.0), p 0.846 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "PaCO2 46.0 (38.0-53.8) vs 45.0 (38.0-50.3), p 0.611 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[other bicarbonate continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Bicarbonate 25.6 (23.2-27.9) vs 24.8 (12.4-28.9), p 0.588 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation arterial oxygen saturation continuou @baseline]",
+      "decision": "deepseek",
+      "reason": "Arterial oxygen saturation 90.0 (84.0-94.8) vs 90.0 (83.8-95.0), p 0.825 match.",
+      "evidence": "p. 7 (1286), Table 3"
+    },
+    {
+      "id": "0ecc9b0719",
+      "decision": "deepseek",
+      "reason": "'Single-center, prospective, randomized controlled trial' states one centre; recording 1 is reading, not inference.",
+      "evidence": "p. 1 Abstract Design; p. 2 Study Design"
+    },
+    {
+      "id": "493dfbc30d",
+      "decision": "deepseek",
+      "reason": "The missing details (balloon, calibration, PL computation) are in the published Supplemental Digital Content (Appendix S2), which should be retrieved; nothing needed for pooling requires author contact.",
+      "evidence": "p. 2 Mechanical Ventilation Strategy (Appendix S2 link)"
+    },
+    {
+      "id": "4c243a4539",
+      "decision": "glm",
+      "reason": "PEEP was set so that expiratory Ptp stayed between 0 and 5 cm H2O, the Talmor approach cited in the Introduction; an end-expiratory Ptp target in that range only makes sense with directly measured Paw - Pes. Both reviewers note the same inference; the codebook asks for the mechanism rather than not_reported.",
+      "evidence": "p. 2 Introduction and Mechanical Ventilation Strategy; CODEBOOK Intervention"
+    },
+    {
+      "id": "06f7f42778",
+      "decision": "glm",
+      "reason": "Table 1: age 48.7 +/- 16.8 years, all patients (n = 102).",
+      "evidence": "p. 5 (1284), Table 1"
+    },
+    {
+      "id": "04626d00e8",
+      "decision": "glm",
+      "reason": "Table 1: APACHE II 18.0 +/- 4.1, all patients.",
+      "evidence": "p. 5 (1284), Table 1"
+    },
+    {
+      "id": "cfe53f4c68",
+      "decision": "glm",
+      "reason": "Table 1: BMI 24.1 (22.0-26.1), all patients.",
+      "evidence": "p. 5 (1284), Table 1"
+    },
+    {
+      "id": "1949eaa6e0",
+      "decision": "glm",
+      "reason": "Table 3: PaO2:FiO2 57.1 (51.0-67.3), all patients, at randomization.",
+      "evidence": "p. 7 (1286), Table 3"
+    }
+  ]
+}

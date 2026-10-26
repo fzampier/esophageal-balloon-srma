@@ -1,0 +1,408 @@
+{
+ "study_id": "tang_2026",
+ "adjudicator": "claude-opus-5-5",
+ "rulings": [
+  {
+   "target": "arms[control control group comparator]",
+   "decision": "glm",
+   "reason": "Same arm, same numbers in both; 'Control Group' is the verbatim table header, DeepSeek's label is a composite paraphrase",
+   "evidence": "p. 6-7, Tables 1-2 headers"
+  },
+  {
+   "target": "arms[control control group empirical low tidal volume]",
+   "decision": "glm",
+   "reason": "Duplicate of the control arm kept under the other target; drop",
+   "evidence": "p. 6-7, Tables 1-2"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary circulation compliance cp @baseline]",
+   "decision": "deepseek",
+   "reason": "Same values (3.98 +/- 0.46 vs 3.89 +/- 0.40); DeepSeek's name is the verbatim Table 3 row label",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "id": "f70120b30f",
+   "decision": "glm",
+   "reason": "Baseline at randomization is hour 0",
+   "evidence": "p. 8, Table 3 title 'at Randomization'"
+  },
+  {
+   "target": "outcomes[mortality icu mortality dichotomous @icu discharge]",
+   "decision": "deepseek",
+   "reason": "Identical counts 8/20 vs 7/20 and p = 0.744; ICU mortality is a secondary endpoint so is_primary_outcome false is right; DeepSeek carries the provenance quote",
+   "evidence": "p. 7, Table 2; p. 3, Endpoints"
+  },
+  {
+   "target": "outcomes[duration mechanical ventilation imv duration con @duration until event]",
+   "decision": "deepseek",
+   "reason": "Identical values 264 (131-377) vs 168 (154-442), p = 0.303; DeepSeek's name is the verbatim row label 'IMV duration (hr)'; secondary endpoint so not primary",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[icu length of stay icu duration continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Identical values 17 (10-27) vs 12 (9-27), p = 0.317; DeepSeek's name is the verbatim row label 'ICU duration (d)'",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[respiratory mechanics driving pressure continuou @baseline]",
+   "decision": "deepseek",
+   "reason": "Identical values 11 +/- 3 vs 13 +/- 5; DeepSeek's name is the verbatim row label",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "id": "bc5c382687",
+   "decision": "glm",
+   "reason": "Baseline at randomization is hour 0",
+   "evidence": "p. 7, Table 2 title 'at Randomization'"
+  },
+  {
+   "target": "outcomes[hemodynamics right ventricular ejection fraction @72h]",
+   "decision": "glm",
+   "reason": "Both give p = 0.043 (Figure 2B P0, group interaction trend); GLM also records n = 20 per arm and the % unit, which DeepSeek leaves empty",
+   "evidence": "p. 9, Figure 2B; p. 5 text"
+  },
+  {
+   "target": "outcomes[hemodynamics cpa dynamic changes during first 72 @72h]",
+   "decision": "glm",
+   "reason": "Primary endpoint Cpa over 72 h, p = 0.039 is P1 (intergroup difference) in Figure 2A, which GLM labels correctly and records n and unit; keep this one",
+   "evidence": "p. 9, Figure 2A; p. 5"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary circulation compliance cp @72h]",
+   "decision": "glm",
+   "reason": "Duplicate of the Cpa 72 h reading kept under the GLM target; drop",
+   "evidence": "p. 9, Figure 2A"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Duplicate of the baseline PaO2/FiO2 reading kept under DeepSeek's target (verbatim 'Pao2/Fio2 (mm Hg)'); drop",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 fio2 mm hg continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "138 +/- 35 vs 138 +/- 46 as printed; name verbatim from Table 3",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 fio2 dynamic changes over 72 ho @72h]",
+   "decision": "deepseek",
+   "reason": "The paper gives no number for the 72 h PaO2/FiO2 course, only 'no significant difference in the trend or intergroup difference'; an entry without any value or P is not a reported result",
+   "evidence": "p. 5, Oxygen kinetics"
+  },
+  {
+   "target": "outcomes[respiratory mechanics compliance static respirat @baseline]",
+   "decision": "deepseek",
+   "reason": "Duplicate of baseline compliance kept under DeepSeek's target (verbatim 'Compliance (mL/cm H2O)'); drop",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[respiratory mechanics compliance ml cm h2o conti @baseline]",
+   "decision": "deepseek",
+   "reason": "35.6 +/- 10.6 vs 33.7 +/- 9.4 as printed; verbatim row label",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[ventilator settings positive end expiratory pres @baseline]",
+   "decision": "deepseek",
+   "reason": "Same values 10 (8-12) vs 10 (8-10); DeepSeek's name is the verbatim Table 2 row",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[oxygenation paco2 continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Duplicate of baseline PaCO2 kept under DeepSeek's target; the codebook lists oxygenation as PaO2/FiO2, PaO2 and OI, so PaCO2 takes 'other'",
+   "evidence": "p. 8, Table 3; CODEBOOK Physiologic outcomes"
+  },
+  {
+   "target": "outcomes[other paco2 mm hg continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "39 +/- 4 vs 42 +/- 7 as printed; domain 'other' per codebook (PaCO2 is not an oxygenation measure)",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation paco2 dynamic changes over 72 hours @72h]",
+   "decision": "deepseek",
+   "reason": "Duplicate of the 72 h PaCO2 comparison (p = 0.027) kept under DeepSeek's target with domain 'other'",
+   "evidence": "p. 5, Oxygen kinetics"
+  },
+  {
+   "target": "outcomes[other paco2 mm hg comparison between groups duri @72h]",
+   "decision": "deepseek",
+   "reason": "Between-group comparison of PaCO2 over 72 h, p = 0.027, as printed",
+   "evidence": "p. 5, Oxygen kinetics"
+  },
+  {
+   "target": "outcomes[hemodynamics oxygen delivery index do2i dynamic @72h]",
+   "decision": "deepseek",
+   "reason": "Duplicate of the DO2I 72 h reading; DeepSeek's version also carries the within-arm time effects, keep that one",
+   "evidence": "p. 5; p. 9, Figure 2C"
+  },
+  {
+   "target": "outcomes[oxygenation oxygen delivery index do2i dynamic c @72h]",
+   "decision": "deepseek",
+   "reason": "P0 = 0.026 matches; within-arm p 0.446 (Ptp) and 0.023 (control) are the text's values. Note the paper is internally inconsistent: Figure 2C prints P2 = 0.546 for the Ptp group where the text says 0.446; the text value is transcribed",
+   "evidence": "p. 5 text; p. 9, Figure 2C"
+  },
+  {
+   "target": "outcomes[hemodynamics oxygen consumption index vo2i dynam @72h]",
+   "decision": "deepseek",
+   "reason": "Duplicate of the VO2I 72 h reading; DeepSeek's version is complete (P0 0.007, P1 0.049, P2 0.627, P3 0.026)",
+   "evidence": "p. 5; p. 9, Figure 2D"
+  },
+  {
+   "target": "outcomes[oxygenation oxygen consumption index vo2i dynami @72h]",
+   "decision": "deepseek",
+   "reason": "All four P values match Figure 2D and the text",
+   "evidence": "p. 5; p. 9, Figure 2D"
+  },
+  {
+   "target": "outcomes[respiratory mechanics resistance cm h2o l s cont @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[ventilator settings inspiratory pressure cm h2o @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[ventilator settings tidal volume of predictive b @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[ventilator settings minute ventilation l min con @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[respiratory mechanics plateau pressure cm h2o co @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[respiratory mechanics airway peak pressure cm h2 @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 7, Table 2"
+  },
+  {
+   "target": "outcomes[hemodynamics cardiac index l min m2 continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary artery systolic pressure @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary artery diastolic pressure @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary artery mean pressure mm h @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary artery occlusion pressure @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics central venous pressure cm h2o cont @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics stroke volume index ml m2 continuou @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics systemic vascular resistance index @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics pulmonary vascular resistance index @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics left ventricular stroke work index @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics right ventricular stroke work index @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[hemodynamics right ventricular ejection fraction @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation partial pressure of oxygen in venous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation arterial oxygen saturation continuou @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation venous oxygen saturation continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation oxygen extraction continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation pulmonary shunt continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation oxygen delivery index ml min m2 cont @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[oxygenation oxygen consumption index ml min m2 c @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other left ventricular ejection fraction continu @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other right ventricular end diastolic transverse @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other tricuspid annular plane systolic excursion @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other tricuspid regurgitation pressure mm hg con @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other right ventricular myocardial systolic peak @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline row present in the paper and missing from GLM; values, dispersion type and unit checked against the table image; baseline rows are outcome entries per codebook",
+   "evidence": "p. 8, Table 3"
+  },
+  {
+   "target": "outcomes[other right ventricular end diastolic transverse @120h]",
+   "decision": "deepseek",
+   "reason": "RVED/LVED 5-day intergroup difference p = 0.044 (Figure 3A P1) as printed; GLM omitted it",
+   "evidence": "p. 7 text; p. 10, Figure 3A"
+  },
+  {
+   "target": "outcomes[other tricuspid annular plane systolic excursion @120h]",
+   "decision": "deepseek",
+   "reason": "TAPSE 5-day p = 0.047 (Figure 3B P1) as printed; GLM omitted it",
+   "evidence": "p. 7 text; p. 10, Figure 3B"
+  },
+  {
+   "target": "outcomes[other left ventricular ejection fraction ef 5 da @120h]",
+   "decision": "deepseek",
+   "reason": "LVEF 5-day p = 0.048 (Figure 3C P1) as printed; GLM omitted it",
+   "evidence": "p. 7 text; p. 10, Figure 3C"
+  },
+  {
+   "id": "7370df10a2",
+   "decision": "glm",
+   "reason": "The paper contradicts itself on screening (text: Jan 2023-Dec 2024, 195 patients; Figure 1: Jan-Apr 2023, 151 patients), norepinephrine counts (20 vs 9+12) and Figure 2C vs text P values; the primary endpoint exists only in figures. Author contact is warranted",
+   "evidence": "p. 4 and Figure 1; p. 5; p. 9"
+  },
+  {
+   "id": "48bb657507",
+   "decision": "deepseek",
+   "reason": "No count of placement attempts is reported; GLM's quote does not state 20 and the value is an unflagged inference",
+   "evidence": "p. 3, Procedures"
+  },
+  {
+   "id": "a12d10070c",
+   "decision": "unclear",
+   "reason": "Neither code fits: the paper reports an occlusion test ('occlusion technique was used to confirm the appropriate balloon location') in heavily sedated/paralysed patients. Precedent (wang_2018, dong_2023, both a location-confirming occlusion test) codes dynamic_occlusion_test; 'other' and 'signal_quality_verification_only' both miss an occlusion test that the enum names",
+   "evidence": "p. 3, Procedures"
+  },
+  {
+   "id": "ebed87cc5d",
+   "decision": "glm",
+   "reason": "PEEP set to expiratory Ptp 0-5 cmH2O plus inspiratory Ptp < 25 cmH2O limit; same structure as Talmor 2008, zhao_2025, dong_2023, which were settled as combined_end_expiratory_and_end_inspiratory",
+   "evidence": "p. 3, Procedures"
+  },
+  {
+   "id": "245c0e2dc0",
+   "decision": "deepseek",
+   "reason": "The paper never states how Ptp was computed and does not cite Talmor for the method (C14 does not apply); not_reported is literal",
+   "evidence": "p. 3, Procedures"
+  },
+  {
+   "id": "74529759aa",
+   "decision": "deepseek",
+   "reason": "The only timing information is relative to intubation (eligible after < 72 h of IMV); same coding as dong_2023",
+   "evidence": "p. 2, Patients"
+  },
+  {
+   "id": "2943c32fca",
+   "decision": "glm",
+   "reason": "Balloon-guided management began at randomisation, somewhere within 0-72 h of IMV; no distribution is reported, so the population cannot be placed relative to the 48 h cut; 'mixed' asserts a spread the paper does not show",
+   "evidence": "p. 2, Patients; CODEBOOK timing ruling"
+  }
+ ]
+}

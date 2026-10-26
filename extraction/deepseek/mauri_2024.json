@@ -1,0 +1,1966 @@
+{
+  "record_meta": {
+    "study_id": "mauri_2024",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s00134-024-07695-y.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Mauri",
+    "year": 2024,
+    "title": "Personalized positive end-expiratory pressure in spontaneously breathing patients with acute respiratory distress syndrome by simultaneous electrical impedance tomography and transpulmonary pressure monitoring: a randomized crossover trial",
+    "journal": "Intensive Care Med",
+    "doi": "10.1007/s00134-024-07695-y",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Exclusion criteria included ... age < 18 years-old",
+          "location": "Methods, Study population, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "intubated patients with ARDS ... who were undergoing PSV",
+          "location": "Methods, Study population, para 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "performed in the general ICUs of the Maggiore Policlinico Hospital (Milan, Italy), Policlinico Universitario A. Gemelli Hospital (Rome, Italy), and Sant’Anna Hospital (Ferrara, Italy)",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEPEIT-ΔPL was defined as the PEEP which yielded the smallest difference between the percentage of collapse and overdistension",
+          "location": "Methods, Study protocol, para 2"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Ventilator-free days at day 28 and in-hospital mortality were collected as follow-up outcomes.",
+          "location": "Methods, Data collection, para 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "thirty were enrolled from the 3 study centers",
+          "location": "Results, Study population, para 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A cross-over randomized multicenter study",
+          "location": "Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Intensive Care Med (2024) 50:2125–2137",
+          "location": "Title page"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "A cross-over randomized multicenter study",
+      "provenance": {
+        "quote": "A cross-over randomized multicenter study was conducted in 30 ARDS patients",
+        "location": "Abstract, Methods"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": "Not feasible (assessors not blinded)",
+      "provenance": {
+        "quote": "blinding the assessors to study interventions was not feasible",
+        "location": "Discussion, Limitations, para 1"
+      }
+    },
+    "centers": "multi",
+    "n_centers": {
+      "value": 3,
+      "provenance": {
+        "quote": "performed in the general ICUs of the Maggiore Policlinico Hospital (Milan, Italy), Policlinico Universitario A. Gemelli Hospital (Rome, Italy), and Sant’Anna Hospital (Ferrara, Italy)",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "countries": [
+      "Italy"
+    ],
+    "location_provenance": {
+      "quote": "performed in the general ICUs of the Maggiore Policlinico Hospital (Milan, Italy), Policlinico Universitario A. Gemelli Hospital (Rome, Italy), and Sant’Anna Hospital (Ferrara, Italy)",
+      "location": "Methods, Study population, para 1"
+    },
+    "planned_sample_size": {
+      "value": 30,
+      "provenance": {
+        "quote": "Three patients were added to account for potential drop-outs.",
+        "location": "Methods, Sample size, para 1"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "we hypothesized that the application of PEEPEIT-∆PL would result in a reduction of ΔPLdyn of 2.0 ± 3.5 cmH2O, as compared to PEEPTABLE. Accordingly, we calculated that enrolling a sample size of at least 27 patients would result in a power of 0.80 with a probability of type I error of 0.05 (pwrss R package) [21]. Three patients were added to account for potential drop-outs.",
+      "provenance": {
+        "quote": "we hypothesized that the application of PEEPEIT-∆PL would result in a reduction of ΔPLdyn of 2.0 ± 3.5 cmH2O, as compared to PEEPTABLE. Accordingly, we calculated that enrolling a sample size of at least 27 patients would result in a power of 0.80 with a probability of type I error of 0.05 (pwrss R package) [21]. Three patients were added to account for potential drop-outs.",
+        "location": "Methods, Sample size, para 1"
+      }
+    },
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "General ICU",
+      "provenance": {
+        "quote": "general ICUs",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "enrolment_start": "2022-12",
+    "enrolment_end": "2023-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Current research, Italian Ministry of Health, Rome, Italy; Project \"Hub Life Science- Diagnostica Avanzata (HLS-DA), PNC-E3-2022-23683266– CUP: C43C22001630001 / MI-0117\", Italian Ministry of Health, Rome, Italy (Piano Nazionale Complementare Ecosistema Innovativo della Salute); The Italian Ministry of Education and Research (MUR), Rome Italy: Dipartimenti di Eccellenza Program 2023–2027—Dept. of Pathophysiology and Transplantation, University of Milan.",
+      "provenance": {
+        "quote": "Current research, Italian Ministry of Health, Rome, Italy; Project \"Hub Life Science- Diagnostica Avanzata (HLS-DA), PNC-E3-2022-23683266– CUP: C43C22001630001 / MI-0117\", Italian Ministry of Health, Rome, Italy (Piano Nazionale Complementare Ecosistema Innovativo della Salute); The Italian Ministry of Education and Research (MUR), Rome Italy: Dipartimenti di Eccellenza Program 2023–2027—Dept. of Pathophysiology and Transplantation, University of Milan.",
+        "location": "Funding section"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 30,
+      "provenance": {
+        "quote": "thirty were enrolled from the 3 study centers",
+        "location": "Results, Study population, para 1"
+      }
+    },
+    "n_analysed": {
+      "value": 30,
+      "provenance": {
+        "quote": "All the remaining variables were available for comparison between the 2 study steps.",
+        "location": "Results, para 2"
+      }
+    },
+    "population_description": {
+      "value": "intubated patients with ARDS and a Richmond Agitation Sedation Scale (RASS) between −2 and 0, who were undergoing PSV",
+      "provenance": {
+        "quote": "included intubated patients with ARDS and a Richmond Agitation Sedation Scale (RASS) between −2 and 0, who were undergoing PSV",
+        "location": "Methods, Study population, para 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "intubated patients with ARDS and a Richmond Agitation Sedation Scale (RASS) between −2 and 0, who were undergoing PSV",
+      "provenance": {
+        "quote": "included intubated patients with ARDS and a Richmond Agitation Sedation Scale (RASS) between −2 and 0, who were undergoing PSV",
+        "location": "Methods, Study population, para 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "clinical FiO2 > 0.8, age < 18 years-old, hemodynamic instability, pneumothorax, history of severe chronic obstructive pulmonary disease, inability to correctly position the EIT belt (e.g., due to chest drains, rib fractures), contraindications to EIT monitoring (e.g. pacemaker, unstable spinal injuries) or to esophageal catheter insertion (e.g. uncontrolled coagulopathy, esophageal varices)",
+      "provenance": {
+        "quote": "Exclusion criteria included clinical FiO2 > 0.8, age < 18 years-old, hemodynamic instability, pneumothorax, history of severe chronic obstructive pulmonary disease, inability to correctly position the EIT belt (e.g., due to chest drains, rib fractures), contraindications to EIT monitoring (e.g. pacemaker, unstable spinal injuries) or to esophageal catheter insertion (e.g. uncontrolled coagulopathy, esophageal varices)",
+        "location": "Methods, Study population, para 2"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 63.6,
+      "dispersion_type": "sd",
+      "dispersion": 14.2,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age (years), mean ± SD 63.6 ± 14.2",
+        "location": "Table 1, row: Age"
+      }
+    },
+    "sex_female": {
+      "n": 7,
+      "total": 30,
+      "percent_as_reported": 23.3,
+      "provenance": {
+        "quote": "Gender (M/F), n (%) 23 (76.7) / 7 (23.3)",
+        "location": "Table 1, row: Gender"
+      }
+    },
+    "sex_male": {
+      "n": 23,
+      "total": 30,
+      "percent_as_reported": 76.7,
+      "provenance": {
+        "quote": "Gender (M/F), n (%) 23 (76.7) / 7 (23.3)",
+        "location": "Table 1, row: Gender"
+      }
+    },
+    "bmi": {
+      "value_type": "mean",
+      "value": 27.7,
+      "dispersion_type": "sd",
+      "dispersion": 4.9,
+      "unit": "Kg/m2",
+      "provenance": {
+        "quote": "BMI (Kg/m2), mean ± SD 27.7 ± 4.9",
+        "location": "Table 1, row: BMI"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 30,
+      "total": 30,
+      "percent_as_reported": 100,
+      "provenance": {
+        "quote": "included intubated patients with ARDS",
+        "location": "Methods, Study population, para 2"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": 18,
+        "total": 30,
+        "percent_as_reported": 60,
+        "provenance": {
+          "quote": "ARDS category (mild/moderate/severe), n (%) 18 (60) / 11 (36.7) / 1 (3.3)",
+          "location": "Table 1, row: ARDS category"
+        }
+      },
+      "moderate": {
+        "n": 11,
+        "total": 30,
+        "percent_as_reported": 36.7,
+        "provenance": {
+          "quote": "ARDS category (mild/moderate/severe), n (%) 18 (60) / 11 (36.7) / 1 (3.3)",
+          "location": "Table 1, row: ARDS category"
+        }
+      },
+      "severe": {
+        "n": 1,
+        "total": 30,
+        "percent_as_reported": 3.3,
+        "provenance": {
+          "quote": "ARDS category (mild/moderate/severe), n (%) 18 (60) / 11 (36.7) / 1 (3.3)",
+          "location": "Table 1, row: ARDS category"
+        }
+      }
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "Infectious etiology: 22 (73.3%)",
+      "provenance": {
+        "quote": "Infectious etiology, n (%) 22 (73.3)",
+        "location": "Table 1, row: Infectious etiology"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "mean",
+      "value": 205,
+      "dispersion_type": "sd",
+      "dispersion": 54,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2 (mmHg), mean ± SD 205 ± 54",
+        "location": "Table 1, row: PaO2/FiO2"
+      }
+    },
+    "apache_ii": null,
+    "sofa": {
+      "value_type": "median",
+      "value": 5,
+      "dispersion_type": "iqr",
+      "dispersion_low": 3,
+      "dispersion_high": 7.3,
+      "unit": "points",
+      "provenance": {
+        "quote": "SOFA (points), median [IQR] 5 [3–7.3]",
+        "location": "Table 1, row: SOFA"
+      }
+    },
+    "saps_ii": {
+      "value_type": "median",
+      "value": 41,
+      "dispersion_type": "iqr",
+      "dispersion_low": 34,
+      "dispersion_high": 47,
+      "provenance": {
+        "quote": "SAPS II score at admission, median [IQR] 41 [34–47]",
+        "location": "Table 1, row: SAPS II"
+      }
+    },
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Days since intubation",
+        "continuous": {
+          "value_type": "median",
+          "value": 6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 9,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days since intubation, median [IQR] 6 [3–9]",
+            "location": "Table 1, row: Days since intubation"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Days since switch to PSV",
+        "continuous": {
+          "value_type": "median",
+          "value": 3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1,
+          "dispersion_high": 5,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days since switch to PSV, median [IQR] 3 [1–5]",
+            "location": "Table 1, row: Days since switch to PSV"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial pH",
+        "continuous": {
+          "value_type": "mean",
+          "value": 7.43,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "provenance": {
+            "quote": "Arterial pH, mean ± SD 7.43 ± 0.05",
+            "location": "Table 1, row: Arterial pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaCO2",
+        "continuous": {
+          "value_type": "mean",
+          "value": 45,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg), mean ± SD 45 ± 6",
+            "location": "Table 1, row: PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "RASS score",
+        "continuous": {
+          "value_type": "median",
+          "value": -2,
+          "dispersion_type": "iqr",
+          "dispersion_low": -2,
+          "dispersion_high": -1,
+          "provenance": {
+            "quote": "RASS score, median [IQR] −2 [−2– −1]",
+            "location": "Table 1, row: RASS score"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Propofol infusion rate (mg/kg/h)",
+        "continuous": {
+          "value_type": "median",
+          "value": 2.33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.87,
+          "dispersion_high": 2.74,
+          "unit": "mg/kg/h",
+          "provenance": {
+            "quote": "Propofol infusion rate (mg/kg/h), median [IQR] 2.33 [1.87–2.74]",
+            "location": "Table 1, row: Propofol infusion rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Fentanyl infusion rate (µg/kg/h)",
+        "continuous": {
+          "value_type": "median",
+          "value": 0.42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.09,
+          "dispersion_high": 0.82,
+          "unit": "µg/kg/h",
+          "provenance": {
+            "quote": "Fentanyl infusion rate (µg/kg/h), median (0.09–0.82) [IQR]",
+            "location": "Table 1, row: Fentanyl infusion rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial hypertension",
+        "count": {
+          "n": 14,
+          "total": 30,
+          "percent_as_reported": 46.6,
+          "provenance": {
+            "quote": "Arterial hypertension 14 (46.6)",
+            "location": "Table 1, row: Arterial hypertension"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Chronic heart disease",
+        "count": {
+          "n": 5,
+          "total": 30,
+          "percent_as_reported": 16.7,
+          "provenance": {
+            "quote": "Chronic heart disease 5 (16.7)",
+            "location": "Table 1, row: Chronic heart disease"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Mild chronic pulmonary disease",
+        "count": {
+          "n": 3,
+          "total": 30,
+          "percent_as_reported": null,
+          "provenance": {
+            "quote": "Mild chronic pulmonary disease 3 (1)",
+            "location": "Table 1, row: Mild chronic pulmonary disease"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diabetes mellitus",
+        "count": {
+          "n": 3,
+          "total": 30,
+          "percent_as_reported": null,
+          "provenance": {
+            "quote": "Diabetes mellitus 3 (1)",
+            "location": "Table 1, row: Diabetes mellitus"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Other",
+        "count": {
+          "n": 5,
+          "total": 30,
+          "percent_as_reported": 16.6,
+          "provenance": {
+            "quote": "Other 5 (16.6)",
+            "location": "Table 1, row: Other"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Infectious etiology",
+        "count": {
+          "n": 22,
+          "total": 30,
+          "percent_as_reported": 73.3,
+          "provenance": {
+            "quote": "Infectious etiology, n (%) 22 (73.3)",
+            "location": "Table 1, row: Infectious etiology"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary ARDS",
+        "count": {
+          "n": 22,
+          "total": 30,
+          "percent_as_reported": 73.3,
+          "provenance": {
+            "quote": "Primary ARDS, n (%) 22 (73.3)",
+            "location": "Table 1, row: Primary ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Focal ARDS",
+        "count": {
+          "n": 13,
+          "total": 30,
+          "percent_as_reported": 43,
+          "provenance": {
+            "quote": "Focal / Non-focal ARDS, n (%) 13 (43) / 17 (57)",
+            "location": "Table 1, row: Focal / Non-focal ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Non-focal ARDS",
+        "count": {
+          "n": 17,
+          "total": 30,
+          "percent_as_reported": 57,
+          "provenance": {
+            "quote": "Focal / Non-focal ARDS, n (%) 13 (43) / 17 (57)",
+            "location": "Table 1, row: Focal / Non-focal ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Propofol",
+        "count": {
+          "n": 21,
+          "total": 30,
+          "percent_as_reported": 70,
+          "provenance": {
+            "quote": "Propofol, n (%) 21 (70)",
+            "location": "Table 1, row: Propofol"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Fentanyl",
+        "count": {
+          "n": 23,
+          "total": 30,
+          "percent_as_reported": 76.6,
+          "provenance": {
+            "quote": "Fentanyl, n (%) 23 (76.6)",
+            "location": "Table 1, row: Fentanyl"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "Adult Esophageal Balloon Catheter Set, Cooper Surgical, CT, USA or Nutrivent, Sidam, Italy",
+      "provenance": {
+        "quote": "An esophageal catheter (Adult Esophageal Balloon Catheter Set, Cooper Surgical, CT, USA or Nutrivent, Sidam, Italy)",
+        "location": "Methods, Physiologic monitoring, para 1"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "signal_quality_verification_only",
+      "method_verbatim": {
+        "value": "An esophageal catheter was inserted through the nostril to the lower third of the esophagus and inflated. Correct positioning was confirmed by the presence of cardiac oscillations and by an end-expiratory occlusion test.",
+        "provenance": {
+          "quote": "An esophageal catheter was inserted through the nostril to the lower third of the esophagus and inflated. Correct positioning was confirmed by the presence of cardiac oscillations and by an end-expiratory occlusion test.",
+          "location": "Methods, Physiologic monitoring, para 1"
+        }
+      },
+      "position_verification": {
+        "value": "presence of cardiac oscillations and by an end-expiratory occlusion test",
+        "provenance": {
+          "quote": "presence of cardiac oscillations and by an end-expiratory occlusion test",
+          "location": "Methods, Measurement of esophageal pressure, para 2"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "PL was calculated as the difference between Paw and Pes.",
+        "provenance": {
+          "quote": "PL was calculated as the difference between Paw and Pes.",
+          "location": "Methods, Physiologic monitoring, para 1"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "other",
+      "strategy_verbatim": {
+        "value": "PEEPEIT-ΔPL was defined as the PEEP which yielded the smallest difference between the percentage of collapse and overdistension [10, 13].",
+        "provenance": {
+          "quote": "PEEPEIT-ΔPL was defined as the PEEP which yielded the smallest difference between the percentage of collapse and overdistension [10, 13].",
+          "location": "Methods, Study protocol, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": false,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": null,
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "The pressure support level, FiO2, and infusion rates of sedation and analgesia medication were unchanged during all study phases.",
+        "provenance": {
+          "quote": "The pressure support level, FiO2, and infusion rates of sedation and analgesia medication were unchanged during all study phases.",
+          "location": "Methods, Study protocol, para 3"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": {
+        "value_type": "median",
+        "value": 6,
+        "dispersion_type": "iqr",
+        "dispersion_low": 3,
+        "dispersion_high": 9,
+        "unit": "days",
+        "provenance": {
+          "quote": "Patients were intubated for 6 [3–9] days and had been switched to PSV for 3 [1–5] days prior to study enrollment.",
+          "location": "Results, Study population, para 1"
+        }
+      },
+      "timing_verbatim": {
+        "value": "Patients were intubated for 6 [3–9] days and had been switched to PSV for 3 [1–5] days prior to study enrollment.",
+        "provenance": {
+          "quote": "Patients were intubated for 6 [3–9] days and had been switched to PSV for 3 [1–5] days prior to study enrollment.",
+          "location": "Results, Patient characteristics, para 1"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Each PEEP strategy was applied for 20 min.",
+      "provenance": {
+        "quote": "Each PEEP strategy was applied for 20 min.",
+        "location": "Methods, Study design, para 2"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEPTABLE, which was selected according to the classical ARDSnet lower PEEP/FiO2 table, targeting a SpO2 between 88% and 95%",
+      "provenance": {
+        "quote": "PEEPTABLE, which was selected according to the classical ARDSnet lower PEEP/FiO2 table, targeting a SpO2 between 88% and 95%",
+        "location": "Methods, Comparator, para 1"
+      }
+    },
+    "crossover_order": {
+      "value": "patients were ventilated with each PEEP for 20 min in a random computer-generated order (R software). Randomization was performed centrally, and participating centres were notified of the result by telephone.",
+      "provenance": {
+        "quote": "patients were ventilated with each PEEP for 20 min in a random computer-generated order (R software). Randomization was performed centrally, and participating centres were notified of the result by telephone.",
+        "location": "Methods, Randomization, para 1"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "The second study step was started immediately following the first step, with no delay or washout period. ... we considered that the measured physiological effects could be entirely attributed to the selected PEEP after 20 min",
+      "provenance": {
+        "quote": "The second study step was started immediately following the first step, with no delay or washout period. ... we considered that the measured physiological effects could be entirely attributed to the selected PEEP after 20 min",
+        "location": "Methods, Study design, para 3"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "peep_eit_delta_pl",
+      "label_verbatim": "PEEPEIT-ΔPL",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 30,
+        "provenance": {
+          "quote": "All the remaining variables were available for comparison between the 2 study steps.",
+          "location": "Results, para 2"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 10,
+        "dispersion_type": "iqr",
+        "dispersion_low": 8,
+        "dispersion_high": 12,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The optimal PEEP level balancing overdistension and collapse identified by EIT and PL during the decremental PEEP trial was 10 [8–12] cmH2O",
+          "location": "Results, PEEP assigned by the two personalized methods, para 2"
+        }
+      }
+    },
+    {
+      "label": "peep_table",
+      "label_verbatim": "PEEPTABLE",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 30,
+        "provenance": {
+          "quote": "All the remaining variables were available for comparison between the 2 study steps.",
+          "location": "Results, para 2"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 8,
+        "dispersion_type": "iqr",
+        "dispersion_low": 5,
+        "dispersion_high": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "the PEEP/FiO2 table assigned a lower level of 8 [5–10] cmH2O (P=0.021)",
+          "location": "Results, PEEP assigned by the two personalized methods, para 2"
+        }
+      }
+    },
+    {
+      "label": "all_patients",
+      "label_verbatim": "All patients",
+      "role": "single_group",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 30,
+        "provenance": {
+          "quote": "thirty were enrolled from the 3 study centers",
+          "location": "Results, Study population, para 1"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 12,
+          "n": 30,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Median PEEPEIT-ΔPL was higher than PEEPTABLE (10 [8–12] vs. 8 [5–10] cmH2O; P = 0.021)",
+            "location": "Results, PEEP assigned by the two personalized methods, para 2"
+          }
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 10,
+          "n": 30,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Median PEEPEIT-ΔPL was higher than PEEPTABLE (10 [8–12] vs. 8 [5–10] cmH2O; P = 0.021)",
+            "location": "Results, PEEP assigned by the two personalized methods, para 2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": null,
+          "n_pairs": 30,
+          "p_value": 0.021,
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Median PEEPEIT-ΔPL was higher than PEEPTABLE (10 [8–12] vs. 8 [5–10] cmH2O; P = 0.021)",
+            "location": "Results, PEEP assigned by the two personalized methods, para 2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Median PEEPEIT-ΔPL was higher than PEEPTABLE (10 [8–12] vs. 8 [5–10] cmH2O; P = 0.021)",
+        "location": "Results, PEEP assigned by the two personalized methods, para 2"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPLdyn",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -1.7,
+          "ci_low": -2.64,
+          "ci_high": -0.73,
+          "n_pairs": 30,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "dynamic lung stress (mean difference in ∆PLdyn (−1.7 [95% CI: −2.64 to −0.73] cmH2O; P < 0.001)",
+            "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PEEPEIT-ΔPL was associated with lower dynamic lung stress (mean difference in ∆PLdyn (−1.7 [95% CI: −2.64 to −0.73] cmH2O; P < 0.001)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PTPmus",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O·s/min"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O·s/min"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -35.2,
+          "ci_low": -50.7,
+          "ci_high": -19.7,
+          "n_pairs": 30,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O·s/min",
+          "provenance": {
+            "quote": "decreased metabolic work of breathing (mean difference in PTPmus −35.2 [95% CI: −50.7 to −19.7] cmH2O·s/min; P < 0.001)",
+            "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "decreased metabolic work of breathing (mean difference in PTPmus −35.2 [95% CI: −50.7 to −19.7] cmH2O·s/min; P < 0.001)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "P0.1",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -0.81,
+          "ci_low": -1.12,
+          "ci_high": -0.5,
+          "n_pairs": 30,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "P0.1 (mean difference between the two steps −0.81 [95% CI: −1.12 to −0.5] cmH2O; P < 0.001)",
+            "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "P0.1 (mean difference between the two steps −0.81 [95% CI: −1.12 to −0.5] cmH2O; P < 0.001)",
+        "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Pmus",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -2.17,
+          "ci_low": -3.31,
+          "ci_high": -1.04,
+          "n_pairs": 30,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmus (−2.17 [95% CI: −3.31 to −1.04] cmH2O; P < 0.001)",
+            "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Pmus (−2.17 [95% CI: −3.31 to −1.04] cmH2O; P < 0.001)",
+        "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PTPmus per breath",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O·s"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "cmH2O·s"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -1.33,
+          "ci_low": -2,
+          "ci_high": -0.67,
+          "n_pairs": 30,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "cmH2O·s",
+          "provenance": {
+            "quote": "PTPmus per breath (−1.33 [95% CI: −2 to −0.67] cmH2O·s; P < 0.001)",
+            "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PTPmus per breath (−1.33 [95% CI: −2 to −0.67] cmH2O·s; P < 0.001)",
+        "location": "Results, Physiologic mechanisms underlying the reduction in lung stress and work of breathing by PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Lung collapse",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": -8.5,
+          "ci_low": -14.4,
+          "ci_high": -2.5,
+          "n_pairs": 30,
+          "p_value": 0.007,
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "leading to less alveolar collapse (mean difference between the two steps −8.5 [95% CI: −14.4 to −2.5] %; P = 0.007)",
+            "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "leading to less alveolar collapse (mean difference between the two steps −8.5 [95% CI: −14.4 to −2.5] %; P = 0.007)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Overdistension",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": null,
+          "n_pairs": 30,
+          "p_value": 0.695,
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "PEEPEIT-ΔPL did not increase the risk of alveolar overdistension (OD) (P = 0.695)",
+            "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PEEPEIT-ΔPL did not increase the risk of alveolar overdistension (OD) (P = 0.695)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Recruitment",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "%"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": 4.1,
+          "ci_low": -0.02,
+          "ci_high": 8.6,
+          "n_pairs": 30,
+          "p_value": 0.06,
+          "test_used": "paired t-test or Wilcoxon signed rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "induced greater recruitment of alveolar units as compared to PEEPTABLE (mean difference between the two steps +4.1 [95% CI: −0.02 to +8.6] %; P = 0.060)",
+            "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "induced greater recruitment of alveolar units as compared to PEEPTABLE (mean difference between the two steps +4.1 [95% CI: −0.02 to +8.6] %; P = 0.060)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL dynamic global",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": null,
+          "n_pairs": 30,
+          "p_value": 0.005,
+          "test_used": "repeated measures ANOVA",
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Fig. 3 Impact of PEEPEIT-∆PL on global (A) and regional (B, C) lung mechanics ... Fig. 3A: P = 0.005",
+            "location": "Figure 3, panel A"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Fig. 3 Impact of PEEPEIT-∆PL on global (A) and regional (B, C) lung mechanics ... Fig. 3A: P = 0.005",
+        "location": "Figure 3, panel A"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL dynamic ventral",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": null,
+          "n_pairs": 30,
+          "p_value": 0.001,
+          "test_used": "repeated measures ANOVA",
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Fig. 3B: P = 0.001",
+            "location": "Figure 3, panel B"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Fig. 3B: P = 0.001",
+        "location": "Figure 3, panel B"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL dynamic dorsal",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL/cmH2O"
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "PEEPEIT-ΔPL minus PEEPTABLE",
+          "arm_label_a": "peep_eit_delta_pl",
+          "arm_label_b": "peep_table",
+          "mean_difference": null,
+          "n_pairs": 30,
+          "p_value": 0.05,
+          "test_used": "repeated measures ANOVA",
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Fig. 3C: P = 0.050",
+            "location": "Figure 3, panel C"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Fig. 3C: P = 0.050",
+        "location": "Figure 3, panel C"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "Oxygenation was similar at PEEPEIT-ΔPL compared to PEEPTABLE (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "PaCO2 and pH were nearly identical (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pH",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "PaCO2 and pH were nearly identical (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "bpm"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "bpm"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "Respiratory rate, tidal volume and minute ventilation were not different between PEEPEIT-ΔPL and PEEPTABLE steps (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mL"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "Respiratory rate, tidal volume and minute ventilation were not different between PEEPEIT-ΔPL and PEEPTABLE steps (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Minute ventilation",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "L/min"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "L/min"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "Respiratory rate, tidal volume and minute ventilation were not different between PEEPEIT-ΔPL and PEEPTABLE steps (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Heart rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "bpm"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "bpm"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "The two PEEP levels also had similar effects on hemodynamics (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Systolic arterial blood pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "The two PEEP levels also had similar effects on hemodynamics (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Diastolic arterial blood pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "The two PEEP levels also had similar effects on hemodynamics (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Mean blood pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "End of each 20-min study step"
+      },
+      "data": [
+        {
+          "arm_label": "peep_eit_delta_pl",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        },
+        {
+          "arm_label": "peep_table",
+          "value_type": null,
+          "value": null,
+          "n": 30,
+          "unit": "mmHg"
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "The two PEEP levels also had similar effects on hemodynamics (ESM, Table E1)",
+        "location": "Results, para 2"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "At enrollment"
+      },
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "value_type": "mean",
+          "value": 205,
+          "dispersion_type": "sd",
+          "dispersion": 54,
+          "n": 30,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg), mean ± SD 205 ± 54",
+            "location": "Table 1, row: PaO2/FiO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "PaO2/FiO2 (mmHg), mean ± SD 205 ± 54",
+        "location": "Table 1, row: PaO2/FiO2"
+      }
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "28-d VFDs",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-d"
+      },
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2,
+          "dispersion_high": 20,
+          "n": 30,
+          "unit": "days",
+          "provenance": {
+            "quote": "28-d VFDs, median (IQR) 15 [2–20]",
+            "location": "Table 1, row: 28-d VFDs"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "provenance": {
+        "quote": "28-d VFDs, median (IQR) 15 [2–20]",
+        "location": "Table 1, row: 28-d VFDs"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Hospital mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "hospital_discharge",
+        "label_verbatim": "Hospital mortality"
+      },
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": 6,
+          "total": 30,
+          "provenance": {
+            "quote": "Hospital mortality, n (%) 6 (20)",
+            "location": "Table 1, row: Hospital mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "is_longest_reported_mortality": true,
+      "provenance": {
+        "quote": "Hospital mortality, n (%) 6 (20)",
+        "location": "Table 1, row: Hospital mortality"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": {
+      "value": 30,
+      "provenance": {
+        "quote": "All patients tolerated the decremental PEEP trial without additional sedation, adverse events or need to interrupt for safety reasons.",
+        "location": "Results, PEEP assigned by the two personalized methods, para 1"
+      }
+    },
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": {
+      "value": "The order of PEEP strategies was well balanced: 16 (53%) subjects were assigned to PEEPEIT-ΔPL as the first study step.",
+      "provenance": {
+        "quote": "The order of PEEP strategies was well balanced: 16 (53%) subjects were assigned to PEEPEIT-ΔPL as the first study step.",
+        "location": "Results, Protocol adherence, para 1"
+      }
+    },
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "mixed_bmi",
+    "timing_subgroup": "late_after_48h",
+    "ptp_target_subgroups": [
+      "other"
+    ],
+    "classification_notes": "The PEEP target is based on minimizing difference between collapse and overdistension, not a specific transpulmonary pressure range. Timing from intubation median 6 days, so late. BMI mean 27.7, not obese."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "Response status (ΔPLdyn decreased or not)",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "In these cases, the mean difference of ΔPLdyn between PEEPEIT-ΔPL and PEEPTABLE was −2.44 [95% CI: −3.59 to −1.3] cmH2O, while it was +0.39 [95% CI: +0.01 to +0.76] cmH2O for those in whom no decrease was observed.",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "At the individual patient level, ∆PLdyn decreased in 22 (73%) subjects during PEEPEIT-ΔPL; in these cases, the mean difference of ∆PLdyn between PEEPEIT-∆PL and PEEPTABLE was −2.44 [95% CI: −3.59 to −1.3] cmH2O, while it was +0.39 [95% CI: +0.01 to +0.76] cmH2O for those in whom no decrease was observed.",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Response status (PTPmus decreased or not)",
+      "outcome_name": "PTPmus",
+      "prespecified": null,
+      "result_verbatim": "the mean difference between the 2 PEEP strategies was −45 [95% CI: −60.7 to −29.4] cmH2O·s/min in patients who exhibited a decrease and +16.3 [95% CI: +5.8 to +26.7] cmH2O·s/min among those in whom it did not decrease.",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "Similarly, PTPmus decreased in 25 (83%) patients during PEEPEIT-ΔPL; the mean difference between the 2 PEEP strategies was −45 [95% CI: −60.7 to −29.4] cmH2O·s/min in patients who exhibited a decrease and +16.3 [95% CI: +5.8 to +26.7] cmH2O·s/min among those in whom it did not decrease.",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Recruitability (higher vs lower, median 17.3%)",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "PEEPEIT-ΔPL led to greater benefits specifically in the subgroup of patients with higher recruitability (P < 0.001 for both ΔPLdyn and PTPmus)",
+      "interaction_p_value": 0.016,
+      "provenance": {
+        "quote": "differential effects of the PEEP strategy depending on the degree of recruitability (interaction PEEP method x recruitability—P = 0.016 for ΔPLdyn and P = 0.005 for PTPmus). PEEPEIT-ΔPL led to greater benefits specifically in the subgroup of patients with higher recruitability (P < 0.001 for both ΔPLdyn and PTPmus)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Recruitability (higher vs lower, median 17.3%)",
+      "outcome_name": "PTPmus",
+      "prespecified": null,
+      "result_verbatim": "PEEPEIT-ΔPL led to greater benefits specifically in the subgroup of patients with higher recruitability (P < 0.001 for both ΔPLdyn and PTPmus)",
+      "interaction_p_value": 0.005,
+      "provenance": {
+        "quote": "differential effects of the PEEP strategy depending on the degree of recruitability (interaction PEEP method x recruitability—P = 0.016 for ΔPLdyn and P = 0.005 for PTPmus). PEEPEIT-ΔPL led to greater benefits specifically in the subgroup of patients with higher recruitability (P < 0.001 for both ΔPLdyn and PTPmus)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Baseline PaO2/FiO2 (>200 vs <200)",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "improved ΔPLdyn during PEEPEIT-ΔPL was observed only in patients with a baseline PaO2/FiO2 > 200 mmHg (P < 0.001), but not in those with PaO2/FiO2 < 200 mmHg (P > 0.999)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "In addition, improved ΔPLdyn during PEEPEIT-ΔPL was observed only in patients with a baseline PaO2/FiO2 > 200 mmHg (P < 0.001), but not in those with PaO2/FiO2 < 200 mmHg (P > 0.999)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Morphological pattern (focal vs non-focal)",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "We found no association between the morphological pattern of ARDS (focal vs non-focal) and PEEP (interaction morphological pattern x PEEP strategy: P = 0.709 for ∆PLdyn and P = 0.832 for PTPmus)",
+      "interaction_p_value": 0.709,
+      "provenance": {
+        "quote": "We found no association between the morphological pattern of ARDS (focal vs non-focal) and PEEP (interaction morphological pattern x PEEP strategy: P = 0.709 for ∆PLdyn and P = 0.832 for PTPmus)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Morphological pattern (focal vs non-focal)",
+      "outcome_name": "PTPmus",
+      "prespecified": null,
+      "result_verbatim": "We found no association between the morphological pattern of ARDS (focal vs non-focal) and PEEP (interaction morphological pattern x PEEP strategy: P = 0.709 for ∆PLdyn and P = 0.832 for PTPmus)",
+      "interaction_p_value": 0.832,
+      "provenance": {
+        "quote": "We found no association between the morphological pattern of ARDS (focal vs non-focal) and PEEP (interaction morphological pattern x PEEP strategy: P = 0.709 for ∆PLdyn and P = 0.832 for PTPmus)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "BMI group",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "the body mass index (BMI) was not associated with the effect of the two PEEP strategies on lung stress (interaction body mass index (BMI) group x PEEP strategy: P = 0.428) or metabolic work of breathing (interaction BMI group x PEEP strategy: P = 0.995)",
+      "interaction_p_value": 0.428,
+      "provenance": {
+        "quote": "Finally, the body mass index (BMI) was not associated with the effect of the two PEEP strategies on lung stress (interaction body mass index (BMI) group x PEEP strategy: P = 0.428) or metabolic work of breathing (interaction BMI group x PEEP strategy: P = 0.995)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "BMI group",
+      "outcome_name": "PTPmus",
+      "prespecified": null,
+      "result_verbatim": "the body mass index (BMI) was not associated with the effect of the two PEEP strategies on lung stress (interaction body mass index (BMI) group x PEEP strategy: P = 0.428) or metabolic work of breathing (interaction BMI group x PEEP strategy: P = 0.995)",
+      "interaction_p_value": 0.995,
+      "provenance": {
+        "quote": "Finally, the body mass index (BMI) was not associated with the effect of the two PEEP strategies on lung stress (interaction body mass index (BMI) group x PEEP strategy: P = 0.428) or metabolic work of breathing (interaction BMI group x PEEP strategy: P = 0.995)",
+        "location": "Results, Patient characteristics associated with greater physiologic benefits at PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Order of PEEP strategies",
+      "outcome_name": "ΔPLdyn",
+      "prespecified": null,
+      "result_verbatim": "The order in which the 2 PEEP strategies were provided did not affect the results (interaction PEEP strategy x order of PEEP strategy: P = 0.932 for ∆PLdyn and P = 0.845 for PTPmusc per minute)",
+      "interaction_p_value": 0.932,
+      "provenance": {
+        "quote": "The order in which the 2 PEEP strategies were provided did not affect the results (interaction PEEP strategy x order of PEEP strategy: P = 0.932 for ∆PLdyn and P = 0.845 for PTPmusc per minute)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    },
+    {
+      "subgroup_variable": "Order of PEEP strategies",
+      "outcome_name": "PTPmus",
+      "prespecified": null,
+      "result_verbatim": "The order in which the 2 PEEP strategies were provided did not affect the results (interaction PEEP strategy x order of PEEP strategy: P = 0.932 for ∆PLdyn and P = 0.845 for PTPmusc per minute)",
+      "interaction_p_value": 0.845,
+      "provenance": {
+        "quote": "The order in which the 2 PEEP strategies were provided did not affect the results (interaction PEEP strategy x order of PEEP strategy: P = 0.932 for ∆PLdyn and P = 0.845 for PTPmusc per minute)",
+        "location": "Results, Physiologic effects of PEEPEIT-ΔPL, para 1"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Compared with scaramuzzo_2020: different population (controlled ventilation vs pressure support) and period; no overlap. No registration number reported in this study.",
+    "unclear_items": [
+      "Mild chronic pulmonary disease and Diabetes mellitus percentages in Table 1 are reported as 1% but the counts (3/30) imply 10%; recorded counts only.",
+      "No trial registration number reported.",
+      "Blinding was not feasible but not explicitly described in methods.",
+      "PEEP titration target is not a classic transpulmonary pressure target; coded as other.",
+      "Condition-level values for many physiologic outcomes not reported; only paired differences."
+    ],
+    "data_only_in_figure": [
+      "CL dynamic global/ventral/dorsal",
+      "Individual patient data in Fig 1,2,3"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "The paper reports a randomized crossover trial; all physiologic outcomes are paired within patients. Clinical outcomes (VFDs, mortality) are for the whole cohort and not attributable to a specific PEEP strategy. The ESM tables not available for exact condition-level values."
+  }
+}

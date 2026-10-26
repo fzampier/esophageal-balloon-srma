@@ -1,0 +1,3522 @@
+{
+ "record_meta": {
+  "study_id": "tang_2026",
+  "extractor": "reconciled",
+  "model": "Fernando Zampieri (human); claude-opus-5-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/cc9-8-e1461.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 205 reviewer differences: 106 in scope. Settled by human rulings 7, model rulings 97, content-neutral rules 6; 93 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 2 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Tang",
+  "year": 2026,
+  "title": "The Effect of Transpulmonary Pressure-Guided Positive End-Expiratory Pressure Titration on Pulmonary Arterial Compliance in Acute Respiratory Distress Syndrome Patients: A Single-Center, Randomized Controlled Pilot Pathophysiological Study",
+  "journal": "Critical Care Explorations",
+  "doi": "10.1097/CCE.0000000000001461",
+  "pmid": null,
+  "trial_registration": "NCT 05629832",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Patients who fulfilled the criteria of the Berlin definition of ARDS, were 18 years old or older, intubated, and had received invasive mechanical ventilation (IMV) for less than 72 hours were eligible for this trial.",
+     "location": "Methods, Patients, para 1, p. 2"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "had received invasive mechanical ventilation (IMV) for less than 72 hours were eligible for this trial",
+     "location": "Methods, Patients, para 1, p. 2"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The patients were recruited from the respiratory ICU of Beijing Chao-Yang Hospital of China.",
+     "location": "Methods, Trial Design and Oversight, p. 2"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The PEEP was set to maintain an expiratory Ptp between 0 and 5 cm H2O.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The mean static respiratory system compliance in the Ptp group was 35.6 ± 10.6 mL/cm H2O, which was not statistically different from that in the control group (33.7 ± 9.4 mL/cm H2O).",
+     "location": "Results, Respiratory Mechanics and Prognosis, p. 4"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "A total of 40 patients were included in the study, with 20 patients in the Ptp group and 20 patients in the control group.",
+     "location": "Abstract, Measurements and Main Results, p. 1"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "This was a prospective, single center, randomized pathophysiological study (ClinicalTrials.gov number, NCT 05629832).",
+     "location": "Methods, Trial Design and Oversight, p. 2"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "ORIGINAL CLINICAL REPORT ... Critical Care Explorations August 2026",
+     "location": "p. 1, header"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "rct",
+  "study_design_verbatim": {
+   "value": "A single center, randomized controlled pilot pathophysiological study",
+   "provenance": {
+    "quote": "DESIGN: A single center, randomized controlled pilot pathophysiological study.",
+    "location": "Abstract, p. 1"
+   }
+  },
+  "comparison_structure": "parallel_arms",
+  "randomised": true,
+  "allocation_ratio": "1:1",
+  "blinding": {
+   "value": "Unblinded trial for physicians; data collection, endpoint assessment and statisticians blinded; participants blinded",
+   "provenance": {
+    "quote": "This was an unblinded trial, with the physicians aware of the treatment assigned to each participant. However, during the entire study period, the data collection and endpoint assessment were blinded, and the statisticians were also blinded during the statistical analysis.",
+    "location": "Methods, Trial Design and Oversight, p. 3"
+   }
+  },
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "A single center, randomized controlled pilot pathophysiological study",
+    "location": "Abstract, DESIGN, p. 1"
+   },
+   "derivation": "Stated as 'a single center' study; number of centres not printed as a numeral."
+  },
+  "countries": [
+   "China"
+  ],
+  "location_provenance": {
+   "quote": "SETTING: A respiratory ICU in China. ... The patients were recruited from the respiratory ICU of Beijing Chao-Yang Hospital of China.",
+   "location": "Abstract, SETTING, p. 1; Methods, Trial Design and Oversight, p. 2"
+  },
+  "planned_sample_size": {
+   "value": 20,
+   "provenance": {
+    "quote": "we confirmed a required sample size of 20 patients in each of the two groups",
+    "location": "Statistical Analysis, p. 4"
+   },
+   "derivation": "20 patients required in each of the two groups (20 x 2 = 40)."
+  },
+  "sample_size_calculation": {
+   "value": "Exploratory pathophysiological study; sample size to evaluate the impact of Ptp on respiratory compliance was around 60 cases based on previous literature, reduced to 20 per group based on eligible cases and research duration",
+   "provenance": {
+    "quote": "For this pathophysiological study, the sample size to evaluate the impact of Ptp on respiratory compliance was around 60 cases, based on previous literature (12). This study was considered to be exploratory pathophysiological research and based on the actual number of eligible cases available at our center and the research duration, we confirmed a required sample size of 20 patients in each of the two groups.",
+    "location": "Statistical Analysis, p. 4"
+   }
+  },
+  "stopped_early": null,
+  "stopping_rule": null,
+  "setting": {
+   "value": "respiratory ICU (Beijing Chao-Yang Hospital, Capital Medical University, Beijing, China)",
+   "provenance": {
+    "quote": "The patients were recruited from the respiratory ICU of Beijing Chao-Yang Hospital of China.",
+    "location": "Methods, Trial Design and Oversight, para 1"
+   }
+  },
+  "enrolment_start": "2023-01",
+  "enrolment_end": "2024-12",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "Reform and Development Program of Beijing Institute of Respiratory Medicine (Ggyfz202332, Ggyfz202507), Clinical Research Improvement Program of Beijing Chao-Yang Hospital (CYTS2025B20), Capital Health Development Research Special Project (SHOUFA-2024-2-1064)",
+   "provenance": {
+    "quote": "This work was supported by the Reform and Development Program of Beijing Institute of Respiratory Medicine (Ggyfz202332, Ggyfz202507), the Clinical Research Improvement Program of Beijing Chao-Yang Hospital (CYTS2025B20), and the Capital Health Development Research Special Project (SHOUFA-2024-2-1064).",
+    "location": "Acknowledgements, p. 11-12"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 40,
+   "provenance": {
+    "quote": "Randomized (n=40)",
+    "location": "Figure 1 flowchart, p. 4"
+   }
+  },
+  "n_analysed": {
+   "value": 40,
+   "provenance": {
+    "quote": "Ptp group (n=20) Included in analysis (n=20) ... Control group (n=20) Included in analysis (n=20)",
+    "location": "Figure 1 flowchart, p. 4"
+   }
+  },
+  "population_description": {
+   "value": "Adult patients diagnosed with ARDS who had received invasive mechanical ventilation for less than 72 hours, pneumonia-induced ARDS",
+   "provenance": {
+    "quote": "PATIENTS/SUBJECTS: Adult patients diagnosed with ARDS who had received invasive mechanical ventilation for less than 72 hours.",
+    "location": "Abstract, p. 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "Berlin definition of ARDS, 18 years old or older, intubated, IMV for less than 72 hours",
+   "provenance": {
+    "quote": "Patients who fulfilled the criteria of the Berlin definition of ARDS, were 18 years old or older, intubated, and had received invasive mechanical ventilation (IMV) for less than 72 hours were eligible for this trial.",
+    "location": "Methods, Patients, p. 2"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "recent esophageal surgery or damage; recent heart surgery; pneumothorax with continuous air leakage after closed thoracic drainage; severe arrhythmia; tricuspid stenosis; heparin allergy; or chronic pulmonary heart disease",
+   "provenance": {
+    "quote": "The exclusion criteria were as follows: recent esophageal surgery or damage; recent heart surgery; pneumothorax with continuous air leakage after closed thoracic drainage; severe arrhythmia; tricuspid stenosis; heparin allergy; or chronic pulmonary heart disease.",
+    "location": "Methods, Patients, p. 2"
+   }
+  },
+  "age": null,
+  "sex_female": null,
+  "sex_male": {
+   "n": 28,
+   "total": 40,
+   "percent_as_reported": null,
+   "derived": true,
+   "derivation": "Sum of Table 1 Gender (male): 14 (70) in Ptp group and 14 (70) in control group; total computed by extractor.",
+   "provenance": {
+    "quote": "Gender (male), n (%) — 14 (70) — 14 (70) — > 0.999",
+    "location": "Table 1, p. 6"
+   }
+  },
+  "bmi": null,
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "Berlin definition",
+   "provenance": {
+    "quote": "Patients who fulfilled the criteria of the Berlin definition of ARDS",
+    "location": "Methods, Patients, p. 2"
+   }
+  },
+  "n_ards": {
+   "n": 40,
+   "total": 40,
+   "percent_as_reported": null,
+   "derived": true,
+   "derivation": "All enrolled patients met Berlin ARDS criteria by inclusion definition.",
+   "provenance": {
+    "quote": "40 patients met the inclusion criteria of the study ... a total of 195 patients diagnosed with pneumonia-induced ARDS were admitted",
+    "location": "Results, p. 4"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "some",
+  "cause_of_respiratory_failure": {
+   "value": "pneumonia-induced ARDS (SARS-CoV-2, influenza A H1N1, Aspergillus, Pneumocystis jirovecii, Klebsiella pneumoniae, Staphylococcus aureus, Streptococcus pyogenes, Chlamydia psittaci)",
+   "provenance": {
+    "quote": "Pathogens, n (%) — Severe acute respiratory syndrome coronavirus 2 13 (65) 11 (55)",
+    "location": "Table 1, p. 6"
+   }
+  },
+  "pao2_fio2_baseline": null,
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": {
+   "n": 0,
+   "total": 40,
+   "percent_as_reported": null,
+   "derived": true,
+   "derivation": "No ECMO reported; not mentioned anywhere in the report. Recorded as 0 is not warranted — see unclear_items. Actually null would be more faithful; retained here only as an explicitly derived absence? No — set to null in analysis.",
+   "provenance": null
+  },
+  "n_vasopressors": {
+   "n": 21,
+   "total": 40,
+   "percent_as_reported": null,
+   "derived": true,
+   "derivation": "Sum of Table 1 Norepinephrine: 9 (45) Ptp + 12 (60) control = 21; text states 'Twenty patients received a norepinephrine infusion during the study', which conflicts with the Table 1 total of 21. Flagged.",
+   "provenance": {
+    "quote": "Norepinephrine, n (%) — 9 (45) — 12 (60) — 0.272",
+    "location": "Table 1, p. 6"
+   }
+  },
+  "additional_baseline": [
+   {
+    "name_verbatim": "Time from onset to ICU admission (d)",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": null,
+     "dispersion_type": "iqr",
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": null,
+     "unit": "d",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Time from onset to ICU admission (d), median (IQR) — 8 (7–13) — 10 (8–14) — 0.141",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Smoker",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 7,
+     "total": 40,
+     "percent_as_reported": null,
+     "derived": true,
+     "derivation": "Table 1: Smoker 3 (15) Ptp + 4 (20) control; sum derived by extractor.",
+     "provenance": {
+      "quote": "Smoker, n (%) — 3 (15) — 4 (20) — 0.748",
+      "location": "Table 1, p. 6"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Acute lung injury score",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": null,
+     "dispersion_type": "iqr",
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Acute lung injury score, median (IQR) — 3.0 (2.6–3.2) — 3.0 (2.7–3.0) — 0.792",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "N-terminal pro-B-type natriuretic peptide",
+    "arm_label": "ptp_guided",
+    "continuous": {
+     "value_type": "median",
+     "value": 951,
+     "dispersion_type": "iqr",
+     "dispersion_low": 320,
+     "dispersion_high": 1450,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": null,
+     "unit": "pg/mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "The N-terminal pro-B-type natriuretic peptide was 951 pg/mL (320–1450 pg/mL) in the Ptp group at randomization, and it was not significantly different from that in the control group (1070 pg/mL [390–2758 pg/mL]).",
+      "location": "Results, Hemodynamic Monitoring With PAC, p. 5"
+     }
+    },
+    "count": null
+   }
+  ],
+  "baseline_by_arm": [
+   {
+    "arm_label": "ptp_guided",
+    "n": {
+     "value": 20,
+     "provenance": {
+      "quote": "The Cpa in the Ptp group was 3.98 ± 0.46 mL/mm Hg at randomization, which was not significantly different from that in the control group (3.89 ± 0.40 mL/mm Hg).",
+      "location": "Abstract, p. 1 (also Table 1 header: 'Transpulmonary Pressure-Guided Group (n = 20)', p. 6)"
+     }
+    },
+    "age": {
+     "value_type": "mean",
+     "value": 64,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "yr",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Age (yr), mean ± sd — 64 ± 10",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "sex_female": {
+     "n": 6,
+     "total": 20,
+     "derived": true,
+     "derivation": "20 minus 14 male (C29: female = n minus male)",
+     "provenance": {
+      "quote": "Gender (male), n (%) 14 (70) 14 (70)",
+      "location": "p. 6, Table 1"
+     }
+    },
+    "bmi": {
+     "value_type": "mean",
+     "value": 25.3,
+     "dispersion_type": "sd",
+     "dispersion": 2.8,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "kg/m2",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Body mass index (kg/m2), mean ± sd — 25.3 ± 2.8",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "pao2_fio2_baseline": {
+     "value_type": "mean",
+     "value": 138,
+     "dispersion_type": "sd",
+     "dispersion": 35,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Pao2/Fio2 (mm Hg) — 138 ± 35",
+      "location": "Table 3, Oxygen kinetics, p. 8"
+     }
+    },
+    "apache_ii": {
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 19,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Acute Physiology and Chronic Health Evaluation II, median (IQR) — 14 (9–19)",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "sofa": {
+     "value_type": "mean",
+     "value": 7,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Sequential Organ Failure Assessment, mean ± sd — 7 ± 5",
+      "location": "Table 1, p. 6"
+     }
+    }
+   },
+   {
+    "arm_label": "control",
+    "n": {
+     "value": 20,
+     "provenance": {
+      "quote": "of the 40 patients, 20 patients were assigned to the Ptp group and 20 patients were assigned to the control group",
+      "location": "Results, p. 4 (also Table 1 header: 'Control Group (n = 20)', p. 6)"
+     }
+    },
+    "age": {
+     "value_type": "mean",
+     "value": 66,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "yr",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Age (yr), mean ± sd — 66 ± 9",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "sex_female": {
+     "n": 6,
+     "total": 20,
+     "derived": true,
+     "derivation": "20 minus 14 male (C29: female = n minus male)",
+     "provenance": {
+      "quote": "Gender (male), n (%) 14 (70) 14 (70)",
+      "location": "p. 6, Table 1"
+     }
+    },
+    "bmi": {
+     "value_type": "mean",
+     "value": 24.5,
+     "dispersion_type": "sd",
+     "dispersion": 3.5,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "kg/m2",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Body mass index (kg/m2), mean ± sd — 24.5 ± 3.5",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "pao2_fio2_baseline": {
+     "value_type": "mean",
+     "value": 138,
+     "dispersion_type": "sd",
+     "dispersion": 46,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Pao2/Fio2 (mm Hg) — 138 ± 46",
+      "location": "Table 3, Oxygen kinetics, p. 8"
+     }
+    },
+    "apache_ii": {
+     "value_type": "median",
+     "value": 12,
+     "dispersion_type": "iqr",
+     "dispersion_low": 11,
+     "dispersion_high": 24,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Acute Physiology and Chronic Health Evaluation II, median (IQR) — 12 (11–24)",
+      "location": "Table 1, p. 6"
+     }
+    },
+    "sofa": {
+     "value_type": "mean",
+     "value": 7,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Sequential Organ Failure Assessment, mean ± sd — 7 ± 4",
+      "location": "Table 1, p. 6"
+     }
+    }
+   }
+  ]
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "Mindray SV800 ventilator and Mindray esophageal pressure monitoring tube (SDY-1, Shenzhen, China)",
+   "provenance": {
+    "quote": "we used the Mindray SV800 ventilator and Mindray esophageal pressure (Pes) monitoring tube (SDY-1, Shenzhen, China) to measure Pes",
+    "location": "Methods, Procedures, para 2, p. 3"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "dynamic_occlusion_test",
+   "method_verbatim": {
+    "value": "After balloon placement, occlusion technique was used to confirm the appropriate balloon location.",
+    "provenance": {
+     "quote": "After balloon placement, occlusion technique was used to confirm the appropriate balloon location.",
+     "location": "Methods, Procedures, para 2, p. 3"
+    }
+   },
+   "position_verification": {
+    "value": "Occlusion technique to confirm appropriate balloon location",
+    "provenance": {
+     "quote": "After balloon placement, occlusion technique was used to confirm the appropriate balloon location.",
+     "location": "Methods, Procedures, para 2, p. 3"
+    }
+   },
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "not_reported",
+   "method_verbatim": {
+    "value": "Ptp used for titration; Pes measured with esophageal balloon, expiratory Ptp maintained 0–5 cm H2O. Computation method not explicitly described beyond Ptp targeting.",
+    "provenance": {
+     "quote": "The PEEP was set to maintain an expiratory Ptp between 0 and 5 cm H2O.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "combined_end_expiratory_and_end_inspiratory",
+   "strategy_verbatim": {
+    "value": "Vt limited to less than 6 mL/kg PBW, inspiratory Ptp less than 25 cm H2O, PEEP set to maintain expiratory Ptp between 0 and 5 cm H2O",
+    "provenance": {
+     "quote": "the Vt and inspiratory pressure (Pi) were set to limit the Vt to less than 6 mL/kg predictive body weight (PBW) and inspiratory Ptp to less than 25 cm H2O. The PEEP was set to maintain an expiratory Ptp between 0 and 5 cm H2O.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "The PEEP was set to maintain an expiratory Ptp between 0 and 5 cm H2O.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 5,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "The PEEP was set to maintain an expiratory Ptp between 0 and 5 cm H2O.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": {
+    "value": 25,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "inspiratory Ptp to less than 25 cm H2O",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "mechanical ventilation parameters recorded every 6 hours during the 5 days of monitoring; titration frequency not explicitly stated",
+    "provenance": {
+     "quote": "mechanical ventilation parameters were recorded every 6 hours during the 5 days of monitoring",
+     "location": "Methods, Procedures, para 4, p. 3"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": true,
+   "recruitment_manoeuvre_detail": {
+    "value": "single recruitment maneuver with an airway open pressure of 50 cm H2O in the Ptp group",
+    "provenance": {
+     "quote": "After performing a single recruitment maneuver with an airway open pressure of 50 cm H2O, the Vt and inspiratory pressure (Pi) were set...",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "tidal_volume_target": {
+    "value": "less than 6 mL/kg predicted body weight",
+    "provenance": {
+     "quote": "limit the Vt to less than 6 mL/kg predictive body weight (PBW)",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "inspiratory Ptp less than 25 cm H2O",
+    "provenance": {
+     "quote": "inspiratory Ptp to less than 25 cm H2O",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Respiratory rate set to maintain pH 7.30–7.45; FiO2 adjusted to maintain SpO2 90–95%; each patient under heavy sedation or paralysis; PAC inserted in all participants",
+    "provenance": {
+     "quote": "The respiratory rate was set to maintain pH in the range of 7.30–7.45. The Fio2 setting was adjusted to maintain the peripheral oxygen saturation (Spo2) of each patient between 90% and 95%.",
+     "location": "Methods, Procedures, para 3, p. 3"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "intubation",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "Randomisation and start of Ptp-guided ventilation at enrolment; patients had received IMV for less than 72 hours",
+    "provenance": {
+     "quote": "had received invasive mechanical ventilation (IMV) for less than 72 hours were eligible for this trial",
+     "location": "Methods, Patients, p. 2"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "mechanical ventilation parameters recorded every 6 hours during the 5 days of monitoring; Cpa dynamic monitoring 72 hours",
+   "provenance": {
+    "quote": "mechanical ventilation parameters were recorded every 6 hours during the 5 days of monitoring",
+    "location": "Methods, Procedures, para 4, p. 3"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table"
+  ],
+  "comparator_verbatim": {
+   "value": "Empirical low tidal volume lung-protective group; PEEP settings based on the lower PEEP/Fio2 table to maintain SpO2 90–95%",
+   "provenance": {
+    "quote": "The PEEP settings were based on the lower PEEP/Fio2 table (10) to maintain the Spo2 of each patient at 90–95%.",
+    "location": "Methods, Procedures, para 4, p. 3"
+   }
+  },
+  "crossover_order": null,
+  "washout_or_stabilisation": null
+ },
+ "arms": [
+  {
+   "label": "ptp_guided",
+   "label_verbatim": "Transpulmonary Pressure-Guided Group",
+   "role": "intervention",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 20,
+    "provenance": {
+     "quote": "Ptp group (n=20)",
+     "location": "Figure 1 flowchart, p. 4"
+    }
+   },
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Included in analysis (n=20)",
+     "location": "Figure 1 flowchart, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 10,
+    "dispersion_type": "iqr",
+    "dispersion_low": 8,
+    "dispersion_high": 12,
+    "dispersion": null,
+    "secondary_dispersion_type": null,
+    "secondary_dispersion": null,
+    "secondary_dispersion_low": null,
+    "secondary_dispersion_high": null,
+    "n": 20,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Positive end-expiratory pressure (cm H2O) — 10 (8–12)",
+     "location": "Table 2, Initial IMV settings, p. 7"
+    }
+   }
+  },
+  {
+   "label": "control",
+   "label_verbatim": "Control Group",
+   "role": "comparator",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 20,
+    "provenance": {
+     "quote": "Control group (n=20)",
+     "location": "Figure 1 flowchart, p. 4"
+    }
+   },
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Included in analysis (n=20)",
+     "location": "Figure 1 flowchart, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 10,
+    "dispersion_type": "iqr",
+    "dispersion_low": 8,
+    "dispersion_high": 10,
+    "dispersion": null,
+    "secondary_dispersion_type": null,
+    "secondary_dispersion": null,
+    "secondary_dispersion_low": null,
+    "secondary_dispersion_high": null,
+    "n": 20,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Positive end-expiratory pressure (cm H2O) — 10 (8–10)",
+     "location": "Table 2, Initial IMV settings, p. 7"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary circulation compliance (mL/mm Hg)",
+   "definition_verbatim": "Cpa was calculated as stroke volume divided by pulmonary arterial pulse pressure",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Pulmonary artery catheter variable measured at randomization; Cpa calculated as stroke volume divided by pulmonary arterial pulse pressure.",
+    "provenance": {
+     "quote": "Cpa was calculated as stroke volume divided by pulmonary arterial pulse pressure (11).",
+     "location": "Methods, Procedures, para 4"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 3.98,
+     "dispersion_type": "sd",
+     "dispersion": 0.46,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "mL/mm Hg",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Pulmonary circulation compliance (mL/mm Hg) — 3.98 ± 0.46 vs 3.89 ± 0.40",
+      "location": "Table 3, Hemodynamics, row: Pulmonary circulation compliance"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 3.89,
+     "dispersion_type": "sd",
+     "dispersion": 0.4,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "mL/mm Hg",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Pulmonary circulation compliance (mL/mm Hg) — 3.98 ± 0.46 vs 3.89 ± 0.40",
+      "location": "Table 3, Hemodynamics, row: Pulmonary circulation compliance"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The Cpa was 3.98 ± 0.46 mL/mm Hg in the Ptp group, with no significant difference compared with the control group (3.89 ± 0.40 mL/mm Hg; Table 3).",
+    "location": "Results, Hemodynamic Monitoring With PAC, para 1"
+   }
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "ICU mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "icu_discharge",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ICU mortality"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": 8,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU mortality, n (%) — 8 (40) vs 7 (35)",
+      "location": "Table 2, Outcome, row: ICU mortality"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": 7,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU mortality, n (%) — 8 (40) vs 7 (35)",
+      "location": "Table 2, Outcome, row: ICU mortality"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.744,
+     "adjusted": null,
+     "provenance": {
+      "quote": "ICU mortality, n (%) — 8 (40) vs 7 (35); p = 0.744",
+      "location": "Table 2, Outcome, row: ICU mortality"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The ICU mortality was 40% in the Ptp group, which was not statistically different from that in the control group (35%; Table 2).",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 2"
+   }
+  },
+  {
+   "domain": "duration_mechanical_ventilation",
+   "name_verbatim": "IMV duration (hr)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "IMV duration (hr)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 264,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 131,
+     "dispersion_high": 377,
+     "n": 20,
+     "unit": "hr",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "IMV duration (hr), median (IQR) — 264 (131–377) vs 168 (154–442)",
+      "location": "Table 2, Outcome, row: IMV duration"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 168,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 154,
+     "dispersion_high": 442,
+     "n": 20,
+     "unit": "hr",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "IMV duration (hr), median (IQR) — 264 (131–377) vs 168 (154–442)",
+      "location": "Table 2, Outcome, row: IMV duration"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.303,
+     "adjusted": null,
+     "provenance": {
+      "quote": "IMV duration (hr), median (IQR) — 264 (131–377) vs 168 (154–442); p = 0.303",
+      "location": "Table 2, Outcome, row: IMV duration"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The IMV duration was 264 hours (131–377 hr) in the Ptp group and 168 hours (154–442 hr) in the control group.",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 2"
+   }
+  },
+  {
+   "domain": "icu_length_of_stay",
+   "name_verbatim": "ICU duration (d)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ICU duration (d)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 17,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 10,
+     "dispersion_high": 27,
+     "n": 20,
+     "unit": "d",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU duration (d), median (IQR) — 17 (10–27) vs 12 (9–27)",
+      "location": "Table 2, Outcome, row: ICU duration"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 12,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 9,
+     "dispersion_high": 27,
+     "n": 20,
+     "unit": "d",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU duration (d), median (IQR) — 17 (10–27) vs 12 (9–27)",
+      "location": "Table 2, Outcome, row: ICU duration"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.317,
+     "adjusted": null,
+     "provenance": {
+      "quote": "ICU duration (d), median (IQR) — 17 (10–27) vs 12 (9–27); p = 0.317",
+      "location": "Table 2, Outcome, row: ICU duration"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The secondary endpoints included the duration of IMV, length of the ICU stay and hospitalization, ICU mortality...",
+    "location": "Methods, Endpoints, para 1"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "cmH2O",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Driving pressure (cm H2O), mean ± sd — 11 ± 3 vs 13 ± 5",
+      "location": "Table 2, Respiratory mechanical parameters, row: Driving pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "cmH2O",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Driving pressure (cm H2O), mean ± sd — 11 ± 3 vs 13 ± 5",
+      "location": "Table 2, Respiratory mechanical parameters, row: Driving pressure"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The driving pressure was 11 ± 3 cm H2O and 13 ± 5 cm H2O in the Ptp group and control group, respectively. There was no significant difference between the two groups (Table 2).",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 2"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Right ventricular ejection fraction dynamic change",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": null,
+    "hours": 72,
+    "label_verbatim": "within 72 hours after randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "PAC-measured RVEF, dynamic monitoring over 72 hours; ANOVA",
+    "provenance": {
+     "quote": "There was a significant difference in the dynamic change in the right ventricular ejection fraction between the two groups within 72 hours after randomization (p = 0.043), but there was no significant difference between the groups (Fig. 2B).",
+     "location": "Results, Hemodynamic Monitoring With PAC, p. 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "%",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "There was a significant difference in the dynamic change in the right ventricular ejection fraction between the two groups within 72 hours after randomization (p = 0.043)",
+      "location": "Results, Hemodynamic Monitoring With PAC, p. 5"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "%",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "There was a significant difference in the dynamic change in the right ventricular ejection fraction between the two groups within 72 hours after randomization (p = 0.043)",
+      "location": "Results, Hemodynamic Monitoring With PAC, p. 5"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.043,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "ANOVA, interaction (P0)",
+     "provenance": {
+      "quote": "There was a significant difference in the dynamic change in the right ventricular ejection fraction between the two groups within 72 hours after randomization (p = 0.043) ... P0 = 0.043",
+      "location": "Results, Hemodynamic Monitoring With PAC, p. 5; Figure 2B annotation, p. 9"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "There was a significant difference in the dynamic change of the right ventricular ejection fraction and oxygen delivery index between the two groups within 72 hours after randomization (p < 0.05).",
+    "location": "Abstract, Measurements and Main Results, p. 1"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Cpa dynamic changes during first 72 hours (primary endpoint)",
+   "definition_verbatim": "The primary endpoint was the difference in the Cpa dynamic changes between the two groups during the first 72 hours",
+   "is_primary_outcome": true,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": null,
+    "hours": 72,
+    "label_verbatim": "during the first 72 hours of intervention following enrollment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Hemodynamic data collected from both groups every 6 hours during the 72 hours after enrollment; analysed by analysis of variance",
+    "provenance": {
+     "quote": "Hemodynamic data were collected from both groups of patients every 6 hours during the 72 hours after enrollment. There was a significant intergroup difference between the two groups, with the Cpa in the Ptp group being significantly higher than that in the control group, especially after 42 hours, a significant decline was observed in the control group (p = 0.039).",
+     "location": "Results, Hemodynamic Monitoring With PAC, p. 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "mL/mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Figure 2. Comparison of the dynamic monitoring of the pulmonary artery catheter between the transpulmonary pressure-guided group (Ptp group) and control for 72 hr after randomization.",
+      "location": "Figure 2A, p. 9"
+     }
+    },
+    {
+     "arm_label": "control",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "mL/mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Figure 2. Comparison of the dynamic monitoring of the pulmonary artery catheter between the transpulmonary pressure-guided group (Ptp group) and control for 72 hr after randomization.",
+      "location": "Figure 2A, p. 9"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.039,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "analysis of variance for continuous variables (intergroup difference P1)",
+     "provenance": {
+      "quote": "There was a significant intergroup difference between the two groups, with the Cpa in the Ptp group being significantly higher than that in the control group, especially after 42 hours, a significant decline was observed in the control group (p = 0.039). ... P1 = 0.039, P2 = 0.252, P3 = 0.093",
+      "location": "Results, Hemodynamic Monitoring With PAC, p. 5; Figure 2A panel annotation, p. 9"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The Cpa in the Ptp group was significantly higher than that in the control group (p = 0.039) during the 72 hours of dynamic monitoring performed after enrollment. However, Cpa did not change significantly over time, and there was no significant difference in the trend between the two groups.",
+    "location": "Abstract, Measurements and Main Results, p. 1"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Compliance (mL/cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Static respiratory system compliance measured at randomization, before the assigned PEEP strategy was applied.",
+    "provenance": {
+     "quote": "Invasive Mechanical Ventilation Parameters at Randomization",
+     "location": "Table 2, title"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 35.6,
+     "dispersion_type": "sd",
+     "dispersion": 10.6,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Compliance (mL/cm H2O), mean ± sd — 35.6 ± 10.6 vs 33.7 ± 9.4",
+      "location": "Table 2, row: Compliance"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 33.7,
+     "dispersion_type": "sd",
+     "dispersion": 9.4,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "provenance": {
+      "quote": "Compliance (mL/cm H2O), mean ± sd — 35.6 ± 10.6 vs 33.7 ± 9.4",
+      "location": "Table 2, row: Compliance"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The mean static respiratory system compliance in the Ptp group was 35.6 ± 10.6 mL/cm H2O, which was not statistically different from that in the control group (33.7 ± 9.4 mL/cm H2O).",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 1"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Resistance (cm H2O/L/s)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 10.9,
+     "dispersion_type": "sd",
+     "dispersion": 2.8,
+     "n": 20,
+     "unit": "cm H2O/L/s",
+     "provenance": {
+      "quote": "Resistance (cm H2O/L/s), mean ± sd — 10.9 ± 2.8 vs 12.3 ± 2.6",
+      "location": "Table 2, row: Resistance"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 12.3,
+     "dispersion_type": "sd",
+     "dispersion": 2.6,
+     "n": 20,
+     "unit": "cm H2O/L/s",
+     "provenance": {
+      "quote": "Resistance (cm H2O/L/s), mean ± sd — 10.9 ± 2.8 vs 12.3 ± 2.6",
+      "location": "Table 2, row: Resistance"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "There was no time effect on respiratory system compliance or resistance in the two groups of patients 3 days after randomization.",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 1"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Positive end-expiratory pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8,
+     "dispersion_high": 12,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — 10 (8–12) vs 10 (8–10)",
+      "location": "Table 2, Initial IMV settings, row: Positive end-expiratory pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8,
+     "dispersion_high": 10,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — 10 (8–12) vs 10 (8–10)",
+      "location": "Table 2, Initial IMV settings, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The PEEP setting was 10 cm H2O (8–12 cm H2O) in the Ptp group and 10 cm H2O (8–10 cm H2O) in the control group at randomization.",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 2"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Inspiratory pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 15,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Inspiratory pressure (cm H2O) — 14 (12–15) vs 15 (12–16)",
+      "location": "Table 2, Initial IMV settings, row: Inspiratory pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 15,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 16,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Inspiratory pressure (cm H2O) — 14 (12–15) vs 15 (12–16)",
+      "location": "Table 2, Initial IMV settings, row: Inspiratory pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "There were no significant differences in the initial mechanical ventilation settings or parameters between the two groups of patients (Table 2).",
+    "location": "Results, Respiratory Mechanics and Prognosis, para 1"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Fio2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 0.6,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.5,
+     "dispersion_high": 0.8,
+     "n": 20,
+     "unit": "fraction",
+     "provenance": {
+      "quote": "Fio2 — 0.60 (0.50–0.80) vs 0.55 (0.45–0.80)",
+      "location": "Table 2, Initial IMV settings, row: Fio2"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 0.55,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.45,
+     "dispersion_high": 0.8,
+     "n": 20,
+     "unit": "fraction",
+     "provenance": {
+      "quote": "Fio2 — 0.60 (0.50–0.80) vs 0.55 (0.45–0.80)",
+      "location": "Table 2, Initial IMV settings, row: Fio2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Fio2 — 0.60 (0.50–0.80) vs 0.55 (0.45–0.80); p > 0.999",
+    "location": "Table 2, Initial IMV settings, row: Fio2"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume of predictive body weight (mL/kg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 7.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 6.9,
+     "dispersion_high": 8.7,
+     "n": 20,
+     "unit": "mL/kg",
+     "provenance": {
+      "quote": "Tidal volume of predictive body weight (mL/kg), median (IQR) — 7.5 (6.9–8.7) vs 7.1 (6.4–8.5)",
+      "location": "Table 2, Respiratory mechanical parameters, row: Tidal volume of predictive body weight"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 7.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 6.4,
+     "dispersion_high": 8.5,
+     "n": 20,
+     "unit": "mL/kg",
+     "provenance": {
+      "quote": "Tidal volume of predictive body weight (mL/kg), median (IQR) — 7.5 (6.9–8.7) vs 7.1 (6.4–8.5)",
+      "location": "Table 2, Respiratory mechanical parameters, row: Tidal volume of predictive body weight"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Tidal volume of predictive body weight (mL/kg), median (IQR) — 7.5 (6.9–8.7) vs 7.1 (6.4–8.5); p = 0.343",
+    "location": "Table 2, Respiratory mechanical parameters, row: Tidal volume of predictive body weight"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Minute ventilation (L/min)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 9.8,
+     "dispersion_type": "sd",
+     "dispersion": 1.9,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "Minute ventilation (L/min), mean ± sd — 9.8 ± 1.9 vs 9.5 ± 2.1",
+      "location": "Table 2, Respiratory mechanical parameters, row: Minute ventilation"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 9.5,
+     "dispersion_type": "sd",
+     "dispersion": 2.1,
+     "n": 20,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "Minute ventilation (L/min), mean ± sd — 9.8 ± 1.9 vs 9.5 ± 2.1",
+      "location": "Table 2, Respiratory mechanical parameters, row: Minute ventilation"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Minute ventilation (L/min), mean ± sd — 9.8 ± 1.9 vs 9.5 ± 2.1; p = 0.483",
+    "location": "Table 2, Respiratory mechanical parameters, row: Minute ventilation"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Plateau pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 20,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Plateau pressure (cm H2O), mean ± sd — 20 ± 5 vs 22 ± 3",
+      "location": "Table 2, Respiratory mechanical parameters, row: Plateau pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Plateau pressure (cm H2O), mean ± sd — 20 ± 5 vs 22 ± 3",
+      "location": "Table 2, Respiratory mechanical parameters, row: Plateau pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Plateau pressure (cm H2O), mean ± sd — 20 ± 5 vs 22 ± 3; p = 0.285",
+    "location": "Table 2, Respiratory mechanical parameters, row: Plateau pressure"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Airway peak pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 26,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Airway peak pressure (cm H2O), mean ± sd — 26 ± 4 vs 27 ± 4",
+      "location": "Table 2, Respiratory mechanical parameters, row: Airway peak pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 27,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Airway peak pressure (cm H2O), mean ± sd — 26 ± 4 vs 27 ± 4",
+      "location": "Table 2, Respiratory mechanical parameters, row: Airway peak pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Airway peak pressure (cm H2O), mean ± sd — 26 ± 4 vs 27 ± 4; p = 0.229",
+    "location": "Table 2, Respiratory mechanical parameters, row: Airway peak pressure"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Cardiac index (L/min/m2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Pulmonary artery catheter measurements obtained at randomization; patients under heavy sedation or paralysis.",
+    "provenance": {
+     "quote": "All the participants underwent pulmonary artery catheter (PAC) insertion upon inclusion in the study to monitor hemodynamics and oxygen kinetics.",
+     "location": "Methods, Procedures, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 2.56,
+     "dispersion_type": "iqr",
+     "dispersion_low": 2.26,
+     "dispersion_high": 2.67,
+     "n": 20,
+     "unit": "L/min/m2",
+     "provenance": {
+      "quote": "Cardiac index (L/min/m2) — 2.56 (2.26–2.67) vs 2.72 (2.30–3.20)",
+      "location": "Table 3, Hemodynamics, row: Cardiac index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 2.72,
+     "dispersion_type": "iqr",
+     "dispersion_low": 2.3,
+     "dispersion_high": 3.2,
+     "n": 20,
+     "unit": "L/min/m2",
+     "provenance": {
+      "quote": "Cardiac index (L/min/m2) — 2.56 (2.26–2.67) vs 2.72 (2.30–3.20)",
+      "location": "Table 3, Hemodynamics, row: Cardiac index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "There was no difference in the hemodynamic parameters between two groups at randomization.",
+    "location": "Results, Hemodynamic Monitoring With PAC, para 1"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary artery systolic pressure (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 34,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery systolic pressure (mm Hg) — 34 ± 5 vs 36 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery systolic pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 36,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery systolic pressure (mm Hg) — 34 ± 5 vs 36 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery systolic pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pulmonary artery systolic pressure (mm Hg) — 34 ± 5 vs 36 ± 4; p = 0.147",
+    "location": "Table 3, Hemodynamics, row: Pulmonary artery systolic pressure"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary artery diastolic pressure (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 16,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery diastolic pressure (mm Hg) — 16 ± 5 vs 21 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery diastolic pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 21,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery diastolic pressure (mm Hg) — 16 ± 5 vs 21 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery diastolic pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pulmonary artery diastolic pressure (mm Hg) — 16 ± 5 vs 21 ± 4; p = 0.563",
+    "location": "Table 3, Hemodynamics, row: Pulmonary artery diastolic pressure"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary artery mean pressure (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 23,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery mean pressure (mm Hg) — 23 ± 5 vs 26 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery mean pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 26,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pulmonary artery mean pressure (mm Hg) — 23 ± 5 vs 26 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery mean pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "At baseline, the mean pulmonary artery pressure (mPAP) was 23 ± 5 mm Hg in the Ptp group and 26 ± 4 mm Hg in the control group.",
+    "location": "Results, Hemodynamic Monitoring With PAC, para 1"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary artery occlusion pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pulmonary artery occlusion pressure (cm H2O) — 11 ± 4 vs 14 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery occlusion pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Pulmonary artery occlusion pressure (cm H2O) — 11 ± 4 vs 14 ± 4",
+      "location": "Table 3, Hemodynamics, row: Pulmonary artery occlusion pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pulmonary artery occlusion pressure (cm H2O) — 11 ± 4 vs 14 ± 4; p = 0.869",
+    "location": "Table 3, Hemodynamics, row: Pulmonary artery occlusion pressure"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Central venous pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Central venous pressure (cm H2O) — 10 ± 4 vs 9 ± 3",
+      "location": "Table 3, Hemodynamics, row: Central venous pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Central venous pressure (cm H2O) — 10 ± 4 vs 9 ± 3",
+      "location": "Table 3, Hemodynamics, row: Central venous pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Central venous pressure (cm H2O) — 10 ± 4 vs 9 ± 3; p = 0.388",
+    "location": "Table 3, Hemodynamics, row: Central venous pressure"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Stroke volume index (mL/m2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 37,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 20,
+     "unit": "mL/m2",
+     "provenance": {
+      "quote": "Stroke volume index (mL/m2) — 37 ± 7 vs 36 ± 10",
+      "location": "Table 3, Hemodynamics, row: Stroke volume index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 36,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 20,
+     "unit": "mL/m2",
+     "provenance": {
+      "quote": "Stroke volume index (mL/m2) — 37 ± 7 vs 36 ± 10",
+      "location": "Table 3, Hemodynamics, row: Stroke volume index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Stroke volume index (mL/m2) — 37 ± 7 vs 36 ± 10; p = 0.424",
+    "location": "Table 3, Hemodynamics, row: Stroke volume index"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Systemic vascular resistance index (dyn·s/cm5/cm2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 2185,
+     "dispersion_type": "sd",
+     "dispersion": 535,
+     "n": 20,
+     "unit": "dyn·s/cm5/cm2",
+     "provenance": {
+      "quote": "Systemic vascular resistance index (dyn·s/cm5/cm2) — 2185 ± 535 vs 2272 ± 646",
+      "location": "Table 3, Hemodynamics, row: Systemic vascular resistance index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 2272,
+     "dispersion_type": "sd",
+     "dispersion": 646,
+     "n": 20,
+     "unit": "dyn·s/cm5/cm2",
+     "provenance": {
+      "quote": "Systemic vascular resistance index (dyn·s/cm5/cm2) — 2185 ± 535 vs 2272 ± 646",
+      "location": "Table 3, Hemodynamics, row: Systemic vascular resistance index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Systemic vascular resistance index (dyn·s/cm5/cm2) — 2185 ± 535 vs 2272 ± 646; p = 0.990",
+    "location": "Table 3, Hemodynamics, row: Systemic vascular resistance index"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Pulmonary vascular resistance index (dyn·s/cm5/cm2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 373,
+     "dispersion_type": "sd",
+     "dispersion": 121,
+     "n": 20,
+     "unit": "dyn·s/cm5/cm2",
+     "provenance": {
+      "quote": "Pulmonary vascular resistance index (dyn·s/cm5/cm2) — 373 ± 121 vs 422 ± 142",
+      "location": "Table 3, Hemodynamics, row: Pulmonary vascular resistance index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 422,
+     "dispersion_type": "sd",
+     "dispersion": 142,
+     "n": 20,
+     "unit": "dyn·s/cm5/cm2",
+     "provenance": {
+      "quote": "Pulmonary vascular resistance index (dyn·s/cm5/cm2) — 373 ± 121 vs 422 ± 142",
+      "location": "Table 3, Hemodynamics, row: Pulmonary vascular resistance index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The PVRI was 373 ± 121 dyn·s/cm5/cm2 and 422 ± 142 dyn·s/cm5/cm2 in the Ptp group and the control group, respectively.",
+    "location": "Results, Hemodynamic Monitoring With PAC, para 1"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Left ventricular stroke work index (g·m)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 35.4,
+     "dispersion_type": "sd",
+     "dispersion": 12.2,
+     "n": 20,
+     "unit": "g·m",
+     "provenance": {
+      "quote": "Left ventricular stroke work index (g·m) — 35.4 ± 12.2 vs 32.5 ± 12.7",
+      "location": "Table 3, Hemodynamics, row: Left ventricular stroke work index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 32.5,
+     "dispersion_type": "sd",
+     "dispersion": 12.7,
+     "n": 20,
+     "unit": "g·m",
+     "provenance": {
+      "quote": "Left ventricular stroke work index (g·m) — 35.4 ± 12.2 vs 32.5 ± 12.7",
+      "location": "Table 3, Hemodynamics, row: Left ventricular stroke work index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Left ventricular stroke work index (g·m) — 35.4 ± 12.2 vs 32.5 ± 12.7; p = 0.861",
+    "location": "Table 3, Hemodynamics, row: Left ventricular stroke work index"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Right ventricular stroke work index (g·m)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 6.9,
+     "dispersion_type": "sd",
+     "dispersion": 1.5,
+     "n": 20,
+     "unit": "g·m",
+     "provenance": {
+      "quote": "Right ventricular stroke work index (g·m) — 6.9 ± 1.5 vs 8.7 ± 2.0",
+      "location": "Table 3, Hemodynamics, row: Right ventricular stroke work index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 8.7,
+     "dispersion_type": "sd",
+     "dispersion": 2.0,
+     "n": 20,
+     "unit": "g·m",
+     "provenance": {
+      "quote": "Right ventricular stroke work index (g·m) — 6.9 ± 1.5 vs 8.7 ± 2.0",
+      "location": "Table 3, Hemodynamics, row: Right ventricular stroke work index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Right ventricular stroke work index (g·m) — 6.9 ± 1.5 vs 8.7 ± 2.0; p = 0.159",
+    "location": "Table 3, Hemodynamics, row: Right ventricular stroke work index"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Right ventricular ejection fraction (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 33.8,
+     "dispersion_type": "sd",
+     "dispersion": 8.9,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Right ventricular ejection fraction (%) — 33.8 ± 8.9 vs 30.5 ± 12.9",
+      "location": "Table 3, Hemodynamics, row: Right ventricular ejection fraction"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 30.5,
+     "dispersion_type": "sd",
+     "dispersion": 12.9,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Right ventricular ejection fraction (%) — 33.8 ± 8.9 vs 30.5 ± 12.9",
+      "location": "Table 3, Hemodynamics, row: Right ventricular ejection fraction"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Right ventricular ejection fraction (%) — 33.8 ± 8.9 vs 30.5 ± 12.9; p = 0.332",
+    "location": "Table 3, Hemodynamics, row: Right ventricular ejection fraction"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Pao2/Fio2 (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 138,
+     "dispersion_type": "sd",
+     "dispersion": 35,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pao2/Fio2 (mm Hg) — 138 ± 35 vs 138 ± 46",
+      "location": "Table 3, Oxygen kinetics, row: Pao2/Fio2"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 138,
+     "dispersion_type": "sd",
+     "dispersion": 46,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Pao2/Fio2 (mm Hg) — 138 ± 35 vs 138 ± 46",
+      "location": "Table 3, Oxygen kinetics, row: Pao2/Fio2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The Pao2/Fio2 in the Ptp group at randomization was 138 ± 35 mm Hg, which was not statistically different from that in the control group (138 ± 46 mm Hg).",
+    "location": "Results, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Paco2 (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 39,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Paco2 (mm Hg) — 39 ± 4 vs 42 ± 7",
+      "location": "Table 3, Oxygen kinetics, row: Paco2"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 42,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Paco2 (mm Hg) — 39 ± 4 vs 42 ± 7",
+      "location": "Table 3, Oxygen kinetics, row: Paco2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The mean Paco2 was 39 ± 4 mm Hg in the Ptp group at randomization, with no significant difference compared with the control group mean Paco2 of 42 ± 7 mm Hg.",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Partial pressure of oxygen in venous blood (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 32,
+     "dispersion_type": "iqr",
+     "dispersion_low": 29,
+     "dispersion_high": 36,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Partial pressure of oxygen in venous blood (mm Hg) — 32 (29–36) vs 32 (30–37)",
+      "location": "Table 3, Oxygen kinetics, row: Partial pressure of oxygen in venous blood"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 32,
+     "dispersion_type": "iqr",
+     "dispersion_low": 30,
+     "dispersion_high": 37,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Partial pressure of oxygen in venous blood (mm Hg) — 32 (29–36) vs 32 (30–37)",
+      "location": "Table 3, Oxygen kinetics, row: Partial pressure of oxygen in venous blood"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The oxygen kinetics showed no significant difference between the two groups at randomization (Table 3).",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Arterial oxygen saturation (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 95,
+     "dispersion_type": "iqr",
+     "dispersion_low": 93,
+     "dispersion_high": 96,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Arterial oxygen saturation (%) — 95 (93–96) vs 97 (94–98)",
+      "location": "Table 3, Oxygen kinetics, row: Arterial oxygen saturation"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 97,
+     "dispersion_type": "iqr",
+     "dispersion_low": 94,
+     "dispersion_high": 98,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Arterial oxygen saturation (%) — 95 (93–96) vs 97 (94–98)",
+      "location": "Table 3, Oxygen kinetics, row: Arterial oxygen saturation"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Arterial oxygen saturation (%) — 95 (93–96) vs 97 (94–98); p = 0.009",
+    "location": "Table 3, Oxygen kinetics, row: Arterial oxygen saturation"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Venous oxygen saturation (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 61,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Venous oxygen saturation (%) — 61 ± 10 vs 62 ± 10",
+      "location": "Table 3, Oxygen kinetics, row: Venous oxygen saturation"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 62,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Venous oxygen saturation (%) — 61 ± 10 vs 62 ± 10",
+      "location": "Table 3, Oxygen kinetics, row: Venous oxygen saturation"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Venous oxygen saturation (%) — 61 ± 10 vs 62 ± 10; p = 0.708",
+    "location": "Table 3, Oxygen kinetics, row: Venous oxygen saturation"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Oxygen extraction (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 35.8,
+     "dispersion_type": "sd",
+     "dispersion": 10.9,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Oxygen extraction (%) — 35.8 ± 10.9 vs 35.2 ± 10.3",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen extraction"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 35.2,
+     "dispersion_type": "sd",
+     "dispersion": 10.3,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Oxygen extraction (%) — 35.8 ± 10.9 vs 35.2 ± 10.3",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen extraction"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Oxygen extraction (%) — 35.8 ± 10.9 vs 35.2 ± 10.3; p = 0.709",
+    "location": "Table 3, Oxygen kinetics, row: Oxygen extraction"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Pulmonary shunt (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 26.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 22.0,
+     "dispersion_high": 32.2,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Pulmonary shunt (%) — 26.1 (22.0–32.2) vs 24.5 (20.3–30.4)",
+      "location": "Table 3, Oxygen kinetics, row: Pulmonary shunt"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 24.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 20.3,
+     "dispersion_high": 30.4,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Pulmonary shunt (%) — 26.1 (22.0–32.2) vs 24.5 (20.3–30.4)",
+      "location": "Table 3, Oxygen kinetics, row: Pulmonary shunt"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Pulmonary shunt (%) — 26.1 (22.0–32.2) vs 24.5 (20.3–30.4); p = 0.343",
+    "location": "Table 3, Oxygen kinetics, row: Pulmonary shunt"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Oxygen delivery index (mL/min/m2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 377,
+     "dispersion_type": "sd",
+     "dispersion": 97,
+     "n": 20,
+     "unit": "mL/min/m2",
+     "provenance": {
+      "quote": "Oxygen delivery index (mL/min/m2) — 377 ± 97 vs 386 ± 88",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen delivery index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 386,
+     "dispersion_type": "sd",
+     "dispersion": 88,
+     "n": 20,
+     "unit": "mL/min/m2",
+     "provenance": {
+      "quote": "Oxygen delivery index (mL/min/m2) — 377 ± 97 vs 386 ± 88",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen delivery index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The mean oxygen delivery index (Do2I) was 377 ± 97 mL/min/m2 in the Ptp group and 386 ± 88 mL/min/m2 in the control group.",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Oxygen consumption index (mL/min/m2)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 132,
+     "dispersion_type": "sd",
+     "dispersion": 45,
+     "n": 20,
+     "unit": "mL/min/m2",
+     "provenance": {
+      "quote": "Oxygen consumption index (mL/min/m2) — 132 ± 45 vs 136 ± 57",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen consumption index"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 136,
+     "dispersion_type": "sd",
+     "dispersion": 57,
+     "n": 20,
+     "unit": "mL/min/m2",
+     "provenance": {
+      "quote": "Oxygen consumption index (mL/min/m2) — 132 ± 45 vs 136 ± 57",
+      "location": "Table 3, Oxygen kinetics, row: Oxygen consumption index"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "At randomization, the mean oxygen consumption index (Vo2I) was 132 ± 45 mL/min/m2 and 136 ± 57 mL/min/m2 in the Ptp group and the control group, respectively.",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Left ventricular ejection fraction (%)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 57.2,
+     "dispersion_type": "iqr",
+     "dispersion_low": 52.8,
+     "dispersion_high": 64.8,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Left ventricular ejection fraction (%) — 57.2 (52.8–64.8) vs 49.0 (47.0–60.0)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Left ventricular ejection fraction"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 49.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 47.0,
+     "dispersion_high": 60.0,
+     "n": 20,
+     "unit": "%",
+     "provenance": {
+      "quote": "Left ventricular ejection fraction (%) — 57.2 (52.8–64.8) vs 49.0 (47.0–60.0)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Left ventricular ejection fraction"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The TTE variables at randomization are shown in Table 3. There were no significant differences between the two groups.",
+    "location": "Results, Transthoracic Echocardiogram, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Right ventricular end-diastolic transverse diameter/left ventricular end-diastolic transverse diameter",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "mean",
+     "value": 0.75,
+     "dispersion_type": "sd",
+     "dispersion": 0.12,
+     "n": 20,
+     "unit": null,
+     "provenance": {
+      "quote": "Right ventricular end-diastolic transverse diameter/left ventricular end-diastolic transverse diameter — 0.75 ± 0.12 vs 0.80 ± 0.13",
+      "location": "Table 3, Transthoracic echocardiogram, row: RVED/LVED"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "mean",
+     "value": 0.8,
+     "dispersion_type": "sd",
+     "dispersion": 0.13,
+     "n": 20,
+     "unit": null,
+     "provenance": {
+      "quote": "Right ventricular end-diastolic transverse diameter/left ventricular end-diastolic transverse diameter — 0.75 ± 0.12 vs 0.80 ± 0.13",
+      "location": "Table 3, Transthoracic echocardiogram, row: RVED/LVED"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "in both groups had right ventricular enlargement at baseline, with significant differences observed between the two groups 5 days after randomization",
+    "location": "Discussion, para 3"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Tricuspid annular plane systolic excursion (cm)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 2.31,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1.71,
+     "dispersion_high": 2.9,
+     "n": 20,
+     "unit": "cm",
+     "provenance": {
+      "quote": "Tricuspid annular plane systolic excursion (cm) — 2.31 (1.71–2.90) vs 2.07 (1.88–2.53)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Tricuspid annular plane systolic excursion"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 2.07,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1.88,
+     "dispersion_high": 2.53,
+     "n": 20,
+     "unit": "cm",
+     "provenance": {
+      "quote": "Tricuspid annular plane systolic excursion (cm) — 2.31 (1.71–2.90) vs 2.07 (1.88–2.53)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Tricuspid annular plane systolic excursion"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The TTE variables at randomization are shown in Table 3. There were no significant differences between the two groups.",
+    "location": "Results, Transthoracic Echocardiogram, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Tricuspid regurgitation pressure (mm Hg)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 17.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3.6,
+     "dispersion_high": 23.4,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Tricuspid regurgitation pressure (mm Hg) — 17.5 (3.6–23.4) vs 18.9 (5.2–31.0)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Tricuspid regurgitation pressure"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 18.9,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.2,
+     "dispersion_high": 31.0,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "Tricuspid regurgitation pressure (mm Hg) — 17.5 (3.6–23.4) vs 18.9 (5.2–31.0)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Tricuspid regurgitation pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Tricuspid regurgitation pressure (mm Hg) — 17.5 (3.6–23.4) vs 18.9 (5.2–31.0); p = 0.504",
+    "location": "Table 3, Transthoracic echocardiogram, row: Tricuspid regurgitation pressure"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Right ventricular myocardial systolic peak velocity (cm/s)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "value_type": "median",
+     "value": 13.2,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10.4,
+     "dispersion_high": 14.8,
+     "n": 20,
+     "unit": "cm/s",
+     "provenance": {
+      "quote": "Right ventricular myocardial systolic peak velocity (cm/s) — 13.2 (10.4–14.8) vs 15.0 (12.7–17.3)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Right ventricular myocardial systolic peak velocity"
+     }
+    },
+    {
+     "arm_label": "control",
+     "value_type": "median",
+     "value": 15.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12.7,
+     "dispersion_high": 17.3,
+     "n": 20,
+     "unit": "cm/s",
+     "provenance": {
+      "quote": "Right ventricular myocardial systolic peak velocity (cm/s) — 13.2 (10.4–14.8) vs 15.0 (12.7–17.3)",
+      "location": "Table 3, Transthoracic echocardiogram, row: Right ventricular myocardial systolic peak velocity"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Right ventricular myocardial systolic peak velocity (cm/s) — 13.2 (10.4–14.8) vs 15.0 (12.7–17.3); p = 0.739",
+    "location": "Table 3, Transthoracic echocardiogram, row: Right ventricular myocardial systolic peak velocity"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Oxygen delivery index (Do2I), dynamic change during 72 hr",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": null,
+    "hours": 72,
+    "label_verbatim": "during the 72 hours of monitoring after randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "PAC oxygen kinetic variable recorded every 6 hours for 72 hours; arm-level values shown only in Figure 2C.",
+    "provenance": {
+     "quote": "In both groups, hemodynamics and oxygen kinetics were monitored with the PAC and recorded every 6 hours for 3 days.",
+     "location": "Methods, Procedures, para 4"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "within_arm_change": {
+      "value": null,
+      "p_value": 0.446,
+      "p_value_verbatim": "p = 0.446",
+      "test_used": "time effect (analysis of variance for continuous variables)",
+      "unit": null,
+      "provenance": {
+       "quote": "although Do2I of the Ptp group increased over time, there was no significant time effect (p = 0.446)",
+       "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+      }
+     },
+     "provenance": {
+      "quote": "although Do2I of the Ptp group increased over time, there was no significant time effect (p = 0.446)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "within_arm_change": {
+      "value": null,
+      "p_value": 0.023,
+      "p_value_verbatim": "p = 0.023",
+      "test_used": "time effect (analysis of variance for continuous variables)",
+      "unit": null,
+      "provenance": {
+       "quote": "The Do2I of the control group decreased significantly over time in the control group (p = 0.023)",
+       "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+      }
+     },
+     "provenance": {
+      "quote": "The Do2I of the control group decreased significantly over time in the control group (p = 0.023)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.026,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (group x time interaction/trend)",
+     "provenance": {
+      "quote": "there was a significant difference in the Do2I trend between the two groups (p = 0.026). There was no significant difference between the two groups in an intergroup comparison (Fig. 2C).",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "there was a significant difference in the Do2I trend between the two groups (p = 0.026)",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 2"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Oxygen consumption index (Vo2I), dynamic change during 72 hr",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": null,
+    "hours": 72,
+    "label_verbatim": "during the 72 hours of monitoring"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "PAC oxygen kinetic variable recorded every 6 hours for 72 hours; arm-level values shown only in Figure 2D.",
+    "provenance": {
+     "quote": "In both groups, hemodynamics and oxygen kinetics were monitored with the PAC and recorded every 6 hours for 3 days.",
+     "location": "Methods, Procedures, para 4"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "within_arm_change": {
+      "value": null,
+      "p_value": 0.627,
+      "p_value_verbatim": "p = 0.627",
+      "test_used": "time effect (analysis of variance for continuous variables)",
+      "unit": null,
+      "provenance": {
+       "quote": "The Ptp group did not show a significant time effect (p = 0.627), while the control group showed a significant upward trend (p = 0.026)",
+       "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+      }
+     },
+     "provenance": {
+      "quote": "The Ptp group did not show a significant time effect (p = 0.627)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "within_arm_change": {
+      "value": null,
+      "p_value": 0.026,
+      "p_value_verbatim": "p = 0.026",
+      "test_used": "time effect (analysis of variance for continuous variables)",
+      "unit": null,
+      "provenance": {
+       "quote": "the control group showed a significant upward trend (p = 0.026)",
+       "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+      }
+     },
+     "provenance": {
+      "quote": "the control group showed a significant upward trend (p = 0.026)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.007,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (group x time interaction)",
+     "provenance": {
+      "quote": "There were significant differences in the Vo2I dynamic changes between the two groups of patients during the 72 hours of monitoring (p = 0.007).",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.049,
+     "adjusted": null,
+     "test_used": "intergroup comparison (analysis of variance for continuous variables)",
+     "provenance": {
+      "quote": "an intergroup comparison indicated that the Vo2I in the control group was significantly higher than that in the Ptp group (p = 0.049; Fig. 2D)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "There were significant differences in the Vo2I dynamic changes between the two groups of patients during the 72 hours of monitoring (p = 0.007).",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 3"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Paco2 (mm Hg), comparison between groups during 72 hr",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": null,
+    "hours": 72,
+    "label_verbatim": "during the 72 hours of monitoring"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Arterial blood gas variable monitored during the 72 hours after randomization.",
+    "provenance": {
+     "quote": "The Paco2 in the two groups did not change significantly over time during the 72 hours of monitoring.",
+     "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "provenance": {
+      "quote": "a comparison between the groups showed that the Paco2 in the control group was significantly higher than that in the Ptp group (p = 0.027)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "provenance": {
+      "quote": "a comparison between the groups showed that the Paco2 in the control group was significantly higher than that in the Ptp group (p = 0.027)",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.027,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (intergroup comparison)",
+     "provenance": {
+      "quote": "However, a comparison between the groups showed that the Paco2 in the control group was significantly higher than that in the Ptp group (p = 0.027).",
+      "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "However, a comparison between the groups showed that the Paco2 in the control group was significantly higher than that in the Ptp group (p = 0.027).",
+    "location": "Results, Oxygen Kinetics Obtained With PAC, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Right ventricular end-diastolic transverse diameter/left ventricular end-diastolic transverse diameter (RVED/LVED), 5-day trend",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": 5,
+    "hours": null,
+    "label_verbatim": "daily TTE for 5 consecutive days after randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Daily transthoracic echocardiography for 5 consecutive days; arm-level values shown only in Figure 3A.",
+    "provenance": {
+     "quote": "The two groups of patients underwent daily TTE examinations for 5 consecutive days to observe the dynamic changes in these variables.",
+     "location": "Results, Transthoracic Echocardiogram, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "provenance": {
+      "quote": "In the Ptp group, the right ventricular end-diastolic transverse diameter (RVED) divided by the left ventricular end-diastolic transverse diameter (LVED) was relatively stable, while the control group exhibited a gradually increasing trend, with a significant difference between the two groups (p = 0.044).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "provenance": {
+      "quote": "In the Ptp group, the right ventricular end-diastolic transverse diameter (RVED) divided by the left ventricular end-diastolic transverse diameter (LVED) was relatively stable, while the control group exhibited a gradually increasing trend, with a significant difference between the two groups (p = 0.044).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.044,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (intergroup difference)",
+     "provenance": {
+      "quote": "the control group exhibited a gradually increasing trend, with a significant difference between the two groups (p = 0.044)",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "the control group exhibited a gradually increasing trend, with a significant difference between the two groups (p = 0.044)",
+    "location": "Results, Transthoracic Echocardiogram, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Tricuspid annular plane systolic excursion (TAPSE), 5-day trend",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": 5,
+    "hours": null,
+    "label_verbatim": "during the 5 days"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Daily transthoracic echocardiography for 5 consecutive days; arm-level values shown only in Figure 3B.",
+    "provenance": {
+     "quote": "The two groups of patients underwent daily TTE examinations for 5 consecutive days to observe the dynamic changes in these variables.",
+     "location": "Results, Transthoracic Echocardiogram, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "provenance": {
+      "quote": "The changes in the tricuspid annular plane systolic excursion (TAPSE) during the 5 days were greater in the Ptp group than in the control group, with a significant difference in the trend between the two groups (p = 0.047).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "provenance": {
+      "quote": "The changes in the tricuspid annular plane systolic excursion (TAPSE) during the 5 days were greater in the Ptp group than in the control group, with a significant difference in the trend between the two groups (p = 0.047).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.047,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (trend)",
+     "provenance": {
+      "quote": "with a significant difference in the trend between the two groups (p = 0.047)",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "with a significant difference in the trend between the two groups (p = 0.047)",
+    "location": "Results, Transthoracic Echocardiogram, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Left ventricular ejection fraction (EF), 5-day trend",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "sequence_position": null,
+    "days": 5,
+    "hours": null,
+    "label_verbatim": "during the 5 days after randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Daily transthoracic echocardiography for 5 consecutive days; arm-level values shown only in Figure 3C.",
+    "provenance": {
+     "quote": "The two groups of patients underwent daily TTE examinations for 5 consecutive days to observe the dynamic changes in these variables.",
+     "location": "Results, Transthoracic Echocardiogram, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "ptp_guided",
+     "n": null,
+     "provenance": {
+      "quote": "In addition, the left ventricular ejection fraction trend between the two groups was also significantly different (p = 0.048; Fig. 3).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    },
+    {
+     "arm_label": "control",
+     "n": null,
+     "provenance": {
+      "quote": "In addition, the left ventricular ejection fraction trend between the two groups was also significantly different (p = 0.048; Fig. 3).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.048,
+     "adjusted": null,
+     "test_used": "analysis of variance for continuous variables (trend)",
+     "provenance": {
+      "quote": "In addition, the left ventricular ejection fraction trend between the two groups was also significantly different (p = 0.048; Fig. 3).",
+      "location": "Results, Transthoracic Echocardiogram, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "In addition, the left ventricular ejection fraction trend between the two groups was also significantly different (p = 0.048; Fig. 3).",
+    "location": "Results, Transthoracic Echocardiogram, para 1"
+   }
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": null,
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": null,
+  "protocol_deviations": {
+   "value": "strict requirements for sedation and paralysis were not specified in the research protocol (authors' limitation statement)",
+   "provenance": {
+    "quote": "a few parameters changed dramatically in the study, which may be attributed to bias caused by the small sample size, as well as a study design defect in which strict requirements for sedation and paralysis were not specified in the research protocol.",
+    "location": "Discussion, Limitations, p. 11"
+   }
+  },
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "non_obese_population",
+  "timing_subgroup": "unclear",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_subgroup: all enrolled patients met the Berlin ARDS definition (inclusion criterion) and all had pneumonia-induced ARDS. obesity_subgroup: mean BMI 25.3 ± 2.8 (Ptp) and 24.5 ± 3.5 (control), both well below 30 kg/m2. timing_subgroup: eligibility required invasive mechanical ventilation for less than 72 hours before enrolment, so balloon-guided management started somewhere between 0 and 72 hours from intubation, i.e. the population spans the 48-hour cut; exact interval not reported, and time from illness onset to ICU admission was 8 (7-13) days in the Ptp group. ptp_target_subgroups: PEEP was titrated to an end-expiratory Ptp of 0-5 cm H2O (a positive end-expiratory range) with an end-inspiratory Ptp ceiling of 25 cm H2O; the computation method for Ptp is not stated in the paper. is_longest_reported_mortality: only ICU mortality is reported, so it is the longest available follow-up mortality, per the ruling preferring the reported (discharge-based) outcome when no fixed-day alternative exists."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap. Checked trial registration (NCT 05629832, registered 2022-11-14, Beijing Chao-Yang Hospital, China) against registrations in COHORTS.md clusters: EPVent-1 (NCT00127491), EPVent-2 (beitler_2019), mannheim_boesing (DRKS00017449, DRKS00013967), mgh_lung_rescue (NCT02503241/NCT02105220). Enrolment January 2023 to December 2024 postdates all published reports of those cohorts. Single centre in Beijing, China; no shared authors with any cluster. Unique cohort.",
+  "unclear_items": [
+   "design.enrolment_start/enrolment_end: text states 'From January 1, 2023, to December 31, 2024, a total of 195 patients... were admitted' but Figure 1 flowchart states 'From January 1st, 2023, to April 30th, 2023, totally 151 patients pneumonia induced ARDS admission to RICU' and 77 exclusions — the screening window and screening totals conflict between text and flowchart; enrolment end recorded as 2024-12 from the text.",
+   "population.n_vasopressors: text says 'Twenty patients received a norepinephrine infusion' but Table 1 rows sum to 9 + 12 = 21; the Table 1 sum was recorded as derived and the discrepancy flagged.",
+   "intervention.balloon_calibration.method: paper says only 'occlusion technique was used to confirm the appropriate balloon location' without naming the test or stating how filling volume was chosen; coded 'other' rather than dynamic_occlusion_test because the manoeuvre details are absent.",
+   "intervention.ptp_computation.method: coded absolute_pes_subtraction (Talmor-style expiratory Ptp target) but the paper never explicitly states the Ptp formula; inference from the Ptp-guided protocol.",
+   "population.n_ecmo: ECMO is never mentioned; left null rather than recording 0.",
+   "feasibility.n_placement_attempted: inferred as the 20 Ptp-group patients in whom Pes measurement was used; the paper does not state placement attempts or success counts.",
+   "eligible_design: pilot pathophysiological RCT; accepted as an RCT design though its outcomes are largely pathophysiological.",
+   "outcomes Cpa/RVEF/Do2I/Vo2I dynamic trajectories: numeric values over time appear only in Figures 2 and 3 and would require digitisation.",
+   "adults_18_plus criterion: explicit 18-year age criterion is stated, so no inference was needed."
+  ],
+  "data_only_in_figure": [
+   "Cpa dynamic trajectories over 72 hours (Figure 2A)",
+   "RVEF dynamic trajectories over 72 hours (Figure 2B)",
+   "Do2I dynamic trajectories over 72 hours (Figure 2C)",
+   "Vo2I dynamic trajectories over 72 hours (Figure 2D)",
+   "RVED/LVED dynamic trajectories over 5 days (Figure 3A)",
+   "TAPSE dynamic trajectories over 5 days (Figure 3B)",
+   "LV ejection fraction dynamic trajectories over 5 days (Figure 3C)"
+  ],
+  "contact_author_needed": true,
+  "general_notes": "Figure 1 flowchart conflicts with the text on screening dates (Jan–Apr 2023, 151 patients) and screening total (195 patients Jan 2023–Dec 2024); the flowchart's exclusion list (77 items including 'Dropout (n=34)') does not sum to 151−40, suggesting an internal inconsistency. TTE-based outcomes (RVED/LVED, TAPSE, EF) had significant intergroup differences (p = 0.044, 0.047, 0.048) but no dedicated schema domain beyond hemodynamics; recorded in data_only_in_figure and general_notes. Pulmonary vascular resistance index and right ventricular stroke work index were reported lower in the Ptp group over 72 hours but p-values for these contrasts appear only in prose ('no significant difference in the PVRI'). Hospital length of stay was listed as a secondary endpoint but never reported."
+ }
+}

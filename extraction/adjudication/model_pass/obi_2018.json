@@ -1,0 +1,246 @@
+{
+  "study_id": "obi_2018",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[successful extubation or weaning percentage of s @30d]",
+      "decision": "deepseek",
+      "reason": "Same data in both (ESO 8/13, Cstat 9/12, P = .67) and the same definition. DeepSeek's single effect estimate records adjusted: false and no confidence level; GLM's carries ci_level 95 with no interval.",
+      "evidence": "p. 4 Outcomes; p. 1 Abstract Results"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning time to wean da @duration until event]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM merges two analyses on different populations into one entry, the Mann-Whitney comparison among the 17 who weaned (3.5 [1-16] vs 14 [7-26] days, P = .012) and the log-rank test on the entire cohort (N = 25, P = .892), and codes time from randomisation to liberation as successful weaning. DeepSeek keeps these as two entries under duration_mechanical_ventilation with identical numbers.",
+      "evidence": "p. 4 Outcomes; p. 3-4 Statistical analysis; p. 8 Fig. 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o baseline continuo @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: the baseline PEEP reading (14 +/- 5 vs 14 +/- 2) is kept in DeepSeek's entry, which also carries the Table 1 P = .67 that GLM omits.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o post adjustment c @not reported]",
+      "decision": "glm",
+      "reason": "Keep: post-adjustment PEEP ESO 27 (6), change 13 (7), P < .001; Cstat 24 (7), change 10 (8), P = .001; between groups P = .38, all matching. GLM keeps '<.001' as verbatim only, where DeepSeek's duplicate entry writes p_value 0.001.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp cmh2o end expiratory @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Ptp -11.2 (5.8) at baseline is kept in DeepSeek's baseline Ptp entry, so all baseline rows sit in one consistent set of entries.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp cmh2o post adjustmen @not reported]",
+      "decision": "glm",
+      "reason": "Keep: Ptp post 0.7 (3.6), change 11.8 (6.7), P < .001 kept as verbatim only; DeepSeek's duplicate sets p_value 0.001 for '<.001'.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes cmh2o esophageal pressur @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Pes 24.4 (3.4) at baseline is kept in DeepSeek's baseline Pes entry.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes cmh2o post adjustment co @not reported]",
+      "decision": "glm",
+      "reason": "Keep: Pes post 26.1 (6.6), change 1.7 (4.8), P = .223; kept with the other post-adjustment entries from GLM so they share one timepoint coding.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat static effective com @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: baseline Cstat 40 +/- 18 vs 36 +/- 16 is kept in DeepSeek's entry with the Table 1 P = .54 that GLM omits.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat static effective com @not reported]",
+      "decision": "glm",
+      "reason": "Keep: Cstat post ESO 63 (19), change 23 (19), P = .001; Cstat 67 (34), change 31 (27), P = .002; between P = .76, all matching; consistent with the other GLM post-adjustment entries.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings pressure support cmh2o post @not reported]",
+      "decision": "glm",
+      "reason": "Keep: PS post ESO 8 (3), -5 (4), P = .001; Cstat 7 (4), -7 (5), P < .001 (verbatim only); between P = .23. DeepSeek's duplicate sets p_value 0.001 for the Cstat '<.001'.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 post adjustment continu @not reported]",
+      "decision": "glm",
+      "reason": "Keep: FiO2 post ESO 0.27 (0.09), -0.09 (0.07), P < .001 (verbatim only); Cstat 0.25 (0.04), -0.12 (0.13), P = .006; between P = .49. DeepSeek's duplicate writes p_value 0.001 for '<.001'.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ibw cm3 kg tidal volume p @not reported]",
+      "decision": "glm",
+      "reason": "Keep: VT/IBW post 6.8 (1.4), 0.3 (1.6), P = .568; 6.6 (1.3), 0.13 (1.9), P = .815; between P = .66.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings rr breaths min post adjustme @not reported]",
+      "decision": "glm",
+      "reason": "Keep: RR post 22 (5), 1 (5), P = .751; 22 (6), 2 (9), P = .525; between P = .73.",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[adverse event adverse consequences of the high p @30d]",
+      "decision": "glm",
+      "reason": "Keep: 'There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study' is a negative statement covering both groups; 0 events per arm is marked derived with the sentence as derivation, per the codebook's logical-implication ruling.",
+      "evidence": "p. 5 Discussion; p. 8 Conclusions"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation time to wean fro @duration until event]",
+      "decision": "deepseek",
+      "reason": "Keep: time to wean among the 17 who weaned, ESO median 3.5 (range 1-16, n 8) vs Cstat 14 (7-26, n 9), P = .012; time from randomisation to liberation is a duration of ventilation, not weaning success.",
+      "evidence": "p. 4 Outcomes; p. 5 Discussion"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation time to achieve @duration until event]",
+      "decision": "deepseek",
+      "reason": "Keep: the entire-cohort (N = 25) Kaplan-Meier log-rank comparison, P = .892, the analysis the statistical plan names for time to ventilator independence. Time to wean is the stated primary outcome, and this ITT analysis is its primary test.",
+      "evidence": "p. 4 Statistical analysis and Outcomes; p. 8 Fig. 2"
+    },
+    {
+      "target": "outcomes[ventilator settings ps cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline PS 13 +/- 4 in both groups, P = .77; GLM omits it.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings ps cmh2o continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment PS is kept in GLM's entry; DeepSeek writes p_value 0.001 for the Cstat group's '<.001'.",
+      "evidence": "p. 6, Table 2B"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline PEEP 14 +/- 5 vs 14 +/- 2, P = .67.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment PEEP is kept in GLM's entry; DeepSeek writes p_value 0.001 for the ESO group's '<.001'.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline FiO2 0.37 +/- 0.07 vs 0.38 +/- 0.12, P = .77; GLM omits it.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment FiO2 is kept in GLM's entry; DeepSeek writes p_value 0.001 for '<.001'.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline Ptp -11.2 (5.8), ESO only (not measured in the Cstat group).",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp cmh2o continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment Ptp is kept in GLM's entry; DeepSeek writes p_value 0.001 for '<.001'.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[ventilator settings end exp awp cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline end-expiratory airway pressure 13.2 (4.7), ESO group; GLM omits it.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[ventilator settings end exp awp cmh2o continuous @minutes hours after intervention]",
+      "decision": "unclear",
+      "reason": "Only DeepSeek has it and the reading is right (26.8 (5.5), change 13.5 (6.8)), but within_arm_change.p_value is 0.001 where the table prints '<.001'. Co-author: keep DeepSeek's entry, set p_value to null (verbatim '<.001' stays), and consider timepoint.type 'not_reported' to match the other post-adjustment entries kept from GLM.",
+      "evidence": "p. 6, Table 2A End Exp AWP row"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline Cstat 40 +/- 18 vs 36 +/- 16, P = .54.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cstat continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment Cstat is kept in GLM's entry (identical numbers).",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings rr breaths min continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline RR 21 +/- 7 vs 21 +/- 8, P = .84; GLM omits it.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings rr breaths min continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment RR is kept in GLM's entry (identical numbers).",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[ventilator settings vt cm3 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline tidal volume 414 +/- 100 vs 375 +/- 107 cm3, P = .35; GLM omits it.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings vt cm3 continuous @minutes hours after intervention]",
+      "decision": "deepseek",
+      "reason": "Keep: VT post ESO 420 (70), change 6 (101), P = .827; Cstat 385 (103), change 10.2 (120), P = .773; not in Table 3, so no between-group P. GLM omits it.",
+      "evidence": "p. 6, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ibw cm3 kg continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline VT/IBW 6.5 +/- 1.2 vs 6.4 +/- 1.5, P = .82; GLM omits it.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ibw cm3 kg continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment VT/IBW is kept in GLM's entry (identical numbers).",
+      "evidence": "p. 6, Tables 2 and 3"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline Pes 24.4 (3.4), ESO only.",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes cmh2o continuous @minutes hours after intervention]",
+      "decision": "glm",
+      "reason": "Drop: post-adjustment Pes is kept in GLM's entry (identical numbers).",
+      "evidence": "p. 6, Table 2A"
+    },
+    {
+      "id": "9db6e7eb8b",
+      "decision": "glm",
+      "reason": "'There were no observed adverse consequences of the high PEEP levels ... used in our study' is a negative statement about the strategy as a whole; the codebook counts that as explicitly none.",
+      "evidence": "p. 5 Discussion; p. 1 Abstract Conclusions; CODEBOOK Feasibility"
+    },
+    {
+      "id": "2100aadf34",
+      "decision": "glm",
+      "reason": "The abstract reports cohort BMI as median [IQR] 53.4 [26.4], and GLM transcribes it as printed. Caution: it cannot be reconciled with the Table 1 group medians 68.4 and 73.9, since a pooled median must lie between them; a co-author may want to note the inconsistency.",
+      "evidence": "p. 1, Abstract Methods; p. 5, Table 1"
+    },
+    {
+      "id": "5dcb21508c",
+      "decision": "deepseek",
+      "reason": "Every analysed denominator is 25: Table 1 N = 13 + 12, weaning 8/13 and 9/12, Kaplan-Meier 'entire cohort (N = 25)', 'A total of 25 subjects were enrolled'. GLM's 23 subtracts the two early protocol violators from the Methods sentence, which the reported analyses do not do.",
+      "evidence": "p. 4 Statistical analysis and Results; p. 5 Table 1; p. 8 Fig. 2"
+    }
+  ]
+}

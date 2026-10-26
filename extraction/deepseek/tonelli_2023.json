@@ -1,0 +1,2687 @@
+{
+  "record_meta": {
+    "study_id": "tonelli_2023",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s13054-023-04682-5.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Tonelli",
+    "year": 2023,
+    "title": "Physiological effects of lung-protective ventilation in patients with lung fibrosis and usual interstitial pneumonia pattern versus primary ARDS: a matched-control study",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-023-04682-5",
+    "pmid": null,
+    "trial_registration": "NCT05098717",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Inclusion criteria were age > 18 years",
+          "location": "Methods, Study setting and population"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "invasive MV in volume-controlled mode",
+          "location": "Methods, Study setting and population"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena",
+          "location": "Methods, Study setting and population"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Respiratory mechanics of AE-ILD-UIP at different PEEP levels are reported in Table 1",
+          "location": "Results, Respiratory mechanics of AE-ILD-UIP"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "a matched-control study",
+          "location": "Title"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Physiological effects ... versus primary ARDS: a matched-control study",
+          "location": "Title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "Matched-control study",
+      "provenance": {
+        "quote": "Physiological effects ... versus primary ARDS: a matched-control study",
+        "location": "Title"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena",
+        "location": "Methods, Study setting and population"
+      }
+    },
+    "countries": [
+      "Italy"
+    ],
+    "location_provenance": {
+      "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena (Italy)",
+      "location": "Methods, Study setting and population"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Respiratory Intensive Care Unit (RICU)",
+      "provenance": {
+        "quote": "at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena",
+        "location": "Methods, Study setting and population"
+      }
+    },
+    "enrolment_start": "2016-08",
+    "enrolment_end": "2022-07",
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "No funding available",
+      "provenance": {
+        "quote": "Funding: No funding available.",
+        "location": "Funding section"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 20,
+      "derived": true,
+      "derivation": "10 AE-ILD-UIP + 10 ARDS = 20",
+      "provenance": {
+        "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included",
+        "location": "Abstract, Results"
+      }
+    },
+    "n_analysed": {
+      "value": 20,
+      "provenance": {
+        "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included",
+        "location": "Abstract, Results"
+      }
+    },
+    "population_description": {
+      "value": "Ten AE-ILD-UIP patients and 10 matched ARDS were included",
+      "provenance": {
+        "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included",
+        "location": "Abstract, Results"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "age > 18 years; established diagnosis of ILD with a UIP pattern on a high-resolution computed tomography scan; invasive MV in volume-controlled mode",
+      "provenance": {
+        "quote": "Inclusion criteria were age > 18 years; established diagnosis of ILD with a UIP pattern on a high-resolution computed tomography scan; invasive MV in volume-controlled mode.",
+        "location": "Methods, Study setting and population"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Patients suffering from chronic obstructive pulmonary disease, neuromuscular disease and chest wall deformities were excluded.",
+      "provenance": {
+        "quote": "Patients suffering from chronic obstructive pulmonary disease, neuromuscular disease and chest wall deformities were excluded.",
+        "location": "Methods, Study setting and population"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "mixed_some_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 10,
+      "total": null,
+      "percent_as_reported": null,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "10 matched ARDS",
+        "location": "Abstract, Results"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "none",
+    "cause_of_respiratory_failure": {
+      "value": "Lung infection was the cause for developing ARDS in all patients.",
+      "provenance": {
+        "quote": "Lung infection was the cause for developing ARDS in all patients.",
+        "location": "Results, AE-ILD-UIP as compared with historical, matched, ARDS controls"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "Pes-guided titration to obtain positive PL,EE",
+        "provenance": {
+          "quote": "Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "positive PL,EE",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "once for measurements (each phase 30 min)",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "low VT (6 ml/Kg/PBW)",
+        "provenance": {
+          "quote": "low VT (6 ml/Kg/PBW)",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "icu_admission",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "within 24 h from admission",
+        "provenance": {
+          "quote": "partitioned respiratory mechanics measurements within 24 h from admission",
+          "location": "Methods, Study procedures and aim"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Each phase of PEEP level was maintained for 30 min",
+      "provenance": {
+        "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+        "location": "Methods, Study procedures and aim"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "zeep",
+      "fixed_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW)",
+      "provenance": {
+        "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+        "location": "Methods, Study procedures and aim"
+      }
+    },
+    "crossover_order": {
+      "value": "Fixed sequence: ZEEP, then PEEPLOW, then PEEPTITRATED; not randomised",
+      "provenance": {
+        "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+        "location": "Methods, Study procedures and aim"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "30 min at each PEEP level",
+      "provenance": {
+        "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+        "location": "Methods, Study procedures and aim"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "zeep_ild",
+      "label_verbatim": "ZEEP (AE-ILD-UIP)",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 0,
+        "value_type": "mean",
+        "dispersion_type": "none",
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "0 cmH2O (ZEEP)",
+          "location": "Methods, Study procedures and aim"
+        }
+      }
+    },
+    {
+      "label": "peep_low_ild",
+      "label_verbatim": "PEEPLOW (AE-ILD-UIP)",
+      "role": "comparator",
+      "sequence_position": 2,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 4,
+        "value_type": "median",
+        "dispersion_type": "iqr",
+        "dispersion_low": 4,
+        "dispersion_high": 4,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP, cmH2O: 4 (4–4)",
+          "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+        }
+      }
+    },
+    {
+      "label": "peep_titrated_ild",
+      "label_verbatim": "PEEPTITRATED (AE-ILD-UIP)",
+      "role": "intervention",
+      "sequence_position": 3,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 12,
+        "value_type": "median",
+        "dispersion_type": "iqr",
+        "dispersion_low": 10,
+        "dispersion_high": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP, cmH2O: 12 (10–14)",
+          "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+        }
+      }
+    },
+    {
+      "label": "zeep_ards",
+      "label_verbatim": "ZEEP (ARDS)",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 0,
+        "value_type": "mean",
+        "dispersion_type": "none",
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "0 cmH2O (ZEEP)",
+          "location": "Methods, Study procedures and aim"
+        }
+      }
+    },
+    {
+      "label": "peep_low_ards",
+      "label_verbatim": "PEEPLOW (ARDS)",
+      "role": "comparator",
+      "sequence_position": 2,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 4,
+        "value_type": "median",
+        "dispersion_type": "iqr",
+        "dispersion_low": 4,
+        "dispersion_high": 5,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP, cmH2O: 4 (4–5)",
+          "location": "Table 1, PEEPLOW phase, ARDS column"
+        }
+      }
+    },
+    {
+      "label": "peep_titrated_ards",
+      "label_verbatim": "PEEPTITRATED (ARDS)",
+      "role": "intervention",
+      "sequence_position": 3,
+      "n_randomised": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "10 matched ARDS",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value": 14,
+        "value_type": "median",
+        "dispersion_type": "iqr",
+        "dispersion_low": 12,
+        "dispersion_high": 17.5,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP, cmH2O: 14 (12–17.5)",
+          "location": "Table 1, PEEPTITRATED phase, ARDS column"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 44.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 39.7,
+          "dispersion_high": 50.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 44.4 (39.7–50.7)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 17.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.9,
+          "dispersion_high": 23.3,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 17.9 (9.9–23.3)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 43.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 36.8,
+          "dispersion_high": 53,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 43.3 (36.8–53)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 14.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12.2,
+          "dispersion_high": 19.1,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 14.6 (12.2–19.1)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 48.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42.8,
+          "dispersion_high": 59,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 48.8 (59–42.8)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 15.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12.4,
+          "dispersion_high": 19.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL, cmH2O/L — 15.2 (12.4–19.7)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ild minus zeep_ild",
+          "arm_label_a": "peep_low_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.995,
+          "p_value_verbatim": "0.995",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p=0.995 (ZEEP vs PEEPLOW, AE-ILD-UIP, EL)",
+            "location": "Figure 1, panel A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus peep_low_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "peep_low_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p<0.0001 (PEEPLOW vs PEEPTITRATED, AE-ILD-UIP, EL)",
+            "location": "Figure 1, panel A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus zeep_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.004,
+          "p_value_verbatim": "0.004",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p=0.004 (ZEEP vs PEEPTITRATED, AE-ILD-UIP, EL)",
+            "location": "Figure 1, panel A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ards minus zeep_ards",
+          "arm_label_a": "peep_low_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.005,
+          "p_value_verbatim": "0.005",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p=0.005 (ZEEP vs PEEPLOW, ARDS, EL)",
+            "location": "Figure 1, panel B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus peep_low_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "peep_low_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.72,
+          "p_value_verbatim": "0.720",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p=0.720 (PEEPLOW vs PEEPTITRATED, ARDS, EL)",
+            "location": "Figure 1, panel B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus zeep_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.817,
+          "p_value_verbatim": "0.817",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "p=0.817 (ZEEP vs PEEPTITRATED, ARDS, EL)",
+            "location": "Figure 1, panel B"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "EL, cmH2O/L — <0.0001 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "EL, cmH2O/L — <0.0001 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "EL, cmH2O/L — <0.0001 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ecw",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 3.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.5,
+          "dispersion_high": 5.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 3.2 (2.5–5.7)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 5.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 7.4,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 5.4 (4–7.4)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 3.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.3,
+          "dispersion_high": 5.6,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 3.4 (2.3–5.6)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 5.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.3,
+          "dispersion_high": 8.3,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 5.7 (4.3–8.3)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 3.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.2,
+          "dispersion_high": 5.9,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 3.7 (3.2–5.9)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 5.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.7,
+          "dispersion_high": 7.2,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 5.7 (4.7–7.2)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.12",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 0.12 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.09",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 0.09 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.1",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L — 0.1 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Etot",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 49,
+          "dispersion_type": "iqr",
+          "dispersion_low": 43.9,
+          "dispersion_high": 54.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 49 (43.9–54.7)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.8,
+          "dispersion_high": 28,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 22 (16.8–28)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 48.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 56.8,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 48.5 (40–56.8)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 22.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19.1,
+          "dispersion_high": 25.2,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 22.1 (19.1–25.2)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 55.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 45.9,
+          "dispersion_high": 62.5,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 55.3 (45.9–62.5)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 20.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 24.5,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — 20.6 (19–24.5)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — <0.0001 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — <0.0001 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L — <0.0001 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EI",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 16.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14.8,
+          "dispersion_high": 19,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 16.7 (14.8–19)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 4.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.9,
+          "dispersion_high": 6.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 4.4 (2.9–6.3)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 15.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.3,
+          "dispersion_high": 18.7,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 15.3 (11.3–18.7)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 10.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 14,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 10.5 (5–14)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 23.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21.3,
+          "dispersion_high": 26.7,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 23.3 (21.3–26.7)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 16.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13.5,
+          "dispersion_high": 19.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 16.9 (13.5–19.2)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ild minus zeep_ild",
+          "arm_label_a": "peep_low_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.259,
+          "p_value_verbatim": "0.259",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.259 (ZEEP vs PEEPLOW, AE-ILD-UIP, PL,EI)",
+            "location": "Figure 1, panel E"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus peep_low_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "peep_low_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p<0.001 (PEEPLOW vs PEEPTITRATED, AE-ILD-UIP, PL,EI)",
+            "location": "Figure 1, panel E"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ards minus zeep_ards",
+          "arm_label_a": "peep_low_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.005,
+          "p_value_verbatim": "0.005",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.005 (ZEEP vs PEEPLOW, ARDS, PL,EI)",
+            "location": "Figure 1, panel F"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus peep_low_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "peep_low_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.008,
+          "p_value_verbatim": "0.008",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.008 (PEEPLOW vs PEEPTITRATED, ARDS, PL,EI)",
+            "location": "Figure 1, panel F"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — <0.0001 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.01",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 0.01 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O — 0.001 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EE",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": -4.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": -7.6,
+          "dispersion_high": -2.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — -4.3 (-7.6 - -2.3)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": -4.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": -7.6,
+          "dispersion_high": -2.9,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — -4.1 (-7.6 - -2.9)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": -2.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": -4.3,
+          "dispersion_high": -1.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — -2.6 (-4.3 - -1.2)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": -2.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": -4.6,
+          "dispersion_high": -0.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — -2.5 (-4.6 - -0.5)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 0.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.3,
+          "dispersion_high": 1.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — 0.8 (0.3–1.5)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 2.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.6,
+          "dispersion_high": 4.9,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — 2.4 (0.6–4.9)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ild minus zeep_ild",
+          "arm_label_a": "peep_low_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.001 (ZEEP vs PEEPLOW, AE-ILD-UIP, PL,EE)",
+            "location": "Figure 1, panel C"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus peep_low_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "peep_low_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p<0.001 (PEEPLOW vs PEEPTITRATED, AE-ILD-UIP, PL,EE)",
+            "location": "Figure 1, panel C"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus zeep_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.004,
+          "p_value_verbatim": "0.004",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.004 (ZEEP vs PEEPTITRATED, AE-ILD-UIP, PL,EE)",
+            "location": "Figure 1, panel C"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ards minus zeep_ards",
+          "arm_label_a": "peep_low_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.044,
+          "p_value_verbatim": "0.044",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.044 (ZEEP vs PEEPLOW, ARDS, PL,EE)",
+            "location": "Figure 1, panel D"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus peep_low_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "peep_low_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.02,
+          "p_value_verbatim": "0.020",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.020 (PEEPLOW vs PEEPTITRATED, ARDS, PL,EE)",
+            "location": "Figure 1, panel D"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus zeep_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p<0.001 (ZEEP vs PEEPTITRATED, ARDS, PL,EE)",
+            "location": "Figure 1, panel D"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.66",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — 0.66 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.75",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — 0.75 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.04",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O — 0.04 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPaw",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 16.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13.8,
+          "dispersion_high": 19.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 16.8 (13.8–19.3)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 14.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.5,
+          "dispersion_high": 21.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 14.4 (11.5–21.2)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 16.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14.3,
+          "dispersion_high": 18.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 16.8 (14.3–18.6)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 15.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.9,
+          "dispersion_high": 21.4,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 15.1 (11.9–21.4)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 19.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.1,
+          "dispersion_high": 21.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 19.1 (16.1–21.6)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 15.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.4,
+          "dispersion_high": 17,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 15.3 (9.4–17)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.56",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 0.56 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.9",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 0.9 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.01",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O — 0.01 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPL",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 21.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17.8,
+          "dispersion_high": 23.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 21.1 (17.8–23.6)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 9.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 9.3 (7–11.5)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 18.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15.6,
+          "dispersion_high": 21.8,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 18.4 (15.6–21.8)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 12.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.5,
+          "dispersion_high": 16.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 12.3 (8.5–16.6)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 22.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 20.8,
+          "dispersion_high": 25.8,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 22.6 (20.8–25.8)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 13.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.6,
+          "dispersion_high": 16.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 13.9 (6.6–16.5)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ild minus zeep_ild",
+          "arm_label_a": "peep_low_ild",
+          "arm_label_b": "zeep_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.018,
+          "p_value_verbatim": "0.018",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.018 (ZEEP vs PEEPLOW, AE-ILD-UIP, ΔPL)",
+            "location": "Figure 1, panel G"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ild minus peep_low_ild",
+          "arm_label_a": "peep_titrated_ild",
+          "arm_label_b": "peep_low_ild",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.003,
+          "p_value_verbatim": "0.003",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.003 (PEEPLOW vs PEEPTITRATED, AE-ILD-UIP, ΔPL)",
+            "location": "Figure 1, panel G"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_low_ards minus zeep_ards",
+          "arm_label_a": "peep_low_ards",
+          "arm_label_b": "zeep_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.267,
+          "p_value_verbatim": "0.267",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.267 (ZEEP vs PEEPLOW, ARDS, ΔPL)",
+            "location": "Figure 1, panel H"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_titrated_ards minus peep_low_ards",
+          "arm_label_a": "peep_titrated_ards",
+          "arm_label_b": "peep_low_ards",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.852,
+          "p_value_verbatim": "0.852",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "p=0.852 (PEEPLOW vs PEEPTITRATED, ARDS, ΔPL)",
+            "location": "Figure 1, panel H"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — <0.0001 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.02",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 0.02 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.0001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O — 0.0001 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "PEEPLOW and PEEPTITRATED phases"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 4,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 4 (4–4)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 4 (4–5)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 12 (10–14)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 17.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 14 (12–17.5)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.2",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 0.2 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.03",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 0.03 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pH",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 7.42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.41,
+          "dispersion_high": 7.42,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.42 (7.41–7.42)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 7.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.37,
+          "dispersion_high": 7.41,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.4 (7.37–7.41)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 7.41,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.38,
+          "dispersion_high": 7.42,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.41 (7.38–7.42)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 7.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.36,
+          "dispersion_high": 7.42,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.4 (7.36–7.42)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 7.38,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.35,
+          "dispersion_high": 7.4,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.38 (7.35–7.4)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 7.37,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.34,
+          "dispersion_high": 7.4,
+          "n": 10,
+          "unit": "value",
+          "provenance": {
+            "quote": "pH, value — 7.37 (7.34–7.4)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.07",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pH, value — 0.07 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.3",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pH, value — 0.3 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.34",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pH, value — 0.34 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 74,
+          "dispersion_type": "iqr",
+          "dispersion_low": 66.5,
+          "dispersion_high": 80,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 74 (66.5–80)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 83,
+          "dispersion_type": "iqr",
+          "dispersion_low": 75,
+          "dispersion_high": 89,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 83 (75–89)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 93.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 73.3,
+          "dispersion_high": 107,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 93.5 (73.3–107)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 74.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 68.3,
+          "dispersion_high": 80.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 74.5 (68.3–80.5)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 80,
+          "dispersion_type": "iqr",
+          "dispersion_low": 58,
+          "dispersion_high": 93,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 80 (58–93)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 105,
+          "dispersion_type": "iqr",
+          "dispersion_low": 80,
+          "dispersion_high": 134,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pO2, cmH2O — 105 (80–134)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.3",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pO2, cmH2O — 0.3 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.1",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pO2, cmH2O — 0.1 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.01",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pO2, cmH2O — 0.01 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pCO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "Three PEEP levels: ZEEP, PEEPLOW, PEEPTITRATED"
+      },
+      "measurement_context": {
+        "value": "30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "zeep_ild",
+          "value_type": "median",
+          "value": 39.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 38,
+          "dispersion_high": 45,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 39.5 (38–45)",
+            "location": "Table 1, ZEEP phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "zeep_ards",
+          "value_type": "median",
+          "value": 39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 36.8,
+          "dispersion_high": 40,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 39 (36.8–40)",
+            "location": "Table 1, ZEEP phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ild",
+          "value_type": "median",
+          "value": 41,
+          "dispersion_type": "iqr",
+          "dispersion_low": 38.5,
+          "dispersion_high": 42,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 41 (38.5–42)",
+            "location": "Table 1, PEEPLOW phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_low_ards",
+          "value_type": "median",
+          "value": 42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 39.8,
+          "dispersion_high": 47,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 42 (39.8–47)",
+            "location": "Table 1, PEEPLOW phase, ARDS column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ild",
+          "value_type": "median",
+          "value": 42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 39.5,
+          "dispersion_high": 43.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 42 (39.5–43.3)",
+            "location": "Table 1, PEEPTITRATED phase, AE-ILD-UIP column"
+          }
+        },
+        {
+          "arm_label": "peep_titrated_ards",
+          "value_type": "median",
+          "value": 45,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 48,
+          "n": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 45 (40–48)",
+            "location": "Table 1, PEEPTITRATED phase, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.06",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 0.06 (ZEEP phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, ZEEP phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.18",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 0.18 (PEEPLOW phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPLOW phase, p-value column"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "0.08",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "pCO2, cmH2O — 0.08 (PEEPTITRATED phase, AE-ILD-UIP vs ARDS)",
+            "location": "Table 1, PEEPTITRATED phase, p-value column"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "mixed",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "The ptp target subgroup is inferred as absolute positive end-expiratory transpulmonary pressure because the paper cites Talmor's approach and aims for positive PL,EE; the exact computation method is not specified in the main text."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "group (AE-ILD-UIP vs ARDS)",
+      "outcome_name": "EL",
+      "prespecified": null,
+      "result_verbatim": "p<0.001 (interaction)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "statistical difference was found for EL (p<0.001, panel A and B)",
+        "location": "Figure 1 legend"
+      }
+    },
+    {
+      "subgroup_variable": "group (AE-ILD-UIP vs ARDS)",
+      "outcome_name": "PL,EE",
+      "prespecified": null,
+      "result_verbatim": "p=0.51 (interaction)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "p=0.51 (interaction, PL,EE)",
+        "location": "Figure 1"
+      }
+    },
+    {
+      "subgroup_variable": "group (AE-ILD-UIP vs ARDS)",
+      "outcome_name": "PL,EI",
+      "prespecified": null,
+      "result_verbatim": "p<0.001 (interaction)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "PL,EI (p<0.001, panel E and F, p<0.00)",
+        "location": "Figure 1 legend"
+      }
+    },
+    {
+      "subgroup_variable": "group (AE-ILD-UIP vs ARDS)",
+      "outcome_name": "ΔPL",
+      "prespecified": null,
+      "result_verbatim": "p<0.001 (interaction)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "ΔPL (<0.001, panel G and H)",
+        "location": "Figure 1 legend"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": null,
+    "unclear_items": [
+      "The unit for pO2 and pCO2 in Table 1 is reported as 'cmH2O', which is likely a typo for 'mmHg'.",
+      "The IQR for EL in AE-ILD-UIP at PEEPTITRATED is reported as '48.8 (59–42.8)' with the upper bound before the lower; interpreted as 42.8–59.",
+      "The method for transpulmonary pressure computation (PL = Paw - Pes) is not explicitly described in the main text; likely inferred from the Talmor reference.",
+      "Pairwise p-values in Figure 1 were read from the figure; some values may be approximate.",
+      "The study does not report a primary outcome; all physiologic variables treated as secondary."
+    ],
+    "data_only_in_figure": [
+      "Pairwise p-values for EL, PL,EE, PL,EI, ΔPL from Figure 1"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "The study includes two groups: AE-ILD-UIP (n=10) and matched ARDS controls (n=10). The within-patient crossover compares three PEEP levels (ZEEP, PEEPLOW, PEEPTITRATED) within each group. The PEEPTITRATED condition is esophageal-pressure-guided. The study reports no clinical outcomes (mortality, length of stay) beyond a statement that all AE-ILD-UIP patients died during MV; this is not included as an outcome due to lack of a comparator arm label."
+  }
+}

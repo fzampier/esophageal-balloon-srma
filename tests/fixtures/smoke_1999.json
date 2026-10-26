@@ -1,0 +1,644 @@
+{
+ "record_meta": {
+  "study_id": "smoke_1999",
+  "extractor": "glm",
+  "model": "glm-5.3-flash",
+  "extraction_date": "2026-07-31",
+  "source_file": "studies/fulltext/smoke1999.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": null
+ },
+ "citation": {
+  "first_author": "Smoke",
+  "year": 1999,
+  "title": "A synthetic trial for schema smoke testing",
+  "journal": "Journal of Fixtures",
+  "doi": null,
+  "pmid": null,
+  "trial_registration": "NCT00000000",
+  "trial_acronym": "SMOKE",
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Adults aged 18 years or older were enrolled.",
+     "location": "Methods, para 1"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "All patients were invasively ventilated.",
+     "location": "Methods, para 1"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "conducted in a medical ICU",
+     "location": "Methods, para 1"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "PEEP was titrated to an end-expiratory transpulmonary pressure of 0 to 10 cm H2O.",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The primary outcome was 28-day mortality.",
+     "location": "Methods, Outcomes"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Sixty-one patients were randomized.",
+     "location": "Results, para 1"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "randomized controlled trial",
+     "location": "Title"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "full article in English",
+     "location": "Whole article"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "rct",
+  "study_design_verbatim": {
+   "value": "single-center randomized controlled trial",
+   "provenance": {
+    "quote": "single-center randomized controlled trial",
+    "location": "Abstract, Methods"
+   }
+  },
+  "comparison_structure": "parallel_arms",
+  "randomised": true,
+  "allocation_ratio": "1:1",
+  "blinding": null,
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "single-center",
+    "location": "Abstract"
+   }
+  },
+  "countries": [
+   "United States"
+  ],
+  "setting": {
+   "value": "medical ICU",
+   "provenance": {
+    "quote": "medical ICU",
+    "location": "Methods, para 1"
+   }
+  },
+  "enrolment_start": "2004-01",
+  "enrolment_end": "2007-12",
+  "consecutive_enrolment": null,
+  "funding_source": null,
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 61,
+   "provenance": {
+    "quote": "Sixty-one patients were randomized.",
+    "location": "Results, para 1"
+   }
+  },
+  "n_analysed": {
+   "value": 61,
+   "provenance": {
+    "quote": "All 61 were analyzed.",
+    "location": "Results, para 1"
+   }
+  },
+  "population_description": {
+   "value": "adults with acute lung injury",
+   "provenance": {
+    "quote": "adults with acute lung injury",
+    "location": "Methods, para 1"
+   }
+  },
+  "inclusion_criteria": null,
+  "exclusion_criteria": null,
+  "age": {
+   "value_type": "mean",
+   "value": 54.0,
+   "dispersion_type": "sd",
+   "dispersion": 17.0,
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "n": 61,
+   "unit": "years",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Age, mean (SD) \u2014 54 (17)",
+    "location": "Table 1"
+   }
+  },
+  "sex_female": {
+   "n": 25,
+   "total": 61,
+   "percent_as_reported": 41.0,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Female sex \u2014 25 (41%)",
+    "location": "Table 1"
+   }
+  },
+  "bmi": {
+   "value_type": "mean",
+   "value": 31.0,
+   "dispersion_type": "sd",
+   "dispersion": 8.0,
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "n": 61,
+   "unit": "kg/m2",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "BMI, mean (SD) \u2014 31 (8)",
+    "location": "Table 1"
+   }
+  },
+  "weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "AECC 1994",
+   "provenance": {
+    "quote": "acute lung injury as defined by the American-European Consensus Conference",
+    "location": "Methods, para 1"
+   }
+  },
+  "n_ards": null,
+  "ards_severity": {},
+  "covid19_population": "none",
+  "cause_of_respiratory_failure": null,
+  "pao2_fio2_baseline": {
+   "value_type": "mean",
+   "value": 147.0,
+   "dispersion_type": "sd",
+   "dispersion": 56.0,
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "n": 61,
+   "unit": "mmHg",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "PaO2:FiO2, mean (SD) \u2014 147 (56)",
+    "location": "Table 1"
+   }
+  },
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": null,
+  "n_vasopressors": null,
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "SmartCath",
+   "provenance": {
+    "quote": "a SmartCath esophageal balloon catheter",
+    "location": "Methods, Measurements"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "baydur_occlusion_test",
+   "method_verbatim": {
+    "value": "occlusion test comparing airway and esophageal pressure swings",
+    "provenance": {
+     "quote": "validated by an occlusion test comparing airway and esophageal pressure swings",
+     "location": "Methods, Measurements"
+    }
+   },
+   "position_verification": null,
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "transpulmonary pressure was estimated as airway pressure minus esophageal pressure",
+    "provenance": {
+     "quote": "transpulmonary pressure was estimated as airway pressure minus esophageal pressure",
+     "location": "Methods, Measurements"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "combined_end_expiratory_and_end_inspiratory",
+   "strategy_verbatim": {
+    "value": "PEEP set to achieve end-expiratory transpulmonary pressure of 0 to 10 cm H2O while keeping end-inspiratory transpulmonary pressure below 25 cm H2O",
+    "provenance": {
+     "quote": "PEEP was adjusted to achieve an end-expiratory transpulmonary pressure of 0 to 10 cm of water while keeping the end-inspiratory transpulmonary pressure below 25 cm of water",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "end-expiratory transpulmonary pressure of 0 to 10 cm of water",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 10,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "end-expiratory transpulmonary pressure of 0 to 10 cm of water",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": {
+    "value": 25,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "keeping the end-inspiratory transpulmonary pressure below 25 cm of water",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": null
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": {
+    "value": "6 mL/kg predicted body weight",
+    "provenance": {
+     "quote": "tidal volume of 6 ml per kilogram of predicted body weight",
+     "location": "Methods, Ventilator protocol"
+    }
+   },
+   "plateau_or_ptp_ceiling": null,
+   "protocolised_weaning": null,
+   "other_co_interventions": null
+  },
+  "timing": {
+   "reference_event": "enrolment",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "immediately after randomization",
+    "provenance": {
+     "quote": "The assigned strategy began immediately after randomization.",
+     "location": "Methods, Ventilator protocol"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "72 hours",
+   "provenance": {
+    "quote": "The protocol was applied for 72 hours.",
+    "location": "Methods, Ventilator protocol"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_verbatim": {
+   "value": "PEEP set according to the ARDSNet PEEP-FiO2 table",
+   "provenance": {
+    "quote": "PEEP was set according to the ARDS Network PEEP-FiO2 table",
+    "location": "Methods, Ventilator protocol"
+   }
+  },
+  "crossover_order": null,
+  "washout_or_stabilisation": null,
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table"
+  ]
+ },
+ "arms": [
+  {
+   "label": "pes_guided",
+   "label_verbatim": "esophageal-pressure-guided group",
+   "role": "intervention",
+   "n_randomised": {
+    "value": 30,
+    "provenance": {
+     "quote": "30 patients were assigned to the esophageal-pressure-guided group",
+     "location": "Figure 1"
+    }
+   },
+   "n_analysed": {
+    "value": 30,
+    "provenance": {
+     "quote": "30 analyzed",
+     "location": "Figure 1"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "ardsnet_control",
+   "label_verbatim": "control group",
+   "role": "comparator",
+   "n_randomised": {
+    "value": 31,
+    "provenance": {
+     "quote": "31 patients were assigned to the control group",
+     "location": "Figure 1"
+    }
+   },
+   "n_analysed": {
+    "value": 31,
+    "provenance": {
+     "quote": "31 analyzed",
+     "location": "Figure 1"
+    }
+   },
+   "peep_applied_cmh2o": null
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "mortality",
+   "name_verbatim": "28-day mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 28,
+    "hours": null,
+    "label_verbatim": "28 days"
+   },
+   "is_longest_reported_mortality": false,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 5,
+     "total": 30,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "28-day mortality \u2014 5/30 (17%) vs 11/31 (35%)",
+      "location": "Table 3"
+     }
+    },
+    {
+     "arm_label": "ardsnet_control",
+     "events": 11,
+     "total": 31,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "28-day mortality \u2014 5/30 (17%) vs 11/31 (35%)",
+      "location": "Table 3"
+     }
+    }
+   ],
+   "provenance": null,
+   "effect_estimates": [],
+   "paired_effects": []
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "180-day mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 180,
+    "hours": null,
+    "label_verbatim": "180 days"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 12,
+     "total": 30,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "180-day mortality \u2014 12/30 vs 17/31",
+      "location": "Table 3"
+     }
+    },
+    {
+     "arm_label": "ardsnet_control",
+     "events": 17,
+     "total": 31,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "180-day mortality \u2014 12/30 vs 17/31",
+      "location": "Table 3"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": "odds_ratio",
+     "value": 0.6,
+     "ci_low": 0.22,
+     "ci_high": 1.65,
+     "ci_level": 95,
+     "p_value": 0.32,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "provenance": {
+      "quote": "odds ratio 0.60 (95% CI 0.22 to 1.65), P=0.32",
+      "location": "Table 3"
+     }
+    }
+   ],
+   "paired_effects": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2:FiO2 at 72 hours",
+   "definition_verbatim": null,
+   "is_primary_outcome": true,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 3,
+    "hours": 72,
+    "label_verbatim": "72 hours"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "measured after 72 hours of protocol ventilation"
+   },
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 280.0,
+     "dispersion_type": "sd",
+     "dispersion": 126.0,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 28,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PaO2:FiO2 at 72 h \u2014 280 (126)",
+      "location": "Table 2"
+     }
+    },
+    {
+     "arm_label": "ardsnet_control",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 191.0,
+     "dispersion_type": "sd",
+     "dispersion": 71.0,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 29,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PaO2:FiO2 at 72 h \u2014 191 (71)",
+      "location": "Table 2"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": "mean_difference",
+     "value": 88.0,
+     "ci_low": 78.1,
+     "ci_high": 98.3,
+     "ci_level": 95,
+     "p_value": null,
+     "p_value_verbatim": "<0.002",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "provenance": {
+      "quote": "difference 88 (95% CI 78.1 to 98.3), P=0.002",
+      "location": "Table 2"
+     }
+    }
+   ],
+   "paired_effects": []
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": {
+   "value": 30,
+   "provenance": {
+    "quote": "Balloon placement was attempted in all 30 intervention patients.",
+    "location": "Results, para 2"
+   }
+  },
+  "n_placement_successful": {
+   "value": 30,
+   "provenance": {
+    "quote": "Placement was successful in all cases.",
+    "location": "Results, para 2"
+   }
+  },
+  "placement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": true,
+  "protocol_adherence": null,
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "unclear",
+  "classification_notes": "Mean BMI 31 kg/m2 meets the codebook threshold for obese_population. Timing coded unclear: the paper reports only that the protocol began at randomization, with no interval from intubation or ARDS onset.",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ]
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "overlapping_cohort_with": [
+   "haze_2016"
+  ],
+  "overlap_evidence": "Shared registration NCT00000000 and enrolment window with haze_2016.",
+  "unclear_items": [],
+  "data_only_in_figure": [],
+  "contact_author_needed": false,
+  "general_notes": "Synthetic fixture for smoke-testing the pipeline. Not a real study.",
+  "cohort_id": "smoke_cohort"
+ }
+}

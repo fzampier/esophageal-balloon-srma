@@ -1,0 +1,4321 @@
+{
+  "record_meta": {
+    "study_id": "wang_2018",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/wang2019.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Wang",
+    "year": 2018,
+    "title": "A clinical study on mechanical ventilation PEEP setting for traumatic ARDS patients guided by esophageal pressure",
+    "journal": "Technology and Health Care",
+    "doi": "10.3233/THC-181380",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Subjects who are within 18–80 years",
+          "location": "Methods, 2.1.1 Inclusion criteria, p. 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The patient with tracheal intubation or tracheotomy accepts the mechanical ventilation",
+          "location": "Methods, 2.2.1 Basic mechanical ventilation, p. 3"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Department of ICU – Intensive Care Unit, Xiamen Third Hospital",
+          "location": "Author affiliation, p. 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "the PEEP of the esophageal pressure group was adjusted according to the esophageal pressure, that is, PEEP was first increased from 5 cm H2O to 8 cm H2O, progressively increased by 2 cm H2O, and the maximum PEEP value maintained below 20 cm H2O. Meanwhile, esophageal pressure was measured, and the minimum PEEP value of keeping the end-expiratory transpulmonary pressure was 0–10 cm H2O was selected as the best PEEP",
+          "location": "Methods, 2.2.4 PEEP adjustment method, p. 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "changes in oxygenation index, respiratory mechanics, hemodynamics and inflammatory reaction index were recorded",
+          "location": "Abstract, METHODS, p. 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The data of 23 patients were included in this study",
+          "location": "Abstract, METHODS, p. 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The patients were randomly divided into two groups: the esophageal pressure titration PEEP group (n = 12), and the ARDSNet (PEEP-FiO2 table) titration PEEP group (n = 11)",
+          "location": "Abstract, METHODS, p. 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A clinical study on mechanical ventilation PEEP setting for traumatic ARDS patients guided by esophageal pressure",
+          "location": "Title, p. 1"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "The patients were randomly divided into two groups: the esophageal pressure titration PEEP group (n = 12), and the ARDSNet (PEEP-FiO2 table) titration PEEP group (n = 11).",
+      "provenance": {
+        "quote": "The patients were randomly divided into two groups: the esophageal pressure titration PEEP group (n = 12), and the ARDSNet (PEEP-FiO2 table) titration PEEP group (n = 11).",
+        "location": "Abstract, METHODS, p. 1"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "Department of ICU – Intensive Care Unit, Xiamen Third Hospital Affiliated to Fujian University of Traditional Chinese Medicine",
+        "location": "Title page, p. 1"
+      }
+    },
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "Department of ICU – Intensive Care Unit, Xiamen Third Hospital Affiliated to Fujian University of Traditional Chinese Medicine, Xiamen, Fujian 361000, China",
+      "location": "Title page, p. 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": {
+      "value": null,
+      "provenance": null
+    },
+    "stopped_early": null,
+    "stopping_rule": {
+      "value": null,
+      "provenance": null
+    },
+    "setting": {
+      "value": "ICU",
+      "provenance": {
+        "quote": "Department of ICU",
+        "location": "Author affiliation, p. 1"
+      }
+    },
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": null,
+      "provenance": null
+    },
+    "industry_funded": null,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 23,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "The data of 23 patients were included in this study",
+        "location": "Abstract, METHODS, p. 1"
+      }
+    },
+    "n_analysed": {
+      "value": 23,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "the data of 23 patients are reported in this study",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "population_description": {
+      "value": "ARDS patients who need mechanical ventilation after trauma were included in this study.",
+      "provenance": {
+        "quote": "ARDS patients who need mechanical ventilation after trauma were included in this study.",
+        "location": "Methods, 2.1 Object, p. 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Subjects who are within 18–80 years, with no gender limitation; subjects who satisfy the 2012 ARDS Berlin diagnostic criteria after trauma; subjects with an injury severity score (ISS) of > 16; subjects who provided a signed informed consent.",
+      "provenance": {
+        "quote": "Subjects who are within 18–80 years, with no gender limitation; subjects who satisfy the 2012 ARDS Berlin diagnostic criteria after trauma; subjects with an injury severity score (ISS) of > 16; subjects who provided a signed informed consent.",
+        "location": "Methods, 2.1.1 Inclusion criteria, p. 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Pregnant or lactating women; subjects under 18 years of age; Glasgow Coma Scale (GCS) of severe traumatic cerebral injury patient with < 8 scores; patient who has hemodynamic instability; patients who may die within 24 hours; patients who are not suitable for esophageal balloon catheter implantation.",
+      "provenance": {
+        "quote": "Pregnant or lactating women; subjects under 18 years of age; Glasgow Coma Scale (GCS) of severe traumatic cerebral injury patient with < 8 scores; patient who has hemodynamic instability; patients who may die within 24 hours; patients who are not suitable for esophageal balloon catheter implantation.",
+        "location": "Methods, 2.1.2 Exclusion criteria, p. 2"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 35.6,
+      "dispersion_type": "sd",
+      "dispersion": 11.5,
+      "unit": "years",
+      "provenance": {
+        "quote": "had an average age of 35.6 ± 11.5",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "sex_female": {
+      "n": 6,
+      "total": 23,
+      "percent_as_reported": null,
+      "provenance": {
+        "quote": "of which 17 patients were male and 6 were female",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "sex_male": {
+      "n": 17,
+      "total": 23,
+      "percent_as_reported": null,
+      "provenance": {
+        "quote": "of which 17 patients were male and 6 were female",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "2012 ARDS Berlin diagnostic criteria",
+      "provenance": {
+        "quote": "subjects who satisfy the 2012 ARDS Berlin diagnostic criteria after trauma",
+        "location": "Methods, 2.1.1 Inclusion criteria, p. 2"
+      }
+    },
+    "n_ards": {
+      "n": 23,
+      "total": 23,
+      "provenance": {
+        "quote": "The data of 23 patients were included in this study. ... All patients were given mechanical ventilation",
+        "location": "Abstract, p. 1"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Pulmonary contusion (16 patients), pulmonary contusion + pulmonary infection (3 patients), and pulmonary contusion + pulmonary infection + general infection (4 patients)",
+      "provenance": {
+        "quote": "The main causes of ARDS: Pulmonary contusion (16 patients), pulmonary contusion + pulmonary infection (3 patients), and pulmonary contusion + pulmonary infection + general infection (4 patients).",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "mean",
+      "value": 210.8,
+      "dispersion_type": "sd",
+      "dispersion": 56,
+      "unit": "mm Hg",
+      "provenance": {
+        "quote": "oxygenation index (PaO2/FiO2) of 210.8 ± 56 mm Hg",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "apache_ii": {
+      "value_type": "mean",
+      "value": 17.2,
+      "dispersion_type": "sd",
+      "dispersion": 6.6,
+      "provenance": {
+        "quote": "acute physiology and chronic health evaluation system II (APACHE-II) score of 17.2 ± 6.6",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": {
+      "n": null,
+      "total": 23,
+      "percent_as_reported": 44.4,
+      "provenance": {
+        "quote": "44.4% of patients used at least one vasoactive agent",
+        "location": "Results, 6.1 General conditions, p. 5"
+      }
+    },
+    "additional_baseline": [
+      {
+        "name_verbatim": "Arterial blood lactate (mmol/L)",
+        "continuous": {
+          "value_type": "mean",
+          "value": 1.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "unit": "mmol/L",
+          "provenance": {
+            "quote": "Arterial blood lactate (mmol/L) — 1.8 ± 1.7",
+            "location": "Table 1, row: Arterial blood lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "ISS score",
+        "continuous": {
+          "value_type": "mean",
+          "value": 32.4,
+          "dispersion_type": "sd",
+          "dispersion": 12.2,
+          "provenance": {
+            "quote": "ISS score of 32.4 ± 12.2",
+            "location": "Results, 6.1 General conditions, p. 5"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (Times/min)",
+        "continuous": {
+          "value_type": "mean",
+          "value": 106,
+          "dispersion_type": "sd",
+          "dispersion": 20,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate (Times/min) — 106 ± 20",
+            "location": "Table 1, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systolic blood pressure (mm Hg)",
+        "continuous": {
+          "value_type": "mean",
+          "value": 128.3,
+          "dispersion_type": "sd",
+          "dispersion": 29.5,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Systolic blood pressure (mm Hg) — 128.3 ± 29.5",
+            "location": "Table 1, row: Systolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diastolic blood pressure (mm Hg)",
+        "continuous": {
+          "value_type": "mean",
+          "value": 70.7,
+          "dispersion_type": "sd",
+          "dispersion": 19.9,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Diastolic blood pressure (mm Hg) — 70.7 ± 19.9",
+            "location": "Table 1, row: Diastolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Central venous pressure (mm Hg)",
+        "continuous": {
+          "value_type": "mean",
+          "value": 10.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Central venous pressure (mm Hg) — 10.3 ± 3.4",
+            "location": "Table 1, row: Central venous pressure"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "pes_guided",
+        "n": {
+          "value": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "The number of cases — 12",
+            "location": "Table 1, row: The number of cases"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 32.5,
+          "dispersion_type": "sd",
+          "dispersion": 12.3,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years of age) — 32.5 ± 12.3",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": {
+          "n": 3,
+          "total": 12,
+          "percent_as_reported": 25,
+          "provenance": {
+            "quote": "Female (%) — 3 (25)",
+            "location": "Table 1, row: Gender, Female"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 239.2,
+          "dispersion_type": "sd",
+          "dispersion": 87.7,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Oxygenation index (mm Hg) — 239.2 ± 87.7",
+            "location": "Table 1, row: Oxygenation index"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 18.8,
+          "dispersion_type": "sd",
+          "dispersion": 7.0,
+          "provenance": {
+            "quote": "APACHEII score — 18.8 ± 7.0",
+            "location": "Table 1, row: APACHEII score"
+          }
+        }
+      },
+      {
+        "arm_label": "ardsnet",
+        "n": {
+          "value": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "The number of cases — 11",
+            "location": "Table 1, row: The number of cases"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 35.6,
+          "dispersion_type": "sd",
+          "dispersion": 10.7,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years of age) — 35.6 ± 10.7",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": {
+          "n": 3,
+          "total": 11,
+          "percent_as_reported": 27.7,
+          "provenance": {
+            "quote": "Female (%) — 3 (27.7)",
+            "location": "Table 1, row: Gender, Female"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 276.4,
+          "dispersion_type": "sd",
+          "dispersion": 85.1,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Oxygenation index (mm Hg) — 276.4 ± 85.1",
+            "location": "Table 1, row: Oxygenation index"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 14.9,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "provenance": {
+            "quote": "APACHEII score — 14.9 ± 5.4",
+            "location": "Table 1, row: APACHEII score"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "CE086, Coopersurgical, USA",
+      "provenance": {
+        "quote": "Implantation method of the esophageal piezometer tube (CE086, Coopersurgical, USA)",
+        "location": "Methods, 2.2.2, p. 3"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": 4,
+      "dispersion_type": "none",
+      "unit": "mL",
+      "provenance": {
+        "quote": "inject 5 mL of air into the catheter balloon through the tee connector. After pumping back to 4 mL",
+        "location": "Methods, 2.2.2, p. 3"
+      }
+    },
+    "balloon_calibration": {
+      "method": "dynamic_occlusion_test",
+      "method_verbatim": {
+        "value": "the 'expiratory blocking test' [6] was used to determine the location of the esophageal balloon to maintain it in the esophageal middle and lower segment",
+        "provenance": {
+          "quote": "the 'expiratory blocking test' [6] was used to determine the location of the esophageal balloon to maintain it in the esophageal middle and lower segment",
+          "location": "Methods, 2.2.2, p. 3"
+        }
+      },
+      "position_verification": {
+        "value": "The catheter is removed gradually, and pressure fluctuation presented sine wave changes with respiratory movement after the catheter entered the chest, and the 'expiratory blocking test' was used to determine the location.",
+        "provenance": {
+          "quote": "The catheter is removed gradually, and pressure fluctuation presented sine wave changes with respiratory movement after the catheter entered the chest, and the 'expiratory blocking test' [6] was used to determine the location of the esophageal balloon to maintain it in the esophageal middle and lower segment.",
+          "location": "Methods, 2.2.2, p. 3"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Transpulmonary pressure is the direct power of expanding the lung (transpulmonary pressure = alveolar internal pressure −intrapleural pressure)",
+        "provenance": {
+          "quote": "Transpulmonary pressure is the direct power of expanding the lung (transpulmonary pressure = alveolar internal pressure −intrapleural pressure)",
+          "location": "Discussion, p. 9"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP was adjusted according to the esophageal pressure to make the end-expiratory transpulmonary pressure keep the smallest positive number within 0–10 cm H2O",
+        "provenance": {
+          "quote": "PEEP was adjusted according to the esophageal pressure to make the end-expiratory transpulmonary pressure keep the smallest positive number within 0–10 cm H2O",
+          "location": "Experiment steps, F, p. 4"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "0–10 cm H2O",
+          "location": "Methods, 2.2.4, p. 3"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "0–10 cm H2O",
+          "location": "Methods, 2.2.4, p. 3"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": {
+        "value": 20,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "the maximum PEEP value maintained below 20 cm H2O",
+          "location": "Methods, 2.2.4, p. 3"
+        }
+      },
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "the controlled lung expansion method (SI) was used to maintain 40 cm H2O (1 cm H2O = 0.098 kPa) airway pressure for 30 seconds to standardize the initial state of lung volume. The recruitment standard was PaO2/FiO2 ⩾400 mm Hg or the change was < 10%.",
+        "provenance": {
+          "quote": "the controlled lung expansion method (SI) was used to maintain 40 cm H2O (1 cm H2O = 0.098 kPa) airway pressure for 30 seconds to standardize the initial state of lung volume. The recruitment standard was PaO2/FiO2 ⩾400 mm Hg or the change was < 10%.",
+          "location": "Methods, 2.2.3, p. 3"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6–8 ml/kg (ideal weight)",
+        "provenance": {
+          "quote": "The tidal volume was set at 6–8 ml/kg (ideal weight)",
+          "location": "Experiment steps, F, p. 4"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Patients were grouped after the hemodynamics was stable, and upon fluid resuscitation and definitive operation treatment.",
+        "provenance": {
+          "quote": "Patients were grouped after the hemodynamics was stable, and upon fluid resuscitation and definitive operation treatment.",
+          "location": "Methods, 2.1.3 Grouping time, p. 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "The ARDSNet group adjusted PEEP value according to the inhaled oxygen concentration and oxygenation index.",
+      "provenance": {
+        "quote": "The ARDSNet group adjusted PEEP value according to the inhaled oxygen concentration and oxygenation index.",
+        "location": "Methods, 2.2.4, p. 3"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "pes_guided",
+      "label_verbatim": "esophageal pressure group",
+      "role": "intervention",
+      "n_randomised": {
+        "value": 12,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "the esophageal pressure titration PEEP group (n = 12)",
+          "location": "Abstract, METHODS, p. 1"
+        }
+      },
+      "n_analysed": {
+        "value": 12,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "12 patients were from the esophageal pressure group",
+          "location": "Results, 6.1 General conditions, p. 5"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 12,
+        "dispersion_type": "sd",
+        "dispersion": 4,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "PEEP titration value in the esophageal pressure group was 12 ± 4 cm H2O",
+          "location": "Results, 6.2, p. 6"
+        }
+      }
+    },
+    {
+      "label": "ardsnet",
+      "label_verbatim": "ARDSNet group",
+      "role": "comparator",
+      "n_randomised": {
+        "value": 11,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "the ARDSNet (PEEP-FiO2 table) titration PEEP group (n = 11)",
+          "location": "Abstract, METHODS, p. 1"
+        }
+      },
+      "n_analysed": {
+        "value": 11,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "11 patients were from the ARDSNet group",
+          "location": "Results, 6.1 General conditions, p. 5"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 8,
+        "dispersion_type": "sd",
+        "dispersion": 3,
+        "unit": "cm H2O",
+        "provenance": {
+          "quote": "PEEP titration value ... in the ARDSNet group (8 ± 3 cm H2O)",
+          "location": "Results, 6.2, p. 6"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "Mechanical ventilation time",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Mechanical ventilation time"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 8.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "unit": "day",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Mechanical ventilation time (day) — 8.6 ± 1.8",
+            "location": "Table 1, row: Mechanical ventilation time (day), col: Esophageal pressure group"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 14.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "unit": "day",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Mechanical ventilation time (day) — 14.5 ± 6.8",
+            "location": "Table 1, row: Mechanical ventilation time (day), col: ARDSNet group"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "Mechanical ventilation time (day) — 8.6 ± 1.8 vs 14.5 ± 6.8, p < 0.05",
+            "location": "Table 1, row: Mechanical ventilation time (day), col: p values"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "Live time of ICU",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Live time of ICU"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 13.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "unit": "day",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Live time of ICU (day) — 13.1 ± 3.9",
+            "location": "Table 1, row: Live time of ICU (day), col: Esophageal pressure group"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 20.9,
+          "dispersion_type": "sd",
+          "dispersion": 20.5,
+          "unit": "day",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Live time of ICU (day) — 20.9 ± 20.5",
+            "location": "Table 1, row: Live time of ICU (day), col: ARDSNet group"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Live time of ICU (day) — 13.1 ± 3.9 vs 20.9 ± 20.5, p > 0.05",
+            "location": "Table 1, row: Live time of ICU (day), col: p values"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 12.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — Pes group: 12.3 ± 3.9",
+            "location": "Table 2, row: PEEP, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 5,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — ARDSNet group: 5 ± 3",
+            "location": "Table 2, row: PEEP, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — p < 0.05",
+            "location": "Table 2, row: PEEP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 10,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — Pes group: 10 ± 4.5",
+            "location": "Table 2, row: PEEP, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 8,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — ARDSNet group: 8 ± 5",
+            "location": "Table 2, row: PEEP, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — p < 0.05",
+            "location": "Table 2, row: PEEP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — Pes group: 12 ± 2",
+            "location": "Table 2, row: PEEP, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — ARDSNet group: 7.4 ± 2.1",
+            "location": "Table 2, row: PEEP, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — p < 0.05",
+            "location": "Table 2, row: PEEP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — Pes group: 12 ± 3.9",
+            "location": "Table 2, row: PEEP, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 6.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PEEP (cm H2O) — ARDSNet group: 6.5 ± 4.5",
+            "location": "Table 2, row: PEEP, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — p < 0.05",
+            "location": "Table 2, row: PEEP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.6,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — Pes-group: 0.6 ± 0.3",
+            "location": "Table 2, row: Ptrans-exp, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": -0.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — ARDSNet group: -0.3 ± 4.2",
+            "location": "Table 2, row: Ptrans-exp, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-exp, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.4,
+          "dispersion_type": "sd",
+          "dispersion": 0.8,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — Pes-group: 0.4 ± 0.8",
+            "location": "Table 2, row: Ptrans-exp, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": -1.0,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — ARDSNet group: -1.0 ± 2.8",
+            "location": "Table 2, row: Ptrans-exp, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-exp, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.7,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — Pes-group: 0.7 ± 0.6",
+            "location": "Table 2, row: Ptrans-exp, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": -2.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — ARDSNet group: -2.3 ± 2.8",
+            "location": "Table 2, row: Ptrans-exp, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — p < 0.05",
+            "location": "Table 2, row: Ptrans-exp, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.6,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — Pes-group: 0.6 ± 0.6",
+            "location": "Table 2, row: Ptrans-exp, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": -1.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — ARDSNet group: -1.8 ± 3.2",
+            "location": "Table 2, row: Ptrans-exp, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "Ptrans-exp (cm H2O) — p < 0.05",
+            "location": "Table 2, row: Ptrans-exp, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 5.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — Pes-group: 5.7 ± 2.4",
+            "location": "Table 2, row: Ptrans-ins, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 5.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.5,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — ARDSNet group: 5.8 ± 5.5",
+            "location": "Table 2, row: Ptrans-ins, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-ins, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — Pes-group: 7 ± 2.1",
+            "location": "Table 2, row: Ptrans-ins, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 5.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — ARDSNet group: 5.6 ± 4.7",
+            "location": "Table 2, row: Ptrans-ins, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-ins, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 6.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — Pes-group: 6.7 ± 2.7",
+            "location": "Table 2, row: Ptrans-ins, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 4.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — ARDSNet group: 4.2 ± 3.4",
+            "location": "Table 2, row: Ptrans-ins, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-ins, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptrans-ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 8.3,
+          "dispersion_type": "sd",
+          "dispersion": 6.3,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — Pes-group: 8.3 ± 6.3",
+            "location": "Table 2, row: Ptrans-ins, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 4.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.3,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — ARDSNet group: 4.7 ± 4.3",
+            "location": "Table 2, row: Ptrans-ins, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ptrans-ins (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ptrans-ins, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 20.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.3,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — Pes-group: 20.5 ± 6.3",
+            "location": "Table 2, row: Ppeak, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 22.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — ARDSNet group: 22.8 ± 4.5",
+            "location": "Table 2, row: Ppeak, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ppeak, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 24.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — Pes-group: 24.5 ± 6.1",
+            "location": "Table 2, row: Ppeak, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 22.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — ARDSNet group: 22.6 ± 2.6",
+            "location": "Table 2, row: Ppeak, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ppeak, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 23.42,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — Pes-group: 23.42 ± 5",
+            "location": "Table 2, row: Ppeak, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 21.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — ARDSNet group: 21.4 ± 3.5",
+            "location": "Table 2, row: Ppeak, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ppeak, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 23.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "unit": "cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — Pes-group: 23.8 ± 4.4",
+            "location": "Table 2, row: Ppeak, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 20.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "unit": "cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — ARDSNet group: 20.4 ± 3.2",
+            "location": "Table 2, row: Ppeak, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Ppeak (cm H2O) — p > 0.05",
+            "location": "Table 2, row: Ppeak, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 57,
+          "dispersion_type": "sd",
+          "dispersion": 21,
+          "unit": "ml/cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — Pes-group: 57 ± 21",
+            "location": "Table 2, row: CL, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 37.7,
+          "dispersion_type": "sd",
+          "dispersion": 10.1,
+          "unit": "ml/cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — ARDSNet group: 37.7 ± 10.1",
+            "location": "Table 2, row: CL, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — p < 0.05",
+            "location": "Table 2, row: CL, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 53.8,
+          "dispersion_type": "sd",
+          "dispersion": 16.9,
+          "unit": "ml/cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — Pes-group: 53.8 ± 16.9",
+            "location": "Table 2, row: CL, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 38.5,
+          "dispersion_type": "sd",
+          "dispersion": 7.9,
+          "unit": "ml/cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — ARDSNet group: 38.5 ± 7.9",
+            "location": "Table 2, row: CL, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — p < 0.05",
+            "location": "Table 2, row: CL, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 59.8,
+          "dispersion_type": "sd",
+          "dispersion": 14.3,
+          "unit": "ml/cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — Pes-group: 59.8 ± 14.3",
+            "location": "Table 2, row: CL, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 41.5,
+          "dispersion_type": "sd",
+          "dispersion": 11.1,
+          "unit": "ml/cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — ARDSNet group: 41.5 ± 11.1",
+            "location": "Table 2, row: CL, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — p < 0.05",
+            "location": "Table 2, row: CL, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 64.7,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "unit": "ml/cm H2O",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — Pes-group: 64.7 ± 19",
+            "location": "Table 2, row: CL, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 40.3,
+          "dispersion_type": "sd",
+          "dispersion": 12.6,
+          "unit": "ml/cm H2O",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — ARDSNet group: 40.3 ± 12.6",
+            "location": "Table 2, row: CL, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CL (ml/cm H2O) — p < 0.05",
+            "location": "Table 2, row: CL, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 309.6,
+          "dispersion_type": "sd",
+          "dispersion": 95.4,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — Pes-Group: 309.6 ± 95.4",
+            "location": "Table 3, row: PaO2/FiO2, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 270.4,
+          "dispersion_type": "sd",
+          "dispersion": 78.8,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — ARDSNet group: 270.4 ± 78.8",
+            "location": "Table 3, row: PaO2/FiO2, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaO2/FiO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 258,
+          "dispersion_type": "sd",
+          "dispersion": 161.3,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — Pes-Group: 258 ± 161.3",
+            "location": "Table 3, row: PaO2/FiO2, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 262.5,
+          "dispersion_type": "sd",
+          "dispersion": 87.9,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — ARDSNet group: 262.5 ± 87.9",
+            "location": "Table 3, row: PaO2/FiO2, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaO2/FiO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 341.4,
+          "dispersion_type": "sd",
+          "dispersion": 102.9,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — Pes-Group: 341.4 ± 102.9",
+            "location": "Table 3, row: PaO2/FiO2, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 250.3,
+          "dispersion_type": "sd",
+          "dispersion": 33.4,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — ARDSNet group: 250.3 ± 33.4",
+            "location": "Table 3, row: PaO2/FiO2, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — p < 0.05",
+            "location": "Table 3, row: PaO2/FiO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 334.1,
+          "dispersion_type": "sd",
+          "dispersion": 65.1,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — Pes-Group: 334.1 ± 65.1",
+            "location": "Table 3, row: PaO2/FiO2, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 250.9,
+          "dispersion_type": "sd",
+          "dispersion": 63,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — ARDSNet group: 250.9 ± 63",
+            "location": "Table 3, row: PaO2/FiO2, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) — p < 0.05",
+            "location": "Table 3, row: PaO2/FiO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.43,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "unit": "pH",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — Pes-group: 7.43 ± 0.1",
+            "location": "Table 3, row: PH, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.45,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "unit": "pH",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — ARDSNet group: 7.45 ± 0.09",
+            "location": "Table 3, row: PH, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PH — p > 0.05",
+            "location": "Table 3, row: PH, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.42,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "pH",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — Pes-group: 7.42 ± 0.05",
+            "location": "Table 3, row: PH, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.45,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "pH",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — ARDSNet group: 7.45 ± 0.05",
+            "location": "Table 3, row: PH, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PH — p > 0.05",
+            "location": "Table 3, row: PH, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.44,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "pH",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — Pes-group: 7.44 ± 0.05",
+            "location": "Table 3, row: PH, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.45,
+          "dispersion_type": "sd",
+          "dispersion": 0.06,
+          "unit": "pH",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — ARDSNet group: 7.45 ± 0.06",
+            "location": "Table 3, row: PH, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PH — p > 0.05",
+            "location": "Table 3, row: PH, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.44,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "pH",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — Pes-group: 7.44 ± 0.05",
+            "location": "Table 3, row: PH, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.46,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "pH",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PH — ARDSNet group: 7.46 ± 0.05",
+            "location": "Table 3, row: PH, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PH — p > 0.05",
+            "location": "Table 3, row: PH, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 42.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.7,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — Pes-group: 42.1 ± 6.7",
+            "location": "Table 3, row: PaCO2, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 40.4,
+          "dispersion_type": "sd",
+          "dispersion": 8.5,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — ARDSNet group: 40.4 ± 8.5",
+            "location": "Table 3, row: PaCO2, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaCO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 44.6,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — Pes-group: 44.6 ± 5",
+            "location": "Table 3, row: PaCO2, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 41.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — ARDSNet group: 41.3 ± 4.7",
+            "location": "Table 3, row: PaCO2, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaCO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 42.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.6,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — Pes-group: 42.7 ± 6.6",
+            "location": "Table 3, row: PaCO2, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 38.9,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — ARDSNet group: 38.9 ± 6.1",
+            "location": "Table 3, row: PaCO2, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaCO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 42.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.6,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — Pes-group: 42.6 ± 5.6",
+            "location": "Table 3, row: PaCO2, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 41.3,
+          "dispersion_type": "sd",
+          "dispersion": 6.4,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — ARDSNet group: 41.3 ± 6.4",
+            "location": "Table 3, row: PaCO2, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) — p > 0.05",
+            "location": "Table 3, row: PaCO2, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lac",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 1.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "unit": "mmol/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — Pes-group: 1.8 ± 1.7",
+            "location": "Table 3, row: Lac, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 1.6,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "unit": "mmol/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — ARDSNet group: 1.6 ± 0.6",
+            "location": "Table 3, row: Lac, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Lac (mmol/l) — p > 0.05",
+            "location": "Table 3, row: Lac, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lac",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 1.1,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "unit": "mmol/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — Pes-group: 1.1 ± 0.5",
+            "location": "Table 3, row: Lac, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 1.1,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "unit": "mmol/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — ARDSNet group: 1.1 ± 0.3",
+            "location": "Table 3, row: Lac, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Lac (mmol/l) — p > 0.05",
+            "location": "Table 3, row: Lac, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lac",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.9,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "unit": "mmol/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — Pes-group: 0.9 ± 0.5",
+            "location": "Table 3, row: Lac, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 1.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "unit": "mmol/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — ARDSNet group: 1.8 ± 1.9",
+            "location": "Table 3, row: Lac, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Lac (mmol/l) — p > 0.05",
+            "location": "Table 3, row: Lac, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lac",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 1,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "unit": "mmol/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — Pes-group: 1 ± 0.5",
+            "location": "Table 3, row: Lac, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 11,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "unit": "mmol/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Lac (mmol/l) — ARDSNet group: 11 ± 0.3",
+            "location": "Table 3, row: Lac, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "Lac (mmol/l) — p > 0.05",
+            "location": "Table 3, row: Lac, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 10,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — Pes group: 10 ± 2",
+            "location": "Table 4, row: CVP, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 8.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — ARDSNet group: 8.2 ± 1.6",
+            "location": "Table 4, row: CVP, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "CVP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: CVP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 14.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — Pes group: 14.1 ± 3.3",
+            "location": "Table 4, row: CVP, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — ARDSNet group: 7.7 ± 3.4",
+            "location": "Table 4, row: CVP, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CVP (mm Hg) — p < 0.05",
+            "location": "Table 4, row: CVP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 14,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — Pes group: 14 ± 4",
+            "location": "Table 4, row: CVP, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7.8,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — ARDSNet group: 7.8 ± 3",
+            "location": "Table 4, row: CVP, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CVP (mm Hg) — p < 0.05",
+            "location": "Table 4, row: CVP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 12.9,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — Pes group: 12.9 ± 3.5",
+            "location": "Table 4, row: CVP, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 7,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "CVP (mm Hg) — ARDSNet group: 7 ± 2.4",
+            "location": "Table 4, row: CVP, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "CVP (mm Hg) — p < 0.05",
+            "location": "Table 4, row: CVP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 106,
+          "dispersion_type": "sd",
+          "dispersion": 20,
+          "unit": "beat/min",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — Pes group: 106 ± 20",
+            "location": "Table 4, row: HR, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 100,
+          "dispersion_type": "sd",
+          "dispersion": 14,
+          "unit": "beat/min",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — ARDSNet group: 100 ± 14",
+            "location": "Table 4, row: HR, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "HR (beat/min) — p > 0.05",
+            "location": "Table 4, row: HR, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 99,
+          "dispersion_type": "sd",
+          "dispersion": 22,
+          "unit": "beat/min",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — Pes group: 99 ± 22",
+            "location": "Table 4, row: HR, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 92,
+          "dispersion_type": "sd",
+          "dispersion": 14,
+          "unit": "beat/min",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — ARDSNet group: 92 ± 14",
+            "location": "Table 4, row: HR, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "HR (beat/min) — p > 0.05",
+            "location": "Table 4, row: HR, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 100,
+          "dispersion_type": "sd",
+          "dispersion": 24,
+          "unit": "beat/min",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — Pes group: 100 ± 24",
+            "location": "Table 4, row: HR, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 88,
+          "dispersion_type": "sd",
+          "dispersion": 24,
+          "unit": "beat/min",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — ARDSNet group: 88 ± 24",
+            "location": "Table 4, row: HR, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "HR (beat/min) — p > 0.05",
+            "location": "Table 4, row: HR, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 98,
+          "dispersion_type": "sd",
+          "dispersion": 16,
+          "unit": "beat/min",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — Pes group: 98 ± 16",
+            "location": "Table 4, row: HR, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 94,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "unit": "beat/min",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "HR (beat/min) — ARDSNet group: 94 ± 19",
+            "location": "Table 4, row: HR, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "HR (beat/min) — p > 0.05",
+            "location": "Table 4, row: HR, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "SBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 128.3,
+          "dispersion_type": "sd",
+          "dispersion": 29.5,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — Pes group: 128.3 ± 29.5",
+            "location": "Table 4, row: SBP, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 111.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.7,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — ARDSNet group: 111.5 ± 5.7",
+            "location": "Table 4, row: SBP, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "SBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: SBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "SBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 155,
+          "dispersion_type": "sd",
+          "dispersion": 85.3,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — Pes group: 155 ± 85.3",
+            "location": "Table 4, row: SBP, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 120.1,
+          "dispersion_type": "sd",
+          "dispersion": 16,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — ARDSNet group: 120.1 ± 16",
+            "location": "Table 4, row: SBP, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "SBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: SBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "SBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 129.1,
+          "dispersion_type": "sd",
+          "dispersion": 16.8,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — Pes group: 129.1 ± 16.8",
+            "location": "Table 4, row: SBP, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 129.4,
+          "dispersion_type": "sd",
+          "dispersion": 15.1,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — ARDSNet group: 129.4 ± 15.1",
+            "location": "Table 4, row: SBP, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "SBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: SBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "SBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 134.3,
+          "dispersion_type": "sd",
+          "dispersion": 20.1,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — Pes group: 134.3 ± 20.1",
+            "location": "Table 4, row: SBP, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 125.9,
+          "dispersion_type": "sd",
+          "dispersion": 23.9,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "SBP (mm Hg) — ARDSNet group: 125.9 ± 23.9",
+            "location": "Table 4, row: SBP, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "SBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: SBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "DBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 70.7,
+          "dispersion_type": "sd",
+          "dispersion": 19.9,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — Pes group: 70.7 ± 19.9",
+            "location": "Table 4, row: DBP, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 64.4,
+          "dispersion_type": "sd",
+          "dispersion": 7.6,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — ARDSNet group: 64.4 ± 7.6",
+            "location": "Table 4, row: DBP, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "DBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: DBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "DBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 70.7,
+          "dispersion_type": "sd",
+          "dispersion": 11.4,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — Pes group: 70.7 ± 11.4",
+            "location": "Table 4, row: DBP, col: 24 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 68.9,
+          "dispersion_type": "sd",
+          "dispersion": 12.6,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — ARDSNet group: 68.9 ± 12.6",
+            "location": "Table 4, row: DBP, col: 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "DBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: DBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "DBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 73.9,
+          "dispersion_type": "sd",
+          "dispersion": 15.2,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — Pes group: 73.9 ± 15.2",
+            "location": "Table 4, row: DBP, col: 48 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 74.8,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — ARDSNet group: 74.8 ± 6",
+            "location": "Table 4, row: DBP, col: 48 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "DBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: DBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "DBP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "72 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 74,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "mm Hg",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — Pes group: 74 ± 11",
+            "location": "Table 4, row: DBP, col: 72 h"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 74.3,
+          "dispersion_type": "sd",
+          "dispersion": 17.9,
+          "unit": "mm Hg",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "DBP (mm Hg) — ARDSNet group: 74.3 ± 17.9",
+            "location": "Table 4, row: DBP, col: 72 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "DBP (mm Hg) — p > 0.05",
+            "location": "Table 4, row: DBP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "hs-CRP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 119.6,
+          "dispersion_type": "sd",
+          "dispersion": 24.3,
+          "unit": "mg/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": null,
+            "p_value_verbatim": "< 0.05",
+            "test_used": "repeated measures",
+            "unit": null,
+            "provenance": {
+              "quote": "In the esophageal pressure group, with the extension of treatment time, hs-CRP and PCT exhibited a trend of significant decrease (P < 0.05 and P < 0.05)",
+              "location": "Results, 6.6, p. 8"
+            }
+          },
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — Pes-group: 119.6 ± 24.3",
+            "location": "Table 5, row: hs-CRP, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 129.8,
+          "dispersion_type": "sd",
+          "dispersion": 53.2,
+          "unit": "mg/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": null,
+            "p_value_verbatim": "> 0.05",
+            "test_used": "repeated measures",
+            "unit": null,
+            "provenance": {
+              "quote": "In the ARDSNet group, with the extension of treatment time, PCT also exhibited a significant decrease (P < 0.05), while the decrease of hs-CRP was not significant (P > 0.05)",
+              "location": "Results, 6.6, p. 8"
+            }
+          },
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — ARDSNetgroup: 129.8 ± 53.2",
+            "location": "Table 5, row: hs-CRP, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — p > 0.05",
+            "location": "Table 5, row: hs-CRP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "hs-CRP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "The third day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 81.4,
+          "dispersion_type": "sd",
+          "dispersion": 27.7,
+          "unit": "mg/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — Pes-group: 81.4 ± 27.7",
+            "location": "Table 5, row: hs-CRP, col: The third day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 112,
+          "dispersion_type": "sd",
+          "dispersion": 82.5,
+          "unit": "mg/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — ARDSNet group: 112 ± 82.5",
+            "location": "Table 5, row: hs-CRP, col: The third day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — p > 0.05",
+            "location": "Table 5, row: hs-CRP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "hs-CRP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 144,
+        "label_verbatim": "On the sixth day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 74.7,
+          "dispersion_type": "sd",
+          "dispersion": 25.6,
+          "unit": "mg/l",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — Pes-group: 74.7 ± 25.6",
+            "location": "Table 5, row: hs-CRP, col: On the sixth day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 130.7,
+          "dispersion_type": "sd",
+          "dispersion": 84.2,
+          "unit": "mg/l",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — ARDSNetgroup: 130.7 ± 84.2",
+            "location": "Table 5, row: hs-CRP, col: On the sixth day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "hs-CRP (mg/l) — p > 0.05",
+            "location": "Table 5, row: hs-CRP, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PCT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 3.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "unit": "ng/ml",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": null,
+            "p_value_verbatim": "< 0.05",
+            "test_used": "repeated measures",
+            "unit": null,
+            "provenance": {
+              "quote": "In the esophageal pressure group, with the extension of treatment time, hs-CRP and PCT exhibited a trend of significant decrease (P < 0.05 and P < 0.05)",
+              "location": "Results, 6.6, p. 8"
+            }
+          },
+          "provenance": {
+            "quote": "PCT (ng/ml) — Pes-group: 3.5 ± 2.7",
+            "location": "Table 5, row: PCT, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 1.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.1,
+          "unit": "ng/ml",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": null,
+            "p_value_verbatim": "< 0.05",
+            "test_used": "repeated measures",
+            "unit": null,
+            "provenance": {
+              "quote": "In the ARDSNet group, with the extension of treatment time, PCT also exhibited a significant decrease (P < 0.05)",
+              "location": "Results, 6.6, p. 8"
+            }
+          },
+          "provenance": {
+            "quote": "PCT (ng/ml) — ARDSNet group: 1.6 ± 3.1",
+            "location": "Table 5, row: PCT, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PCT (ng/ml) — p > 0.05",
+            "location": "Table 5, row: PCT, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PCT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "The third day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.6,
+          "unit": "ng/ml",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PCT (ng/ml) — Pes-group: 0.9 ± 4.6",
+            "location": "Table 5, row: PCT, col: The third day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 0.7,
+          "dispersion_type": "sd",
+          "dispersion": 0.4,
+          "unit": "ng/ml",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PCT (ng/ml) — ARDSNet group: 0.7 ± 0.4",
+            "location": "Table 5, row: PCT, col: The third day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PCT (ng/ml) — p > 0.05",
+            "location": "Table 5, row: PCT, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PCT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 144,
+        "label_verbatim": "On the sixth day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.5,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "unit": "ng/ml",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PCT (ng/ml) — Pes-group: 0.5 ± 1.3",
+            "location": "Table 5, row: PCT, col: On the sixth day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 0.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "unit": "ng/ml",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "PCT (ng/ml) — ARDSNet group: 0.3 ± 0.3",
+            "location": "Table 5, row: PCT, col: On the sixth day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "PCT (ng/ml) — p > 0.05",
+            "location": "Table 5, row: PCT, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "IL-6",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 6,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "unit": "ng/L",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-6 (ng/L) — Pes-group: 6 ± 2.2",
+            "location": "Table 5, row: IL-6, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 6.9,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "ng/L",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-6 (ng/L) — ARDSNet-group: 6.9 ± 2",
+            "location": "Table 5, row: IL-6, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "IL-6 (ng/L) — p > 0.05",
+            "location": "Table 5, row: IL-6, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "IL-6",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "The third day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 4.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "unit": "ng/L",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-6 (ng/L) — Pes-group: 4.6 ± 1.9",
+            "location": "Table 5, row: IL-6, col: The third day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 8,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "ng/L",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-6 (ng/L) — ARDSNet group: 8 ± 3.3",
+            "location": "Table 5, row: IL-6, col: The third day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "IL-6 (ng/L) — p < 0.05",
+            "location": "Table 5, row: IL-6, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "IL-8",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "The group on the same day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 799.4,
+          "dispersion_type": "sd",
+          "dispersion": 240.2,
+          "unit": "ng/L",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-8 (ng/L) — Pes-group: 799.4 ± 240.2",
+            "location": "Table 5, row: IL-8, col: The group on the same day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 782.3,
+          "dispersion_type": "sd",
+          "dispersion": 574.6,
+          "unit": "ng/L",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-8 (ng/L) — ARDSNet group: 782.3 ± 574.6",
+            "location": "Table 5, row: IL-8, col: The group on the same day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "> 0.05",
+          "provenance": {
+            "quote": "IL-8 (ng/L) — p > 0.05",
+            "location": "Table 5, row: IL-8, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "IL-8",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72,
+        "label_verbatim": "The third day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 415.8,
+          "dispersion_type": "sd",
+          "dispersion": 255.1,
+          "unit": "ng/L",
+          "n": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-8 (ng/L) — Pes-group: 415.8 ± 255.1",
+            "location": "Table 5, row: IL-8, col: The third day"
+          }
+        },
+        {
+          "arm_label": "ardsnet",
+          "value_type": "mean",
+          "value": 974.8,
+          "dispersion_type": "sd",
+          "dispersion": 328.9,
+          "unit": "ng/L",
+          "n": 11,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "IL-8 (ng/L) — ARDSNet group: 974.8 ± 328.9",
+            "location": "Table 5, row: IL-8, col: The third day"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value_verbatim": "< 0.05",
+          "provenance": {
+            "quote": "IL-8 (ng/L) — p < 0.05",
+            "location": "Table 5, row: IL-8, col: p"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS only: all included patients met Berlin ARDS criteria. Obesity unclear: BMI not reported. Timing unclear: grouping time was after hemodynamic stabilization, no interval from intubation or ICU admission specified. PTP target: absolute subtraction PL=Paw-Pes, target end-expiratory PTP 0-10 cmH2O."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap suspected. Trial registration not reported; enrolment dates not reported; single centre Xiamen Third Hospital, China.",
+    "unclear_items": [
+      "Discrepancies between text and Table 2: text reports Ptrans-exp summary as 0.5 ± 0.7 vs -1.1 ± 3.3, while Table 2 baseline is 0.6 ± 0.3 vs -0.3 ± 4.2. Similar discrepancy for CL: text 52.3 ± 26.2 vs 37.5 ± 18.4, table baseline 57 ± 21 vs 37.7 ± 10.1. Recorded table values.",
+      "Table 5: IL-6 and IL-8 data are only available at same day and third day; sixth day not reported. Recorded accordingly.",
+      "No explicit primary outcome stated.",
+      "Timing of intervention relative to intubation/ICU admission not reported; only 'grouped after hemodynamics stable'.",
+      "Lac at 72h for ARDSNet group reported as 11 ± 0.3, likely typo but recorded as reported.",
+      "Allocation ratio not explicitly stated."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "The paper reports ICU length of stay as 'Live time of ICU' and mechanical ventilation time. No mortality outcome reported."
+  }
+}

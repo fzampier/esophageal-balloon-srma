@@ -1,0 +1,216 @@
+{
+  "study_id": "pavlovsky_2024",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[cohort all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep: mortality and the Table 1 values at PEEP 5 cmH2O are reported for all 19 patients only, not per titration strategy; a whole-cohort arm is needed to hold them (the validator requires every data arm_label to be declared in arms[]).",
+      "evidence": "p. 4, Table 1 'All patients n = 19'; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs ml cmh2o 1 at optimal @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Numbers identical in both and match Table 2 (CoV 41 [28-50], CP 54 [43-67], Express 45 [42-56], Positive PLe 59 [41-71]). DeepSeek also records the pairwise contrasts the table marks (* different from Crossing Point, dagger different from CoV); GLM has the omnibus only. Name, timepoint label, primary flag and omnibus taken from GLM by id; DeepSeek's reversed 'Crossing Point minus CoV' restates 'CoV minus Crossing Point' and is dropped.",
+      "evidence": "p. 7, Table 2 (page image) and footnote"
+    },
+    {"id": "0093532dc3", "decision": "glm", "reason": "GLM keeps the Table 2 row label 'CRS, mL.cmH2O-1'; DeepSeek's 'CRS at optimal PEEP' is not in the paper.", "evidence": "p. 7, Table 2"},
+    {"id": "7079df9dc4", "decision": "glm", "reason": "Verbatim from the Table 2 title.", "evidence": "p. 7, Table 2 title"},
+    {"id": "1988fc4548", "decision": "glm", "reason": "The stated aim is the PEEP level each strategy sets; CRS at optimal PEEP is not the primary endpoint, so false rather than null.", "evidence": "p. 2, Introduction last para"},
+    {"id": "2ed481e079", "decision": "glm", "reason": "Keep GLM's omnibus: p value '<.001' is as printed in the ANOVA column (DeepSeek writes '<0.001').", "evidence": "p. 7, Table 2 ANOVA p value column"},
+    {"id": "91eca31dfd", "decision": "glm", "reason": "Drop DeepSeek's omnibus: it restates the omnibus test kept from GLM.", "evidence": "p. 7, Table 2"},
+    {"id": "17df464e78", "decision": "deepseek", "reason": "CoV value carries * (significantly different from Crossing Point).", "evidence": "p. 7, Table 2 footnote"},
+    {"id": "39820277d4", "decision": "deepseek", "reason": "Express value carries * (significantly different from Crossing Point).", "evidence": "p. 7, Table 2 footnote"},
+    {"id": "abfa4546eb", "decision": "glm", "reason": "Drop: the dagger on Crossing Point is the same CoV vs Crossing Point test already kept as 'CoV minus Crossing Point'.", "evidence": "p. 7, Table 2 footnote"},
+    {"id": "708cd40b19", "decision": "deepseek", "reason": "Positive PLe value carries a dagger (significantly different from CoV).", "evidence": "p. 7, Table 2 footnote"},
+    {
+      "target": "outcomes[mortality died before day 28 dichotomous @28d]",
+      "decision": "deepseek",
+      "reason": "11/19 died before day 28 is a whole-cohort count; GLM copies it under each of the four titration strategies, which were computed offline from one PEEP trial in the same patients, and would show mortality as a per-strategy result. DeepSeek records it once under the cohort arm. Name, timepoint label and primary flag taken from GLM by id.",
+      "evidence": "p. 3, Results 'Eleven patients (58%) died before day 28.'"
+    },
+    {"id": "e78cc10bfc", "decision": "glm", "reason": "The paper says 'died before day 28'; 'Death before day 28' is a paraphrase.", "evidence": "p. 3, Results"},
+    {"id": "3694379da8", "decision": "glm", "reason": "Verbatim 'died before day 28'.", "evidence": "p. 3, Results"},
+    {"id": "6f6e8a2b3e", "decision": "glm", "reason": "Mortality is not the study's stated endpoint; false rather than null.", "evidence": "p. 2, Introduction last para"},
+    {
+      "target": "outcomes[ventilator settings optimal peep levels determin @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's element: its values match the abstract (Express 17 [14-17], CoV 20 [17-20], Positive PLe 8 [5-11], Crossing Point 10 [8-11], p < 0.001) and DeepSeek has no such outcome. But Fig. 2 also marks four pairwise contrasts at p < 0.05 that GLM omits: Crossing Point vs CoV, Crossing Point vs Express, CoV vs Positive PLe, Express vs Positive PLe. Co-author: keep GLM and add those four pairwise paired_effects (p_value_verbatim '<0.05').",
+      "evidence": "p. 1, Abstract Results; p. 6, Fig. 2 brackets and legend '*p < 0.05'"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mmhg continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: the same Table 1 reading (120 [94-168]) is kept once under the cohort arm in DeepSeek's 'PaO2/FiO2 at PEEP 5 cmH2O'; GLM copies the whole-cohort value under four strategy labels.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs ml cmh2o 1 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: the same Table 1 reading (50 [40-63]) is kept once under the cohort arm in DeepSeek's 'CRS at PEEP 5 cmH2O'.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peeptot cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 PEEPtot row is kept under DeepSeek's 'PEEPtot at optimal PEEP' (identical numbers, plus the pairwise contrasts; PEEPtot is delivered PEEP, codebook ventilator_settings).",
+      "evidence": "p. 7, Table 2; CODEBOOK physiologic outcomes"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 Pplat row is kept under DeepSeek's 'Pplat at optimal PEEP' with identical numbers plus pairwise contrasts.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ple cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 PLe row is kept under DeepSeek's 'PLe at optimal PEEP' with identical numbers plus pairwise contrasts.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pli cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 PLi row is kept under DeepSeek's 'PLi at optimal PEEP' with identical numbers plus pairwise contrasts.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics prs cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 driving-pressure row is kept under DeepSeek's 'dPRS at optimal PEEP' with identical numbers plus pairwise contrasts.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[lung volume od overdistension continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 OD row is kept under DeepSeek's 'OD at optimal PEEP' (identical numbers). EIT overdistension % is not EELV/FRC, so 'other' fits the codebook better than lung_volume.",
+      "evidence": "p. 7, Table 2; CODEBOOK physiologic outcomes"
+    },
+    {
+      "target": "outcomes[lung volume lc lung collapse continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: the Table 2 LC row is kept under DeepSeek's 'LC at optimal PEEP' (identical numbers). EIT collapse % is not EELV/FRC.",
+      "evidence": "p. 7, Table 2; CODEBOOK physiologic outcomes"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 at peep 5 cmh2o continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2/FiO2 at PEEP 5 cmH2O 120 [94-168], n = 19, whole cohort, recorded once.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs at peep 5 cmh2o contin @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: CRS at PEEP 5 cmH2O 50 [40-63] mL/cmH2O, n = 19, whole cohort.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot at peep 5 cmh2o cont @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEPtot at PEEP 5 cmH2O 7.0 [5.5-8.0], n = 19; GLM omitted this Table 1 row.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure at peep 5 @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: plateau pressure at PEEP 5 cmH2O 15 [14-18], n = 19; GLM omitted this Table 1 row.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot at optimal peep cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: all four medians and IQRs match Table 2, including Positive PLe printed as 7 [10-14]; pairwise contrasts match the */dagger markers (the reversed 'Crossing Point minus CoV' is redundant, not wrong).",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat at optimal peep cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 31 [27-34], 19 [17-20], 27 [27-28], 18 [14-21] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ple at optimal peep cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 7 [3-10], 2 [0-3], 6 [3-7], 2 [1-2] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pli at optimal peep cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 13 [10-22], 7 [3-10], 12 [10-15], 7 [5-10] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pplatl at optimal peep c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 23 [16-27], 14 [10-15], 19 [16-22], 11 [8-15] match Table 2; GLM omitted this row.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics prs at optimal peep contin @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 11 [9-13], 8 [7-10], 9 [8-10], 7 [7-10] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl at optimal peep continu @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 53 [34-67], 75 [61-133], 63 [53-88], 77 [58-141] match Table 2; GLM omitted this row.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other od at optimal peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 24 [15-29], 9 [6-13], 21 [18-26], 5 [0-14] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other lc at optimal peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 0 [0-1], 9 [4-10], 1 [0-2], 9 [2-14] match Table 2; contrasts match the markers.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other cov at optimal peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 53 [51-56], 57 [53-60], 54 [51-57], 56 [55-59] match Table 2; GLM omitted this row.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume vrec from peep 5 cmh2o at optimal pe @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep DeepSeek's element (only version; 511 [216-785], 232 [140-401], 517 [239-749], 124 [0-155] match Table 2), but in this row Positive PLe is marked both dagger and * and DeepSeek's contrasts omit Positive PLe vs Crossing Point (p < 0.05). Co-author: add that pairwise contrast.",
+      "evidence": "p. 7, Table 2 VREC row, Positive PLe cell '124 [0-155]dagger*'"
+    },
+    {
+      "target": "outcomes[lung volume vrec pbw from peep 5 cmh2o at optima @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep DeepSeek's element (only version; 7.4 [3.5-10.9], 3.3 [2.3-4.9], 7.5 [3.7-10.8], 1.5 [0.0-2.6] mL/kg match Table 2), but Positive PLe is marked dagger and * and the Positive PLe vs Crossing Point contrast (p < 0.05) is missing. Co-author: add it.",
+      "evidence": "p. 7, Table 2 VREC/PBW row, Positive PLe cell '1.5 [0.0-2.6]dagger*'"
+    },
+    {
+      "id": "eb77c965be",
+      "decision": "deepseek",
+      "reason": "The comparators are Express (plateau pressure 28-30), CoV and Crossing Point (EIT); the decremental trial is the shared measurement procedure from which all four strategies, the esophageal one included, were computed, not a comparator strategy of its own. 'other' fits.",
+      "evidence": "p. 1 Abstract Methods; p. 3 Decremental PEEP trial"
+    },
+    {
+      "id": "4450dc09e3",
+      "decision": "deepseek",
+      "reason": "PEEP 15 and 5 cmH2O were applied to assess recruitability (R/I), not as a comparator titration strategy; no fixed-PEEP arm is compared.",
+      "evidence": "p. 2, Exploration of response to PEEP; p. 3, Evaluation of recruitability"
+    },
+    {
+      "id": "142be9357d",
+      "decision": "glm",
+      "reason": "No allocation exists to randomise: all four PEEP levels were computed offline from one decremental trial in every patient. False, not unreported.",
+      "evidence": "p. 3, 'Based on this single trial, optimal PEEP levels for each PEEP strategy were defined'"
+    },
+    {
+      "id": "27b493b156",
+      "decision": "glm",
+      "reason": "Every enrolled patient was instrumented with the NutriVent balloon per protocol and esophageal data were missing for only one patient, so 19 attempted is a logical implication; GLM marks it derived with the derivation.",
+      "evidence": "p. 2, Patients' installation and settings; p. 3, Results"
+    }
+  ]
+}

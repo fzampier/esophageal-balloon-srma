@@ -1,0 +1,138 @@
+```json
+{
+  "study_id": "wang_2018",
+  "tool": "rob2_parallel",
+  "results": [
+    {
+      "result_id": "duration_mv",
+      "outcome": "Duration of mechanical ventilation (days)",
+      "numerical_result": "Mechanical ventilation time (day): 8.6 ± 1.8 (esophageal pressure group, n=12) vs 14.5 ± 6.8 (ARDSNet group, n=11), P < 0.05",
+      "result_location": "Table 1, 'ARDS patients general situation', p. 5",
+      "answers": {
+        "1.1": {
+          "response": "Y",
+          "support": "the patients were divided into two groups (ARDSNet group or esophageal pressure group) according to the random number table",
+          "location": "p. 4, Experiment steps, item D"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of allocation concealment (central allocation, sealed opaque envelopes or similar) and found none; the report states only that patients were divided 'according to the random number table'.",
+          "location": "p. 4, Experiment steps, item D"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "APACHEII score 18.8 ± 7.0 vs 14.9 ± 5.4, ISS score 37.2 ± 8.8 vs 27.4 ± 12.8, all reported as p > 0.05",
+          "location": "Table 1, p. 5"
+        },
+        "2.1": {
+          "response": "Y",
+          "support": "50–100 mg/h of propofol, 3–6 mg/h of midazolam and 60–100 µg/h of fentanyl citrate were given to the patient, and were continuously pumped for full sedation and analgesia",
+          "location": "p. 3, section 2.2.1"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "no blinding of carers or personnel is described; the esophageal pressure group's PEEP was visibly adjusted using esophageal pressure, so treating clinicians were necessarily aware of the assignment",
+          "location": "p. 3, section 2.2.4"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "I looked for evidence that deviations from the assigned ventilation strategy arose because of the trial context and found none; the report describes no protocol deviations, and unblinded clinician behaviour would be consistent with usual practice.",
+          "location": "p. 3-4, sections 2.2.4 and 3"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Conditional on Y/PY to 2.3; answered PN, so not applicable.",
+          "location": "RoB 2 Domain 2"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Conditional on Y/PY to 2.4; not applicable.",
+          "location": "RoB 2 Domain 2"
+        },
+        "2.6": {
+          "response": "PN",
+          "support": "A total of 36 traumatic patients met the ARDS diagnostic criteria... eight patients passed away, four patients were discharged from the hospital without medical advice... Hence, the data of 23 patients are reported",
+          "location": "p. 5, section 6.1"
+        },
+        "2.7": {
+          "response": "Y",
+          "support": "13 of 36 eligible patients (36%) are unaccounted for; the report does not state whether their deaths or discharges occurred before or after randomization, and excluding early deaths would materially change mean ventilation duration (8.6 vs 14.5 days).",
+          "location": "p. 5, section 6.1"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "Mechanical ventilation time (day) 8.6 ± 1.8 vs 14.5 ± 6.8 reported for all 12 and 11 randomized patients in Table 1",
+          "location": "Table 1, p. 5"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "Mechanical ventilation time (day) is a routine, objective count of ventilated days recorded from the ventilator record; the method is appropriate.",
+          "location": "Table 1, p. 5"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "Both groups had ventilation duration recorded in the same ICU by the same team using the same ventilator records; no difference in ascertainment between groups is described.",
+          "location": "p. 3-5, sections 2.2 and Table 1"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "no blinding of outcome assessors or treating clinicians is described anywhere in the report, and the intervention itself (esophageal-pressure-guided PEEP) is apparent to the care team.",
+          "location": "p. 3, section 2.2.4"
+        },
+        "4.4": {
+          "response": "PY",
+          "support": "Mechanical ventilation time depends on provider decisions about extubation, and the unblinded clinicians may have managed the two groups differently given the investigators' stated belief that esophageal-pressure-guided PEEP is beneficial.",
+          "location": "p. 1-2, Abstract and Introduction"
+        },
+        "4.5": {
+          "response": "PN",
+          "support": "Ventilation duration is recorded in whole days and is only partly a judgement outcome; there is no direct evidence that assessment was actually influenced by knowledge of the assignment.",
+          "location": "Table 1, p. 5"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan or protocol and found none; the report (an uncorrected galley proof) provides no protocol, registry record or statistical analysis plan against which the analysis can be compared.",
+          "location": "Whole report"
+        },
+        "5.2": {
+          "response": "N",
+          "support": "Mechanical ventilation time has essentially one natural measurement (days ventilated) reported once in Table 1; there is no opportunity for selection among multiple eligible measurements of this domain.",
+          "location": "Table 1, p. 5"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "Analysis intentions are not reported in sufficient detail (no protocol or SAP), and ventilation time could have been analysed in more than one way (e.g. with or without deceased/discharged patients), so the possibility of selection among analyses cannot be excluded.",
+          "location": "p. 5, section 6.1 and Table 1"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "The sequence was generated from a random number table (1.1 Y), but concealment is not described (1.2 NI), which under the algorithm gives some concerns. Baseline imbalances (ISS 37.2 vs 27.4) were reported as non-significant and compatible with chance in a 23-patient trial, so they do not raise the concern to High."
+        },
+        "D2": {
+          "judgement": "High",
+          "rationale": "The algorithm yields High because 2.6 is answered PN and 2.7 Y: 13 of 36 eligible patients (including 8 who died and 4 discharged against medical advice) are not in the analysis, and the report does not establish that these exclusions occurred before randomization. Excluding patients who died early could substantially distort mean ventilation duration, and the direction would likely favour the experimental group. This departs from a naïve reading focused only on the unblinded care team, because the analysis population itself is the dominant concern here."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "Ventilation time is reported for all 23 randomized and analysed patients (3.1 Y); no missing outcome data are apparent for this result."
+        },
+        "D4": {
+          "judgement": "Some concerns",
+          "rationale": "Measurement is objective, but ventilation duration is partly a provider-decision outcome and the treating clinicians were unblinded (4.3 Y, 4.4 PY). With no direct evidence that assessment was actually influenced (4.5 PN), the algorithm gives some concerns rather than High."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol or pre-specified analysis plan is available (5.1 NI, 5.3 NI), so selection among analyses cannot be excluded; however, there is only one natural measurement of ventilation duration (5.2 N), limiting the concern."
+        }
+      },
+      "overall": {
+        "judgement": "High",
+        "rationale": "Domain 2 is at High risk of bias because a third of eligible patients, including all who died, are unaccounted for relative to randomization, which could substantially bias the ventilation-duration estimate in favour of the experimental strategy; domains 1, 4 and 5 also raise some concerns."
+      }
+    }
+  ],
+  "nih": null
+}
+```

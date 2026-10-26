@@ -1,0 +1,522 @@
+{
+  "study_id": "boesing_2024b",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[baseline table baseline peep fio2 table referenc]",
+      "decision": "glm",
+      "reason": "Baseline PEEP/FiO2-table condition (PEEP 8 [8-10]) is the reference condition; GLM's condition labels are the ones its single-outcome-per-measurement entries reference.",
+      "evidence": "Study protocol, p. 3; p. 5, Table 2"
+    },
+    {
+      "target": "arms[supine peso supine peso guided intervention 2]",
+      "decision": "glm",
+      "reason": "Supine Peso-guided condition (PEEP 15 [12-18]), intervention; kept with GLM's outcome structure.",
+      "evidence": "Study protocol, p. 3; p. 5, Table 2"
+    },
+    {
+      "target": "arms[prone peso prone peso guided positional variant]",
+      "decision": "glm",
+      "reason": "Prone Peso-guided condition (PEEP 10 [7-15]): the same Peso-guided strategy in prone, which the schema names positional_variant; kept with GLM's outcome structure.",
+      "evidence": "Study protocol, p. 3; schema arms.role"
+    },
+    {
+      "target": "arms[baseline baseline reference condition 1]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's 'baseline' arm: the same condition is kept as GLM's arm, and every DeepSeek outcome that references it is dropped as a duplicate of GLM's crossover entries.",
+      "evidence": "Study protocol, p. 3"
+    },
+    {
+      "target": "arms[supine peso guided supine intervention 2]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's 'supine_peso_guided' arm: the same condition is kept as GLM's arm, and every DeepSeek outcome that references it is dropped as a duplicate of GLM's crossover entries.",
+      "evidence": "Study protocol, p. 3"
+    },
+    {
+      "target": "arms[prone peso guided prone intervention 3]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's 'prone_peso_guided' arm: the same condition is kept as GLM's arm, and every DeepSeek outcome that references it is dropped as a duplicate of GLM's crossover entries.",
+      "evidence": "Study protocol, p. 3"
+    },
+    {
+      "target": "arms[all patients all patients other condition]",
+      "decision": "deepseek",
+      "reason": "Keep the whole-cohort 'all_patients' arm: ICU mortality and ICU length of stay are reported for all 55 patients, not for any ventilation condition, and are kept under this arm.",
+      "evidence": "p. 4, Table 1; Results para 1"
+    },
+    {
+      "target": "outcomes[other lung total elastic power continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung total elastic power: 8.1 [5.4-11.0], 11.0 [6.6-14.8], 6.7 [4.9-10.6] J/min; supine vs baseline <0.001, prone vs supine <0.001; primary endpoint. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 4-7 Results; p. 5, Fig. 2A"
+    },
+    {
+      "target": "outcomes[other lung total elastic power normalized to eel @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung total elastic power normalized to EELV: 5.1 [3.6-6.9], 5.3 [3.3-7.5], 3.2 [2.1-5.0] J/min/L; supine vs baseline p=0.538, prone vs baseline and prone vs supine <0.001 (Fig. 2B brackets); primary endpoint. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 4-7 Results; p. 5, Fig. 2B"
+    },
+    {
+      "target": "outcomes[other lung elastic static power continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung elastic static power: 5.5 [3.1-7.3], 8.5 [4.8-10.7], 4.2 [3.2-7.4] J/min; supine vs baseline <0.001, prone vs supine <0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 4-7 Results; p. 6, Fig. 3A"
+    },
+    {
+      "target": "outcomes[other lung elastic static power normalized to ee @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung elastic static power normalized to EELV: 3.3 [2.3-5.5], 4.2 [2.7-6.0], 2.1 [1.4-3.8]; p=0.006, <0.001, <0.001 as in Fig. 3B. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 4-7 Results; p. 6, Fig. 3B"
+    },
+    {
+      "target": "outcomes[other lung elastic dynamic power continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung elastic dynamic power: 2.9 [1.9-3.7], 2.5 [1.8-3.5] J/min, prone median not printed; supine vs baseline p=0.029 and prone vs baseline p=0.002 match the Fig. 4A brackets. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7 Results; p. 6, Fig. 4A"
+    },
+    {
+      "target": "outcomes[other lung elastic dynamic power normalized to e @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung elastic dynamic power normalized to EELV: 1.7 [1.3-2.7], 1.2 [0.7-1.9]; supine vs baseline and prone vs baseline <0.001 match the Fig. 4B brackets. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7 Results; p. 6, Fig. 4B"
+    },
+    {
+      "target": "outcomes[other resistive power continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Resistive power 4.4 [3.3-6.8], 4.7 [3.5-6.4], 4.7 [3.6-7.7]; p 0.892/0.045/0.060. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[other lung mp normalized to eelv continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung MP normalized to EELV 6.8 [5.1-10.0], 6.8 [4.2-9.7], 4.6 [2.9-7.0]; p 0.262/<0.001/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml kg pbw conti @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Tidal volume 6.1 [6.0-6.2] x3; p >0.999 x3. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate breaths min @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Respiratory rate 23 [21-24] x3; p >0.999 x3. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure continuou @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Driving pressure 9 [8-11], 9 [7-11], 9 [8-11]; p 0.187/0.835/0.076. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory peso continuo @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: End-expiratory Peso 12 [9-14], 14 [9-16], 10 [6-12]; p <0.001 x3. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[esophageal pressure end inspiratory peso continu @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: End-inspiratory Peso 15 [12-17], 17 [12-21], 14 [10-19]; p <0.001/0.048/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory ptp conti @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: End-expiratory PTP -2 [-5 to 0], 1 [0-2], 1 [0-2]; p <0.001/<0.001/0.650. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory ptp cont @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: End-inspiratory PTP 3 [1-7], 8 [4-9], 7 [5-9]; p <0.001/<0.001/0.495. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving ptp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Driving PTP 6 [4-8], 6 [4-7], 5 [3-7]; p 0.029/<0.001/0.117. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system elastan @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Respiratory system elastance 20.0 [16.8-29.5], 18.9 [16.1-27.3], 22.2 [17.8-24.9]; p 0.049/0.448/0.124. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung elastance continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung elastance 14.5 [10.7-18.8], 13.3 [8.7-17.0], 12.6 [8.1-18.5]; p 0.040/0.002/0.122. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall elastance conti @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Chest wall elastance 6.9 [4.9-11.2], 7.3 [4.9-10.5], 10.8 [5.2-13.5]; p 0.909/<0.001/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el ers continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: EL/ERS 0.67 [0.56-0.77], 0.67 [0.50-0.78], 0.61 [0.38-0.73]; p 0.189/<0.001/<0.001; the table prints no unit (DeepSeek's 'ratio' is not in the paper). DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung stress continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Lung stress 12.3 [9.1-15.0], 15.2 [10.7-19.8], 11.0 [7.4-14.1]; p <0.001/0.074/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[lung volume eelv continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: EELV 1.5 [1.2-2.0], 2.1 [1.6-2.6], 2.1 [1.6-2.7] L; p <0.001/<0.001/0.843. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: PaO2/FiO2 124 [110-154], 176 [144-237], 222 [177-299]; p <0.001 x3. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation shunt fraction continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Shunt fraction 47 [36-53], 33 [24-40], 28 [21-39] %; p <0.001/<0.001/0.009. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation pha continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: pHa 7.3 [7.3-7.4] x3; p 0.709/0.715/0.335 (domain is reserved for the co-authors). DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[dead space alveolar dead space fraction continuo @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Alveolar dead space fraction 0.28 [0.22-0.37], 0.29 [0.22-0.37], 0.26 [0.20-0.34]; p 0.989/0.003/0.001; no unit printed. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Heart rate 90 [78-106], 91 [76-105], 92 [79-106]; p 0.291/0.393/0.448. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics mean arterial pressure continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: MAP 81 [76-86], 79 [71-87], 87 [77-95]; p 0.024/0.003/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics central venous pressure continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: CVP 14 [11-17], 17 [12-19], 17 [12-22]; p <0.001/0.001/0.207. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics norepinephrine continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Norepinephrine 0.09 [0.03-0.26], 0.09 [0.04-0.27], 0.07 [0.03-0.29]; p 0.417/0.196/0.133. GLM gives n=55, DeepSeek n=48 from the footnote 'norepinephrine was required in 48 patients'; the table does not say which denominator the medians use, so neither n is verifiable. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac output continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Cardiac output 7.1 [5.6-8.3], 6.1 [5.1-7.8], 7.0 [5.6-8.3]; p <0.001/0.809/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM records the measurement as one crossover outcome holding all three conditions with its paired contrasts, the codebook structure; DeepSeek splits it into one outcome per condition. All GLM values checked: Oxygen delivery 878 [687-1078], 809 [685-1047], 915 [720-1206]; p 0.133/<0.001/<0.001. DeepSeek's per-condition entries restate the same readings and are dropped.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "id": "fa67505e51",
+      "decision": "deepseek",
+      "reason": "Drop GLM's prone-vs-baseline contrast (<0.001) for lung total elastic power: Fig. 2A has brackets only for supine vs baseline and prone vs supine, and the text reports no prone-vs-baseline P.",
+      "evidence": "p. 5, Fig. 2A; p. 4 Results"
+    },
+    {
+      "id": "e33fab1109",
+      "decision": "deepseek",
+      "reason": "Drop GLM's prone-vs-baseline contrast (<0.001) for lung elastic static power: Fig. 3A has brackets only for supine vs baseline and prone vs supine; no prone-vs-baseline P is reported.",
+      "evidence": "p. 6, Fig. 3A"
+    },
+    {
+      "id": "1d421dafa3",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's prone-vs-supine p=0.117 for lung elastic dynamic power: no such P is reported (Fig. 4A has no prone-vs-supine bracket); 0.117 is the Driving PTP row of Table 2.",
+      "evidence": "p. 6, Fig. 4A; p. 5, Table 2 row Driving PTP"
+    },
+    {
+      "id": "ad44af0776",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's prone-vs-supine p=0.117 for normalized elastic dynamic power: not reported (Fig. 4B has no such bracket); 0.117 belongs to Driving PTP.",
+      "evidence": "p. 6, Fig. 4B; p. 5, Table 2"
+    },
+    {
+      "id": "4bd8209ae5",
+      "decision": "deepseek",
+      "reason": "The primary endpoint is lung total elastic power (non-normalized and normalized); lung elastic static power is a stated secondary endpoint, so is_primary_outcome is false, not unreported.",
+      "evidence": "Abstract Methods; Background last para, p. 2"
+    },
+    {
+      "id": "f33a6c4e30",
+      "decision": "deepseek",
+      "reason": "The primary endpoint is lung total elastic power (non-normalized and normalized); lung elastic static power normalized to EELV is a stated secondary endpoint, so is_primary_outcome is false, not unreported.",
+      "evidence": "Abstract Methods; Background last para, p. 2"
+    },
+    {
+      "id": "11d6ebb885",
+      "decision": "deepseek",
+      "reason": "The primary endpoint is lung total elastic power (non-normalized and normalized); lung elastic dynamic power is a stated secondary endpoint, so is_primary_outcome is false, not unreported.",
+      "evidence": "Abstract Methods; Background last para, p. 2"
+    },
+    {
+      "id": "eca0c1eaab",
+      "decision": "deepseek",
+      "reason": "The primary endpoint is lung total elastic power (non-normalized and normalized); lung elastic dynamic power normalized to EELV is a stated secondary endpoint, so is_primary_outcome is false, not unreported.",
+      "evidence": "Abstract Methods; Background last para, p. 2"
+    },
+    {
+      "target": "outcomes[other lung mp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: Lung MP 11.6 [8.0-15.5], 13.9 [9.1-19.9], 9.9 [6.5-15.7] J/min; p <0.001/0.070/<0.001, all correct. DeepSeek's per-condition Lung MP entries are dropped as duplicates.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PEEP 8 [8-10], 15 [12-18], 10 [7-15] cmH2O; p <0.001/0.003/<0.001, all correct; delivered PEEP is ventilator_settings.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings airway peak pressure continu @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's Airway peak pressure entry (25 [19-28], 30 [25-35], 26 [21-32]; p <0.001/0.001/<0.001, all correct), but it is coded ventilator_settings, which the codebook limits to delivered PEEP, FiO2, VT and rate; peak airway pressure is a mechanics reading (respiratory_mechanics, as DeepSeek codes it and as both coded Ppeak,RS in boesing_2022). DeepSeek's version is per-condition only. Co-author: keep GLM with domain respiratory_mechanics.",
+      "evidence": "p. 5, Table 2, row Airway peak pressure"
+    },
+    {
+      "target": "outcomes[ventilator settings airway plateau pressure cont @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's Airway plateau pressure entry (18 [16-22], 25 [20-27], 20 [16-26]; p <0.001/0.004/<0.001, all correct), but the codebook puts plateau pressure under respiratory_mechanics and GLM codes ventilator_settings; DeepSeek's correctly coded version is split per condition on arms that are not kept. Co-author: keep GLM with domain respiratory_mechanics.",
+      "evidence": "p. 5, Table 2, row Airway plateau pressure"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PaCO2 55 [48-62], 56 [51-62], 57 [50-62] mmHg; p 0.528/0.592/0.955, all correct. Its domain (oxygenation vs DeepSeek's other) is the class of the reserved pHa domain conflict; apply that co-author ruling here.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality icu mortality dichotomous @icu discharge]",
+      "decision": "deepseek",
+      "reason": "ICU mortality 20/55 (36%) is a whole-cohort figure; DeepSeek attaches it to an all-patients arm, GLM to the baseline PEEP/FiO2-table condition, which would misattribute it to one ventilation strategy.",
+      "evidence": "p. 4, Table 1, row ICU mortality"
+    },
+    {
+      "target": "outcomes[icu length of stay length of icu stay days conti @duration until event]",
+      "decision": "deepseek",
+      "reason": "ICU length of stay 17 [11-29] days is a whole-cohort figure; kept under the all-patients arm rather than the baseline ventilation condition. Name ruled separately.",
+      "evidence": "p. 4, Table 1, row Length of ICU stay"
+    },
+    {
+      "id": "8519f5e9bc",
+      "decision": "glm",
+      "reason": "'Length of ICU stay (days)' is the verbatim, complete Table 1 row label.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition PEEP entries: every condition value restates a reading kept in GLM's single crossover outcome for PEEP.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics airway peak pressure cmh2o @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Airway peak pressure entries: every condition value restates a reading kept in GLM's single crossover outcome for Airway peak pressure.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics airway plateau pressure cm @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Airway plateau pressure entries: every condition value restates a reading kept in GLM's single crossover outcome for Airway plateau pressure.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cmh2o con @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Driving pressure entries: every condition value restates a reading kept in GLM's single crossover outcome for Driving pressure.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory peso cmh2o co @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition End-expiratory Peso entries: every condition value restates a reading kept in GLM's single crossover outcome for End-expiratory Peso.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[esophageal pressure end inspiratory peso cmh2o c @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition End-inspiratory Peso entries: every condition value restates a reading kept in GLM's single crossover outcome for End-inspiratory Peso.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory ptp cmh2o @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition End-expiratory PTP entries: every condition value restates a reading kept in GLM's single crossover outcome for End-expiratory PTP.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory ptp cmh2 @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition End-inspiratory PTP entries: every condition value restates a reading kept in GLM's single crossover outcome for End-inspiratory PTP.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving ptp cmh2o contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Driving PTP entries: every condition value restates a reading kept in GLM's single crossover outcome for Driving PTP.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung elastance cmh2o l con @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung elastance entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung elastance.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall elastance cmh2o @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Chest wall elastance entries: every condition value restates a reading kept in GLM's single crossover outcome for Chest wall elastance.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[lung volume eelv l continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition EELV entries: every condition value restates a reading kept in GLM's single crossover outcome for EELV.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung stress cmh2o continuo @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung stress entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung stress.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[other resistive power j min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Resistive power entries: every condition value restates a reading kept in GLM's single crossover outcome for Resistive power.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[other lung mp j min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung MP entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung MP.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[other lung mp normalized to eelv j min l continu @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung MP normalized to EELV entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung MP normalized to EELV.",
+      "evidence": "p. 5, Table 2"
+    },
+    {
+      "target": "outcomes[other lung total elastic power j min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung total elastic power entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung total elastic power.",
+      "evidence": "p. 4-7 Results; Figs. 2-4"
+    },
+    {
+      "target": "outcomes[other lung elastic static power j min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung elastic static power entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung elastic static power.",
+      "evidence": "p. 4-7 Results; Figs. 2-4"
+    },
+    {
+      "target": "outcomes[other lung elastic dynamic power j min continuou @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Lung elastic dynamic power entries: every condition value restates a reading kept in GLM's single crossover outcome for Lung elastic dynamic power.",
+      "evidence": "p. 4-7 Results; Figs. 2-4"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition PaO2/FiO2 entries: every condition value restates a reading kept in GLM's single crossover outcome for PaO2/FiO2.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[other paco2 mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition PaCO2 entries: every condition value restates a reading kept in GLM's single crossover outcome for PaCO2.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[other pha continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition pHa entries: every condition value restates a reading kept in GLM's single crossover outcome for pHa.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate bpm continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Heart rate entries: every condition value restates a reading kept in GLM's single crossover outcome for Heart rate.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics mean arterial pressure mmhg continu @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Mean arterial pressure entries: every condition value restates a reading kept in GLM's single crossover outcome for Mean arterial pressure.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics central venous pressure mmhg contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Central venous pressure entries: every condition value restates a reading kept in GLM's single crossover outcome for Central venous pressure.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics norepinephrine g kg min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Norepinephrine entries: every condition value restates a reading kept in GLM's single crossover outcome for Norepinephrine.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac output l min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Cardiac output entries: every condition value restates a reading kept in GLM's single crossover outcome for Cardiac output.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery ml min continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's per-condition Oxygen delivery entries: every condition value restates a reading kept in GLM's single crossover outcome for Oxygen delivery.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "id": "23cd54506a",
+      "decision": "unclear",
+      "reason": "The paper reports 'Mechanical ventilation before study (days) 4 (3-6)'. GLM converts it to median 96 (IQR 72-144) hours (flagged derived), which the no-unit-conversion-at-extraction rule forbids; DeepSeek records nothing although the interval is reported. Co-author: record median 4, IQR 3-6, unit days, n=55 as reported, or accept GLM's derived hours.",
+      "evidence": "p. 4, Table 1, row 'Mechanical ventilation before study'"
+    },
+    {
+      "id": "f3a2f97384",
+      "decision": "glm",
+      "reason": "Table 1 reports the interval from the start of invasive ventilation to the study (4 [3-6] days), so timing is measured from intubation, not only relative to enrolment.",
+      "evidence": "p. 4, Table 1"
+    },
+    {
+      "id": "81ccc5cb4b",
+      "decision": "glm",
+      "reason": "Median 4 days (IQR 3-6) of ventilation before Peso-guided titration: even the lower quartile (72 h) exceeds the 48-h cut, so late_after_48h.",
+      "evidence": "p. 4, Table 1; CODEBOOK Subgroup flags"
+    }
+  ]
+}

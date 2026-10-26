@@ -1,0 +1,156 @@
+{
+  "record_meta": {
+    "study_id": "obi_2018",
+    "source_file": "studies/fulltext/obi2018.pdf",
+    "schema_version": "1.0.0"
+  },
+  "study_id": "obi_2018",
+  "tool": "rob2_parallel",
+  "results": [
+    {
+      "result_id": "duration_mv",
+      "outcome": "Duration of mechanical ventilation: time to wean from mechanical ventilation among successfully weaned subjects",
+      "numerical_result": "Median 3.5 days (range 1-16) in the ESO group vs 14 days (range 7-26) in the Cstat group; P = .012 (Mann-Whitney U test); Figure 1 table: mean ± SD (median) 6.25 ± 6.1 (3.5) vs 15.1 ± 6.9 (14)",
+      "result_location": "p 4, Results (Outcomes) and Discussion; Figure 1 and its table, p 7",
+      "answers": {
+        "1.1": {
+          "response": "NI",
+          "support": "The report states only that prospectively enrolled subjects \"were randomized in a simple 1:1 ratio to 1 of 2 protocols for setting PEEP\". I looked for the method of generating the allocation sequence (computer-generated numbers, random number table, lots, etc.) and found none, so the only information about randomization methods is a statement that the study is randomized.",
+          "location": "p 2, Materials and Methods, Study design"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of allocation concealment (remote or central randomization, sequentially numbered opaque sealed envelopes, identical sequentially numbered containers) and found none; the report describes only open enrollment and consent before the assigned PEEP protocol was applied.",
+          "location": "p 2, Materials and Methods, Study design"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "\"Baseline characteristics were similar in the 2 groups (Table 1).\" All baseline comparisons in Table 1 (age, sex, height, BMI, pressure support, PEEP, tidal volume, tidal volume/IBW, respiratory rate, FiO2, Cstat, type of injury) have P values above .05.",
+          "location": "p 4, Results; Table 1, p 5"
+        },
+        "2.1": {
+          "response": "Y",
+          "support": "\"Third, due to the nature of our intervention, our study could not be blinded to either the subjects or the therapists\"",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "\"Third, due to the nature of our intervention, our study could not be blinded to either the subjects or the therapists\"",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "\"it is possible that ESO patients may have been encouraged to remain on trach-collar-trials longer than Cstat patients. We do not think, however, that this was the case, as there were very clear rules for stopping a trial and placing patients back on the ventilator if they failed and/or fatigued.\" No protocol-inconsistent deviation attributed to the trial context is substantiated.",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Condition not met: question 2.3 was answered 'Probably no', so this conditional question does not apply.",
+          "location": "RoB 2 Domain 2, conditional question (parallel-group, effect of assignment)"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Condition not met: question 2.4 was answered 'NA' (itself conditional on 2.3), so this conditional question does not apply.",
+          "location": "RoB 2 Domain 2, conditional question (parallel-group, effect of assignment)"
+        },
+        "2.6": {
+          "response": "N",
+          "support": "\"All analyses were performed in the intention-to-treat population which was defined as all subjects who had undergone randomization except those where technical difficulties precluded passing the esophageal balloon or obtaining Cstat measurements.\" Yet the assessed result is reported only \"Among the 17 subjects who successfully weaned\" — i.e. 8 of 25 randomized participants were excluded post-randomization on the basis of an outcome-related event.",
+          "location": "p 4, Statistical analysis and Results (Outcomes); Figure 1, p 7"
+        },
+        "2.7": {
+          "response": "Y",
+          "support": "\"Eight subjects (62%) were weaned in the ESO group vs 9 (75%) in the Cstat group (P = .67). Overall, 17 subjects (68% of intervention cohort) were weaned by day 30.\"",
+          "location": "p 4, Results (Outcomes)"
+        },
+        "3.1": {
+          "response": "N",
+          "support": "\"Overall, 17 subjects (68% of intervention cohort) were weaned by day 30.\" The assessed result uses data from only these 17 of the 25 randomized subjects; the 8 subjects who did not wean by day 30 contribute no time-to-wean value.",
+          "location": "p 4, Results (Outcomes); Figure 1, p 7"
+        },
+        "3.2": {
+          "response": "N",
+          "support": "I looked for any analysis correcting for bias from the 8 randomized subjects without a time-to-wean value, or any sensitivity analysis under plausible assumptions about their weaning times, and found none reported.",
+          "location": "p 4, Statistical analysis and Results; Figure 1, p 7"
+        },
+        "3.3": {
+          "response": "Y",
+          "support": "Whether a subject contributes to this analysis depends entirely on whether they weaned by day 30 (\"Overall, 17 subjects (68% of intervention cohort) were weaned by day 30\"), and failure to wean is the same clinical process that determines the outcome value itself, so missingness could depend on its true value.",
+          "location": "p 4, Study outcomes and Results (Outcomes)"
+        },
+        "3.4": {
+          "response": "Y",
+          "support": "\"Eight subjects (62%) were weaned in the ESO group vs 9 (75%) in the Cstat group (P = .67)\" — i.e. the proportions without an outcome value differed between groups (5/13 vs 3/12), and the reason for missingness (failure to wean by day 30) is directly tied to the outcome.",
+          "location": "p 4, Results (Outcomes)"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "\"The time to wean was measured from the date of randomization to the date of liberation from mechanical ventilation.\" The method (elapsed days to a protocol-defined liberation event) is appropriate for the outcome.",
+          "location": "p 4, Study outcomes"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "\"A subject was considered successfully weaned if spontaneously breathing without ventilator support for at least 24 hours by day 30.\" The same definition, criteria and 30-day follow-up applied to both groups, and no differential method of ascertaining the date of liberation is described.",
+          "location": "p 4, Study outcomes"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "\"Third, due to the nature of our intervention, our study could not be blinded to either the subjects or the therapists\" — the staff recording and managing weaning (respiratory therapists, ICU team) knew the assigned PEEP strategy.",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "4.4": {
+          "response": "Y",
+          "support": "\"it is possible that ESO patients may have been encouraged to remain on trach-collar-trials longer than Cstat patients\" — time to wean is a provider-decision outcome, so knowledge of allocation could have influenced it.",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "4.5": {
+          "response": "PN",
+          "support": "\"We do not think, however, that this was the case, as there were very clear rules for stopping a trial and placing patients back on the ventilator if they failed and/or fatigued.\" No evidence is given that knowledge of allocation actually influenced the recorded weaning times.",
+          "location": "p 8, Discussion (limitations)"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "The report states that the study was \"registered with clinicaltrials.gov (NCT02323009)\", but no protocol, registry record or statistical analysis plan is reproduced, so it cannot be determined whether the analysed result follows a plan finalized before unblinded data were available.",
+          "location": "p 1, Abstract; p 2, Materials and Methods"
+        },
+        "5.2": {
+          "response": "N",
+          "support": "I looked for evidence that the outcome domain was measured in several eligible ways and found only one measurement reported: days from randomization to liberation from mechanical ventilation among weaned subjects; no alternative eligible measurement (e.g. ventilator-free days, weaning time from another origin) is described.",
+          "location": "p 4, Study outcomes and Results; Figure 1, p 7"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "Two analyses of the same outcome are reported — the among-weaned comparison (P = .012) and the whole-cohort Kaplan-Meier log-rank (P = .892) — and, in the absence of a protocol or analysis plan, it cannot be determined which was pre-specified and whether the reported one was selected on the basis of its results.",
+          "location": "p 4, Statistical analysis and Results; Figure 2, p 8"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "Randomization is stated but neither the method of sequence generation (1.1 NI) nor allocation concealment (1.2 NI) is described; baseline characteristics were balanced (1.3 N), so there is no evidence of a specific problem, but with the process unverifiable the domain is judged Some concerns, matching the tool algorithm (NI to 1.1 or 1.2 with 1.3 N gives Some concerns)."
+        },
+        "D2": {
+          "judgement": "High",
+          "rationale": "Participants and therapists were necessarily aware of allocation (2.1 Y, 2.2 Y). No protocol-inconsistent deviations attributable to the trial context were substantiated (2.3 PN, so 2.4-2.5 NA). However, the assessed result is an effect estimate computed only among the 17 of 25 participants who were successfully weaned, i.e. an analysis that excludes participants post-randomization on the basis of an outcome-related event; this is inappropriate for estimating the effect of assignment (2.6 N), and the potential impact is substantial given that 8 of 25 (32%) participants were excluded, differentially (38% ESO vs 25% Cstat) and in a way directly linked to the outcome (2.7 Y). The algorithm path 2.3 PN -> 2.6 N -> 2.7 Y gives High risk of bias, which is also my own judgement."
+        },
+        "D3": {
+          "judgement": "High",
+          "rationale": "Only 17 of 25 randomized participants contribute a time-to-wean value (3.1 N); no analysis correcting for this or sensitivity analysis under plausible assumptions is reported (3.2 N); whether a participant has an outcome value depends on whether they weaned, i.e. missingness could depend on the true value (3.3 Y) and there are positive reasons to think it does — the proportions missing differ between groups (5/13 vs 3/12) and the reason for missingness is the outcome process itself (3.4 Y). The algorithm gives High risk of bias, as do I."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "The outcome is an objective, protocol-defined interval (date of randomization to date of liberation after at least 24 hours of spontaneous breathing), measured identically in both groups (4.1 N, 4.2 N). Outcome assessors were not blinded (4.3 Y) and weaning management is partly a provider decision, so knowledge of allocation could have influenced it (4.4 Y); however, clear stopping rules were applied and the authors state they do not believe differential encouragement occurred (4.5 PN). Per the algorithm (4.5 N/PN) the domain is Low."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol, registry record or statistical analysis plan is available (5.1 NI), and two divergent analyses of the same outcome (among-weaned comparison P = .012; whole-cohort log-rank P = .892) are reported with no documented analysis intentions, so it cannot be judged whether the reported result was selected (5.3 NI). The algorithm for No information to 5.1/5.3 gives Some concerns, which is my judgement."
+        }
+      },
+      "overall": {
+        "judgement": "High",
+        "rationale": "Two domains are judged at high risk of bias for this result: the effect of assignment is estimated only among participants who were successfully weaned (post-randomization exclusion of 8 of 25 participants in an outcome-related way), and 32% of randomized participants contribute no time-to-wean data with no correction or sensitivity analysis. Randomization reporting (Some concerns) and selection of the reported result (Some concerns) add further uncertainty. Overall risk of bias is therefore High."
+      }
+    }
+  ],
+  "nih": null
+}

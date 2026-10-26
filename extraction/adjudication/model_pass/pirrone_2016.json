@@ -1,0 +1,198 @@
+{
+  "study_id": "pirrone_2016",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[positive ptpe after rm lowest peep with positive]",
+      "decision": "glm",
+      "reason": "Same arm (label_verbatim, sequence position 4, n 14, PEEP 20.7±4.0 identical); GLM's label is the one every outcome references. Its role is ruled separately.",
+      "evidence": "p. 2 Methods; p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "id": "8d9c43296a",
+      "decision": "deepseek",
+      "reason": "The lowest PEEP with positive Ptpe after RM is the esophageal-pressure-guided condition this review studies; the schema reserves alternative_titration_condition for a second strategy run alongside esophageal guidance (here the decremental trial). GLM codes no intervention condition at all.",
+      "evidence": "p. 2 Methods, PEEP Titration Techniques; schema arms.role"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 torr continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Values 179±60, 270±67, 266±72 sit in the Baseline, Ptpe-after-RM and best-decremental-after-RM columns (image). Contrasts +91 (p = 0.0001), +87 (p < 0.0001) and p = 0.28 identical in both; GLM adds n_pairs 14 and the Fig. 4 test (Bonferroni-Holm α 0.016) and its label is verbatim.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 4 Results; p. 7 Fig. 4 legend"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance of the respirato @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Arm values match Table 2; contrasts no-RM vs baseline p = 0.37, after-RM vs baseline −5.3 (p = 0.0007), decremental vs baseline −5.0 (p = 0.0016), after- vs no-RM −4.2 (p = 0.0002) are identical and signs agree with the table.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 4 Results"
+    },
+    {
+      "id": "2da4b8c7f6",
+      "decision": "deepseek",
+      "reason": "Reported contrast GLM omitted: in the four patients ventilated at ZEEP 'the Ers increased by 5.7 cm H2O/L (p = 0.055)'; zeep minus baseline is +5.7.",
+      "evidence": "p. 4 (303), Results, 'Ecw Is Not Significantly Altered'"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance of the lung cm h @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Arm values match Table 2; contrasts p = 0.45, −4.2 (p < 0.0001), −5.4 (p = 0.003), −5.1 (p = 0.004) identical in both (GLM's contrast strings carry an '(El)' gloss, no numeric difference).",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance of the chest wal @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Arm values match Table 2; omnibus p = 0.96 (rANOVA, Fig. 3 legend) and after- vs no-RM p = 0.85 identical.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 4 Results; p. 6 Fig. 3 legend"
+    },
+    {
+      "id": "7e7c13ac4e",
+      "decision": "deepseek",
+      "reason": "Reported contrast GLM omitted: in the ZEEP subgroup 'Chest wall elastance did not change (p = 0.90)'.",
+      "evidence": "p. 4 (303), Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics airway resistance cm h2o l @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Airway resistance values identical and match Table 2; GLM's name is the full row label with unit.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. PEEP row values match Table 2 (ZEEP 0); contrasts 9.1 (p < 0.0001), 9.7 (p < 0.0001) and decremental vs Ptpe p = 0.37 identical to DeepSeek's duplicate entry. (GLM flags the 9.1/9.7 differences derived although the text states them.)",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 3 Results"
+    },
+    {
+      "target": "outcomes[lung volume end expiratory lung volume ml kg ide @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's crossover entry (DeepSeek's EELV entry is a repeated_measures duplicate) but both reviewers attach 'a significant difference of 10.6 mL/kg IBW at the lowest PEEP level with a positive Ptpe (p = 0.0004)' to positive_ptpe_no_rm. Table 2: no-RM 27.1 − 19.5 = 7.6 (no footnote b), after-RM 30.1 − 19.5 = 10.6 (footnote b); Fig. 1 legend lists baseline vs positive transpulmonary after RM. Co-author: set that contrast's arm_label_a to positive_ptpe_after_rm; the other contrasts (11.1, 19, 3.0 p = 0.017) are right.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 3 Results; p. 5 Fig. 1 legend"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpe cm h2o end expirato @crossover condition]",
+      "decision": "unclear",
+      "reason": "GLM's structure is right (crossover_condition; values match Table 2; after- vs no-RM p = 0.43) but it omits the four reported baseline contrasts (baseline vs no-RM, after-RM, decremental, decremental-HOB30, each p < 0.0004, Fig. 2 legend) that DeepSeek records under a repeated_measures duplicate. Co-author: keep GLM's entry and add DeepSeek's four p < 0.0004 contrasts.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 6 Fig. 2 legend"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpi cm h2o end inspirat @crossover condition]",
+      "decision": "unclear",
+      "reason": "GLM's structure is right (crossover_condition; values match Table 2; after- vs no-RM −1.5, p = 0.01) but it omits the four baseline contrasts at p < 0.0004 (Fig. 2 legend) that DeepSeek records under a repeated_measures duplicate. Co-author: keep GLM's entry and add DeepSeek's four contrasts.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 6 Fig. 2 legend"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Ppeak values match Table 2; DeepSeek's duplicate adds only an omnibus entry with no P value, which the paper does not report.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Six conditions applied to the same 14 patients: the schema's crossover_condition (arm label carries the meaning) fits; repeated_measures is for a trajectory over time, so DeepSeek's timepoint type is wrong. Pplat values match Table 2; DeepSeek's duplicate adds only an omnibus entry with no P value.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics systolic blood pressure diastolic b @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM merges three outcomes (systolic BP, diastolic BP, heart rate) into one entry, against one outcome per entry; the same three rANOVA P values (0.37, 0.36, 0.01) are kept as DeepSeek's three separate entries. Those entries carry no per-condition data, so their repeated_measures type (crossover_condition would be more exact) affects no pooled reading.",
+      "evidence": "p. 5 Results; p. 7 Fig. 5 legend"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the PEEP row kept under GLM's crossover_condition entry; timepoint type repeated_measures is wrong for conditions.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Ppeak row kept under GLM's crossover_condition entry; timepoint type repeated_measures is wrong for conditions.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pplat row kept under GLM's crossover_condition entry; timepoint type repeated_measures is wrong for conditions.",
+      "evidence": "p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume end expiratory lung volume continuou @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the EELV row kept under GLM's entry (whose one misassigned contrast is flagged unclear there); DeepSeek's repeated_measures type is wrong and it carries the same 10.6 misassignment to the no-RM condition.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 3 Results"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpi continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop as a separate entry: duplicates the Ptpi row held under GLM's crossover entry, with a wrong repeated_measures type; its extra baseline contrasts are flagged for the co-author on GLM's entry.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 6 Fig. 2 legend"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpe continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop as a separate entry: duplicates the Ptpe row held under GLM's crossover entry, with a wrong repeated_measures type; its extra baseline contrasts are flagged for the co-author on GLM's entry.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 6 Fig. 2 legend"
+    },
+    {
+      "target": "outcomes[hemodynamics systolic blood pressure continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: 'Systolic blood pressure ... did not change at any of the studied PEEP levels (p = 0.37)', rANOVA; one outcome per entry. No per-condition data are recorded, so the repeated_measures type is inexact but harmless.",
+      "evidence": "p. 5 Results; p. 7 Fig. 5 legend"
+    },
+    {
+      "target": "outcomes[hemodynamics diastolic blood pressure continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: diastolic blood pressure did not change (p = 0.36), rANOVA.",
+      "evidence": "p. 5 Results; p. 7 Fig. 5 legend"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: heart rate rANOVA p = 0.01, post hoc comparisons not significant.",
+      "evidence": "p. 5 Results; p. 7 Fig. 5 legend"
+    },
+    {
+      "target": "outcomes[adverse event transient hypotension during recru @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: 'Only five of 14 patients experienced transient hypotension (systolic arterial blood pressure < 90 mm Hg) during the final steps of the RM' — a reported adverse event of the RM that precedes the Ptpe-after-RM condition.",
+      "evidence": "p. 4 (303), Results"
+    },
+    {
+      "id": "1cd53ded2e",
+      "decision": "glm",
+      "reason": "ZEEP is one of the conditions the study applied (four patients) and has its own enum value; GLM's array lists every comparator strategy run, as the schema asks.",
+      "evidence": "p. 2 Methods; p. 3 Results"
+    },
+    {
+      "id": "9dc7811582",
+      "decision": "glm",
+      "reason": "A decremental PEEP trial (Kacmarek and Villar) is run as a comparator titration; with ZEEP kept at position 1, GLM's position 2 carries it.",
+      "evidence": "p. 2 Methods, Best Decremental PEEP"
+    },
+    {
+      "id": "136b88425d",
+      "decision": "deepseek",
+      "reason": "The best decremental PEEP (lowest Pplat − PEEP in the decremental trial) is the same strategy as decremental_peep_trial; coding best_compliance_peep as well double-counts one comparator.",
+      "evidence": "p. 2 Methods, Best Decremental PEEP"
+    },
+    {
+      "id": "d9287e61eb",
+      "decision": "deepseek",
+      "reason": "Single site: 'Medical and surgical ICUs at Massachusetts General Hospital'; 'This work was performed at Massachusetts General Hospital'.",
+      "evidence": "p. 1 Abstract Setting; p. 1 footnote"
+    },
+    {
+      "id": "00c2cc9f05",
+      "decision": "glm",
+      "reason": "All 14 enrolled patients had the balloon positioned after consent and all 14 contribute Pes-derived values (Ptpe, Ptpi, Ecw n = 14 in Table 2); derived: true with the derivation stated.",
+      "evidence": "p. 2 Methods; p. 4 (303), Table 2 (page image)"
+    },
+    {
+      "id": "143f527a1b",
+      "decision": "glm",
+      "reason": "Esophageal-pressure data are reported for all 14 patients and no placement failure is described; derived: true with the inference stated.",
+      "evidence": "p. 4 (303), Table 2 (page image); p. 2 Methods"
+    }
+  ]
+}

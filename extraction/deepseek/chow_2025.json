@@ -1,0 +1,1408 @@
+{
+  "record_meta": {
+    "study_id": "chow_2025",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/iraf119.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Soo Ping Chow",
+    "year": 2025,
+    "title": "Utilizing Indirect Intrapleural Pressure to Guide Mechanical Ventilation in Burn Patients With ARDS",
+    "journal": "Journal of Burn Care & Research",
+    "doi": "10.1093/jbcr/iraf119",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients less than 18 years of age, died prior to manometry placement or were designated as comfort care or withdrawal of care within 24 h of manometry placement according to advance directives or family decision, were excluded from this study.",
+          "location": "Methods, Esophageal manometry technique, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "received mechanical ventilation for greater than 48 h",
+          "location": "Methods, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Adult patients with severe burn injuries with or without smoke inhalation injury admitted to an ABA-verified burn center",
+          "location": "Methods, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Ventilator settings were adjusted based on these measurements to avoid under-inflation and collapse of the alveoli at end expiration and over-inflation of the alveoli at end inspiration",
+          "location": "Methods, Esophageal manometry technique, para 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The primary outcomes sought in this study were to assess necessary ventilatory changes guided by esophageal pressure monitoring. Additional secondary outcomes of interest included trends in oxygenation and resolution of ARDS.",
+          "location": "Methods, Data collection and analysis, para 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Of the 23 patients included",
+          "location": "Abstract"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This is a retrospective review of the use of indirect intrapleural pressure measurement to guide mechanical ventilation in burn-injured patients with ARDS.",
+          "location": "Methods, para 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients with severe burn injuries are at risk of developing acute respiratory distress syndrome (ARDS).",
+          "location": "Abstract, first sentence"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "retrospective_cohort",
+    "study_design_verbatim": {
+      "value": "This is a retrospective review of the use of indirect intrapleural pressure measurement to guide mechanical ventilation in burn-injured patients with ARDS.",
+      "provenance": {
+        "quote": "This is a retrospective review of the use of indirect intrapleural pressure measurement to guide mechanical ventilation in burn-injured patients with ARDS.",
+        "location": "Methods, para 1"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "This was a single-center retrospective study",
+        "location": "Discussion, Limitations, para 1"
+      }
+    },
+    "countries": [
+      "United States"
+    ],
+    "location_provenance": {
+      "quote": "Firefighters' Burn and Surgical Research Laboratory, MedStar Health Research Institute, Washington, DC 20010, United States",
+      "location": "Author affiliations, page 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "ABA-verified burn center",
+      "provenance": {
+        "quote": "admitted to an ABA-verified burn center",
+        "location": "Methods, para 1"
+      }
+    },
+    "enrolment_start": "2017-01",
+    "enrolment_end": "2024-05",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "None declared.",
+      "provenance": {
+        "quote": "Funding: None declared.",
+        "location": "Page 1, Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 28,
+      "provenance": {
+        "quote": "During the study period, 28 patients were identified who met inclusion criteria and underwent esophageal pressure (Pes) monitoring to guide mechanical ventilation.",
+        "location": "Results, Demographics, para 1"
+      }
+    },
+    "n_analysed": {
+      "value": 23,
+      "provenance": {
+        "quote": "Of the 23 patients who received Pes monitoring",
+        "location": "Results, Demographics, para 1"
+      }
+    },
+    "population_description": {
+      "value": "Burn injured patients admitted to an ABA verified burn center that developed ARDS by the Berlin definition and received Pes",
+      "provenance": {
+        "quote": "Burn injured patients admitted to an ABA verified burn center that developed ARDS by the Berlin definition and received Pes",
+        "location": "Abstract"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Adult patients with severe burn injuries with or without smoke inhalation injury admitted to an ABA-verified burn center from January 2017 to May 2024 were retrospectively reviewed for those who received mechanical ventilation for greater than 48 h and developed ARDS by the Berlin definition.",
+      "provenance": {
+        "quote": "Adult patients with severe burn injuries with or without smoke inhalation injury admitted to an ABA-verified burn center from January 2017 to May 2024 were retrospectively reviewed for those who received mechanical ventilation for greater than 48 h and developed ARDS by the Berlin definition.",
+        "location": "Methods, para 1"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Patients less than 18 years of age, died prior to manometry placement or were designated as comfort care or withdrawal of care within 24 h of manometry placement according to advance directives or family decision, were excluded from this study.",
+      "provenance": {
+        "quote": "Patients less than 18 years of age, died prior to manometry placement or were designated as comfort care or withdrawal of care within 24 h of manometry placement according to advance directives or family decision, were excluded from this study.",
+        "location": "Methods, Esophageal manometry technique, para 2"
+      }
+    },
+    "age": {
+      "value_type": "median",
+      "value": 40,
+      "dispersion_type": "iqr",
+      "dispersion_low": 31,
+      "dispersion_high": 48,
+      "dispersion": null,
+      "secondary_dispersion_type": null,
+      "secondary_dispersion": null,
+      "secondary_dispersion_low": null,
+      "secondary_dispersion_high": null,
+      "n": 23,
+      "unit": "years",
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "Age, yr 40 (31-48)",
+        "location": "Table 1, row: Age, yr"
+      }
+    },
+    "sex_female": null,
+    "sex_male": {
+      "n": 18,
+      "total": 23,
+      "percent_as_reported": 78.2,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "Male, n (%) 18 (78.2)",
+        "location": "Table 1, row: Male, n (%)"
+      }
+    },
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definition",
+      "provenance": {
+        "quote": "ARDS by the Berlin definition",
+        "location": "Methods, para 1"
+      }
+    },
+    "n_ards": {
+      "n": 23,
+      "total": 23,
+      "percent_as_reported": null,
+      "derived": true,
+      "derivation": "All patients met inclusion criteria of ARDS by Berlin definition; n equals total cohort.",
+      "provenance": {
+        "quote": "developed ARDS by the Berlin definition",
+        "location": "Methods, para 1"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": null,
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Total % TBSA",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 39.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25.9,
+          "dispersion_high": 59.0,
+          "dispersion": null,
+          "secondary_dispersion_type": null,
+          "secondary_dispersion": null,
+          "secondary_dispersion_low": null,
+          "secondary_dispersion_high": null,
+          "n": 23,
+          "unit": "%",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Total % TBSA 39.8 (25.9-59.0)",
+            "location": "Table 1, row: Total % TBSA"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "Revised Baux score",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 91.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 73.9,
+          "dispersion_high": 114.6,
+          "dispersion": null,
+          "secondary_dispersion_type": null,
+          "secondary_dispersion": null,
+          "secondary_dispersion_low": null,
+          "secondary_dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Revised Baux score 91.6 (73.9-114.6)",
+            "location": "Table 1, row: Revised Baux score"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "Inhalation injury",
+        "arm_label": null,
+        "continuous": null,
+        "count": {
+          "n": 8,
+          "total": 23,
+          "percent_as_reported": 34.8,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Inhalation injury, n (%) 8 (34.8)",
+            "location": "Table 1, row: Inhalation injury, n (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pneumonia",
+        "arm_label": null,
+        "continuous": null,
+        "count": {
+          "n": 18,
+          "total": 23,
+          "percent_as_reported": 78.3,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Pneumonia, n (%) 18 (78.3)",
+            "location": "Table 1, row: Pneumonia, n (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Circumferential torso burns",
+        "arm_label": null,
+        "continuous": null,
+        "count": {
+          "n": 7,
+          "total": 23,
+          "percent_as_reported": 30.4,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Circumferential torso burns, n (%) 7 (30.4)",
+            "location": "Table 1, row: Circumferential torso burns, n (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Extremity compartment syndrome",
+        "arm_label": null,
+        "continuous": null,
+        "count": {
+          "n": 11,
+          "total": 23,
+          "percent_as_reported": 47.8,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Extremity compartment syndrome, n (%) 11 (47.8)",
+            "location": "Table 1, row: Extremity compartment syndrome, n (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Volume of crystalloid in initial 48 h",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 17.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14.1,
+          "dispersion_high": 28.2,
+          "dispersion": null,
+          "secondary_dispersion_type": null,
+          "secondary_dispersion": null,
+          "secondary_dispersion_low": null,
+          "secondary_dispersion_high": null,
+          "n": 23,
+          "unit": "L",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Volume of crystalloid in initial 48 h, L 17.2 (14.1-28.2)",
+            "location": "Table 1, row: Volume of crystalloid in initial 48 h, L"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "Volume of FFP in initial 48 h",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 3.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.3,
+          "dispersion_high": 6.1,
+          "dispersion": null,
+          "secondary_dispersion_type": null,
+          "secondary_dispersion": null,
+          "secondary_dispersion_low": null,
+          "secondary_dispersion_high": null,
+          "n": 23,
+          "unit": "L",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Volume of FFP in initial 48 h, L 3.5 (2.3-6.1)",
+            "location": "Table 1, row: Volume of FFP in initial 48 h, L"
+          }
+        },
+        "count": null
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "SmartCath Nasogastric Tube, Carefusion, Yorba Linda, CA",
+      "provenance": {
+        "quote": "A 16 Fr adult orogastric tube with an inflatable esophageal balloon was used (SmartCath Nasogastric Tube, Carefusion, Yorba Linda, CA).",
+        "location": "Methods, Esophageal manometry technique, para 2"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "signal_quality_verification_only",
+      "method_verbatim": {
+        "value": "Waveform analysis was used to confirm that the balloon was in the lower third of the esophagus in the retrocardiac position.",
+        "provenance": {
+          "quote": "Waveform analysis was used to confirm that the balloon was in the lower third of the esophagus in the retrocardiac position.",
+          "location": "Methods, Esophageal manometry technique, para 2"
+        }
+      },
+      "position_verification": {
+        "value": "Waveform analysis to confirm retrocardiac position.",
+        "provenance": {
+          "quote": "Waveform analysis was used to confirm that the balloon was in the lower third of the esophagus in the retrocardiac position.",
+          "location": "Methods, Esophageal manometry technique, para 2"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Ptp is the difference between airway pressure (Paw) and Ppl: Ptp = Paw − Ppl",
+        "provenance": {
+          "quote": "Ptp is the difference between airway pressure (Paw) and Ppl: Ptp = Paw − Ppl",
+          "location": "Introduction, para 4"
+        }
+      },
+      "pes_correction_applied": {
+        "value": "Chest wall contribution defined as approximately 10 cmH2O; safe plateau = 20 cmH2O + Pes.",
+        "provenance": {
+          "quote": "With the chest wall contribution defined as approximately 10 cmH2O, this translated to a delta pressure threshold of 15-20 cmH2O above the Pes at inspiratory hold",
+          "location": "Methods, Esophageal manometry technique, para 3"
+        }
+      }
+    },
+    "peep_titration_target": {
+      "strategy": "other",
+      "strategy_verbatim": {
+        "value": "End-expiratory Pes was used to determine optimal PEEP. First, an expiratory hold maneuver was performed by the ventilator to determine the total PEEP in the patient. The total PEEP is equal to the sum of the set PEEP of the ventilator and the Auto-PEEP with which a patient was experiencing at the time of measurement. Subtracting the optimal PEEP by the total PEEP determines by how much a ventilator's PEEP setting must be adjusted (Δ-PEEP) to achieve the optimal PEEP: Δ-PEEP = Optimal PEEP − Total PEEP.",
+        "provenance": {
+          "quote": "End-expiratory Pes was used to determine optimal PEEP. First, an expiratory hold maneuver was performed by the ventilator to determine the total PEEP in the patient. The total PEEP is equal to the sum of the set PEEP of the ventilator and the Auto-PEEP with which a patient was experiencing at the time of measurement. Subtracting the optimal PEEP by the total PEEP determines by how much a ventilator's PEEP setting must be adjusted (Δ-PEEP) to achieve the optimal PEEP: Δ-PEEP = Optimal PEEP − Total PEEP.",
+          "location": "Methods, Esophageal manometry technique, para 4"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "Every 24 h or following significant events",
+        "provenance": {
+          "quote": "Additional measurements were obtained every 24 h afterwards or following significant events, such as ventilator changes, operative interventions, changes in patient positioning, and after wound care was performed.",
+          "location": "Methods, Esophageal manometry technique, para 5"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "lung protective ventilation",
+        "provenance": {
+          "quote": "despite lung protective ventilation",
+          "location": "Methods, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "Safe Pplateau = 20 cmH2O + Pes",
+        "provenance": {
+          "quote": "Safe Pplateau = 20 cmH2O + Pes.",
+          "location": "Methods, Esophageal manometry technique, para 3"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Esophageal pressures were measured at various time points throughout the disease progression. Generally, values were obtained upon insertion of the esophageal manometry device to establish baseline values to guide ventilator observations and changes.",
+        "provenance": {
+          "quote": "Esophageal pressures were measured at various time points throughout the disease progression. Generally, values were obtained upon insertion of the esophageal manometry device to establish baseline values to guide ventilator observations and changes.",
+          "location": "Methods, Esophageal manometry technique, para 5"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "clinician_discretion_usual_care"
+    ],
+    "comparator_verbatim": {
+      "value": "Current PEEP",
+      "provenance": {
+        "quote": "Current PEEP",
+        "location": "Table 3, column heading"
+      }
+    },
+    "crossover_order": {
+      "value": "Before and after Pes monitoring, no randomisation.",
+      "provenance": {
+        "quote": "Following initiation of esophageal pressure monitoring, optimal PEEP was significantly higher in all patients compared to baseline PEEP settings prior to initiation",
+        "location": "Results, PEEP adjustment, para 1"
+      }
+    },
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "current_peep",
+      "label_verbatim": "Current PEEP",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 23,
+        "provenance": {
+          "quote": "Of the 23 patients who received Pes monitoring",
+          "location": "Results, Demographics, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 12,
+        "dispersion_type": "sd",
+        "dispersion": 4,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 23,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Current PEEP 12 (4)",
+          "location": "Table 3, row: Current PEEP"
+        }
+      }
+    },
+    {
+      "label": "first_change_peep",
+      "label_verbatim": "First change",
+      "role": "intervention",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 23,
+        "provenance": {
+          "quote": "Of the 23 patients who received Pes monitoring",
+          "location": "Results, Demographics, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 17,
+        "dispersion_type": "sd",
+        "dispersion": 4,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 23,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "First change 17 (4)",
+          "location": "Table 3, row: First change"
+        }
+      }
+    },
+    {
+      "label": "second_change_peep",
+      "label_verbatim": "Second change",
+      "role": "alternative_titration_condition",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 9,
+        "provenance": {
+          "quote": "Of these, 9 out of the 23 patients required a second increase in PEEP",
+          "location": "Results, PEEP adjustment, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 18,
+        "dispersion_type": "sd",
+        "dispersion": 3,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 9,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Second change 18 (3)",
+          "location": "Table 3, row: Second change"
+        }
+      }
+    },
+    {
+      "label": "all_patients",
+      "label_verbatim": "Total",
+      "role": "single_group",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 23,
+        "provenance": {
+          "quote": "Of the 23 patients who received Pes monitoring",
+          "location": "Results, Demographics, para 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Changes in PEEP Based on End-expiratory Esophageal Pressure (Optimal PEEP)",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "current_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Current PEEP 12 (4)",
+            "location": "Table 3, row: Current PEEP"
+          }
+        },
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 17,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "First change 17 (4)",
+            "location": "Table 3, row: First change"
+          }
+        },
+        {
+          "arm_label": "second_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 18,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 9,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Second change 18 (3)",
+            "location": "Table 3, row: Second change"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "first_change_peep minus current_peep",
+          "arm_label_a": "first_change_peep",
+          "arm_label_b": "current_peep",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 23,
+          "p_value": null,
+          "p_value_verbatim": "<.0001",
+          "test_used": "Paired t-test",
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "optimal PEEP was significantly higher in all patients compared to baseline PEEP settings prior to initiation [12 (4) vs 17 (4) cmH2O; P < .0001]",
+            "location": "Results, PEEP adjustment, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "second_change_peep minus first_change_peep",
+          "arm_label_a": "second_change_peep",
+          "arm_label_b": "first_change_peep",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 9,
+          "p_value": null,
+          "p_value_verbatim": ".4871",
+          "test_used": "Paired t-test",
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "this was not statistically significant (Table 3)",
+            "location": "Results, PEEP adjustment, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "P/F ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Pre-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "current_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 141,
+          "dispersion_type": "se",
+          "dispersion": 26.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "P/F ratio 141 (26.5)",
+            "location": "Table 4, row: P/F ratio, column: Pre-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "P/F ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 169,
+          "dispersion_type": "se",
+          "dispersion": 26.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "P/F ratio 169 (26.5)",
+            "location": "Table 4, row: P/F ratio, column: 24 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "P/F ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 72,
+        "label_verbatim": "72 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 179,
+          "dispersion_type": "se",
+          "dispersion": 29.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "P/F ratio 179 (29.4)",
+            "location": "Table 4, row: P/F ratio, column: 72 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "P/F ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 120,
+        "label_verbatim": "120 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 300,
+          "dispersion_type": "se",
+          "dispersion": 35.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": null,
+            "dispersion_type": null,
+            "dispersion": null,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": ".0020",
+            "test_used": "Tukey's post-hoc test",
+            "unit": null,
+            "provenance": {
+              "quote": "P/F ratios increased by day 5 post-Pes monitoring [300 (35.1)] compared to pre- [141 (26.5); P = .0020]",
+              "location": "Results, Oxygenation trends, para 1"
+            }
+          },
+          "provenance": {
+            "quote": "P/F ratio 300 (35.1)",
+            "location": "Table 4, row: P/F ratio, column: 120 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Pre-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "current_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 17.3,
+          "dispersion_type": "se",
+          "dispersion": 1.93,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Oxygenation index 17.3 (1.93)",
+            "location": "Table 4, row: Oxygenation index, column: Pre-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 18.2,
+          "dispersion_type": "se",
+          "dispersion": 1.93,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Oxygenation index 18.2 (1.93)",
+            "location": "Table 4, row: Oxygenation index, column: 24 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 72,
+        "label_verbatim": "72 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 19.0,
+          "dispersion_type": "se",
+          "dispersion": 2.15,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Oxygenation index 19.0 (2.15)",
+            "location": "Table 4, row: Oxygenation index, column: 72 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "sequence_position": null,
+        "days": null,
+        "hours": 120,
+        "label_verbatim": "120 h post-esophageal manometry"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "first_change_peep",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 13.4,
+          "dispersion_type": "se",
+          "dispersion": 2.57,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Oxygenation index 13.4 (2.57)",
+            "location": "Table 4, row: Oxygenation index, column: 120 h post-esophageal manometry"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": 19,
+          "total": 23,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "The mortality rate was 82.6%.",
+            "location": "Abstract"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "Ventilator days",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 8,
+          "dispersion_high": 25,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ventilator days 15 (8-25)",
+            "location": "Table 2, row: Ventilator days, column: Total"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU LOS, days",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 9,
+          "dispersion_high": 26,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ICU LOS, days 15 (9-26)",
+            "location": "Table 2, row: ICU LOS, days, column: Total"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "Hospital LOS, days",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 9,
+          "dispersion_high": 30,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Hospital LOS, days 15 (9-30)",
+            "location": "Table 2, row: Hospital LOS, days, column: Total"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Resolution of ARDS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "all_patients",
+          "events": 9,
+          "total": 23,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Resolution of ARDS, n (%) 9 (39.1)",
+            "location": "Table 2, row: Resolution of ARDS, n (%)"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "other"
+    ],
+    "classification_notes": "ARDS only: all patients met Berlin ARDS criteria. Obesity unclear: BMI not reported. Timing unclear: time from reference event to Pes initiation not reported. PTP target strategy: method uses absolute Pes subtraction but no explicit numeric target; coded as 'other'."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "Survival status",
+      "outcome_name": "ARDS resolution",
+      "prespecified": null,
+      "result_verbatim": "Alive: 4 (100.0) vs Dead: 5 (26.3)",
+      "interaction_p_value": 0.0142,
+      "provenance": {
+        "quote": "Resolution of ARDS, n (%) 4 (100.0) 5 (26.3) .0142",
+        "location": "Table 2, row: Resolution of ARDS, columns: Alive, Dead, P-value"
+      }
+    },
+    {
+      "subgroup_variable": "Survival status",
+      "outcome_name": "Ventilator days",
+      "prespecified": null,
+      "result_verbatim": "Alive: 36 (22-57) vs Dead: 15 (7-20)",
+      "interaction_p_value": 0.0114,
+      "provenance": {
+        "quote": "Ventilator days 36 (22-57) 15 (7-20) .0114",
+        "location": "Table 2, row: Ventilator days, columns: Alive, Dead, P-value"
+      }
+    },
+    {
+      "subgroup_variable": "Survival status",
+      "outcome_name": "ICU LOS",
+      "prespecified": null,
+      "result_verbatim": "Alive: 41 (37-57) vs Dead: 15 (9-20)",
+      "interaction_p_value": 0.0025,
+      "provenance": {
+        "quote": "ICU LOS, days 41 (37-57) 15 (9-20) .0025",
+        "location": "Table 2, row: ICU LOS, days, columns: Alive, Dead, P-value"
+      }
+    },
+    {
+      "subgroup_variable": "Survival status",
+      "outcome_name": "Hospital LOS",
+      "prespecified": null,
+      "result_verbatim": "Alive: 54 (44-60) vs Dead: 14 (8-21)",
+      "interaction_p_value": 0.0026,
+      "provenance": {
+        "quote": "Hospital LOS, days 54 (44-60) 14 (8-21) .0026",
+        "location": "Table 2, row: Hospital LOS, days, columns: Alive, Dead, P-value"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlapping cohorts identified. This is a single-center retrospective study, no trial registration reported, enrolment January 2017 to May 2024, single burn center in USA. No other reports in this review share these features.",
+    "unclear_items": [
+      "Mortality timepoint not specified; coded as not_reported.",
+      "Timing of esophageal pressure monitoring initiation relative to intubation or ARDS onset not reported; timing_subgroup unclear.",
+      "PEEP titration target not explicitly defined as a numerical transpulmonary pressure range; only stated as determining optimal PEEP from end-expiratory esophageal pressure.",
+      "Consecutive enrolment not explicitly stated.",
+      "Female sex not reported; sex_female left null.",
+      "Obesity/BMI not reported; obesity_subgroup unclear.",
+      "PEEP second change p-value likely compares first to second change, but this is inferred from table layout.",
+      "Exclusion of 5 patients who died within 48h of Pes monitoring is an additional exclusion beyond stated criteria; recorded in exclusion_criteria note."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Study reports extremely high mortality (82.6%). Authors note this is a retrospective low-powered study. The P/F ratio and oxygenation index values are least square means from mixed-effects model; recorded as mean (SEM)."
+  }
+}

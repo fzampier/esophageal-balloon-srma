@@ -1,0 +1,276 @@
+{
+  "study_id": "mauri_2024",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[all patients all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep: 28-d VFDs and hospital mortality are follow-up outcomes of the whole cohort of 30 (Table 1, Outcomes), not of either 20-min PEEP step, so they need a whole-group arm.",
+      "evidence": "p. 2129, Table 1"
+    },
+    {
+      "target": "outcomes[other ptpmus per breath continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "PTPmus per breath -1.33 [95% CI -2 to -0.67] cmH2O*s, P < 0.001, n 30 in both. GLM's label 'towards the end of each 20-min study step' is verbatim; DeepSeek's 'End of each 20-min study step' is not. GLM matches the respiratory-drive family kept below.",
+      "evidence": "p. 2131 (page 7), Results; p. 2127 Study measures"
+    },
+    {
+      "target": "outcomes[ventilator free days 28 d vfds continuous @28d]",
+      "decision": "deepseek",
+      "reason": "28-d VFDs 15 [2-20] is reported for the whole cohort in Table 1; GLM attaches it to the PEEPEIT-dPL condition, which is an arm error. DeepSeek puts it under all_patients.",
+      "evidence": "p. 2129, Table 1, Outcomes"
+    },
+    {
+      "id": "54c62acbc8",
+      "decision": "glm",
+      "reason": "Both labels are verbatim; '28-d VFDs' is the complete Table 1 row label.",
+      "evidence": "p. 2129, Table 1"
+    },
+    {
+      "target": "outcomes[mortality hospital mortality dichotomous @hospital discharge]",
+      "decision": "deepseek",
+      "reason": "Hospital mortality 6 (20) is a whole-cohort follow-up outcome (Table 1); GLM's assignment to the PEEPEIT-dPL condition is an arm error.",
+      "evidence": "p. 2129, Table 1, Outcomes"
+    },
+    {
+      "target": "outcomes[ventilator settings peep assigned by the two per @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: DeepSeek's PEEP entry holds the same reading (10 [8-12] vs 8 [5-10] cmH2O, P = 0.021) with n_pairs 30, and its test_used is the stated paired comparison, not GLM's hedge.",
+      "evidence": "p. 2128, Results, PEEP assigned by the two personalized methods; Abstract"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dynamic lung stress as ass @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's version: primary outcome (sample size based on dPLdyn), main contrast -1.7 [-2.64 to -0.73] P<0.001, and reported subgroup differences -2.44 [-3.59 to -1.3] (n 22) and +0.39 [0.01 to 0.76] are all correct. But GLM codes the domain respiratory_mechanics, and the codebook puts driving transpulmonary pressure under transpulmonary_pressure; DeepSeek's version is misflagged is_primary false. Also, GLM's 'omnibus' entry is the order x strategy carryover interaction (P = 0.932), not a test across conditions (same pattern, P = 0.845, under PTPmus per minute). Co-author: recode domain to transpulmonary_pressure; decide whether carryover P values belong in paired_effects.",
+      "evidence": "p. 2129 Results; p. 2128 Sample size; p. 2135 limitations ('main outcome'); CODEBOOK Physiologic outcomes"
+    },
+    {
+      "target": "outcomes[other pressure time product ptpmus of the respir @crossover condition]",
+      "decision": "glm",
+      "reason": "PTPmus per minute -35.2 [-50.7 to -19.7] cmH2O*s/min, P<0.001, and reported subgroup differences -45 [-60.7 to -29.4] (25 patients) and +16.3 [5.8 to 26.7] match; the name is verbatim from Study measures. DeepSeek's copy has only the main contrast. (The carryover interaction P = 0.845 is stored as an 'omnibus' contrast; see the note on dPLdyn.)",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[other airway occlusion pressure during the first @crossover condition]",
+      "decision": "glm",
+      "reason": "P0.1 -0.81 [-1.12 to -0.5] cmH2O, P<0.001 matches in both; GLM's name is verbatim from Study measures. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 2131 (page 7), Results"
+    },
+    {
+      "target": "outcomes[other inspiratory muscular pressure pmus continu @crossover condition]",
+      "decision": "glm",
+      "reason": "Pmus -2.17 [-3.31 to -1.04] cmH2O, P<0.001 matches in both; GLM's name is verbatim. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 2131 (page 7), Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dynamic lung compliance cl @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: it lumps global, ventral and dorsal dynamic lung compliance, three distinct measurements in three Fig. 3 panels, into one outcome, with contrasts that carry no arm labels. The separate regional entries are ruled individually.",
+      "evidence": "p. 2132 (page 8), Fig. 3 A-C"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl dynamic global continuo @crossover condition]",
+      "decision": "unclear",
+      "reason": "Structure and P (global CL dynamic, P = 0.005, Fig. 3) are right, but test_used 'repeated measures ANOVA' is wrong: the paper compares variables at PEEPEIT-dPL vs PEEPTABLE by paired t-test or Wilcoxon signed rank test, and uses ANOVA only for interaction analyses. Co-author: keep, set test_used to 'paired t-test or Wilcoxon signed rank test'.",
+      "evidence": "p. 2132 Fig. 3; p. 2128 Statistical analysis"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl dynamic ventral continu @crossover condition]",
+      "decision": "unclear",
+      "reason": "Structure and P (ventral CL dynamic, P = 0.001, Fig. 3) are right, but test_used 'repeated measures ANOVA' is wrong: the paper compares variables at PEEPEIT-dPL vs PEEPTABLE by paired t-test or Wilcoxon signed rank test, and uses ANOVA only for interaction analyses. Co-author: keep, set test_used to 'paired t-test or Wilcoxon signed rank test'.",
+      "evidence": "p. 2132 Fig. 3; p. 2128 Statistical analysis"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl dynamic dorsal continuo @crossover condition]",
+      "decision": "unclear",
+      "reason": "Structure and P (dorsal CL dynamic, P = 0.050, Fig. 3) are right, but test_used 'repeated measures ANOVA' is wrong: the paper compares variables at PEEPEIT-dPL vs PEEPTABLE by paired t-test or Wilcoxon signed rank test, and uses ANOVA only for interaction analyses. Co-author: keep, set test_used to 'paired t-test or Wilcoxon signed rank test'.",
+      "evidence": "p. 2132 Fig. 3; p. 2128 Statistical analysis"
+    },
+    {
+      "target": "outcomes[lung volume percentage of lung collapse continuo @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: DeepSeek's 'Lung collapse' entry holds the same -8.5 [-14.4 to -2.5] %, P = 0.007, with test_used and a domain consistent with the other EIT outcomes kept (overdistension, recruitment).",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[lung volume percentage of pixels recruited conti @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: DeepSeek's 'Recruitment' entry holds the same +4.1 [-0.02 to +8.6] %, P = 0.060, consistent with the other EIT outcomes kept.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[lung volume alveolar overdistension od continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: its p-only contrast (P = 0.695) has no arm labels; DeepSeek's 'Overdistension' entry gives the same P with arm labels, n_pairs and test.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: PaO2/FiO2 205 +/- 54 at enrolment belongs to the whole cohort before either PEEP step, not the PEEPEIT-dPL condition GLM assigns; DeepSeek's baseline entry under all_patients keeps the same reading.",
+      "evidence": "p. 2128 Results; p. 2129 Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEP 10 [8-12] vs 8 [5-10] cmH2O, P = 0.021, n_pairs 30, stated paired test.",
+      "evidence": "p. 2128 Results; Abstract"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pldyn continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the dPLdyn contrast kept under GLM's 'dynamic lung stress' target (marked unclear for its domain), and misflags is_primary false for the study's main outcome.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[other ptpmus continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PTPmus-per-minute contrast kept under GLM's target, which also carries the reported subgroup differences.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[other p0 1 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the P0.1 contrast kept under GLM's target.",
+      "evidence": "p. 2131 Results"
+    },
+    {
+      "target": "outcomes[other pmus continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pmus contrast kept under GLM's target.",
+      "evidence": "p. 2131 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung collapse continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: lung collapse -8.5 [-14.4 to -2.5] %, P = 0.007, n_pairs 30, stated paired test.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects; Abstract"
+    },
+    {
+      "target": "outcomes[respiratory mechanics overdistension continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: overdistension P = 0.695 as a p-only contrast with arm labels and n_pairs; no per-condition values are printed (ESM Table E1).",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects; Abstract"
+    },
+    {
+      "target": "outcomes[respiratory mechanics recruitment continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: recruitment +4.1 [-0.02 to +8.6] %, P = 0.060, n_pairs 30, stated paired test.",
+      "evidence": "p. 2129 (page 5), Results, Physiologic effects"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for PaO2/FiO2 at each step at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for PaCO2 at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[other ph continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for pH at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Respiratory rate at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Tidal volume at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[ventilator settings minute ventilation continuou @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Minute ventilation at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Heart rate at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[hemodynamics systolic arterial blood pressure co @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Systolic arterial blood pressure at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[hemodynamics diastolic arterial blood pressure c @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Diastolic blood pressure at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[hemodynamics mean blood pressure continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the main text reports no value, contrast or P for Mean blood pressure at either step, only that the steps were 'similar'/'not different' with data in ESM Table E1. DeepSeek's entry is an empty shell (n and unit only) with no reading to keep.",
+      "evidence": "p. 2129 Results right column (ESM Table E1)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 baseline continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2/FiO2 205 +/- 54 mmHg at enrolment, whole cohort (Table 1; Results).",
+      "evidence": "p. 2128 Results; p. 2129 Table 1"
+    },
+    {
+      "id": "254158111a",
+      "decision": "deepseek",
+      "reason": "The article prints the journal as 'Intensive Care Med (2024) 50:2125-2137'; DeepSeek's value is what the paper shows.",
+      "evidence": "p. 2125 header"
+    },
+    {
+      "id": "3ec0df01a9",
+      "decision": "deepseek",
+      "reason": "The decremental PEEP trial was a procedure used to identify PEEPEIT-dPL, not a comparator condition; the only comparator step is PEEPTABLE from the ARDSnet lower PEEP/FiO2 table.",
+      "evidence": "p. 2127 Study protocol"
+    },
+    {
+      "id": "2a79108e2f",
+      "decision": "glm",
+      "reason": "Every enrolled patient had an esophageal catheter inserted per protocol, and all 30 had complete step comparisons (only ScvO2 missing in 4), so 30 attempts is a well-supported derivation, flagged derived.",
+      "evidence": "p. 2127 Physiologic monitoring; p. 2131 Results ('All the remaining variables were available')"
+    },
+    {
+      "id": "3efdfe20fc",
+      "decision": "unclear",
+      "reason": "Neither code fits. The paper confirms position 'by the presence of cardiac oscillations and by an end-expiratory occlusion test' in spontaneously breathing PSV patients: an occlusion test against spontaneous effort is baydur_occlusion_test. GLM's dynamic_occlusion_test is for passive patients; DeepSeek's signal_quality_verification_only ignores the reported occlusion test. Co-author: code baydur_occlusion_test.",
+      "evidence": "p. 2127 Physiologic monitoring; p. 2126 Study population (PSV, RASS -2 to 0)"
+    },
+    {
+      "id": "c6cc28a5b8",
+      "decision": "deepseek",
+      "reason": "Timing from intubation is reported: 'Patients were intubated for 6 [3-9] days ... prior to study enrollment' (Table 1: Days since intubation, median [IQR] 6 [3-9]).",
+      "evidence": "p. 2128 Results; p. 2129 Table 1"
+    },
+    {
+      "id": "423130253c",
+      "decision": "deepseek",
+      "reason": "The interval is measured from intubation (6 [3-9] days), so the reference event is intubation, not enrolment.",
+      "evidence": "p. 2128 Results; Table 1"
+    },
+    {
+      "id": "e813c0698b",
+      "decision": "deepseek",
+      "reason": "A median of 6 days from intubation is beyond 48 h; the codebook's 'unclear' ruling applies only when timing is known solely relative to enrolment, which is not the case here.",
+      "evidence": "p. 2129 Table 1; CODEBOOK timing_subgroup ruling"
+    },
+    {
+      "id": "42a64d0a4f",
+      "decision": "deepseek",
+      "reason": "PEEPEIT-dPL is the PEEP with the smallest difference between EIT collapse and overdistension; dPLdyn enters only as the pixel-compliance denominator, and no driving transpulmonary pressure target or limit is set. 'other' fits, as both reviewers coded the target strategy.",
+      "evidence": "p. 2127 Study protocol"
+    }
+  ]
+}

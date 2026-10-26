@@ -1,0 +1,3485 @@
+{
+  "record_meta": {
+    "study_id": "tonelli_2023",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s13054-023-04682-5.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Tonelli",
+    "year": 2023,
+    "title": "Physiological effects of lung-protective ventilation in patients with lung fibrosis and usual interstitial pneumonia pattern versus primary ARDS: a matched-control study",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-023-04682-5",
+    "pmid": null,
+    "trial_registration": "NCT05098717",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Inclusion criteria were age > 18 years",
+          "location": "Methods, Study setting and population, p. 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "invasive MV in volume-controlled mode",
+          "location": "Methods, Study setting and population, p. 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena (Italy)",
+          "location": "Methods, Study setting and population, p. 2"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED). At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Blood gas analyses and partitioned respiratory mechanics of the AE-ILD-UIP and the ARDS population at different PEEP levels",
+          "location": "Table 1 caption, p. 3"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Partitioned lung and chest wall mechanics were assessed in a series of AE-ILD-UIP patients matched 1:1 with primary ARDS as controls (based on BMI and PaO2/FiO2 ratio). Three PEEP levels ... were used for measurements.",
+          "location": "Abstract, Methods, p. 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "BRIEF REPORT ... Critical Care (2023) 27:398",
+          "location": "p. 1, header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "a matched-control study",
+      "provenance": {
+        "quote": "Physiological effects of lung-protective ventilation in patients with lung fibrosis and usual interstitial pneumonia pattern versus primary ARDS: a matched-control study",
+        "location": "Title, p. 1"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": true,
+      "derivation": "Single centre stated by description of one RICU; number not printed.",
+      "provenance": {
+        "quote": "The study (ClinicalTrial.gov ID NCT05098717) was carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena (Italy)",
+        "location": "Methods, Study setting and population, p. 2"
+      }
+    },
+    "countries": [
+      "Italy"
+    ],
+    "location_provenance": {
+      "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena (Italy)",
+      "location": "Methods, Study setting and population, p. 2"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Respiratory Intensive Care Unit (RICU)",
+      "provenance": {
+        "quote": "carried out at the Respiratory Intensive Care Unit (RICU) of the University Hospital of Modena (Italy)",
+        "location": "Methods, Study setting and population, p. 2"
+      }
+    },
+    "enrolment_start": "2016-08",
+    "enrolment_end": "2022-07",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "No funding available.",
+      "provenance": {
+        "quote": "Funding: No funding available.",
+        "location": "Declarations, Funding, p. 6"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 20,
+      "derived": true,
+      "derivation": "Sum of the two reported groups: 10 AE-ILD-UIP + 10 matched ARDS.",
+      "provenance": {
+        "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+        "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+      }
+    },
+    "n_analysed": {
+      "value": 20,
+      "derived": true,
+      "derivation": "All 10 AE-ILD-UIP and 10 matched ARDS analysed per Table 1; no exclusions after inclusion reported.",
+      "provenance": {
+        "quote": "Of these, 10 patients were analyzed according to inclusion criteria",
+        "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+      }
+    },
+    "population_description": {
+      "value": "Patients with acute exacerbation of interstitial lung disease with usual interstitial pneumonia pattern (AE-ILD-UIP) developing acute hypoxic respiratory failure requiring invasive mechanical ventilation, matched 1:1 with primary ARDS controls by BMI, PaO2/FIO2 and APACHE II score.",
+      "provenance": {
+        "quote": "AE-ILD-UIP were then matched 1:1 by body mass index, PaO2/FIO2 and acute physiology and chronic health evaluation (APACHE) II score at admission, to a group of patients with primary ARDS under MV extracted from our dataset over the same period.",
+        "location": "Methods, Study setting and population, p. 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "age > 18 years; established diagnosis of ILD with a UIP pattern on a high-resolution computed tomography scan; invasive MV in volume-controlled mode",
+      "provenance": {
+        "quote": "Inclusion criteria were age > 18 years; established diagnosis of ILD with a UIP pattern on a high-resolution computed tomography scan; invasive MV in volume-controlled mode.",
+        "location": "Methods, Study setting and population, p. 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Patients suffering from chronic obstructive pulmonary disease, neuromuscular disease and chest wall deformities were excluded.",
+      "provenance": {
+        "quote": "Patients suffering from chronic obstructive pulmonary disease, neuromuscular disease and chest wall deformities were excluded.",
+        "location": "Methods, Study setting and population, p. 2"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "mixed_some_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 10,
+      "total": 20,
+      "percent_as_reported": null,
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+        "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "Lung infection was the cause for developing ARDS in all patients.",
+      "provenance": {
+        "quote": "Lung infection was the cause for developing ARDS in all patients.",
+        "location": "Results, AE-ILD-UIP as compared with historical, matched, ARDS controls, p. 3"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "SAPS II score",
+        "arm_label": null,
+        "continuous": null,
+        "count": null
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+        "provenance": {
+          "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "Pes-guided titration to obtain positive PL,EE",
+        "provenance": {
+          "quote": "and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "derived": true,
+        "derivation": "Target stated only as 'positive PL,EE', i.e. above zero; lower bound 0 inferred from the word positive.",
+        "provenance": {
+          "quote": "Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "once, during the study measurements",
+        "provenance": {
+          "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED). At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "6 ml/Kg/PBW",
+        "provenance": {
+          "quote": "three different lung-protective strategies including low VT (6 ml/Kg/PBW)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "icu_admission",
+      "hours_from_reference": {
+        "value_type": null,
+        "value": 24,
+        "dispersion_type": null,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": null,
+        "unit": "hours",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "patients with AE-ILD-UIP or ARDS requiring MV were submitted to a partitioned respiratory mechanics measurements within 24 h from admission",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "timing_verbatim": {
+        "value": "within 24 h from admission",
+        "provenance": {
+          "quote": "submitted to a partitioned respiratory mechanics measurements within 24 h from admission",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "single titration manoeuvre; each PEEP level maintained for 30 min",
+      "provenance": {
+        "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters and arterial blood sampling",
+        "location": "Methods, Study procedures and aim, p. 2"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "zeep",
+      "fixed_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW)",
+      "provenance": {
+        "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+        "location": "Methods, Study procedures and aim, p. 2"
+      }
+    },
+    "crossover_order": {
+      "value": "ZEEP, then PEEPLOW (4–8 cmH2O), then PEEPTITRATED; order not stated as randomised",
+      "provenance": {
+        "quote": "three consecutive PEEP levels, i.e., 0 cmH2O (ZEEP), 4–8 cmH2O (PEEPLOW), and Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+        "location": "Methods, Study procedures and aim, p. 2"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "PEEP level was maintained for 30 min before recording",
+      "provenance": {
+        "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters and arterial blood sampling",
+        "location": "Methods, Study procedures and aim, p. 2"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "ild_zeep",
+      "label_verbatim": "ZEEP phase (AE-ILD-UIP)",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": null,
+        "value": 0,
+        "dispersion_type": null,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": null,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "0 cmH2O (ZEEP)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      }
+    },
+    {
+      "label": "ild_peeplow",
+      "label_verbatim": "PEEPLOW phase (AE-ILD-UIP)",
+      "role": "alternative_titration_condition",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 4,
+        "dispersion_type": "iqr",
+        "dispersion_low": 4,
+        "dispersion_high": 4,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 10,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "PEEP, cmH2O 4 (4–4) 4 (4–5) 0.2",
+          "location": "Table 1, PEEPLOW phase, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "ild_peeptitrated",
+      "label_verbatim": "PEEPTITRATED phase (AE-ILD-UIP)",
+      "role": "intervention",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 12,
+        "dispersion_type": "iqr",
+        "dispersion_low": 10,
+        "dispersion_high": 14,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 10,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "PEEP, cmH2O 12 (10–14) 14 (12––17.5) 0.03",
+          "location": "Table 1, PEEPTITRATED phase, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "ards_zeep",
+      "label_verbatim": "ZEEP phase (ARDS)",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": null,
+        "value": 0,
+        "dispersion_type": null,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": null,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "0 cmH2O (ZEEP)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      }
+    },
+    {
+      "label": "ards_peeplow",
+      "label_verbatim": "PEEPLOW phase (ARDS)",
+      "role": "alternative_titration_condition",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 4,
+        "dispersion_type": "iqr",
+        "dispersion_low": 4,
+        "dispersion_high": 5,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 10,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "PEEP, cmH2O 4 (4–4) 4 (4–5) 0.2",
+          "location": "Table 1, PEEPLOW phase, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "ards_peeptitrated",
+      "label_verbatim": "PEEPTITRATED phase (ARDS)",
+      "role": "intervention",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Ten AE-ILD-UIP patients and 10 matched ARDS were included.",
+          "location": "Abstract, Results, p. 1; also Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 14,
+        "dispersion_type": "iqr",
+        "dispersion_low": 12,
+        "dispersion_high": 17.5,
+        "dispersion": null,
+        "secondary_dispersion_type": null,
+        "secondary_dispersion": null,
+        "secondary_dispersion_low": null,
+        "secondary_dispersion_high": null,
+        "n": 10,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "PEEP, cmH2O 12 (10–14) 14 (12––17.5) 0.03",
+          "location": "Table 1, PEEPTITRATED phase, row: PEEP"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL, lung elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, low VT 6 ml/kg/PBW, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "invasive MV in volume-controlled mode ... At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study setting and population and Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 44.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 39.7,
+          "dispersion_high": 50.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 44.4 (39.7–50.7) 17.9 (9.9–23.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: EL"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 17.9,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 9.9,
+          "dispersion_high": 23.3,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 44.4 (39.7–50.7) 17.9 (9.9–23.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: EL"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeplow minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.995,
+          "p_value_verbatim": "0.995",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "At PEEPLOW, PL,EE remained negative and EL did not change (p = 0.995) versus ZEEP.",
+            "location": "Abstract, Results, p. 1; also Fig. 1 panel A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "0.004",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "At PEEPTITRATED, PL,EE increased to 0.8 [0.3–1.5] cmH2O and EL to 49 [43–59] (p = 0.004 and p < 0.001 compared to ZEEP and PEEPLOW, respectively)",
+            "location": "Abstract, Results, p. 1; Fig. 1 panel A shows 0.004"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_peeplow",
+          "arm_label_a": "ild_peeplow",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "EL significantly increased as compared to both ZEEP and PEEPLOW (p = 0.04 and p < 0.0001, respectively, Fig. 1, panel A)",
+            "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeplow minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.365,
+          "p_value_verbatim": "0.365",
+          "test_used": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel B (ARDS, EL): 0.365, 0.720, 0.480",
+            "location": "Figure 1, panel B, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_peeplow",
+          "arm_label_a": "ards_peeplow",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.72,
+          "p_value_verbatim": "0.720",
+          "test_used": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel B (ARDS, EL): 0.365, 0.720, 0.480",
+            "location": "Figure 1, panel B, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.48,
+          "p_value_verbatim": "0.480",
+          "test_used": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel B (ARDS, EL): 0.365, 0.720, 0.480",
+            "location": "Figure 1, panel B, p. 5"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "interaction between group (AE-ILD-UIP vs ARDS) and PEEP setting for EL across ZEEP, PEEPLOW, PEEPTITRATED",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Kruskal–Wallis",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "statistical difference was found for EL (p < 0.001, panel A and B)",
+            "location": "Fig. 1 legend, p. 4"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "EL, cmH2O/L 44.4 (39.7–50.7) 17.9 (9.9–23.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: EL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL, lung elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O, volume-controlled mode",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 43.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 36.8,
+          "dispersion_high": 53,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 43.3 (36.8–53) 14.6 (12.2–19.1) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: EL"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 14.6,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 12.2,
+          "dispersion_high": 19.1,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 43.3 (36.8–53) 14.6 (12.2–19.1) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: EL"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "EL, cmH2O/L 43.3 (36.8–53) 14.6 (12.2–19.1) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: EL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL, lung elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED, volume-controlled mode",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 48.8,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 42.8,
+          "dispersion_high": 59,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 48.8 (59–42.8) 15.2 (12.4–19.7) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: EL"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15.2,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 12.4,
+          "dispersion_high": 19.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "EL, cmH2O/L 48.8 (59–42.8) 15.2 (12.4–19.7) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: EL"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "EL, cmH2O/L 48.8 (59–42.8) 15.2 (12.4–19.7) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: EL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EE, end-expiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, low VT 6 ml/kg/PBW, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": -4.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": -7.6,
+          "dispersion_high": -2.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 4.3 (− 7.6– − 2.3) − 4.1 (− 7.6– − 2.9) 0.66",
+            "location": "Table 1, ZEEP phase, row: PL,EE"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": -4.1,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": -7.6,
+          "dispersion_high": -2.9,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 4.3 (− 7.6– − 2.3) − 4.1 (− 7.6– − 2.9) 0.66",
+            "location": "Table 1, ZEEP phase, row: PL,EE"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeplow minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel C (AE-ILD-UIP, PL,EE): 0.001, <0.001, 0.003",
+            "location": "Figure 1, panel C, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_peeplow",
+          "arm_label_a": "ild_peeplow",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel C (AE-ILD-UIP, PL,EE): 0.001, <0.001, 0.003",
+            "location": "Figure 1, panel C, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.003,
+          "p_value_verbatim": "0.003",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel C (AE-ILD-UIP, PL,EE): 0.001, <0.001, 0.003",
+            "location": "Figure 1, panel C, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeplow minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel D (ARDS, PL,EE): <0.001, 0.044, 0.002",
+            "location": "Figure 1, panel D, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_peeplow",
+          "arm_label_a": "ards_peeplow",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.044,
+          "p_value_verbatim": "0.044",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel D (ARDS, PL,EE): <0.001, 0.044, 0.002",
+            "location": "Figure 1, panel D, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.002,
+          "p_value_verbatim": "0.002",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel D (ARDS, PL,EE): <0.001, 0.044, 0.002",
+            "location": "Figure 1, panel D, p. 5"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "interaction between group and PEEP setting for PL,EE across ZEEP, PEEPLOW, PEEPTITRATED",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": null,
+          "p_value": 0.51,
+          "p_value_verbatim": "0.51",
+          "test_used": "Kruskal–Wallis",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1, panels C and D, interaction p=0.51",
+            "location": "Figure 1, panels C–D, p. 5"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.66,
+          "p_value_verbatim": "0.66",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 4.3 (− 7.6– − 2.3) − 4.1 (− 7.6– − 2.9) 0.66",
+            "location": "Table 1, ZEEP phase, row: PL,EE"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EE, end-expiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": -2.6,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": -4.3,
+          "dispersion_high": -1.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 2.6 (− 4.3– − 1.2) − 2.5 (− 4.6– − 0.5) 0.75",
+            "location": "Table 1, PEEPLOW phase, row: PL,EE"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": -2.5,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": -4.6,
+          "dispersion_high": -0.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 2.6 (− 4.3– − 1.2) − 2.5 (− 4.6– − 0.5) 0.75",
+            "location": "Table 1, PEEPLOW phase, row: PL,EE"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.75,
+          "p_value_verbatim": "0.75",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O − 2.6 (− 4.3– − 1.2) − 2.5 (− 4.6– − 0.5) 0.75",
+            "location": "Table 1, PEEPLOW phase, row: PL,EE"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EE, end-expiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 0.8,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 0.3,
+          "dispersion_high": 1.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O 0.8 (0.3–1.5) 2.4 (0.6–4.9) 0.04",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EE"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 2.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 0.6,
+          "dispersion_high": 4.9,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EE, cmH2O 0.8 (0.3–1.5) 2.4 (0.6–4.9) 0.04",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EE"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.04,
+          "p_value_verbatim": "0.04",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EE, cmH2O 0.8 (0.3–1.5) 2.4 (0.6–4.9) 0.04",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EE"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EI, end-inspiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, low VT 6 ml/kg/PBW, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 16.7,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 14.8,
+          "dispersion_high": 19,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 16.7 (14.8–19) 4.4 (2.9–6.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: PL,EI"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 4.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 2.9,
+          "dispersion_high": 6.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 16.7 (14.8–19) 4.4 (2.9–6.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: PL,EI"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeplow minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.23,
+          "p_value_verbatim": "0.230",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel E (AE-ILD-UIP, PL,EI): 0.230, <0.001, 0.003",
+            "location": "Figure 1, panel E, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_peeplow",
+          "arm_label_a": "ild_peeplow",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "while PL,EI and ΔPL were higher as compared to PEEPLOW (p < 0.001 and p = 0.003, respectively, Fig. 1, panel E and G)",
+            "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.003,
+          "p_value_verbatim": "0.003",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel E (AE-ILD-UIP, PL,EI): 0.230, <0.001, 0.003",
+            "location": "Figure 1, panel E, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeplow minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.005,
+          "p_value_verbatim": "0.005",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel F (ARDS, PL,EI): 0.005, <0.001, 0.005",
+            "location": "Figure 1, panel F, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_peeplow",
+          "arm_label_a": "ards_peeplow",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel F (ARDS, PL,EI): 0.005, <0.001, 0.005",
+            "location": "Figure 1, panel F, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.005,
+          "p_value_verbatim": "0.005",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel F (ARDS, PL,EI): 0.005, <0.001, 0.005",
+            "location": "Figure 1, panel F, p. 5"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "interaction between group and PEEP setting for PL,EI across ZEEP, PEEPLOW, PEEPTITRATED",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Kruskal–Wallis",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "statistical difference was found for EL (p < 0.001, panel A and B), PL,EI (p < 0.001, panel E and F, p < 0.00) and ΔPL (< 0.001, panel G and H)",
+            "location": "Fig. 1 legend, p. 4"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O 16.7 (14.8–19) 4.4 (2.9–6.3) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: PL,EI"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EI, end-inspiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 11.3,
+          "dispersion_high": 18.7,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 15.3 (11.3–18.7) 10.5 (5–14) 0.01",
+            "location": "Table 1, PEEPLOW phase, row: PL,EI"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 10.5,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 5,
+          "dispersion_high": 14,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 15.3 (11.3–18.7) 10.5 (5–14) 0.01",
+            "location": "Table 1, PEEPLOW phase, row: PL,EI"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.01,
+          "p_value_verbatim": "0.01",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O 15.3 (11.3–18.7) 10.5 (5–14) 0.01",
+            "location": "Table 1, PEEPLOW phase, row: PL,EI"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL,EI, end-inspiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 23.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 21.3,
+          "dispersion_high": 26.7,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 23.3 (21.3–26.7) 16.9 (13.5–19.2) 0.001",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EI"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 16.9,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 13.5,
+          "dispersion_high": 19.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PL,EI, cmH2O 23.3 (21.3–26.7) 16.9 (13.5–19.2) 0.001",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EI"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PL,EI, cmH2O 23.3 (21.3–26.7) 16.9 (13.5–19.2) 0.001",
+            "location": "Table 1, PEEPTITRATED phase, row: PL,EI"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPL, transpulmonary driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, low VT 6 ml/kg/PBW, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 21.1,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 17.8,
+          "dispersion_high": 23.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 21.1 (17.8–23.6) 9.3 (7–11.5) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: ΔPL"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 9.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 7,
+          "dispersion_high": 11.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 21.1 (17.8–23.6) 9.3 (7–11.5) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: ΔPL"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeplow minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.018,
+          "p_value_verbatim": "0.018",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "while ΔPL significantly decreased from baseline (p = 0.018,)",
+            "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_peeplow",
+          "arm_label_a": "ild_peeplow",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.003,
+          "p_value_verbatim": "0.003",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "ΔPL decreased at PEEPLOW (p = 0.018) and increased at PEEPTITRATED (p = 0.003).",
+            "location": "Abstract, Results, p. 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ild_peeptitrated minus ild_zeep",
+          "arm_label_a": "ild_zeep",
+          "arm_label_b": "ild_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.446,
+          "p_value_verbatim": "0.446",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel G (AE-ILD-UIP, ΔPL): 0.446, 0.018, 0.003",
+            "location": "Figure 1, panel G, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeplow minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeplow",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.087,
+          "p_value_verbatim": "0.087",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel H (ARDS, ΔPL): 0.087, 0.632, 0.942",
+            "location": "Figure 1, panel H, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_peeplow",
+          "arm_label_a": "ards_peeplow",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.632,
+          "p_value_verbatim": "0.632",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel H (ARDS, ΔPL): 0.087, 0.632, 0.942",
+            "location": "Figure 1, panel H, p. 5"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ards_peeptitrated minus ards_zeep",
+          "arm_label_a": "ards_zeep",
+          "arm_label_b": "ards_peeptitrated",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 10,
+          "p_value": 0.942,
+          "p_value_verbatim": "0.942",
+          "test_used": null,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Fig. 1 panel H (ARDS, ΔPL): 0.087, 0.632, 0.942",
+            "location": "Figure 1, panel H, p. 5"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "interaction between group and PEEP setting for ΔPL across ZEEP, PEEPLOW, PEEPTITRATED",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Kruskal–Wallis",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "statistical difference was found for EL (p < 0.001, panel A and B), PL,EI (p < 0.001, panel E and F, p < 0.00) and ΔPL (< 0.001, panel G and H)",
+            "location": "Fig. 1 legend, p. 4"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O 21.1 (17.8–23.6) 9.3 (7–11.5) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: ΔPL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPL, transpulmonary driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 18.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 15.6,
+          "dispersion_high": 21.8,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 18.4 (15.6–21.8) 12.3 (8.5–16.6) 0.02",
+            "location": "Table 1, PEEPLOW phase, row: ΔPL"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 12.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 8.5,
+          "dispersion_high": 16.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 18.4 (15.6–21.8) 12.3 (8.5–16.6) 0.02",
+            "location": "Table 1, PEEPLOW phase, row: ΔPL"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.02,
+          "p_value_verbatim": "0.02",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O 18.4 (15.6–21.8) 12.3 (8.5–16.6) 0.02",
+            "location": "Table 1, PEEPLOW phase, row: ΔPL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPL, transpulmonary driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 22.6,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 20.8,
+          "dispersion_high": 25.8,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 22.6 (20.8–25.8) 13.9 (6.6–16.5) 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPL"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 13.9,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 6.6,
+          "dispersion_high": 16.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPL, cmH2O 22.6 (20.8–25.8) 13.9 (6.6–16.5) 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPL"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.0001,
+          "p_value_verbatim": "0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPL, cmH2O 22.6 (20.8–25.8) 13.9 (6.6–16.5) 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPL"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Etot, respiratory system elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 49,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 43.9,
+          "dispersion_high": 54.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 49 (43.9–54.7) 22 (16.8–28) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: Etot"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 16.8,
+          "dispersion_high": 28,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 49 (43.9–54.7) 22 (16.8–28) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: Etot"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L 49 (43.9–54.7) 22 (16.8–28) < 0.0001",
+            "location": "Table 1, ZEEP phase, row: Etot"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Etot, respiratory system elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 48.5,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 40,
+          "dispersion_high": 56.8,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 48.5 (40–56.8) 22.1 (19.1–25.2) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: Etot"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 22.1,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 19.1,
+          "dispersion_high": 25.2,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 48.5 (40–56.8) 22.1 (19.1–25.2) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: Etot"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L 48.5 (40–56.8) 22.1 (19.1–25.2) < 0.0001",
+            "location": "Table 1, PEEPLOW phase, row: Etot"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Etot, respiratory system elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 55.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 45.9,
+          "dispersion_high": 62.5,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 55.3 (45.9–62.5) 20.6 (19–24.5) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: Etot"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 20.6,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 19,
+          "dispersion_high": 24.5,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Etot, cmH2O/L 55.3 (45.9–62.5) 20.6 (19–24.5) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: Etot"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Etot, cmH2O/L 55.3 (45.9–62.5) 20.6 (19–24.5) < 0.0001",
+            "location": "Table 1, PEEPTITRATED phase, row: Etot"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ecw, chest wall elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 3.2,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 2.5,
+          "dispersion_high": 5.7,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.2 (2.5–5.7) 5.4 (4–7.4) 0.12",
+            "location": "Table 1, ZEEP phase, row: Ecw"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 5.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 4,
+          "dispersion_high": 7.4,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.2 (2.5–5.7) 5.4 (4–7.4) 0.12",
+            "location": "Table 1, ZEEP phase, row: Ecw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.12,
+          "p_value_verbatim": "0.12",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.2 (2.5–5.7) 5.4 (4–7.4) 0.12",
+            "location": "Table 1, ZEEP phase, row: Ecw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ecw, chest wall elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 3.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 2.3,
+          "dispersion_high": 5.6,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.4 (2.3–5.6) 5.7 (4.3–8.3) 0.09",
+            "location": "Table 1, PEEPLOW phase, row: Ecw"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 5.7,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 4.3,
+          "dispersion_high": 8.3,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.4 (2.3–5.6) 5.7 (4.3–8.3) 0.09",
+            "location": "Table 1, PEEPLOW phase, row: Ecw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.09,
+          "p_value_verbatim": "0.09",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.4 (2.3–5.6) 5.7 (4.3–8.3) 0.09",
+            "location": "Table 1, PEEPLOW phase, row: Ecw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ecw, chest wall elastance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 3.7,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 3.2,
+          "dispersion_high": 5.9,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.7 (3.2–5.9) 5.7 (4.7–7.2) 0.1",
+            "location": "Table 1, PEEPTITRATED phase, row: Ecw"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 5.7,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 4.7,
+          "dispersion_high": 7.2,
+          "n": 10,
+          "unit": "cmH2O/L",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.7 (3.2–5.9) 5.7 (4.7–7.2) 0.1",
+            "location": "Table 1, PEEPTITRATED phase, row: Ecw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.1,
+          "p_value_verbatim": "0.1",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "Ecw, cmH2O/L 3.7 (3.2–5.9) 5.7 (4.7–7.2) 0.1",
+            "location": "Table 1, PEEPTITRATED phase, row: Ecw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPaw, driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "volume-controlled mode, after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 16.8,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 13.8,
+          "dispersion_high": 19.3,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (13.8–19.3) 14.4 (11.5–21.2) 0.56",
+            "location": "Table 1, ZEEP phase, row: ΔPaw"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 14.4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 11.5,
+          "dispersion_high": 21.2,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (13.8–19.3) 14.4 (11.5–21.2) 0.56",
+            "location": "Table 1, ZEEP phase, row: ΔPaw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.56,
+          "p_value_verbatim": "0.56",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (13.8–19.3) 14.4 (11.5–21.2) 0.56",
+            "location": "Table 1, ZEEP phase, row: ΔPaw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPaw, driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 16.8,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 14.3,
+          "dispersion_high": 18.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (14.3–18.6) 15.1 (11.9–21.4) 0.9",
+            "location": "Table 1, PEEPLOW phase, row: ΔPaw"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15.1,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 11.9,
+          "dispersion_high": 21.4,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (14.3–18.6) 15.1 (11.9–21.4) 0.9",
+            "location": "Table 1, PEEPLOW phase, row: ΔPaw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.9,
+          "p_value_verbatim": "0.9",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 16.8 (14.3–18.6) 15.1 (11.9–21.4) 0.9",
+            "location": "Table 1, PEEPLOW phase, row: ΔPaw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPaw, driving pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 19.1,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 16.1,
+          "dispersion_high": 21.6,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 19.1 (16.1–21.6) 15.3 (9.4–17) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPaw"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 15.3,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 9.4,
+          "dispersion_high": 17,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 19.1 (16.1–21.6) 15.3 (9.4–17) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPaw"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.01,
+          "p_value_verbatim": "0.01",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "ΔPaw, cmH2O 19.1 (16.1–21.6) 15.3 (9.4–17) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: ΔPaw"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ZEEP phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "arterial blood sampling after 30 min at each PEEP level",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters and arterial blood sampling",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 74,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 66.5,
+          "dispersion_high": 80,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 74 (66.5–80) 83 (75–89) 0.3",
+            "location": "Table 1, ZEEP phase, row: pO2"
+          }
+        },
+        {
+          "arm_label": "ards_zeep",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 83,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 75,
+          "dispersion_high": 89,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 74 (66.5–80) 83 (75–89) 0.3",
+            "location": "Table 1, ZEEP phase, row: pO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.3,
+          "p_value_verbatim": "0.3",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "pO2, cmH2O 74 (66.5–80) 83 (75–89) 0.3",
+            "location": "Table 1, ZEEP phase, row: pO2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "arterial blood sampling after 30 min at PEEP 4–8 cmH2O",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters and arterial blood sampling",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 93.5,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 73.3,
+          "dispersion_high": 107,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 93.5 (73.3–107) 74.5 (68.3–80.5) 0.1",
+            "location": "Table 1, PEEPLOW phase, row: pO2"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 74.5,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 68.3,
+          "dispersion_high": 80.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 93.5 (73.3–107) 74.5 (68.3–80.5) 0.1",
+            "location": "Table 1, PEEPLOW phase, row: pO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.1,
+          "p_value_verbatim": "0.1",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "pO2, cmH2O 93.5 (73.3–107) 74.5 (68.3–80.5) 0.1",
+            "location": "Table 1, PEEPLOW phase, row: pO2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "arterial blood sampling after 30 min at Pes-guided PEEPTITRATED",
+        "provenance": {
+          "quote": "At each phase, PEEP level was maintained for 30 min before recording all respiratory parameters and arterial blood sampling",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 80,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 58,
+          "dispersion_high": 93,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 80 (58–93) 105 (80–134) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: pO2"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 105,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 80,
+          "dispersion_high": 134,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "pO2, cmH2O 80 (58–93) 105 (80–134) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: pO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.01,
+          "p_value_verbatim": "0.01",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "pO2, cmH2O 80 (58–93) 105 (80–134) 0.01",
+            "location": "Table 1, PEEPTITRATED phase, row: pO2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 2,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPLOW phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "PEEP delivered during PEEPLOW phase (4–8 cmH2O range)",
+        "provenance": {
+          "quote": "4–8 cmH2O (PEEPLOW)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 4,
+          "dispersion_high": 4,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O 4 (4–4) 4 (4–5) 0.2",
+            "location": "Table 1, PEEPLOW phase, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "ards_peeplow",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 4,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 4,
+          "dispersion_high": 5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O 4 (4–4) 4 (4–5) 0.2",
+            "location": "Table 1, PEEPLOW phase, row: PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.2,
+          "p_value_verbatim": "0.2",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PEEP, cmH2O 4 (4–4) 4 (4–5) 0.2",
+            "location": "Table 1, PEEPLOW phase, row: PEEP"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": 3,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "PEEPTITRATED phase"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "PEEP delivered after Pes-guided titration",
+        "provenance": {
+          "quote": "Pes-guided titration to obtain positive PL,EE (PEEPTITRATED)",
+          "location": "Methods, Study procedures and aim, p. 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ild_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O 12 (10–14) 14 (12––17.5) 0.03",
+            "location": "Table 1, PEEPTITRATED phase, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "ards_peeptitrated",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion": null,
+          "dispersion_low": 12,
+          "dispersion_high": 17.5,
+          "n": 10,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O 12 (10–14) 14 (12––17.5) 0.03",
+            "location": "Table 1, PEEPTITRATED phase, row: PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.03,
+          "p_value_verbatim": "0.03",
+          "adjusted": false,
+          "adjustment_covariates": "1:1 propensity score matching by BMI, PaO2/FiO2, APACHE II",
+          "test_used": "Wilcoxon test",
+          "provenance": {
+            "quote": "PEEP, cmH2O 12 (10–14) 14 (12––17.5) 0.03",
+            "location": "Table 1, PEEPTITRATED phase, row: PEEP"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "PEEPTITRATED, but not PEEPLOW setting, resulted in higher PEEP in ARDS () compared with AE-ILD-UIP (14 VS 12 cmH2O, p < 0.001).",
+            "location": "Results, AE-ILD-UIP as compared with historical, matched, ARDS controls, p. 3–4"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Died while on MV",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "while on MV"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ild_zeep",
+          "events": 10,
+          "total": 10,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "All of them died while on MV.",
+            "location": "Results, Respiratory mechanics of AE-ILD-UIP, p. 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "mixed",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_subgroup mixed: 10 AE-ILD-UIP (non-ARDS fibrotic) plus 10 primary ARDS controls. timing: measurements within 24 h from admission, so early_within_48h. obesity: BMI was a matching variable but no BMI values reported in the main text (in supplement eTable 1, not provided). ptp_target_subgroups: Pes-guided titration to positive end-expiratory PL via absolute subtraction approach."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Checked against all clusters in COHORTS.md. Registration NCT05098717 (retrospectively registered) does not match any other record's registration; enrolment August 2016 to July 2022 at the RICU of University Hospital of Modena, Italy, a centre not named in any cluster; population is AE-ILD-UIP with matched ARDS controls, not an ARDS-only cohort. No overlap concluded.",
+    "unclear_items": [
+      "outcomes[EL].paired_effects: p-value for EL at PEEPTITRATED vs ZEEP in AE-ILD-UIP is 0.004 in the Abstract and Fig. 1 panel A but 0.04 in the Results text ('p = 0.04 and p < 0.0001'); recorded the Abstract/figure value 0.004 and flagged the discrepancy.",
+      "outcomes[PEEP, PEEPTITRATED].effect_estimates: Table 1 gives p = 0.03 for between-group PEEP at PEEPTITRATED but the text states p < 0.001; both recorded.",
+      "outcomes[pO2].data[].unit: Table 1 prints the unit for pO2 (and pCO2, pH) as 'cmH2O', an obvious typographical error for mmHg; recorded verbatim as printed without conversion.",
+      "intervention.ptp_computation.method: coded absolute_pes_subtraction from the Talmor-style description, but the exact PL computation (Paw − Pes vs elastance-derived) is described only in Additional file 1 Supplement, which was not provided.",
+      "intervention.balloon_calibration: no balloon filling or calibration detail in the main text; the Supplement (referencing Chiumello occlusion-test methods, ref 10) was not provided, so coded not_reported.",
+      "intervention.peep_titration_target.end_expiratory_ptp_target_low_cmh2o: target stated only as 'positive PL,EE'; lower bound 0 inferred.",
+      "population baseline characteristics (age, sex, BMI, APACHE II, PaO2/FiO2) are in Additional file 1: eTable 1, not provided; all null here.",
+      "design.randomised: coded false; the study is a retrospective matched-control physiologic study with no randomisation described.",
+      "mortality outcome: ARDS-control mortality not reported; only AE-ILD-UIP deaths (10/10) stated. Denominator for the mortality entry uses the ild_zeep arm label as the cohort has no dedicated single-group label.",
+      "adults_18_plus: explicit age > 18 criterion present, so coded yes without inference."
+    ],
+    "data_only_in_figure": [
+      "Individual paired values of EL, PL,EE, PL,EI and ΔPL at ZEEP, PEEPLOW and PEEPTITRATED for both groups (Fig. 1, panels A–H); only p-values are printed in text/figure."
+    ],
+    "contact_author_needed": true,
+    "general_notes": "COHORTS.md flagged this study at full-text screening: index population is acute exacerbation of ILD-UIP (n=10) with 10 matched ARDS controls, not an ARDS population; included because esophageal-pressure-guided PEEP titration was actually applied and clinically relevant physiologic outcomes are reported. Paired within-group p-values for Ecw, Etot and ΔPaw across PEEP phases are not reported in text or figure; only EL, PL,EE, PL,EI and ΔPL have Fig. 1 panels. No schema field exists for the between-group interaction p-values other than as omnibus paired_effects entries; recorded there."
+  }
+}

@@ -1,0 +1,4120 @@
+{
+  "record_meta": {
+    "study_id": "boesing_2024b",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s13054-024-04867-6.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Boesing",
+    "year": 2024,
+    "title": "Effects of prone positioning on lung mechanical power components in patients with acute respiratory distress syndrome: a physiologic study",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-024-04867-6",
+    "pmid": null,
+    "trial_registration": "DRKS00017449",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Exclusion criteria were age < 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury, and severe hemodynamic instability.",
+          "location": "p. 2, Methods, Patients"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients were passively ventilated in a horizontal position with 0° body inclination throughout the study period with an Engström Carescape R860 ventilator in a volume-controlled ventilation mode",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Length of ICU stay (days) 17 (11–29)",
+          "location": "p. 4, Table 1, row: Length of ICU stay"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The lowest PEEP to achieve an end-expiratory PTP of 0 to 2 cmH2O was used for the Peso-guided ventilation strategy",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Respiratory system elastance (cmH2O/L) 20.0 (16.8 to 29.5) | 18.9 (16.1 to 27.3) | 22.2 (17.8 to 24.9)",
+          "location": "p. 5, Table 2, row: Respiratory system elastance"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+          "location": "p. 4, Results, para 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This prospective physiologic study included 55 patients with moderate to severe ARDS.",
+          "location": "p. 1, Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Boesing et al. Critical Care (2024) 28:82",
+          "location": "p. 1, header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "This prospective physiologic study included 55 patients with moderate to severe ARDS.",
+      "provenance": {
+        "quote": "This prospective physiologic study included 55 patients with moderate to severe ARDS.",
+        "location": "p. 1, Abstract, Methods"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": null,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": true,
+      "derivation": "Single institution named (University Medical Center Mannheim); no other centres listed.",
+      "provenance": {
+        "quote": "Department of Anesthesiology and Critical Care Medicine, University Medical Center Mannheim, Medical Faculty Mannheim of the University of Heidelberg, Theodor-Kutzer-Ufer 1-3, 68167 Mannheim, Germany",
+        "location": "p. 10, Author details"
+      }
+    },
+    "countries": [
+      "Germany"
+    ],
+    "location_provenance": {
+      "quote": "University Medical Center Mannheim, Medical Faculty Mannheim of the University of Heidelberg, Theodor-Kutzer-Ufer 1-3, 68167 Mannheim, Germany",
+      "location": "p. 10, Author details"
+    },
+    "planned_sample_size": {
+      "value": 55,
+      "provenance": {
+        "quote": "an estimated sample size of 55 patients was required to measure a change in lung total elastic power (primary endpoint of the study) between SP and PP with a power of 0.8 and a significance level of 0.05.",
+        "location": "p. 4, Statistical analysis"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "an estimated sample size of 55 patients was required to measure a change in lung total elastic power (primary endpoint of the study) between SP and PP with a power of 0.8 and a significance level of 0.05. The effect size was calculated based on the change in lung total elastic power when using a Peso-guided ventilation strategy during SP and PP.",
+      "provenance": {
+        "quote": "an estimated sample size of 55 patients was required to measure a change in lung total elastic power (primary endpoint of the study) between SP and PP with a power of 0.8 and a significance level of 0.05.",
+        "location": "p. 4, Statistical analysis"
+      }
+    },
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "ICU, University Medical Center Mannheim; patients passively ventilated, sedated and paralysed for study procedures",
+      "provenance": {
+        "quote": "All patients were sedated with sufentanil (20–30 μg/h) and midazolam (10–20 mg/h) to achieve a score of − 5 on the Richmond Agitation-Sedation Scale, and complete neuromuscular blockade was maintained throughout the study period with cisatracurium.",
+        "location": "p. 2, Methods, Clinical management"
+      }
+    },
+    "enrolment_start": "2019-07",
+    "enrolment_end": "2023-06",
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "Open Access funding enabled and organized by Projekt DEAL. This study was supported by departmental funds.",
+      "provenance": {
+        "quote": "Open Access funding enabled and organized by Projekt DEAL. This study was supported by departmental funds.",
+        "location": "p. 10, Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 55,
+      "provenance": {
+        "quote": "Fifty-five patients underwent the current study protocol, which was part of a multipurpose study.",
+        "location": "p. 4, Statistical analysis"
+      }
+    },
+    "n_analysed": {
+      "value": 55,
+      "provenance": {
+        "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+        "location": "p. 4, Results, para 1"
+      }
+    },
+    "population_description": {
+      "value": "Consecutive patients with moderate to severe ARDS (defined by the ratio of arterial partial pressure of oxygen to the fraction of inspired oxygen [PaO2/FiO2] ≤ 150 mmHg according to the Berlin definition)",
+      "provenance": {
+        "quote": "Consecutive patients with moderate to severe ARDS (defined by the ratio of arterial partial pressure of oxygen to the fraction of inspired oxygen [PaO2/FiO2] ≤ 150 mmHg according to the Berlin definition [15]) were enrolled between July 2019 and June 2023.",
+        "location": "p. 2, Methods, Patients"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Moderate to severe ARDS, PaO2/FiO2 ≤ 150 mmHg according to the Berlin definition",
+      "provenance": {
+        "quote": "Consecutive patients with moderate to severe ARDS (defined by the ratio of arterial partial pressure of oxygen to the fraction of inspired oxygen [PaO2/FiO2] ≤ 150 mmHg according to the Berlin definition [15]) were enrolled between July 2019 and June 2023.",
+        "location": "p. 2, Methods, Patients"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "age < 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury, and severe hemodynamic instability",
+      "provenance": {
+        "quote": "Exclusion criteria were age < 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury, and severe hemodynamic instability.",
+        "location": "p. 2, Methods, Patients"
+      }
+    },
+    "age": {
+      "value_type": "median",
+      "value": 64,
+      "dispersion_type": "iqr",
+      "dispersion_low": 52,
+      "dispersion_high": 77,
+      "n": 55,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age (years) 64 (52–77)",
+        "location": "p. 4, Table 1, row: Age"
+      }
+    },
+    "sex_female": null,
+    "sex_male": {
+      "n": 37,
+      "total": 55,
+      "percent_as_reported": 67,
+      "provenance": {
+        "quote": "Male sex, n (%) 37 (67)",
+        "location": "p. 4, Table 1, row: Male sex"
+      }
+    },
+    "bmi": {
+      "value_type": "median",
+      "value": 29,
+      "dispersion_type": "iqr",
+      "dispersion_low": 26,
+      "dispersion_high": 32,
+      "n": 55,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "Body mass index (kg/m2) 29 (26–32)",
+        "location": "p. 4, Table 1, row: Body mass index"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definition",
+      "provenance": {
+        "quote": "moderate to severe ARDS (defined by the ratio of arterial partial pressure of oxygen to the fraction of inspired oxygen [PaO2/FiO2] ≤ 150 mmHg according to the Berlin definition [15])",
+        "location": "p. 2, Methods, Patients"
+      }
+    },
+    "n_ards": {
+      "n": 55,
+      "total": 55,
+      "provenance": {
+        "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+        "location": "p. 4, Results, para 1"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "Bacterial pneumonia 16 (29%), viral pneumonia 28 (51%), non-pulmonary sepsis 11 (20%)",
+      "provenance": {
+        "quote": "Cause of ARDS, n (%) — Bacterial pneumonia 16 (29); Viral pneumonia 28 (51); Non-pulmonary sepsis 11 (20)",
+        "location": "p. 4, Table 1, rows: Cause of ARDS"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 124,
+      "dispersion_type": "iqr",
+      "dispersion_low": 110,
+      "dispersion_high": 154,
+      "n": 55,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2 (mmHg) 124 (110 to 154) | 176 (144 to 237) | 222 (177 to 299)",
+        "location": "p. 7, Table 3, row: PaO2/FiO2 (baseline condition, PEEP/FiO2 table)"
+      }
+    },
+    "apache_ii": null,
+    "sofa": {
+      "value_type": "median",
+      "value": 10,
+      "dispersion_type": "iqr",
+      "dispersion_low": 9,
+      "dispersion_high": 12,
+      "n": 55,
+      "provenance": {
+        "quote": "SOFA 10 (9–12)",
+        "location": "p. 4, Table 1, row: SOFA"
+      }
+    },
+    "saps_ii": {
+      "value_type": "median",
+      "value": 70,
+      "dispersion_type": "iqr",
+      "dispersion_low": 63,
+      "dispersion_high": 78,
+      "n": 55,
+      "provenance": {
+        "quote": "SAPS II 70 (63–78)",
+        "location": "p. 4, Table 1, row: SAPS II"
+      }
+    },
+    "n_prone_positioning": {
+      "n": 55,
+      "total": 55,
+      "provenance": {
+        "quote": "After completing the measurements for the Peso-guided ventilation strategy in SP, patients were placed in PP with unchanged ventilator settings.",
+        "location": "p. 3, Methods, Study protocol"
+      }
+    },
+    "n_neuromuscular_blockade": {
+      "n": 55,
+      "total": 55,
+      "provenance": {
+        "quote": "complete neuromuscular blockade was maintained throughout the study period with cisatracurium",
+        "location": "p. 2, Methods, Clinical management"
+      }
+    },
+    "n_ecmo": null,
+    "n_vasopressors": {
+      "n": 48,
+      "total": 55,
+      "provenance": {
+        "quote": "During the study period, 48 patients required only norepinephrine, whereas one patient also required dobutamine.",
+        "location": "p. 4, Results, para 1"
+      }
+    },
+    "additional_baseline": [
+      {
+        "name_verbatim": "Cause of ARDS, n (%) — Bacterial pneumonia",
+        "arm_label": null,
+        "count": {
+          "n": 16,
+          "total": 55,
+          "percent_as_reported": 29,
+          "provenance": {
+            "quote": "Bacterial pneumonia 16 (29)",
+            "location": "p. 4, Table 1, row: Bacterial pneumonia"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS, n (%) — Viral pneumonia",
+        "arm_label": null,
+        "count": {
+          "n": 28,
+          "total": 55,
+          "percent_as_reported": 51,
+          "provenance": {
+            "quote": "Viral pneumonia 28 (51)",
+            "location": "p. 4, Table 1, row: Viral pneumonia"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS, n (%) — Non-pulmonary sepsis",
+        "arm_label": null,
+        "count": {
+          "n": 11,
+          "total": 55,
+          "percent_as_reported": 20,
+          "provenance": {
+            "quote": "Non-pulmonary sepsis 11 (20)",
+            "location": "p. 4, Table 1, row: Non-pulmonary sepsis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Mechanical ventilation before study (days)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 6,
+          "n": 55,
+          "unit": "days",
+          "provenance": {
+            "quote": "Mechanical ventilation before study (days) 4 (3–6)",
+            "location": "p. 4, Table 1, row: Mechanical ventilation before study"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "NutriVent nasogastric catheter; Sidam, Mirandola, Italy",
+      "provenance": {
+        "quote": "An esophageal balloon catheter (NutriVent nasogastric catheter; Sidam, Mirandola, Italy) was advanced into the stomach, inflated, and withdrawn into the esophagus until the appearance of cardiac artifacts on the pressure tracing",
+        "location": "p. 2, Methods, Clinical management"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "minimal_volume",
+      "method_verbatim": {
+        "value": "The balloon was inflated with the lowest volume to obtain the largest swings in Peso during tidal ventilation.",
+        "provenance": {
+          "quote": "The balloon was inflated with the lowest volume to obtain the largest swings in Peso during tidal ventilation.",
+          "location": "p. 2, Methods, Clinical management"
+        }
+      },
+      "position_verification": {
+        "value": "advanced into the stomach, inflated, and withdrawn into the esophagus until the appearance of cardiac artifacts on the pressure tracing",
+        "provenance": {
+          "quote": "was advanced into the stomach, inflated, and withdrawn into the esophagus until the appearance of cardiac artifacts on the pressure tracing [16]",
+          "location": "p. 2, Methods, Clinical management"
+        }
+      },
+      "occlusion_ratio_acceptance": {
+        "value": "ratio of change in Peso to change in airway pressure was 0.8–1.2 during an end-expiratory occlusion test",
+        "provenance": {
+          "quote": "Peso measurements were considered reliable if the ratio of change in Peso to change in airway pressure was 0.8–1.2 during an end-expiratory occlusion test [17, 18].",
+          "location": "p. 2, Methods, Clinical management"
+        }
+      }
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Expiratory and inspiratory airway pressures and Peso were measured during a 2-s inspiratory and 2-s expiratory hold at zero flow to compute end-inspiratory and end-expiratory PTP (airway pressure − Peso), respectively.",
+        "provenance": {
+          "quote": "Expiratory and inspiratory airway pressures and Peso were measured during a 2-s inspiratory and 2-s expiratory hold at zero flow to compute end-inspiratory and end-expiratory PTP (airway pressure − Peso), respectively.",
+          "location": "p. 3, Methods, Measurements"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "The lowest PEEP to achieve an end-expiratory PTP of 0 to 2 cmH2O was used for the Peso-guided ventilation strategy",
+        "provenance": {
+          "quote": "The lowest PEEP to achieve an end-expiratory PTP of 0 to 2 cmH2O was used for the Peso-guided ventilation strategy (Additional file 1: Fig. S1).",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "end-expiratory PTP of 0 to 2 cmH2O",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "end-expiratory PTP of 0 to 2 cmH2O",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "In SP, patients were ventilated in a volume-controlled mode after the recruitment maneuver starting with a PEEP of 25 cmH2O. PEEP was decreased stepwise by 2 cmH2O every 2 min",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "titration_frequency": {
+        "value": "PEEP decreased stepwise by 2 cmH2O every 2 min during decremental titration; re-titrated in prone after recruitment manoeuvre; measurements after 30-min equilibration with each strategy",
+        "provenance": {
+          "quote": "PEEP was decreased stepwise by 2 cmH2O every 2 min ... A recruitment maneuver was then performed, and PEEP was titrated to end-expiratory Peso targeting an end-expiratory PTP of 0 to 2 cmH2O. Physiologic measurements were obtained after a 30-min equilibration period with each ventilation strategy.",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "a dynamic recruitment maneuver was performed before each ventilation strategy, as detailed in Additional file 1: Fig. S1",
+        "provenance": {
+          "quote": "To standardize lung volume history and allow for comparisons between ventilation strategies and positioning, a dynamic recruitment maneuver was performed before each ventilation strategy, as detailed in Additional file 1: Fig. S1.",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "tidal volume (VT) of 6 mL/kg of predicted body weight",
+        "provenance": {
+          "quote": "using a tidal volume (VT) of 6 mL/kg of predicted body weight and a respiratory rate (RR) and fraction of inspired oxygen (FiO2) according to recent guidelines",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "VT and RR were modified only if ΔPRS was greater than 14 cmH2O and pHa was < 7.25.",
+        "provenance": {
+          "quote": "VT and RR were modified only if ΔPRS was greater than 14 cmH2O and pHa was < 7.25.",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Sedation with sufentanil and midazolam, complete neuromuscular blockade with cisatracurium; norepinephrine if MAP < 65 mmHg; dobutamine if cardiac index < 2.0 L/min/m2",
+        "provenance": {
+          "quote": "Norepinephrine was administered if the mean arterial pressure (MAP) was < 65 mmHg despite preload optimization. Dobutamine was administered if the cardiac index measured by transpulmonary thermodilution was < 2.0 L/min/m2 despite sufficient cardiac pre- and afterload.",
+          "location": "pp. 2–3, Methods, Clinical management"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": {
+        "value_type": "median",
+        "value": 96,
+        "dispersion_type": "iqr",
+        "dispersion_low": 72,
+        "dispersion_high": 144,
+        "n": 55,
+        "unit": "hours",
+        "derived": true,
+        "derivation": "Table 1 reports 'Mechanical ventilation before study (days) 4 (3–6)'; converted days to hours (×24) for the timing subgroup. Reference event intubation inferred from 'mechanical ventilation before study'.",
+        "provenance": {
+          "quote": "Mechanical ventilation before study (days) 4 (3–6)",
+          "location": "p. 4, Table 1, row: Mechanical ventilation before study"
+        }
+      },
+      "timing_verbatim": {
+        "value": "Mechanical ventilation before study (days) 4 (3–6)",
+        "provenance": {
+          "quote": "Mechanical ventilation before study (days) 4 (3–6)",
+          "location": "p. 4, Table 1, row: Mechanical ventilation before study"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Short-term physiologic study; measurements after a 30-min equilibration period with each ventilation strategy",
+      "provenance": {
+        "quote": "Physiologic measurements were obtained after a 30-min equilibration period with each ventilation strategy.",
+        "location": "p. 3, Methods, Study protocol"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "baseline measurement in SP using a ventilation strategy with PEEP based on the lower PEEP/FiO2 table (baseline)",
+      "provenance": {
+        "quote": "(1) baseline measurement in SP using a ventilation strategy with PEEP based on the lower PEEP/FiO2 table (baseline) [19, 20]",
+        "location": "p. 3, Methods, Study protocol"
+      }
+    },
+    "crossover_order": {
+      "value": "Fixed sequence, not randomised: (1) baseline lower PEEP/FiO2 table in supine; (2) Peso-guided PEEP in supine; (3) Peso-guided PEEP in prone.",
+      "provenance": {
+        "quote": "The study protocol included three steps (Fig. 1A): (1) baseline measurement in SP using a ventilation strategy with PEEP based on the lower PEEP/FiO2 table (baseline) [19, 20]; (2) Peso-guided ventilation strategy with PEEP targeting an end-expiratory PTP of 0 to 2 cmH2O in SP [5]; (3) Peso-guided ventilation strategy with PEEP targeting an end-expiratory PTP of 0 to 2 cmH2O in PP.",
+        "location": "p. 3, Methods, Study protocol"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "Recruitment manoeuvre before each strategy; physiologic measurements after a 30-min equilibration period with each ventilation strategy.",
+      "provenance": {
+        "quote": "a dynamic recruitment maneuver was performed before each ventilation strategy ... Physiologic measurements were obtained after a 30-min equilibration period with each ventilation strategy.",
+        "location": "p. 3, Methods, Study protocol"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "baseline_table",
+      "label_verbatim": "Baseline PEEP/FiO2 table",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 55,
+        "provenance": {
+          "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+          "location": "p. 4, Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 8,
+        "dispersion_type": "iqr",
+        "dispersion_low": 8,
+        "dispersion_high": 10,
+        "n": 55,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15)",
+          "location": "p. 5, Table 2, row: PEEP (baseline column)"
+        }
+      }
+    },
+    {
+      "label": "supine_peso",
+      "label_verbatim": "Supine Peso-guided",
+      "role": "intervention",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 55,
+        "provenance": {
+          "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+          "location": "p. 4, Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 15,
+        "dispersion_type": "iqr",
+        "dispersion_low": 12,
+        "dispersion_high": 18,
+        "n": 55,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15)",
+          "location": "p. 5, Table 2, row: PEEP (supine column)"
+        }
+      }
+    },
+    {
+      "label": "prone_peso",
+      "label_verbatim": "Prone Peso-guided",
+      "role": "positional_variant",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 55,
+        "provenance": {
+          "quote": "Fifty-five patients with moderate to severe ARDS (PaO2/FiO2 ≤ 150 mmHg) were included in the analysis.",
+          "location": "p. 4, Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 10,
+        "dispersion_type": "iqr",
+        "dispersion_low": 7,
+        "dispersion_high": 15,
+        "n": 55,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15)",
+          "location": "p. 5, Table 2, row: PEEP (prone column)"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "other",
+      "name_verbatim": "Lung total elastic power",
+      "definition_verbatim": "Lung total elastic power was calculated as 0.098 × VT × RR × [(PplatRS + PEEP)/2] × (EL/ERS)",
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Passively ventilated, complete neuromuscular blockade, volume-controlled ventilation, 0° body inclination; measurements after a 30-min equilibration period with each ventilation strategy following a recruitment manoeuvre",
+        "provenance": {
+          "quote": "Physiologic measurements were obtained after a 30-min equilibration period with each ventilation strategy.",
+          "location": "p. 3, Methods, Study protocol"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 8.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.4,
+          "dispersion_high": 11.0,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "lung total elastic power (11.0 [6.6–14.8] versus 8.1 [5.4–11.0] J/min; P < 0.001)",
+            "location": "p. 7, Results, Effects of ventilation strategies during supine positioning, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 11.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.6,
+          "dispersion_high": 14.8,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung total elastic power was lower during PP compared with SP (6.7 [4.9–10.6] versus 11.0 [6.6–14.8] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 6.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.9,
+          "dispersion_high": 10.6,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung total elastic power was lower during PP compared with SP (6.7 [4.9–10.6] versus 11.0 [6.6–14.8] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Peso-guided ventilation during SP compared with baseline increased lung total elastic power (11.0 [6.6–14.8] versus 8.1 [5.4–11.0] J/min; P < 0.001)",
+            "location": "p. 7, Results, para 2; also Fig. 2A bracket"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 2A ... P < 0.001 (Baseline vs Prone bracket)",
+            "location": "p. 5, Fig. 2A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung total elastic power was lower during PP compared with SP (6.7 [4.9–10.6] versus 11.0 [6.6–14.8] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Lung total elastic power was calculated as 0.098 × VT × RR × [(PplatRS + PEEP)/2] × (EL/ERS)",
+        "location": "p. 3, Methods, Study protocol (equation)"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung total elastic power normalized to EELV",
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 5.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.6,
+          "dispersion_high": 6.9,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "lung total elastic power normalized to EELV did not differ according to the ventilation strategy during SP (5.3 [3.3–7.5] versus 5.1 [3.6–6.9] J/min/L; P = 0.538)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 5.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.3,
+          "dispersion_high": 7.5,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "PP also resulted in lower lung total elastic power normalized to EELV compared with SP (3.2 [2.1–5.0] versus 5.3 [3.3–7.5] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 3.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.1,
+          "dispersion_high": 5.0,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "PP also resulted in lower lung total elastic power normalized to EELV compared with SP (3.2 [2.1–5.0] versus 5.3 [3.3–7.5] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.538,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "lung total elastic power normalized to EELV did not differ according to the ventilation strategy during SP (5.3 [3.3–7.5] versus 5.1 [3.6–6.9] J/min/L; P = 0.538)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 2B ... P < 0.001 (Baseline vs Prone bracket)",
+            "location": "p. 5, Fig. 2B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PP also resulted in lower lung total elastic power normalized to EELV compared with SP (3.2 [2.1–5.0] versus 5.3 [3.3–7.5] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung elastic static power",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 5.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.1,
+          "dispersion_high": 7.3,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung elastic static power was higher with Peso-guided ventilation during SP compared with baseline (8.5 [4.8–10.7] versus 5.5 [3.1–7.3] J/min; P < 0.001)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 8.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.8,
+          "dispersion_high": 10.7,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "PP reduced lung elastic static power compared with SP (4.2 [3.2–7.4] versus 8.5 [4.8–10.7] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 4.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.2,
+          "dispersion_high": 7.4,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "PP reduced lung elastic static power compared with SP (4.2 [3.2–7.4] versus 8.5 [4.8–10.7] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung elastic static power was higher with Peso-guided ventilation during SP compared with baseline (8.5 [4.8–10.7] versus 5.5 [3.1–7.3] J/min; P < 0.001)",
+            "location": "p. 7, Results, para 2; also Fig. 3A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 3A ... P < 0.001 (Baseline vs Prone bracket)",
+            "location": "p. 6, Fig. 3A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PP reduced lung elastic static power compared with SP (4.2 [3.2–7.4] versus 8.5 [4.8–10.7] J/min; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung elastic static power normalized to EELV",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 3.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.3,
+          "dispersion_high": 5.5,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "Peso-guided ventilation increased lung elastic static power normalized to EELV compared with baseline (4.2 [2.7–6.0] versus 3.3 [2.3–5.5] J/min/L; P = 0.006)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 4.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.7,
+          "dispersion_high": 6.0,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "and lung elastic static power normalized to EELV (2.1 [1.4–3.8] versus 4.2 [2.7–6.0] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 2.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.4,
+          "dispersion_high": 3.8,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "and lung elastic static power normalized to EELV (2.1 [1.4–3.8] versus 4.2 [2.7–6.0] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.006,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Peso-guided ventilation increased lung elastic static power normalized to EELV compared with baseline (4.2 [2.7–6.0] versus 3.3 [2.3–5.5] J/min/L; P = 0.006)",
+            "location": "p. 7, Results, para 2; also Fig. 3B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 3B ... P < 0.001 (Baseline vs Prone bracket)",
+            "location": "p. 6, Fig. 3B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "and lung elastic static power normalized to EELV (2.1 [1.4–3.8] versus 4.2 [2.7–6.0] J/min/L; P < 0.001)",
+            "location": "p. 4, Results, Effects of prone positioning, para 3"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung elastic dynamic power",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 2.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.9,
+          "dispersion_high": 3.7,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "lung elastic dynamic power (2.5 [1.8–3.5] versus 2.9 [1.9–3.7] J/min; P = 0.029)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 2.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.8,
+          "dispersion_high": 3.5,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "lung elastic dynamic power (2.5 [1.8–3.5] versus 2.9 [1.9–3.7] J/min; P = 0.029)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": null,
+          "value": null,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.029,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Peso-guided ventilation during SP compared with baseline decreased ΔPTP, lung elastic dynamic power (2.5 [1.8–3.5] versus 2.9 [1.9–3.7] J/min; P = 0.029)",
+            "location": "p. 7, Results, para 2; also Fig. 4A"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.002,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 4A ... P = 0.002 (Baseline vs Prone bracket)",
+            "location": "p. 6, Fig. 4A"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PP did not affect lung elastic dynamic power non-normalized and normalized to EELV (Fig. 4A, B).",
+        "location": "p. 4, Results, Effects of prone positioning, para 3"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung elastic dynamic power normalized to EELV",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone (sequence positions 1/2/3)"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 1.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.3,
+          "dispersion_high": 2.7,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "and lung elastic dynamic power normalized to EELV (1.2 [0.7–1.9] versus 1.7 [1.3–2.7] J/min/L; P < 0.001)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 1.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.7,
+          "dispersion_high": 1.9,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "and lung elastic dynamic power normalized to EELV (1.2 [0.7–1.9] versus 1.7 [1.3–2.7] J/min/L; P < 0.001)",
+            "location": "p. 7, Results, para 2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": null,
+          "value": null,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "and lung elastic dynamic power normalized to EELV (1.2 [0.7–1.9] versus 1.7 [1.3–2.7] J/min/L; P < 0.001)",
+            "location": "p. 7, Results, para 2; also Fig. 4B"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Fig. 4B ... P < 0.001 (Baseline vs Prone bracket)",
+            "location": "p. 6, Fig. 4B"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Resistive power",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 4.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.3,
+          "dispersion_high": 6.8,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Resistive power (J/min) 4.4 (3.3 to 6.8) | 4.7 (3.5 to 6.4) | 4.7 (3.6 to 7.7) | 0.892 | 0.045 | 0.060",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 4.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.5,
+          "dispersion_high": 6.4,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Resistive power (J/min) 4.4 (3.3 to 6.8) | 4.7 (3.5 to 6.4) | 4.7 (3.6 to 7.7)",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 4.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.6,
+          "dispersion_high": 7.7,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Resistive power (J/min) 4.4 (3.3 to 6.8) | 4.7 (3.5 to 6.4) | 4.7 (3.6 to 7.7)",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.892,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Resistive power (J/min) ... 0.892 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.045,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Resistive power (J/min) ... 0.045 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.06,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Resistive power (J/min) ... 0.060 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Resistive power"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung MP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 11.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.0,
+          "dispersion_high": 15.5,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung MP (J/min) 11.6 (8.0 to 15.5) | 13.9 (9.1 to 19.9) | 9.9 (6.5 to 15.7) | < 0.001 | 0.070 | < 0.001",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 13.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.1,
+          "dispersion_high": 19.9,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung MP (J/min) 11.6 (8.0 to 15.5) | 13.9 (9.1 to 19.9) | 9.9 (6.5 to 15.7)",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 9.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.5,
+          "dispersion_high": 15.7,
+          "n": 55,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Lung MP (J/min) 11.6 (8.0 to 15.5) | 13.9 (9.1 to 19.9) | 9.9 (6.5 to 15.7)",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP (J/min) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.07,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP (J/min) ... 0.070 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP (J/min) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Lung MP"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Lung MP normalized to EELV",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 6.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.1,
+          "dispersion_high": 10.0,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) 6.8 (5.1 to 10.0) | 6.8 (4.2 to 9.7) | 4.6 (2.9 to 7.0) | 0.262 | < 0.001 | < 0.001",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 6.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.2,
+          "dispersion_high": 9.7,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) 6.8 (5.1 to 10.0) | 6.8 (4.2 to 9.7) | 4.6 (2.9 to 7.0)",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 4.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.9,
+          "dispersion_high": 7.0,
+          "n": 55,
+          "unit": "J/min/L",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) 6.8 (5.1 to 10.0) | 6.8 (4.2 to 9.7) | 4.6 (2.9 to 7.0)",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.262,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) ... 0.262 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung MP normalized to EELV (J/min/L) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Lung MP normalized to EELV"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 10,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15) | < 0.001 | 0.003 | < 0.001",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 18,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15)",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 15,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) 8 (8 to 10) | 15 (12 to 18) | 10 (7 to 15)",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PEEP (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.003,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PEEP (cmH2O) ... 0.003 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PEEP (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: PEEP"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume (mL/kg PBW)",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 6.2,
+          "n": 55,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2) | > 0.999 | > 0.999 | > 0.999",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 6.2,
+          "n": 55,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2)",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 6.2,
+          "n": 55,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2) | 6.1 (6.0 to 6.2)",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) ... > 0.999 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) ... > 0.999 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Tidal volume (mL/kg PBW) ... > 0.999 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Tidal volume"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate (breaths/min)",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 24,
+          "n": 55,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 23 (21 to 24) | 23 (21 to 24) | 23 (21 to 24) | > 0.999 | > 0.999 | > 0.999",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 24,
+          "n": 55,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 23 (21 to 24) | 23 (21 to 24) | 23 (21 to 24)",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 24,
+          "n": 55,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 23 (21 to 24) | 23 (21 to 24) | 23 (21 to 24)",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) ... > 0.999 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) ... > 0.999 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": ">0.999",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) ... > 0.999 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Respiratory rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Airway peak pressure",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 28,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) 25 (19 to 28) | 30 (25 to 35) | 26 (21 to 32) | < 0.001 | 0.001 | < 0.001",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25,
+          "dispersion_high": 35,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) 25 (19 to 28) | 30 (25 to 35) | 26 (21 to 32)",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 26,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 32,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) 25 (19 to 28) | 30 (25 to 35) | 26 (21 to 32)",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.001,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) ... 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway peak pressure (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Airway peak pressure"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Airway plateau pressure",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 22,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) 18 (16 to 22) | 25 (20 to 27) | 20 (16 to 26) | < 0.001 | 0.004 | < 0.001",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 20,
+          "dispersion_high": 27,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) 18 (16 to 22) | 25 (20 to 27) | 20 (16 to 26)",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 26,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) 18 (16 to 22) | 25 (20 to 27) | 20 (16 to 26)",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.004,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) ... 0.004 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Airway plateau pressure (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Airway plateau pressure"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Driving pressure",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 11,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) 9 (8 to 11) | 9 (7 to 11) | 9 (8 to 11) | 0.187 | 0.835 | 0.076",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) 9 (8 to 11) | 9 (7 to 11) | 9 (8 to 11)",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 11,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) 9 (8 to 11) | 9 (7 to 11) | 9 (8 to 11)",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.187,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) ... 0.187 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.835,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) ... 0.835 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.076,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving pressure (cmH2O) ... 0.076 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Driving pressure"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-expiratory Peso",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 14,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) 12 (9 to 14) | 14 (9 to 16) | 10 (6 to 12) | < 0.001 | < 0.001 | < 0.001",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 16,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) 12 (9 to 14) | 14 (9 to 16) | 10 (6 to 12)",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 12,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) 12 (9 to 14) | 14 (9 to 16) | 10 (6 to 12)",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory Peso (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: End-expiratory Peso"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-inspiratory Peso",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 17,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) 15 (12 to 17) | 17 (12 to 21) | 14 (10 to 19) | < 0.001 | 0.048 | < 0.001",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 21,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) 15 (12 to 17) | 17 (12 to 21) | 14 (10 to 19)",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 19,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) 15 (12 to 17) | 17 (12 to 21) | 14 (10 to 19)",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.048,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) ... 0.048 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory Peso (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: End-inspiratory Peso"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory PTP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": -2,
+          "dispersion_type": "iqr",
+          "dispersion_low": -5,
+          "dispersion_high": 0,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) − 2 (− 5 to 0) | 1 (0 to 2) | 1 (0 to 2) | < 0.001 | < 0.001 | 0.650",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 2,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) − 2 (− 5 to 0) | 1 (0 to 2) | 1 (0 to 2)",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 2,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) − 2 (− 5 to 0) | 1 (0 to 2) | 1 (0 to 2)",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.65,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-expiratory PTP (cmH2O) ... 0.650 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: End-expiratory PTP"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-inspiratory PTP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1,
+          "dispersion_high": 7,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) 3 (1 to 7) | 8 (4 to 9) | 7 (5 to 9) | < 0.001 | < 0.001 | 0.495",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 9,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) 3 (1 to 7) | 8 (4 to 9) | 7 (5 to 9)",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 9,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) 3 (1 to 7) | 8 (4 to 9) | 7 (5 to 9)",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.495,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "End-inspiratory PTP (cmH2O) ... 0.495 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: End-inspiratory PTP"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Driving PTP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 8,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) 6 (4 to 8) | 6 (4 to 7) | 5 (3 to 7) | 0.029 | < 0.001 | 0.117",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 7,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) 6 (4 to 8) | 6 (4 to 7) | 5 (3 to 7)",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 7,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) 6 (4 to 8) | 6 (4 to 7) | 5 (3 to 7)",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.029,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) ... 0.029 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.117,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Driving PTP (cmH2O) ... 0.117 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Driving PTP"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system elastance",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 20.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.8,
+          "dispersion_high": 29.5,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) 20.0 (16.8 to 29.5) | 18.9 (16.1 to 27.3) | 22.2 (17.8 to 24.9) | 0.049 | 0.448 | 0.124",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 18.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.1,
+          "dispersion_high": 27.3,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) 20.0 (16.8 to 29.5) | 18.9 (16.1 to 27.3) | 22.2 (17.8 to 24.9)",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 22.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17.8,
+          "dispersion_high": 24.9,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) 20.0 (16.8 to 29.5) | 18.9 (16.1 to 27.3) | 22.2 (17.8 to 24.9)",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.049,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) ... 0.049 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.448,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) ... 0.448 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.124,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) ... 0.124 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Respiratory system elastance"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Lung elastance",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 14.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10.7,
+          "dispersion_high": 18.8,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) 14.5 (10.7 to 18.8) | 13.3 (8.7 to 17.0) | 12.6 (8.1 to 18.5) | 0.040 | 0.002 | 0.122",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 13.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.7,
+          "dispersion_high": 17.0,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) 14.5 (10.7 to 18.8) | 13.3 (8.7 to 17.0) | 12.6 (8.1 to 18.5)",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 12.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.1,
+          "dispersion_high": 18.5,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) 14.5 (10.7 to 18.8) | 13.3 (8.7 to 17.0) | 12.6 (8.1 to 18.5)",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.04,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) ... 0.040 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.002,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) ... 0.002 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.122,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung elastance (cmH2O/L) ... 0.122 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Lung elastance"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall elastance",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 6.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.9,
+          "dispersion_high": 11.2,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) 6.9 (4.9 to 11.2) | 7.3 (4.9 to 10.5) | 10.8 (5.2 to 13.5) | 0.909 | < 0.001 | < 0.001",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 7.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.9,
+          "dispersion_high": 10.5,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) 6.9 (4.9 to 11.2) | 7.3 (4.9 to 10.5) | 10.8 (5.2 to 13.5)",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 10.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.2,
+          "dispersion_high": 13.5,
+          "n": 55,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) 6.9 (4.9 to 11.2) | 7.3 (4.9 to 10.5) | 10.8 (5.2 to 13.5)",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.909,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) ... 0.909 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Chest wall elastance"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL/ERS",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 0.67,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.56,
+          "dispersion_high": 0.77,
+          "n": 55,
+          "provenance": {
+            "quote": "EL/ERS 0.67 (0.56 to 0.77) | 0.67 (0.50 to 0.78) | 0.61 (0.38 to 0.73) | 0.189 | < 0.001 | < 0.001",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 0.67,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.5,
+          "dispersion_high": 0.78,
+          "n": 55,
+          "provenance": {
+            "quote": "EL/ERS 0.67 (0.56 to 0.77) | 0.67 (0.50 to 0.78) | 0.61 (0.38 to 0.73)",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 0.61,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.38,
+          "dispersion_high": 0.73,
+          "n": 55,
+          "provenance": {
+            "quote": "EL/ERS 0.67 (0.56 to 0.77) | 0.67 (0.50 to 0.78) | 0.61 (0.38 to 0.73)",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.189,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EL/ERS ... 0.189 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EL/ERS ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EL/ERS ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: EL/ERS"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Lung stress",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 12.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.1,
+          "dispersion_high": 15.0,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) 12.3 (9.1 to 15.0) | 15.2 (10.7 to 19.8) | 11.0 (7.4 to 14.1) | < 0.001 | 0.074 | < 0.001",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 15.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10.7,
+          "dispersion_high": 19.8,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) 12.3 (9.1 to 15.0) | 15.2 (10.7 to 19.8) | 11.0 (7.4 to 14.1)",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 11.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.4,
+          "dispersion_high": 14.1,
+          "n": 55,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) 12.3 (9.1 to 15.0) | 15.2 (10.7 to 19.8) | 11.0 (7.4 to 14.1)",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.074,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) ... 0.074 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Lung stress (cmH2O) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: Lung stress"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "EELV",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 1.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.2,
+          "dispersion_high": 2.0,
+          "n": 55,
+          "unit": "L",
+          "provenance": {
+            "quote": "EELV (L) 1.5 (1.2 to 2.0) | 2.1 (1.6 to 2.6) | 2.1 (1.6 to 2.7) | < 0.001 | < 0.001 | 0.843",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 2.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.6,
+          "dispersion_high": 2.6,
+          "n": 55,
+          "unit": "L",
+          "provenance": {
+            "quote": "EELV (L) 1.5 (1.2 to 2.0) | 2.1 (1.6 to 2.6) | 2.1 (1.6 to 2.7)",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 2.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.6,
+          "dispersion_high": 2.7,
+          "n": 55,
+          "unit": "L",
+          "provenance": {
+            "quote": "EELV (L) 1.5 (1.2 to 2.0) | 2.1 (1.6 to 2.6) | 2.1 (1.6 to 2.7)",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EELV (L) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EELV (L) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.843,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "EELV (L) ... 0.843 (Prone versus Supine)",
+            "location": "p. 5, Table 2, row: EELV"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 124,
+          "dispersion_type": "iqr",
+          "dispersion_low": 110,
+          "dispersion_high": 154,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) 124 (110 to 154) | 176 (144 to 237) | 222 (177 to 299) | < 0.001 | < 0.001 | < 0.001",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 176,
+          "dispersion_type": "iqr",
+          "dispersion_low": 144,
+          "dispersion_high": 237,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) 124 (110 to 154) | 176 (144 to 237) | 222 (177 to 299)",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 222,
+          "dispersion_type": "iqr",
+          "dispersion_low": 177,
+          "dispersion_high": 299,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) 124 (110 to 154) | 176 (144 to 237) | 222 (177 to 299)",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: PaO2/FiO2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Shunt fraction",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 47,
+          "dispersion_type": "iqr",
+          "dispersion_low": 36,
+          "dispersion_high": 53,
+          "n": 55,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction (%) 47 (36 to 53) | 33 (24 to 40) | 28 (21 to 39) | < 0.001 | < 0.001 | 0.009",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 40,
+          "n": 55,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction (%) 47 (36 to 53) | 33 (24 to 40) | 28 (21 to 39)",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 28,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 39,
+          "n": 55,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction (%) 47 (36 to 53) | 33 (24 to 40) | 28 (21 to 39)",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Shunt fraction (%) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Shunt fraction (%) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.009,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Shunt fraction (%) ... 0.009 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Shunt fraction"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 55,
+          "dispersion_type": "iqr",
+          "dispersion_low": 48,
+          "dispersion_high": 62,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 55 (48 to 62) | 56 (51 to 62) | 57 (50 to 62) | 0.528 | 0.592 | 0.955",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 56,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51,
+          "dispersion_high": 62,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 55 (48 to 62) | 56 (51 to 62) | 57 (50 to 62)",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 57,
+          "dispersion_type": "iqr",
+          "dispersion_low": 50,
+          "dispersion_high": 62,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 55 (48 to 62) | 56 (51 to 62) | 57 (50 to 62)",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.528,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) ... 0.528 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.592,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) ... 0.592 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.955,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) ... 0.955 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: PaCO2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pHa",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 7.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.3,
+          "dispersion_high": 7.4,
+          "n": 55,
+          "provenance": {
+            "quote": "pHa 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4) | 0.709 | 0.715 | 0.335",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 7.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.3,
+          "dispersion_high": 7.4,
+          "n": 55,
+          "provenance": {
+            "quote": "pHa 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4)",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 7.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.3,
+          "dispersion_high": 7.4,
+          "n": 55,
+          "provenance": {
+            "quote": "pHa 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4) | 7.3 (7.3 to 7.4)",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.709,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "pHa ... 0.709 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.715,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "pHa ... 0.715 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.335,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "pHa ... 0.335 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: pHa"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "Alveolar dead space fraction",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 0.28,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.22,
+          "dispersion_high": 0.37,
+          "n": 55,
+          "provenance": {
+            "quote": "Alveolar dead space fraction 0.28 (0.22 to 0.37) | 0.29 (0.22 to 0.37) | 0.26 (0.20 to 0.34) | 0.989 | 0.003 | 0.001",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 0.29,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.22,
+          "dispersion_high": 0.37,
+          "n": 55,
+          "provenance": {
+            "quote": "Alveolar dead space fraction 0.28 (0.22 to 0.37) | 0.29 (0.22 to 0.37) | 0.26 (0.20 to 0.34)",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 0.26,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.2,
+          "dispersion_high": 0.34,
+          "n": 55,
+          "provenance": {
+            "quote": "Alveolar dead space fraction 0.28 (0.22 to 0.37) | 0.29 (0.22 to 0.37) | 0.26 (0.20 to 0.34)",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.989,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Alveolar dead space fraction ... 0.989 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.003,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Alveolar dead space fraction ... 0.003 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.001,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Alveolar dead space fraction ... 0.001 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Alveolar dead space fraction"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Heart rate",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 90,
+          "dispersion_type": "iqr",
+          "dispersion_low": 78,
+          "dispersion_high": 106,
+          "n": 55,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 90 (78 to 106) | 91 (76 to 105) | 92 (79 to 106) | 0.291 | 0.393 | 0.448",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 91,
+          "dispersion_type": "iqr",
+          "dispersion_low": 76,
+          "dispersion_high": 105,
+          "n": 55,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 90 (78 to 106) | 91 (76 to 105) | 92 (79 to 106)",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 92,
+          "dispersion_type": "iqr",
+          "dispersion_low": 79,
+          "dispersion_high": 106,
+          "n": 55,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 90 (78 to 106) | 91 (76 to 105) | 92 (79 to 106)",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.291,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Heart rate (bpm) ... 0.291 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.393,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Heart rate (bpm) ... 0.393 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.448,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Heart rate (bpm) ... 0.448 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Heart rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Mean arterial pressure",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 81,
+          "dispersion_type": "iqr",
+          "dispersion_low": 76,
+          "dispersion_high": 86,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) 81 (76 to 86) | 79 (71 to 87) | 87 (77 to 95) | 0.024 | 0.003 | < 0.001",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 79,
+          "dispersion_type": "iqr",
+          "dispersion_low": 71,
+          "dispersion_high": 87,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) 81 (76 to 86) | 79 (71 to 87) | 87 (77 to 95)",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 87,
+          "dispersion_type": "iqr",
+          "dispersion_low": 77,
+          "dispersion_high": 95,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) 81 (76 to 86) | 79 (71 to 87) | 87 (77 to 95)",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.024,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) ... 0.024 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.003,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) ... 0.003 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Mean arterial pressure (mmHg) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Mean arterial pressure"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Central venous pressure",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 17,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) 14 (11 to 17) | 17 (12 to 19) | 17 (12 to 22) | < 0.001 | 0.001 | 0.207",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 19,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) 14 (11 to 17) | 17 (12 to 19) | 17 (12 to 22)",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 22,
+          "n": 55,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) 14 (11 to 17) | 17 (12 to 19) | 17 (12 to 22)",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.001,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) ... 0.001 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.207,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Central venous pressure (mmHg) ... 0.207 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Central venous pressure"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Norepinephrine",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 0.09,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.03,
+          "dispersion_high": 0.26,
+          "n": 55,
+          "unit": "μg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) 0.09 (0.03 to 0.26) | 0.09 (0.04 to 0.27) | 0.07 (0.03 to 0.29) | 0.417 | 0.196 | 0.133",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 0.09,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.04,
+          "dispersion_high": 0.27,
+          "n": 55,
+          "unit": "μg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) 0.09 (0.03 to 0.26) | 0.09 (0.04 to 0.27) | 0.07 (0.03 to 0.29)",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 0.07,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.03,
+          "dispersion_high": 0.29,
+          "n": 55,
+          "unit": "μg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) 0.09 (0.03 to 0.26) | 0.09 (0.04 to 0.27) | 0.07 (0.03 to 0.29)",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.417,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) ... 0.417 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.196,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) ... 0.196 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value": 0.133,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Norepinephrine (μg/kg/min) ... 0.133 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Norepinephrine"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac output",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 7.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.6,
+          "dispersion_high": 8.3,
+          "n": 55,
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Cardiac output (L/min) 7.1 (5.6 to 8.3) | 6.1 (5.1 to 7.8) | 7.0 (5.6 to 8.3) | < 0.001 | 0.809 | < 0.001",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.1,
+          "dispersion_high": 7.8,
+          "n": 55,
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Cardiac output (L/min) 7.1 (5.6 to 8.3) | 6.1 (5.1 to 7.8) | 7.0 (5.6 to 8.3)",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 7.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.6,
+          "dispersion_high": 8.3,
+          "n": 55,
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Cardiac output (L/min) 7.1 (5.6 to 8.3) | 6.1 (5.1 to 7.8) | 7.0 (5.6 to 8.3)",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Cardiac output (L/min) ... < 0.001 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.809,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Cardiac output (L/min) ... 0.809 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Cardiac output (L/min) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Cardiac output"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Oxygen delivery",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "Baseline / Supine / Prone"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 878,
+          "dispersion_type": "iqr",
+          "dispersion_low": 687,
+          "dispersion_high": 1078,
+          "n": 55,
+          "unit": "mL/min",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) 878 (687 to 1078) | 809 (685 to 1047) | 915 (720 to 1206) | 0.133 | < 0.001 | < 0.001",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        },
+        {
+          "arm_label": "supine_peso",
+          "value_type": "median",
+          "value": 809,
+          "dispersion_type": "iqr",
+          "dispersion_low": 685,
+          "dispersion_high": 1047,
+          "n": 55,
+          "unit": "mL/min",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) 878 (687 to 1078) | 809 (685 to 1047) | 915 (720 to 1206)",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        },
+        {
+          "arm_label": "prone_peso",
+          "value_type": "median",
+          "value": 915,
+          "dispersion_type": "iqr",
+          "dispersion_low": 720,
+          "dispersion_high": 1206,
+          "n": 55,
+          "unit": "mL/min",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) 878 (687 to 1078) | 809 (685 to 1047) | 915 (720 to 1206)",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "supine_peso minus baseline_table",
+          "arm_label_a": "supine_peso",
+          "arm_label_b": "baseline_table",
+          "p_value": 0.133,
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) ... 0.133 (Supine versus Baseline)",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus baseline_table",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "baseline_table",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) ... < 0.001 (Prone versus Baseline)",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "prone_peso minus supine_peso",
+          "arm_label_a": "prone_peso",
+          "arm_label_b": "supine_peso",
+          "p_value_verbatim": "<0.001",
+          "test_used": "Wilcoxon matched-pairs test",
+          "provenance": {
+            "quote": "Oxygen delivery (mL/min) ... < 0.001 (Prone versus Supine)",
+            "location": "p. 7, Table 3, row: Oxygen delivery"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "ICU mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "icu_discharge",
+        "label_verbatim": "ICU mortality"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "events": 20,
+          "total": 55,
+          "provenance": {
+            "quote": "ICU mortality, n (%) 20 (36)",
+            "location": "p. 4, Table 1, row: ICU mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ICU mortality, n (%) 20 (36)",
+        "location": "p. 4, Table 1, row: ICU mortality"
+      }
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "Length of ICU stay (days)",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Length of ICU stay"
+      },
+      "data": [
+        {
+          "arm_label": "baseline_table",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 29,
+          "n": 55,
+          "unit": "days",
+          "provenance": {
+            "quote": "Length of ICU stay (days) 17 (11–29)",
+            "location": "p. 4, Table 1, row: Length of ICU stay"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Length of ICU stay (days) 17 (11–29)",
+        "location": "p. 4, Table 1, row: Length of ICU stay"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "mixed_bmi",
+    "timing_subgroup": "late_after_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_only: all patients met Berlin moderate-to-severe ARDS (PaO2/FiO2 ≤ 150). obesity_subgroup: median BMI 29 (26–32) kg/m2, below the ≥30 threshold and obesity was not an enrolment criterion, but the IQR spans 30, so mixed rather than non_obese. timing_subgroup: median 4 (3–6) days of mechanical ventilation before study, i.e. balloon guidance began >48 h after intubation. ptp_target_subgroups: PEEP titrated to end-expiratory PTP 0–2 cmH2O using absolute Pes subtraction (airway pressure − Peso)."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": "mannheim_boesing",
+    "overlapping_cohort_with": [
+      "boesing_2022"
+    ],
+    "overlap_evidence": "The paper explicitly states: 'Of these, forty patients had also been enrolled in a prior study [8], but with a different research question and study protocol.' Reference 8 is Boesing et al., Crit Care 2022;26:82 (boesing_2022). Same institution (University Medical Center Mannheim), same registration DRKS00017449 (registered June 27, 2019), enrolment July 2019–June 2023 overlapping the earlier report. COHORTS.md suspected a mannheim_boesing cluster between boesing_2022 and boesing_2024a and described boesing_2024b as a VV-ECMO population; the present report is an ARDS prone-positioning physiologic study, not ECMO, so the COHORTS.md description of 2024b does not match this PDF and needs adjudication. Overlap with boesing_2022 is confirmed from the text; overlap with boesing_2024a could not be checked from this report alone.",
+    "unclear_items": [
+      "citation.is_primary_report: this 55-patient report shares 40 patients with boesing_2022 (n=40); which report of the shared Mannheim cohort is 'primary' needs adjudication — set true here as the larger, later report.",
+      "extraction_flags.cohort_id: COHORTS.md describes boesing_2024b as a VV-ECMO population, which contradicts this ARDS/prone-positioning report; the cluster assignment follows the explicit 40/55 overlap statement instead.",
+      "outcomes[].timepoint: the schema provides one timepoint per outcome entry, but this three-condition crossover reports baseline/supine/prone in single table rows; conditions were combined in data[] with timepoint.type crossover_condition and sequence noted in label_verbatim, rather than splitting each parameter into three separate outcome entries.",
+      "outcomes (lung elastic dynamic power, prone): prone-condition median/IQR for lung elastic dynamic power and its EELV-normalised counterpart appear only in Fig. 4 boxplots; values not numerically reported, so prone data values are null while the figure P values (0.002 and <0.001 vs baseline) are recorded.",
+      "design.randomised: the condition sequence was fixed (baseline → supine Peso → prone Peso) and no randomisation of order is mentioned; left null rather than false.",
+      "population.covid19_population: viral pneumonia 51% but COVID-19 is not named; coded not_reported.",
+      "population.n_ards_severity: moderate vs severe split not reported.",
+      "feasibility: no placement success, measurement failure, or balloon-related complication data reported anywhere in the paper.",
+      "design.countries: Germany inferred from the institution address (Mannheim, Germany); not stated as a country of enrolment per se."
+    ],
+    "data_only_in_figure": [
+      "Lung elastic dynamic power, prone condition median/IQR (Fig. 4A)",
+      "Lung elastic dynamic power normalized to EELV, prone condition median/IQR (Fig. 4B)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "All Table 2 and Table 3 rows were recorded as one outcome entry per parameter with three condition data entries (baseline_table, supine_peso, prone_peso) and all three reported pairwise Wilcoxon contrasts as paired_effects. The baseline condition values serve as the pre-intervention comparator per the codebook ruling. Lung total/static/dynamic elastic power values come from the Results text and Figs. 2–4; the prone dynamic-power values are figure-only. Lung mechanical power has no dedicated domain and was coded under 'other'."
+  }
+}

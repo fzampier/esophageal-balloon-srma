@@ -1,0 +1,3340 @@
+{
+  "record_meta": {
+    "study_id": "yang_2013",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/positive_end_expiratory_pressure_titrated_by.8.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Yang Yi",
+    "year": 2013,
+    "title": "Positive end expiratory pressure titrated by transpulmonary pressure improved oxygenation and respiratory mechanics in acute respiratory distress syndrome patients with intra-abdominal hypertension",
+    "journal": "Chinese Medical Journal",
+    "doi": "10.3760/cma.j.issn.0366-6999.20131096",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The exclusion criteria included age younger than 18 years or older than 85 years",
+          "location": "Methods, Patients, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The 15 patients included in the study were intubated and received invasive mechanical ventilation.",
+          "location": "Methods, Patients, para 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "ARDS patients admitted to the intensive care unit (ICU) of the Zhongda Hospital",
+          "location": "Methods, Patients, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP set to achieve a transpulmonary pressure of 0–10 cmH2O at end expiration, according to a sliding scale based on PaO2 and FiO2 in PEEP titrated by Ptp method, as Talmor described.",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Arterial pressure of O2/fraction of inspired oxygen (PaO2/FiO2) was much higher under PEEP titrated by Ptp when compared with PEEP titrated by ARDSnet protocol in ARDS patients with IAH ((27.2±4.0) cmHg vs. (20.9± 5.0) cmHg).",
+          "location": "Abstract, Results"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Of 15 eligible ARDS patients receiving mechanical ventilation, seven ARDS patients with IAH and eight ARDS patients without IAH were included in the study",
+          "location": "Results, Characteristics of the patients, para 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A randomized, crossover study was conducted.",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Chinese Medical Journal 2013;126 (17)",
+          "location": "Header, page 1"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "A randomized, crossover study was conducted.",
+      "provenance": {
+        "quote": "A randomized, crossover study was conducted.",
+        "location": "Methods, Study design, para 1"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "it was a single centre study",
+        "location": "Discussion, limitations, para 1"
+      }
+    },
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "Nanjing Zhongda Hospital, Southeast University, Nanjing, Jiangsu 210009, China",
+      "location": "Methods, Patients, para 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "intensive care unit (ICU) of the Zhongda Hospital",
+      "provenance": {
+        "quote": "ARDS patients admitted to the intensive care unit (ICU) of the Zhongda Hospital",
+        "location": "Methods, Patients, para 1"
+      }
+    },
+    "enrolment_start": "2011-08",
+    "enrolment_end": "2012-04",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "This study was supported by the grants from Foundation of National Key Clinical Department of Critical Care Medicine (2010), the Ministry of Health of China (Special Fund for Health scientific Research in the Public Interest Program No. 201202011) and the National Natural Science Foundation of China (No. 81070049 and No. 81170057).",
+      "provenance": {
+        "quote": "This study was supported by the grants from Foundation of National Key Clinical Department of Critical Care Medicine (2010), the Ministry of Health of China (Special Fund for Health scientific Research in the Public Interest Program No. 201202011) and the National Natural Science Foundation of China (No. 81070049 and No. 81170057).",
+        "location": "Footnote, page 1"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": null
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 15,
+      "provenance": {
+        "quote": "The 15 patients included in the study were intubated and received invasive mechanical ventilation.",
+        "location": "Methods, Patients, para 2"
+      }
+    },
+    "n_analysed": {
+      "value": 15,
+      "provenance": {
+        "quote": "Of 15 eligible ARDS patients receiving mechanical ventilation, seven ARDS patients with IAH and eight ARDS patients without IAH were included in the study",
+        "location": "Results, Characteristics of the patients, para 1"
+      }
+    },
+    "population_description": {
+      "value": "ARDS patients (less than 72 hours after ARDS onset) of varying aetiology admitted to the Intensive Care Unit (ICU) of Zhongda Hospital",
+      "provenance": {
+        "quote": "ARDS patients (less than 72 hours after ARDS) onset of varying aetiology admitted to the Intensive Care Unit (ICU) of Zhongda Hospital",
+        "location": "Methods, Patients, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "patients with ARDS (less than 72 hours after ARDS) onset of varying aetiology admitted to the Intensive Care Unit (ICU) of Zhongda Hospital",
+      "provenance": {
+        "quote": "patients with ARDS (less than 72 hours after ARDS) onset of varying aetiology admitted to the Intensive Care Unit (ICU) of Zhongda Hospital",
+        "location": "Methods, Patients, para 1"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "age younger than 18 years or older than 85 years, cardiac failure, known pregnancy, increased intracranial pressure, severe neuromuscular disease, recent injury or other pathological condition of the oesophagus, severe chronic respiratory disease, end stage chronic organ failure and expected survival of less than 24 hours.",
+      "provenance": {
+        "quote": "The exclusion criteria included age younger than 18 years or older than 85 years, cardiac failure, known pregnancy, increased intracranial pressure, severe neuromuscular disease, recent injury or other pathological condition of the oesophagus, severe chronic respiratory disease, end stage chronic organ failure and expected survival of less than 24 hours.",
+        "location": "Methods, Patients, para 2"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definitions",
+      "provenance": {
+        "quote": "The diagnosis of ARDS was based on the Berlin definitions.",
+        "location": "Methods, Patients, para 1"
+      }
+    },
+    "n_ards": {
+      "n": 15,
+      "total": 15,
+      "provenance": {
+        "quote": "The 15 patients included in the study were intubated and received invasive mechanical ventilation.",
+        "location": "Methods, Patients, para 2"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Primary physiological injury: Pneumonia, Peritonitis, Polytrauma, Pancreatitis, Other",
+      "provenance": {
+        "quote": "Primary physiological injury: Pneumonia 6|3, Peritonitis 0|1, Polytrauma 1|0, Pancreatitis 0|2, Other 1|1",
+        "location": "Table 1, row: Primary physiological injury"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Height (cm)",
+        "arm_label": "baseline_iah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 164,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "n": 7,
+          "unit": "cm",
+          "provenance": {
+            "quote": "Height (cm) — 164±7",
+            "location": "Table 1, row: Height, ARDS+IAH column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Height (cm)",
+        "arm_label": "baseline_noiah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 170,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 8,
+          "unit": "cm",
+          "provenance": {
+            "quote": "Height (cm) — 170±5",
+            "location": "Table 1, row: Height, ARDS column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Weight (kg)",
+        "arm_label": "baseline_iah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 68,
+          "dispersion_type": "sd",
+          "dispersion": 15,
+          "n": 7,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Weight (kg) — 68±15",
+            "location": "Table 1, row: Weight, ARDS+IAH column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Weight (kg)",
+        "arm_label": "baseline_noiah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 67,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 8,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Weight (kg) — 67±6",
+            "location": "Table 1, row: Weight, ARDS column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "LIS",
+        "arm_label": "baseline_iah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 2.7,
+          "dispersion_type": "sd",
+          "dispersion": 0.9,
+          "n": 7,
+          "provenance": {
+            "quote": "LIS — 2.7±0.9",
+            "location": "Table 1, row: LIS, ARDS+IAH column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "LIS",
+        "arm_label": "baseline_noiah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 2.4,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 8,
+          "provenance": {
+            "quote": "LIS — 2.4±0.5",
+            "location": "Table 1, row: LIS, ARDS column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lactate (mmol/L)",
+        "arm_label": "baseline_iah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 2.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.5,
+          "n": 7,
+          "unit": "mmol/L",
+          "provenance": {
+            "quote": "Lactate (mmol/L) — 2.2±1.5",
+            "location": "Table 1, row: Lactate, ARDS+IAH column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lactate (mmol/L)",
+        "arm_label": "baseline_noiah",
+        "continuous": {
+          "value_type": "mean",
+          "value": 1.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 8,
+          "unit": "mmol/L",
+          "provenance": {
+            "quote": "Lactate (mmol/L) — 1.2±0.5",
+            "location": "Table 1, row: Lactate, ARDS column"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "baseline_iah",
+        "n": {
+          "value": 7
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 59,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "n": 7,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) — 59±18",
+            "location": "Table 1, row: Age, ARDS+IAH column"
+          }
+        },
+        "sex_female": {
+          "n": 5,
+          "total": 7,
+          "provenance": {
+            "quote": "Gender (male/female) — 2/5",
+            "location": "Table 1, row: Gender, ARDS+IAH column"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 25,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 7,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI (kg/m2) — 25±4",
+            "location": "Table 1, row: BMI, ARDS+IAH column"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 217.7,
+          "dispersion_type": "sd",
+          "dispersion": 51.1,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — 217.7±51.1",
+            "location": "Table 1, row: PaO2/FiO2, ARDS+IAH column"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "n": 7,
+          "provenance": {
+            "quote": "APACHE II — 27±10",
+            "location": "Table 1, row: APACHE II, ARDS+IAH column"
+          }
+        }
+      },
+      {
+        "arm_label": "baseline_noiah",
+        "n": {
+          "value": 8
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 67,
+          "dispersion_type": "sd",
+          "dispersion": 15,
+          "n": 8,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) — 67±15",
+            "location": "Table 1, row: Age, ARDS column"
+          }
+        },
+        "sex_female": {
+          "n": 3,
+          "total": 8,
+          "provenance": {
+            "quote": "Gender (male/female) — 5/3",
+            "location": "Table 1, row: Gender, ARDS column"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 23,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "n": 8,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI (kg/m2) — 23±1",
+            "location": "Table 1, row: BMI, ARDS column"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 207.8,
+          "dispersion_type": "sd",
+          "dispersion": 75.2,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — 207.8±75.2",
+            "location": "Table 1, row: PaO2/FiO2, ARDS column"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 26,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 8,
+          "provenance": {
+            "quote": "APACHE II — 26±4",
+            "location": "Table 1, row: APACHE II, ARDS column"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "A 10 cm latex oesophageal balloon catheter",
+      "provenance": {
+        "quote": "A 10 cm latex oesophageal, balloon catheter was inserted into the lower third of the oesophagus and was attached to respiratory mechanics monitor.",
+        "location": "Methods, Respiratory mechanics, para 1"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "baydur_occlusion_test",
+      "method_verbatim": {
+        "value": "A 10 cm latex oesophageal, balloon catheter was inserted into the lower third of the oesophagus and was attached to respiratory mechanics monitor. In this technique, there are no changes in lung volume and the decrease in oesophageal pressure equals the decrease in airway pressure.",
+        "provenance": {
+          "quote": "A 10 cm latex oesophageal, balloon catheter was inserted into the lower third of the oesophagus and was attached to respiratory mechanics monitor. In this technique, there are no changes in lung volume and the decrease in oesophageal pressure equals the decrease in airway pressure.",
+          "location": "Methods, Respiratory mechanics, para 1"
+        }
+      },
+      "position_verification": {
+        "value": "inserted into the lower third of the oesophagus"
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Ptp was calculated as the difference between static airway pressure and oesophageal pressure.",
+        "provenance": {
+          "quote": "Ptp was calculated as the difference between static airway pressure and oesophageal pressure.",
+          "location": "Methods, Respiratory mechanics, para 1"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP set to achieve a transpulmonary pressure of 0–10 cmH2O at end expiration, according to a sliding scale based on PaO2 and FiO2 in PEEP titrated by Ptp method, as Talmor described.",
+        "provenance": {
+          "quote": "PEEP set to achieve a transpulmonary pressure of 0–10 cmH2O at end expiration, according to a sliding scale based on PaO2 and FiO2 in PEEP titrated by Ptp method, as Talmor described.",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure of 0–10 cmH2O",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure of 0–10 cmH2O",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Patients underwent a recruitment manoeuvre such that airway pressure was increased to 40 cm of water for 30 seconds.",
+        "provenance": {
+          "quote": "Patients underwent a recruitment manoeuvre such that airway pressure was increased to 40 cm of water for 30 seconds.",
+          "location": "Methods, Baseline, para 1"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 ml/kg",
+        "provenance": {
+          "quote": "tidal volumes of 6 ml/kg",
+          "location": "Methods, Baseline, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Sedation was given with a continuous infusion midazolam (3 to 10 mg/h) and fentanyl (0.5 to 2.5 mg/h) to maintain a Ramsay score of 5–6 (no spontaneous breath) throughout the study and paralyzed with vecuronium if necessary.",
+        "provenance": {
+          "quote": "Sedation was given with a continuous infusion midazolam (3 to 10 mg/h) and fentanyl (0.5 to 2.5 mg/h) to maintain a Ramsay score of 5–6 (no spontaneous breath) throughout the study and paralyzed with vecuronium if necessary.",
+          "location": "Methods, Baseline, para 1"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "ards_onset",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "patients with ARDS (less than 72 hours after ARDS) onset",
+        "provenance": {
+          "quote": "patients with ARDS (less than 72 hours after ARDS) onset of varying aetiology admitted to the Intensive Care Unit (ICU) of Zhongda Hospital",
+          "location": "Methods, Patients, para 1"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEP titrated by ARDSnet protocol",
+      "provenance": {
+        "quote": "PEEP levels and the FiO2 of each patient were titrated by Ptp and ARDSnet protocol.",
+        "location": "Methods, Study design, para 1"
+      }
+    },
+    "crossover_order": {
+      "value": "A randomized, crossover study was conducted. At the beginning of the study, IAP was measured and patients were stratified into two groups: ARDS patients with IAH (IAP ≥12 mmHg) and ARDS patients without IAH (IAP <12 mmHg). After baseline ventilation for 10 minutes, PEEP levels and the FiO2 of each patient were titrated by Ptp and ARDSnet protocol.",
+      "provenance": {
+        "quote": "A randomized, crossover study was conducted. At the beginning of the study, IAP was measured and patients were stratified into two groups: ARDS patients with IAH (IAP ≥12 mmHg) and ARDS patients without IAH (IAP <12 mmHg). After baseline ventilation for 10 minutes, PEEP levels and the FiO2 of each patient were titrated by Ptp and ARDSnet protocol.",
+        "location": "Methods, Study design, para 1"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+      "provenance": {
+        "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+        "location": "Methods, Study design, para 1"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "baseline_iah",
+      "label_verbatim": "Baseline (ARDS+IAH)",
+      "role": "reference_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 7,
+        "provenance": {
+          "quote": "seven ARDS patients with IAH",
+          "location": "Results, Characteristics of the patients, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 5,
+        "dispersion_type": "none",
+        "n": 7,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "a PEEP of 5 cmH2O",
+          "location": "Methods, Baseline, para 1"
+        }
+      }
+    },
+    {
+      "label": "baseline_noiah",
+      "label_verbatim": "Baseline (ARDS without IAH)",
+      "role": "reference_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 8,
+        "provenance": {
+          "quote": "eight ARDS patients without IAH",
+          "location": "Results, Characteristics of the patients, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 5,
+        "dispersion_type": "none",
+        "n": 8,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "a PEEP of 5 cmH2O",
+          "location": "Methods, Baseline, para 1"
+        }
+      }
+    },
+    {
+      "label": "ardsnet_peep_iah",
+      "label_verbatim": "ARDSnet protocol (ARDS+IAH)",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 7,
+        "provenance": {
+          "quote": "ARDS+IAH",
+          "location": "Table 2, row: PEEP, ARDS+IAH"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 6.3,
+        "dispersion_type": "sd",
+        "dispersion": 1.6,
+        "n": 7,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) — ARDS+IAH: 6.3±1.6",
+          "location": "Table 2, row: PEEP, ARDS+IAH, ARDSnet protocol column"
+        }
+      }
+    },
+    {
+      "label": "ptp_peep_iah",
+      "label_verbatim": "PEEP titrated by Ptp (ARDS+IAH)",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 7,
+        "provenance": {
+          "quote": "ARDS+IAH",
+          "location": "Table 2, row: PEEP, ARDS+IAH"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 17.3,
+        "dispersion_type": "sd",
+        "dispersion": 2.6,
+        "n": 7,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) — ARDS+IAH: 17.3±2.6",
+          "location": "Table 2, row: PEEP, ARDS+IAH, Ptp column"
+        }
+      }
+    },
+    {
+      "label": "ardsnet_peep_noiah",
+      "label_verbatim": "ARDSnet protocol (ARDS without IAH)",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 8,
+        "provenance": {
+          "quote": "ARDS",
+          "location": "Table 2, row: PEEP, ARDS"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 7.8,
+        "dispersion_type": "sd",
+        "dispersion": 1.9,
+        "n": 8,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) — ARDS: 7.8±1.9",
+          "location": "Table 2, row: PEEP, ARDS, ARDSnet protocol column"
+        }
+      }
+    },
+    {
+      "label": "ptp_peep_noiah",
+      "label_verbatim": "PEEP titrated by Ptp (ARDS without IAH)",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 8,
+        "provenance": {
+          "quote": "ARDS",
+          "location": "Table 2, row: PEEP, ARDS"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 9.5,
+        "dispersion_type": "sd",
+        "dispersion": 2.1,
+        "n": 8,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) — ARDS: 9.5±2.1",
+          "location": "Table 2, row: PEEP, ARDS, Ptp column"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 217.7,
+          "dispersion_type": "sd",
+          "dispersion": 51.1,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — 217.7±51.1",
+            "location": "Table 1, row: PaO2/FiO2, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 207.8,
+          "dispersion_type": "sd",
+          "dispersion": 75.2,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — 207.8±75.2",
+            "location": "Table 1, row: PaO2/FiO2, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 209,
+          "dispersion_type": "sd",
+          "dispersion": 50,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS+IAH: 209±50",
+            "location": "Table 3, row: PaO2/FiO2, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 272,
+          "dispersion_type": "sd",
+          "dispersion": 40,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS+IAH: 272±40",
+            "location": "Table 3, row: PaO2/FiO2, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 214,
+          "dispersion_type": "sd",
+          "dispersion": 45,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS: 214±45",
+            "location": "Table 3, row: PaO2/FiO2, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 224,
+          "dispersion_type": "sd",
+          "dispersion": 42,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS: 224±42",
+            "location": "Table 3, row: PaO2/FiO2, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS+IAH: 209±50 vs 272±40, P=0.001",
+            "location": "Table 3, row: PaO2/FiO2, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.119,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mmHg) — ARDS: 214±45 vs 224±42, P=0.119",
+            "location": "Table 3, row: PaO2/FiO2, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 17.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — 17.3±2.7",
+            "location": "Table 1, row: Pplat, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 13.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — 13.2±3.3",
+            "location": "Table 1, row: Pplat, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 18.9,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS+IAH: 18.9±3.2",
+            "location": "Table 2, row: Pplat, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 27.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS+IAH: 27.3±2.4",
+            "location": "Table 2, row: Pplat, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 15.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS: 15.2±4.9",
+            "location": "Table 2, row: Pplat, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 16.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.3,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS: 16.8±4.3",
+            "location": "Table 2, row: Pplat, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS+IAH: 18.9±3.2 vs 27.3±2.4, P=0.001",
+            "location": "Table 2, row: Pplat, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.057,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) — ARDS: 15.2±4.9 vs 16.8±4.3, P=0.057",
+            "location": "Table 2, row: Pplat, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Crs",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 30.1,
+          "dispersion_type": "sd",
+          "dispersion": 8.6,
+          "n": 7,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Crs (ml/cmH2O) — 30.1±8.6",
+            "location": "Table 1, row: Crs, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 58.1,
+          "dispersion_type": "sd",
+          "dispersion": 18.2,
+          "n": 8,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Crs (ml/cmH2O) — 58.1±18.2",
+            "location": "Table 1, row: Crs, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ccw",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 100.7,
+          "dispersion_type": "sd",
+          "dispersion": 24.8,
+          "n": 7,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Ccw (ml/cmH2O) — 100.7±24.8",
+            "location": "Table 1, row: Ccw, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 161.4,
+          "dispersion_type": "sd",
+          "dispersion": 43.5,
+          "n": 8,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Ccw (ml/cmH2O) — 161.4±43.5",
+            "location": "Table 1, row: Ccw, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cl",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 49.5,
+          "dispersion_type": "sd",
+          "dispersion": 16.2,
+          "n": 7,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cl (ml/cmH2O) — 49.5±16.2",
+            "location": "Table 1, row: Cl, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 99.2,
+          "dispersion_type": "sd",
+          "dispersion": 46.7,
+          "n": 8,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cl (ml/cmH2O) — 99.2±46.7",
+            "location": "Table 1, row: Cl, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "EELV",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 986,
+          "dispersion_type": "sd",
+          "dispersion": 383,
+          "n": 7,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — 986±383",
+            "location": "Table 1, row: EELV, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 1452,
+          "dispersion_type": "sd",
+          "dispersion": 540,
+          "n": 8,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — 1452±540",
+            "location": "Table 1, row: EELV, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "EELV",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 980,
+          "dispersion_type": "sd",
+          "dispersion": 323,
+          "n": 7,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS+IAH: 980±323",
+            "location": "Table 2, row: EELV, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 1565,
+          "dispersion_type": "sd",
+          "dispersion": 522,
+          "n": 7,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS+IAH: 1565±522",
+            "location": "Table 2, row: EELV, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 1610,
+          "dispersion_type": "sd",
+          "dispersion": 602,
+          "n": 8,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS: 1610±602",
+            "location": "Table 2, row: EELV, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 1836,
+          "dispersion_type": "sd",
+          "dispersion": 609,
+          "n": 8,
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS: 1836±609",
+            "location": "Table 2, row: EELV, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS+IAH: 980±323 vs 1565±522, P=0.001",
+            "location": "Table 2, row: EELV, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.013,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "ml",
+          "provenance": {
+            "quote": "EELV (ml) — ARDS: 1610±602 vs 1836±609, P=0.013",
+            "location": "Table 2, row: EELV, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "VD/VT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 0.37,
+          "dispersion_type": "sd",
+          "dispersion": 0.07,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "VD/VT — 0.37±0.07",
+            "location": "Table 1, row: VD/VT, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 0.42,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 8,
+          "unit": null,
+          "provenance": {
+            "quote": "VD/VT — 0.42±0.1",
+            "location": "Table 1, row: VD/VT, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "IAP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 16.5,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "IAP (mmHg) — 16.5±1.8",
+            "location": "Table 1, row: IAP, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 9.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "IAP (mmHg) — 9.8±1.6",
+            "location": "Table 1, row: IAP, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 31.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — 31.1±1.9",
+            "location": "Table 1, row: PaCO2, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 31.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — 31.2±4.5",
+            "location": "Table 1, row: PaCO2, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "A-aDO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "value_type": "mean",
+          "value": 205.2,
+          "dispersion_type": "sd",
+          "dispersion": 57.9,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — 205.2±57.9",
+            "location": "Table 1, row: A-aDO2, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "value_type": "mean",
+          "value": 233.7,
+          "dispersion_type": "sd",
+          "dispersion": 61.6,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — 233.7±61.6",
+            "location": "Table 1, row: A-aDO2, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 6.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS+IAH: 6.3±1.6",
+            "location": "Table 2, row: PEEP, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 17.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS+IAH: 17.3±2.6",
+            "location": "Table 2, row: PEEP, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 7.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS: 7.8±1.9",
+            "location": "Table 2, row: PEEP, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 9.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS: 9.5±2.1",
+            "location": "Table 2, row: PEEP, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.018,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS+IAH: 6.3±1.6 vs 17.3±2.6, P=0.018",
+            "location": "Table 2, row: PEEP, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.036,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) — ARDS: 7.8±1.9 vs 9.5±2.1, P=0.036",
+            "location": "Table 2, row: PEEP, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Vt",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 6.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "n": 7,
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS+IAH: 6.3±0.6",
+            "location": "Table 2, row: Vt, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 6.4,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "n": 7,
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS+IAH: 6.4±0.6",
+            "location": "Table 2, row: Vt, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.4,
+          "n": 8,
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS: 6.2±0.4",
+            "location": "Table 2, row: Vt, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.4,
+          "n": 8,
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS: 6.2±0.4",
+            "location": "Table 2, row: Vt, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.332,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS+IAH: 6.3±0.6 vs 6.4±0.6, P=0.332",
+            "location": "Table 2, row: Vt, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.107,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "ml/kg",
+          "provenance": {
+            "quote": "Vt (ml) — ARDS: 6.2±0.4 vs 6.2±0.4, P=0.107",
+            "location": "Table 2, row: Vt, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtot",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 6.7,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS+IAH: 6.7±1.7",
+            "location": "Table 2, row: PEEPtot, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 17.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS+IAH: 17.2±2.7",
+            "location": "Table 2, row: PEEPtot, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 7.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS: 7.6±1.9",
+            "location": "Table 2, row: PEEPtot, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 9.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS: 9.2±2.1",
+            "location": "Table 2, row: PEEPtot, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.018,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS+IAH: 6.7±1.7 vs 17.2±2.7, P=0.018",
+            "location": "Table 2, row: PEEPtot, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.049,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot (cmH2O) — ARDS: 7.6±1.9 vs 9.2±2.1, P=0.049",
+            "location": "Table 2, row: PEEPtot, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Peso ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 16.4,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS+IAH: 16.4±1.8",
+            "location": "Table 2, row: Peso ins, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 20.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS+IAH: 20.2±2.6",
+            "location": "Table 2, row: Peso ins, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 11.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS: 11.1±1.7",
+            "location": "Table 2, row: Peso ins, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 12.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.0,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS: 12.2±2.0",
+            "location": "Table 2, row: Peso ins, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.002,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS+IAH: 16.4±1.8 vs 20.2±2.6, P=0.002",
+            "location": "Table 2, row: Peso ins, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.188,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso ins (cmH2O) — ARDS: 11.1±1.7 vs 12.2±2.0, P=0.188",
+            "location": "Table 2, row: Peso ins, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Peso exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 12.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS+IAH: 12.5±2.4",
+            "location": "Table 2, row: Peso exp, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 16.0,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS+IAH: 16.0±2.6",
+            "location": "Table 2, row: Peso exp, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 8.4,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS: 8.4±1.9",
+            "location": "Table 2, row: Peso exp, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 8.8,
+          "dispersion_type": "sd",
+          "dispersion": 2.0,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS: 8.8±2.0",
+            "location": "Table 2, row: Peso exp, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.002,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS+IAH: 12.5±2.4 vs 16.0±2.6, P=0.002",
+            "location": "Table 2, row: Peso exp, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.149,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peso exp (cmH2O) — ARDS: 8.4±1.9 vs 8.8±2.0, P=0.149",
+            "location": "Table 2, row: Peso exp, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptp ins",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 2.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS+IAH: 2.4±3.4",
+            "location": "Table 2, row: Ptp ins, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 7.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS+IAH: 7.1±1.7",
+            "location": "Table 2, row: Ptp ins, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 4.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS: 4.0±3.7",
+            "location": "Table 2, row: Ptp ins, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 5.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS: 5.2±2.9",
+            "location": "Table 2, row: Ptp ins, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.002,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS+IAH: 2.4±3.4 vs 7.1±1.7, P=0.002",
+            "location": "Table 2, row: Ptp ins, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.059,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp ins (cmH2O) — ARDS: 4.0±3.7 vs 5.2±2.9, P=0.059",
+            "location": "Table 2, row: Ptp ins, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptp exp",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 5.8,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS+IAH: 5.8±2.7",
+            "location": "Table 2, row: Ptp exp, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 1.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS+IAH: 1.3±1.3",
+            "location": "Table 2, row: Ptp exp, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 0.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.4,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS: 0.8±1.4",
+            "location": "Table 2, row: Ptp exp, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 0.4,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS: 0.4±0.5",
+            "location": "Table 2, row: Ptp exp, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.018,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS+IAH: 5.8±2.7 vs 1.3±1.3, P=0.018",
+            "location": "Table 2, row: Ptp exp, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.061,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp exp (cmH2O) — ARDS: 0.8±1.4 vs 0.4±0.5, P=0.061",
+            "location": "Table 2, row: Ptp exp, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 92,
+          "dispersion_type": "sd",
+          "dispersion": 21,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS+IAH: 92±21",
+            "location": "Table 3, row: PaO2, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 119,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS+IAH: 119±19",
+            "location": "Table 3, row: PaO2, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 90,
+          "dispersion_type": "sd",
+          "dispersion": 12,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS: 90±12",
+            "location": "Table 3, row: PaO2, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 95,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS: 95±10",
+            "location": "Table 3, row: PaO2, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.021,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS+IAH: 92±21 vs 119±19, P=0.021",
+            "location": "Table 3, row: PaO2, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.102,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) — ARDS: 90±12 vs 95±10, P=0.102",
+            "location": "Table 3, row: PaO2, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "SaO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 95,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "n": 7,
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS+IAH: 95±3",
+            "location": "Table 3, row: SaO2, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 97,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "n": 7,
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS+IAH: 97±1",
+            "location": "Table 3, row: SaO2, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 95,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "n": 8,
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS: 95±2",
+            "location": "Table 3, row: SaO2, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 96,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "n": 8,
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS: 96±1",
+            "location": "Table 3, row: SaO2, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.049,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS+IAH: 95±3 vs 97±1, P=0.049",
+            "location": "Table 3, row: SaO2, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.017,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "%",
+          "provenance": {
+            "quote": "SaO2 (%) — ARDS: 95±2 vs 96±1, P=0.017",
+            "location": "Table 3, row: SaO2, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 36,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS+IAH: 36±5",
+            "location": "Table 3, row: PaCO2, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 38,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS+IAH: 38±6",
+            "location": "Table 3, row: PaCO2, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 35,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS: 35±3",
+            "location": "Table 3, row: PaCO2, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 37,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS: 37±4",
+            "location": "Table 3, row: PaCO2, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.386,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS+IAH: 36±5 vs 38±6, P=0.386",
+            "location": "Table 3, row: PaCO2, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.065,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) — ARDS: 35±3 vs 37±4, P=0.065",
+            "location": "Table 3, row: PaCO2, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "A-aDO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 180,
+          "dispersion_type": "sd",
+          "dispersion": 40,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS+IAH: 180±40",
+            "location": "Table 3, row: A-aDO2, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 151,
+          "dispersion_type": "sd",
+          "dispersion": 44,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS+IAH: 151±44",
+            "location": "Table 3, row: A-aDO2, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 199,
+          "dispersion_type": "sd",
+          "dispersion": 68,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS: 199±68",
+            "location": "Table 3, row: A-aDO2, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 180,
+          "dispersion_type": "sd",
+          "dispersion": 47,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS: 180±47",
+            "location": "Table 3, row: A-aDO2, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.026,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS+IAH: 180±40 vs 151±44, P=0.026",
+            "location": "Table 3, row: A-aDO2, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.368,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "A–a DO2 (mmHg) — ARDS: 199±68 vs 180±47, P=0.368",
+            "location": "Table 3, row: A-aDO2, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pHa",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 7.34,
+          "dispersion_type": "sd",
+          "dispersion": 0.08,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS+IAH: 7.34±0.08",
+            "location": "Table 3, row: pHa, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 7.33,
+          "dispersion_type": "sd",
+          "dispersion": 0.08,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS+IAH: 7.33±0.08",
+            "location": "Table 3, row: pHa, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 7.37,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "n": 8,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS: 7.37±0.04",
+            "location": "Table 3, row: pHa, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 7.37,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "n": 8,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS: 7.37±0.04",
+            "location": "Table 3, row: pHa, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.552,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS+IAH: 7.34±0.08 vs 7.33±0.08, P=0.552",
+            "location": "Table 3, row: pHa, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.924,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": null,
+          "provenance": {
+            "quote": "pHa — ARDS: 7.37±0.04 vs 7.37±0.04, P=0.924",
+            "location": "Table 3, row: pHa, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 115,
+          "dispersion_type": "sd",
+          "dispersion": 23,
+          "n": 7,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS+IAH: 115±23",
+            "location": "Table 4, row: HR, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 119,
+          "dispersion_type": "sd",
+          "dispersion": 21,
+          "n": 7,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS+IAH: 119±21",
+            "location": "Table 4, row: HR, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 99,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "n": 8,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS: 99±19",
+            "location": "Table 4, row: HR, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 100,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "n": 8,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS: 100±19",
+            "location": "Table 4, row: HR, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.287,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS+IAH: 115±23 vs 119±21, P=0.287",
+            "location": "Table 4, row: HR, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.636,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) — ARDS: 99±19 vs 100±19, P=0.636",
+            "location": "Table 4, row: HR, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "MAP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 90.3,
+          "dispersion_type": "sd",
+          "dispersion": 16.1,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS+IAH: 90.3±16.1",
+            "location": "Table 4, row: MAP, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 84.2,
+          "dispersion_type": "sd",
+          "dispersion": 15.2,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS+IAH: 84.2±15.2",
+            "location": "Table 4, row: MAP, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 83.5,
+          "dispersion_type": "sd",
+          "dispersion": 9.2,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS: 83.5±9.2",
+            "location": "Table 4, row: MAP, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 84.7,
+          "dispersion_type": "sd",
+          "dispersion": 12.0,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS: 84.7±12.0",
+            "location": "Table 4, row: MAP, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.56,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS+IAH: 90.3±16.1 vs 84.2±15.2, P=0.56",
+            "location": "Table 4, row: MAP, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.898,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP (mmHg) — ARDS: 83.5±9.2 vs 84.7±12.0, P=0.898",
+            "location": "Table 4, row: MAP, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "After 30 minutes of ventilation at each PEEP level",
+        "provenance": {
+          "quote": "patients were ventilated for 30 minutes to reach the equilibration of gas exchange and respiratory mechanics",
+          "location": "Methods, Study design, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_peep_iah",
+          "value_type": "mean",
+          "value": 12.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.4,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS+IAH: 12.1±6.4",
+            "location": "Table 4, row: CVP, ARDS+IAH, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_iah",
+          "value_type": "mean",
+          "value": 15.2,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS+IAH: 15.2±5.2",
+            "location": "Table 4, row: CVP, ARDS+IAH, Ptp column"
+          }
+        },
+        {
+          "arm_label": "ardsnet_peep_noiah",
+          "value_type": "mean",
+          "value": 10.0,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS: 10.0±1.8",
+            "location": "Table 4, row: CVP, ARDS, ARDSnet protocol column"
+          }
+        },
+        {
+          "arm_label": "ptp_peep_noiah",
+          "value_type": "mean",
+          "value": 10.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.4,
+          "n": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS: 10.2±1.4",
+            "location": "Table 4, row: CVP, ARDS, Ptp column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_iah minus ardsnet_peep_iah",
+          "arm_label_a": "ptp_peep_iah",
+          "arm_label_b": "ardsnet_peep_iah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 7,
+          "p_value": 0.029,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS+IAH: 12.1±6.4 vs 15.2±5.2, P=0.029",
+            "location": "Table 4, row: CVP, ARDS+IAH"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_peep_noiah minus ardsnet_peep_noiah",
+          "arm_label_a": "ptp_peep_noiah",
+          "arm_label_b": "ardsnet_peep_noiah",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 8,
+          "p_value": 0.382,
+          "p_value_verbatim": null,
+          "test_used": "paired sample student's t test",
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "CVP (mmHg) — ARDS: 10.0±1.8 vs 10.2±1.4, P=0.382",
+            "location": "Table 4, row: CVP, ARDS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-day mortality",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-day mortality"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline_iah",
+          "events": null,
+          "total": 7,
+          "provenance": {
+            "quote": "28-day mortality — 33%",
+            "location": "Table 1, row: 28-day mortality, ARDS+IAH column"
+          }
+        },
+        {
+          "arm_label": "baseline_noiah",
+          "events": null,
+          "total": 8,
+          "provenance": {
+            "quote": "28-day mortality — 25%",
+            "location": "Table 1, row: 28-day mortality, ARDS column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS subgroup: all patients had ARDS by inclusion. Obesity subgroup: mean BMI 23-25 kg/m2, not obese. Timing subgroup: enrolled within 72h of ARDS onset but not necessarily within 48h, hence unclear. PTP target: end-expiratory Ptp 0-10 cmH2O, absolute subtraction."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "Intra-abdominal hypertension (IAH) status",
+      "outcome_name": "PaO2/FiO2",
+      "prespecified": null,
+      "result_verbatim": "In ARDS patients with IAH, the PaO2/FiO2... improved significantly than ARDSnet protocol. In ARDS patients without IAH, there were no significant differences of PEEP induced change of gas exchange between PEEP guided by Ptp and ARDSnet protocol.",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "In ARDS patients with IAH, the PaO2/FiO2, A–aDO2 and SaO2 with PEEP guided by Ptp improved significantly than ARDSnet protocol. In ARDS patients without IAH, there were no significant differences of PEEP induced change of gas exchange between PEEP guided by Ptp and ARDSnet protocol.",
+        "location": "Results, Effects of PEEP on gas exchange, para 1"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlapping cohort identified. Enrolment dates Aug 2011-Apr 2012, single centre in Nanjing, China. Compared with COHORTS.md clusters; none match. Registration number not reported.",
+    "unclear_items": [
+      "ARDSnet PEEP-FiO2 table not specified as low or high; coded as ardsnet_low_peep_fio2_table based on low PEEP values but this is inferred.",
+      "28-day mortality reported as percentages (25% for ARDS, 33% for ARDS+IAH) without exact event counts; percentages are inconsistent with denominators (33% of 7 not an integer).",
+      "Crs, Ccw, Cl, and VD/VT at each PEEP condition only presented in Figure 3; numeric values not extractable from text.",
+      "Timing from ARDS onset reported as 'less than 72 hours', so timing_subgroup classified as unclear because it may be >48h.",
+      "Balloon calibration method inferred as Baydur occlusion test based on reference 19, but no explicit occlusion test described.",
+      "Crossover sequence order not described in detail; only stated as randomized."
+    ],
+    "data_only_in_figure": [
+      "Crs at Ptp and ARDSnet conditions",
+      "Ccw at Ptp and ARDSnet conditions",
+      "Cl at Ptp and ARDSnet conditions",
+      "VD/VT at Ptp and ARDSnet conditions"
+    ],
+    "contact_author_needed": false,
+    "general_notes": null
+  }
+}

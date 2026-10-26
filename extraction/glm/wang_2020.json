@@ -1,0 +1,1841 @@
+{
+  "record_meta": {
+    "study_id": "wang_2020",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/wang2020.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Wang",
+    "year": 2020,
+    "title": "Mechanical Ventilation Strategy Guided by Transpulmonary Pressure in Severe Acute Respiratory Distress Syndrome Treated With Venovenous Extracorporeal Membrane Oxygenation",
+    "journal": "Critical Care Medicine",
+    "doi": "10.1097/CCM.0000000000004445",
+    "pmid": null,
+    "trial_registration": "NCT02439151",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients with any of the following were excluded as follows: 1) age less than 18 years old;",
+          "location": "Methods, Patients, para 2, p. 1281"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We included patients in whom a decision to initiate venovenous ECMO had already been made and met the following criteria: 1) met the diagnostic criteria of Berlin definition for ARDS (13); 2) cause of ARDS was pneumonia",
+          "location": "Methods, Patients, para 1, p. 1281"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Setting: Sixteen-bed, respiratory ICU at a tertiary academic medical center.",
+          "location": "Abstract, Setting, p. 1280"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The primary endpoint was the proportion of patients successfully weaned from venovenous ECMO",
+          "location": "Methods, Measurements, para 1, p. 1282"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "One-hundred four patients were randomized to transpulmonary pressure-guided ventilation group (n = 52) or lung rest strategy group (n = 52) groups.",
+          "location": "Abstract, Interventions, p. 1280"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This was a single-center prospective randomized controlled trial (ClinicalTrials.gov, NCT02439151).",
+          "location": "Methods, Study Design, para 1, p. 1281"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Crit Care Med 2020; 48:1280–1288",
+          "location": "Abstract, Conclusions, p. 1280"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "Single-center, prospective, randomized controlled trial.",
+      "provenance": {
+        "quote": "Design: Single-center, prospective, randomized controlled trial.",
+        "location": "Abstract, Design, p. 1280"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": "1:1",
+    "blinding": {
+      "value": "All nurses and other research personnel were blinded to the randomization schedule and block size. Data collectors were aware of the study group assignments, but the analyses were performed by a study statistician who did not participate in the study and did not know the research groupings. Because of the nature of the intervention, physicians and nurses could not be blinded to group assignments.",
+      "provenance": {
+        "quote": "All nurses and other research personnel were blinded to the randomization schedule and block size.",
+        "location": "Methods, Study Design, para 2, p. 1281"
+      }
+    },
+    "centers": "single",
+    "n_centers": null,
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "All authors: Department of Respiratory and Critical Care Medicine, Beijing Chao-Yang Hospital, Beijing Institute of Respiratory Medicine, ... Capital Medical University, No. 8 Gongren Tiyuchang Nanlu, Chaoyang District, Beijing, China.",
+      "location": "Author affiliations footnote, p. 1280"
+    },
+    "planned_sample_size": {
+      "value": 96,
+      "derived": true,
+      "derivation": "Sample size of 48 participants per group stated; total 96 computed as 48 x 2.",
+      "provenance": {
+        "quote": "A sample size of 48 participants per group was chosen to have 80% power to demonstrate that the Ptp-guided group is superior to the lung rest group for the primary measure",
+        "location": "Methods, Statistical Analysis, Sample Size Estimation, p. 1282"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "A sample size of 48 participants per group was chosen to have 80% power to demonstrate that the Ptp-guided group is superior to the lung rest group for the primary measure (proportion of patients successfully weaned from venovenous ECMO), with the use of a margin of 0.25 based on an observed 45% of patients successfully weaned from venovenous ECMO for the lung rest group in our center and the assumed 70% for the Ptp-guided group.",
+      "provenance": {
+        "quote": "A sample size of 48 participants per group was chosen to have 80% power to demonstrate that the Ptp-guided group is superior to the lung rest group for the primary measure (proportion of patients successfully weaned from venovenous ECMO), with the use of a margin of 0.25 based on an observed 45% of patients successfully weaned from venovenous ECMO for the lung rest group in our center and the assumed 70% for the Ptp-guided group (16).",
+        "location": "Methods, Statistical Analysis, Sample Size Estimation, p. 1282"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Sixteen-bed, respiratory ICU at a tertiary academic medical center.",
+      "provenance": {
+        "quote": "Setting: Sixteen-bed, respiratory ICU at a tertiary academic medical center.",
+        "location": "Abstract, Setting, p. 1280"
+      }
+    },
+    "enrolment_start": "2015-05",
+    "enrolment_end": "2019-04",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Program of Science and Technology of the Beijing Municipal (Z151100004015049) and the Capital Health Research and Development of Specialties of the Beijing Municipal Commission of Health and Family Planning (ShouFa 2016-1-1061).",
+      "provenance": {
+        "quote": "Research reported in this publication was supported by the Program of Science and Technology of the Beijing Municipal (Z151100004015049) and the Capital Health Research and Development of Specialties of the Beijing Municipal Commission of Health and Family Planning (ShouFa 2016-1-1061).",
+        "location": "Funding statement, p. 1287"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 104,
+      "provenance": {
+        "quote": "104 were enrolled ... 104 underwent randomization",
+        "location": "Figure 1, Flow diagram, p. 1283"
+      }
+    },
+    "n_analysed": {
+      "value": 102,
+      "provenance": {
+        "quote": "Two patients had cardiac arrest during establishment of venovenous ECMO in the lung rest group did not receive the assigned intervention. Finally, 102 patients were included in the analysis (Fig. 1).",
+        "location": "Results, Patients, para 1, p. 1282"
+      }
+    },
+    "population_description": {
+      "value": "Severe acute respiratory distress syndrome patients receiving venovenous extracorporeal membrane oxygenation.",
+      "provenance": {
+        "quote": "Patients: Severe acute respiratory distress syndrome patients receiving venovenous extracorporeal membrane oxygenation.",
+        "location": "Abstract, Patients, p. 1280"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "1) met the diagnostic criteria of Berlin definition for ARDS; 2) cause of ARDS was pneumonia; 3) had one of following disease-severity criteria despite optimum mechanical ventilation (tidal volume 6 mL/kg of predicted body weight, PEEP >= 10 cm H2O, FiO2 >= 0.8) and use of various rescue therapies: ratio of Pao2 to Fio2 less than or equal to 80 mm Hg; or an arterial blood pH less than 7.20 with a Paco2 greater than 60 mm Hg, with respiratory rate increased to 35 breaths per minute and Pplat less than or equal to 30 cm H2O.",
+      "provenance": {
+        "quote": "We included patients in whom a decision to initiate venovenous ECMO had already been made and met the following criteria: 1) met the diagnostic criteria of Berlin definition for ARDS (13); 2) cause of ARDS was pneumonia (Appendix S1, Supplemental Digital Content 1, http://links.lww.com/CCM/F572); and 3) had one of following disease-severity criteria despite optimum mechanical ventilation (tidal volume 6 mL/kg of predicted body weight [PBM], PEEP ≥ 10 cm H2O, Fio2 ≥ 0.8) and use of various rescue therapies: ratio of Pao2 to Fio2 less than or equal to 80 mm Hg; or an arterial blood pH less than 7.20 with a Paco2 greater than 60 mm Hg, with respiratory rate increased to 35 breaths per minute and Pplat less than or equal to 30 cm H2O.",
+        "location": "Methods, Patients, para 1, p. 1281"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "1) age less than 18 years old; 2) patients had been on high pressure (Ppeak > 35 cm H2O) and high Fio2 greater than 0.8 ventilation for greater than 7 days; 3) patients already suffering pulmonary barotraumas; 4) had a contraindication to heparinization; 5) had an irreversible neurologic injury; or 6) severe chronic lung disease with life expectancy less than 6 months.",
+      "provenance": {
+        "quote": "Patients with any of the following were excluded as follows: 1) age less than 18 years old; 2) patients had been on high pressure (Ppeak > 35 cm H2O) and high Fio2 greater than 0.8 ventilation for greater than 7 days; 3) patients already suffering pulmonary barotraumas; 4) had a contraindication to heparinization; 5) had an irreversible neurologic injury; or 6) severe chronic lung disease with life expectancy less than 6 months.",
+        "location": "Methods, Patients, para 2, p. 1281"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 48.7,
+      "dispersion_type": "sd",
+      "dispersion": 16.8,
+      "n": 102,
+      "unit": "yr",
+      "provenance": {
+        "quote": "Age, yr, mean ± sd — 48.7 ± 16.8 (All Patients), 47.2 ± 17.1 (Ptp-guided), 50.2 ± 16.4 (lung rest)",
+        "location": "p. 1284, Table 1, row: Age, yr, mean ± sd"
+      }
+    },
+    "sex_female": null,
+    "sex_male": {
+      "n": 70,
+      "total": 102,
+      "percent_as_reported": 68.6,
+      "provenance": {
+        "quote": "Male, n (%) — 70 (68.6) (All Patients), 38 (73.1) (Ptp-guided), 32 (64.0) (lung rest)",
+        "location": "p. 1284, Table 1, row: Male, n (%)"
+      }
+    },
+    "bmi": {
+      "value_type": "median",
+      "value": 24.1,
+      "dispersion_type": "iqr",
+      "dispersion_low": 22.0,
+      "dispersion_high": 26.1,
+      "n": 102,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "Body mass index (kg/m2), median (IQR) — 24.1 (22.0–26.1) (All Patients), 24.2 (22.1–26.1) (Ptp-guided), 23.7 (21.7–25.9) (lung rest)",
+        "location": "p. 1284, Table 1, row: Body mass index (kg/m2), median (IQR)"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definition",
+      "provenance": {
+        "quote": "1) met the diagnostic criteria of Berlin definition for ARDS (13);",
+        "location": "Methods, Patients, para 1, p. 1281"
+      }
+    },
+    "n_ards": {
+      "n": 102,
+      "total": 102,
+      "derived": true,
+      "derivation": "ARDS (Berlin definition) was an inclusion criterion for all patients, so all 102 analysed patients had ARDS by construction.",
+      "provenance": {
+        "quote": "1) met the diagnostic criteria of Berlin definition for ARDS (13);",
+        "location": "Methods, Patients, para 1, p. 1281"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": {
+        "n": 102,
+        "total": 102,
+        "derived": true,
+        "derivation": "Enrolment required severe ARDS patients cannulated for venovenous ECMO; all analysed patients were severe ARDS by design.",
+        "provenance": {
+          "quote": "A total of 115 patients with severe ARDS cannulated for venovenous ECMO were eligible for participation",
+          "location": "Results, Patients, para 1, p. 1282"
+        }
+      }
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Pneumonia: bacterial 22 (21.6%), viral 64 (62.7%), Pneumocystis 12 (11.8%), others 4 (3.9%)",
+      "provenance": {
+        "quote": "Causes of pneumonia, n (%) — Bacterial pneumonia 22 (21.6); Viral pneumonia 64 (62.7); Pneumocystis pneumonia 12 (11.8); Others 4 (3.9)",
+        "location": "p. 1284, Table 1, rows: Causes of pneumonia"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 57.1,
+      "dispersion_type": "iqr",
+      "dispersion_low": 51.0,
+      "dispersion_high": 67.3,
+      "n": 102,
+      "unit": "mm Hg",
+      "provenance": {
+        "quote": "Pao2:Fio2 ratio (mm Hg), median (IQR) — 57.1 (51.0–67.3) (All Patients), 57.2 (51.0–68.0) (Ptp-guided), 57.0 (51.0–67.0) (lung rest)",
+        "location": "p. 1286, Table 3, row: Pao2:Fio2 ratio (mm Hg), median (IQR)"
+      }
+    },
+    "apache_ii": {
+      "value_type": "mean",
+      "value": 18.0,
+      "dispersion_type": "sd",
+      "dispersion": 4.1,
+      "n": 102,
+      "provenance": {
+        "quote": "Acute Physiology and Chronic Health Evaluation II score, mean ± sd — 18.0 ± 4.1 (All Patients), 17.7 ± 3.5 (Ptp-guided), 18.4 ± 4.7 (lung rest)",
+        "location": "p. 1284, Table 1, row: APACHE II score"
+      }
+    },
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": {
+      "n": 79,
+      "total": 102,
+      "percent_as_reported": 77.5,
+      "provenance": {
+        "quote": "Prone position — 79 (77.5) (All Patients), 41 (78.8) (Ptp-guided), 38 (76.0) (lung rest)",
+        "location": "p. 1284, Table 1, row: Prone position (pre-ECMO rescue therapy)"
+      }
+    },
+    "n_neuromuscular_blockade": {
+      "n": 99,
+      "total": 102,
+      "percent_as_reported": 97.1,
+      "provenance": {
+        "quote": "Neuromuscular blockade — 99 (97.1) (All Patients), 50 (96.2) (Ptp-guided), 49 (98.0) (lung rest)",
+        "location": "p. 1284, Table 1, row: Neuromuscular blockade (pre-ECMO rescue therapy)"
+      }
+    },
+    "n_ecmo": {
+      "n": 102,
+      "total": 102,
+      "derived": true,
+      "derivation": "All enrolled patients received venovenous ECMO by design.",
+      "provenance": {
+        "quote": "Severe acute respiratory distress syndrome patients receiving venovenous extracorporeal membrane oxygenation.",
+        "location": "Abstract, Patients, p. 1280"
+      }
+    },
+    "n_vasopressors": {
+      "n": 65,
+      "total": 102,
+      "percent_as_reported": 63.7,
+      "provenance": {
+        "quote": "Vasopressor, n (%) — 65 (63.7) (All Patients), 35 (67.3) (Ptp-guided), 30 (60.0) (lung rest)",
+        "location": "p. 1284, Table 1, row: Vasopressor, n (%) (pre-ECMO hemodynamic status)"
+      }
+    },
+    "additional_baseline": [
+      {
+        "name_verbatim": "Murray score, median (IQR)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 3.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.25,
+          "dispersion_high": 3.75,
+          "n": 102,
+          "provenance": {
+            "quote": "Murray score, median (IQR) — 3.50 (3.25–3.75) (All Patients), 3.50 (3.25–3.75) (Ptp-guided), 3.50 (3.44–3.75) (lung rest)",
+            "location": "p. 1284, Table 1, row: Murray score"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pre-ECMO ventilator days (hr), median (IQR)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 28,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 95,
+          "n": 102,
+          "unit": "hr",
+          "provenance": {
+            "quote": "Pre-ECMO ventilator days (hr), median (IQR) — 28 (11–95) (All Patients), 28 (9–92) (Ptp-guided), 29 (13–95) (lung rest)",
+            "location": "p. 1284, Table 1, row: Pre-ECMO ventilator days"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lactate (mmol/L), median (IQR)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 1.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.4,
+          "dispersion_high": 2.4,
+          "n": 102,
+          "unit": "mmol/L",
+          "provenance": {
+            "quote": "Lactate (mmol/L), median (IQR) — 1.8 (1.4–2.4) (All Patients), 1.7 (1.4–2.6) (Ptp-guided), 1.8 (1.5–2.3) (lung rest)",
+            "location": "p. 1284, Table 1, row: Lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (beats/min), mean ± sd",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 108.8,
+          "dispersion_type": "sd",
+          "dispersion": 22.4,
+          "n": 102,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate (beats/min), mean ± sd — 108.8 ± 22.4 (All Patients), 107.6 ± 23.7 (Ptp-guided), 110.1 ± 21.1 (lung rest)",
+            "location": "p. 1284, Table 1, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Mean arterial pressure (mm Hg), mean ± sd",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 75.7,
+          "dispersion_type": "sd",
+          "dispersion": 14.6,
+          "n": 102,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Mean arterial pressure (mm Hg), mean ± sd — 75.7 ± 14.6 (All Patients), 76.9 ± 13.6 (Ptp-guided), 74.4 ± 15.5 (lung rest)",
+            "location": "p. 1284, Table 1, row: Mean arterial pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH (arterial blood gas, median (IQR))",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 7.38,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.3,
+          "dispersion_high": 7.43,
+          "n": 102,
+          "provenance": {
+            "quote": "pH — 7.38 (7.30–7.43) (All Patients), 7.38 (7.29–7.42) (Ptp-guided), 7.38 (7.31–7.44) (lung rest)",
+            "location": "p. 1286, Table 3, row: pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pao2 (mm Hg)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 57.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51.0,
+          "dispersion_high": 67.0,
+          "n": 102,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Pao2 (mm Hg) — 57.0 (51.0–67.0) (All Patients), 57.0 (51.0–68.0) (Ptp-guided), 57.0 (50.8–67.0) (lung rest)",
+            "location": "p. 1286, Table 3, row: Pao2 (mm Hg)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Paco2 (mm Hg)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 45.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 38.0,
+          "dispersion_high": 51.3,
+          "n": 102,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Paco2 (mm Hg) — 45.5 (38.0–51.3) (All Patients), 46.0 (38.0–53.8) (Ptp-guided), 45.0 (38.0–50.3) (lung rest)",
+            "location": "p. 1286, Table 3, row: Paco2 (mm Hg)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial oxygen saturation (%)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 90.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 84.0,
+          "dispersion_high": 95.0,
+          "n": 102,
+          "unit": "%",
+          "provenance": {
+            "quote": "Arterial oxygen saturation (%) — 90.0 (84.0–95.0) (All Patients), 90.0 (84.0–94.8) (Ptp-guided), 90.0 (83.8–95.0) (lung rest)",
+            "location": "p. 1286, Table 3, row: Arterial oxygen saturation (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Fio2, mean ± sd",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 0.995,
+          "dispersion_type": "sd",
+          "dispersion": 0.022,
+          "n": 102,
+          "provenance": {
+            "quote": "Fio2, mean ± sd — 0.995 ± 0.022 (All Patients), 0.996 ± 0.019 (Ptp-guided), 0.994 ± 0.024 (lung rest)",
+            "location": "p. 1286, Table 3, row: Fio2, mean ± sd"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Tidal volume (mL/predicted body weight), mean ± sd",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 6.0,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 102,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume (mL/predicted body weight), mean ± sd — 6.0 ± 0.5 (All Patients), 6.0 ± 0.5 (Ptp-guided), 6.0 ± 0.4 (lung rest)",
+            "location": "p. 1286, Table 3, row: Tidal volume (mL/predicted body weight)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Peak airway pressure (cm H2O), mean ± sd",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 33.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "n": 102,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Peak airway pressure (cm H2O), mean ± sd — 33.4 ± 5.3 (All Patients), 33.3 ± 4.9 (Ptp-guided), 33.5 ± 5.7 (lung rest)",
+            "location": "p. 1286, Table 3, row: Peak airway pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Immunocompromised, n (%)",
+        "arm_label": null,
+        "count": {
+          "n": 15,
+          "total": 102,
+          "percent_as_reported": 14.7,
+          "provenance": {
+            "quote": "Immunocompromised — 15 (14.7) (All Patients), 9 (17.3) (Ptp-guided), 6 (12.0) (lung rest)",
+            "location": "p. 1284, Table 1, row: Immunocompromised (Comorbidity)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hypertension, n (%)",
+        "arm_label": null,
+        "count": {
+          "n": 28,
+          "total": 102,
+          "percent_as_reported": 27.5,
+          "provenance": {
+            "quote": "Hypertension — 28 (27.5) (All Patients), 13 (25.0) (Ptp-guided), 15 (30.0) (lung rest)",
+            "location": "p. 1284, Table 1, row: Hypertension (Comorbidity)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diabetes mellitus, n (%)",
+        "arm_label": null,
+        "count": {
+          "n": 13,
+          "total": 102,
+          "percent_as_reported": 12.7,
+          "provenance": {
+            "quote": "Diabetes mellitus — 13 (12.7) (All Patients), 8 (15.4) (Ptp-guided), 5 (10.0) (lung rest)",
+            "location": "p. 1284, Table 1, row: Diabetes mellitus (Comorbidity)"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "ptp_guided",
+        "n": {
+          "value": 52,
+          "provenance": {
+            "quote": "52 were assigned to Ptp-guided strategy",
+            "location": "Figure 1, Flow diagram, p. 1283"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 47.2,
+          "dispersion_type": "sd",
+          "dispersion": 17.1,
+          "unit": "yr",
+          "provenance": {
+            "quote": "Age, yr, mean ± sd — 47.2 ± 17.1 (Transpulmonary Pressure-Guided Strategy Group)",
+            "location": "p. 1284, Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": {
+          "value_type": "median",
+          "value": 24.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22.1,
+          "dispersion_high": 26.1,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "Body mass index (kg/m2), median (IQR) — 24.2 (22.1–26.1) (Ptp-guided)",
+            "location": "p. 1284, Table 1, row: Body mass index"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "median",
+          "value": 57.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51.0,
+          "dispersion_high": 68.0,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Pao2:Fio2 ratio (mm Hg), median (IQR) — 57.2 (51.0–68.0) (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Pao2:Fio2 ratio"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 17.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "provenance": {
+            "quote": "Acute Physiology and Chronic Health Evaluation II score, mean ± sd — 17.7 ± 3.5 (Ptp-guided)",
+            "location": "p. 1284, Table 1, row: APACHE II score"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "lung_rest",
+        "n": {
+          "value": 50,
+          "provenance": {
+            "quote": "52 were assigned to Ptp-guided strategy ... 52 were assigned to lung rest strategy",
+            "location": "Figure 1, Flow diagram, p. 1283"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 50.2,
+          "dispersion_type": "sd",
+          "dispersion": 16.4,
+          "unit": "yr",
+          "provenance": {
+            "quote": "Age, yr, mean ± sd — 50.2 ± 16.4 (Lung Rest Strategy Group)",
+            "location": "p. 1284, Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": {
+          "value_type": "median",
+          "value": 23.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21.7,
+          "dispersion_high": 25.9,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "Body mass index (kg/m2), median (IQR) — 23.7 (21.7–25.9) (lung rest)",
+            "location": "p. 1284, Table 1, row: Body mass index"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "median",
+          "value": 57.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51.0,
+          "dispersion_high": 67.0,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Pao2:Fio2 ratio (mm Hg), median (IQR) — 57.0 (51.0–67.0) (lung rest)",
+            "location": "p. 1286, Table 3, row: Pao2:Fio2 ratio"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 18.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "provenance": {
+            "quote": "Acute Physiology and Chronic Health Evaluation II score, mean ± sd — 18.4 ± 4.7 (lung rest)",
+            "location": "p. 1284, Table 1, row: APACHE II score"
+          }
+        },
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": null,
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+        "provenance": {
+          "quote": "PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 5,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "Tidal volume reduced from 6 to 3 mL/PBM after venovenous ECMO; inspiratory pressure lowered to keep Ppeak less than 25 cm H2O",
+        "provenance": {
+          "quote": "first, we reduced tidal volume from 6 to 3 mL/PBM after venovenous ECMO, which significantly reduced volutrauma",
+          "location": "Discussion, para 5, p. 1287"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "Ppeak less than 25 cm H2O",
+        "provenance": {
+          "quote": "inspiratory pressure was lowered to keep Ppeak less than 25 cm H2O",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Respiratory rate 10 breaths per minute; FiO2 less than 0.5 during ECMO in the Ptp-guided group.",
+        "provenance": {
+          "quote": "respiratory rate was 10 breaths per minute; and Fio2 was less than 0.5.",
+          "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Respiratory mechanics measured 2, 6, 12, 24, 36, 48, 72, 96, and 120 hours after random assignment; Ptp-guided settings applied during ECMO.",
+        "provenance": {
+          "quote": "respiratory mechanics 2, 6, 12, 24, 36, 48, 72, 96, and 120 hours after random assignment",
+          "location": "Methods, Measurements, item 3, p. 1282"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "During venovenous ECMO support",
+      "provenance": {
+        "quote": "the following ventilator settings were used during ECMO: pressure assist-control mode; inspiratory pressure was lowered to keep Ppeak less than 25 cm H2O; PEEP was set at such a level that expiratory Ptp stayed between 0 and 5 cm H2O",
+        "location": "Methods, Mechanical Ventilation Strategy, para 1, p. 1281"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "Lung rest strategy: pressure assist-control mode; Ppeak was 20 to 25 cm H2O; PEEP was 10 to 15 cm H2O; respiratory rate was 10 breaths per minute; and FiO2 was less than 0.5 (recommended by the Extracorporeal Life Support Organization (ELSO) guidelines).",
+      "provenance": {
+        "quote": "In the lung rest group, the following ventilator settings were used during ECMO: pressure assist-control mode; Ppeak was 20 to 25 cm H2O; PEEP was 10 to 15 cm H2O; respiratory rate was 10 breaths per minute; and Fio2 was less than 0.5.",
+        "location": "Methods, Mechanical Ventilation Strategy, para 2, p. 1281"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "ptp_guided",
+      "label_verbatim": "Transpulmonary Pressure-Guided Strategy Group",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 52,
+        "provenance": {
+          "quote": "52 were assigned to Ptp-guided strategy / 52 received assigned intervention",
+          "location": "Figure 1, Flow diagram, p. 1283"
+        }
+      },
+      "n_analysed": {
+        "value": 52,
+        "provenance": {
+          "quote": "52 were included in analysis",
+          "location": "Figure 1, Flow diagram, p. 1283"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": null,
+        "value": null,
+        "provenance": null
+      }
+    },
+    {
+      "label": "lung_rest",
+      "label_verbatim": "Lung Rest Strategy Group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 52,
+        "provenance": {
+          "quote": "52 were assigned to lung rest strategy / 50 received assigned intervention / 2 had cardiac arrest during establishment of VV-ECMO",
+          "location": "Figure 1, Flow diagram, p. 1283"
+        }
+      },
+      "n_analysed": {
+        "value": 50,
+        "provenance": {
+          "quote": "50 were included in analysis",
+          "location": "Figure 1, Flow diagram, p. 1283"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "successful_extubation_or_weaning",
+      "name_verbatim": "Proportion of patients successfully weaned from venovenous ECMO",
+      "definition_verbatim": "weaning more than 48 hours with stable oxygenation and no need to reestablish ECMO",
+      "is_primary_outcome": true,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Primary endpoint"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 37,
+          "total": 52,
+          "provenance": {
+            "quote": "Proportion of patients successfully weaned from venovenous ECMO — 37 (71.2) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Proportion of patients successfully weaned from venovenous ECMO"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 24,
+          "total": 50,
+          "provenance": {
+            "quote": "Proportion of patients successfully weaned from venovenous ECMO — 24 (48.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Proportion of patients successfully weaned from venovenous ECMO"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.017,
+          "test_used": "chi-square test (not specified for this comparison)",
+          "provenance": {
+            "quote": "The proportion of patients successfully weaned from venovenous ECMO in the Ptp-guided group was significantly higher than that of the lung rest group (37 of 52 vs 24 of 50; p = 0.017).",
+            "location": "Results, Clinical Outcomes, para 1, p. 1282"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "60-d mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "hours": null,
+        "label_verbatim": "60-d mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 17,
+          "total": 52,
+          "provenance": {
+            "quote": "60-d mortality — 17 (32.7) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: 60-d mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 27,
+          "total": 50,
+          "provenance": {
+            "quote": "60-d mortality — 27 (54.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: 60-d mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.03,
+          "test_used": null,
+          "provenance": {
+            "quote": "The 60-day mortality rate in the Ptp-guided group was significantly lower than that of the lung rest group (17 of 52 vs 27 of 50; p = 0.030).",
+            "location": "Results, Clinical Outcomes, para 1, p. 1282"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality at 6 mo",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 180,
+        "hours": null,
+        "label_verbatim": "Mortality at 6 mo"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 19,
+          "total": 52,
+          "provenance": {
+            "quote": "Mortality at 6 mo, n (%) — 19 (36.5) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Mortality at 6 mo"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 28,
+          "total": 50,
+          "provenance": {
+            "quote": "Mortality at 6 mo, n (%) — 28 (56.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Mortality at 6 mo"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.049,
+          "test_used": null,
+          "provenance": {
+            "quote": "Mortality at 6 mo, n (%) — 47 (46.1) / 19 (36.5) / 28 (56.0) / 0.049",
+            "location": "p. 1285, Table 2, row: Mortality at 6 mo"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "ECMO duration, d",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ECMO duration, d, median (IQR)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 15,
+          "n": 52,
+          "unit": "d",
+          "provenance": {
+            "quote": "ECMO duration, d, median (IQR) — 11 (8–15) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: ECMO duration"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 25,
+          "n": 50,
+          "unit": "d",
+          "provenance": {
+            "quote": "ECMO duration, d, median (IQR) — 16 (10–25) (lung rest)",
+            "location": "p. 1285, Table 2, row: ECMO duration"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.004,
+          "test_used": "Mann-Whitney U test or Student t test (as appropriate)",
+          "provenance": {
+            "quote": "ECMO duration was significantly shorter in the Ptp-guided group (p = 0.004).",
+            "location": "Results, Clinical Outcomes, para 1, p. 1282"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "Ventilator-free days at day 60, d",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "hours": null,
+        "label_verbatim": "Ventilator-free days at day 60, d, median (IQR)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "median",
+          "value": 36,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 47,
+          "n": 52,
+          "unit": "d",
+          "provenance": {
+            "quote": "Ventilator-free days at day 60, d, median (IQR) — 36 (0–47) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Ventilator-free days at day 60"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 44,
+          "n": 50,
+          "unit": "d",
+          "provenance": {
+            "quote": "Ventilator-free days at day 60, d, median (IQR) — 0 (0–44) (lung rest)",
+            "location": "p. 1285, Table 2, row: Ventilator-free days at day 60"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.282,
+          "test_used": null,
+          "provenance": {
+            "quote": "Ventilator-free days at day 60, d, median (IQR) — 24 (0–46) / 36 (0–47) / 0 (0–44) / 0.282",
+            "location": "p. 1285, Table 2, row: Ventilator-free days at day 60"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU length of stay, d",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "ICU length of stay, d, median (IQR)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "median",
+          "value": 29,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 42,
+          "n": 52,
+          "unit": "d",
+          "provenance": {
+            "quote": "ICU length of stay, d, median (IQR) — 29 (19–42) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: ICU length of stay"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "median",
+          "value": 25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 44,
+          "n": 50,
+          "unit": "d",
+          "provenance": {
+            "quote": "ICU length of stay, d, median (IQR) — 25 (16–44) (lung rest)",
+            "location": "p. 1285, Table 2, row: ICU length of stay"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.495,
+          "test_used": null,
+          "provenance": {
+            "quote": "ICU length of stay, d, median (IQR) — 25 (17–43) / 29 (19–42) / 25 (16–44) / 0.495",
+            "location": "p. 1285, Table 2, row: ICU length of stay"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "Hospital length of stay, d",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Hospital length of stay, d, median (IQR)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "median",
+          "value": 33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 45,
+          "n": 52,
+          "unit": "d",
+          "provenance": {
+            "quote": "Hospital length of stay, d, median (IQR) — 33 (19–45) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Hospital length of stay"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "median",
+          "value": 26,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 44,
+          "n": 50,
+          "unit": "d",
+          "provenance": {
+            "quote": "Hospital length of stay, d, median (IQR) — 26 (21–44) (lung rest)",
+            "location": "p. 1285, Table 2, row: Hospital length of stay"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.373,
+          "test_used": null,
+          "provenance": {
+            "quote": "Hospital length of stay, d, median (IQR) — 31 (20–44) / 33 (19–45) / 26 (21–44) / 0.373",
+            "location": "p. 1285, Table 2, row: Hospital length of stay"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Continuous renal replacement therapy",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Continuous renal replacement therapy, n (%)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 23,
+          "total": 52,
+          "provenance": {
+            "quote": "Continuous renal replacement therapy, n (%) — 23 (44.2) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Continuous renal replacement therapy"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 20,
+          "total": 50,
+          "provenance": {
+            "quote": "Continuous renal replacement therapy, n (%) — 20 (40.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Continuous renal replacement therapy"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.665,
+          "test_used": null,
+          "provenance": {
+            "quote": "Continuous renal replacement therapy, n (%) — 43 (42.2) / 23 (44.2) / 20 (40.0) / 0.665",
+            "location": "p. 1285, Table 2, row: Continuous renal replacement therapy"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Tracheostomy",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Tracheostomy, n (%)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 30,
+          "total": 52,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 30 (57.7) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Tracheostomy"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 26,
+          "total": 50,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 26 (52.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Tracheostomy"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.564,
+          "test_used": null,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 56 (54.9) / 30 (57.7) / 26 (52.0) / 0.564",
+            "location": "p. 1285, Table 2, row: Tracheostomy"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "barotrauma",
+      "name_verbatim": "Barotrauma",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Barotrauma, n (%)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 3,
+          "total": 52,
+          "provenance": {
+            "quote": "Barotrauma — 3 (5.8) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Barotrauma"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 5,
+          "total": 50,
+          "provenance": {
+            "quote": "Barotrauma — 5 (10.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Barotrauma"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.483,
+          "test_used": null,
+          "provenance": {
+            "quote": "Barotrauma — 8 (7.8) / 3 (5.8) / 5 (10.0) / 0.483",
+            "location": "p. 1285, Table 2, row: Barotrauma"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Ventilator-associated pneumonia",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilator-associated pneumonia, n (%)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 12,
+          "total": 52,
+          "provenance": {
+            "quote": "Ventilator-associated pneumonia — 12 (23.1) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Ventilator-associated pneumonia"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 18,
+          "total": 50,
+          "provenance": {
+            "quote": "Ventilator-associated pneumonia — 18 (36.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Ventilator-associated pneumonia"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.152,
+          "test_used": null,
+          "provenance": {
+            "quote": "The morbidity of ventilator-associated pneumonia was lower in the Ptp-guided group than in the lung rest group, although the difference was not statistically significant (12 of 52 vs 18 of 50; p = 0.152).",
+            "location": "Results, Clinical Outcomes, para 1, p. 1282"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Multiple organ failure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Multiple organ failure (cause of death), n (%)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "events": 10,
+          "total": 52,
+          "provenance": {
+            "quote": "Multiple organ failure — 10 (19.2) (Ptp-guided)",
+            "location": "p. 1285, Table 2, row: Multiple organ failure (Cause of death)"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "events": 20,
+          "total": 50,
+          "provenance": {
+            "quote": "Multiple organ failure — 20 (40.0) (lung rest)",
+            "location": "p. 1285, Table 2, row: Multiple organ failure (Cause of death)"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value": 0.021,
+          "test_used": null,
+          "provenance": {
+            "quote": "Significantly fewer patients had multiple organ failure in the Ptp-guided group than in the lung rest group (10 of 52 vs 20 of 50; p = 0.021).",
+            "location": "Results, Clinical Outcomes, para 1, p. 1282"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Pao2:Fio2 ratio (mm Hg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilation Function of Patients at Randomization"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Pre-ECMO, at randomization, before venovenous ECMO support",
+        "provenance": {
+          "quote": "TABLE 3. Ventilation Function of Patients at Randomization",
+          "location": "p. 1286, Table 3 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "median",
+          "value": 57.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51.0,
+          "dispersion_high": 68.0,
+          "n": 52,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Pao2:Fio2 ratio (mm Hg), median (IQR) — 57.2 (51.0–68.0) (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Pao2:Fio2 ratio"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "median",
+          "value": 57.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51.0,
+          "dispersion_high": 67.0,
+          "n": 50,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Pao2:Fio2 ratio (mm Hg), median (IQR) — 57.0 (51.0–67.0) (lung rest)",
+            "location": "p. 1286, Table 3, row: Pao2:Fio2 ratio"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Positive end-expiratory pressure (mm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilation Function of Patients at Randomization"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Pre-ECMO, at randomization",
+        "provenance": {
+          "quote": "TABLE 3. Ventilation Function of Patients at Randomization",
+          "location": "p. 1286, Table 3 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "mean",
+          "value": 14.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "n": 52,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Positive end-expiratory pressure (mm H2O), mean ± sd — 14.4 ± 3.9 (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Positive end-expiratory pressure"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "mean",
+          "value": 14.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "n": 50,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Positive end-expiratory pressure (mm H2O), mean ± sd — 14.6 ± 3.7 (lung rest)",
+            "location": "p. 1286, Table 3, row: Positive end-expiratory pressure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Driving pressure (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilation Function of Patients at Randomization"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Pre-ECMO, at randomization",
+        "provenance": {
+          "quote": "TABLE 3. Ventilation Function of Patients at Randomization",
+          "location": "p. 1286, Table 3 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "mean",
+          "value": 15.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "n": 52,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Driving pressure (cm H2O), mean ± sd — 15.1 ± 3.6 (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Driving pressure"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "mean",
+          "value": 14.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 50,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Driving pressure (cm H2O), mean ± sd — 14.9 ± 4.0 (lung rest)",
+            "location": "p. 1286, Table 3, row: Driving pressure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Compliance (mL/cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilation Function of Patients at Randomization"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Pre-ECMO, at randomization; respiratory system compliance",
+        "provenance": {
+          "quote": "Respiratory system compliance was 25.3 ± 9.6 mL/cm H2O.",
+          "location": "Results, Pre-ECMO Arterial Blood Gas Analysis and Ventilation Variables, para 1, p. 1282"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "mean",
+          "value": 24.9,
+          "dispersion_type": "sd",
+          "dispersion": 10.3,
+          "n": 52,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Compliance (mL/cm H2O), mean ± sd — 24.9 ± 10.3 (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Compliance"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "mean",
+          "value": 25.8,
+          "dispersion_type": "sd",
+          "dispersion": 8.8,
+          "n": 50,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Compliance (mL/cm H2O), mean ± sd — 25.8 ± 8.8 (lung rest)",
+            "location": "p. 1286, Table 3, row: Compliance"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Ventilation Function of Patients at Randomization"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Pre-ECMO, at randomization",
+        "provenance": {
+          "quote": "TABLE 3. Ventilation Function of Patients at Randomization",
+          "location": "p. 1286, Table 3 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "value_type": "mean",
+          "value": 29.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "n": 52,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau pressure (cm H2O), mean ± sd — 29.4 ± 4.5 (Ptp-guided)",
+            "location": "p. 1286, Table 3, row: Plateau pressure"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "value_type": "mean",
+          "value": 29.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "n": 50,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau pressure (cm H2O), mean ± sd — 29.5 ± 5.4 (lung rest)",
+            "location": "p. 1286, Table 3, row: Plateau pressure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Time course of respiratory mechanics (PEEP, peak airway pressure, driving pressure, tidal volume, respiratory rate, mechanical power)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Time course of respiratory mechanics, 2 to 120 hours after random assignment"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "During venovenous ECMO support, measured 2, 6, 12, 24, 36, 48, 72, 96, and 120 hours after random assignment",
+        "provenance": {
+          "quote": "respiratory mechanics 2, 6, 12, 24, 36, 48, 72, 96, and 120 hours after random assignment",
+          "location": "Methods, Measurements, item 3, p. 1282"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ptp_guided",
+          "provenance": {
+            "quote": "Driving pressure, tidal volumes, and mechanical power were significantly lower, and PEEP was significantly higher, in the Ptp-guided group during venovenous ECMO support (Fig. 2; and Table S1, Supplemental Digital Content 1)",
+            "location": "Results, Time Course of Respiratory Mechanics, para 1, p. 1283"
+          }
+        },
+        {
+          "arm_label": "lung_rest",
+          "provenance": {
+            "quote": "Driving pressure, tidal volumes, and mechanical power were significantly lower, and PEEP was significantly higher, in the Ptp-guided group during venovenous ECMO support (Fig. 2; and Table S1, Supplemental Digital Content 1)",
+            "location": "Results, Time Course of Respiratory Mechanics, para 1, p. 1283"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "two-way analysis of variance for repeated measures (group effect, Figure 2 panel A PEEP)",
+          "provenance": {
+            "quote": "Figure 2. Time course of respiratory mechanics. #p < 0.05, *p < 0.01. ... Ptp-guided group p# < 0.001 (PEEP panel A)",
+            "location": "p. 1286, Figure 2, panel A (PEEP) group-effect p-value"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "two-way analysis of variance for repeated measures (group effect, Figure 2 panel C driving pressure)",
+          "provenance": {
+            "quote": "Figure 2 ... panel C Driving pressure (cm H2O) ... p# < 0.001",
+            "location": "p. 1286, Figure 2, panel C (driving pressure) group-effect p-value"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "two-way analysis of variance for repeated measures (group effect, Figure 2 panel F mechanical power)",
+          "provenance": {
+            "quote": "Figure 2 ... panel F Mechanical power (J/min) ... p# < 0.001",
+            "location": "p. 1286, Figure 2, panel F (mechanical power) group-effect p-value"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_only: Berlin-defined ARDS was an inclusion criterion. obesity_subgroup: median BMI 24.1 kg/m2, obesity not an enrolment criterion. timing_subgroup: timing known only relative to randomisation/enrolment, so coded unclear per codebook ruling. ptp_target_subgroups: end-expiratory Ptp target 0-5 cm H2O via absolute Pes subtraction (Ptp = Paw - Pes implied by the Talmor approach the paper cites); the exact computation is in Appendix S2 which was not provided, so the absolute_pes_subtraction coding is flagged in unclear_items. is_longest_reported_mortality set on the 6-month mortality entry because 180 days outranks 60 days."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap with any cluster in COHORTS.md. Compared trial registration (NCT02439151, unique among listed clusters: EPVent-1 NCT00127491, EPVent-2, MGH NCT02503241/2015P001515), enrolment window (May 2015 to April 2019, single centre Beijing Chao-Yang Hospital, China), and population (severe ARDS on venovenous ECMO, pneumonia only). No other report in the candidate pool shares this registration, centre, or ECMO population.",
+    "unclear_items": [
+      "intervention.balloon_calibration: no balloon, catheter brand, filling volume, or calibration method reported in the main text; details are in Appendix S2 (Supplemental Digital Content) which was not provided. Coded not_reported; contact author may be needed.",
+      "intervention.ptp_computation: the method for computing Ptp (absolute Pes subtraction vs elastance-derived) is not stated in the main text; coded absolute_pes_subtraction based on the cited Talmor approach, but Appendix S2 was not available to confirm.",
+      "intervention.device_brand: not reported in main text; likely in Appendix S2.",
+      "design.n_centers: single center stated but no numeric center count given; left null.",
+      "population.sex_female: paper reports only Male, n (%); female counts not reported and not derived.",
+      "outcomes: respiratory mechanics time-course numeric values are in Figure 2 and Supplemental Table S1 (not provided); only group-effect p-values from Figure 2 recorded.",
+      "arms[].peep_applied_cmh2o: delivered PEEP during ECMO reported only narratively ('PEEP was about 15 cm H2O in the Ptp-guided group') and in Figure 2/Table S1; no per-arm summary statistic with dispersion in the main text.",
+      "adults_18_plus: age exclusion <18 stated explicitly, so coded yes without inference."
+    ],
+    "data_only_in_figure": [
+      "Time course of respiratory mechanics (PEEP, peak airway pressure, driving pressure, tidal volume, respiratory rate, mechanical power) at 2-120 hours, Figure 2 panels A-F",
+      "60-day survival Kaplan-Meier curve, Fig. S2 (supplement)",
+      "Cytokine levels (IL-1beta, IL-6, IL-8, IL-10) over time, Fig. S3 (supplement)",
+      "Lung density ratio post-ECMO/pre-ECMO by intercostal space, Fig. S4 (supplement)"
+    ],
+    "contact_author_needed": true,
+    "general_notes": "Esophageal manometry details (device, calibration, Pes measurement) are confined to Appendix S2 of the supplemental digital content, which was not provided with this report; the main text establishes only that PEEP was titrated to end-expiratory Ptp 0-5 cm H2O. Two patients randomised to lung rest had cardiac arrest during ECMO establishment and were excluded from analysis (n analysed 52 vs 50). The paper reports 'Positive end-expiratory pressure (mm H2O)' in Table 3, an apparent typographical error for cm H2O; recorded with unit cm H2O as used elsewhere in the paper."
+  }
+}

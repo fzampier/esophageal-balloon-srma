@@ -1,0 +1,2115 @@
+{
+  "record_meta": {
+    "study_id": "grasso_2012",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/grasso2012.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Grasso",
+    "year": 2012,
+    "title": "ECMO criteria for influenza A (H1N1)-associated ARDS: role of transpulmonary pressure",
+    "journal": "Intensive Care Med",
+    "doi": "10.1007/s00134-012-2490-7",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We report patients with influenza A (H1N1)-associated ARDS referred to the Molinette Hospital (University of Turin) for ECMO",
+          "location": "Methods, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Throughout the period of data recording all patients were orotracheally intubated",
+          "location": "Methods, para 4"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "referred to the Molinette Hospital (University of Turin) for ECMO",
+          "location": "Methods, para 2"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Esophageal pressure was used to (a) partition respiratory mechanics between lung and chest wall, (b) titrate positive end-expiratory pressure (PEEP) to target the upper physiological limit of PPLATL (25 cmH2O)",
+          "location": "Abstract, Methods"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The significant (P = 0.0001) increase of PPLATRS ... was associated with (a) the increase in ERS ... and EL ... (b) the increase of stress index ... and (c) the reduction in PaCO2",
+          "location": "Results, para 3"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Fourteen patients were referred for ECMO.",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Prospective data collection of patients with influenza A (H1N1)-associated ARDS referred for ECMO",
+          "location": "Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Intensive Care Med (2012) 38:395–403",
+          "location": "Title page"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "prospective_cohort",
+    "study_design_verbatim": {
+      "value": "Prospective data collection of patients with influenza A (H1N1)-associated ARDS referred for ECMO (October 2009–January 2010).",
+      "provenance": {
+        "quote": "Prospective data collection of patients with influenza A (H1N1)-associated ARDS referred for ECMO (October 2009–January 2010).",
+        "location": "Abstract, Methods"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "referred to the Molinette Hospital (University of Turin)",
+        "location": "Methods, para 2"
+      }
+    },
+    "countries": [
+      "Italy"
+    ],
+    "location_provenance": {
+      "quote": "referred to the Molinette Hospital (University of Turin)",
+      "location": "Methods, para 2"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "ICU at a regional ECMO referral center",
+      "provenance": {
+        "quote": "transferred to the regional coordinating center with ECMO facilities",
+        "location": "Results, para 1"
+      }
+    },
+    "enrolment_start": "2009-09",
+    "enrolment_end": "2010-01",
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "grants from the Ministero dell’Universita`, Programmi di Ricerca di Interesse Nazionale # VMRLM98, 2007–2009",
+      "provenance": {
+        "quote": "This study was supported by grants from the Ministero dell’Universita`, Programmi di Ricerca di Interesse Nazionale # VMRLM98, 2007–2009.",
+        "location": "Acknowledgments"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": null
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 14,
+      "provenance": {
+        "quote": "Fourteen patients were referred for ECMO.",
+        "location": "Abstract, Results"
+      }
+    },
+    "n_analysed": {
+      "value": 14,
+      "provenance": {
+        "quote": "Table 2 shows the physiological parameters in the ECMO and no ECMO groups.",
+        "location": "Results, para 3"
+      }
+    },
+    "population_description": {
+      "value": "patients with influenza A (H1N1)-associated ARDS referred for ECMO",
+      "provenance": {
+        "quote": "patients with influenza A (H1N1)-associated ARDS referred for ECMO",
+        "location": "Abstract, Purpose"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients were centralized if conventional ventilation [19], in association with nitric oxide, and/or prone positioning, and/or high frequency oscillation, resulted in HbO2 <85%; oxygenation index [25; PaO2/FiO2 <100 with PEEP ≥10 cmH2O; hypercapnia and respiratory acidosis with pH<7.25; SvO2 or SvcO2<65% despite Ht [30% and administration of vasoactive drugs [18].",
+      "provenance": {
+        "quote": "Patients were centralized if conventional ventilation [19], in association with nitric oxide, and/or prone positioning, and/or high frequency oscillation, resulted in HbO2 <85%; oxygenation index [25; PaO2/FiO2 <100 with PEEP ≥10 cmH2O; hypercapnia and respiratory acidosis with pH<7.25; SvO2 or SvcO2<65% despite Ht [30% and administration of vasoactive drugs [18].",
+        "location": "Methods, para 3"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Exclusion criteria for ECMO were (a) intracranial bleeding and other major contraindication to anticoagulation, (b) previous severe disability; poor prognosis because of the underlying malignancy, and (c) mechanical ventilation for longer than 7 days [18].",
+      "provenance": {
+        "quote": "Exclusion criteria for ECMO were (a) intracranial bleeding and other major contraindication to anticoagulation, (b) previous severe disability; poor prognosis because of the underlying malignancy, and (c) mechanical ventilation for longer than 7 days [18].",
+        "location": "Methods, para 3"
+      }
+    },
+    "age": null,
+    "sex_female": {
+      "n": 7,
+      "total": 14,
+      "percent_as_reported": null,
+      "derived": true,
+      "derivation": "Counted from Table 3 'Gender' column: 7 female out of 14 patients.",
+      "provenance": {
+        "quote": "Gender: M, F, M, M, F, M, M, F, M, F, F, F, M, F",
+        "location": "Table 3, Gender column"
+      }
+    },
+    "sex_male": {
+      "n": 7,
+      "total": 14,
+      "percent_as_reported": null,
+      "derived": true,
+      "derivation": "Counted from Table 3 'Gender' column: 7 male out of 14 patients.",
+      "provenance": {
+        "quote": "Gender: M, F, M, M, F, M, M, F, M, F, F, F, M, F",
+        "location": "Table 3, Gender column"
+      }
+    },
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 14,
+      "total": 14,
+      "percent_as_reported": null,
+      "provenance": {
+        "quote": "Among them, 20 patients had ARDS and 14 were transferred to the regional coordinating center with ECMO facilities",
+        "location": "Results, para 1"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "influenza A (H1N1)-associated ARDS",
+      "provenance": {
+        "quote": "influenza A (H1N1)-associated ARDS",
+        "location": "Abstract, Purpose"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": {
+      "n": 12,
+      "total": 14,
+      "percent_as_reported": null,
+      "derived": true,
+      "derivation": "Counted from Table 3 'Rescue therapies' column: 12 patients received prone positioning (PP).",
+      "provenance": {
+        "quote": "Rescue therapies column: PP, NO; PP, NO; PP, NO; NO; PP; NO; PP, NO; PP, NO; PP, NO; PP, NO; PP, NO; PP, NO; PP, NO; PP, NO",
+        "location": "Table 3, Rescue therapies column"
+      }
+    },
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Murray score",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.82,
+          "dispersion_type": "sd",
+          "dispersion": 0.19,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Murray’s score [26] (3.82 ± 0.19 vs. 3.61 ± 0.43)",
+            "location": "Results, para 4"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Murray score",
+        "arm_label": "No ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.61,
+          "dispersion_type": "sd",
+          "dispersion": 0.43,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Murray’s score [26] (3.82 ± 0.19 vs. 3.61 ± 0.43)",
+            "location": "Results, para 4"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Days of MV prior admission",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 1.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 7,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days of MV 1.9 ± 1.3",
+            "location": "Table 3, ECMO row"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Days of MV prior admission",
+        "arm_label": "No ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 7,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days of MV 3.1 ± 1.3",
+            "location": "Table 3, No ECMO row"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Fluid balance (mL)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 718,
+          "dispersion_type": "sd",
+          "dispersion": 270,
+          "n": 7,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Fluid balance 718 ± 270",
+            "location": "Table 3, ECMO row"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Fluid balance (mL)",
+        "arm_label": "No ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 1384,
+          "dispersion_type": "sd",
+          "dispersion": 332,
+          "n": 7,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Fluid balance 1,384 ± 332",
+            "location": "Table 3, No ECMO row"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PPLATRS (cmH2O)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 31.0,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATRS (cmH2O) 31.0 ± 1.0",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PPLATL (cmH2O)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 27.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.2,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATL (cmH2O) 27.2 ± 1.2*",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "ERS (cmH2O/L)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 38.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ERS (cmH2O/L) 38.4 ± 5.2",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "EL (cmH2O/L)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 32.3,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL (cmH2O/L) 32.3 ± 5.3**",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "ECW (cmH2O/L)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 6.1,
+          "dispersion_type": "sd",
+          "dispersion": 0.7,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ECW (cmH2O/L) 6.1 ± 0.7*",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Oxygenation index",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 34,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Oxygenation index 34 ± 5",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2/FiO2",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 75,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 75 ± 10",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PEEP (cmH2O)",
+        "arm_label": "ECMO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 17.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) 17.1 ± 1.6",
+            "location": "Table 2, ECMO column"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "ECMO",
+        "n": {
+          "value": 7,
+          "provenance": {
+            "quote": "ECMO group ... N = 7",
+            "location": "Results, para 2"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 35.4,
+          "dispersion_type": "sd",
+          "dispersion": 11.1,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age 35.4 ± 11.1",
+            "location": "Table 3, ECMO row"
+          }
+        },
+        "sex_female": {
+          "n": 2,
+          "total": 7,
+          "percent_as_reported": null,
+          "derived": true,
+          "derivation": "Counted from Table 3 Gender column for ECMO group: 2 females.",
+          "provenance": {
+            "quote": "Gender column: F, F (ECMO group)",
+            "location": "Table 3"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 33.2,
+          "dispersion_type": "sd",
+          "dispersion": 9.5,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI 33.2 ± 9.5",
+            "location": "Table 3, ECMO row"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 75,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "unit": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 75 ± 10",
+            "location": "Table 2, ECMO column, Row PaO2/FiO2"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 19.3,
+          "dispersion_type": "sd",
+          "dispersion": 7.2,
+          "unit": null,
+          "provenance": {
+            "quote": "APACHE II 19.3 ± 7.2",
+            "location": "Table 3, ECMO row"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "No ECMO",
+        "n": {
+          "value": 7,
+          "provenance": {
+            "quote": "No ECMO group ... N = 7",
+            "location": "Results, para 2"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 53.3,
+          "dispersion_type": "sd",
+          "dispersion": 11.7,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age 53.3 ± 11.7",
+            "location": "Table 3, No ECMO row"
+          }
+        },
+        "sex_female": {
+          "n": 5,
+          "total": 7,
+          "percent_as_reported": null,
+          "derived": true,
+          "derivation": "Counted from Table 3 Gender column for No ECMO group: 5 females.",
+          "provenance": {
+            "quote": "Gender column: F, F, F, F, F (No ECMO group)",
+            "location": "Table 3"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 28.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI 28.7 ± 4.9",
+            "location": "Table 3, No ECMO row"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 67,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 67 ± 5",
+            "location": "Table 2, No ECMO conventional ventilation column, Row PaO2/FiO2"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 18.1,
+          "dispersion_type": "sd",
+          "dispersion": 8.6,
+          "unit": null,
+          "provenance": {
+            "quote": "APACHE II 18.1 ± 8.6",
+            "location": "Table 3, No ECMO row"
+          }
+        },
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "elastance_derived",
+      "method_verbatim": {
+        "value": "PPLATCW ¼ ðECW=ERS Þ  PPLATRS\nPPLATL ¼ PPLATRS  PPLATCW",
+        "provenance": {
+          "quote": "PPLATCW ¼ ðECW=ERS Þ  PPLATRS\nPPLATL ¼ PPLATRS  PPLATCW",
+          "location": "Methods, para 5, equations"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_inspiratory_ptp_limit",
+      "strategy_verbatim": {
+        "value": "If values of PPLATL during conventional ventilation were less than 25 cmH2O, PEEP was further increased until PPLATL was equal to 25 cmH2O",
+        "provenance": {
+          "quote": "If values of PPLATL during conventional ventilation were less than 25 cmH2O, PEEP was further increased until PPLATL was equal to 25 cmH2O",
+          "location": "Methods, para 6"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PPLATL was equal to 25 cmH2O",
+          "location": "Methods, para 6"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "once",
+        "provenance": {
+          "quote": "PEEP was further increased until PPLATL was equal to 25 cmH2O",
+          "location": "Methods, para 6"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "ARDS Network protocol",
+        "provenance": {
+          "quote": "At arrival, all patients were ventilated according to the ARDS Network protocol [19].",
+          "location": "Methods, para 4"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": null
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "ARDS Network protocol [19]",
+      "provenance": {
+        "quote": "At arrival, all patients were ventilated according to the ARDS Network protocol [19].",
+        "location": "Methods, para 4"
+      }
+    },
+    "crossover_order": {
+      "value": "Not randomised. All patients initially ventilated per ARDS Network protocol; in the no-ECMO group, PEEP was then increased to target PPLATL 25 cmH2O.",
+      "provenance": {
+        "quote": "If values of PPLATL during conventional ventilation were less than 25 cmH2O, PEEP was further increased until PPLATL was equal to 25 cmH2O.",
+        "location": "Methods, para 6"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "20–30 min",
+      "provenance": {
+        "quote": "ECMO criteria were hence evaluated 20–30 min after the initiation of ventilation with the new PEEP setting.",
+        "location": "Methods, para 6"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "conventional_ventilation",
+      "label_verbatim": "Conventional ventilation",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": {
+        "value": 14,
+        "provenance": {
+          "quote": "Fourteen patients were referred for ECMO.",
+          "location": "Abstract, Results"
+        }
+      },
+      "n_analysed": {
+        "value": 14,
+        "provenance": {
+          "quote": "Fourteen patients were referred for ECMO.",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "higher_peep",
+      "label_verbatim": "Conventional ventilation and higher PEEP",
+      "role": "intervention",
+      "sequence_position": 2,
+      "n_randomised": {
+        "value": 7,
+        "provenance": {
+          "quote": "In the other seven patients, PPLATL was 16.6 ± 2.9 cmH2O (Table 1).",
+          "location": "Results, para 2"
+        }
+      },
+      "n_analysed": {
+        "value": 7,
+        "provenance": {
+          "quote": "In the other seven patients, PPLATL was 16.6 ± 2.9 cmH2O (Table 1).",
+          "location": "Results, para 2"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 22.3,
+        "dispersion_type": "sd",
+        "dispersion": 1.4,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) ... 22.3 ± 1.4#",
+          "location": "Table 2, row: PEEP, column: No ECMO Conventional ventilation and higher PEEP"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT (mL/kg PBW)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 5.0,
+          "dispersion_type": "sd",
+          "dispersion": 0.8,
+          "n": 7,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 5.0 ± 0.8",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT (mL/kg PBW)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 5.0,
+          "dispersion_type": "sd",
+          "dispersion": 0.8,
+          "n": 7,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 5.0 ± 0.8",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 0.0,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "mL/kg PBW",
+          "derived": true,
+          "derivation": "Computed as higher_peep value minus conventional_ventilation value; no P value reported.",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 5.0 ± 0.8 vs 5.0 ± 0.8",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 17.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.2,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) 17.9 ± 1.2",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.4,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) ... 22.3 ± 1.4#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 4.4,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (22.3) minus conventional_ventilation value (17.9); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PEEP (cmH2O) ... 17.9 ± 1.2 to 22.3 ± 1.4#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "RR (breaths/min)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 31.1,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 7,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 31.1 ± 0.3",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "RR (breaths/min)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 30.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "n": 7,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 30.3 ± 2.4",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -0.8,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "breaths/min",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (30.3) minus conventional_ventilation value (31.1); no P value reported.",
+          "provenance": {
+            "quote": "RR (breaths/min) 31.1 ± 0.3 vs 30.3 ± 2.4",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 37,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Oxygenation index 37 ± 4",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Oxygenation index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Oxygenation index 16 ± 1#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -21,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": null,
+          "derived": true,
+          "derivation": "Computed as higher_peep value (16) minus conventional_ventilation value (37); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "Oxygenation index 37 ± 4 vs 16 ± 1#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 67,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 67 ± 5",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 180,
+          "dispersion_type": "sd",
+          "dispersion": 9,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "PaO2/FiO2 180 ± 9##",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 113,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": null,
+          "derived": true,
+          "derivation": "Computed as higher_peep value (180) minus conventional_ventilation value (67); P value reported as ## (P = 0.001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PaO2/FiO2 67 ± 5 vs 180 ± 9##",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PAO, mean (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 25.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PAO, mean 25.1 ± 1.8",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PAO, mean (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 29.1,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PAO, mean 29.1 ± 1#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 4.0,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (29.1) minus conventional_ventilation value (25.1); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PAO, mean 25.1 ± 1.8 vs 29.1 ± 1#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2 (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 54.6,
+          "dispersion_type": "sd",
+          "dispersion": 8.4,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 54.6 ± 8.4",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "PaCO2 (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 42.9,
+          "dispersion_type": "sd",
+          "dispersion": 8.0,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 42.9 ± 8.0##",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -11.7,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "mmHg",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (42.9) minus conventional_ventilation value (54.6); P value reported as ## (P = 0.001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 54.6 ± 8.4 vs 42.9 ± 8.0##",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pH",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 7.371,
+          "dispersion_type": "sd",
+          "dispersion": 0.094,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "pH 7.371 ± 0.094",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pH",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 7.405,
+          "dispersion_type": "sd",
+          "dispersion": 0.089,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "pH 7.405 ± 0.089",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 0.034,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": null,
+          "derived": true,
+          "derivation": "Computed as higher_peep value (7.405) minus conventional_ventilation value (7.371); no P value reported.",
+          "provenance": {
+            "quote": "pH 7.371 ± 0.094 vs 7.405 ± 0.089",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PPLATRS (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 31.5,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATRS (cmH2O) 31.5 ± 0.5",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PPLATRS (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 38.4,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATRS (cmH2O) 38.4 ± 1.0#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 6.9,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (38.4) minus conventional_ventilation value (31.5); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PPLATRS (cmH2O) 31.5 ± 0.5 vs 38.4 ± 1.0#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PPLATCW (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 14.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATCW (cmH2O) 14.7 ± 2.5",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PPLATCW (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 13.5,
+          "dispersion_type": "sd",
+          "dispersion": 0.8,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATCW (cmH2O) 13.5 ± 0.8#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -1.2,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (13.5) minus conventional_ventilation value (14.7); no P value reported.",
+          "provenance": {
+            "quote": "PPLATCW (cmH2O) 14.7 ± 2.5 vs 13.5 ± 0.8",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PPLATL (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 16.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATL (cmH2O) 16.6 ± 2.9",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PPLATL (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 25.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLATL (cmH2O) 25.3 ± 1.7#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 8.7,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (25.3) minus conventional_ventilation value (16.6); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "PPLATL (cmH2O) 16.6 ± 2.9 vs 25.3 ± 1.7#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ERS (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 37.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ERS (cmH2O/L) 37.4 ± 4.2",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ERS (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 43.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ERS (cmH2O/L) 43.8 ± 3.3#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 6.4,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O/L",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (43.8) minus conventional_ventilation value (37.4); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "ERS (cmH2O/L) 37.4 ± 4.2 vs 43.8 ± 3.3#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 20.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL (cmH2O/L) 20.2 ± 4.7",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 28.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.3,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "EL (cmH2O/L) 28.6 ± 2.3#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 8.4,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O/L",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (28.6) minus conventional_ventilation value (20.2); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "EL (cmH2O/L) 20.2 ± 4.7 vs 28.6 ± 2.3#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ECW (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 17.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ECW (cmH2O/L) 17.2 ± 1.7",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ECW (cmH2O/L)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 15.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 7,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "ECW (cmH2O/L) 15.2 ± 2.6",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -2.0,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "cmH2O/L",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (15.2) minus conventional_ventilation value (17.2); no P value reported.",
+          "provenance": {
+            "quote": "ECW (cmH2O/L) 17.2 ± 1.7 vs 15.2 ± 2.6",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ECW/ERS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 0.47,
+          "dispersion_type": "sd",
+          "dispersion": 0.08,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "ECW/ERS 0.47 ± 0.08",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ECW/ERS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 0.35,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "ECW/ERS 0.35 ± 0.04",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": -0.12,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": null,
+          "derived": true,
+          "derivation": "Computed as higher_peep value (0.35) minus conventional_ventilation value (0.47); no P value reported.",
+          "provenance": {
+            "quote": "ECW/ERS 0.47 ± 0.08 vs 0.35 ± 0.04",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Stress index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 0.922,
+          "dispersion_type": "sd",
+          "dispersion": 0.033,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Stress index 0.922 ± 0.033",
+            "location": "Table 2, No ECMO conventional ventilation column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Stress index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 1.052,
+          "dispersion_type": "sd",
+          "dispersion": 0.032,
+          "n": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "Stress index 1.052 ± 0.032#",
+            "location": "Table 2, No ECMO Conventional ventilation and higher PEEP column"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 0.13,
+          "p_value": 0.0001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": null,
+          "derived": true,
+          "derivation": "Computed as higher_peep value (1.052) minus conventional_ventilation value (0.922); P value reported as # (P = 0.0001) for conventional ventilation vs. higher PEEP.",
+          "provenance": {
+            "quote": "Stress index 0.922 ± 0.033 vs 1.052 ± 0.032#",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Right atrial pressure (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "value_type": "mean",
+          "value": 17,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Increasing PEEP significantly increased right atrial pressure (from 17 ± 2 to 20 ± 3 mmHg, P = 0.001)",
+            "location": "Results, para 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Right atrial pressure (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0.5,
+        "label_verbatim": "20–30 min after initiation of ventilation with the new PEEP setting"
+      },
+      "data": [
+        {
+          "arm_label": "higher_peep",
+          "value_type": "mean",
+          "value": 20,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "n": 7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Increasing PEEP significantly increased right atrial pressure (from 17 ± 2 to 20 ± 3 mmHg, P = 0.001)",
+            "location": "Results, para 3"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "higher_peep minus conventional_ventilation",
+          "arm_label_a": "higher_peep",
+          "arm_label_b": "conventional_ventilation",
+          "mean_difference": 3,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "test_used": "paired t-test",
+          "unit": "mmHg",
+          "derived": true,
+          "derivation": "Computed as higher_peep value (20) minus conventional_ventilation value (17); P value reported as P = 0.001.",
+          "provenance": {
+            "quote": "Increasing PEEP significantly increased right atrial pressure (from 17 ± 2 to 20 ± 3 mmHg, P = 0.001)",
+            "location": "Results, para 3"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Outcome (alive/dead)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "hospital_discharge"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "events": 3,
+          "total": 14,
+          "derived": true,
+          "derivation": "Counted from Table 3 'Outcome' column: 3 deaths out of 14 patients.",
+          "provenance": {
+            "quote": "Outcome column: A, A, A, D, D, A, A, A, A, A, A, D, A, A",
+            "location": "Table 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Need for ECMO",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "conventional_ventilation",
+          "events": 7,
+          "total": 14,
+          "derived": true,
+          "derivation": "The paper reports 7 patients underwent ECMO and 7 were treated with conventional ventilation after PEEP increase.",
+          "provenance": {
+            "quote": "In seven patients PPLATL was higher than 25 cmH2O (27.2 ± 1.2 cmH2O); all these patients underwent ECMO.",
+            "location": "Results, para 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": {
+      "value": 14,
+      "derived": true,
+      "derivation": "All 14 patients had esophageal pressure measurements; no placement failures reported.",
+      "provenance": {
+        "quote": "Esophageal pressure was used to (a) partition respiratory mechanics between lung and chest wall, (b) titrate positive end-expiratory pressure (PEEP)",
+        "location": "Abstract, Methods"
+      }
+    },
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": {
+      "value": 0,
+      "derived": true,
+      "derivation": "All 14 patients have outcome recorded in Table 3.",
+      "provenance": {
+        "quote": "Table 3 - Outcome column: A, A, A, D, D, A, A, A, A, A, A, D, A, A",
+        "location": "Table 3"
+      }
+    }
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "mixed_bmi",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "elastance_derived"
+    ],
+    "classification_notes": "The study targeted an absolute end-inspiratory transpulmonary pressure of 25 cmH2O, computed via elastance partitioning (PPLATL = PPLATRS × EL/ERS). Timing unclear because patients were referred to the ECMO center; time from intubation not reported. Obesity mixed: mean BMI 33.2 in ECMO group, 28.7 in no-ECMO group."
+  },
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Not listed in studies/COHORTS.md; no suspected overlapping reports.",
+    "unclear_items": [
+      "design.enrolment_start/end: Abstract states October 2009–January 2010, Methods states September 2009–January 2010. Used Methods.",
+      "outcomes: The paper reports both a between-group comparison (ECMO vs no-ECMO) and a within-group comparison (no-ECMO conventional vs higher PEEP). We recorded the within-group comparison as the intervention effect. The ECMO group baseline values are recorded in population.additional_baseline.",
+      "arms: The study's patient groups (ECMO vs no-ECMO) are not ventilation conditions, so they are not listed in arms[]. Baseline by arm uses these group labels.",
+      "mortality and ECMO requirement outcomes: Reported only as cohort-level counts (3 deaths, 7 ECMO), not per ventilation condition. Recorded with arm_label 'conventional_ventilation' as the initial condition for all patients.",
+      "intervention.balloon_calibration: Method not reported; esophageal pressure measurement described only by reference to [20].",
+      "adults_18_plus criterion: No explicit age criterion stated, but patients were adults (ages 24-70 in Table 3). Coded yes."
+    ],
+    "data_only_in_figure": [
+      "Fig. 1: Study flow chart showing oxygenation index and PPLATL values for ECMO and no-ECMO groups; values also in text and Table 2."
+    ],
+    "contact_author_needed": false,
+    "general_notes": "This is a case series of 14 H1N1-ARDS patients referred for ECMO. Esophageal pressure was used to partition respiratory mechanics and guide PEEP to target an end-inspiratory transpulmonary pressure of 25 cmH2O in 7 patients with low PPLATL, avoiding ECMO."
+  }
+}

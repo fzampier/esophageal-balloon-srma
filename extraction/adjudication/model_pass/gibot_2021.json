@@ -1,0 +1,276 @@
+{
+  "study_id": "gibot_2021",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[higher peep fio2 higher pao2 fio2 table comparat]",
+      "decision": "glm",
+      "reason": "The higher PEEP/FiO2 (ALVEOLI) table is an empirical ARDSnet-type table used as a comparison for the esophageal-pressure and EIT settings, i.e. a comparator; 'alternative_titration_condition' is for a second strategy under test such as the EIT decremental trial. PEEP 17 (16 to 20) matches.",
+      "evidence": "p. 2 Methods para 3; p. 3 Table 1"
+    },
+    {
+      "target": "arms[pl fio2 pl fio2 table alternative titration cond]",
+      "decision": "deepseek",
+      "reason": "The PL/FiO2 table is the only esophageal-pressure-guided condition, which is the intervention this review addresses; the EIT decremental trial is the alternative strategy under test. PEEP 15 (14 to 20) matches.",
+      "evidence": "p. 2 Methods para 3; p. 3 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @crossover condition]",
+      "decision": "glm",
+      "reason": "Medians/IQRs 12 (10-14), 14 (12-18), 13 (11-16), 12 (11-13) identical; no significance marks on this row, so no contrasts. GLM's name keeps the verbatim unit.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mechanical power j min con @crossover condition]",
+      "decision": "glm",
+      "reason": "Mechanical Power 25.1/34.4/34.1/28.4, # on PEEP_EIT: values and the two '#' contrasts (EIT vs higher table, EIT vs PL table, p<0.05) identical; GLM's contrast strings use the arm labels actually in the record (peep_eit), DeepSeek's use 'eit_peep'. n_pairs and unit taken from DeepSeek by id.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "9b3eb4ea3a",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "a52ab3f107",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "944d6cf0c1",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "2260d05875",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure inspiratory transpulmona @crossover condition]",
+      "decision": "glm",
+      "reason": "Inspiratory PL 6.6/17.5/14.7/11.5, # on PEEP_EIT: values and the two '#' contrasts (EIT vs higher table, EIT vs PL table, p<0.05) identical; GLM's contrast strings use the arm labels actually in the record (peep_eit), DeepSeek's use 'eit_peep'. n_pairs and unit taken from DeepSeek by id.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "7444e6f9c5",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "817bea1bd0",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "8d862b8876",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "fb0f8668f8",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure expiratory transpulmonar @crossover condition]",
+      "decision": "glm",
+      "reason": "Expiratory PL -0.3/5.0/4.0/1.3, # on PEEP_EIT: values and the two '#' contrasts (EIT vs higher table, EIT vs PL table, p<0.05) identical; GLM's contrast strings use the arm labels actually in the record (peep_eit), DeepSeek's use 'eit_peep'. n_pairs and unit taken from DeepSeek by id.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "0660ed9b6c",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "c764215eb1",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "14c7284bcf",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "id": "10d38b6d4b",
+      "decision": "deepseek",
+      "reason": "All 17 patients underwent every condition (paired n=17) and the contrast is on the row's unit; GLM left these empty.",
+      "evidence": "p. 2 Results para 1; p. 3 Table 1"
+    },
+    {
+      "target": "outcomes[other silent spaces continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Silent spaces 18 (10-26), 30 (13-48), 23 (17-35), 16 (9-23) identical; GLM keeps the verbatim row name and definition. Its paired effects are pruned by id: the page image marks PEEP_EIT's silent spaces '#' only.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "8b69f68b5f",
+      "decision": "deepseek",
+      "reason": "Drop from silent spaces: 9 vs 13% (p=0.04) is lung collapse, a different EIT quantity, kept under DeepSeek's Collapse outcome; the -4 is a difference of medians recorded as mean_difference without derivation.",
+      "evidence": "p. 2 Results para 3; p. 3 Fig 1 caption"
+    },
+    {
+      "id": "830cbfa8fd",
+      "decision": "deepseek",
+      "reason": "Drop from silent spaces: 6 vs 20/13% (p<0.01) is lung distension, kept under DeepSeek's Distension outcome; the mean_difference is a difference of medians without derivation.",
+      "evidence": "p. 2 Results para 3; p. 3 Fig 1 caption"
+    },
+    {
+      "id": "24d902a938",
+      "decision": "deepseek",
+      "reason": "Drop from silent spaces: 6 vs 20/13% (p<0.01) is lung distension, kept under DeepSeek's Distension outcome; the mean_difference is a difference of medians without derivation.",
+      "evidence": "p. 2 Results para 3; p. 3 Fig 1 caption"
+    },
+    {
+      "id": "553283ff9b",
+      "decision": "deepseek",
+      "reason": "Drop: the page image prints '16 (9 to 23)#' for silent spaces with no '*', so no significant EIT-vs-lower-table contrast is reported for this row.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "6b0b08162b",
+      "decision": "glm",
+      "reason": "Kept: the '#' on PEEP_EIT's silent spaces gives p<0.05 vs the higher PEEP/FiO2 and PL/FiO2 tables.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "ed7e35e868",
+      "decision": "glm",
+      "reason": "Kept: the '#' on PEEP_EIT's silent spaces gives p<0.05 vs the higher PEEP/FiO2 and PL/FiO2 tables.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "3c43acdeb6",
+      "decision": "glm",
+      "reason": "Drop: the same '#' contrast is kept from GLM with arm labels matching the record.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "id": "d8771d5e71",
+      "decision": "glm",
+      "reason": "Drop: the same '#' contrast is kept from GLM with arm labels matching the record.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[mortality discharged alive dichotomous @hospital discharge]",
+      "decision": "unclear",
+      "reason": "The paper reports only a cohort-level fact, 'All patients, except for one, were discharged alive' (1 death/17), not attributable to any crossover condition. GLM files it under the mortality domain with events=16 (survivors, not deaths) assigned arbitrarily to the peep_eit condition, which would read as 16/17 deaths. Co-author to decide whether to keep a cohort hospital-mortality entry (1/17 deaths, is_longest_reported_mortality) or omit mortality for this crossover.",
+      "evidence": "p. 2, Results para 1"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: PaO2/FiO2 136 (103-155) is the cohort's enrolment characteristic, already recorded by both reviewers in population.pao2_fio2_baseline; GLM assigns it to the lower-table condition, which it was not measured under, and no per-condition PaO2/FiO2 is reported.",
+      "evidence": "p. 2, Results para 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep GLM's PEEP entry (DeepSeek's duplicate is dropped): values 10/17/15/13 and the three Wilcoxon contrasts (*# on PEEP_EIT) are right, but its Bland-Altman contrast vs the lower table puts the limits of agreement -8.5 to 11.2 into ci_low/ci_high, which are not a CI of the bias. Co-author: clear ci_low/ci_high (or move the limits of agreement to an appropriate field); note Figure 1 prints biases 1.35, -5.0 and -3.8 where the text rounds them to 1.3, 5 and 4.",
+      "evidence": "p. 2 Results para 2; p. 3 Table 1 and Fig 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Pplat 23/33/29/25 and the two '#' contrasts identical to DeepSeek's duplicate; GLM keeps the verbatim name and arm labels in contrast strings.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs ml cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "CRS 39/30/35/38 and the two '#' contrasts identical to DeepSeek's duplicate; GLM keeps the verbatim name.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: duplicates the PEEP reading kept under GLM's target (routed to co-authors); DeepSeek's three Wilcoxon contrasts are also in GLM's version.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: duplicates the Pplat reading kept under GLM's target.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: duplicates the CRS reading kept under GLM's target.",
+      "evidence": "p. 3, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other collapse continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Lung collapse 9% with PEEP_EIT vs 13% with the lower table, p=0.04 (Wilcoxon), reported in the text and Figure 1; only DeepSeek records it as its own outcome.",
+      "evidence": "p. 2 Results para 3; p. 3 Fig 1 caption"
+    },
+    {
+      "target": "outcomes[other distension continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Lung distension 6% with PEEP_EIT vs 20% (higher table) and 13% (PL table), p<0.01, reported in the text and Figure 1; only DeepSeek records it as its own outcome.",
+      "evidence": "p. 2 Results para 3; p. 3 Fig 1 caption"
+    },
+    {
+      "id": "583df713b8",
+      "decision": "glm",
+      "reason": "The conflict-of-interest statement declares the research was conducted in the absence of any commercial or financial relationships, which excludes industry funding.",
+      "evidence": "p. 4, Conflict of Interest"
+    },
+    {
+      "id": "c73c3b1241",
+      "decision": "deepseek",
+      "reason": "Single ICU ('our Intensive Care Unit', one hospital); both code centers=single, so n_centers=1 is reported, not missing.",
+      "evidence": "p. 2, Methods para 1"
+    },
+    {
+      "id": "67474d7610",
+      "decision": "glm",
+      "reason": "Seventeen patients were enrolled and the patients were monitored by an esophageal catheter.",
+      "evidence": "p. 1 Abstract Methods/Results; p. 2 Results"
+    },
+    {
+      "id": "9994f5bf24",
+      "decision": "glm",
+      "reason": "Correct positioning was verified by occlusion and transpulmonary pressures are reported for all 17 patients; GLM flags it as derived with its reasoning.",
+      "evidence": "p. 2 Methods para 2; p. 3 Table 1"
+    },
+    {
+      "id": "fc7d26c826",
+      "decision": "deepseek",
+      "reason": "GLM's 0 comes from the Introduction's general description of the technique; the study's own rule is 'PEEP as based upon end-expiratory PL/FiO2 table ... (3)' with no numeric target stated.",
+      "evidence": "p. 2 Introduction vs Methods para 3"
+    },
+    {
+      "id": "6eeafce980",
+      "decision": "deepseek",
+      "reason": "The 20-25 cmH2O limit is background in the Introduction, not a rule applied in this protocol, which set PEEP from the PL/FiO2 table only.",
+      "evidence": "p. 2 Introduction vs Methods para 3"
+    },
+    {
+      "id": "a4956a0aaf",
+      "decision": "deepseek",
+      "reason": "The applied rule is an end-expiratory PL/FiO2 table (EPVent-2 reference), not a combined end-expiratory plus end-inspiratory rule; GLM's classification rests on the Introduction's generic text.",
+      "evidence": "p. 2 Methods para 3"
+    },
+    {
+      "id": "222468a77a",
+      "decision": "unclear",
+      "reason": "Both leave the value empty, but the paper reports it: manoeuvres were performed after 24-48 h of mechanical ventilation (Abstract: within 48 h). Co-author to record a 24-48 h range from the start of ventilation.",
+      "evidence": "p. 2 Methods para 2; p. 1 Abstract"
+    }
+  ]
+}

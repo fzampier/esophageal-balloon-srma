@@ -1,0 +1,2129 @@
+{
+ "record_meta": {
+  "study_id": "soroksky_2015",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/soroksky2015.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 146 reviewer differences: 110 in scope. Settled by human rulings 2, model rulings 108, content-neutral rules 0; 35 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 1 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Soroksky",
+  "year": 2015,
+  "title": "Managing Hypercapnia in Patients with Severe ARDS and Low Respiratory System Compliance: The Role of Esophageal Pressure Monitoring—A Case Cohort Study",
+  "journal": "BioMed Research International",
+  "doi": "10.1155/2015/385042",
+  "pmid": null,
+  "trial_registration": "NCT01668368",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Intensive Care Unit, E. Wolfson Medical Center, 62 HaLohamim Street, P.O. Box 5, 58100 Holon, Israel",
+     "location": "p. 1, author affiliations; patient ages 40-84 in Table 1"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Eligibility criteria (Figure 1) for insertion of esophageal balloon included any patient with acute respiratory failure of any cause who was mechanically ventilated according to the ARDS network guidelines",
+     "location": "Methods, para 3"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "For patient enrolment, eligibility criteria had to be met within 24 hours of ICU admission or within 24 hours from commencing mechanical ventilation.",
+     "location": "Methods, para 4"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Thereafter, PEEP was adjusted according to end expiratory transpulmonary (EETP) pressure, with the aim of keeping EETP pressure close to zero or slightly positive",
+     "location": "Methods, Intervention, para 2"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Total respiratory system compliance 16.56 ± 5.9 / 19.99 ± 5.73 / 0.11",
+     "location": "p. 6, Table 3, row: Total respiratory system compliance"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Six patients with severe ARDS and hypercapnia were studied.",
+     "location": "Abstract, Results"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The aim of this report is to describe six consequent patients with bilateral pneumonia and ARDS",
+     "location": "Introduction, para 3"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Hindawi Publishing Corporation BioMed Research International Volume 2015, Article ID 385042, 9 pages",
+     "location": "p. 1, header"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "before_after_single_group",
+  "study_design_verbatim": {
+   "value": "Case Cohort Study",
+   "provenance": {
+    "quote": "Case Cohort Study",
+    "location": "Title"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": null,
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "Intensive Care Unit, E. Wolfson Medical Center, 62 HaLohamim Street, P.O. Box 5, 58100 Holon, Israel",
+    "location": "p. 1, author affiliations"
+   }
+  },
+  "countries": [
+   "Israel"
+  ],
+  "location_provenance": {
+   "quote": "Intensive Care Unit, E. Wolfson Medical Center, 62 HaLohamim Street, P.O. Box 5, 58100 Holon, Israel",
+   "location": "p. 1, author affiliations"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": null,
+  "stopped_early": null,
+  "stopping_rule": null,
+  "setting": {
+   "value": "Intensive Care Unit",
+   "provenance": {
+    "quote": "Intensive Care Unit, E. Wolfson Medical Center",
+    "location": "p. 1, author affiliations"
+   }
+  },
+  "enrolment_start": null,
+  "enrolment_end": null,
+  "consecutive_enrolment": true,
+  "funding_source": {
+   "value": "not supported by any commercial organization",
+   "provenance": {
+    "quote": "They also declare that this study was not supported by any commercial organization.",
+    "location": "p. 8, Conflict of Interests"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 6,
+   "provenance": {
+    "quote": "Six patients with severe ARDS and hypercapnia were studied.",
+    "location": "Abstract, Results"
+   }
+  },
+  "n_analysed": {
+   "value": 6,
+   "provenance": {
+    "quote": "Six consecutive patients with severe hypercapnia and a concomitant significant hypoxemia requiring moderate to high PEEP which was set according to the algorithm of ARDSnet guidelines [1] were enrolled.",
+    "location": "Results, para 1"
+   }
+  },
+  "population_description": {
+   "value": "Six consecutive patients with severe hypercapnia and a concomitant significant hypoxemia requiring moderate to high PEEP which was set according to the algorithm of ARDSnet guidelines. All six patients had bilateral pneumonia with ARDS.",
+   "provenance": {
+    "quote": "Six consecutive patients with severe hypercapnia and a concomitant significant hypoxemia requiring moderate to high PEEP which was set according to the algorithm of ARDSnet guidelines [1] were enrolled. All six patients had bilateral pneumonia with ARDS.",
+    "location": "Results, para 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "Any patient with acute respiratory failure of any cause who was mechanically ventilated according to the ARDS network guidelines with a prerequisite of high inspiratory driving pressure (plateau pressure of up to 25 to 30 cm H2O) and at least one of four severity criteria: (1) low total respiratory system compliance (CT), defined as less than 50 mL/cm H2O; (2) P/F ratio of less than 300 mmHg; (3) need for a PEEP greater than 10 cm H2O to maintain SaO2 of >90%; (4) PaCO2 over 60 mmHg or PH less than 7.2 attributed to respiratory acidosis. Eligibility criteria had to be met within 24 hours of ICU admission or within 24 hours from commencing mechanical ventilation.",
+   "provenance": {
+    "quote": "Eligibility criteria (Figure 1) for insertion of esophageal balloon included any patient with acute respiratory failure of any cause who was mechanically ventilated according to the ARDS network guidelines with a prerequisite of high inspiratory driving pressure (plateau pressure of up to 25 to 30 cm H2O) and at least one of the following four severity inclusion criteria",
+    "location": "Methods, para 3"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "known bronchial asthma or chronic obstructive pulmonary disease (COPD), previous lung or chest wall surgery, previous esophageal surgery, known achalasia or any other esophageal motility or spasm disorder, known or suspected esophageal varices, presence of chest thoracostomy tube that was inserted due to pneumothorax, and any significant chest wall abnormality such as kyphoscoliosis",
+   "provenance": {
+    "quote": "Patients with any of the following were excluded from the study: known bronchial asthma or chronic obstructive pulmonary disease (COPD), previous lung or chest wall surgery, previous esophageal surgery, known achalasia or any other esophageal motility or spasm disorder, known or suspected esophageal varices, presence of chest thoracostomy tube that was inserted due to pneumothorax, and any significant chest wall abnormality such as kyphoscoliosis.",
+    "location": "Methods, para 4"
+   }
+  },
+  "age": {
+   "value_type": "mean",
+   "value": 66.2,
+   "dispersion_type": "sd",
+   "dispersion": 18.0,
+   "n": 6,
+   "unit": "years",
+   "derived": true,
+   "derivation": "mean and SD (n - 1) of the six individual ages in Table 1 (49, 67, 84, 76, 40, 81); the paper prints no summary age",
+   "provenance": {
+    "quote": "49/F; 67/M; 84/F; 76/M; 40/F; 81/M",
+    "location": "Table 1, column Age/gender, p. 3"
+   }
+  },
+  "sex_female": {
+   "n": 3,
+   "total": 6,
+   "percent_as_reported": null,
+   "derived": true,
+   "derivation": "Counted from Table 1: patients 1,3,5 are female",
+   "provenance": {
+    "quote": "Age/gender: 49/F, 67/M, 84/F, 76/M, 40/F, 81/M",
+    "location": "p. 3, Table 1, column: Age/gender"
+   }
+  },
+  "sex_male": null,
+  "bmi": null,
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "Berlin definition",
+   "provenance": {
+    "quote": "ARDS was defined according to the Berlin definition [6].",
+    "location": "Methods, para 3"
+   }
+  },
+  "n_ards": {
+   "n": 6,
+   "total": 6,
+   "provenance": {
+    "quote": "All six patients had bilateral pneumonia with ARDS.",
+    "location": "Results, para 1"
+   },
+   "percent_as_reported": null,
+   "derivation": null
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "not_applicable",
+  "cause_of_respiratory_failure": {
+   "value": "bilateral pneumonia",
+   "provenance": {
+    "quote": "All six patients had bilateral pneumonia with ARDS.",
+    "location": "Results, para 1"
+   }
+  },
+  "pao2_fio2_baseline": {
+   "value_type": "mean",
+   "value": 144.25,
+   "dispersion_type": "sd",
+   "dispersion": 54.15,
+   "n": 6,
+   "unit": "mmHg",
+   "provenance": {
+    "quote": "The mean P/F ratio on enrollment was 144.25 ± 54.15 mmHg",
+    "location": "Results, para 2; also Table 3, row: P/F ratio (mmHg)"
+   },
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "derivation": null
+  },
+  "apache_ii": {
+   "value_type": "mean",
+   "value": 31.16,
+   "dispersion_type": "sd",
+   "dispersion": 4.75,
+   "n": 6,
+   "provenance": {
+    "quote": "All had high APACHE II scores, with a mean of 31.16 ± 4.75 and a high predicted mortality 69.53 ± 10.98.",
+    "location": "Results, para 2"
+   },
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "unit": null,
+   "derivation": null
+  },
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": null,
+  "n_vasopressors": null,
+  "additional_baseline": [
+   {
+    "name_verbatim": "Predicted mortality (APACHE II)",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "mean",
+     "value": 69.53,
+     "dispersion_type": "sd",
+     "dispersion": 10.98,
+     "n": 6,
+     "unit": "%",
+     "provenance": {
+      "quote": "All had high APACHE II scores, with a mean of 31.16 ± 4.75 and a high predicted mortality 69.53 ± 10.98.",
+      "location": "Results, para 2"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Lung injury score",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": null,
+     "provenance": {
+      "quote": "Lung injury score — 3.25, 3.75, 3.25, 4, 3.25, 3.75 (patients 1-6)",
+      "location": "p. 3, Table 1, column: Lung injury score"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Number of failing organs during peak of disease",
+    "arm_label": null,
+    "count": {
+     "n": null,
+     "total": 6,
+     "provenance": {
+      "quote": "Number of failing organs during peak of disease — 5, 4, 4, 4, 6, 5 (patients 1-6)",
+      "location": "p. 3, Table 1, column: Number of failing organs during peak of disease"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Total days on mechanical ventilation",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": null,
+     "provenance": {
+      "quote": "Total days on mechanical ventilation — 10, 5, 19, 58, 4, 44 (patients 1-6)",
+      "location": "p. 3, Table 1, column: Total days on mechanical ventilation"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "Avea ventilator built-in esophageal balloon module (Avea, CareFusion Inc., CA, USA)",
+   "provenance": {
+    "quote": "Patients were supine and were ventilated by a commercially available ventilator (Avea, CareFusion Inc., CA, USA). The ventilator is supplied with a built-in module allowing the connection of an esophageal balloon catheter for continuous transpulmonary pressure monitoring.",
+    "location": "Methods, Intervention, para 1"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "baydur_occlusion_test",
+   "method_verbatim": {
+    "value": "For further confirmation of correct esophageal balloon positioning an \"occlusion test\" was performed. We have modified the original \"occlusion test\" [7] by inserting a thin pressure recording tracheal catheter capable of measuring pressure in air interface.",
+    "provenance": {
+     "quote": "For further confirmation of correct esophageal balloon positioning an \"occlusion test\" was performed. We have modified the original \"occlusion test\" [7] by inserting a thin pressure recording tracheal catheter capable of measuring pressure in air interface.",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "position_verification": {
+    "value": "Balloon first inserted into stomach to 60-70 cm from incisors, then slowly pooled caudally until heart beat noticed on esophageal pressure tracing; occlusion test with tracheal catheter",
+    "provenance": {
+     "quote": "The balloon was first inserted into the stomach to a depth of 60 to 70 cm from the incisors. Thereafter, it was slowly pooled caudally until heart beat could be noticed on the esophageal pressure tracing.",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "occlusion_ratio_acceptance": {
+    "value": "esophageal and tracheal pressures during an inspiratory effort against an occluded airway were within 10% of each other",
+    "provenance": {
+     "quote": "A correct esophageal balloon position was considered appropriate if the values of esophageal and tracheal pressures during an inspiratory effort against an occluded airway were within 10% of each other.",
+     "location": "Methods, Intervention, para 1"
+    }
+   }
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "Transpulmonary pressures computed from airway and esophageal pressures; no offset subtraction applied",
+    "provenance": {
+     "quote": "For these reasons and for the sake of simplicity we chose not to subtract from the measured esophageal value.",
+     "location": "Discussion, para 4"
+    }
+   },
+   "pes_correction_applied": {
+    "value": "none; authors explicitly chose not to subtract the mediastinal-weight offset",
+    "provenance": {
+     "quote": "For these reasons and for the sake of simplicity we chose not to subtract from the measured esophageal value.",
+     "location": "Discussion, para 4"
+    }
+   }
+  },
+  "peep_titration_target": {
+   "strategy": "combined_end_expiratory_and_end_inspiratory",
+   "strategy_verbatim": {
+    "value": "PEEP was adjusted according to end expiratory transpulmonary (EETP) pressure, with the aim of keeping EETP pressure close to zero or slightly positive, while achieving oxygenation target of PaO2 of 60 to 90 mmHg, or oxygen saturation of 88 to 95%; inspiratory driving pressure was adjusted according to end inspiratory transpulmonary (EITP) pressure, with the aim of achieving a tidal volume of 6-8 mL/kg (IBW), while at the same time not exceeding EITP pressure of 25 cm H2O.",
+    "provenance": {
+     "quote": "PEEP was adjusted according to end expiratory transpulmonary (EETP) pressure, with the aim of keeping EETP pressure close to zero or slightly positive, while achieving oxygenation target of PaO2 of 60 to 90 mmHg, or oxygen saturation of 88 to 95%; inspiratory driving pressure was adjusted according to end inspiratory transpulmonary (EITP) pressure, with the aim of achieving a tidal volume of 6-8 mL/kg (IBW), while at the same time not exceeding EITP pressure of 25 cm H2O.",
+     "location": "Methods, Intervention, para 2"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": null,
+   "end_expiratory_ptp_target_high_cmh2o": null,
+   "end_inspiratory_ptp_limit_cmh2o": {
+    "value": 25,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "while at the same time not exceeding EITP pressure of 25 cm H2O",
+     "location": "Methods, Intervention, para 2"
+    },
+    "derivation": null
+   },
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": null
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": {
+    "value": "6 to 8 mL/kg based on ideal body weight (IBW)",
+    "provenance": {
+     "quote": "Positive end expiratory pressure (PEEP) and inspiratory driving pressures were adjusted with the aim of achieving tidal volume of 6 to 8 mL/kg based on ideal body weight (IBW), while not exceeding end inspiratory transpulmonary (EITP) pressure of 25 cm H2O.",
+     "location": "Abstract, Materials and Methods"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "EITP pressure of 25 cm H2O",
+    "provenance": {
+     "quote": "while not exceeding end inspiratory transpulmonary (EITP) pressure of 25 cm H2O",
+     "location": "Abstract, Materials and Methods"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Baseline ventilation with SIMV in pressure control according to ARDSnet recommendation",
+    "provenance": {
+     "quote": "Baseline ventilation with SIMV in pressure control according to ARDSnet recommendation.",
+     "location": "p. 2, Figure 1, first box"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "icu_admission",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "For patient enrolment, eligibility criteria had to be met within 24 hours of ICU admission or within 24 hours from commencing mechanical ventilation.",
+    "provenance": {
+     "quote": "For patient enrolment, eligibility criteria had to be met within 24 hours of ICU admission or within 24 hours from commencing mechanical ventilation.",
+     "location": "Methods, para 4"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "After 24 hours, PaCO2 blood levels along with all the other respiratory parameters did not change significantly (data not shown).",
+   "provenance": {
+    "quote": "After 24 hours, PaCO2 blood levels along with all the other respiratory parameters did not change significantly (data not shown).",
+    "location": "Results, para 3"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table"
+  ],
+  "comparator_verbatim": {
+   "value": "Baseline ventilation with SIMV in pressure control according to ARDSnet recommendation; PEEP set according to the algorithm of ARDSnet guidelines",
+   "provenance": {
+    "quote": "Six consecutive patients with severe hypercapnia and a concomitant significant hypoxemia requiring moderate to high PEEP which was set according to the algorithm of ARDSnet guidelines [1] were enrolled.",
+    "location": "Results, para 1"
+   }
+  },
+  "crossover_order": {
+   "value": "Baseline ARDSnet-guided ventilation first, then esophageal-balloon-guided adjustment; sequence not randomised",
+   "provenance": {
+    "quote": "Baseline ventilation with SIMV in pressure control according to ARDSnet recommendation.",
+    "location": "p. 2, Figure 1, first box"
+   }
+  },
+  "washout_or_stabilisation": null
+ },
+ "arms": [
+  {
+   "label": "baseline",
+   "label_verbatim": "Baseline before intervention",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 6,
+    "provenance": {
+     "quote": "Respiratory and hemodynamic parameters on baseline and 1 hour after intervention guided by esophageal balloon measurements.",
+     "location": "p. 6, Table 3 caption"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 13.66,
+    "dispersion_type": "sd",
+    "dispersion": 2.16,
+    "n": 6,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP — 13.66 ± 2.16 / 10.83 ± 5.45 / 0.18",
+     "location": "p. 6, Table 3, row: PEEP"
+    },
+    "derivation": null
+   }
+  },
+  {
+   "label": "pes_guided",
+   "label_verbatim": "One hour after intervention",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 6,
+    "provenance": {
+     "quote": "Respiratory and hemodynamic parameters on baseline and 1 hour after intervention guided by esophageal balloon measurements.",
+     "location": "p. 6, Table 3 caption"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 10.83,
+    "dispersion_type": "sd",
+    "dispersion": 5.45,
+    "n": 6,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP — 13.66 ± 2.16 / 10.83 ± 5.45 / 0.18",
+     "location": "p. 6, Table 3, row: PEEP"
+    },
+    "derivation": null
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "mortality",
+   "name_verbatim": "28-day mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 28,
+    "label_verbatim": "28-day mortality",
+    "sequence_position": null,
+    "hours": null
+   },
+   "is_longest_reported_mortality": true,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 4,
+     "total": 6,
+     "derived": true,
+     "derivation": "Paper reports 'only 2 out of 6 patients were alive at 28 days'; deaths = 6 - 2 = 4. Table 1 shows D,D,D,A,D,A confirming 4 deaths.",
+     "provenance": {
+      "quote": "As expected from the severity and from the predicted mortality, only 2 out of 6 patients were alive at 28 days.",
+      "location": "Results, para 7; also p. 3, Table 1, column: 28-day mortality (D, D, D, A, D, A)"
+     },
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "within_arm_change": null
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Only 2 out of 6 patients were alive at 28 days.",
+    "location": "p. 5, Results, para 5"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2 (mmHg)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 108.33,
+     "dispersion_type": "sd",
+     "dispersion": 25.65,
+     "n": 6,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — 108.33 ± 25.65",
+      "location": "p. 6, Table 3, row: PaCO2 (mmHg)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 64.5,
+     "dispersion_type": "sd",
+     "dispersion": 16.89,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — 64.5 ± 16.89",
+      "location": "p. 6, Table 3, row: PaCO2 (mmHg)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.003,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — 108.33 ± 25.65 vs 64.5 ± 16.89, P=0.003",
+      "location": "p. 6, Table 3, row: PaCO2 (mmHg)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "PaCO2 (mmHg) — 108.33 ± 25.65 vs 64.5 ± 16.89, P=0.003",
+    "location": "p. 6, Table 3, row: PaCO2 (mmHg)"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PH",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 7.01,
+     "dispersion_type": "sd",
+     "dispersion": 0.08,
+     "n": 6,
+     "provenance": {
+      "quote": "PH — 7.01 ± 0.08",
+      "location": "p. 6, Table 3, row: PH"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 7.2,
+     "dispersion_type": "sd",
+     "dispersion": 0.08,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PH — 7.20 ± 0.08",
+      "location": "p. 6, Table 3, row: PH"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "ANOVA with repeated measures",
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PH — 7.01 ± 0.08 vs 7.20 ± 0.08, P<0.001",
+      "location": "p. 6, Table 3, row: PH"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "PH — 7.01 ± 0.08 vs 7.20 ± 0.08, P<0.001",
+    "location": "p. 6, Table 3, row: PH"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "FiO2 (%)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 66.66,
+     "dispersion_type": "sd",
+     "dispersion": 16.32,
+     "n": 6,
+     "unit": "%",
+     "provenance": {
+      "quote": "FiO2 (%) — 66.66 ± 16.32",
+      "location": "p. 6, Table 3, row: FiO2 (%)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 53.33,
+     "dispersion_type": "sd",
+     "dispersion": 5.16,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "%",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "FiO2 (%) — 53.33 ± 5.16",
+      "location": "p. 6, Table 3, row: FiO2 (%)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.08,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "%",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "FiO2 (%) — 66.66 ± 16.32 vs 53.33 ± 5.16, P=0.08",
+      "location": "p. 6, Table 3, row: FiO2 (%)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "FiO2 (%) — 66.66 ± 16.32 vs 53.33 ± 5.16, P=0.08",
+    "location": "p. 6, Table 3, row: FiO2 (%)"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 13.66,
+     "dispersion_type": "sd",
+     "dispersion": 2.16,
+     "n": 6,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP — 13.66 ± 2.16",
+      "location": "p. 6, Table 3, row: PEEP"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 10.83,
+     "dispersion_type": "sd",
+     "dispersion": 5.45,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PEEP — 10.83 ± 5.45",
+      "location": "p. 6, Table 3, row: PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.18,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PEEP — 13.66 ± 2.16 vs 10.83 ± 5.45, P=0.18",
+      "location": "p. 6, Table 3, row: PEEP"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "PEEP — 13.66 ± 2.16 vs 10.83 ± 5.45, P=0.18",
+    "location": "p. 6, Table 3, row: PEEP"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "P/F ratio (mmHg)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 144.25,
+     "dispersion_type": "sd",
+     "dispersion": 54.15,
+     "n": 6,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "P/F ratio (mmHg) — 144.25 ± 54.15",
+      "location": "p. 6, Table 3, row: P/F ratio (mmHg)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 158.66,
+     "dispersion_type": "sd",
+     "dispersion": 30.11,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "P/F ratio (mmHg) — 158.66 ± 30.11",
+      "location": "p. 6, Table 3, row: P/F ratio (mmHg)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.45,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "P/F ratio (mmHg) — 144.25 ± 54.15 vs 158.66 ± 30.11, P=0.45",
+      "location": "p. 6, Table 3, row: P/F ratio (mmHg)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "P/F ratio (mmHg) — 144.25 ± 54.15 vs 158.66 ± 30.11, P=0.45",
+    "location": "p. 6, Table 3, row: P/F ratio (mmHg)"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Respiratory rate",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 23.7,
+     "dispersion_type": "sd",
+     "dispersion": 6.8,
+     "n": 6,
+     "provenance": {
+      "quote": "Respiratory rate — 23.7 ± 6.8",
+      "location": "p. 6, Table 3, row: Respiratory rate"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 21.7,
+     "dispersion_type": "sd",
+     "dispersion": 4.3,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Respiratory rate — 21.7 ± 4.3",
+      "location": "p. 6, Table 3, row: Respiratory rate"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.3,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Respiratory rate — 23.7 ± 6.8 vs 21.7 ± 4.3, P=0.3",
+      "location": "p. 6, Table 3, row: Respiratory rate"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Respiratory rate — 23.7 ± 6.8 vs 21.7 ± 4.3, P=0.3",
+    "location": "p. 6, Table 3, row: Respiratory rate"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Minute ventilation (L/min)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 5.6,
+     "dispersion_type": "sd",
+     "dispersion": 1.8,
+     "n": 6,
+     "unit": "L/min",
+     "provenance": {
+      "quote": "Minute ventilation (L/min) — 5.6 ± 1.8",
+      "location": "p. 6, Table 3, row: Minute ventilation (L/min)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 9.1,
+     "dispersion_type": "sd",
+     "dispersion": 1.4,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "L/min",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Minute ventilation (L/min) — 9.1 ± 1.4",
+      "location": "p. 6, Table 3, row: Minute ventilation (L/min)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "ANOVA with repeated measures",
+     "unit": "L/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Minute ventilation (L/min) — 5.6 ± 1.8 vs 9.1 ± 1.4, P<0.001",
+      "location": "p. 6, Table 3, row: Minute ventilation (L/min)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Minute ventilation (L/min) — 5.6 ± 1.8 vs 9.1 ± 1.4, P<0.001",
+    "location": "p. 6, Table 3, row: Minute ventilation (L/min)"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Inspiratory pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 16.66,
+     "dispersion_type": "sd",
+     "dispersion": 2.58,
+     "n": 6,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory pressure — 16.66 ± 2.58",
+      "location": "p. 6, Table 3, row: Inspiratory pressure"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 24.16,
+     "dispersion_type": "sd",
+     "dispersion": 2.04,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Inspiratory pressure — 24.16 ± 2.04",
+      "location": "p. 6, Table 3, row: Inspiratory pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.007,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Inspiratory pressure — 16.66 ± 2.58 vs 24.16 ± 2.04, P=0.007",
+      "location": "p. 6, Table 3, row: Inspiratory pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Inspiratory pressure — 16.66 ± 2.58 vs 24.16 ± 2.04, P=0.007",
+    "location": "p. 6, Table 3, row: Inspiratory pressure"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "EITP pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 13.68,
+     "dispersion_type": "sd",
+     "dispersion": 8.69,
+     "n": 6,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "EITP pressure — 13.68 ± 8.69",
+      "location": "p. 6, Table 3, row: EITP pressure"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 16.76,
+     "dispersion_type": "sd",
+     "dispersion": 4.76,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "EITP pressure — 16.76 ± 4.76",
+      "location": "p. 6, Table 3, row: EITP pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.18,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "EITP pressure — 13.68 ± 8.69 vs 16.76 ± 4.76, P=0.18",
+      "location": "p. 6, Table 3, row: EITP pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "EITP pressure — 13.68 ± 8.69 vs 16.76 ± 4.76, P=0.18",
+    "location": "p. 6, Table 3, row: EITP pressure"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "EETP pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 1.5,
+     "dispersion_type": "sd",
+     "dispersion": 5.96,
+     "n": 6,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "EETP pressure — 1.5 ± 5.96",
+      "location": "p. 6, Table 3, row: EETP pressure"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": -0.25,
+     "dispersion_type": "sd",
+     "dispersion": 4.32,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "EETP pressure — -0.25 ± 4.32",
+      "location": "p. 6, Table 3, row: EETP pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.19,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "EETP pressure — 1.5 ± 5.96 vs -0.25 ± 4.32, P=0.19",
+      "location": "p. 6, Table 3, row: EETP pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "EETP pressure — 1.5 ± 5.96 vs -0.25 ± 4.32, P=0.19",
+    "location": "p. 6, Table 3, row: EETP pressure"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Plateau pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 28.76,
+     "dispersion_type": "sd",
+     "dispersion": 2.77,
+     "n": 6,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Plateau pressure — 28.76 ± 2.77",
+      "location": "p. 6, Table 3, row: Plateau pressure"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 32.76,
+     "dispersion_type": "sd",
+     "dispersion": 7.2,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Plateau pressure — 32.76 ± 7.20",
+      "location": "p. 6, Table 3, row: Plateau pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.29,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Plateau pressure — 28.76 ± 2.77 vs 32.76 ± 7.20, P=0.29",
+      "location": "p. 6, Table 3, row: Plateau pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Plateau pressure — 28.76 ± 2.77 vs 32.76 ± 7.20, P=0.29",
+    "location": "p. 6, Table 3, row: Plateau pressure"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume (in mL)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 244.16,
+     "dispersion_type": "sd",
+     "dispersion": 69.88,
+     "n": 6,
+     "unit": "mL",
+     "provenance": {
+      "quote": "Tidal volume (in mL) — 244.16 ± 69.88",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 435.0,
+     "dispersion_type": "sd",
+     "dispersion": 103.7,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tidal volume (in mL) — 435.0 ± 103.7",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Tidal volume (in mL) — 244.16 ± 69.88 vs 435.0 ± 103.7, P<0.001",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Tidal volume (in mL) — 244.16 ± 69.88 vs 435.0 ± 103.7, P<0.001",
+    "location": "p. 6, Table 3, row: Tidal volume (in mL)"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume (in mL/kg IBW)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 3.96,
+     "dispersion_type": "sd",
+     "dispersion": 0.92,
+     "n": 6,
+     "unit": "mL/kg IBW",
+     "provenance": {
+      "quote": "Tidal volume (in mL/kg IBW) — 3.96 ± 0.92",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL/kg IBW)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 7.07,
+     "dispersion_type": "sd",
+     "dispersion": 1.21,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mL/kg IBW",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tidal volume (in mL/kg IBW) — 7.07 ± 1.21",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL/kg IBW)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": null,
+     "p_value_verbatim": "<0.001",
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mL/kg IBW",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Tidal volume (in mL/kg IBW) — 3.96 ± 0.92 vs 7.07 ± 1.21, P<0.001",
+      "location": "p. 6, Table 3, row: Tidal volume (in mL/kg IBW)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Tidal volume (in mL/kg IBW) — 3.96 ± 0.92 vs 7.07 ± 1.21, P<0.001",
+    "location": "p. 6, Table 3, row: Tidal volume (in mL/kg IBW)"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Total respiratory system compliance",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 16.56,
+     "dispersion_type": "sd",
+     "dispersion": 5.9,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Total respiratory system compliance — 16.56 ± 5.9",
+      "location": "p. 6, Table 3, row: Total respiratory system compliance"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 19.99,
+     "dispersion_type": "sd",
+     "dispersion": 5.73,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Total respiratory system compliance — 19.99 ± 5.73",
+      "location": "p. 6, Table 3, row: Total respiratory system compliance"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.11,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Total respiratory system compliance — 16.56 ± 5.9 vs 19.99 ± 5.73, P=0.11",
+      "location": "p. 6, Table 3, row: Total respiratory system compliance"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Total respiratory system compliance — 16.56 ± 5.9 vs 19.99 ± 5.73, P=0.11",
+    "location": "p. 6, Table 3, row: Total respiratory system compliance"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Lung compliance",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 23.09,
+     "dispersion_type": "sd",
+     "dispersion": 8.66,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Lung compliance — 23.09 ± 8.66",
+      "location": "p. 6, Table 3, row: Lung compliance"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 26.717,
+     "dispersion_type": "sd",
+     "dispersion": 9.67,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Lung compliance — 26.717 ± 9.67",
+      "location": "p. 6, Table 3, row: Lung compliance"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.29,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Lung compliance — 23.09 ± 8.66 vs 26.717 ± 9.67, P=0.29",
+      "location": "p. 6, Table 3, row: Lung compliance"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Lung compliance — 23.09 ± 8.66 vs 26.717 ± 9.67, P=0.29",
+    "location": "p. 6, Table 3, row: Lung compliance"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Chest wall compliance",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 40.5,
+     "dispersion_type": "sd",
+     "dispersion": 63.5,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Chest wall compliance — 40.5 ± 63.5",
+      "location": "p. 6, Table 3, row: Chest wall compliance"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 81.1,
+     "dispersion_type": "sd",
+     "dispersion": 124,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Chest wall compliance — 81.1 ± 124",
+      "location": "p. 6, Table 3, row: Chest wall compliance"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.168,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "mL/cmH2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Chest wall compliance — 40.5 ± 63.5 vs 81.1 ± 124, P=0.168",
+      "location": "p. 6, Table 3, row: Chest wall compliance"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Chest wall compliance — 40.5 ± 63.5 vs 81.1 ± 124, P=0.168",
+    "location": "p. 6, Table 3, row: Chest wall compliance"
+   }
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Cardiac index (L/min/m2)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Baseline vs 1 hour after intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": null
+   },
+   "data": [
+    {
+     "arm_label": "baseline",
+     "value_type": "mean",
+     "value": 2.98,
+     "dispersion_type": "sd",
+     "dispersion": 0.66,
+     "n": 6,
+     "unit": "L/min/m2",
+     "provenance": {
+      "quote": "Cardiac index (L/min/m2) — 2.98 ± 0.66",
+      "location": "p. 6, Table 3, row: Cardiac index (L/min/m2)"
+     },
+     "events": null,
+     "total": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null
+    },
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 3.21,
+     "dispersion_type": "sd",
+     "dispersion": 0.57,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 6,
+     "unit": "L/min/m2",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Cardiac index (L/min/m2) — 3.21 ± 0.57",
+      "location": "p. 6, Table 3, row: Cardiac index (L/min/m2)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "baseline minus pes_guided",
+     "arm_label_a": "baseline",
+     "arm_label_b": "pes_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 6,
+     "p_value": 0.25,
+     "p_value_verbatim": null,
+     "test_used": "ANOVA with repeated measures",
+     "unit": "L/min/m2",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Cardiac index (L/min/m2) — 2.98 ± 0.66 vs 3.21 ± 0.57, P=0.25",
+      "location": "p. 6, Table 3, row: Cardiac index (L/min/m2)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "provenance": {
+    "quote": "Cardiac index (L/min/m2) — 2.98 ± 0.66 vs 3.21 ± 0.57, P=0.25",
+    "location": "p. 6, Table 3, row: Cardiac index (L/min/m2)"
+   }
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "Avoidance of extracorporeal CO2 removal",
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": null
+   },
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 6,
+     "total": 6,
+     "provenance": {
+      "quote": "Nevertheless, this report presents another treatment option that is less invasive, is easily accomplished where available, and, at least in the six patients in our report, averted the need for extracorporeal devices.",
+      "location": "Discussion, para 9"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": []
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": {
+   "value": 6,
+   "provenance": {
+    "quote": "In all patients esophageal balloon insertion was successful and without any complications.",
+    "location": "Results, para 2"
+   },
+   "derivation": null
+  },
+  "n_placement_successful": {
+   "value": 6,
+   "provenance": {
+    "quote": "In all patients esophageal balloon insertion was successful and without any complications.",
+    "location": "Results, para 2"
+   },
+   "derivation": null
+  },
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": true,
+  "protocol_adherence": null,
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "unclear",
+  "timing_subgroup": "early_within_48h",
+  "ptp_target_subgroups": [
+   "absolute_zero_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_only: all six patients had ARDS by Berlin definition. obesity_subgroup unclear: no BMI reported. timing early_within_48h: eligibility and balloon insertion within 24 hours of ICU admission or commencing mechanical ventilation. ptp_target_subgroups: EETP target 'close to zero or slightly positive' coded as absolute_zero_end_expiratory_ptp; the EITP ceiling of 25 cmH2O is a safety limit rather than a titration target and has no matching enum value. Mortality ranking: 28-day is the only mortality timepoint reported, so it is the longest."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap with any other report in the review pool. Registration NCT01668368 is a larger ongoing study at Wolfson Medical Center, Holon, Israel; no other record in COHORTS.md shares this registration, centre, or enrolment window. The six patients are described as consecutive at this single centre.",
+  "unclear_items": [
+   "adults_18_plus: no explicit age criterion stated; coded yes from adult ICU setting and patient ages 40-84 in Table 1",
+   "eligibility.criteria.balloon_guided_peep_titration: COHORTS.md flags this study as sitting at the case-series boundary (n=6 uncontrolled before/after); it meets n>=5 and the balloon did change ventilator settings, so coded yes",
+   "intervention.peep_titration_target.strategy: target is 'close to zero or slightly positive' EETP, ambiguous between zero and slightly positive; coded combined_end_expiratory_and_end_inspiratory with the EITP 25 cmH2O ceiling",
+   "population.age / sex_female / sex_male: only per-patient values in Table 1 (49/F, 67/M, 84/F, 76/M, 40/F, 81/M); cohort-level summary not reported and not derived",
+   "outcomes PaCO2 baseline mean 108.33 vs Table 1 individual values 141, 96, 99, 93, 140, 81 (mean 108.33 consistent); Table 2 PaCO2 'After' values are individual, not the 1-hour group mean",
+   "feasibility.n_measurement_not_obtainable: not reported whether any measurement attempt failed while placement succeeded",
+   "design.enrolment_start/end: not reported; patients enrolled in a larger ongoing study (NCT01668368) with no dates given"
+  ],
+  "data_only_in_figure": [],
+  "contact_author_needed": false,
+  "general_notes": "Case cohort of 6 consecutive patients, substudy of a larger registered study (NCT01668368). Table 2 reports individual before/after values per patient (PEEP, inspiratory driving pressure, plateau, EITP, EETP, tidal volume/IBW, PaCO2, cardiac index); Table 3 reports group means at baseline and 1 hour. Statistical significance threshold P<=0.01 due to small sample. Chest wall compliance SDs (63.5 and 124) are as printed and appear implausibly large relative to the mean. Cause of death in all four nonsurvivors was sepsis with multiorgan failure."
+ }
+}

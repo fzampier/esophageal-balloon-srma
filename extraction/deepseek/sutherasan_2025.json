@@ -1,0 +1,2046 @@
+{
+  "record_meta": {
+    "study_id": "sutherasan_2025",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/fmed-12-1642064.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Sutherasan",
+    "year": 2025,
+    "title": "The potential risk of ventilator-induced lung injury from five different PEEP titration techniques in ARDS",
+    "journal": "Frontiers in Medicine",
+    "doi": "10.3389/fmed.2025.1642064",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients aged 18 years or older who had moderate to severe ARDS according to the Berlin classification were included in the study.",
+          "location": "Section 2.1 Patients, p. 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "All patients were ventilated in the supine position on a Hamilton G5 ventilator (Hamilton Medical, Bonndorf, Switzerland) equipped with a dual-limb circuit and heated humidifier.",
+          "location": "Section 2.2 Measurements and experimental protocol, p. 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "admitted to the medical ICUs at Ramathibodi Hospital, Bangkok, between June 2020 and April 2021.",
+          "location": "Section 2 Materials and methods, p. 2"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The lowest PEEP providing the Ptp_ee_direct ≥ 0 cmH2O; The PEEP providing the upper limit of Ptp_ei_derived ≤ 25 cmH2O",
+          "location": "Section 3 Outcomes, p. 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The main objective was to compare the OP chosen using five different methods and assess the extent of overdistention and collapse associated with each method.",
+          "location": "Section 3 Outcomes, p. 3"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We conducted a prospective physiological study in ARDS patients admitted to the medical ICUs at Ramathibodi Hospital, Bangkok, between June 2020 and April 2021.",
+          "location": "Section 2 Materials and methods, p. 2"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The potential risk of ventilator-induced lung injury from five different PEEP titration techniques in ARDS",
+          "location": "Article title, p. 1"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "We conducted a prospective physiological study in ARDS patients admitted to the medical ICUs at Ramathibodi Hospital, Bangkok, between June 2020 and April 2021.",
+      "provenance": {
+        "quote": "We conducted a prospective physiological study in ARDS patients admitted to the medical ICUs at Ramathibodi Hospital, Bangkok, between June 2020 and April 2021.",
+        "location": "Section 2 Materials and methods, p. 2"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "medical ICUs at Ramathibodi Hospital, Bangkok",
+        "location": "Section 2 Materials and methods, p. 2"
+      }
+    },
+    "countries": [
+      "Thailand"
+    ],
+    "location_provenance": {
+      "quote": "admitted to the medical ICUs at Ramathibodi Hospital, Bangkok",
+      "location": "Section 2 Materials and methods, p. 2"
+    },
+    "planned_sample_size": {
+      "value": 20,
+      "provenance": {
+        "quote": "a total of 20 participants was required.",
+        "location": "Section 4 Statistical analysis, p. 4"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "Assuming a large effect size (f = 1.0), α = 0.05, 80% power, and five independent groups, a total of 20 participants was required. Under these parameters, the noncentrality parameter (λ) was 20.00, the critical F-value was 3.06 (df₁ = 4; df₂ = 15), and the achieved power was 0.88.",
+      "provenance": {
+        "quote": "Assuming a large effect size (f = 1.0), α = 0.05, 80% power, and five independent groups, a total of 20 participants was required. Under these parameters, the noncentrality parameter (λ) was 20.00, the critical F-value was 3.06 (df₁ = 4; df₂ = 15), and the achieved power was 0.88.",
+        "location": "Section 4 Statistical analysis, p. 4"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Medical ICU",
+      "provenance": {
+        "quote": "admitted to the medical ICUs at Ramathibodi Hospital, Bangkok",
+        "location": "Section 2 Materials and methods, p. 2"
+      }
+    },
+    "enrolment_start": "2020-06",
+    "enrolment_end": "2021-04",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "The author(s) declare that no financial support was received for the research and/or publication of this article.",
+      "provenance": {
+        "quote": "The author(s) declare that no financial support was received for the research and/or publication of this article.",
+        "location": "Funding section, p. 9"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 21,
+      "provenance": {
+        "quote": "Twenty-one patients were included in the final analysis.",
+        "location": "Results, Section 5.1, p. 4"
+      }
+    },
+    "n_analysed": {
+      "value": 21,
+      "provenance": {
+        "quote": "Twenty-one patients were included in the final analysis.",
+        "location": "Results, Section 5.1, p. 4"
+      }
+    },
+    "population_description": {
+      "value": "Patients aged 18 years or older who had moderate to severe ARDS according to the Berlin classification",
+      "provenance": {
+        "quote": "Patients aged 18 years or older who had moderate to severe ARDS according to the Berlin classification were included in the study.",
+        "location": "Section 2.1 Patients, p. 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients aged 18 years or older who had moderate to severe ARDS according to the Berlin classification were included in the study.",
+      "provenance": {
+        "quote": "Patients aged 18 years or older who had moderate to severe ARDS according to the Berlin classification were included in the study.",
+        "location": "Section 2.1 Patients, p. 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Exclusion criteria included contraindications to EIT (e.g., presence of a pacemaker or automatic intracardiac defibrillator), pregnancy, ongoing intercostal drainage, and chronic obstructive lung disease.",
+      "provenance": {
+        "quote": "Exclusion criteria included contraindications to EIT (e.g., presence of a pacemaker or automatic intracardiac defibrillator), pregnancy, ongoing intercostal drainage, and chronic obstructive lung disease.",
+        "location": "Section 2.1 Patients, p. 2"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 61,
+      "dispersion_type": "sd",
+      "dispersion": 19.96,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age, years 61 ± 19.96",
+        "location": "Table 1, row: Age, years"
+      }
+    },
+    "sex_female": {
+      "n": 11,
+      "total": 21,
+      "percent_as_reported": 52.38,
+      "provenance": {
+        "quote": "Female, n (%) 11 (52.38)",
+        "location": "Table 1, row: Female, n (%)"
+      }
+    },
+    "sex_male": null,
+    "bmi": {
+      "value_type": "mean",
+      "value": 23.62,
+      "dispersion_type": "sd",
+      "dispersion": 3.67,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "BMI, kg/m2 23.62 + 3.67",
+        "location": "Table 1, row: BMI, kg/m2"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definition",
+      "provenance": {
+        "quote": "According to the Berlin definition, all patients presented with moderate to severe ARDS.",
+        "location": "Results, Section 5.1, p. 4"
+      }
+    },
+    "n_ards": {
+      "n": 21,
+      "total": 21,
+      "provenance": {
+        "quote": "According to the Berlin definition, all patients presented with moderate to severe ARDS.",
+        "location": "Results, Section 5.1, p. 4"
+      }
+    },
+    "ards_severity": {
+      "moderate": {
+        "n": 17,
+        "total": 21,
+        "percent_as_reported": 81,
+        "provenance": {
+          "quote": "Berlin definition ARDS severity, n (%) • Moderate 17 (81%)",
+          "location": "Table 1, row: Berlin definition ARDS severity, n (%)"
+        }
+      },
+      "severe": {
+        "n": 4,
+        "total": 21,
+        "percent_as_reported": 19,
+        "provenance": {
+          "quote": "Berlin definition ARDS severity, n (%) • Severe 4 (19%)",
+          "location": "Table 1, row: Berlin definition ARDS severity, n (%)"
+        }
+      }
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "The primary etiology of ARDS was severe pneumonia in most patients (90.9%).",
+      "provenance": {
+        "quote": "The primary etiology of ARDS was severe pneumonia in most patients (90.9%).",
+        "location": "Results, Section 5.1, p. 4"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "mean",
+      "value": 115.16,
+      "dispersion_type": "sd",
+      "dispersion": 28.17,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2 ratio 115.16 ± 28.17",
+        "location": "Table 1, row: PaO2/FiO2 ratio"
+      }
+    },
+    "apache_ii": {
+      "value_type": "mean",
+      "value": 26,
+      "dispersion_type": "sd",
+      "dispersion": 5.71,
+      "provenance": {
+        "quote": "APACHE II at 1st 24 h admission 26 ± 5.71",
+        "location": "Table 1, row: APACHE II at 1st 24 h admission"
+      }
+    },
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": {
+      "n": 21,
+      "total": 21,
+      "derived": true,
+      "derivation": "All patients received a continuous cisatracurium infusion to suppress spontaneous breathing per protocol.",
+      "provenance": {
+        "quote": "They were deeply sedated with midazolam, propofol, or fentanyl and received a continuous cisatracurium infusion to suppress spontaneous breathing.",
+        "location": "Section 2.2 Measurements and experimental protocol, p. 2"
+      }
+    },
+    "n_ecmo": null,
+    "n_vasopressors": {
+      "n": 17,
+      "total": 21,
+      "percent_as_reported": 81,
+      "provenance": {
+        "quote": "Vasopressor during inclusion, n (%) 17 (81%)",
+        "location": "Table 1, row: Vasopressor during inclusion"
+      }
+    },
+    "additional_baseline": [
+      {
+        "name_verbatim": "PaCO2",
+        "continuous": {
+          "value_type": "mean",
+          "value": 37.49,
+          "dispersion_type": "sd",
+          "dispersion": 10.44,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 37.49 ± 10.44",
+            "location": "Table 1, row: PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "SBP",
+        "continuous": {
+          "value_type": "mean",
+          "value": 121.23,
+          "dispersion_type": "sd",
+          "dispersion": 20.64,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "SBP, mmHg 121.23 ± 20.64",
+            "location": "Table 1, row: SBP, mmHg"
+          }
+        }
+      },
+      {
+        "name_verbatim": "DBP",
+        "continuous": {
+          "value_type": "mean",
+          "value": 61.41,
+          "dispersion_type": "sd",
+          "dispersion": 9.03,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "DBP, mmHg 61.41 ± 9.03",
+            "location": "Table 1, row: DBP, mmHg"
+          }
+        }
+      },
+      {
+        "name_verbatim": "MAP",
+        "continuous": {
+          "value_type": "mean",
+          "value": 81.41,
+          "dispersion_type": "sd",
+          "dispersion": 10.57,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP, mmHg 81.41 ± 10.57",
+            "location": "Table 1, row: MAP, mmHg"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Dose of norepinephrine",
+        "continuous": {
+          "value_type": "mean",
+          "value": 0.12,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "unit": "mcg/kg/min",
+          "provenance": {
+            "quote": "Dose of norepinephrine, mcg/kg/min 0.12 ± 0.10",
+            "location": "Table 1, row: Dose of norepinephrine, mcg/kg/min"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial lactate",
+        "continuous": {
+          "value_type": "mean",
+          "value": 1.68,
+          "dispersion_type": "sd",
+          "dispersion": 1.26,
+          "unit": "mmol/L",
+          "provenance": {
+            "quote": "Arterial lactate, mmol/L 1.68 ± 1.26",
+            "location": "Table 1, row: Arterial lactate, mmol/L"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PPV",
+        "continuous": {
+          "value_type": "mean",
+          "value": 8.67,
+          "dispersion_type": "sd",
+          "dispersion": 7.6,
+          "unit": "%",
+          "provenance": {
+            "quote": "PPV, % 8.67 ± 7.6",
+            "location": "Table 1, row: PPV, %"
+          }
+        }
+      },
+      {
+        "name_verbatim": "SVV",
+        "continuous": {
+          "value_type": "mean",
+          "value": 9.86,
+          "dispersion_type": "sd",
+          "dispersion": 8.62,
+          "unit": "%",
+          "provenance": {
+            "quote": "SVV, % 9.86 ± 8.62",
+            "location": "Table 1, row: SVV, %"
+          }
+        }
+      },
+      {
+        "name_verbatim": "CO",
+        "continuous": {
+          "value_type": "mean",
+          "value": 6.44,
+          "dispersion_type": "sd",
+          "dispersion": 4.63,
+          "unit": "liters/min",
+          "provenance": {
+            "quote": "CO, liters/min 6.44 ± 4.63",
+            "location": "Table 1, row: CO, liters/min"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Immunocompromised",
+        "count": {
+          "n": 16,
+          "total": 21,
+          "percent_as_reported": 72.72,
+          "provenance": {
+            "quote": "Immunocompromised 16 (72.72)",
+            "location": "Table 1, row: Immunocompromised"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hematologic malignancy",
+        "count": {
+          "n": 3,
+          "total": 21,
+          "percent_as_reported": 12.63,
+          "provenance": {
+            "quote": "Hematologic malignancy 3 (12.63)",
+            "location": "Table 1, row: Hematologic malignancy"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Solid tumor",
+        "count": {
+          "n": 5,
+          "total": 21,
+          "percent_as_reported": 22.72,
+          "provenance": {
+            "quote": "Solid tumor 5 (22.72)",
+            "location": "Table 1, row: Solid tumor"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hypertension",
+        "count": {
+          "n": 8,
+          "total": 21,
+          "percent_as_reported": 36.36,
+          "provenance": {
+            "quote": "Hypertension 8 (36.36)",
+            "location": "Table 1, row: Hypertension"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diabetis mellitis",
+        "count": {
+          "n": 5,
+          "total": 21,
+          "percent_as_reported": 22.72,
+          "provenance": {
+            "quote": "Diabetis mellitis 5 (22.72)",
+            "location": "Table 1, row: Diabetis mellitis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Chronic kidney disease",
+        "count": {
+          "n": 7,
+          "total": 21,
+          "percent_as_reported": 31.81,
+          "provenance": {
+            "quote": "Chronic kidney disease 7 (31.81)",
+            "location": "Table 1, row: Chronic kidney disease"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Intrapulmonary cause",
+        "count": {
+          "n": 20,
+          "total": 21,
+          "percent_as_reported": 90.9,
+          "provenance": {
+            "quote": "Type of ARDS, n (%) • Intrapulmonary cause 20 (90.9)",
+            "location": "Table 1, row: Type of ARDS, n (%)"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "Cooper Surgical, Trumbull, CT",
+      "provenance": {
+        "quote": "an esophageal balloon catheter (Cooper Surgical, Trumbull, CT)",
+        "location": "Section 2.2.1 Esophageal pressure monitoring, p. 2"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": null,
+      "dispersion_type": "range",
+      "dispersion_low": 1,
+      "dispersion_high": 2,
+      "unit": "mL",
+      "provenance": {
+        "quote": "The balloon was inflated with 1–2 mL of air",
+        "location": "Section 2.2.1 Esophageal pressure monitoring, p. 2"
+      }
+    },
+    "balloon_calibration": {
+      "method": "baydur_occlusion_test",
+      "method_verbatim": {
+        "value": "The balloon was inflated with 1–2 mL of air, and correct placement was confirmed using the end-expiratory occlusion technique (15).",
+        "provenance": {
+          "quote": "The balloon was inflated with 1–2 mL of air, and correct placement was confirmed using the end-expiratory occlusion technique (15).",
+          "location": "Section 2.2.1 Esophageal pressure monitoring, p. 2"
+        }
+      },
+      "position_verification": {
+        "value": "Balloon advanced to a depth of 35–40 cm and positioned in the lower third of the esophagus; correct placement confirmed using the end-expiratory occlusion technique.",
+        "provenance": {
+          "quote": "an esophageal balloon catheter (Cooper Surgical, Trumbull, CT) was advanced to a depth of 35–40 cm and positioned in the lower third of the esophagus. Patients were then returned to the supine position. The balloon was inflated with 1–2 mL of air, and correct placement was confirmed using the end-expiratory occlusion technique (15).",
+          "location": "Section 2.2.1 Esophageal pressure monitoring, p. 2"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "both_absolute_and_elastance",
+      "method_verbatim": {
+        "value": "Ptp_ee_direct = Paw_ee – Peso_ee; Ptp_ei_derived = Paw_ei x EL/ERS",
+        "provenance": {
+          "quote": "Ptp_ee_direct = Paw_ee – Peso_ee (8); Direct measurement of end-inspiratory transpulmonary pressure (Ptp_ei_direct) = Paw_ei - Peso_ei (8); Ptp_ei_derived = Paw_ei x EL/ERS (17).",
+          "location": "Section 2.3, p. 3"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "The lowest PEEP providing the Ptp_ee_direct ≥ 0 cmH2O; The PEEP providing the upper limit of Ptp_ei_derived ≤ 25 cmH2O",
+        "provenance": {
+          "quote": "The lowest PEEP providing the Ptp_ee_direct ≥ 0 cmH2O; The PEEP providing the upper limit of Ptp_ei_derived ≤ 25 cmH2O",
+          "location": "Section 3 Outcomes, p. 4"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The lowest PEEP providing the Ptp_ee_direct ≥ 0 cmH2O",
+          "location": "Section 3 Outcomes, p. 3"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The PEEP providing the upper limit of Ptp_ei_derived ≤ 25 cmH2O",
+          "location": "Section 3 Outcomes, p. 3"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "Once during decremental PEEP titration after recruitment maneuver",
+        "provenance": {
+          "quote": "A recruitment maneuver followed by decremental PEEP titration was performed.",
+          "location": "Abstract, Methods"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "a two-minute RM in pressure-controlled ventilation (PCV) with an inspiratory pressure of 25 cm H2O above a PEEP of 20 cm H2O, a respiratory rate of 10 breaths per minute, and an inspiratory-to-expiratory ratio of 1:1",
+        "provenance": {
+          "quote": "Before each PEEP trial step, we performed a two-minute RM in pressure-controlled ventilation (PCV) with an inspiratory pressure of 25 cm H2O above a PEEP of 20 cm H2O, a respiratory rate of 10 breaths per minute, and an inspiratory-to-expiratory ratio of 1:1.",
+          "location": "Section 2.2.3 Recruitment maneuver and decremental PEEP titration, p. 3"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "No explicit target stated; recorded tidal volume was 6.20 ± 1.05 mL/kg PBW",
+        "provenance": {
+          "quote": "The mean tidal volume and respiratory compliances were 6.20 ± 1.05 mL/kg PBW and 30.5 ± 7.5 mL/cm H2O, respectively.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Deeply sedated with midazolam, propofol, or fentanyl and received a continuous cisatracurium infusion to suppress spontaneous breathing.",
+        "provenance": {
+          "quote": "They were deeply sedated with midazolam, propofol, or fentanyl and received a continuous cisatracurium infusion to suppress spontaneous breathing.",
+          "location": "Section 2.2 Measurements and experimental protocol, p. 2"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": null
+    },
+    "duration_of_pes_guidance": {
+      "value": "During decremental PEEP titration (from 20 to 8 cmH2O in 2 cmH2O steps at one-minute intervals)",
+      "provenance": {
+        "quote": "PEEP was decreased from 20 cm H2O to 8 cm H2O in 2 cm H2O steps at one-minute intervals.",
+        "location": "Section 2.2.3, p. 3"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "best_compliance_peep",
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "The study compared five PEEP titration methods: best respiratory system compliance, best lung compliance, lowest PEEP with Ptp_ee_direct ≥ 0 cmH2O, PEEP with Ptp_ei_derived ≤ 25 cmH2O, and EIT-based balance of overdistension and collapse.",
+      "provenance": {
+        "quote": "Our primary objective was to compare OP values determined by five distinct methods: 1. Best CRS 2. Best lung compliance (CL) 3. Lowest PEEP yielding Ptp_ee_direct ≥ 0 cm H2O 4. PEEP corresponding to an upper limit of elastance derived end-inspiratory transpulmonary pressure (Ptp_ei_derived) ≤ 25 cm H2O 5. EIT-based balance of regional overdistension and collapse.",
+        "location": "Section 1 Introduction, p. 2"
+      }
+    },
+    "crossover_order": {
+      "value": "All five methods were determined from the same decremental PEEP titration (from 20 to 8 cmH2O in 2 cmH2O steps) following a recruitment maneuver.",
+      "provenance": {
+        "quote": "A recruitment maneuver followed by decremental PEEP titration was performed.",
+        "location": "Abstract, Methods"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "Each PEEP level was held for 1 minute during the decremental PEEP trial.",
+      "provenance": {
+        "quote": "After 1 min at each PEEP level, the following parameters were recorded",
+        "location": "Section 2.2.3, p. 3"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "best_crs",
+      "label_verbatim": "The 'best' Crs",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 8.0,
+        "dispersion_type": "iqr",
+        "dispersion_low": 8.0,
+        "dispersion_high": 13.9,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "When titrated to maximize CRS, the median PEEP was 8.00 cmH₂O (8.00, 13.90)",
+          "location": "Results, p. 4"
+        }
+      }
+    },
+    {
+      "label": "best_cl",
+      "label_verbatim": "The 'best' Clung",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 9.8,
+        "dispersion_type": "iqr",
+        "dispersion_low": 8.0,
+        "dispersion_high": 14.0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "titration for optimal CL yielded a slightly higher median of 9.80 cmH₂O (8.00, 14.00)",
+          "location": "Results, p. 4"
+        }
+      }
+    },
+    {
+      "label": "ptp_ee_zero",
+      "label_verbatim": "The lowest PEEP providing the Ptp_ee_direct ≥ 0 cmH2O",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 14.0,
+        "dispersion_type": "iqr",
+        "dispersion_low": 11.9,
+        "dispersion_high": 17.9,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Targeting Ptp_ee_direct of ≥ 0 cmH₂O resulted in the highest median PEEP of 14.00 cmH₂O (11.90, 17.90)",
+          "location": "Results, p. 4"
+        }
+      }
+    },
+    {
+      "label": "ptp_ei_limit",
+      "label_verbatim": "The PEEP providing the upper limit of Ptp_ei_derived ≤ 25 cmH2O",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 12.0,
+        "dispersion_type": "iqr",
+        "dispersion_low": 10.0,
+        "dispersion_high": 13.9,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "limiting the Ptp_ei_derived to ≤ 25 cmH₂O produced a median of 12.00 cmH₂O (10.00, 13.90)",
+          "location": "Results, p. 4"
+        }
+      }
+    },
+    {
+      "label": "eit_balance",
+      "label_verbatim": "The PEEP from the EIT analysis balances the degree of overdistention and lung collapse",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 13.01,
+        "dispersion_type": "iqr",
+        "dispersion_low": 9.88,
+        "dispersion_high": 14.78,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "the EIT crossing-point method selected an intermediate median PEEP of 13.01 cmH₂O (9.88, 14.78)",
+          "location": "Results, p. 4"
+        }
+      }
+    },
+    {
+      "label": "cohort",
+      "label_verbatim": "All patients",
+      "role": "single_group",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 21,
+        "provenance": {
+          "quote": "Twenty-one patients were included in the final analysis.",
+          "location": "Results, Section 5.1, p. 4"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Optimal PEEP level",
+      "definition_verbatim": "The optimum PEEP (OP) determined by five different methods",
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "median",
+          "value": 8.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.0,
+          "dispersion_high": 13.9,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "When titrated to maximize CRS, the median PEEP was 8.00 cmH₂O (8.00, 13.90)",
+            "location": "Results, p. 4"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": "median",
+          "value": 9.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.0,
+          "dispersion_high": 14.0,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "titration for optimal CL yielded a slightly higher median of 9.80 cmH₂O (8.00, 14.00)",
+            "location": "Results, p. 4"
+          }
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "median",
+          "value": 14.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.9,
+          "dispersion_high": 17.9,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Targeting Ptp_ee_direct of ≥ 0 cmH₂O resulted in the highest median PEEP of 14.00 cmH₂O (11.90, 17.90)",
+            "location": "Results, p. 4"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": "median",
+          "value": 12.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10.0,
+          "dispersion_high": 13.9,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "limiting the Ptp_ei_derived to ≤ 25 cmH₂O produced a median of 12.00 cmH₂O (10.00, 13.90)",
+            "location": "Results, p. 4"
+          }
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": "median",
+          "value": 13.01,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.88,
+          "dispersion_high": 14.78,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "the EIT crossing-point method selected an intermediate median PEEP of 13.01 cmH₂O (9.88, 14.78)",
+            "location": "Results, p. 4"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "best_crs, best_cl, ptp_ee_zero, ptp_ei_limit, eit_balance",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": "one-way ANOVA",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "We found a statistically different OP level among the five targets (p = 0.001)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_ee_zero minus best_crs",
+          "arm_label_a": "ptp_ee_zero",
+          "arm_label_b": "best_crs",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The OP guided by Ptp_ee_direct of ≥ 0 cm H2O is significantly higher than OP by the highest respiratory system compliance (p = 0.001)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_ee_zero minus best_cl",
+          "arm_label_a": "ptp_ee_zero",
+          "arm_label_b": "best_cl",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.002,
+          "p_value_verbatim": "0.002",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The OP guided by Ptp_ee_direct of ≥ 0 cm H2O is significantly higher than OP by the highest respiratory system compliance (p = 0.001) and the highest lung compliance (p = 0.002)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Airway plateau pressure at OP",
+      "definition_verbatim": "The airway plateau pressure occurring from the OP acquired from five methods",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "median",
+          "value": 25.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 23.7,
+          "dispersion_high": 28.4,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median plateau pressures for OP guided by CRS, CL, Ptp_ei_derived, and EIT were 25.90 cm H₂O (23.70, 28.40), 26.20 cm H₂O (23.80, 29.20), 28.40 cm H₂O (27.40, 31.90), and 28.93 cm H₂O (26.65, 30.68), respectively.",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": "median",
+          "value": 26.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 23.8,
+          "dispersion_high": 29.2,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median plateau pressures for OP guided by CRS, CL, Ptp_ei_derived, and EIT were 25.90 cm H₂O (23.70, 28.40), 26.20 cm H₂O (23.80, 29.20), 28.40 cm H₂O (27.40, 31.90), and 28.93 cm H₂O (26.65, 30.68), respectively.",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "median",
+          "value": 31.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27.7,
+          "dispersion_high": 33.3,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The OP guided by Ptp_ee_direct ≥ 0 cm H₂O met overdistension criteria, with a median plateau pressure of 31.30 cm H₂O (27.70, 33.30)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": "median",
+          "value": 28.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27.4,
+          "dispersion_high": 31.9,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median plateau pressures for OP guided by CRS, CL, Ptp_ei_derived, and EIT were 25.90 cm H₂O (23.70, 28.40), 26.20 cm H₂O (23.80, 29.20), 28.40 cm H₂O (27.40, 31.90), and 28.93 cm H₂O (26.65, 30.68), respectively.",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": "median",
+          "value": 28.93,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26.65,
+          "dispersion_high": 30.68,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median plateau pressures for OP guided by CRS, CL, Ptp_ei_derived, and EIT were 25.90 cm H₂O (23.70, 28.40), 26.20 cm H₂O (23.80, 29.20), 28.40 cm H₂O (27.40, 31.90), and 28.93 cm H₂O (26.65, 30.68), respectively.",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_crs minus ptp_ee_zero",
+          "arm_label_a": "best_crs",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Significant differences were found between techniques: CRS vs. Ptp_ee_direct (p = 0.001)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_crs minus ptp_ei_limit",
+          "arm_label_a": "best_crs",
+          "arm_label_b": "ptp_ei_limit",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.011,
+          "p_value_verbatim": "0.011",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CRS vs. Ptp_ei_derived (p = 0.011)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_crs minus eit_balance",
+          "arm_label_a": "best_crs",
+          "arm_label_b": "eit_balance",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.011,
+          "p_value_verbatim": "0.011",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CRS vs. EIT (p = 0.011)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_cl minus ptp_ee_zero",
+          "arm_label_a": "best_cl",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.001,
+          "p_value_verbatim": "0.001",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CL vs. Ptp_ee_direct (p = 0.001)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_cl minus ptp_ei_limit",
+          "arm_label_a": "best_cl",
+          "arm_label_b": "ptp_ei_limit",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.013,
+          "p_value_verbatim": "0.013",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CL vs. Ptp_ei_derived (p = 0.013)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_cl minus eit_balance",
+          "arm_label_a": "best_cl",
+          "arm_label_b": "eit_balance",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.027,
+          "p_value_verbatim": "0.027",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CL vs. EIT (p = 0.027)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory transpulmonary pressure (Ptp_ee_direct) at OP",
+      "definition_verbatim": "Direct measurement of end-expiratory transpulmonary pressure = Paw_ee - Peso_ee",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "median",
+          "value": -2.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": -4.2,
+          "dispersion_high": -0.8,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Negative median Ptp_ee_direct values—indicative of potential lung collapse—were observed with PEEP guided by CRS [−2.3 cm H₂O (−4.2,–0.8)]",
+            "location": "Results, p. 4-5, Section 5.3"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": "median",
+          "value": -2.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": -4.5,
+          "dispersion_high": -0.8,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CL [−2.3 cm H₂O (−4.5,–0.8)]",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "median",
+          "value": 0.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.6,
+          "dispersion_high": 1.0,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptp_ee_direct-guided PEEP showed the lowest collapse risk, with a median Ptp_ee_direct of 0.4 cm H₂O (0.6, 1.0)",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": null
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": "median",
+          "value": -1.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": -2.9,
+          "dispersion_high": 1.7,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "EIT [−1.5 cm H₂O (−2.9, 1.7)]",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_crs minus ptp_ee_zero",
+          "arm_label_a": "best_crs",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "These methods yielded significantly lower Ptp_ee_direct than PEEP set by direct Ptp_ee_direct itself (p < 0.001 vs. CRS; p < 0.001 vs. CL)",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_cl minus ptp_ee_zero",
+          "arm_label_a": "best_cl",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "These methods yielded significantly lower Ptp_ee_direct than PEEP set by direct Ptp_ee_direct itself (p < 0.001 vs. CRS; p < 0.001 vs. CL)",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Elastance-derived end-inspiratory transpulmonary pressure (Ptp_ei_derived) at OP",
+      "definition_verbatim": "The lung stress calculated from the elastance-derived calculation (Ptp_ei_derived = Paw_ei x EL/ERS)",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "mean",
+          "value": 21.04,
+          "dispersion_type": "sd",
+          "dispersion": 4.17,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CRS guided lung stress (21.04 ± 4.17 cm H₂O) was also significantly lower than that under Ptp_ee_direct guidance (p = 0.046).",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": "mean",
+          "value": 21.0,
+          "dispersion_type": "sd",
+          "dispersion": 4.54,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "the lowest mean value appeared in PEEP directed by the best CL (21.00 ± 4.54 cm H2O), which was significantly lower (p = 0.042)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "mean",
+          "value": 24.74,
+          "dispersion_type": "sd",
+          "dispersion": 4.79,
+          "n": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The highest mean Ptp_ei_derived occurred with Ptp_ee_direct guidance (24.74 ± 4.79 cm H₂O)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": null
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_cl minus ptp_ee_zero",
+          "arm_label_a": "best_cl",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.042,
+          "p_value_verbatim": "0.042",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "the lowest mean value appeared in PEEP directed by the best CL (21.00 ± 4.54 cm H2O), which was significantly lower (p = 0.042)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "best_crs minus ptp_ee_zero",
+          "arm_label_a": "best_crs",
+          "arm_label_b": "ptp_ee_zero",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.046,
+          "p_value_verbatim": "0.046",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "CRS guided lung stress (21.04 ± 4.17 cm H₂O) was also significantly lower than that under Ptp_ee_direct guidance (p = 0.046)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "EIT-derived overdistension percentage at OP",
+      "definition_verbatim": "The percentage of overdistension by EIT",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 8.5,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "significantly exceeding the best CRS [0% (0, 8.5); p = 0.002]",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": "median",
+          "value": 5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 9,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "and best CL [5% (0, 9); p = 0.004] methods",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 22,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "the Ptp_ee_direct guided method yielded the highest median percentage (17%; 6, 22)",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": "median",
+          "value": 10.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 22.0,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "Ptp_ei_derived- and EIT-guided techniques produced 10.5% (0.0, 22.0) and 6.8% (4.0, 10.8), respectively",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": "median",
+          "value": 6.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.0,
+          "dispersion_high": 10.8,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "Ptp_ei_derived- and EIT-guided techniques produced 10.5% (0.0, 22.0) and 6.8% (4.0, 10.8), respectively",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_ee_zero minus best_crs",
+          "arm_label_a": "ptp_ee_zero",
+          "arm_label_b": "best_crs",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.002,
+          "p_value_verbatim": "0.002",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "%",
+          "provenance": {
+            "quote": "significantly exceeding the best CRS [0% (0, 8.5); p = 0.002]",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_ee_zero minus best_cl",
+          "arm_label_a": "ptp_ee_zero",
+          "arm_label_b": "best_cl",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.004,
+          "p_value_verbatim": "0.004",
+          "test_used": "Bonferroni-adjusted",
+          "unit": "%",
+          "provenance": {
+            "quote": "and best CL [5% (0, 9); p = 0.004] methods",
+            "location": "Results, p. 4, Section 5.2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "EIT-derived collapse percentage at OP",
+      "definition_verbatim": "The percentage of lung collapse by EIT",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "best_crs",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 19,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "The greatest risk of lung collapse occurred with CRS-guided PEEP, which had a median Ptp_ee_direct of −2.3 (−4.2, −0.8) cm H2O and a median EIT-measured collapse of 13% (6, 19).",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        },
+        {
+          "arm_label": "best_cl",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "%",
+          "provenance": null
+        },
+        {
+          "arm_label": "ptp_ee_zero",
+          "value_type": "median",
+          "value": 1.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 7.5,
+          "n": 21,
+          "unit": "%",
+          "provenance": {
+            "quote": "In contrast, Ptp_ee_direct-guided PEEP showed the lowest collapse risk, with a median Ptp_ee_direct of 0.4 cm H₂O (0.6, 1.0) and an EIT collapse of 1.5% (0.0, 7.5).",
+            "location": "Results, p. 5, Section 5.3"
+          }
+        },
+        {
+          "arm_label": "ptp_ei_limit",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "%",
+          "provenance": null
+        },
+        {
+          "arm_label": "eit_balance",
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": "%",
+          "provenance": null
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "SpO2/FiO2 ratio",
+      "definition_verbatim": "Ratio of oxygen saturation to fraction of inspired oxygen",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "pre-recruitment"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "mean",
+          "value": 146.97,
+          "dispersion_type": "sd",
+          "dispersion": 58.2,
+          "n": 21,
+          "unit": null,
+          "provenance": {
+            "quote": "The mean SpO₂/FiO₂ ratio increased from 146.97 ± 58.20 pre-recruitment to 150.29 ± 58.79 immediately post-RM",
+            "location": "Results, p. 4, Section 5.1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "SpO2/FiO2 ratio",
+      "definition_verbatim": "Ratio of oxygen saturation to fraction of inspired oxygen",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 0,
+        "label_verbatim": "immediately post-RM"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "mean",
+          "value": 150.29,
+          "dispersion_type": "sd",
+          "dispersion": 58.79,
+          "n": 21,
+          "unit": null,
+          "provenance": {
+            "quote": "The mean SpO₂/FiO₂ ratio increased from 146.97 ± 58.20 pre-recruitment to 150.29 ± 58.79 immediately post-RM",
+            "location": "Results, p. 4, Section 5.1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Heart rate during titration",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "during decremental PEEP titration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP levels 20 to 8 cmH2O",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "test_used": "Repeated-measures ANOVA",
+          "unit": "bpm",
+          "provenance": {
+            "quote": "No significant changes in HR, SV, or CO were observed during decremental PEEP titration (p = 1.000, 0.992, and 0.990, respectively).",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Stroke volume during titration",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "during decremental PEEP titration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP levels 20 to 8 cmH2O",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.992,
+          "p_value_verbatim": "0.992",
+          "test_used": "Repeated-measures ANOVA",
+          "unit": "mL",
+          "provenance": {
+            "quote": "No significant changes in HR, SV, or CO were observed during decremental PEEP titration (p = 1.000, 0.992, and 0.990, respectively).",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac output during titration",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "during decremental PEEP titration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP levels 20 to 8 cmH2O",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.99,
+          "p_value_verbatim": "0.990",
+          "test_used": "Repeated-measures ANOVA",
+          "unit": "L/min",
+          "provenance": {
+            "quote": "No significant changes in HR, SV, or CO were observed during decremental PEEP titration (p = 1.000, 0.992, and 0.990, respectively).",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Pulse pressure variation during titration",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "during decremental PEEP titration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP levels 20 to 8 cmH2O",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.375,
+          "p_value_verbatim": "0.375",
+          "test_used": "Repeated-measures ANOVA",
+          "unit": "%",
+          "provenance": {
+            "quote": "PPV declined during titration but did not reach statistical significance (p = 0.375).",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Heart rate at OP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "best_crs, best_cl, ptp_ee_zero, ptp_ei_limit, eit_balance",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.987,
+          "p_value_verbatim": "0.987",
+          "test_used": "Kruskal-Wallis",
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Kruskal–Wallis analysis showed no significant differences in HR, CO, or PPV at OP across the five methods (p = 0.987, 0.992, and 0.975, respectively)",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac output at OP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "best_crs, best_cl, ptp_ee_zero, ptp_ei_limit, eit_balance",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.992,
+          "p_value_verbatim": "0.992",
+          "test_used": "Kruskal-Wallis",
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Kruskal–Wallis analysis showed no significant differences in HR, CO, or PPV at OP across the five methods (p = 0.987, 0.992, and 0.975, respectively)",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Pulse pressure variation at OP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at OP"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "best_crs, best_cl, ptp_ee_zero, ptp_ei_limit, eit_balance",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": 0.975,
+          "p_value_verbatim": "0.975",
+          "test_used": "Kruskal-Wallis",
+          "unit": "%",
+          "provenance": {
+            "quote": "Kruskal–Wallis analysis showed no significant differences in HR, CO, or PPV at OP across the five methods (p = 0.987, 0.992, and 0.975, respectively)",
+            "location": "Results, p. 5, Section 5.5"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Directly measured vs. elastance-derived end-inspiratory transpulmonary pressure",
+      "definition_verbatim": "Ptp_ei_direct = Paw_ei - Peso_ei; Ptp_ei_derived = Paw_ei x EL/ERS",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "during decremental PEEP titration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Ptp_ei_direct minus Ptp_ei_derived",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "mean_difference": 10.91,
+          "sd_of_difference": 3.82,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 21,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "Repeated-measures ANOVA",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Repeated-measures ANOVA showed that Ptp_ei_direct was significantly lower than Ptp_ei_derived (p < 0.001; Supplementary Figure 2), and this difference remained consistent throughout titration (p = 0.954), with a mean difference of 10.91 ± 3.82 cm H₂O.",
+            "location": "Results, p. 5, Section 5.4"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 26,
+      "provenance": {
+        "quote": "Eligible patients (N=26) - Esophageal balloon insertion and monitoring",
+        "location": "Figure 1"
+      }
+    },
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp",
+      "elastance_derived"
+    ],
+    "classification_notes": "ARDS: all patients had moderate to severe ARDS per Berlin definition. Obesity: mean BMI 23.62 kg/m2, below 30. Timing: not reported relative to intubation/ICU admission. Ptp targets: study applied both direct Ptp_ee (≥0 cmH2O) and elastance-derived Ptp_ei (≤25 cmH2O) strategies."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap with known clusters. Unique cohort from Ramathibodi Hospital, Bangkok; no shared registration, enrolment dates, or centres identified in COHORTS.md.",
+    "unclear_items": [
+      "Ptp_ee_direct for ptp_ee_zero arm reported as median 0.4 cmH2O with IQR (0.6, 1.0) which is inconsistent (lower IQR bound exceeds median). Recorded as reported; possible typographical error.",
+      "Ptp_ei_derived and Ptp_ee_direct values for ptp_ei_limit arm not reported in text; may be in Figure 4 but not extracted (estimation from figure not allowed).",
+      "Omnibus test for OP across five methods (p=0.001) is described as one-way ANOVA in sample size section but repeated-measures ANOVA elsewhere. Test used recorded as one-way ANOVA.",
+      "Co-interventions: tidal volume target not explicitly stated; only recorded tidal volume (6.2 mL/kg PBW) reported.",
+      "Timing of intervention relative to intubation/ICU admission not reported; timing_subgroup coded as unclear.",
+      "SpO2/FiO2 pre/post-RM reported for whole cohort; recorded under arm 'cohort' added to arms array.",
+      "Full publication language: inferred as English from journal publication; no explicit language statement."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Study not designed to assess clinical outcomes; final PEEP determined by attending physicians. EIT overdistension correlated with peak airway pressure (r=0.67, p<0.001) and elastance-derived lung stress (r=0.48, p<0.001). Ptp_ee_direct associated with zero lung collapse on EIT was 5.15 cmH2O (1.90, 6.70). Median EIT overdistension across all measurements was 12% (2, 23). Paco2 and other Table 1 values recorded in additional_baseline."
+  }
+}

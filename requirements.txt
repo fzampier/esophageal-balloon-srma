@@ -1,0 +1,18 @@
+# Rebuild on a new machine. Verified 2026-09-21 from a fresh clone of e09a5cc
+# (macOS arm64, Python 3.13.14, R 4.6.1): tests pass, and reconcile.py ->
+# flatten.py -> analysis/meta/run.R reproduces all 33 tables in analysis/results/
+# (9472 cells; largest relative difference from the tracked Windows run 1.9e-10).
+#
+#   uv venv --python 3.13 .venv && uv pip install -r requirements.txt
+#   Rscript -e 'install.packages("metafor")'
+#
+# R: tracked results were produced with metafor 5.0.1; 5.2.1 reproduces them.
+# Needs nothing outside the repo. extract.py alone reads an API key from
+# ~/Desktop/api.md, and only to run new model extractions.
+jsonschema==4.26.0
+openpyxl==3.1.5
+pymupdf==1.28.2
+matplotlib==3.11.2  # analysis/rob.py final (risk-of-bias figure)
+python-docx==1.2.0  # docs/manuscript/make_manuscript.py, make_supplement.py
+pillow==12.3.0  # docs/manuscript/make_supplement.py (eFigure)
+# Also needed to build the manuscript: pandoc 3.11 (on PATH). R packages: see install_r_packages.R.

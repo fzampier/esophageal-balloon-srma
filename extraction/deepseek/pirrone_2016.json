@@ -1,0 +1,2447 @@
+{
+  "record_meta": {
+    "study_id": "pirrone_2016",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/pirrone2016.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Pirrone",
+    "year": 2016,
+    "title": "Recruitment Maneuvers and Positive End-Expiratory Pressure Titration in Morbidly Obese ICU Patients",
+    "journal": "Critical Care Medicine",
+    "doi": "10.1097/CCM.0000000000001387",
+    "pmid": null,
+    "trial_registration": "NCT 02105220",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The inclusion criteria were as follows: age older than 18 years",
+          "location": "p. 301, Material and Methods, Population and Study Protocol"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Critically ill, mechanically ventilated morbidly obese (body mass index > 35 kg/m2) patients (n = 14).",
+          "location": "p. 300, Abstract, Patients"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Medical and surgical ICUs at Massachusetts General Hospital.",
+          "location": "p. 300, Abstract, Setting"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "best positive end-expiratory pressure identified through esophageal pressure measurement",
+          "location": "p. 300, Abstract, Interventions"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "the two methods of evaluating positive end-expiratory pressure identified similar optimal positive end-expiratory pressure levels (20.7 ± 4.0 vs 21.3 ± 3.8 cm H2O; p = 0.40). End-expiratory pressure titration increased end-expiratory lung volumes (Δ11 ± 7 mL/kg; p < 0.01) and oxygenation (Δ86 ± 50 torr; p < 0.01)",
+          "location": "p. 300, Abstract, Measurements and Main Results"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Fourteen patients (eight men, six women) met all the inclusion criteria and were enrolled in the study.",
+          "location": "p. 302, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Design: Prospective, crossover, nonrandomized interventional study.",
+          "location": "p. 300, Abstract, Design"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Crit Care Med 2016; 44:300–307",
+          "location": "p. 300, Abstract"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "Prospective, crossover, nonrandomized interventional study.",
+      "provenance": {
+        "quote": "Design: Prospective, crossover, nonrandomized interventional study.",
+        "location": "p. 300, Abstract"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "Medical and surgical ICUs at Massachusetts General Hospital.",
+        "location": "p. 300, Abstract, Setting"
+      }
+    },
+    "countries": [
+      "USA"
+    ],
+    "location_provenance": {
+      "quote": "Medical and surgical ICUs at Massachusetts General Hospital.",
+      "location": "p. 300, Abstract, Setting. Country inferred from institution location (Boston, MA, USA)."
+    },
+    "planned_sample_size": {
+      "value": 14,
+      "provenance": {
+        "quote": "We anticipated enrolling a total of 14 (13 + 10% possible drop-outs) subjects.",
+        "location": "p. 302, Statistical Analysis"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "Sample size calculations showed that 13 patients were needed in order to detect a predicted increase in EELV of at least 300 mL ± 300 mL after PEEP titration with a power of 0.9 and a two-sided p value of less than 0.05.",
+      "provenance": {
+        "quote": "Sample size calculations showed that 13 patients were needed in order to detect a predicted increase in EELV of at least 300 mL ± 300 mL after PEEP titration with a power of 0.9 and a two-sided p value of less than 0.05.",
+        "location": "p. 302, Statistical Analysis"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Medical and surgical ICUs",
+      "provenance": {
+        "quote": "Medical and surgical ICUs at Massachusetts General Hospital.",
+        "location": "p. 300, Abstract, Setting"
+      }
+    },
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Supported, in part, by the Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital.",
+      "provenance": {
+        "quote": "Supported, in part, by the Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital.",
+        "location": "p. 300, Acknowledgments"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 14,
+      "provenance": {
+        "quote": "Fourteen patients (eight men, six women) met all the inclusion criteria and were enrolled in the study.",
+        "location": "p. 302, Results"
+      }
+    },
+    "n_analysed": {
+      "value": 14,
+      "provenance": {
+        "quote": "Fourteen patients (eight men, six women) met all the inclusion criteria and were enrolled in the study.",
+        "location": "p. 302, Results"
+      }
+    },
+    "population_description": {
+      "value": "Critically ill, mechanically ventilated morbidly obese (body mass index > 35 kg/m2) patients (n = 14).",
+      "provenance": {
+        "quote": "Critically ill, mechanically ventilated morbidly obese (body mass index > 35 kg/m2) patients (n = 14).",
+        "location": "p. 300, Abstract, Patients"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Age older than 18 years, BMI more than 35 kg/m2, and absence of a diagnosis of acute respiratory distress syndrome as defined by the Berlin criteria.",
+      "provenance": {
+        "quote": "The inclusion criteria were as follows: age older than 18 years, BMI more than 35 kg/m2, and absence of a diagnosis of acute respiratory distress syndrome as defined by the Berlin criteria.",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "No explicit exclusion criteria reported. The inclusion criteria specified absence of ARDS.",
+      "provenance": {
+        "quote": "The inclusion criteria were as follows: age older than 18 years, BMI more than 35 kg/m2, and absence of a diagnosis of acute respiratory distress syndrome as defined by the Berlin criteria.",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 54.0,
+      "dispersion_type": "sd",
+      "dispersion": 15.7,
+      "n": 14,
+      "unit": "yr",
+      "provenance": {
+        "quote": "Age, mean ± sd, yr 54.0 ± 15.7",
+        "location": "p. 302, Table 1, row: Age"
+      }
+    },
+    "sex_female": {
+      "n": 6,
+      "total": 14,
+      "percent_as_reported": 42.9,
+      "provenance": {
+        "quote": "Female, n (%) 6 (42.9)",
+        "location": "p. 302, Table 1, row: Female"
+      }
+    },
+    "sex_male": {
+      "n": 8,
+      "total": 14,
+      "provenance": {
+        "quote": "Fourteen patients (eight men, six women)",
+        "location": "p. 302, Results"
+      }
+    },
+    "bmi": {
+      "value_type": "mean",
+      "value": 50.7,
+      "dispersion_type": "sd",
+      "dispersion": 16.0,
+      "n": 14,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "Body mass index, mean ± sd, kg/m2 50.7 ± 16.0",
+        "location": "p. 302, Table 1, row: Body mass index"
+      }
+    },
+    "weight_kg": {
+      "value_type": "mean",
+      "value": 146.1,
+      "dispersion_type": "sd",
+      "dispersion": 40.8,
+      "n": 14,
+      "unit": "kg",
+      "provenance": {
+        "quote": "Weight, mean ± sd, kg 146.1 ± 40.8",
+        "location": "p. 302, Table 1, row: Weight"
+      }
+    },
+    "predicted_body_weight_kg": null,
+    "ards_status": "no_ards",
+    "ards_definition_used": {
+      "value": "Berlin criteria",
+      "provenance": {
+        "quote": "absence of a diagnosis of acute respiratory distress syndrome as defined by the Berlin criteria",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "n_ards": {
+      "n": 0,
+      "total": 14,
+      "derived": true,
+      "derivation": "ARDS was an exclusion criterion; therefore no patients had ARDS.",
+      "provenance": {
+        "quote": "absence of a diagnosis of acute respiratory distress syndrome as defined by the Berlin criteria",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Twelve patients were intubated for primary respiratory failure, nine of whom were admitted with a primary diagnosis of sepsis. The remaining two patients were intubated for airway obstruction.",
+      "provenance": {
+        "quote": "Twelve patients were intubated for primary respiratory failure, nine of whom were admitted with a primary diagnosis of sepsis. The remaining two patients were intubated for airway obstruction.",
+        "location": "p. 302, Results"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "mean",
+      "value": 179,
+      "dispersion_type": "sd",
+      "dispersion": 60,
+      "n": 14,
+      "unit": "torr",
+      "provenance": {
+        "quote": "Pao2/Fio2, torr 179 ± 60",
+        "location": "p. 303, Table 2, row: Pao2/Fio2, column: Baseline"
+      }
+    },
+    "apache_ii": {
+      "value_type": "mean",
+      "value": 15.8,
+      "dispersion_type": "sd",
+      "dispersion": 7.9,
+      "n": 14,
+      "provenance": {
+        "quote": "Acute Physiology and Chronic Health Evaluation II, mean ± sd 15.8 ± 7.9",
+        "location": "p. 302, Table 1, row: Acute Physiology and Chronic Health Evaluation II"
+      }
+    },
+    "sofa": null,
+    "saps_ii": {
+      "value_type": "mean",
+      "value": 34.6,
+      "dispersion_type": "sd",
+      "dispersion": 18.1,
+      "n": 14,
+      "provenance": {
+        "quote": "Simplified Acute Physiology Score II, mean ± sd 34.6 ± 18.1",
+        "location": "p. 302, Table 1, row: Simplified Acute Physiology Score II"
+      }
+    },
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Height",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 170.9,
+          "dispersion_type": "sd",
+          "dispersion": 12.5,
+          "unit": "cm",
+          "provenance": {
+            "quote": "Height, mean ± sd, cm 170.9 ± 12.5",
+            "location": "p. 302, Table 1, row: Height"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Thoracic circumference",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 144.8,
+          "dispersion_type": "sd",
+          "dispersion": 23.3,
+          "unit": "cm",
+          "provenance": {
+            "quote": "Thoracic circumference, mean ± sd, cm 144.8 ± 23.3",
+            "location": "p. 302, Table 1, row: Thoracic circumference"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Abdominal circumference",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 151.8,
+          "dispersion_type": "sd",
+          "dispersion": 23.8,
+          "unit": "cm",
+          "provenance": {
+            "quote": "Abdominal circumference, mean ± sd, cm 151.8 ± 23.8",
+            "location": "p. 302, Table 1, row: Abdominal circumference"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Intra-abdominal pressure",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 13.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.6,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Intra-abdominal pressure, mean ± sd, cm H2O 13.8 ± 5.6",
+            "location": "p. 302, Table 1, row: Intra-abdominal pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Admission - Medical",
+        "arm_label": null,
+        "count": {
+          "n": 7,
+          "total": 14,
+          "percent_as_reported": 50,
+          "provenance": {
+            "quote": "Medical, n (%) 7 (50)",
+            "location": "p. 302, Table 1, row: Admission - Medical"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Admission - Scheduled surgery",
+        "arm_label": null,
+        "count": {
+          "n": 5,
+          "total": 14,
+          "percent_as_reported": 35.7,
+          "provenance": {
+            "quote": "Scheduled surgery, n (%) 5 (35.7)",
+            "location": "p. 302, Table 1, row: Admission - Scheduled surgery"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Admission - Emergency surgery",
+        "arm_label": null,
+        "count": {
+          "n": 2,
+          "total": 14,
+          "percent_as_reported": 14.3,
+          "provenance": {
+            "quote": "Emergency surgery, n (%) 2 (14.3)",
+            "location": "p. 302, Table 1, row: Admission - Emergency surgery"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary diagnosis - Upper airway obstruction",
+        "arm_label": null,
+        "count": {
+          "n": 2,
+          "total": 14,
+          "percent_as_reported": 14.3,
+          "provenance": {
+            "quote": "Upper airway obstruction, n (%) 2 (14.3)",
+            "location": "p. 302, Table 1, row: Primary diagnosis - Upper airway obstruction"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary diagnosis - Volume overload",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 14,
+          "percent_as_reported": 7.1,
+          "provenance": {
+            "quote": "Volume overload, n (%) 1 (7.1)",
+            "location": "p. 302, Table 1, row: Primary diagnosis - Volume overload"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary diagnosis - Sepsis",
+        "arm_label": null,
+        "count": {
+          "n": 9,
+          "total": 14,
+          "percent_as_reported": 64.3,
+          "provenance": {
+            "quote": "Sepsis, n (%) 9 (64.3)",
+            "location": "p. 302, Table 1, row: Primary diagnosis - Sepsis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary diagnosis - Pulmonary embolism",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 14,
+          "percent_as_reported": 7.1,
+          "provenance": {
+            "quote": "Pulmonary embolism, n (%) 1 (7.1)",
+            "location": "p. 302, Table 1, row: Primary diagnosis - Pulmonary embolism"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary diagnosis - Trauma",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 14,
+          "percent_as_reported": 7.1,
+          "provenance": {
+            "quote": "Trauma, n (%) 1 (7.1)",
+            "location": "p. 302, Table 1, row: Primary diagnosis - Trauma"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Reason for intubation - Airway protection",
+        "arm_label": null,
+        "count": {
+          "n": 2,
+          "total": 14,
+          "percent_as_reported": 14.3,
+          "provenance": {
+            "quote": "Airway protection, n (%) 2 (14.3)",
+            "location": "p. 302, Table 1, row: Reason for intubation - Airway protection"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Reason for intubation - Respiratory failure",
+        "arm_label": null,
+        "count": {
+          "n": 12,
+          "total": 14,
+          "percent_as_reported": 85.7,
+          "provenance": {
+            "quote": "Respiratory failure, n (%) 12 (85.7)",
+            "location": "p. 302, Table 1, row: Reason for intubation - Respiratory failure"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "Avea GS SmartCath; Carefusion, Yorba Linda, CA",
+      "provenance": {
+        "quote": "an esophageal balloon (Avea GS SmartCath; Carefusion, Yorba Linda, CA) was positioned and inflated with 2 mL of air",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": 2,
+      "dispersion_type": null,
+      "unit": "mL",
+      "provenance": {
+        "quote": "inflated with 2 mL of air",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "balloon_calibration": {
+      "method": "fixed_volume_no_validation",
+      "method_verbatim": {
+        "value": "positioned and inflated with 2 mL of air",
+        "provenance": {
+          "quote": "inflated with 2 mL of air",
+          "location": "p. 301, Material and Methods, Population and Study Protocol"
+        }
+      },
+      "position_verification": {
+        "value": null,
+        "provenance": null
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "PEEP was progressively increased in a stepwise manner until it matched or was slightly greater than the Pes at end expiration, resulting in Ptpe between zero and +2 cm H2O.",
+        "provenance": {
+          "quote": "PEEP was progressively increased in a stepwise manner until it matched or was slightly greater than the Pes at end expiration, resulting in Ptpe between zero and +2 cm H2O.",
+          "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, Lowest PEEP With Positive Ptpe"
+        }
+      },
+      "pes_correction_applied": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP was progressively increased in a stepwise manner until it matched or was slightly greater than the Pes at end expiration, resulting in Ptpe between zero and +2 cm H2O.",
+        "provenance": {
+          "quote": "PEEP was progressively increased in a stepwise manner until it matched or was slightly greater than the Pes at end expiration, resulting in Ptpe between zero and +2 cm H2O.",
+          "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, Lowest PEEP With Positive Ptpe"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "resulting in Ptpe between zero and +2 cm H2O",
+          "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, Lowest PEEP With Positive Ptpe"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "resulting in Ptpe between zero and +2 cm H2O",
+          "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, Lowest PEEP With Positive Ptpe"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "RMs were performed in a stepwise fashion. The patient’s ventilatory mode was switched to pressure control ventilation, with PEEP of 15 cm H2O, respiratory rate of 10 breaths/min, inspiratory/expiratory ratio of 1:1, and a pressure control level of +15 cm H2O. Every 30 seconds, PEEP was increased by 5 cm H2O. We progressively increased PEEP to 30 cm H2O + 15 cm H2O of pressure control. The total duration of the RM was 2 minutes.",
+        "provenance": {
+          "quote": "RMs were performed in a stepwise fashion. The patient’s ventilatory mode was switched to pressure control ventilation, with PEEP of 15 cm H2O, respiratory rate of 10 breaths/min, inspiratory/expiratory ratio of 1:1, and a pressure control level of +15 cm H2O. Every 30 seconds, PEEP was increased by 5 cm H2O. We progressively increased PEEP to 30 cm H2O + 15 cm H2O of pressure control. The total duration of the RM was 2 minutes.",
+          "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, RM"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6.6 ± 1.2 mL/kg of ideal body weight",
+        "provenance": {
+          "quote": "Patients were ventilated with a tidal volume of 6.6 ± 1.2 mL/kg of ideal body weight, respiratory rate of 22.6 ± 6.8 breaths/min, minute volume ventilation of 9.8 ± 3.3 L/min, and an inspired oxygen fraction of 0.55 ± 0.09.",
+          "location": "p. 303, Table 2, footnote"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": null,
+        "provenance": null
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": null,
+      "provenance": null
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "clinician_discretion_usual_care",
+      "decremental_peep_trial"
+    ],
+    "comparator_verbatim": {
+      "value": "Subjects’ EELVs and respiratory mechanics were studied at clinically set PEEP (baseline PEEP), zero PEEP (ZEEP), lowest PEEP level with a positive Ptpe without a recruitment maneuver (RM), lowest PEEP level with a positive Ptpe after a RM, best decremental PEEP after a RM, and best decremental PEEP with the head of bed elevated to 30 degrees.",
+      "provenance": {
+        "quote": "Subjects’ EELVs and respiratory mechanics were studied at clinically set PEEP (baseline PEEP), zero PEEP (ZEEP), lowest PEEP level with a positive Ptpe without a recruitment maneuver (RM), lowest PEEP level with a positive Ptpe after a RM, best decremental PEEP after a RM, and best decremental PEEP with the head of bed elevated to 30 degrees.",
+        "location": "p. 301, Material and Methods, Population and Study Protocol"
+      }
+    },
+    "crossover_order": {
+      "value": "Nonrandomized; sequence as listed in Methods.",
+      "provenance": {
+        "quote": "Design: Prospective, crossover, nonrandomized interventional study.",
+        "location": "p. 300, Abstract, Design"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "2 minutes at each PEEP level during decremental trial; other stabilization times not reported.",
+      "provenance": {
+        "quote": "After 2 minutes, Pplat and PEEP were measured",
+        "location": "p. 301, Material and Methods, PEEP Titration Techniques and RMs, Best Decremental PEEP"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "baseline",
+      "label_verbatim": "Baseline",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 14,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 11.6,
+        "dispersion_type": "sd",
+        "dispersion": 2.9,
+        "n": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP cm H2O 11.6 ± 2.9",
+          "location": "p. 303, Table 2, row: PEEP, column: Baseline"
+        }
+      }
+    },
+    {
+      "label": "zeep",
+      "label_verbatim": "Zero PEEP",
+      "role": "injury_probe_condition",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 4,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 0,
+        "dispersion_type": "none",
+        "n": 4,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Zero PEEP 0",
+          "location": "p. 303, Table 2, row: PEEP, column: Zero PEEP"
+        }
+      }
+    },
+    {
+      "label": "ptp_no_rm",
+      "label_verbatim": "Lowest PEEP With Positive Ptpe",
+      "role": "alternative_titration_condition",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 14,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 20.7,
+        "dispersion_type": "sd",
+        "dispersion": 4.0,
+        "n": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP cm H2O 20.7 ± 4.0",
+          "location": "p. 303, Table 2, row: PEEP, column: Lowest PEEP With Positive Ptpe"
+        }
+      }
+    },
+    {
+      "label": "ptp_with_rm",
+      "label_verbatim": "Lowest PEEP With Positive Ptpe After RM",
+      "role": "intervention",
+      "sequence_position": 4,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 14,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 20.7,
+        "dispersion_type": "sd",
+        "dispersion": 4.0,
+        "n": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP cm H2O 20.7 ± 4.0",
+          "location": "p. 303, Table 2, row: PEEP, column: Lowest PEEP With Positive Ptpe After RM"
+        }
+      }
+    },
+    {
+      "label": "dec_rm",
+      "label_verbatim": "Best Decremental PEEP After RM",
+      "role": "alternative_titration_condition",
+      "sequence_position": 5,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 14,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 21.3,
+        "dispersion_type": "sd",
+        "dispersion": 3.8,
+        "n": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP cm H2O 21.3 ± 3.8",
+          "location": "p. 303, Table 2, row: PEEP, column: Best Decremental PEEP After RM"
+        }
+      }
+    },
+    {
+      "label": "dec_rm_hob30",
+      "label_verbatim": "Best Decremental PEEP—Head of Bed 30 Degree",
+      "role": "positional_variant",
+      "sequence_position": 6,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 12,
+        "derived": false
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 21.5,
+        "dispersion_type": "sd",
+        "dispersion": 3.7,
+        "n": 12,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP cm H2O 21.5 ± 3.7",
+          "location": "p. 303, Table 2, row: PEEP, column: Best Decremental PEEP—Head of Bed 30 Degree"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 11.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP cm H2O 11.6 ± 2.9",
+            "location": "p. 303, Table 2, row: PEEP, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 0,
+          "dispersion_type": "none",
+          "n": 4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Zero PEEP 0",
+            "location": "p. 303, Table 2, row: PEEP, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 20.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP cm H2O 20.7 ± 4.0",
+            "location": "p. 303, Table 2, row: PEEP, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 20.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP cm H2O 20.7 ± 4.0",
+            "location": "p. 303, Table 2, row: PEEP, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 21.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.8,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP cm H2O 21.3 ± 3.8",
+            "location": "p. 303, Table 2, row: PEEP, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 21.5,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "n": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP cm H2O 21.5 ± 3.7",
+            "location": "p. 303, Table 2, row: PEEP, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 9.1,
+          "unit": "cmH2O",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "baseline PEEP levels were 9.1 cm H2O lower than PEEP levels that achieved a positive Ptpe (p < 0.0001)",
+            "location": "p. 302, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 9.7,
+          "unit": "cmH2O",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "baseline PEEP levels were 9.7 cm H2O lower than the best decremental PEEP (p < 0.0001)",
+            "location": "p. 302, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus ptp_no_rm",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": null,
+          "unit": null,
+          "p_value": 0.37,
+          "provenance": {
+            "quote": "The PEEP levels identified with either trial method were not significantly different (p = 0.37)",
+            "location": "p. 302, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "End-expiratory lung volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 19.5,
+          "dispersion_type": "sd",
+          "dispersion": 8.3,
+          "n": 14,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 19.5 ± 8.3",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 14.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "n": 3,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 14.6 ± 3.9",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 27.1,
+          "dispersion_type": "sd",
+          "dispersion": 9.2,
+          "n": 14,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 27.1 ± 9.2",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 30.1,
+          "dispersion_type": "sd",
+          "dispersion": 8.2,
+          "n": 14,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 30.1 ± 8.2",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 30.6,
+          "dispersion_type": "sd",
+          "dispersion": 8.7,
+          "n": 14,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 30.6 ± 8.7",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 38.5,
+          "dispersion_type": "sd",
+          "dispersion": 11.5,
+          "n": 12,
+          "unit": "mL/kg ideal body weight",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL/kg ideal body weight 38.5 ± 11.5",
+            "location": "p. 303, Table 2, row: End-expiratory lung volume, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 10.6,
+          "unit": "mL/kg IBW",
+          "p_value": 0.0004,
+          "provenance": {
+            "quote": "EELV increased after PEEP titration, reaching a significant difference of 10.6 mL/kg of ideal body weight (IBW) at the lowest PEEP level with a positive Ptpe (p = 0.0004)",
+            "location": "p. 302, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 11.1,
+          "unit": "mL/kg IBW",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "11.1 mL/kg IBW at best decremental PEEP (p < 0.0001)",
+            "location": "p. 302, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm_hob30 minus baseline",
+          "arm_label_a": "dec_rm_hob30",
+          "arm_label_b": "baseline",
+          "mean_difference": 19,
+          "unit": "mL/kg IBW",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "The EELV difference between baseline and best decremental PEEP with 30 degrees of head of bed elevation was 19 mL/kg IBW (p < 0.0001)",
+            "location": "p. 302, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": 3.0,
+          "unit": "mL/kg IBW",
+          "p_value": 0.017,
+          "provenance": {
+            "quote": "At the lowest PEEP level with a positive Ptpe, RMs increased EELV by 3 mL/kg IBW (p = 0.017)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0005",
+          "provenance": {
+            "quote": "EELV significantly increased from baseline after PEEP titration (*p < 0.0005)",
+            "location": "p. 304, Figure 1 caption"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 34.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 34.6 ± 5.8",
+            "location": "p. 303, Table 2, row: Ppeak, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 22.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 22.4 ± 4.9",
+            "location": "p. 303, Table 2, row: Ppeak, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 41.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.0,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 41.7 ± 6.0",
+            "location": "p. 303, Table 2, row: Ppeak, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 40.2,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 40.2 ± 6.1",
+            "location": "p. 303, Table 2, row: Ppeak, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 40.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 40.4 ± 5.2",
+            "location": "p. 303, Table 2, row: Ppeak, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 41.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.5,
+          "n": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak, cm H2O 41.6 ± 5.5",
+            "location": "p. 303, Table 2, row: Ppeak, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "provenance": null
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 22.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.1,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 22.5 ± 4.1",
+            "location": "p. 303, Table 2, row: Pplat, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 11.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "n": 4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 11.7 ± 2.1",
+            "location": "p. 303, Table 2, row: Pplat, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 30.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 30.4 ± 4.2",
+            "location": "p. 303, Table 2, row: Pplat, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 29.1,
+          "dispersion_type": "sd",
+          "dispersion": 4.1,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 29.1 ± 4.1",
+            "location": "p. 303, Table 2, row: Pplat, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 29.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.8,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 29.8 ± 3.8",
+            "location": "p. 303, Table 2, row: Pplat, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 30.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "n": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cm H2O 30.8 ± 3.2",
+            "location": "p. 303, Table 2, row: Pplat, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "provenance": null
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Pao2/Fio2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline and two titrated PEEP levels after RM"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 179,
+          "dispersion_type": "sd",
+          "dispersion": 60,
+          "n": 14,
+          "unit": "torr",
+          "provenance": {
+            "quote": "Pao2/Fio2, torr 179 ± 60",
+            "location": "p. 303, Table 2, row: Pao2/Fio2, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 270,
+          "dispersion_type": "sd",
+          "dispersion": 67,
+          "n": 14,
+          "unit": "torr",
+          "provenance": {
+            "quote": "Pao2/Fio2, torr 270 ± 67",
+            "location": "p. 303, Table 2, row: Pao2/Fio2, column: Lowest PEEP With Positive Ptpe After RM (text reports after RM measurements)"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 266,
+          "dispersion_type": "sd",
+          "dispersion": 72,
+          "n": 14,
+          "unit": "torr",
+          "provenance": {
+            "quote": "Pao2/Fio2, torr 266 ± 72",
+            "location": "p. 303, Table 2, row: Pao2/Fio2, column: Best Decremental PEEP After RM (text reports after RM measurements)"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 91,
+          "unit": "torr",
+          "p_value": 0.0001,
+          "provenance": {
+            "quote": "Pao2/Fio2 increased by 91 torr from baseline to the lowest PEEP with positive Ptpe (p = 0.0001)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": 87,
+          "unit": "torr",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "87 torr at the best decremental PEEP (p < 0.0001)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus ptp_with_rm",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "ptp_with_rm",
+          "mean_difference": null,
+          "unit": null,
+          "p_value": 0.28,
+          "provenance": {
+            "quote": "Neither trial technique was superior; both improved oxygenation following a RM (p = 0.28)",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptpi",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 1.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O 1.6 ± 5.0",
+            "location": "p. 303, Table 2, row: Ptpi, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": -3.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "n": 4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O -3.2 ± 2.8",
+            "location": "p. 303, Table 2, row: Ptpi, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 8.1,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O 8.1 ± 2.5",
+            "location": "p. 303, Table 2, row: Ptpi, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 6.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O 6.6 ± 3.3",
+            "location": "p. 303, Table 2, row: Ptpi, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 7.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O 7.5 ± 2.6",
+            "location": "p. 303, Table 2, row: Ptpi, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 10.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.8,
+          "n": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpi, cm H2O 10.3 ± 3.8",
+            "location": "p. 303, Table 2, row: Ptpi, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm_hob30 minus baseline",
+          "arm_label_a": "dec_rm_hob30",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": -1.5,
+          "unit": "cmH2O",
+          "p_value": 0.01,
+          "provenance": {
+            "quote": "Ptpi decreased by 1.5 cm H2O (p = 0.01)",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptpe",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": -5.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O -5.8 ± 5.8",
+            "location": "p. 303, Table 2, row: Ptpe, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": -11.5,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O -11.5 ± 1.7",
+            "location": "p. 303, Table 2, row: Ptpe, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 1.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.5,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O 1.1 ± 1.5",
+            "location": "p. 303, Table 2, row: Ptpe, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 1.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O 1.4 ± 2.4",
+            "location": "p. 303, Table 2, row: Ptpe, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 2.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.3,
+          "n": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O 2.3 ± 2.3",
+            "location": "p. 303, Table 2, row: Ptpe, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 4.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.8,
+          "n": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpe, cm H2O 4.2 ± 3.8",
+            "location": "p. 303, Table 2, row: Ptpe, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm_hob30 minus baseline",
+          "arm_label_a": "dec_rm_hob30",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value_verbatim": "<0.0004",
+          "provenance": {
+            "quote": "PEEP titration significantly increased end-expiratory and end-inspiratory transpulmonary pressures (*p < 0.0004)",
+            "location": "p. 304, Figure 2 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": null,
+          "unit": null,
+          "p_value": 0.43,
+          "provenance": {
+            "quote": "No change in Ptpe was observed (p = 0.43)",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Elastance of the respiratory system",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 23.2,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 23.2 ± 6.8",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 23.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 4,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 23.2 ± 1.3",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 22.1,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 22.1 ± 5.1",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 17.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 17.9 ± 4.0",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 18.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 18.2 ± 4.4",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 20.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 12,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the respiratory system, cm H2O/L 20.8 ± 5.2",
+            "location": "p. 303, Table 2, row: Elastance of the respiratory system, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value": 0.37,
+          "provenance": {
+            "quote": "a PEEP increase without a RM did not significantly improve the elastance of the respiratory system (Ers) (p = 0.37)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": -4.2,
+          "unit": "cmH2O/L",
+          "p_value": 0.0002,
+          "provenance": {
+            "quote": "after a RM, Ers decreased by 4.2 cm H2O/L (p = 0.0002)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": -5.3,
+          "unit": "cmH2O/L",
+          "p_value": 0.0007,
+          "provenance": {
+            "quote": "At the lowest PEEP level with positive Ptpe, Ers decreased by 5.3 cm H2O/L (p = 0.0007) when compared with baseline.",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": -5.0,
+          "unit": "cmH2O/L",
+          "p_value": 0.0016,
+          "provenance": {
+            "quote": "a decrease in Ers of 5.0 cm H2O/L was observed at best decremental PEEP (p = 0.0016)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "zeep minus baseline",
+          "arm_label_a": "zeep",
+          "arm_label_b": "baseline",
+          "mean_difference": 5.7,
+          "unit": "cmH2O/L",
+          "p_value": 0.055,
+          "provenance": {
+            "quote": "In the subgroup of four patients who were briefly ventilated at ZEEP, the Ers increased by 5.7 cm H2O/L (p = 0.055).",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Elastance of the lung",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 17.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 17.8 ± 6.8",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 18.4,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "n": 4,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 18.4 ± 1.6",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 16.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 16.8 ± 3.6",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 12.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 12.4 ± 3.4",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 12.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 12.7 ± 3.2",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 15.1,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "n": 12,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the lung, cm H2O/L 15.1 ± 5.3",
+            "location": "p. 303, Table 2, row: Elastance of the lung, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_no_rm minus baseline",
+          "arm_label_a": "ptp_no_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "unit": null,
+          "p_value": 0.45,
+          "provenance": {
+            "quote": "a PEEP increase without a RM did not significantly improve the elastance of the ... lung (p = 0.45)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": -4.2,
+          "unit": "cmH2O/L",
+          "p_value_verbatim": "<0.0001",
+          "provenance": {
+            "quote": "the 4.2 cm H2O/L decrease in lung elastance (El) (p < 0.0001)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus baseline",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": -5.4,
+          "unit": "cmH2O/L",
+          "p_value": 0.003,
+          "provenance": {
+            "quote": "A comparable difference in El (5.4 cm H2O/L; p = 0.003) at the lowest PEEP level that achieved a positive Ptpe",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "dec_rm minus baseline",
+          "arm_label_a": "dec_rm",
+          "arm_label_b": "baseline",
+          "mean_difference": -5.1,
+          "unit": "cmH2O/L",
+          "p_value": 0.004,
+          "provenance": {
+            "quote": "a difference in El (5.1 cm H2O/L; p = 0.004) at best decremental PEEP",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Elastance of the chest wall",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 5.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 5.4 ± 2.9",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 4.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 4,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 4.8 ± 1.0",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 5.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 5.6 ± 2.8",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 5.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 5.6 ± 2.2",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 5.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "n": 14,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 5.5 ± 2.7",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 5.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 12,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Elastance of the chest wall, cm H2O/L 5.7 ± 2.9",
+            "location": "p. 303, Table 2, row: Elastance of the chest wall, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": 0.96,
+          "provenance": {
+            "quote": "Ecw did not change at any of the different PEEP levels (p = 0.96)",
+            "location": "p. 304, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "zeep minus baseline",
+          "arm_label_a": "zeep",
+          "arm_label_b": "baseline",
+          "mean_difference": null,
+          "p_value": 0.9,
+          "provenance": {
+            "quote": "Chest wall elastance did not change (p = 0.90)",
+            "location": "p. 303, Results"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptp_with_rm minus ptp_no_rm",
+          "arm_label_a": "ptp_with_rm",
+          "arm_label_b": "ptp_no_rm",
+          "mean_difference": null,
+          "p_value": 0.85,
+          "provenance": {
+            "quote": "Chest wall elastance (Ecw) did not differ before and after the RM (p = 0.85)",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Airway resistance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "baseline",
+          "value_type": "mean",
+          "value": 18.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 14,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 18.8 ± 6.1",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Baseline"
+          }
+        },
+        {
+          "arm_label": "zeep",
+          "value_type": "mean",
+          "value": 16.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.0,
+          "n": 4,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 16.8 ± 3.0",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Zero PEEP"
+          }
+        },
+        {
+          "arm_label": "ptp_no_rm",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 14,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 17.5 ± 6.1",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Lowest PEEP With Positive Ptpe"
+          }
+        },
+        {
+          "arm_label": "ptp_with_rm",
+          "value_type": "mean",
+          "value": 17.4,
+          "dispersion_type": "sd",
+          "dispersion": 6.2,
+          "n": 14,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 17.4 ± 6.2",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Lowest PEEP With Positive Ptpe After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm",
+          "value_type": "mean",
+          "value": 16.5,
+          "dispersion_type": "sd",
+          "dispersion": 7.3,
+          "n": 14,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 16.5 ± 7.3",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Best Decremental PEEP After RM"
+          }
+        },
+        {
+          "arm_label": "dec_rm_hob30",
+          "value_type": "mean",
+          "value": 17.2,
+          "dispersion_type": "sd",
+          "dispersion": 7.4,
+          "n": 12,
+          "unit": "cmH2O/L/s",
+          "provenance": {
+            "quote": "Airway resistance, cm H2O/L/s 17.2 ± 7.4",
+            "location": "p. 303, Table 2, row: Airway resistance, column: Best Decremental PEEP—Head of Bed 30 Degree"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Systolic blood pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": 0.37,
+          "provenance": {
+            "quote": "Systolic blood pressure and diastolic blood pressure did not change at any of the studied PEEP levels (p = 0.37 and p = 0.36)",
+            "location": "p. 304, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Diastolic blood pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": 0.36,
+          "provenance": {
+            "quote": "diastolic blood pressure did not change at any of the studied PEEP levels (p = 0.36)",
+            "location": "p. 304, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Heart rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "At different PEEP levels"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all PEEP levels",
+          "mean_difference": null,
+          "p_value": 0.01,
+          "provenance": {
+            "quote": "The analysis of variance of the heart rate showed significance (p = 0.01), although post hoc adjusted comparisons did not reach significance.",
+            "location": "p. 304, Results"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Transient hypotension during recruitment maneuver",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "During RM"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ptp_with_rm",
+          "events": 5,
+          "total": 14,
+          "provenance": {
+            "quote": "Only five of 14 patients experienced transient hypotension (systolic arterial blood pressure < 90 mm Hg) during the final steps of the RM.",
+            "location": "p. 303, Results"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": {
+      "value": null,
+      "provenance": null
+    },
+    "protocol_deviations": {
+      "value": "ZEEP maneuver was performed only on four patients, as deemed safe by the attending physician. In one patient, desaturation prevented performing the EELV measurement at ZEEP. Head of bed elevation to 30 degrees was not feasible in two patients (one due to hemodialysis catheter dysfunction, one required mandatory supine positioning after trauma surgery).",
+      "provenance": {
+        "quote": "ZEEP maneuver was performed only on four patients, as deemed safe by the attending physician. However, in one patient, desaturation prevented performing the EELV measurement at ZEEP. Head of bed elevation to 30 degrees was not feasible in two of the 14 patients because the elevation caused dysfunction of the continuous venous-venous hemodialysis catheter in one patient and the other patient required mandatory supine positioning after trauma surgery.",
+        "location": "p. 302, Results"
+      }
+    },
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "non_ards",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS excluded by inclusion criteria. Obesity required (BMI >35). Timing of intervention was not reported from intubation or ICU admission; unclear timing subgroup."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": "pirrone_2016",
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Checked against mgh_lung_rescue cluster: registration NCT02105220 differs from Fumagalli (NCT02503241) and Florio; enrolment period not reported; eligibility excludes ARDS whereas Fumagalli/Florio require ARDS. No overlap confirmed.",
+    "unclear_items": [
+      "Table 2 column alignment for PaO2/FiO2: values appear under different columns than expected based on text; recorded as per text (after RM).",
+      "Missing 'b' marker on some values in Table 2 (e.g., EELV at ptp_no_rm) despite text reporting significance.",
+      "Hemodynamic values not reported numerically, only p-values in text; data only in Figure 5.",
+      "Timing of intervention from intubation or ICU admission not reported.",
+      "Sample size calculation states 13 + 10% dropouts, but enrolled 14; no stopping rule reported.",
+      "Inconsistency in text: Ers decrease of 4.2 vs 5.3 after RM; resolved by interpreting 4.2 as change from ptp_no_rm to ptp_with_rm, 5.3 as change from baseline to ptp_with_rm.",
+      "n_analysed for dec_rm_hob30 assumed 12 based on 'not feasible in two'.",
+      "n_placement_successful not reported."
+    ],
+    "data_only_in_figure": [
+      "Systolic blood pressure, diastolic blood pressure, heart rate (Figure 5)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Study was nonrandomized crossover; paired_effects capture within-patient contrasts."
+  }
+}

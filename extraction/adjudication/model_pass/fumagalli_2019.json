@@ -1,0 +1,288 @@
+{
+  "study_id": "fumagalli_2019",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[peep incremental peepincremental alternative tit]",
+      "decision": "glm",
+      "reason": "Keep GLM's arm so its label (peep_incremental) matches every kept outcome; the role difference is ruled separately by id.",
+      "evidence": "p. 795 Table 2; Methods p. 792"
+    },
+    {
+      "id": "0250d9c04a",
+      "decision": "deepseek",
+      "reason": "PEEPINCREMENTAL is the esophageal-pressure-guided strategy (PL,ee 0-2 cmH2O), i.e. the intervention; the schema reserves alternative_titration_condition for a second strategy such as the decremental elastance trial.",
+      "evidence": "Methods, Study Procedures p. 792; schema arms.role description"
+    },
+    {
+      "target": "arms[all patients all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep: the chest-radiograph change in lung volume is a pre/post-protocol reading across all 14 patients, not one condition, and needs a whole-group arm.",
+      "evidence": "p. 796, Results (chest radiograph)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @crossover condition]",
+      "decision": "glm",
+      "reason": "Values 13+/-4, 11+/-2, 10+/-2 and contrasts -2[-3;-1], -3[-5;-2], -1[-2;0] match; GLM adds n=14 (table footnote) and p<0.05 from the * and section marks; crossover_condition is the schema type for a condition of a within-patient sequence, not repeated_measures.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM's element holds the Table 2 PaO2/FiO2 per condition (194+/-111, 251+/-105, 329+/-82) with all three contrasts (57, 134, 77) and p marks correct; DeepSeek's version under this target is the screening baseline, a different measurement.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other ph continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "pH 7.35/7.34/7.32 and contrasts match; GLM's p-values follow the marks (none on INC vs ARDSnet; * and section mark on DEC) and it records n=14; crossover_condition is the correct timepoint type.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[dead space vd vt physiologic continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "VD/VT physiologic 49/47/47 with contrasts -2, -1, 0 match; no marks, so no p-values, as GLM has; n=11 per the dagger footnote; crossover_condition is correct.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[dead space vd vt airways continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "VD/VT airways 30/33/31, contrasts 3[1;5], 1[-2;4], -2[-5;1] match; only PEEPINC carries *, as GLM's p-values reflect; crossover_condition is correct.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[dead space vd vt alveolar continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "VD/VT alveolar 19/15/16, contrasts -4[-8;-1], -3[-7;2], 2[-1;5] match; only PEEPINC carries *; crossover_condition is correct.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other lung collapse eit continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Lung collapse is shown only as a dot plot (Fig. 5A); no numeric mean or SD is printed. GLM's 18+/-10 and 9+/-2 are figure readings not flagged derived, and 9+/-2 does not match the plotted SD for PEEPDECREMENTAL (visibly about +/-6). Keep DeepSeek's value-free data; the three p-only contrasts are taken from GLM by id.",
+      "evidence": "p. 798, Fig. 5A and legend; p. 796 Results"
+    },
+    {
+      "id": "b104bb87cf",
+      "decision": "glm",
+      "reason": "Fig. 5A marks PEEPINCREMENTAL * (P<0.05 vs PEEPARDSnet) and PEEPDECREMENTAL *# (P<0.05 vs ARDSnet and vs INCREMENTAL); GLM's p-only contrast carries exactly that.",
+      "evidence": "p. 798, Fig. 5A legend"
+    },
+    {
+      "id": "0ccf50a4cf",
+      "decision": "glm",
+      "reason": "Fig. 5A marks PEEPINCREMENTAL * (P<0.05 vs PEEPARDSnet) and PEEPDECREMENTAL *# (P<0.05 vs ARDSnet and vs INCREMENTAL); GLM's p-only contrast carries exactly that.",
+      "evidence": "p. 798, Fig. 5A legend"
+    },
+    {
+      "id": "f810f74ac7",
+      "decision": "glm",
+      "reason": "Fig. 5A marks PEEPINCREMENTAL * (P<0.05 vs PEEPARDSnet) and PEEPDECREMENTAL *# (P<0.05 vs ARDSnet and vs INCREMENTAL); GLM's p-only contrast carries exactly that.",
+      "evidence": "p. 798, Fig. 5A legend"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PEEP row matches Table 2 (13+/-1, 22+/-3, 21+/-4; 9[7;11], 9[7;11], -1[-2;1]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p plat cm h2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: P-plat row matches Table 2 (26+/-4, 33+/-4, 31+/-4; 7[5;9], 5[3;7], -2[-4;0]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ple cm h2o end expirator @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PLE row matches Table 2 (-5+/-5, 1+/-4, 1+/-4; 6[4;8], 6[4;8], 0[-2;1]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving pl cm h2o contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: Driving PL row matches Table 2 (10+/-4, 9+/-3, 7+/-4; -1[-2;0], -3[-4;-1], -2[-2;0]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancers cm h2o l conti @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: ElastanceRS row matches Table 2 (34+/-13, 29+/-8, 25+/-6; -6[-9;-2], -10[-14;-5], -4[-7;-2]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancel cm h2o l contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: ElastanceL row matches Table 2 (27+/-12, 23+/-7, 19+/-6; -4[-7;-1], -7[-11;-3], -4[-6;-1]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancecw cm h2o l conti @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: ElastanceCW row matches Table 2 (8+/-5, 6+/-4, 6+/-3; -2[-3;0], -2[-4;0], 0[-1;0]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics raw cm h2o l 1 sec 1 conti @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: RAW row matches Table 2 (14+/-2, 12+/-2, 12+/-2; -2[-3;-1], -2[-3;-1], 0[-1;0]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv ml continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: EELV row matches Table 2 (dash, 977+/-708, 1064+/-813; 978[569;1386], 1065[596;1535], 88[-283;459]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped. The ARDSnet cell prints a dash and GLM leaves it null rather than DeepSeek's derived 0.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics hr bpm continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: HR row matches Table 2 (89+/-22, 85+/-20, 87+/-20; -4[-9;1], -2[-9;4], 1[-2;5]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics map mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: MAP row matches Table 2 (83+/-11, 77+/-7, 82+/-9; -6[-11;-1], -1[-8;6], 5[1;9]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PaCO2 row matches Table 2 (45+/-10, 46+/-9, 49+/-10; 1[-1;2], 3[1;6], 3[1;5]), with n=14, p-values following the * and section marks, and timepoint crossover_condition. DeepSeek's duplicate under the repeated-measures target is dropped.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 at screening continuous @baseline]",
+      "decision": "unclear",
+      "reason": "Screening PaO2/FiO2 150+/-81, n=13 is correct, but GLM assigns it to peep_ardsnet; screening preceded PEEP selection by the ARDSnet table (PEEP >=5 at screening; ARDSnet PEEP then raised PaO2/FiO2 from screening to 194). It belongs to the whole-group arm, as DeepSeek recorded it, but DeepSeek's copy sits under target 'oxygenation pao2 fio2 continuous @crossover condition', which is kept for the Table 2 row. Co-author: keep 150+/-81, n=13, baseline, under all_patients.",
+      "evidence": "p. 794, Results para 2; Table 1 footnote"
+    },
+    {
+      "target": "outcomes[other lung overdistension eit continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: overdistension is only plotted (Fig. 5B), so 16+/-12 and 11+/-2 are unflagged figure readings (DEC SD visibly about +/-6), and GLM puts p<0.05 on DEC vs ARDSnet and DEC vs INC, which Fig. 5B does not mark (only PEEPINCREMENTAL has *). The one representation left is the repeated-measures target, marked unclear.",
+      "evidence": "p. 798, Fig. 5B and legend; p. 796 Results"
+    },
+    {
+      "target": "outcomes[barotrauma barotrauma pneumothorax pneumomediast @24h]",
+      "decision": "glm",
+      "reason": "Chest radiograph performed within 24 h after the study procedures did not show barotrauma; all 14 had post-procedure films (lung volumes increased in all cases) and were ventilated at PEEPDECREMENTAL for 24 h afterwards, so 0/14 flagged derived with the negative statement quoted follows the codebook's logical-implication rule.",
+      "evidence": "p. 797, Results last para; p. 796 'ventilated at titrated PEEPDECREMENTAL level for at least 24 h'"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p plat continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ple continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving pl continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancers continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancel continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastancecw continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics raw continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics map continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 PaO2/FiO2 row kept under the crossover-condition target (GLM's version, with n and p-values).",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @repeated measures]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 row kept under GLM's crossover-condition target, which has the same numbers plus n=14 and p-values; repeated_measures is the wrong timepoint type for a crossover condition.",
+      "evidence": "p. 795, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics overdistension eit continu @repeated measures]",
+      "decision": "unclear",
+      "reason": "Neither version is right. DeepSeek's value-free data are correct (Fig. 5B prints no numbers), but it omits the only reported contrast, PEEPINCREMENTAL vs PEEPARDSnet P<0.05 (* in Fig. 5B; text: overdistension increased at INC, unchanged at DEC), and its domain respiratory_mechanics should follow the co-authors' domain ruling on lung collapse (EIT). Co-author: add that p-only contrast and align the domain.",
+      "evidence": "p. 798, Fig. 5B legend; p. 796 Results"
+    },
+    {
+      "target": "outcomes[lung volume change in lung volumes on chest radi @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Reported: lung volumes increased in all cases by 0.7 [0.2; 1.1] intercostal spaces; bracket notation is median [IQR] per the Statistical Analysis section, across all patients (pre vs 24 h post protocol). GLM omitted it.",
+      "evidence": "p. 796, Results (chest radiograph); p. 794 Statistical Analysis"
+    },
+    {
+      "id": "0b79111e3d",
+      "decision": "glm",
+      "reason": "The decremental PEEP trial at best respiratory-system elastance is one of the strategies the esophageal-guided condition is compared against; comparator_types should list it with the ARDSnet table.",
+      "evidence": "p. 792, Study Procedures item 3"
+    },
+    {
+      "id": "a0c2eea908",
+      "decision": "deepseek",
+      "reason": "The paper reports timing: procedures started 1 [range 0-4] day after initiation of mechanical ventilation (Table 1: MV prior the study, days 1 [0 - 4]); GLM's null discards a reported value.",
+      "evidence": "p. 795 Results para; p. 794 Table 1"
+    },
+    {
+      "id": "bafd365e62",
+      "decision": "deepseek",
+      "reason": "24 patients were enrolled and completed the study procedures; 14 of them met Berlin ARDS criteria and are the analysed population. n_enrolled is 24, n_analysed 14.",
+      "evidence": "p. 794, Results para 1"
+    },
+    {
+      "id": "3cd283df54",
+      "decision": "deepseek",
+      "reason": "PEEPDECREMENTAL is set by lowest respiratory-system elastance without any transpulmonary pressure target; ptp_target_subgroups lists transpulmonary target strategies only, so adding 'other' would wrongly place the study in a PTP subgroup.",
+      "evidence": "p. 792 Study Procedures; schema subgroup_flags.ptp_target_subgroups"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "study_id": "florio_2020",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[mortality 28 day mortality dichotomous @28d]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's '28-day mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality 3 month mortality dichotomous @90d]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's '3-month mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality 6 month mortality dichotomous @180d]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's '6-month mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality 1 year mortality dichotomous @365d]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's '1-year mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality icu mortality dichotomous @icu discharge]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's 'ICU mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[mortality hospital mortality dichotomous @hospital discharge]",
+      "decision": "glm",
+      "reason": "The versions differ only in timepoint.label_verbatim; both are verbatim and GLM's 'Hospital mortality, n (%)' is the complete Table 3 row label. Counts, HR and CI are identical in both and match the table.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[ventilator free days ventilation free days conti @28d]",
+      "decision": "glm",
+      "reason": "Values match (14 (11-16) vs 15 (12-18), P 0.859). GLM records n=70/50 (column headers) and a p-only effect estimate with adjusted and ci_level left null; DeepSeek asserts adjusted=false and ci_level 95 on an estimate with no CI, neither of which the table states (footnote a says P values are adjusted for the mortality rows). GLM's label is the complete row label. GLM's definition_verbatim is the full footnote b; DeepSeek's is a truncated paraphrase.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[icu length of stay icu length of stay continuous @duration until event]",
+      "decision": "glm",
+      "reason": "Values match (13 (9-16) vs 17 (14-20), P <0.001). GLM records n=70/50 (column headers) and a p-only effect estimate with adjusted and ci_level left null; DeepSeek asserts adjusted=false and ci_level 95 on an estimate with no CI, neither of which the table states (footnote a says P values are adjusted for the mortality rows). GLM's label is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[icu free days days not in icu at day 28 continuo @28d]",
+      "decision": "glm",
+      "reason": "Values match (12 (9-14) vs 11 (8-13), P 0.413). GLM records n=70/50 (column headers) and a p-only effect estimate with adjusted and ci_level left null; DeepSeek asserts adjusted=false and ci_level 95 on an estimate with no CI, neither of which the table states (footnote a says P values are adjusted for the mortality rows). GLM's label is the complete row label. GLM's definition_verbatim is the full footnote b; DeepSeek's is a truncated paraphrase.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[hospital length of stay hospital length of stay @duration until event]",
+      "decision": "glm",
+      "reason": "Values match (19 (15-23) vs 28 (23-33), P <0.001). GLM records n=70/50 (column headers) and a p-only effect estimate with adjusted and ci_level left null; DeepSeek asserts adjusted=false and ci_level 95 on an estimate with no CI, neither of which the table states (footnote a says P values are adjusted for the mortality rows). GLM's label is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[icu free days days not in hospital at day 28 con @28d]",
+      "decision": "glm",
+      "reason": "Values match (7 (5-9) vs 5 (3-7), P 0.121). GLM records n=70/50 (column headers) and a p-only effect estimate with adjusted and ci_level left null; DeepSeek asserts adjusted=false and ci_level 95 on an estimate with no CI, neither of which the table states (footnote a says P values are adjusted for the mortality rows). GLM's label is the complete row label. GLM's definition_verbatim is the full footnote b; DeepSeek's is a truncated paraphrase.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning reintubation di @end of study]",
+      "decision": "glm",
+      "reason": "Reintubation counts match (12/70 vs 8/50, P 0.868); GLM's p-only estimate leaves adjusted/ci_level null rather than asserting adjusted=false and a 95% level for an estimate with no CI; its label 'Reintubation, n (%)' is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[other tracheostomy dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "Tracheostomy counts match (11/70 vs 14/50, P 0.061); GLM's p-only estimate leaves adjusted/ci_level null rather than asserting adjusted=false and a 95% level for an estimate with no CI; its label 'Tracheostomy, n (%)' is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[other aki dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "AKI counts match (37/70 vs 26/50, P 0.902); GLM's p-only estimate leaves adjusted/ci_level null rather than asserting adjusted=false and a 95% level for an estimate with no CI; its label 'AKI, n (%)' is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[other rrt dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "RRT counts match (16/70 vs 12/50, P 0.884); GLM's p-only estimate leaves adjusted/ci_level null rather than asserting adjusted=false and a 95% level for an estimate with no CI; its label 'RRT, n (%)' is the complete row label.",
+      "evidence": "p. 7, Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @baseline]",
+      "decision": "glm",
+      "reason": "Day 1 PEEP 9 (8-10) standard and 9 (9-10) lung rescue; n=70/50 is supported for days 1-2 (the table footnote restricts incomplete data to days 3 and 4). The CI lower bounds are already co-author rulings; the label is ruled separately by id.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "id": "94f8376be8",
+      "decision": "deepseek",
+      "reason": "'Day 1' is the verbatim column header; GLM's 'PEEP, cmH2O, mean (CI 95%), Day 1' stitches the row label to the column header and is not a contiguous string in the paper.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @48h]",
+      "decision": "glm",
+      "reason": "Day 2 PEEP 9 (8-10) standard and 19 (18-20) lung rescue, n=70/50 supported for day 2. Label and the within-arm change are ruled separately by id.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "id": "f9ca707fc6",
+      "decision": "deepseek",
+      "reason": "'Day 2' is the verbatim column header; GLM's label is a stitched row label plus header.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "id": "1d75997414",
+      "decision": "deepseek",
+      "reason": "The within-arm PEEP change is reported: 'PEEP increased an average of 10 cmH2O (9 +/- 2 cmH2O on day 1 versus 19 +/- 4 cmH2O on day 2, P < 0.001)'. (DeepSeek's dispersion_type 'sd' with a null dispersion and test_used 'not stated' are empty noise, not readings.)",
+      "evidence": "p. 4, Results, Ventilation settings"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory transpulm @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Florio compares two cohorts in parallel, so crossover_condition is the wrong type; the day-1 end-expiratory PL -6.3 +/- 3.7 is a baseline reading. GLM's element also attaches a +8.0 change it computed (flagged derived: false) and omits the post-titration value, which DeepSeek keeps under the day-2 target.",
+      "evidence": "p. 4, Results, Ventilation settings"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation time of ventilat @duration until event]",
+      "decision": "glm",
+      "reason": "Reported: standard cohort ventilated 'average 198 +/- 278 h', lung rescue cohort '299 +/- 322 h'; mean/SD in hours are correct.",
+      "evidence": "p. 4, Results, Ventilation settings"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Day 1 PaO2/FiO2 197 (177-217) vs 154 (127-179), P = 0.003 matches Table 2 and text; GLM keeps n and matches the other Table 2 rows. DeepSeek's copy under 'pao2 fio2 ratio @baseline' is the same reading and is dropped.",
+      "evidence": "p. 6, Table 2; p. 4 Results"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @48h]",
+      "decision": "glm",
+      "reason": "Day 2 PaO2/FiO2 224 (203-245) vs 282 (252-312) matches; n=70/50 supported for day 2.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @96h]",
+      "decision": "unclear",
+      "reason": "Values 218 (194-242) and 276 (243-309) are correct, but GLM's n=70/50 is not: the footnote says day-3 and day-4 information was available for more than 80% of patients and statistics used available data only. Co-author: set n to null for both arms.",
+      "evidence": "p. 6, Table 2 (rotated page image), footnote"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dpa driving pressure conti @baseline]",
+      "decision": "glm",
+      "reason": "Day 1 driving pressure 13 (12.1-14.1) vs 13 (12.0-14.3) matches.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dpa driving pressure conti @48h]",
+      "decision": "glm",
+      "reason": "Day 2 driving pressure 13 (12.2-14.8) vs 10 (8.7-10.4) matches.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs compliance of the resp @baseline]",
+      "decision": "glm",
+      "reason": "Day 1 CRS 35 (31-38) vs 33 (29.7-37.1) matches.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs compliance of the resp @48h]",
+      "decision": "unclear",
+      "reason": "GLM's day-2 CRS standard-cohort CI 29.7-37.1 is the day-1 lung-rescue CI; Table 2 day 2 prints standard 33 (27-39) and lung rescue 45 (41-49). Co-author: set standard_protocol dispersion_low 27, dispersion_high 39; the rest is correct.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tv ibw continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM gives the lung-rescue cohort 6.4 (6.2-6.6), which is the standard-cohort cell; Table 2 day 1 TV/IBW prints lung rescue 6.2 (5.9-6.5). Co-author: set lung_rescue_team to 6.2, CI 5.9-6.5; the standard cohort is correct.",
+      "evidence": "p. 6, Table 2 (rotated page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics vis vasoactive inotropic score cont @baseline]",
+      "decision": "glm",
+      "reason": "Day 1 VIS 16 (11-21) vs 15 (9-21) matches Table 2 and text (P = 0.79).",
+      "evidence": "p. 6, Table 2; p. 4 Results, Hemodynamics"
+    },
+    {
+      "target": "outcomes[rescue therapy no riv requirement for inotropics @baseline]",
+      "decision": "unclear",
+      "reason": "Counts 49/70 and 38/50 at day 1 are correct, but domain rescue_therapy is wrong for requirement for inotropics and/or vasopressors; this is haemodynamic support (shock), not ARDS rescue therapy. Co-author: recode domain to hemodynamics.",
+      "evidence": "p. 6, Table 2 and abbreviations; p. 4 Results, Hemodynamics"
+    },
+    {
+      "target": "outcomes[oxygenation patients improved oxygenation to 300 @96h]",
+      "decision": "glm",
+      "reason": "'By day 4, only 10 patients (14%) had improved oxygenation to > 300 mmHg' and 'On day 4, 28 patients (56%)'; 10/70 and 28/50 reproduce the percentages.",
+      "evidence": "p. 4, Results, Ventilation settings"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: the same day-1 PaO2/FiO2 reading is kept under 'oxygenation pao2 fio2 continuous @baseline'.",
+      "evidence": "p. 6, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory transpulm @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: the post-titration end-expiratory PL of +1.7 +/- 3.2 cmH2O (P < 0.001) is reported and exists only here. The +8.0 within-arm change is arithmetic (from -6.3 to +1.7), not a printed number, and is not flagged derived.",
+      "evidence": "p. 4, Results, Ventilation settings"
+    },
+    {
+      "id": "613071f399",
+      "decision": "glm",
+      "reason": "Patient overlap with fumagalli_2019 (same MGH lung rescue team; this lung rescue cohort was treated 2015-2017) cannot be settled from the text, and the esophageal-manometry and PTP computation details sit in an unavailable supplement; flagging author contact is warranted.",
+      "evidence": "p. 2 Methods; p. 4 Results; Supplementary information p. 9"
+    },
+    {
+      "id": "43563cbc3a",
+      "decision": "deepseek",
+      "reason": "The paper never states how transpulmonary pressure was computed; it mentions only 'end-expiratory transpulmonary pressure measurements' and esophageal manometry. absolute_pes_subtraction is GLM's inference, which its own unclear_items concede.",
+      "evidence": "p. 3 Methods and Fig. 1 caption; p. 4 Results"
+    },
+    {
+      "id": "baf3463bd3",
+      "decision": "deepseek",
+      "reason": "'Within 24 h after initiation of mechanical ventilation' is an upper bound, not a summary value; GLM's value 24 with no value_type misstates it. The codebook keeps the value null and the phrase in timing_verbatim, as DeepSeek has.",
+      "evidence": "p. 4, Results; CODEBOOK Timing"
+    },
+    {
+      "id": "6e024c32e1",
+      "decision": "deepseek",
+      "reason": "No numeric transpulmonary target and no stated computation are reported (both reviewers code the target strategy 'other'); best PEEP came from a decremental trial combined with PL and EIT information, so 'other' is the defensible subgroup, not absolute_positive_end_expiratory_ptp.",
+      "evidence": "p. 3 Methods; Fig. 1 caption"
+    },
+    {
+      "id": "02bbb63918",
+      "decision": "deepseek",
+      "reason": "With 'other' already at position 0, GLM's second 'other' would duplicate it; one entry is right.",
+      "evidence": "p. 3 Methods"
+    }
+  ]
+}

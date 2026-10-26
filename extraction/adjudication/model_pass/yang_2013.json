@@ -1,0 +1,348 @@
+{
+  "study_id": "yang_2013",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[pes guided ptp peep guided transpulmonary pressu]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's pooled Ptp arm (n 15) carries no PEEP value and is replaced by DeepSeek's stratum-specific Ptp arms (17.3+/-2.6 IAH, 9.5+/-2.1 non-IAH), which keep the two strata apart.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "arms[ardsnet peep ardsnet protocol peep guided by ard]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's pooled ARDSnet arm is replaced by DeepSeek's stratum-specific ARDSnet arms (6.3+/-1.6 IAH, 7.8+/-1.9 non-IAH).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "arms[baseline iah baseline ards iah reference conditi]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline ventilation condition (PEEP 5 cmH2O, 10 min) for the 7 IAH patients; referenced by the kept Table 1 baseline outcomes.",
+      "evidence": "p. 3235 Methods, Baseline; p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "arms[baseline noiah baseline ards without iah referen]",
+      "decision": "deepseek",
+      "reason": "Keep: baseline condition for the 8 non-IAH patients (PEEP 5 cmH2O).",
+      "evidence": "p. 3235 Methods, Baseline; p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "arms[ardsnet peep iah ardsnet protocol ards iah compa]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet condition, IAH stratum, n 7, PEEP 6.3+/-1.6 matches Table 2.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "arms[ptp peep iah peep titrated by ptp ards iah inter]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptp condition, IAH stratum, n 7, PEEP 17.3+/-2.6 matches Table 2.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "arms[ardsnet peep noiah ardsnet protocol ards without]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet condition, non-IAH stratum, n 8, PEEP 7.8+/-1.9 matches Table 2.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "arms[ptp peep noiah peep titrated by ptp ards without]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptp condition, non-IAH stratum, n 8, PEEP 9.5+/-2.1 matches Table 2.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Both have the same Table 3 numbers (IAH 209+/-50 vs 272+/-40, P 0.001; ARDS 214+/-45 vs 224+/-42, P 0.119). Every Table 2-4 row is reported separately for the ARDS+IAH (n=7) and ARDS (n=8) strata. DeepSeek's stratum-specific condition arms keep the two strata apart by arm label with one paired contrast per stratum; GLM files each stratum as a separate outcome on the same two pooled arms (n 15), distinguishable only by measurement_context, so one arm label carries two different patient groups. DeepSeek also carries the Table 1 baseline (217.7+/-51.1 IAH, 207.8+/-75.2 ARDS), which matches the page.",
+      "evidence": "p. 3237, Table 3 (page image); p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation sao2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Same Table 3 numbers in both (IAH 95+/-3 vs 97+/-1, P 0.049; ARDS 95+/-2 vs 96+/-1, P 0.017). Every Table 2-4 row is reported separately for the ARDS+IAH (n=7) and ARDS (n=8) strata. DeepSeek's stratum-specific condition arms keep the two strata apart by arm label with one paired contrast per stratum; GLM files each stratum as a separate outcome on the same two pooled arms (n 15), distinguishable only by measurement_context, so one arm label carries two different patient groups.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pha continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Same Table 3 numbers in both (IAH 7.34+/-0.08 vs 7.33+/-0.08, P 0.552; ARDS 7.37+/-0.04 both, P 0.924). Every Table 2-4 row is reported separately for the ARDS+IAH (n=7) and ARDS (n=8) strata. DeepSeek's stratum-specific condition arms keep the two strata apart by arm label with one paired contrast per stratum; GLM files each stratum as a separate outcome on the same two pooled arms (n 15), distinguishable only by measurement_context, so one arm label carries two different patient groups. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum PEEP outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'PEEP' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ml continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Vt outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Vt' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Pplat outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Pplat' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum PEEPtot outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'PEEPtot' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure peso ins cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Peso ins outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Peso ins' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure peso exp cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Peso exp outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Peso exp' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp ins cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Ptp ins outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Ptp ins' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp exp cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum Ptp exp outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'Ptp exp' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv ml continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum EELV outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'EELV' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum PaO2 outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'PaO2' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation a a do2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum A-a DO2 outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'A-a DO2' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum PaCO2 outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'PaCO2' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum CVP outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'CVP' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics hr beats min continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum HR outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'HR' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics map mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's two per-stratum MAP outcomes restate the same four values and two P values kept under DeepSeek's stratum-armed 'MAP' crossover element; GLM's structure reuses one arm label for two patient groups.",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Pplat 18.9+/-3.2 vs 27.3+/-2.4 (P 0.001); 15.2+/-4.9 vs 16.8+/-4.3 (P 0.057).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: EELV 980+/-323 vs 1565+/-522 (P 0.001); 1610+/-602 vs 1836+/-609 (P 0.013).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: PEEP 6.3+/-1.6 vs 17.3+/-2.6 (P 0.018); 7.8+/-1.9 vs 9.5+/-2.1 (P 0.036).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Vt 6.3+/-0.6 vs 6.4+/-0.6 (P 0.332); 6.2+/-0.4 both (P 0.107). The table header prints 'Vt (ml)', but values of 6 can only be ml/kg (Methods: 6 ml/kg); DeepSeek's ml/kg unit is the evident unit, GLM's 'ml' copies a misprint.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: PEEPtot 6.7+/-1.7 vs 17.2+/-2.7 (P 0.018); 7.6+/-1.9 vs 9.2+/-2.1 (P 0.049).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure peso ins continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Peso ins 16.4+/-1.8 vs 20.2+/-2.6 (P 0.002); 11.1+/-1.7 vs 12.2+/-2.0 (P 0.188).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure peso exp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Peso exp 12.5+/-2.4 vs 16.0+/-2.6 (P 0.002); 8.4+/-1.9 vs 8.8+/-2.0 (P 0.149).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp ins continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Ptp ins 2.4+/-3.4 vs 7.1+/-1.7 (P 0.002); 4.0+/-3.7 vs 5.2+/-2.9 (P 0.059).",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp exp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: Ptp exp 5.8+/-2.7 vs 1.3+/-1.3 (P 0.018); 0.8+/-1.4 vs 0.4+/-0.5 (P 0.061), as printed.",
+      "evidence": "p. 3237, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: PaO2 92+/-21 vs 119+/-19 (P 0.021); 90+/-12 vs 95+/-10 (P 0.102).",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: PaCO2 36+/-5 vs 38+/-6 (P 0.386); 35+/-3 vs 37+/-4 (P 0.065); PaCO2 is not an oxygenation measure, so other fits the codebook.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation a ado2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: A-a DO2 180+/-40 vs 151+/-44 (P 0.026); 199+/-68 vs 180+/-47 (P 0.368).",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: HR 115+/-23 vs 119+/-21 (P 0.287); 99+/-19 vs 100+/-19 (P 0.636).",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics map continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: MAP 90.3+/-16.1 vs 84.2+/-15.2 (P 0.56); 83.5+/-9.2 vs 84.7+/-12.0 (P 0.898).",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ARDSnet vs Ptp by stratum (IAH; ARDS) matches the page image: CVP 12.1+/-6.4 vs 15.2+/-5.2 (P 0.029); 10.0+/-1.8 vs 10.2+/-1.4 (P 0.382).",
+      "evidence": "p. 3238, Table 4"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): Pplat 17.3+/-2.7 (IAH) / 13.2+/-3.3 (ARDS). Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): Crs 30.1+/-8.6 / 58.1+/-18.2. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ccw continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): Ccw 100.7+/-24.8 / 161.4+/-43.5. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): Cl 49.5+/-16.2 / 99.2+/-46.7. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): EELV 986+/-383 / 1452+/-540. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[dead space vd vt continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): VD/VT 0.37+/-0.07 / 0.42+/-0.1. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other iap continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): IAP 16.5+/-1.8 / 9.8+/-1.6. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): PaCO2 31.1+/-1.9 / 31.2+/-4.5. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation a ado2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 baseline by stratum, columns checked on the page image (ARDS n=8 is the first column, ARDS+IAH n=7 the second): A-a DO2 205.2+/-57.9 / 233.7+/-61.6. Codebook puts baseline values in outcomes.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[mortality 28 day mortality dichotomous @28d]",
+      "decision": "unclear",
+      "reason": "Table 1 gives 28-day mortality only as 25% (ARDS, n=8) and 33% (ARDS+IAH, n=7), and 33% of 7 is not a whole number. DeepSeek keeps it with events null on the baseline-condition arms and sets is_longest_reported_mortality true; GLM leaves it out (unclear_items). Co-author: decide whether this stratum-only, event-less entry should carry the mortality flag or be omitted.",
+      "evidence": "p. 3236, Table 1 (page image)"
+    },
+    {
+      "id": "0d959e9646",
+      "decision": "glm",
+      "reason": "'PaO2/FiO2 (mmHg)' is the full Table 3 row label; DeepSeek drops the unit.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "id": "979c405fdd",
+      "decision": "glm",
+      "reason": "'SaO2 (%)' is the full Table 3 row label.",
+      "evidence": "p. 3237, Table 3 (page image)"
+    },
+    {
+      "id": "385f2fe6ff",
+      "decision": "deepseek",
+      "reason": "The label is verbatim for the crossover measurements, but under this element DeepSeek's kept version also holds the Table 1 baseline PaO2/FiO2, where 'after 30 minutes of ventilation in each round' would be wrong; leave it null.",
+      "evidence": "p. 3234 Abstract; p. 3236 Table 1"
+    },
+    {
+      "id": "3d53c4e4d7",
+      "decision": "glm",
+      "reason": "'after 30 minutes of ventilation in each round' is verbatim from the Abstract; DeepSeek records no label.",
+      "evidence": "p. 3234, Abstract Methods"
+    },
+    {
+      "id": "6450d3f6ac",
+      "decision": "glm",
+      "reason": "YANG Yi: Yang is the surname; first_author holds the surname across the corpus (study_id yang_2013).",
+      "evidence": "p. 3234, byline"
+    },
+    {
+      "id": "ce5cc84151",
+      "decision": "deepseek",
+      "reason": "No count of placement attempts is reported; GLM's 15 rests on a generic Methods sentence describing the catheter, which states no number.",
+      "evidence": "p. 3235, Methods, Respiratory mechanics"
+    }
+  ]
+}

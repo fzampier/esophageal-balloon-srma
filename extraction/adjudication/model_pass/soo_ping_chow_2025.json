@@ -1,0 +1,156 @@
+{
+  "study_id": "soo_ping_chow_2025",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[pre pes current peep pre esophageal manometry re]",
+      "decision": "deepseek",
+      "reason": "Drop: same condition as DeepSeek's current_peep (PEEP 12±4, n 23, reference, sequence 1). Arm vocabulary: DeepSeek's labels are kept throughout, because only DeepSeek represents the P/F and OI tables one entry per timepoint and those entries reference its labels; GLM's labels cannot coexist with them.",
+      "evidence": "p. 5 (1259), Table 3"
+    },
+    {
+      "target": "arms[pes guided optimal peep after esophageal pressur]",
+      "decision": "deepseek",
+      "reason": "Drop: same condition as DeepSeek's first_change_peep (PEEP 17±4, n 23, intervention, sequence 2). Arm vocabulary: DeepSeek's labels are kept throughout, because only DeepSeek represents the P/F and OI tables one entry per timepoint and those entries reference its labels; GLM's labels cannot coexist with them.",
+      "evidence": "p. 5 (1259), Table 3"
+    },
+    {
+      "target": "arms[current peep current peep reference condition 1]",
+      "decision": "deepseek",
+      "reason": "Keep: 'Current PEEP' is the verbatim Table 3 header; 12 (4) cmH2O in 23 patients.",
+      "evidence": "p. 5 (1259), Table 3; p. 4 Results, PEEP adjustment"
+    },
+    {
+      "target": "arms[first change peep first change intervention 2]",
+      "decision": "deepseek",
+      "reason": "Keep: 'First change' is the verbatim Table 3 header; 17 (4) cmH2O, the Pes-guided condition.",
+      "evidence": "p. 5 (1259), Table 3; p. 4 Results"
+    },
+    {
+      "target": "arms[all patients total single group]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 reports whole-cohort outcomes in a 'Total' column (n = 23); this single_group arm hosts them rather than assigning cohort-level outcomes to a PEEP condition.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings changes in peep based on end @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Both versions carry the same readings: 12 (4) vs 17 (4), P < .0001 (n 23) and second change 18 (3), P = .4871 (n 9), mean (SD). DeepSeek's version uses the arm labels kept; GLM's timepoint label is assembled from headers, not verbatim.",
+      "evidence": "p. 5 (1259), Table 3; p. 4 Results"
+    },
+    {
+      "target": "outcomes[oxygenation p f ratio continuous @repeated measures]",
+      "decision": "unclear",
+      "reason": "Neither is right. GLM puts 141, 169, 179, 300 in one repeated_measures entry with three data rows under the same arm label, and its contrasts are wrong: P = .0134 and .0325 compare day 5 with 1 day and 3 days post, not 24 h and 72 h with pre. DeepSeek's per-timepoint structure is right (baseline 141 (26.5) SEM here; 24/72/120 h entries) but it sets n = 23 while Methods say not all patients had values at each time point. Co-author: keep DeepSeek's four P/F entries, set n null, and record 120 h vs pre P = .0020, vs 24 h P = .0134, vs 72 h P = .0325 (mixed model, Tukey).",
+      "evidence": "p. 5 (1259), Table 4; p. 4 Results, Oxygenation trends; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @repeated measures]",
+      "decision": "unclear",
+      "reason": "Neither is right. GLM puts 17.3, 18.2, 19.0, 13.4 in one repeated_measures entry with three data rows under one arm label; DeepSeek's per-timepoint structure is right but sets n = 23 although not all patients had values at each time point. Co-author: keep DeepSeek's four OI entries with n null; the pre vs day-5 difference is reported only as not significant (the text gives SEM 1.92, Table 4 1.93).",
+      "evidence": "p. 5 (1259), Table 4; p. 4 Results; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation p f ratio continuous @24h]",
+      "decision": "unclear",
+      "reason": "P/F 24 h 169 (26.5) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported (not all patients had values at each time point). See the P/F note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation p f ratio continuous @72h]",
+      "decision": "unclear",
+      "reason": "P/F 72 h 179 (29.4) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported (not all patients had values at each time point). See the P/F note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation p f ratio continuous @120h]",
+      "decision": "unclear",
+      "reason": "P/F 120 h 300 (35.1) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported (not all patients had values at each time point). Its within_arm_change P = .0020 is the 120 h vs pre contrast. See the P/F note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @24h]",
+      "decision": "unclear",
+      "reason": "OI 24 h 18.2 (1.93) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported. See the OI note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @72h]",
+      "decision": "unclear",
+      "reason": "OI 72 h 19.0 (2.15) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported. See the OI note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @120h]",
+      "decision": "unclear",
+      "reason": "OI 120 h 13.4 (2.57) SEM matches Table 4 and the entry structure is right, but n = 23 is not reported. See the OI note on the repeated-measures target.",
+      "evidence": "p. 5 (1259), Table 4; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[other resolution of ards dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Resolution of ARDS 9/23 is a Table 2 'Total' column value, hosted on the whole-cohort arm kept. GLM's timepoint label repeats the outcome name.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation ventilator days @duration until event]",
+      "decision": "deepseek",
+      "reason": "Ventilator days 15 (8-25) in the Total column; identical in both, DeepSeek hosts it on the whole-cohort arm kept.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[icu length of stay icu los days continuous @duration until event]",
+      "decision": "deepseek",
+      "reason": "ICU LOS 15 (9-26) in the Total column; identical in both.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[hospital length of stay hospital los days contin @duration until event]",
+      "decision": "deepseek",
+      "reason": "Hospital LOS 15 (9-30) in the Total column; identical in both.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[mortality mortality status dichotomous @hospital discharge]",
+      "decision": "deepseek",
+      "reason": "Drop: restates mortality 19/23 kept under DeepSeek's entry. GLM's hospital_discharge timepoint is inferred; Table 2 gives 'Mortality status' with no timepoint.",
+      "evidence": "p. 5 (1259), Table 2"
+    },
+    {
+      "target": "outcomes[mortality mortality dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: mortality 19/23 (82.6%) from Table 2 'Mortality status', timepoint not stated (not_reported); only mortality entry, so is_longest_reported_mortality true.",
+      "evidence": "p. 5 (1259), Table 2; Abstract"
+    },
+    {
+      "id": "26ea091be2",
+      "decision": "deepseek",
+      "reason": "'This was a single-center retrospective study'.",
+      "evidence": "p. 6 (1260), Discussion, limitations"
+    },
+    {
+      "id": "f9eae18a72",
+      "decision": "glm",
+      "reason": "'28 patients were identified who met inclusion criteria and underwent esophageal pressure (Pes) monitoring'; 5 died within 48 h and were excluded from analysis, but all 28 had the balloon placed.",
+      "evidence": "p. 3 (1257), Results para 1"
+    },
+    {
+      "id": "bbdfcffb63",
+      "decision": "glm",
+      "reason": "All 28 'underwent esophageal pressure (Pes) monitoring'; no placement failure is described. derived: true with the inference stated.",
+      "evidence": "p. 3 (1257), Results para 1"
+    },
+    {
+      "id": "9e14479a4f",
+      "decision": "glm",
+      "reason": "Monitoring was started in 'patients who developed ARDS and had worsening oxygenation ... despite lung protective ventilation'; the anchor is ARDS (with hours null), as the codebook codes a phrase-only anchor. The interval is not reported, so timing_subgroup stays unclear either way.",
+      "evidence": "p. 2 (1256), Methods para 1; CODEBOOK Timing"
+    },
+    {
+      "id": "a6e5e6483d",
+      "decision": "glm",
+      "reason": "Optimal PEEP was set from end-expiratory Pes, but the paper never states the numeric end-expiratory Ptp target (the −2 to +2 range is EPVent-2 background), so the strategy is unknown: 'unclear', not 'other' (a known strategy outside the list).",
+      "evidence": "p. 2-3 Methods, Esophageal manometry technique"
+    }
+  ]
+}

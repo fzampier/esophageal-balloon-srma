@@ -1,0 +1,348 @@
+{
+  "study_id": "grasso_2012",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[ecmo conventional ecmo conventional ventilation]",
+      "decision": "glm",
+      "reason": "Keep: the ECMO group under conventional ventilation (n = 7) is its own Table 2 column (e.g. PEEP 17.1 +/- 1.6, oxygenation index 34 +/- 5); DeepSeek has no ECMO arm.",
+      "evidence": "p. 4, Table 2; p. 3, Table 1"
+    },
+    {
+      "target": "arms[no ecmo conventional no ecmo conventional ventil]",
+      "decision": "glm",
+      "reason": "Keep: the No-ECMO group under conventional ventilation (n = 7, PEEP 17.9 +/- 1.2) is the reference for every paired contrast.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "arms[no ecmo higher peep no ecmo conventional ventila]",
+      "decision": "glm",
+      "reason": "Keep: No ECMO, conventional ventilation and higher PEEP (22.3 +/- 1.4 cmH2O, n = 7), second in sequence.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "arms[conventional ventilation conventional ventilatio]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's 'conventional_ventilation' arm is declared with n = 14 (the whole cohort), but every reading filed under it is the No-ECMO column (n = 7), which GLM keeps as no_ecmo_conventional alongside a separate ECMO arm.",
+      "evidence": "p. 4, Table 2 column headers; p. 3, Table 1"
+    },
+    {
+      "target": "arms[higher peep conventional ventilation and higher]",
+      "decision": "glm",
+      "reason": "Drop: the same higher-PEEP condition is kept as GLM's no_ecmo_higher_peep; keeping both would declare one condition twice.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @baseline]",
+      "decision": "glm",
+      "reason": "Table 2 conventional ventilation: ECMO 34 +/- 5 and No ECMO 37 +/- 4, both in GLM. DeepSeek has only 37 +/- 4, under its n = 14 'conventional_ventilation' arm. The is_primary_outcome difference is reserved and not ruled here.",
+      "evidence": "p. 4, Table 2; p. 3, Fig. 1"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Both give 16 +/- 1 with paired difference -21, P = 0.0001. GLM codes it as the second crossover condition contrasted with no_ecmo_conventional; DeepSeek uses a duplicate 'higher_peep' arm, contrasts against its mislabelled n = 14 arm, and types the timepoint as the 20-30 min wait rather than a condition.",
+      "evidence": "p. 4, Table 2 (#); p. 3, Results"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "ECMO 75 +/- 10, No ECMO 67 +/- 5 match Table 2; DeepSeek has only 67 +/- 5, under its n = 14 arm.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "180 +/- 9, +113, P = 0.001 (##) against no_ecmo_conventional; DeepSeek's contrast uses its duplicate arms.",
+      "evidence": "p. 4, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @baseline]",
+      "decision": "glm",
+      "reason": "PEEP ECMO 17.1 +/- 1.6, No ECMO 17.9 +/- 1.2 match Table 2; DeepSeek has only the No-ECMO value.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "22.3 +/- 1.4, +4.4, P = 0.0001 (#) against no_ecmo_conventional; matches Table 2 and the text (4.4 +/- 1.4 cmH2O).",
+      "evidence": "p. 4, Table 2; p. 5, Discussion"
+    },
+    {
+      "target": "outcomes[respiratory mechanics stress index continuous @baseline]",
+      "decision": "glm",
+      "reason": "Stress index ECMO 1.071 +/- 0.032, No ECMO 0.922 +/- 0.033 match Table 2; DeepSeek has only the No-ECMO value.",
+      "evidence": "p. 4, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics stress index continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "1.052 +/- 0.032, +0.13, P = 0.0001 (#) against no_ecmo_conventional.",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[other paco2 mmhg continuous @baseline]",
+      "decision": "glm",
+      "reason": "PaCO2 ECMO 54.3 +/- 7.4, No ECMO 54.6 +/- 8.4 match Table 2; DeepSeek has only 54.6.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics right atrial pressure continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM's entry is right: 20 +/- 3 mmHg under higher PEEP, +3, P = 0.001 against no_ecmo_conventional, with the verbatim text name. DeepSeek's version is a baseline entry holding only 17 +/- 2 under its n = 14 arm. The missing reference value is left open by id.",
+      "evidence": "p. 3, Results 'from 17 +/- 2 to 20 +/- 3 mmHg, P = 0.001'"
+    },
+    {
+      "id": "916c36d3c7",
+      "decision": "unclear",
+      "reason": "The reference value 17 +/- 2 mmHg belongs to the No-ECMO group under conventional ventilation; DeepSeek files it under its n = 14 arm and GLM never records it. Co-author: add a baseline 'right atrial pressure' entry, no_ecmo_conventional mean 17, SD 2, n 7, mmHg (no ECMO-group value is reported).",
+      "evidence": "p. 3, Results"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pplatl end inspiratory p @baseline]",
+      "decision": "unclear",
+      "reason": "Values right (ECMO 27.2 +/- 1.2, No ECMO 16.6 +/- 2.9), but Table 2 marks the ECMO value * (P = 0.0001, ECMO vs no ECMO) and GLM records no effect estimate, as it does for EL and ECW. Co-author: keep GLM and add effect_estimates [{p_value 0.0001, test_used 'unpaired T test'}].",
+      "evidence": "p. 4, Table 2 PPLATL row and footnote"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pplatl end inspiratory p @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 25.3 +/- 1.7, +8.7, P = 0.0001 (#) against no_ecmo_conventional.",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatrs end inspiratory pl @baseline]",
+      "decision": "glm",
+      "reason": "Keep: PPLATRS ECMO 31.0 +/- 1, No ECMO 31.5 +/- 0.5, no significance marker.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatrs end inspiratory pl @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 38.4 +/- 1.0, +6.9, P = 0.0001 (#).",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ers static respiratory sys @baseline]",
+      "decision": "glm",
+      "reason": "Keep: ERS ECMO 38.4 +/- 5.2, No ECMO 37.4 +/- 4.2, no marker ('values of ERS did not differ').",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el static lung elastance c @baseline]",
+      "decision": "glm",
+      "reason": "Keep: EL ECMO 32.3 +/- 5.3 (**), No ECMO 20.2 +/- 4.7, P = 0.001 unpaired.",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el static lung elastance c @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: EL 28.6 +/- 2.3, +8.4, P = 0.0001 (#).",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw static chest wall elas @baseline]",
+      "decision": "glm",
+      "reason": "Keep: ECW ECMO 6.1 +/- 0.7 (*), No ECMO 17.2 +/- 1.7, P = 0.0001.",
+      "evidence": "p. 4, Table 2; p. 3, Results"
+    },
+    {
+      "target": "outcomes[mortality outcome alive death at discharge from @not reported]",
+      "decision": "glm",
+      "reason": "Keep: Table 3 Outcome column shows D for 2 of 7 ECMO patients (rows 4, 5) and 1 of 7 No-ECMO patients (row 5), counted per group and marked derived; the timepoint of the A/D column is undefined, so not_reported is honest. DeepSeek's 3/14 infers hospital discharge and pools the groups.",
+      "evidence": "p. 5, Table 3 (page image) and footnote"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ml kg pbw continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits the VT row; DeepSeek has only the No-ECMO value (5.0 +/- 0.8), on its n = 14 'conventional_ventilation' arm. Co-author: add a baseline VT (mL/kg PBW) entry with ecmo_conventional 5.0 +/- 0.9 and no_ecmo_conventional 5.0 +/- 0.8 (n 7 each).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings vt ml kg pbw continuous @30min]",
+      "decision": "unclear",
+      "reason": "Reading right (5.0 +/- 0.8) but DeepSeek's entry uses its own 'higher_peep' arm, contrasts against its n = 14 'conventional_ventilation' arm, adds a computed mean difference with a test the table does not report, and types the timepoint as minutes after intervention. GLM has no VT entry. Co-author: add VT crossover entry no_ecmo_higher_peep 5.0 +/- 0.8, no contrast reported.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings rr breaths min continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits RR; DeepSeek has only 31.1 +/- 0.3, on DeepSeek's n = 14 'conventional_ventilation' arm. Co-author: add baseline RR ecmo_conventional 32.8 +/- 2.4, no_ecmo_conventional 31.1 +/- 0.3.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings rr breaths min continuous @30min]",
+      "decision": "unclear",
+      "reason": "Reading right (30.3 +/- 2.4) but on DeepSeek's duplicate 'higher_peep' arm with a contrast against its n = 14 'conventional_ventilation' arm and an unreported test; GLM has none. Co-author: add RR crossover no_ecmo_higher_peep 30.3 +/- 2.4 (no marker).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings pao mean cmh2o continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits PAO,mean; DeepSeek has only 25.1 +/- 1.8, on DeepSeek's n = 14 'conventional_ventilation' arm. Co-author: add baseline PAO,mean ecmo_conventional 25.2 +/- 2.7, no_ecmo_conventional 25.1 +/- 1.8 cmH2O.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings pao mean cmh2o continuous @30min]",
+      "decision": "unclear",
+      "reason": "Reading right (29.1 +/- 1, # P = 0.0001, +4.0) but on DeepSeek's duplicate 'higher_peep' arm and contrasted against its n = 14 'conventional_ventilation' arm. Co-author: add PAO,mean crossover no_ecmo_higher_peep 29.1 +/- 1 with paired contrast vs no_ecmo_conventional, P = 0.0001.",
+      "evidence": "p. 4, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 mmhg continuous @30min]",
+      "decision": "unclear",
+      "reason": "GLM has no PaCO2 value under higher PEEP; DeepSeek's 42.9 +/- 8.0, -11.7, P = 0.001 is right but sits on its duplicate 'higher_peep' arm with the contrast pointing at its n = 14 'conventional_ventilation' arm. Co-author: add PaCO2 crossover no_ecmo_higher_peep 42.9 +/- 8.0, paired contrast vs no_ecmo_conventional P = 0.001.",
+      "evidence": "p. 4, Table 2 (##); p. 3, Results"
+    },
+    {
+      "target": "outcomes[other ph continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits pH; DeepSeek has only 7.371 +/- 0.094, on DeepSeek's n = 14 'conventional_ventilation' arm. Co-author: add baseline pH ecmo_conventional 7.386 +/- 0.035, no_ecmo_conventional 7.371 +/- 0.094.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[other ph continuous @30min]",
+      "decision": "unclear",
+      "reason": "Reading right (7.405 +/- 0.089, no marker) but on DeepSeek's duplicate 'higher_peep' arm with an unreported test. Co-author: add pH crossover no_ecmo_higher_peep 7.405 +/- 0.089.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatrs cmh2o continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PPLATRS 31.5 +/- 0.5 is kept, with the ECMO value, in GLM's baseline PPLATRS entry; DeepSeek's copy sits on its n = 14 'conventional_ventilation' arm.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatrs cmh2o continuous @30min]",
+      "decision": "glm",
+      "reason": "Drop: 38.4 +/- 1.0 with its P = 0.0001 contrast is kept in GLM's PPLATRS crossover entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatcw cmh2o continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits PPLATCW; DeepSeek has only 14.7 +/- 2.5, on DeepSeek's n = 14 'conventional_ventilation' arm. Co-author: add baseline PPLATCW ecmo_conventional 4.0 +/- 1.4 and no_ecmo_conventional 14.7 +/- 2.5, with effect estimate P = 0.0001 (* ECMO vs no ECMO).",
+      "evidence": "p. 4, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplatcw cmh2o continuous @30min]",
+      "decision": "unclear",
+      "reason": "Value 13.5 +/- 0.8 right, but DeepSeek says 'no P value reported' while the table marks it # (P = 0.0001), and the entry sits on its duplicate 'higher_peep' arm contrasted against its n = 14 'conventional_ventilation' arm. Co-author: add PPLATCW crossover no_ecmo_higher_peep 13.5 +/- 0.8, paired contrast vs no_ecmo_conventional P = 0.0001.",
+      "evidence": "p. 4, Table 2 PPLATCW row (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pplatl cmh2o continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: 16.6 +/- 2.9 is kept in GLM's baseline PPLATL entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pplatl cmh2o continuous @30min]",
+      "decision": "glm",
+      "reason": "Drop: 25.3 +/- 1.7 and its contrast are kept in GLM's PPLATL crossover entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ers cmh2o l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: ERS 37.4 +/- 4.2 is kept in GLM's baseline ERS entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ers cmh2o l continuous @30min]",
+      "decision": "unclear",
+      "reason": "GLM has no ERS value under higher PEEP; DeepSeek's 43.8 +/- 3.3, +6.4, P = 0.0001 is right but sits on its duplicate 'higher_peep' arm contrasted against its n = 14 'conventional_ventilation' arm. Co-author: add ERS crossover no_ecmo_higher_peep 43.8 +/- 3.3, paired contrast vs no_ecmo_conventional P = 0.0001.",
+      "evidence": "p. 4, Table 2 (#); p. 3, Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el cmh2o l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: EL 20.2 +/- 4.7 is kept in GLM's baseline EL entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el cmh2o l continuous @30min]",
+      "decision": "glm",
+      "reason": "Drop: EL 28.6 +/- 2.3 and its contrast are kept in GLM's EL crossover entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw cmh2o l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: ECW 17.2 +/- 1.7 is kept in GLM's baseline ECW entry.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw cmh2o l continuous @30min]",
+      "decision": "unclear",
+      "reason": "GLM has no ECW value under higher PEEP; DeepSeek's 15.2 +/- 2.6 is right (no marker) but on its duplicate 'higher_peep' arm with a computed contrast and unreported test. Co-author: add ECW crossover no_ecmo_higher_peep 15.2 +/- 2.6, no contrast.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw ers continuous @baseline]",
+      "decision": "unclear",
+      "reason": "GLM omits ECW/ERS; DeepSeek has only 0.47 +/- 0.08, on DeepSeek's n = 14 'conventional_ventilation' arm. Co-author: add baseline ECW/ERS ecmo_conventional 0.16 +/- 0.03, no_ecmo_conventional 0.47 +/- 0.08, effect estimate P = 0.0001 (*).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw ers continuous @30min]",
+      "decision": "unclear",
+      "reason": "Reading right (0.35 +/- 0.04, no marker) but on DeepSeek's duplicate 'higher_peep' arm with a computed contrast and unreported test. Co-author: add ECW/ERS crossover no_ecmo_higher_peep 0.35 +/- 0.04.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics right atrial pressure mmhg continuo @30min]",
+      "decision": "glm",
+      "reason": "Drop: 20 +/- 3 mmHg with P = 0.001 is kept in GLM's right atrial pressure entry.",
+      "evidence": "p. 3, Results"
+    },
+    {
+      "target": "outcomes[mortality outcome alive dead dichotomous @hospital discharge]",
+      "decision": "glm",
+      "reason": "Drop: mortality is kept per group (2/7 ECMO, 1/7 No ECMO) in GLM's Table 3 outcome; DeepSeek's pooled 3/14 infers hospital discharge and is pooled under DeepSeek's n = 14 arm.",
+      "evidence": "p. 5, Table 3"
+    },
+    {
+      "target": "outcomes[rescue therapy need for ecmo dichotomous @end of study]",
+      "decision": "unclear",
+      "reason": "ECMO receipt defines the groups (all 7 with PPLATL > 25 went on ECMO; the 7 others avoided it after PEEP was raised). DeepSeek's 7/14 files the whole cohort under its 'conventional_ventilation' arm, and GLM has no such outcome. Co-author: decide whether 'need for ECMO' is an outcome here; if so record ecmo_conventional 7/7 and no_ecmo 0/7 (or cohort 7/14 on a whole-cohort arm).",
+      "evidence": "p. 1 Abstract Results; p. 3 Fig. 1; p. 4 Discussion"
+    },
+    {
+      "id": "14f1342a06",
+      "decision": "glm",
+      "reason": "Both name the same journal; the page prints the abbreviation 'Intensive Care Med', but the corpus records journals by full name (e.g. 'Critical Care Medicine', 'Journal of Critical Care'), so the full name keeps the field consistent.",
+      "evidence": "p. 1 running header"
+    },
+    {
+      "id": "e6c8325c11",
+      "decision": "glm",
+      "reason": "Real gaps remain that the main text cannot fill: balloon calibration is deferred to an online supplement ('Further details are available in the electronic online supplement'), and the timepoint of the Table 3 alive/death outcome is never defined.",
+      "evidence": "p. 2 Methods; p. 5 Table 3"
+    },
+    {
+      "id": "9b33ca7cc7",
+      "decision": "deepseek",
+      "reason": "Table 1 gives partitioned PPLATL for all 14 patients, so esophageal pressure was obtained in 14; marked derived with its reasoning.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "id": "e32a03b267",
+      "decision": "glm",
+      "reason": "Mechanics were partitioned and PEEP titrated on arrival at the referral centre, i.e. at study entry; timing is known only relative to entry, which the codebook codes as enrolment, not as not_reported.",
+      "evidence": "p. 2, Methods 'At arrival... Mechanics of the respiratory system was partitioned'"
+    },
+    {
+      "id": "9b7be19ca1",
+      "decision": "deepseek",
+      "reason": "Table 3 Gender column: ECMO M,F,M,M,F,M,M (2 F), No ECMO F,M,F,F,F,M,F (5 F), 7/14 female; derived and quoted.",
+      "evidence": "p. 5, Table 3 (page image)"
+    },
+    {
+      "id": "b6aa2f729e",
+      "decision": "deepseek",
+      "reason": "The target is PPLATL = PPLATRS - (ECW/ERS) x PPLATRS at 25 cmH2O, an end-inspiratory transpulmonary pressure computed from the elastance ratio; both reviewers code ptp_computation elastance_derived, and the codebook ties the subgroup to that method (Chean's elastance-derived PL,insp target is coded the same way).",
+      "evidence": "p. 2, Methods equations; CODEBOOK Subgroup flags"
+    }
+  ]
+}

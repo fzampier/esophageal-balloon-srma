@@ -1,0 +1,2966 @@
+{
+  "record_meta": {
+    "study_id": "beitler_2019",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/beitler2019.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Beitler",
+    "year": 2019,
+    "title": "Effect of Titrating Positive End-Expiratory Pressure (PEEP) With an Esophageal Pressure–Guided Strategy vs an Empirical High PEEP-FIO2 Strategy on Death and Days Free From Mechanical Ventilation Among Patients With Acute Respiratory Distress Syndrome: A Randomized Clinical Trial",
+    "journal": "JAMA",
+    "doi": "10.1001/jama.2019.0555",
+    "pmid": null,
+    "trial_registration": "NCT01681225",
+    "trial_acronym": "EPVent-2",
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "unclear",
+        "provenance": {
+          "quote": "Patients aged 16 years or older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours were eligible for enrollment.",
+          "location": "Methods, Patients, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Two hundred mechanically ventilated patients aged 16 years and older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) were enrolled.",
+          "location": "Abstract, Design, Setting, and Participants"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The trial enrolled participants at 14 hospitals across the United States and Canada.",
+          "location": "Methods, Patients, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP was evaluated at least once daily and adjusted as needed to maintain end-expiratory PL between 0 to 6 cm H2O, ensuring PEEP was never less than nor substantially more than pleural pressure estimated by PES.",
+          "location": "Methods, PES-Guided PEEP Group, para 1"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Prespecified secondary clinical end points included all-cause mortality at 28 days, 60 days, and 1 year; ventilator-free days through day 28; intensive care unit (ICU) and hospital lengths of stay through day 28 and day 60; protocol failure requiring rescue therapy; and functional status at 1 year.",
+          "location": "Methods, Secondary End Points"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Two hundred patients were enrolled (mean [SD] age, 56 [16] years; 46% female) and completed 28-day follow-up.",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Phase 2 randomized clinical trial conducted at 14 hospitals in North America.",
+          "location": "Abstract, Design, Setting, and Participants"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "JAMA. Published online February 18, 2019.",
+          "location": "Abstract, bottom"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "Phase 2 randomized clinical trial conducted at 14 hospitals in North America.",
+      "provenance": {
+        "quote": "Phase 2 randomized clinical trial conducted at 14 hospitals in North America.",
+        "location": "Abstract, Design, Setting, and Participants"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": "1:1",
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "multi",
+    "n_centers": {
+      "value": 14,
+      "provenance": {
+        "quote": "14 hospitals across the United States and Canada",
+        "location": "Abstract, Design, Setting, and Participants"
+      }
+    },
+    "countries": [
+      "United States",
+      "Canada"
+    ],
+    "location_provenance": {
+      "quote": "across the United States and Canada",
+      "location": "Methods, Patients, para 1"
+    },
+    "planned_sample_size": {
+      "value": 200,
+      "provenance": {
+        "quote": "a sample of 200 patients was estimated to provide 85% power",
+        "location": "Methods, Statistical Analyses"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "Using estimates derived from the prior EPVent trial, a sample of 200 patients was estimated to provide 85% power to detect a significant difference in the primary ranked composite outcome with 2-sided alpha of .05. Sample size calculations assumed 28-day mortality of 30% with empirical PEEP-FIO2 and 20% with PES-guided PEEP. The distribution of days free from mechanical ventilation was assigned in 2 stages.",
+      "provenance": {
+        "quote": "Using estimates derived from the prior EPVent trial, a sample of 200 patients was estimated to provide 85% power to detect a significant difference in the primary ranked composite outcome with 2-sided alpha of .05.",
+        "location": "Methods, Statistical Analyses"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": null,
+      "provenance": null
+    },
+    "enrolment_start": "2012-10",
+    "enrolment_end": "2017-09",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "US National Heart, Lung, and Blood Institute (grant UM1-HL108724)",
+      "provenance": {
+        "quote": "US National Heart, Lung, and Blood Institute (grant UM1-HL108724)",
+        "location": "Funding/Support"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 202,
+      "provenance": {
+        "quote": "202 Randomized",
+        "location": "Figure 1"
+      }
+    },
+    "n_analysed": {
+      "value": 200,
+      "provenance": {
+        "quote": "102 Included in the primary analysis at 28 d; 98 Included in the primary analysis at 28 d",
+        "location": "Figure 1"
+      }
+    },
+    "population_description": {
+      "value": "Mechanically ventilated patients aged 16 years and older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours.",
+      "provenance": {
+        "quote": "Patients aged 16 years or older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours were eligible for enrollment.",
+        "location": "Methods, Patients"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients aged 16 years or older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours were eligible for enrollment. ARDS onset was defined from the moment that all 4 Berlin Definition criteria were met.",
+      "provenance": {
+        "quote": "Patients aged 16 years or older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours were eligible for enrollment. ARDS onset was defined from the moment that all 4 Berlin Definition criteria were met.",
+        "location": "Methods, Patients"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Contraindication to esophageal instrumentation or high PEEP, and other reasons: order to limit life-sustaining treatment, rescue therapy in use, mechanical ventilation >96 hours, contraindication to oro/nasogastric tube, chronic liver disease with Child-Pugh ≥12, prior lung or liver transplant, elevated intracranial pressure, active air leak from lung, severe coagulopathy, neuromuscular disease.",
+      "provenance": {
+        "quote": "Patients were excluded for contraindication to esophageal instrumentation or high PEEP, and other reasons enumerated in the eAppendix in Supplement 2 and summarized in Figure 1.",
+        "location": "Methods, Patients"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin Definition",
+      "provenance": {
+        "quote": "ARDS onset was defined from the moment that all 4 Berlin Definition criteria were met.",
+        "location": "Methods, Patients"
+      }
+    },
+    "n_ards": {
+      "n": 200,
+      "total": 200,
+      "derived": true,
+      "derivation": "All enrolled patients met inclusion criterion of moderate to severe ARDS as defined by Berlin criteria.",
+      "provenance": {
+        "quote": "Patients aged 16 years or older with moderate to severe ARDS (PaO2:FIO2 ≤200 mm Hg) onset within the last 36 hours were eligible for enrollment.",
+        "location": "Methods, Patients"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "ARDS risk factors: sepsis, pneumonia, aspiration, prolonged shock, multiple transfusions, acute pancreatitis, trauma",
+      "provenance": {
+        "quote": "ARDS risk factors, No. (%) — Sepsis 86 (84.3), Pneumonia 71 (69.6), Aspiration 20 (19.6), Prolonged shock 9 (8.8), Multiple transfusions 10 (9.8), Acute pancreatitis 3 (2.9), Trauma 3 (2.9)",
+        "location": "Table 2"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Actual body weight, kg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 84.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 72.0,
+          "dispersion_high": 105.0,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Actual body weight, kg — 84.0 (72.0 to 105.0)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Actual body weight, kg",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 79.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 68.2,
+          "dispersion_high": 97.9,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Actual body weight, kg — 79.5 (68.2 to 97.9)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Time intubated prior to enrollment, h",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 31,
+          "unit": "h",
+          "provenance": {
+            "quote": "Time intubated prior to enrollment, h — 22 (13 to 31)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Time intubated prior to enrollment, h",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 21,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15,
+          "dispersion_high": 29,
+          "unit": "h",
+          "provenance": {
+            "quote": "Time intubated prior to enrollment, h — 21 (15 to 29)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 7.33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.27,
+          "dispersion_high": 7.37,
+          "provenance": {
+            "quote": "pH — 7.33 (7.27 to 7.37)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 7.33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.25,
+          "dispersion_high": 7.4,
+          "provenance": {
+            "quote": "pH — 7.33 (7.25 to 7.40)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaCO2, mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 44,
+          "dispersion_type": "iqr",
+          "dispersion_low": 38,
+          "dispersion_high": 52,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2, mm Hg — 44 (38 to 52)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaCO2, mm Hg",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 43,
+          "dispersion_type": "iqr",
+          "dispersion_low": 37,
+          "dispersion_high": 51,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2, mm Hg — 43 (37 to 51)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2, mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 71,
+          "dispersion_type": "iqr",
+          "dispersion_low": 61,
+          "dispersion_high": 86,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2, mm Hg — 71 (61 to 86)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2, mm Hg",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 69,
+          "dispersion_type": "iqr",
+          "dispersion_low": 61,
+          "dispersion_high": 84,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2, mm Hg — 69 (61 to 84)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Tidal volume, mL/kg PBW",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 6.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.9,
+          "dispersion_high": 6.7,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume, mL/kg PBW — 6.2 (5.9 to 6.7)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Tidal volume, mL/kg PBW",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 6.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.8,
+          "dispersion_high": 7.1,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "Tidal volume, mL/kg PBW — 6.2 (5.8 to 7.1)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Plateau pressure, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 28,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 32,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau — 28 (24 to 32)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Plateau pressure, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25,
+          "dispersion_high": 30,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau — 27 (25 to 30)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Mean airway pressure, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 24,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Mean — 20 (16 to 24)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Mean airway pressure, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 22,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Mean — 19 (16 to 22)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Set PEEP, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 18,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O — 14 (10 to 18)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Set PEEP, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 12.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 16,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O — 12.5 (10 to 16)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "FIO2",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 0.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.5,
+          "dispersion_high": 0.8,
+          "provenance": {
+            "quote": "FIO2 — 0.60 (0.50 to 0.80)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "FIO2",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 0.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.5,
+          "dispersion_high": 0.7,
+          "provenance": {
+            "quote": "FIO2 — 0.60 (0.50 to 0.70)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory rate, breaths/min",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 26,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22,
+          "dispersion_high": 30,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "Respiratory rate, breaths/min — 26 (22 to 30)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory rate, breaths/min",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 26,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22,
+          "dispersion_high": 30,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "Respiratory rate, breaths/min — 26 (22 to 30)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Minute ventilation, L/min",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 10.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.5,
+          "dispersion_high": 12.1,
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Minute ventilation, L/min — 10.3 (8.5 to 12.1)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Minute ventilation, L/min",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 9.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.4,
+          "dispersion_high": 11.3,
+          "unit": "L/min",
+          "provenance": {
+            "quote": "Minute ventilation, L/min — 9.4 (8.4 to 11.3)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PES at end-inspiration, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 21,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-inspiration — 19 (16 to 21)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PES at end-inspiration, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 21,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-inspiration — 18 (16 to 21)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PES at end-expiration, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 19,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-expiration — 16 (13 to 19)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PES at end-expiration, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 18,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-expiration — 15 (13 to 18)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PL at end-inspiration, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-inspiration — 8 (6 to 11)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PL at end-inspiration, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 12,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-inspiration — 9 (5 to 12)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PL at end-expiration, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": -3,
+          "dispersion_high": 1,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-expiration — 0 (−3 to 1)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PL at end-expiration, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": -1,
+          "dispersion_type": "iqr",
+          "dispersion_low": -3,
+          "dispersion_high": 2,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-expiration — −1 (−3 to 2)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Airway driving pressure, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 15,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Airway driving pressure, cm H2O — 13 (10 to 15)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Airway driving pressure, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 15,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Airway driving pressure, cm H2O — 13 (11 to 15)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Transpulmonary driving pressure, cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cm H2O — 8 (7 to 11)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Transpulmonary driving pressure, cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cm H2O — 9 (7 to 11)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lung compliance, mL/cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 48,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 63,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Lung compliance, mL/cm H2O — 48 (34 to 63)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lung compliance, mL/cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 33,
+          "dispersion_high": 55,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Lung compliance, mL/cm H2O — 42 (33 to 55)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory system compliance, mL/cm H2O",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 32,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25,
+          "dispersion_high": 41,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Respiratory system compliance, mL/cm H2O — 32 (25 to 41)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory system compliance, mL/cm H2O",
+        "arm_label": "empirical_peep_fio2",
+        "continuous": {
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 23,
+          "dispersion_high": 37,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Respiratory system compliance, mL/cm H2O — 30 (23 to 37)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Neuromuscular blockade",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 32,
+          "total": 102,
+          "provenance": {
+            "quote": "Neuromuscular blockade — 32 (31.4)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Neuromuscular blockade",
+        "arm_label": "empirical_peep_fio2",
+        "count": {
+          "n": 34,
+          "total": 98,
+          "provenance": {
+            "quote": "Neuromuscular blockade — 34 (34.7)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressors or inotropes",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 59,
+          "total": 102,
+          "provenance": {
+            "quote": "Vasopressors or inotropes — 59 (57.8)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressors or inotropes",
+        "arm_label": "empirical_peep_fio2",
+        "count": {
+          "n": 55,
+          "total": 98,
+          "provenance": {
+            "quote": "Vasopressors or inotropes — 55 (56.1)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systemic corticosteroids",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 33,
+          "total": 102,
+          "provenance": {
+            "quote": "Systemic corticosteroids — 33 (32.4)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systemic corticosteroids",
+        "arm_label": "empirical_peep_fio2",
+        "count": {
+          "n": 36,
+          "total": 98,
+          "provenance": {
+            "quote": "Systemic corticosteroids — 36 (36.7)",
+            "location": "Table 2"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "pes_guided",
+        "n": {
+          "value": 102,
+          "provenance": {
+            "quote": "PES-Guided PEEP (n = 102)",
+            "location": "Table 2"
+          }
+        },
+        "age": {
+          "value_type": "median",
+          "value": 58,
+          "dispersion_type": "iqr",
+          "dispersion_low": 47,
+          "dispersion_high": 66,
+          "unit": "y",
+          "provenance": {
+            "quote": "Age, y — 58 (47 to 66)",
+            "location": "Table 2"
+          }
+        },
+        "sex_female": {
+          "n": 38,
+          "total": 102,
+          "provenance": {
+            "quote": "Female — 38 (37.3)",
+            "location": "Table 2"
+          }
+        },
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "median",
+          "value": 95,
+          "dispersion_type": "iqr",
+          "dispersion_low": 73,
+          "dispersion_high": 129,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2:FIO2, mm Hg — 95 (73 to 129)",
+            "location": "Table 2"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "provenance": {
+            "quote": "APACHE-II score, mean (SD) — 27 (8)",
+            "location": "Table 2"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 11,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "provenance": {
+            "quote": "SOFA score, mean (SD) — 11 (4)",
+            "location": "Table 2"
+          }
+        }
+      },
+      {
+        "arm_label": "empirical_peep_fio2",
+        "n": {
+          "value": 98,
+          "provenance": {
+            "quote": "Empirical PEEP-FIO2 (n = 98)",
+            "location": "Table 2"
+          }
+        },
+        "age": {
+          "value_type": "median",
+          "value": 57.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 43,
+          "dispersion_high": 69,
+          "unit": "y",
+          "provenance": {
+            "quote": "Age, y — 57.5 (43 to 69)",
+            "location": "Table 2"
+          }
+        },
+        "sex_female": {
+          "n": 54,
+          "total": 98,
+          "provenance": {
+            "quote": "Female — 54 (55.1)",
+            "location": "Table 2"
+          }
+        },
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "median",
+          "value": 90,
+          "dispersion_type": "iqr",
+          "dispersion_low": 69,
+          "dispersion_high": 123,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2:FIO2, mm Hg — 90 (69 to 123)",
+            "location": "Table 2"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 28,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "provenance": {
+            "quote": "APACHE-II score, mean (SD) — 28 (7)",
+            "location": "Table 2"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 11,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "provenance": {
+            "quote": "SOFA score, mean (SD) — 11 (4)",
+            "location": "Table 2"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "transpulmonary pressure (PL = airway pressure minus pleural pressure)",
+        "provenance": {
+          "quote": "transpulmonary pressure (PL = airway pressure minus pleural pressure)",
+          "location": "Introduction, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PEEP was evaluated at least once daily and adjusted as needed to maintain end-expiratory PL between 0 to 6 cm H2O",
+        "provenance": {
+          "quote": "PEEP was evaluated at least once daily and adjusted as needed to maintain end-expiratory PL between 0 to 6 cm H2O",
+          "location": "Methods, PES-Guided PEEP Group"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "maintain end-expiratory PL between 0 to 6 cm H2O",
+          "location": "Methods, PES-Guided PEEP Group"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 6,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "maintain end-expiratory PL between 0 to 6 cm H2O",
+          "location": "Methods, PES-Guided PEEP Group"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 20,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "End-inspiratory pressure limit, cm H2O: PL ≤20",
+          "location": "Table 1"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "at least once daily",
+        "provenance": {
+          "quote": "PEEP was evaluated at least once daily and adjusted as needed",
+          "location": "Methods, PES-Guided PEEP Group"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "a single recruitment maneuver was performed, consisting of a high-pressure breath hold at 35 cm H2O for 30 seconds",
+        "provenance": {
+          "quote": "a single recruitment maneuver was performed, consisting of a high-pressure breath hold at 35 cm H2O for 30 seconds",
+          "location": "Methods, Protocol Elements Common to Both Treatment Groups"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 (range, 4-8) mL/kg PBW",
+        "provenance": {
+          "quote": "Tidal volume, mL/kg PBW: 6 (range, 4-8)",
+          "location": "Table 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "PL ≤20 cm H2O",
+        "provenance": {
+          "quote": "End-inspiratory pressure limit, cm H2O: PL ≤20",
+          "location": "Table 1"
+        }
+      },
+      "protocolised_weaning": true,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "After baseline measurements were obtained, a single recruitment maneuver was performed, consisting of a high-pressure breath hold at 35 cm H2O for 30 seconds. Ventilator settings were then adjusted per protocol.",
+        "provenance": {
+          "quote": "After baseline measurements were obtained, a single recruitment maneuver was performed, consisting of a high-pressure breath hold at 35 cm H2O for 30 seconds. Ventilator settings were then adjusted per protocol.",
+          "location": "Methods, Protocol Elements Common to Both Treatment Groups"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Patients continued on protocol for 28 days or until breathing unassisted, protocol failure, withdrawn for safety reasons, rescinded consent, discharged, or death.",
+      "provenance": {
+        "quote": "Patients continued on protocol for 28 days or until breathing unassisted, protocol failure (refractory hypoxemia or acidemia, defined below), withdrawn for safety reasons, rescinded consent, discharged, or death.",
+        "location": "Methods, Protocol Elements Common to Both Treatment Groups"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "empirical_high_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEP was adjusted to maintain the lowest PEEP-FIO2 combination possible on the empirical table while maintaining oxygenation goals (Table 1). The empirical table was adopted from the control group of the recent OSCILLATE trial.",
+      "provenance": {
+        "quote": "PEEP was adjusted to maintain the lowest PEEP-FIO2 combination possible on the empirical table while maintaining oxygenation goals (Table 1). The empirical table was adopted from the control group of the recent OSCILLATE trial.",
+        "location": "Methods, Empirical PEEP-FIO2 Group"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "pes_guided",
+      "label_verbatim": "PES-Guided PEEP",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 102,
+        "provenance": {
+          "quote": "102 Randomized to PES-guided group",
+          "location": "Figure 1"
+        }
+      },
+      "n_analysed": {
+        "value": 102,
+        "provenance": {
+          "quote": "102 Included in the primary analysis at 28 d",
+          "location": "Figure 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 17,
+        "dispersion_type": "sd",
+        "dispersion": 6,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The mean (SD) PEEP and FIO2 the first day on protocol were 17 (6) cm H2O and 0.56 (0.15), respectively, in the PES-guided group",
+          "location": "Results, Ventilator Management"
+        }
+      }
+    },
+    {
+      "label": "empirical_peep_fio2",
+      "label_verbatim": "Empirical PEEP-FIO2",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 100,
+        "provenance": {
+          "quote": "100 Randomized to empirical PEEP-FIO2 group",
+          "location": "Figure 1"
+        }
+      },
+      "n_analysed": {
+        "value": 98,
+        "provenance": {
+          "quote": "98 Included in the primary analysis at 28 d",
+          "location": "Figure 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 16,
+        "dispersion_type": "sd",
+        "dispersion": 4,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "16 (4) cm H2O in the empirical PEEP-FiO2 group",
+          "location": "Results, Ventilator Management"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "other",
+      "name_verbatim": "Probability of more favorable outcome, a ranked composite incorporating death and days free from mechanical ventilation among survivors",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 49.6,
+          "dispersion_type": "ci95",
+          "dispersion_low": 41.7,
+          "dispersion_high": 57.5,
+          "unit": "%",
+          "provenance": {
+            "quote": "Probability of more favorable outcome ... 49.6 (41.7 to 57.5)",
+            "location": "Table 3, row Primary End Point"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "mean",
+          "value": 50.4,
+          "dispersion_type": "ci95",
+          "dispersion_low": 42.5,
+          "dispersion_high": 58.3,
+          "unit": "%",
+          "provenance": {
+            "quote": "50.4 (42.5 to 58.3)",
+            "location": "Table 3, row Primary End Point"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.92,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Mann-Whitney U test",
+          "provenance": {
+            "quote": "P = .92",
+            "location": "Table 3, row Primary End Point"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The probability of more favorable outcome with PES-guided PEEP, compared with empirical PEEP-FIO2, was 49.6% (95% CI, 41.7% to 57.5%; P = .92).",
+        "location": "Results, Primary End Point"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality through day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28 d"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 33,
+          "total": 102,
+          "provenance": {
+            "quote": "33 (32.4)",
+            "location": "Table 3, row Mortality through day 28"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 30,
+          "total": 98,
+          "provenance": {
+            "quote": "30 (30.6)",
+            "location": "Table 3, row Mortality through day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": 1.7,
+          "ci_low": -11.1,
+          "ci_high": 14.6,
+          "ci_level": 95,
+          "p_value": 0.88,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "1.7 (−11.1 to 14.6)",
+            "location": "Table 3, row Mortality through day 28"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Thirty-three patients (32.4%) assigned to PES-guided PEEP and 30 patients (30.6%) assigned to empirical PEEP-FIO2 died by study day 28 (risk difference, 1.7% [95% CI, −11.1% to 14.6%]; P = .88).",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality through day 60",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "label_verbatim": "60 d"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 38,
+          "total": 101,
+          "provenance": {
+            "quote": "38/101 (37.6)",
+            "location": "Table 3, row Mortality through day 60"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 37,
+          "total": 98,
+          "provenance": {
+            "quote": "37/98 (37.8)",
+            "location": "Table 3, row Mortality through day 60"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -0.1,
+          "ci_low": -13.6,
+          "ci_high": 13.3,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": ">.99",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−0.1 (−13.6 to 13.3); P >.99",
+            "location": "Table 3, row Mortality through day 60"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Neither 60-day mortality (37.6% vs 37.8%; risk difference, −0.1% [95% CI, −13.6% to 13.3%]; P > .99)",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Mortality through 1 year",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 365,
+        "label_verbatim": "1 y"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 44,
+          "total": 100,
+          "provenance": {
+            "quote": "44/100 (44.0)",
+            "location": "Table 3, row Mortality through 1 y"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 44,
+          "total": 96,
+          "provenance": {
+            "quote": "44/96 (45.8)",
+            "location": "Table 3, row Mortality through 1 y"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -1.8,
+          "ci_low": -15.8,
+          "ci_high": 12.1,
+          "ci_level": 95,
+          "p_value": 0.89,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−1.8 (−15.8 to 12.1); P = .89",
+            "location": "Table 3, row Mortality through 1 y"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "1-year mortality (44.0% vs 45.8%; risk difference, −1.8% [95% CI, −15.8% to 12.1%]; P = .89)",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "Days free from mechanical ventilation among survivors through day 28",
+      "definition_verbatim": "Time free from mechanical ventilation was calculated as the number of days between successful liberation from the ventilator and study day 28. Among survivors only.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15,
+          "dispersion_high": 24,
+          "unit": "days",
+          "provenance": {
+            "quote": "22 (15 to 24)",
+            "location": "Table 3, row Days free from mechanical ventilation among survivors"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 21,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.5,
+          "dispersion_high": 24,
+          "unit": "days",
+          "provenance": {
+            "quote": "21 (16.5 to 24)",
+            "location": "Table 3, row Days free from mechanical ventilation among survivors"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0,
+          "ci_low": -1,
+          "ci_high": 2,
+          "ci_level": 95,
+          "p_value": 0.85,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "median difference, 0 [95% CI, −1 to 2] days; P = .85",
+            "location": "Abstract, Results"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Days free from mechanical ventilation among survivors was not significantly different (median[interquartile range]: 22[15-24] vs 21[16.5-24] days; median difference, 0 [95% CI, −1 to 2] days; P = .85).",
+        "location": "Abstract, Results"
+      }
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "Ventilator-free days through day 28",
+      "definition_verbatim": "Ventilator-free days were calculated as previously described, assigning a value of 0 failure-free days for patients who died before day 28.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 15.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 23,
+          "unit": "days",
+          "provenance": {
+            "quote": "15.5 (0 to 23)",
+            "location": "Table 3, row Ventilator-free days through day 28"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 17.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 23,
+          "unit": "days",
+          "provenance": {
+            "quote": "17.5 (0 to 23)",
+            "location": "Table 3, row Ventilator-free days through day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0,
+          "ci_low": 0,
+          "ci_high": 0,
+          "ci_level": 95,
+          "p_value": 0.93,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "median difference, 0 [95% CI, 0 to 0] days; P = .93",
+            "location": "Results, Secondary End Points"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Ventilator-free days was not significantly different between treatment groups (PES-guided PEEP: median, 15.5 [IQR, 0-23] days, and empirical PEEP-FIO2: median 17.5 [IQR, 0-23] days; median difference, 0 [95% CI, 0 to 0] days; P = .93).",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU length of stay through day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 17,
+          "unit": "days",
+          "provenance": {
+            "quote": "10 (6 to 17)",
+            "location": "Table 3, row ICU length of stay through day 28"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 9.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 14,
+          "unit": "days",
+          "provenance": {
+            "quote": "9.5 (5 to 14)",
+            "location": "Table 3, row ICU length of stay through day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 1,
+          "ci_low": -1,
+          "ci_high": 3,
+          "ci_level": 95,
+          "p_value": 0.24,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "1 (−1 to 3); P = .24",
+            "location": "Table 3, row ICU length of stay through day 28"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ICU length of stay through day 28, median (IQR), d — 10 (6 to 17) vs 9.5 (5 to 14); median difference, 1 [95% CI, −1 to 3] days; P = .24",
+        "location": "Table 3"
+      }
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "Hospital length of stay through day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 26,
+          "unit": "days",
+          "provenance": {
+            "quote": "16 (9 to 26)",
+            "location": "Table 3, row Hospital length of stay through day 28"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 24,
+          "unit": "days",
+          "provenance": {
+            "quote": "15 (8 to 24)",
+            "location": "Table 3, row Hospital length of stay through day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0,
+          "ci_low": -1,
+          "ci_high": 3,
+          "ci_level": 95,
+          "p_value": 0.58,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "0 (−1 to 3); P = .58",
+            "location": "Table 3, row Hospital length of stay through day 28"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Hospital length of stay through day 28, median (IQR), d — 16 (9 to 26) vs 15 (8 to 24); median difference, 0 [95% CI, −1 to 3] days; P = .58",
+        "location": "Table 3"
+      }
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "Hospital length of stay through day 60",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "label_verbatim": "through day 60"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 26,
+          "unit": "days",
+          "provenance": {
+            "quote": "16 (9 to 26)",
+            "location": "Table 3, row Hospital length of stay through day 60"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 24,
+          "unit": "days",
+          "provenance": {
+            "quote": "15 (8 to 24)",
+            "location": "Table 3, row Hospital length of stay through day 60"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 1,
+          "ci_low": -2,
+          "ci_high": 4,
+          "ci_level": 95,
+          "p_value": 0.47,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "1 (−2 to 4); P = .47",
+            "location": "Table 3, row Hospital length of stay through day 60"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Hospital length of stay through day 60, median (IQR), d — 16 (9 to 26) vs 15 (8 to 24); median difference, 1 [95% CI, −2 to 4] days; P = .47",
+        "location": "Table 3"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Rescue therapy administered",
+      "definition_verbatim": "Protocol-defined rescue therapies included prone positioning, inhaled pulmonary vasodilators (eg, nitric oxide, epoprostenol), high-frequency oscillation, airway pressure release ventilation, and extracorporeal membrane oxygenation.",
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "during trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 4,
+          "total": 102,
+          "provenance": {
+            "quote": "4 (3.9)",
+            "location": "Table 3, row Rescue therapy administered"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 12,
+          "total": 98,
+          "provenance": {
+            "quote": "12 (12.2)",
+            "location": "Table 3, row Rescue therapy administered"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -8.3,
+          "ci_low": -15.8,
+          "ci_high": -0.8,
+          "ci_level": 95,
+          "p_value": 0.04,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−8.3 (−15.8 to -0.8); P = .04",
+            "location": "Table 3, row Rescue therapy administered"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Patients assigned to PES-guided PEEP were significantly less likely to receive any rescue therapy than patients assigned to empirical PEEP-FIO2 (3.9% vs 12.2%; risk difference, −8.3% [95% CI, −15.8% to −0.8%]; P = .04).",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Prone positioning",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "during trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 1,
+          "total": 102,
+          "provenance": {
+            "quote": "1 (1.0)",
+            "location": "Table 3, row Prone positioning"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 3,
+          "total": 98,
+          "provenance": {
+            "quote": "3 (3.1)",
+            "location": "Table 3, row Prone positioning"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -2.1,
+          "ci_low": -6.0,
+          "ci_high": 1.8,
+          "ci_level": 95,
+          "p_value": 0.36,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−2.1 (−6.0 to 1.8); P = .36",
+            "location": "Table 3, row Prone positioning"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "rescue prone positioning (1.0% vs 3.1%; risk difference, −2.1% [95% CI, −6.0% to 1.8%]; P = .36)",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Inhaled pulmonary vasodilator",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "during trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 3,
+          "total": 102,
+          "provenance": {
+            "quote": "3 (2.9)",
+            "location": "Table 3, row Inhaled pulmonary vasodilator"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 10,
+          "total": 98,
+          "provenance": {
+            "quote": "10 (10.2)",
+            "location": "Table 3, row Inhaled pulmonary vasodilator"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -7.3,
+          "ci_low": -14.1,
+          "ci_high": -0.4,
+          "ci_level": 95,
+          "p_value": 0.046,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−7.3 (−14.1 to −0.4); P = .046",
+            "location": "Table 3, row Inhaled pulmonary vasodilator"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Significantly fewer patients assigned to PES-guided PEEP received inhaled pulmonary vasodilators (2.9% vs 10.2%; risk difference, −7.3% [95% CI, −14.1% to −0.4%]; P = .046).",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Extracorporeal membrane oxygenation",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "during trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 1,
+          "total": 102,
+          "provenance": {
+            "quote": "1 (1.0)",
+            "location": "Table 3, row Extracorporeal membrane oxygenation"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 3,
+          "total": 98,
+          "provenance": {
+            "quote": "3 (3.1)",
+            "location": "Table 3, row Extracorporeal membrane oxygenation"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -2.1,
+          "ci_low": -6.0,
+          "ci_high": 1.8,
+          "ci_level": 95,
+          "p_value": 0.36,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−2.1 (−6.0 to 1.8); P = .36",
+            "location": "Table 3, row Extracorporeal membrane oxygenation"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "extracorporeal membrane oxygenation (1.0% vs 3.1%; risk difference, −2.1% [95% CI, −6.0% to 1.8%]; P = .36)",
+        "location": "Results, Secondary End Points"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Recruitment maneuvers",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "during trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 1,
+          "total": 102,
+          "provenance": {
+            "quote": "1 (1.0)",
+            "location": "Table 3, row Recruitment maneuvers"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 1,
+          "total": 98,
+          "provenance": {
+            "quote": "1 (1.0)",
+            "location": "Table 3, row Recruitment maneuvers"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": 0.0,
+          "ci_low": -2.8,
+          "ci_high": 2.7,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": ">.99",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "0.0 (−2.8 to 2.7); P >.99",
+            "location": "Table 3, row Recruitment maneuvers"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Recruitment maneuvers, No. (%) — 1 (1.0) vs 1 (1.0); 0.0 (−2.8 to 2.7); P >.99",
+        "location": "Table 3"
+      }
+    },
+    {
+      "domain": "organ_failure_free_days",
+      "name_verbatim": "Shock-free days through day 28",
+      "definition_verbatim": "Shock was defined as receiving any vasopressor or inotropic infusion, and patients transferred out of the ICU were assumed to be shock free; shock-free days otherwise was calculated in a manner similar to ventilator-free days.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 21,
+          "unit": "days",
+          "provenance": {
+            "quote": "14 (0 to 21)",
+            "location": "Table 3, row Shock-free days"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 21,
+          "unit": "days",
+          "provenance": {
+            "quote": "17 (0 to 21)",
+            "location": "Table 3, row Shock-free days"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "other",
+          "value": 0,
+          "ci_low": -2,
+          "ci_high": 0,
+          "ci_level": 95,
+          "p_value": 0.47,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Hodges-Lehmann estimator",
+          "provenance": {
+            "quote": "0 (−2 to 0); P = .47",
+            "location": "Table 3, row Shock-free days"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Shock-free days through day 28 did not significantly differ between patients assigned to PES-guided PEEP vs empirical PEEP-FIO2 (median, 14 [IQR, 0-21] vs 17 [IQR, 0-21] days; median difference, 0 [95% CI, −2 to 0] days; P = .47)",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Acute kidney injury requiring renal replacement therapy in the first 28 d",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "first 28 d"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 21,
+          "total": 100,
+          "provenance": {
+            "quote": "21/100 (21.0)",
+            "location": "Table 3, row Acute kidney injury"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 32,
+          "total": 96,
+          "provenance": {
+            "quote": "32/96 (33.3)",
+            "location": "Table 3, row Acute kidney injury"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": -12.3,
+          "ci_low": -24.7,
+          "ci_high": 0.0,
+          "ci_level": 95,
+          "p_value": 0.056,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "−12.3 (−24.7 to 0.0); P = .056",
+            "location": "Table 3, row Acute kidney injury"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Acute kidney injury requiring initiation of renal replacement therapy in the first 28 days occurred in 21.0% of patients assigned to PES-guided PEEP vs 33.3% assigned to empirical PEEP-FIO2 (risk difference, −12.3% [95% CI, −24.7% to 0.0%]; P = .056).",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "barotrauma",
+      "name_verbatim": "Pneumothorax",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 3,
+          "total": 102,
+          "provenance": {
+            "quote": "3 (2.9)",
+            "location": "Table 3, row Pneumothorax"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 2,
+          "total": 98,
+          "provenance": {
+            "quote": "2 (2.0)",
+            "location": "Table 3, row Pneumothorax"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": 0.9,
+          "ci_low": -3.4,
+          "ci_high": 5.2,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": ">.99",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "0.9 (−3.4 to 5.2); P >.99",
+            "location": "Table 3, row Pneumothorax"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Incidence of pneumothorax (2.9% vs 2.0%; risk difference, 0.9% [95% CI, −3.4% to 5.2%]; P > .99)",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "barotrauma",
+      "name_verbatim": "Bronchopleural fistula",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 0,
+          "total": 102,
+          "provenance": {
+            "quote": "Bronchopleural fistula, No. — 0",
+            "location": "Table 3"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 0,
+          "total": 98,
+          "provenance": {
+            "quote": "Bronchopleural fistula, No. — 0",
+            "location": "Table 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "No patients in either treatment group developed a bronchopleural fistula.",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "barotrauma",
+      "name_verbatim": "Any barotrauma",
+      "definition_verbatim": "Barotrauma was defined by the presence of pneumothorax, pneumomediastinum, subcutaneous emphysema, or bronchopleural fistula.",
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "through day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 6,
+          "total": 102,
+          "provenance": {
+            "quote": "6 (5.9)",
+            "location": "Table 3, row Barotrauma"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": 5,
+          "total": 98,
+          "provenance": {
+            "quote": "5 (5.1)",
+            "location": "Table 3, row Barotrauma"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_difference",
+          "value": 0.8,
+          "ci_low": -5.5,
+          "ci_high": 7.1,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": ">.99",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Fisher exact test",
+          "provenance": {
+            "quote": "0.8 (−5.5 to 7.1); P >.99",
+            "location": "Table 3, row Barotrauma"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "any barotrauma (5.9% vs 5.1%; risk difference, 0.8% [95% CI, −5.5% to 7.1%]; P > .99)",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Hemodynamic instability serious adverse event",
+      "definition_verbatim": "Serious adverse event on protocol initiation.",
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "on protocol initiation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 1,
+          "total": 102,
+          "provenance": {
+            "quote": "Hemodynamic instability was reported as a serious adverse event for 1 patient in the PES-guided PEEP group on protocol initiation.",
+            "location": "Results, Safety End Points"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "events": null,
+          "total": 98,
+          "provenance": null
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Hemodynamic instability was reported as a serious adverse event for 1 patient in the PES-guided PEEP group on protocol initiation.",
+        "location": "Results, Safety End Points"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL at end-expiration (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": -3,
+          "dispersion_high": 1,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-expiration — 0 (−3 to 1)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": -1,
+          "dispersion_type": "iqr",
+          "dispersion_low": -3,
+          "dispersion_high": 2,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-expiration — −1 (−3 to 2)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PL, cm H2O — At end-expiration — 0 (−3 to 1) vs −1 (−3 to 2)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PL at end-inspiration (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-inspiration — 8 (6 to 11)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 12,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PL, cm H2O — At end-inspiration — 9 (5 to 12)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PL, cm H2O — At end-inspiration — 8 (6 to 11) vs 9 (5 to 12)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Set PEEP (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 18,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O — 14 (10 to 18)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 12.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 16,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Set PEEP, cm H2O — 12.5 (10 to 16)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Set PEEP, cm H2O — 14 (10 to 18) vs 12.5 (10 to 16)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 28,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 32,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau — 28 (24 to 32)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25,
+          "dispersion_high": 30,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Plateau — 27 (25 to 30)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Plateau — 28 (24 to 32) vs 27 (25 to 30)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "PES at end-expiration (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 19,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-expiration — 16 (13 to 19)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 18,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "PES, cm H2O — At end-expiration — 15 (13 to 18)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PES, cm H2O — At end-expiration — 16 (13 to 19) vs 15 (13 to 18)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FIO2 (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 95,
+          "dispersion_type": "iqr",
+          "dispersion_low": 73,
+          "dispersion_high": 129,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2:FIO2, mm Hg — 95 (73 to 129)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 90,
+          "dispersion_type": "iqr",
+          "dispersion_low": 69,
+          "dispersion_high": 123,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2:FIO2, mm Hg — 90 (69 to 123)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PaO2:FIO2, mm Hg — 95 (73 to 129) vs 90 (69 to 123)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Airway driving pressure (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 15,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Airway driving pressure, cm H2O — 13 (10 to 15)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 15,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Airway driving pressure, cm H2O — 13 (11 to 15)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Airway driving pressure, cm H2O — 13 (10 to 15) vs 13 (11 to 15)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary driving pressure (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cm H2O — 8 (7 to 11)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 11,
+          "unit": "cm H2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cm H2O — 9 (7 to 11)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Transpulmonary driving pressure, cm H2O — 8 (7 to 11) vs 9 (7 to 11)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Lung compliance (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 48,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 63,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Lung compliance, mL/cm H2O — 48 (34 to 63)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 42,
+          "dispersion_type": "iqr",
+          "dispersion_low": 33,
+          "dispersion_high": 55,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Lung compliance, mL/cm H2O — 42 (33 to 55)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Lung compliance, mL/cm H2O — 48 (34 to 63) vs 42 (33 to 55)",
+        "location": "Table 2"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system compliance (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 32,
+          "dispersion_type": "iqr",
+          "dispersion_low": 25,
+          "dispersion_high": 41,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Respiratory system compliance, mL/cm H2O — 32 (25 to 41)",
+            "location": "Table 2"
+          }
+        },
+        {
+          "arm_label": "empirical_peep_fio2",
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 23,
+          "dispersion_high": 37,
+          "unit": "mL/cm H2O",
+          "provenance": {
+            "quote": "Respiratory system compliance, mL/cm H2O — 30 (23 to 37)",
+            "location": "Table 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Respiratory system compliance, mL/cm H2O — 32 (25 to 41) vs 30 (23 to 37)",
+        "location": "Table 2"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 102,
+      "provenance": {
+        "quote": "An esophageal balloon catheter could not be inserted successfully in 1 patient randomized to PES-guided PEEP",
+        "location": "Results, Study Population"
+      }
+    },
+    "n_placement_successful": {
+      "value": 101,
+      "derived": true,
+      "derivation": "102 attempted minus 1 failure = 101",
+      "provenance": {
+        "quote": "An esophageal balloon catheter could not be inserted successfully in 1 patient randomized to PES-guided PEEP",
+        "location": "Results, Study Population"
+      }
+    },
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": {
+      "value": "93.3% of observed PEEP values in the PES-guided PEEP group and 94.6% of values in the empirical PEEP-FIO2 group were within ±2 cm H2O of the protocol-specified value for the observed FIO2",
+      "provenance": {
+        "quote": "Protocol adherence was high: 93.3% of observed PEEP values in the PES-guided PEEP group and 94.6% of values in the empirical PEEP-FIO2 group were within ±2 cm H2O of the protocol-specified value for the observed FIO2",
+        "location": "Results, Ventilator Management"
+      }
+    },
+    "protocol_deviations": null,
+    "n_crossover_between_arms": {
+      "value": 0,
+      "derived": true,
+      "derivation": "Crossover prohibited, no crossover reported",
+      "provenance": {
+        "quote": "Crossover to the PES-guided strategy was prohibited.",
+        "location": "Methods, Empirical PEEP-FIO2 Group"
+      }
+    },
+    "n_lost_to_followup": {
+      "value": 4,
+      "derived": true,
+      "derivation": "1 patient in PES lost between 28-60 d, 1 after 60 d; 2 in empirical lost after 60 d. Total 4.",
+      "provenance": {
+        "quote": "1 Lost to follow-up between 28-60 d; 1 Lost to follow-up after 60 d; 0 Lost to follow-up between 28-60 d; 2 Lost to follow-up after 60 d",
+        "location": "Figure 1"
+      }
+    }
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS: all enrolled had moderate to severe ARDS per inclusion criteria. Obesity: BMI not reported; unclear. Timing: median time from intubation to enrollment was 22h, and intervention started at enrollment; thus within 48h of intubation. PTP target: used absolute PES subtraction targeting end-expiratory PL 0-6 cmH2O."
+  },
+  "extraction_flags": {
+    "cohort_id": "epvent2",
+    "overlapping_cohort_with": [
+      "sarge_2021"
+    ],
+    "overlap_evidence": "Confirmed via COHORTS.md: sarge_2021 states it is a post hoc reanalysis of EPVent-2 including all 200 participants.",
+    "unclear_items": [
+      "adults_18_plus: inclusion criterion age ≥16, includes 16-17 year olds; coded unclear.",
+      "blinding: not reported in the paper.",
+      "setting: ICU type (medical/surgical/mixed) not specified.",
+      "balloon_calibration: method not reported in main text; supplement not reviewed.",
+      "n_enrolled: abstract says 200 enrolled, but CONSORT shows 202 randomized, 2 withdrew consent. Set n_enrolled=202.",
+      "n_placement_attempted: assumed 102 for PES group based on 1 failure, but not explicitly stated.",
+      "data_only_in_figure: respiratory physiologic measures over days 0-7 (Figure 2) not in tables; only baseline values extracted."
+    ],
+    "data_only_in_figure": [
+      "Respiratory physiological measures over days 1-7 (Figure 2)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": null
+  }
+}

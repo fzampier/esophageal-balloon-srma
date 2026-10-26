@@ -1,0 +1,2746 @@
+{
+ "record_meta": {
+  "study_id": "rowley_2021",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/EBSCO-FullText-06_26_2026.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 218 reviewer differences: 156 in scope. Settled by human rulings 9, model rulings 152, content-neutral rules 0; 55 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 2 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Rowley",
+  "year": 2021,
+  "title": "Transpulmonary Pressure-Guided Lung-Protective Ventilation Improves Pulmonary Mechanics and Oxygenation Among Obese Subjects on Mechanical Ventilation",
+  "journal": "Respiratory Care",
+  "doi": "10.4187/respcare.08686",
+  "pmid": null,
+  "trial_registration": null,
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Adult patients ≥ 18 y old who met the following criteria were included in our analysis",
+     "location": "p. 1050, Patients, para 1"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "admission to the medical ICU or surgical/trauma ICU, need for mechanical ventilation, and a respiratory therapy consult to obtain PL measurements",
+     "location": "p. 1050, Patients, para 1"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "admission to the medical ICU or surgical/trauma ICU",
+     "location": "p. 1050, Patients, para 1"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Mechanical ventilator settings were adjusted to target an inspiratory PL < 20 cm H2O and an expiratory PL target of 0–6 cm H2O. A FIO2/PL table ... was used to determine optimal expiratory PL in relationship to set FIO2.",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "a significant median increase in respiratory system compliance of 30.7 mL/cm H2O (IQR 26.6–41.5) vs 44.6 mL/cm H2O (IQR 37.6–51.0) (P = .001)",
+     "location": "p. 1052, left column, para 2"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "A total of 20 patients between April 2019 and July 2020 were found to be eligible for analysis.",
+     "location": "p. 1050, Patients, para 2"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "We conducted a retrospective analysis of quality improvement data collected at the University of Virginia Medical Center in Charlottesville, Virginia.",
+     "location": "p. 1050, Methods, para 1"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "[Respir Care 2021;66 (7):1049–1058. © 2021 Daedalus Enterprises]",
+     "location": "p. 1049, footer of abstract"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "before_after_single_group",
+  "study_design_verbatim": {
+   "value": "We conducted a retrospective analysis of quality improvement data collected at the University of Virginia Medical Center in Charlottesville, Virginia.",
+   "provenance": {
+    "quote": "We conducted a retrospective analysis of quality improvement data collected at the University of Virginia Medical Center in Charlottesville, Virginia.",
+    "location": "p. 1050, Methods, para 1"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": {
+   "value": null,
+   "provenance": null
+  },
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "derived": true,
+   "derivation": "Single centre stated in limitations: 'single-center retrospective analysis'; inferred n_centers = 1.",
+   "provenance": {
+    "quote": "our sample size was relatively small due to being a single-center retrospective analysis",
+    "location": "p. 1056, Limitations, para 1"
+   }
+  },
+  "countries": [
+   "United States"
+  ],
+  "location_provenance": {
+   "quote": "quality improvement data collected at the University of Virginia Medical Center in Charlottesville, Virginia",
+   "location": "p. 1050, Methods, para 1"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": {
+   "value": null,
+   "provenance": null
+  },
+  "stopped_early": null,
+  "stopping_rule": {
+   "value": null,
+   "provenance": null
+  },
+  "setting": {
+   "value": "medical ICU or surgical/trauma ICU",
+   "provenance": {
+    "quote": "admission to the medical ICU or surgical/trauma ICU",
+    "location": "p. 1050, Patients, para 1"
+   }
+  },
+  "enrolment_start": "2019-04",
+  "enrolment_end": "2020-07",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "This work was supported in part by the Pulmonary Diagnostics & Respiratory Therapy Services Department at the University of Virginia Medical Center.",
+   "provenance": {
+    "quote": "This work was supported in part by the Pulmonary Diagnostics & Respiratory Therapy Services Department at the University of Virginia Medical Center.",
+    "location": "p. 1050, footnote"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 20,
+   "provenance": {
+    "quote": "A total of 20 patients between April 2019 and July 2020 were found to be eligible for analysis.",
+    "location": "p. 1050, Patients, para 2"
+   }
+  },
+  "n_analysed": {
+   "value": 20,
+   "provenance": {
+    "quote": "Our analysis consisted of 20 subjects (13 male) who were morbidly obese (Class 3)",
+    "location": "p. 1051, Results, para 1"
+   }
+  },
+  "population_description": {
+   "value": "Adult morbidly obese (Class 3) patients on mechanical ventilation in the medical ICU or surgical/trauma ICU who had a respiratory therapy consult for PL measurement.",
+   "provenance": {
+    "quote": "Our analysis consisted of 20 subjects (13 male) who were morbidly obese (Class 3) with a median BMI of 47.5 kg/m2 (IQR 37.4–55.7).",
+    "location": "p. 1051, Results, para 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "BMI ≥ 30 kg/m2, admission to the medical ICU or surgical/trauma ICU, need for mechanical ventilation, and a respiratory therapy consult to obtain PL measurements by a licensed independent practitioner.",
+   "provenance": {
+    "quote": "BMI ≥ 30 kg/m2, admission to the medical ICU or surgical/trauma ICU, need for mechanical ventilation, and a respiratory therapy consult to obtain PL measurements by a licensed independent practitioner",
+    "location": "p. 1050, Patients, para 1"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "Patients were excluded if they met any contraindication for esophagastric tube insertion.",
+   "provenance": {
+    "quote": "Patients were excluded if they met any contraindication for esophagastric tube insertion",
+    "location": "p. 1050, Patients, para 2"
+   }
+  },
+  "age": {
+   "value_type": "median",
+   "value": 49,
+   "dispersion_type": "iqr",
+   "dispersion_low": 39,
+   "dispersion_high": 64,
+   "dispersion": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "n": 20,
+   "unit": "y",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Age, y — 49 (39–64)",
+    "location": "p. 1051, Table 1, row: Age, y"
+   }
+  },
+  "sex_female": {
+   "n": 7,
+   "total": 20,
+   "percent_as_reported": 35,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Female — 7 (35)",
+    "location": "p. 1051, Table 1, row: Female"
+   }
+  },
+  "sex_male": {
+   "n": 13,
+   "total": 20,
+   "percent_as_reported": 65,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Male — 13 (65)",
+    "location": "p. 1051, Table 1, row: Male"
+   }
+  },
+  "bmi": {
+   "value_type": "median",
+   "value": 47.5,
+   "dispersion_type": "iqr",
+   "dispersion_low": 37.4,
+   "dispersion_high": 55.7,
+   "dispersion": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "n": 20,
+   "unit": "kg/m2",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Body mass index, kg/m2 — 47.5 (37.4–55.7)",
+    "location": "p. 1051, Table 1, row: Body mass index, kg/m2"
+   }
+  },
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "not_reported",
+  "ards_definition_used": {
+   "value": "Berlin classification for hypoxemia: mild (PaO2/FIO2 < 300 mm Hg), moderate (< 200 mm Hg), severe (< 100 mm Hg)",
+   "provenance": {
+    "quote": "Berlin classification for mild hypoxemia (PaO2=FIO2 < 300 mm Hg), moderate hypoxemia (PaO2=FIO2 < 200 mm Hg), and severe hypoxemia (PaO2=FIO2 < 100 mm Hg) was also recorded.",
+    "location": "p. 1051, left column, para 3"
+   }
+  },
+  "n_ards": null,
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "not_applicable",
+  "cause_of_respiratory_failure": {
+   "value": "Acute hypoxemic respiratory failure 12 (60); Cardiogenic shock 2 (10); Septic shock 4 (20); Other 2 (10)",
+   "provenance": {
+    "quote": "Primary diagnosis — Acute hypoxemic respiratory failure 12 (60); Cardiogenic shock 2 (10); Septic shock 4 (20); Other 2 (10)",
+    "location": "p. 1051, Table 1, rows: Primary diagnosis"
+   }
+  },
+  "pao2_fio2_baseline": {
+   "value_type": "median",
+   "value": 156,
+   "dispersion_type": "iqr",
+   "dispersion_low": 97,
+   "dispersion_high": 190,
+   "dispersion": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "n": 20,
+   "unit": "mm Hg",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "PaO2=FIO2, mm Hg — 156 (97–190)",
+    "location": "p. 1052, Table 2, row: PaO2=FIO2, mm Hg, Before column"
+   }
+  },
+  "apache_ii": null,
+  "sofa": {
+   "value_type": "median",
+   "value": 8,
+   "dispersion_type": "iqr",
+   "dispersion_low": 6,
+   "dispersion_high": 11,
+   "dispersion": null,
+   "secondary_dispersion_type": null,
+   "secondary_dispersion": null,
+   "secondary_dispersion_low": null,
+   "secondary_dispersion_high": null,
+   "n": 20,
+   "unit": null,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "SOFA score — 8 (6–11)",
+    "location": "p. 1051, Table 1, row: SOFA score"
+   }
+  },
+  "saps_ii": null,
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": {
+   "n": 12,
+   "total": 20,
+   "percent_as_reported": 60,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Neuromuscular blockade — 12 (60)",
+    "location": "p. 1051, Table 1, row: Neuromuscular blockade"
+   }
+  },
+  "n_ecmo": null,
+  "n_vasopressors": {
+   "n": 12,
+   "total": 20,
+   "percent_as_reported": 60,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Vasoactive drug requirement — 12 (60)",
+    "location": "p. 1051, Table 1, row: Vasoactive drug requirement"
+   }
+  },
+  "additional_baseline": [
+   {
+    "name_verbatim": "Mechanical ventilation duration before PL measurement, h",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 16,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8,
+     "dispersion_high": 21,
+     "dispersion": null,
+     "secondary_dispersion_type": null,
+     "secondary_dispersion": null,
+     "secondary_dispersion_low": null,
+     "secondary_dispersion_high": null,
+     "n": 20,
+     "unit": "h",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Mechanical ventilation duration before PL measurement, h — 16 (8–21)",
+      "location": "p. 1051, Table 1, row: Mechanical ventilation duration before PL measurement, h"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Sedation",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 20,
+     "total": 20,
+     "percent_as_reported": 100,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Sedation — 20 (100)",
+      "location": "p. 1051, Table 1, row: Sedation"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Subject care unit: Medical ICU",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 14,
+     "total": 20,
+     "percent_as_reported": 70,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Medical ICU — 14 (70)",
+      "location": "p. 1051, Table 1, row: Medical ICU"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Subject care unit: Surgical ICU",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 6,
+     "total": 20,
+     "percent_as_reported": 30,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Surgical ICU — 6 (30)",
+      "location": "p. 1051, Table 1, row: Surgical ICU"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "5-French esophageal balloon catheter (Cooper Surgical, Trumbull, Connecticut)",
+   "provenance": {
+    "quote": "Subjects who met the inclusion criteria had a 5-French esophageal balloon catheter (Cooper Surgical, Trumbull, Connecticut) placed by a registered respiratory therapist",
+    "location": "p. 1050, Procedure and Measurements, para 1"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "dynamic_occlusion_test",
+   "method_verbatim": {
+    "value": "The appropriate position of the esophageal catheter were confirmed by performing an expiratory airway occlusion maneuver with a simultaneous gentle chest compression. Changes in esophageal and airway pressures resulting from the occlusion maneuver were recorded.",
+    "provenance": {
+     "quote": "The appropriate position of the esophageal catheter were confirmed by performing an expiratory airway occlusion maneuver with a simultaneous gentle chest compression.",
+     "location": "p. 1050, Procedure and Measurements, para 1"
+    }
+   },
+   "position_verification": {
+    "value": "Expiratory airway occlusion maneuver with gentle chest compression; visualization of cardiac artifact on esophageal pressure waveform used to qualitatively confirm appropriate catheter position.",
+    "provenance": {
+     "quote": "Visualization of cardiac artifact on esophageal pressure waveform was also used to qualitatively confirm appropriate catheter position.",
+     "location": "p. 1051, left column, para 1"
+    }
+   },
+   "occlusion_ratio_acceptance": {
+    "value": "ratio between change in esophageal pressure and change in airway pressure equaled 0.8–1.2",
+    "provenance": {
+     "quote": "The esophageal catheter was considered to be in an appropriate position when the ratio between change in esophageal pressure and change in airway pressure equaled 0.8–1.2 during the occlusion maneuver.",
+     "location": "p. 1051, left column, para 1"
+    }
+   }
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "These changes lead us to use the direct method described by Talmor et al to measure both inspiratory and expiratory PL.",
+    "provenance": {
+     "quote": "These changes lead us to use the direct method described by Talmor et al8 to measure both inspiratory and expiratory PL.",
+     "location": "p. 1056, right column, para 1"
+    }
+   },
+   "pes_correction_applied": {
+    "value": null,
+    "provenance": null
+   }
+  },
+  "peep_titration_target": {
+   "strategy": "combined_end_expiratory_and_end_inspiratory",
+   "strategy_verbatim": {
+    "value": "Mechanical ventilator settings were adjusted to target an inspiratory PL < 20 cm H2O and an expiratory PL target of 0–6 cm H2O. A FIO2/PL table was used to determine optimal expiratory PL in relationship to set FIO2.",
+    "provenance": {
+     "quote": "Mechanical ventilator settings were adjusted to target an inspiratory PL < 20 cm H2O and an expiratory PL target of 0–6 cm H2O. A FIO2/PL table (see the supplementary materials at http://www.rcjournal.com) was used to determine optimal expiratory PL in relationship to set FIO2.",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cm H2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "an expiratory PL target of 0–6 cm H2O",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 6,
+    "unit": "cm H2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "an expiratory PL target of 0–6 cm H2O",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": {
+    "value": 20,
+    "unit": "cm H2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "target an inspiratory PL < 20 cm H2O",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": null,
+    "provenance": null
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": {
+    "value": null,
+    "provenance": null
+   },
+   "tidal_volume_target": {
+    "value": "VT ≤ 6 mL/kg predicted body weight (in consult criteria); median VT 6.0 mL/kg PBW",
+    "provenance": {
+     "quote": "airway driving pressure > 15 cm H2O with plateau pressure ≥ 30 cm H2O despite tidal volume (VT) ≤ 6 mL/kg predicted body weight (PBW)",
+     "location": "p. 1050, Patients, para 2"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "inspiratory PL < 20 cm H2O",
+    "provenance": {
+     "quote": "target an inspiratory PL < 20 cm H2O",
+     "location": "p. 1051, right column, para 1"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "The use of sedation and neuromuscular blockade was at the discretion of the treating licensed independent practitioner.",
+    "provenance": {
+     "quote": "The use of sedation and neuromuscular blockade was at the discretion of the treating licensed independent practitioner.",
+     "location": "p. 1051, right column, para 1"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "intubation",
+   "hours_from_reference": {
+    "value_type": "median",
+    "value": 16,
+    "dispersion_type": "iqr",
+    "dispersion_low": 8,
+    "dispersion_high": 21,
+    "dispersion": null,
+    "secondary_dispersion_type": null,
+    "secondary_dispersion": null,
+    "secondary_dispersion_low": null,
+    "secondary_dispersion_high": null,
+    "n": 20,
+    "unit": "h",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "the median duration of mechanical ventilation before a respiratory therapy consult was received for a PL measurement was 16 h (IQR 8–21)",
+     "location": "p. 1051, Results, para 1"
+    }
+   },
+   "timing_verbatim": {
+    "value": "PL measurement occurred 16 h after initiating non-PL-guided LPV.",
+    "provenance": {
+     "quote": "PL measurement occurred 16 h after initiating non-PL-guided LPV.",
+     "location": "p. 1049, Abstract, RESULTS"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "Ventilator settings, pulmonary mechanics, and oxygenation were recorded on the initial day of PL measurement and 24 h later.",
+   "provenance": {
+    "quote": "Ventilator settings, pulmonary mechanics, and oxygenation were recorded on the initial day of PL measurement and 24 h later.",
+    "location": "p. 1049, Abstract, METHODS"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "clinician_discretion_usual_care"
+  ],
+  "comparator_verbatim": {
+   "value": "non-PL-guided LPV ventilator settings, i.e. the same patients' settings immediately before PL-guided adjustment",
+   "provenance": {
+    "quote": "Our primary objective was to determine whether non-PL-guided LPV ventilator settings, pulmonary mechanics, and oxygenation differ 24 h after applying PL-guided LPV.",
+    "location": "p. 1049, Introduction, final para"
+   }
+  },
+  "crossover_order": {
+   "value": "Fixed sequence: all subjects measured first under non-PL-guided LPV (before), then 24 h after PL-guided adjustment (after). Order not randomised.",
+   "provenance": {
+    "quote": "Mechanical ventilator settings, airway pressures, pulmonary mechanics, and oxygenation variables were recorded immediately before PL-guided LPV and 24 h after PL guided LPV.",
+    "location": "p. 1051, left column, para 3"
+   }
+  },
+  "washout_or_stabilisation": {
+   "value": "24 h between before and after measurements.",
+   "provenance": {
+    "quote": "recorded on the initial day of PL measurement and 24 h later",
+    "location": "p. 1049, Abstract, METHODS"
+   }
+  }
+ },
+ "arms": [
+  {
+   "label": "before_pl_guided",
+   "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Data are presented as median (interquartile range) or n (%). N = 20 subjects.",
+     "location": "p. 1052, Table 2, footnote"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 14,
+    "dispersion_type": "iqr",
+    "dispersion_low": 14,
+    "dispersion_high": 20,
+    "dispersion": null,
+    "secondary_dispersion_type": null,
+    "secondary_dispersion": null,
+    "secondary_dispersion_low": null,
+    "secondary_dispersion_high": null,
+    "n": 20,
+    "unit": "cm H2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Set PEEP, cm H2O — 14 (14–20)",
+     "location": "p. 1052, Table 2, row: Set PEEP, Before column"
+    }
+   }
+  },
+  {
+   "label": "after_pl_guided",
+   "label_verbatim": "After PL-Guided Ventilator Setting Adjustment",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Data are presented as median (interquartile range) or n (%). N = 20 subjects.",
+     "location": "p. 1052, Table 2, footnote"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 18,
+    "dispersion_type": "iqr",
+    "dispersion_low": 16,
+    "dispersion_high": 23,
+    "dispersion": null,
+    "secondary_dispersion_type": null,
+    "secondary_dispersion": null,
+    "secondary_dispersion_low": null,
+    "secondary_dispersion_high": null,
+    "n": 20,
+    "unit": "cm H2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Set PEEP, cm H2O — 18 (16–23)",
+     "location": "p. 1052, Table 2, row: Set PEEP, After column"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Set PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Recorded immediately before PL-guided LPV, supine, head of bed 30 degrees.",
+    "provenance": {
+     "quote": "All subjects were supine with the head of the bed elevated to 30 degrees.",
+     "location": "p. 1050, Procedure and Measurements, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 14,
+     "dispersion_high": 20,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Set PEEP, cm H2O — 14 (14–20)",
+      "location": "p. 1052, Table 2, row: Set PEEP, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Set PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Recorded 24 h after PL-guided LPV.",
+    "provenance": {
+     "quote": "recorded immediately before PL-guided LPV and 24 h after PL guided LPV",
+     "location": "p. 1051, left column, para 3"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 18,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 16,
+     "dispersion_high": 23,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Set PEEP, cm H2O — 18 (16–23)",
+      "location": "p. 1052, Table 2, row: Set PEEP, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.009,
+     "p_value_verbatim": ".009",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Median set PEEP increased significantly from 14 cm H2O (IQR 14–20) to 18 cm H2O (IQR 16–23) (P = .009)",
+      "location": "p. 1052, left column, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 0.53,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 0.4,
+     "dispersion_high": 0.81,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "FIO2 — 0.53 (0.40–0.81)",
+      "location": "p. 1052, Table 2, row: FIO2, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 0.33,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 0.3,
+     "dispersion_high": 0.4,
+     "n": 20,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "FIO2 — 0.33 (0.30–0.40)",
+      "location": "p. 1052, Table 2, row: FIO2, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "FIO2 — 0.53 (0.40–0.81) vs 0.33 (0.30–0.40), P < .001",
+      "location": "Table 2, row: FIO2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume, mL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 420,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 365,
+     "dispersion_high": 454,
+     "n": 20,
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tidal volume, mL — 420 (365–454)",
+      "location": "p. 1052, Table 2, row: Tidal volume, mL, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume, mL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 435,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 380,
+     "dispersion_high": 460,
+     "n": 20,
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tidal volume, mL — 435 (380–460)",
+      "location": "p. 1052, Table 2, row: Tidal volume, mL, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.64,
+     "p_value_verbatim": ".64",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "mL",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Median VT increased from 420 mL (IQR 365–454) to 435 mL (IQR 380–460), but the difference was not significant (P = .64).",
+      "location": "p. 1052, left column, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Total PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 15,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 14,
+     "dispersion_high": 22,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Total PEEP, cm H2O — 15 (14–22)",
+      "location": "p. 1052, Table 2, row: Total PEEP, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Total PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 19,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 17,
+     "dispersion_high": 23,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Total PEEP, cm H2O — 19 (17–23)",
+      "location": "p. 1052, Table 2, row: Total PEEP, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.049,
+     "p_value_verbatim": ".049",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Total PEEP, cm H2O — 15 (14–22) / 19 (17–23) / .049",
+      "location": "p. 1052, Table 2, row: Total PEEP"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure",
+   "definition_verbatim": "Driving pressure is calculated as the difference between Pplat and PEEPtotal.",
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 10,
+     "dispersion_high": 15,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Driving pressure, cm H2O* — 13 (10–15)",
+      "location": "p. 1052, Table 2, row: Driving pressure, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure",
+   "definition_verbatim": "Driving pressure is calculated as the difference between Pplat and PEEPtotal.",
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 8,
+     "dispersion_high": 11,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Driving pressure, cm H2O* — 10 (8–11)",
+      "location": "p. 1052, Table 2, row: Driving pressure, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.006,
+     "p_value_verbatim": ".006",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Driving pressure, cm H2O* — 13 (10–15) / 10 (8–11) / .006",
+      "location": "p. 1052, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Inspiratory Pplat",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 30,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 27,
+     "dispersion_high": 33,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Inspiratory Pplat, cm H2O — 30 (27–33)",
+      "location": "p. 1052, Table 2, row: Inspiratory Pplat, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Inspiratory Pplat",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 28,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 26,
+     "dispersion_high": 36,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Inspiratory Pplat, cm H2O — 28 (26–36)",
+      "location": "p. 1052, Table 2, row: Inspiratory Pplat, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.96,
+     "p_value_verbatim": ".96",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Inspiratory Pplat, cm H2O — 30 (27–33) / 28 (26–36) / .96",
+      "location": "p. 1052, Table 2, row: Inspiratory Pplat"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Peak inspiratory pressure",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 39,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 32,
+     "dispersion_high": 42,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Peak inspiratory pressure, cm H2O — 39 (32–42)",
+      "location": "p. 1052, Table 2, row: Peak inspiratory pressure, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Peak inspiratory pressure",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 37,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 33,
+     "dispersion_high": 43,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Peak inspiratory pressure, cm H2O — 37 (33–43)",
+      "location": "p. 1052, Table 2, row: Peak inspiratory pressure, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.66,
+     "p_value_verbatim": ".66",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Peak inspiratory pressure, cm H2O — 39 (32–42) / 37 (33–43) / .66",
+      "location": "p. 1052, Table 2, row: Peak inspiratory pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Expiratory PL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Direct method (PL = Paw − Pes) per Talmor et al; supine, head of bed 30 degrees.",
+    "provenance": {
+     "quote": "These changes lead us to use the direct method described by Talmor et al8 to measure both inspiratory and expiratory PL.",
+     "location": "p. 1056, right column, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": -3,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": -5,
+     "dispersion_high": 1,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Expiratory PL, cm H2O — –3 (–5 to 1)",
+      "location": "p. 1052, Table 2, row: Expiratory PL, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Expiratory PL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 1,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": -1,
+     "dispersion_high": 3,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Expiratory PL, cm H2O — 1 (–1 to 3)",
+      "location": "p. 1052, Table 2, row: Expiratory PL, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.02,
+     "p_value_verbatim": ".02",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Median expiratory PL increased from –3 cm H2O (IQR –5 to 1) to 1 cm H2O (IQR –1 to 3) (P = .02)",
+      "location": "p. 1052, left column, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Inspiratory PL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 7,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 2,
+     "dispersion_high": 11,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Inspiratory PL, cm H2O — 7 (2–11)",
+      "location": "p. 1052, Table 2, row: Inspiratory PL, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Inspiratory PL",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 7,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 5,
+     "dispersion_high": 9,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Inspiratory PL, cm H2O — 7 (5–9)",
+      "location": "p. 1052, Table 2, row: Inspiratory PL, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.9,
+     "p_value_verbatim": ".90",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "median inspiratory PL (7 cm H2O [IQR 2–11] vs 7 cm H2O [IQR 5–9], P = .90) did not change significantly",
+      "location": "p. 1052, left column, para 1"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL driving pressure",
+   "definition_verbatim": "PL driving pressure is calculated as the difference between inspiratory PL and expiratory PL.",
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 7,
+     "dispersion_high": 12,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PL driving pressure, cm H2O† — 10 (7–12)",
+      "location": "p. 1052, Table 2, row: PL driving pressure, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL driving pressure",
+   "definition_verbatim": "PL driving pressure is calculated as the difference between inspiratory PL and expiratory PL.",
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 6,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 4,
+     "dispersion_high": 8,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PL driving pressure, cm H2O† — 6 (4–8)",
+      "location": "p. 1052, Table 2, row: PL driving pressure, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.001,
+     "p_value_verbatim": ".001",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "a median decrease in PL driving pressure of 10 cm H2O (IQR 7–12) vs 6 cm H2O (IQR 4–8) (P = .001)",
+      "location": "p. 1052, left column, para 2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 156,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 97,
+     "dispersion_high": 190,
+     "n": 20,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PaO2=FIO2, mm Hg — 156 (97–190)",
+      "location": "p. 1052, Table 2, row: PaO2=FIO2, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 240,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 207,
+     "dispersion_high": 266,
+     "n": 20,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "PaO2=FIO2, mm Hg — 240 (207–266)",
+      "location": "p. 1052, Table 2, row: PaO2=FIO2, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.002,
+     "p_value_verbatim": ".002",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "a median increase in PaO2=FIO2 of 156 (IQR 97–190) vs 240 (IQR 207–266) (P = .002)",
+      "location": "p. 1052, left column, para 2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "SpO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 192,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 122,
+     "dispersion_high": 243,
+     "n": 20,
+     "unit": "mm Hg",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "baseline SpO2=FIO2 (192 mm Hg [IQR 122–243])",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Vasoactive drug requirement",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": 12,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Vasoactive drug requirement — 12 (60)",
+      "location": "p. 1052, Table 2, row: Vasoactive drug requirement, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Vasoactive drug requirement",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": 10,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Vasoactive drug requirement — 10 (50)",
+      "location": "p. 1052, Table 2, row: Vasoactive drug requirement, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided vs before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.53,
+     "p_value_verbatim": ".53",
+     "test_used": "McNemar test (assumed; repeat categorical comparison)",
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Vasoactive drug requirement — 12 (60) / 10 (50) / .53",
+      "location": "p. 1052, Table 2, row: Vasoactive drug requirement"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_free_days",
+   "name_verbatim": "ventilator-free days",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "count of ventilator-free days"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 7,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 6,
+     "dispersion_high": 10,
+     "n": 20,
+     "unit": "d",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "the median number of ventilator-free days was 7 d (IQR 6–10)",
+      "location": "p. 1052, ICU Outcomes and Mortality, para 1"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "icu_length_of_stay",
+   "name_verbatim": "ICU length of stay",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "median ICU length of stay"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 10,
+     "dispersion_high": 25,
+     "n": 20,
+     "unit": "d",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "The median ICU length of stay was 14 d (IQR 10–25)",
+      "location": "p. 1052, ICU Outcomes and Mortality, para 1"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Pneumothorax",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": null
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": 0,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": true,
+     "derivation": "0 events from 'No pneumothorax resulted from PL-guided set PEEP or VT increase'.",
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "No pneumothorax resulted from PL-guided set PEEP or VT increase.",
+      "location": "p. 1052, left column, para 3"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Frequency, breaths/min",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 22,
+     "dispersion_high": 31,
+     "n": 20,
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Frequency, breaths/min — 26 (22–31)",
+      "location": "p. 1052, Table 2, row: Frequency, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Frequency, breaths/min",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 24,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 20,
+     "dispersion_high": 29,
+     "n": 20,
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Frequency, breaths/min — 24 (20–29)",
+      "location": "p. 1052, Table 2, row: Frequency, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.19,
+     "p_value_verbatim": ".19",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "breaths/min",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Frequency, breaths/min — 26 (22–31) / 24 (20–29) / .19",
+      "location": "p. 1052, Table 2, row: Frequency"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "CRS (respiratory-system compliance)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": 0,
+    "label_verbatim": "Before PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Supine, head of bed 30 degrees; measured at baseline PL measurement.",
+    "provenance": {
+     "quote": "All subjects were supine with the head of the bed elevated to 30 degrees.",
+     "location": "p. 1050, Procedure and Measurements, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 30.7,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 26.6,
+     "dispersion_high": 41.5,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "CRS, mL/cm H2O — 30.7 (26.6–41.5)",
+      "location": "p. 1052, Table 2, row: CRS, Before column"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "CRS (respiratory-system compliance)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "sequence_position": null,
+    "days": null,
+    "hours": 24,
+    "label_verbatim": "After PL-Guided Ventilator Setting Adjustment"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": null,
+     "total": null,
+     "value_type": "median",
+     "value": 44.6,
+     "dispersion_type": "iqr",
+     "dispersion": null,
+     "dispersion_low": 37.6,
+     "dispersion_high": 51.0,
+     "n": 20,
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "CRS, mL/cm H2O — 44.6 (37.6–51.0)",
+      "location": "p. 1052, Table 2, row: CRS, After column"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": 0.001,
+     "p_value_verbatim": ".001",
+     "test_used": "Wilcoxon signed-rank test",
+     "unit": "mL/cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "a significant median increase in respiratory system compliance of 30.7 mL/cm H2O (IQR 26.6–41.5) vs 44.6 mL/cm H2O (IQR 37.6–51.0) (P = .001)",
+      "location": "p. 1052, left column, para 2"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume, mL/kg PBW",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "value_type": "median",
+     "value": 6.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.6,
+     "dispersion_high": 6.0,
+     "n": 20,
+     "unit": "mL/kg",
+     "provenance": {
+      "quote": "Tidal volume, mL/kg PBW — 6.0 (5.6–6.0)",
+      "location": "Table 2, row: Tidal volume, mL/kg PBW"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume, mL/kg PBW",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "value_type": "median",
+     "value": 6.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 6.0,
+     "dispersion_high": 7.0,
+     "n": 20,
+     "unit": "mL/kg",
+     "provenance": {
+      "quote": "Tidal volume, mL/kg PBW — 6.0 (6.0–7.0)",
+      "location": "Table 2, row: Tidal volume, mL/kg PBW"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": 0.17,
+     "test_used": "Wilcoxon signed-rank test",
+     "provenance": {
+      "quote": "Tidal volume, mL/kg PBW — 6.0 (5.6–6.0) vs 6.0 (6.0–7.0), P = .17",
+      "location": "Table 2, row: Tidal volume, mL/kg PBW"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "SpO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "24 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "value_type": "median",
+     "value": 310,
+     "dispersion_type": "iqr",
+     "dispersion_low": 245,
+     "dispersion_high": 330,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "24-h SaO2=FIO2 (310 mm Hg [IQR 245–330], P = .18)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided (24h) minus before_pl_guided (baseline)",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": 0.18,
+     "p_value_verbatim": null,
+     "test_used": "Friedman analysis of variance",
+     "provenance": {
+      "quote": "baseline SpO2=FIO2 (192 mm Hg [IQR 122–243]) and 24-h SaO2=FIO2 (310 mm Hg [IQR 245–330], P = .18)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "SpO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 48,
+    "label_verbatim": "48 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "value_type": "median",
+     "value": 300,
+     "dispersion_type": "iqr",
+     "dispersion_low": 245,
+     "dispersion_high": 376,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "48-h SaO2=FIO2 (300 mm Hg [IQR 245–376], P = .006)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided (48h) minus before_pl_guided (baseline)",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": 0.006,
+     "test_used": "Friedman analysis of variance",
+     "provenance": {
+      "quote": "48-h SaO2=FIO2 (300 mm Hg [IQR 245–376], P = .006)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "SpO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 72,
+    "label_verbatim": "72 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "value_type": "median",
+     "value": 319,
+     "dispersion_type": "iqr",
+     "dispersion_low": 266,
+     "dispersion_high": 393,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "72-h SaO2=FIO2 (319 mm Hg [IQR 266–393], P < .001)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided (72h) minus before_pl_guided (baseline)",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "test_used": "Friedman analysis of variance",
+     "provenance": {
+      "quote": "72-h SaO2=FIO2 (319 mm Hg [IQR 266–393], P < .001)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "SpO2/FIO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 96,
+    "label_verbatim": "96 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "value_type": "median",
+     "value": 283,
+     "dispersion_type": "iqr",
+     "dispersion_low": 277,
+     "dispersion_high": 363,
+     "n": 20,
+     "unit": "mm Hg",
+     "provenance": {
+      "quote": "96-h SaO2=FIO2 (283 mm Hg [IQR 277–363], P < .001)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided (96h) minus before_pl_guided (baseline)",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "test_used": "Friedman analysis of variance",
+     "provenance": {
+      "quote": "96-h SaO2=FIO2 (283 mm Hg [IQR 277–363], P < .001)",
+      "location": "Results, ICU Outcomes and Mortality, para 2"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Moderate or severe hypoxemia",
+   "definition_verbatim": "Hypoxemia severity classification: None = PaO2=FIO2 > 300 mm Hg; Mild = PaO2=FIO2 < 300 mm Hg; Moderate = PaO2=FIO2 < 200 mm Hg; Severe = PaO2=FIO2 < 100 mm Hg.",
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "before_pl_guided",
+     "events": 16,
+     "total": 20,
+     "provenance": {
+      "quote": "Sixteen of 20 subjects had either moderate hypoxemia (n = 12) or severe hypoxemia (n = 4)",
+      "location": "Results, Subject Characteristics, para 1"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Moderate or severe hypoxemia",
+   "definition_verbatim": "Hypoxemia severity classification: None = PaO2=FIO2 > 300 mm Hg; Mild = PaO2=FIO2 < 300 mm Hg; Moderate = PaO2=FIO2 < 200 mm Hg; Severe = PaO2=FIO2 < 100 mm Hg.",
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": 7,
+     "total": 20,
+     "provenance": {
+      "quote": "after PL-guided ventilator setting adjustment none experienced severe hypoxemia, 7 subjects experienced moderate hypoxemia",
+      "location": "Results, Ventilator Settings and Pulmonary Mechanics, para 3"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "after_pl_guided minus before_pl_guided",
+     "arm_label_a": "after_pl_guided",
+     "arm_label_b": "before_pl_guided",
+     "p_value": 0.71,
+     "test_used": "McNemar test",
+     "provenance": {
+      "quote": "the difference between before and after PL-guided ventilator setting adjustment was not statistically significant when comparing no hypoxemia and mild hypoxemia to moderate hypoxemia and severe hypoxemia classifications (P = .71)",
+      "location": "Results, Ventilator Settings and Pulmonary Mechanics, para 3"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "All-cause ICU mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 28,
+    "label_verbatim": "within 28 d after ICU admission"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "after_pl_guided",
+     "events": 3,
+     "total": 20,
+     "provenance": {
+      "quote": "Three of 20 subjects died within 28 d after ICU admission.",
+      "location": "Abstract, Results"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": []
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": {
+   "value": 20,
+   "derived": true,
+   "derivation": "PL data were obtained in all 20 subjects (Table 2, N = 20); no placement failures reported.",
+   "provenance": {
+    "quote": "Data are presented as median (interquartile range) or n (%). N = 20 subjects.",
+    "location": "p. 1052, Table 2, footnote"
+   }
+  },
+  "placement_failure_reasons": {
+   "value": null,
+   "provenance": null
+  },
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": {
+   "value": null,
+   "provenance": null
+  },
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": {
+   "value": "Set PEEP adjustment occurred in 19 of 20 subjects; 14 subjects had set PEEP increase, and 5 subjects had set PEEP decrease.",
+   "provenance": {
+    "quote": "Set PEEP adjustment occurred in 19 of 20 subjects; 14 subjects had set PEEP increase, and 5 subjects had set PEEP decrease.",
+    "location": "p. 1052, left column, para 1"
+   }
+  },
+  "protocol_deviations": {
+   "value": null,
+   "provenance": null
+  },
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "unclear",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "early_within_48h",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ARDS status not explicitly reported; study population includes hypoxemic respiratory failure, some may have ARDS. Timing from intubation to PL measurement is 16h (<48h). Target expiratory PL 0-6 cm H2O; inspiratory PL limit <20; direct method."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap with any COHORTS.md cluster. Single centre (University of Virginia Medical Center, Charlottesville, Virginia), enrolment April 2019–July 2020, no trial registration; no match to epvent1/epvent2 (different trials and centres), mannheim_boesing (Mannheim), mgh_lung_rescue (MGH, enrolment ended July 2017), or angers (Angers, France). Pirrone_2016 refuted cluster also does not match (different institution and earlier period).",
+  "unclear_items": [
+   "design.randomised: coded false; retrospective quality-improvement analysis with no randomisation described.",
+   "intervention.peep_titration_target.titration_frequency: not reported whether PEEP was re-titrated after the initial PL-guided adjustment.",
+   "outcomes: ventilator-free days definition (window, handling of death) not reported; recorded with timepoint.type not_reported.",
+   "mortality timepoint: paper reports 'overall ICU mortality' and 'died within 28 d after ICU admission'; coded as fixed_day 28, but ICU mortality at discharge vs 28-day mortality is not fully disambiguated.",
+   "paired_effects for SpO2/FIO2 at 48/72/96 h: arm_label_a left null because those timepoints have no arm label; only baseline and 24 h map to defined conditions.",
+   "hemodynamics vasoactive drug paired test: Table 2 gives P = .53 without naming the test; McNemar assumed from the Statistical Analysis section.",
+   "Fig. 4 caption text layer shows '‡P = .001' while the rendered image shows '‡P <.001' for Baseline vs 72 h; recorded p_value_verbatim '<.001' per image.",
+   "feasibility.n_placement_attempted/n_placement_successful: derived from N = 20 analysed with no explicit placement-failure reporting."
+  ],
+  "data_only_in_figure": [
+   "SpO2/FIO2 distributions at 24, 48, 72, 96 h (Fig. 4) — only medians/IQRs for baseline and 24 h given in text; later timepoints partly in text but full distributions in figure only"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Retrospective single-centre before/after quality-improvement analysis; the 'comparison' is within-patient before vs after PL-guided adjustment. Supplementary materials (FIO2/PL table, contraindication list) not available in this PDF. Two PL measurement configurations used (Hamilton G5 ventilator in 15/20; bedside monitor with disposable transducer in the remainder)."
+ }
+}

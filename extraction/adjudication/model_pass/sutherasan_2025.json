@@ -1,0 +1,270 @@
+{
+  "study_id": "sutherasan_2025",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[best crs best crs alternative titration conditio]",
+      "decision": "glm",
+      "reason": "Keep GLM's best_crs: role alternative_titration_condition matches the schema definition (a second PEEP-setting strategy under test) and the agreed role of best_cl; PEEP 8.0 (8.0, 13.9) matches.",
+      "evidence": "p. 4 Results 5.1; p. 6 Figure 2"
+    },
+    {
+      "target": "arms[best crs the best crs comparator]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's duplicate best_crs arm (same label kept from GLM); its 'comparator' role is inconsistent with best_cl, a condition of the same kind.",
+      "evidence": "p. 3-4 Outcomes list; Figure 2"
+    },
+    {
+      "target": "arms[ptp ee direct ge0 ptp ee direct 0 cm h2o interve]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's ptp_ee_direct_ge0: same condition kept as DeepSeek's ptp_ee_zero (PEEP 14.0 (11.9, 17.9)). Condition labels follow DeepSeek's vocabulary (ptp_ee_zero, ptp_ei_limit, eit_balance, cohort) so every kept outcome references a kept arm.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "arms[ptp ee zero the lowest peep providing the ptp ee]",
+      "decision": "deepseek",
+      "reason": "Keep: lowest PEEP providing Ptp_ee_direct >= 0, PEEP 14.0 (11.9, 17.9), label verbatim from the Outcomes list. Condition labels follow DeepSeek's vocabulary (ptp_ee_zero, ptp_ei_limit, eit_balance, cohort) so every kept outcome references a kept arm.",
+      "evidence": "p. 4 Outcomes item 3; Results 5.1"
+    },
+    {
+      "target": "arms[ptp ei derived le25 ptp ei derived 25 cm h2o alt]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's ptp_ei_derived_le25: same condition kept as DeepSeek's ptp_ei_limit. Condition labels follow DeepSeek's vocabulary (ptp_ee_zero, ptp_ei_limit, eit_balance, cohort) so every kept outcome references a kept arm.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "arms[ptp ei limit the peep providing the upper limit]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptp_ei_derived <= 25 is an esophageal-pressure-derived (EL/ERS) titration, so role intervention is correct; PEEP 12.0 (10.0, 13.9) matches.",
+      "evidence": "p. 3 formulas 3 and 6; p. 4 Results 5.1"
+    },
+    {
+      "target": "arms[eit crossing crossing point by eit alternative t]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's eit_crossing: same condition kept as DeepSeek's eit_balance. Condition labels follow DeepSeek's vocabulary (ptp_ee_zero, ptp_ei_limit, eit_balance, cohort) so every kept outcome references a kept arm.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "arms[eit balance the peep from the eit analysis balan]",
+      "decision": "deepseek",
+      "reason": "Keep: EIT balance of overdistension and collapse, PEEP 13.01 (9.88, 14.78) matches; label verbatim from the Outcomes list.",
+      "evidence": "p. 4 Outcomes item 5; Results 5.1"
+    },
+    {
+      "target": "arms[all patients all n 21 single group]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's all_patients: the single-group label is kept as DeepSeek's cohort, which the kept SpO2/FiO2 outcomes reference.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "arms[cohort all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep the single-group arm referenced by the kept SpO2/FiO2 outcomes; N = 21 analysed.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "outcomes[ventilator settings optimal peep level continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Medians/IQRs for all five methods and p = 0.001 (omnibus), 0.001 (Ptp_ee vs Crs), 0.002 (Ptp_ee vs CL) are identical in both; DeepSeek's labels match the kept arms and add n_pairs. Omnibus test: Methods state one-way ANOVA for comparisons of more than two groups.",
+      "evidence": "p. 4 Results 5.1 and Statistical analysis; p. 6 Figure 2"
+    },
+    {
+      "id": "2413136a2e",
+      "decision": "glm",
+      "reason": "No test is attributed to the pairwise OP comparisons; the 'Bonferroni-adjusted p < 0.05' phrase on p. 4 belongs to the SpO2/FiO2 comparisons at subsequent PEEP levels.",
+      "evidence": "p. 4, end of Results 5.1 (left column running into right column)"
+    },
+    {
+      "id": "6fb7923860",
+      "decision": "glm",
+      "reason": "No test is attributed to the pairwise OP comparisons; the 'Bonferroni-adjusted p < 0.05' phrase on p. 4 belongs to the SpO2/FiO2 comparisons at subsequent PEEP levels.",
+      "evidence": "p. 4, end of Results 5.1 (left column running into right column)"
+    },
+    {
+      "id": "813ffc7acd",
+      "decision": "unclear",
+      "reason": "Real reported contrast, but GLM gives no arm labels. Figure 2 bracket p = 0.009 spans Best Crs to Crossing point by EIT: needs arm_label_a best_crs, arm_label_b eit_balance.",
+      "evidence": "p. 6, Figure 2"
+    },
+    {
+      "id": "611cd178bf",
+      "decision": "unclear",
+      "reason": "Real reported contrast, but GLM gives no arm labels. Figure 2 bracket p = 0.039 spans Best Crs to Ptp_ei_derived <= 25: needs best_crs vs ptp_ei_limit.",
+      "evidence": "p. 6, Figure 2"
+    },
+    {
+      "id": "945bb4a6a2",
+      "decision": "unclear",
+      "reason": "Real reported contrast, but GLM gives no arm labels. Figure 2 bracket p = 0.021 spans Best Clung to Crossing point by EIT: needs best_cl vs eit_balance.",
+      "evidence": "p. 6, Figure 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep DeepSeek's SpO2/FiO2 pre-recruitment 146.97 +/- 58.20, the pre-intervention comparator for the post-RM value; GLM's PaO2/FiO2 115.16 +/- 28.17 is a Table 1 baseline characteristic already kept in population.pao2_fio2_baseline by both reviewers.",
+      "evidence": "p. 4 Results 5.1; p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation spo fio ratio continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "DeepSeek records post-RM SpO2/FiO2 150.29 +/- 58.79 as its own timepoint; GLM packs pre and post values into one repeated-measures outcome with two data entries on the same arm label and wrongly marks the post-RM value derived. The pre-RM value is kept in the baseline outcome.",
+      "evidence": "p. 4 Results 5.1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics airway plateau pressure at @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Plateau medians 25.9/26.2/31.3/28.4/28.93 and six pairwise p-values (0.001, 0.011, 0.011, 0.001, 0.013, 0.027) are identical in both and match the text and Figure 3; DeepSeek's labels match the kept arms. Note: DeepSeek's test_used 'Bonferroni-adjusted' is not supported for these contrasts (the Bonferroni phrase on p. 4 refers to the SpO2/FiO2 comparisons); the p-values themselves are correct.",
+      "evidence": "p. 4 Results 5.2; p. 6 Figure 3"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp ee direct at optimal @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's Ptp_ee_direct at OP: the same readings (-2.3, -2.3, -1.5, 0.4 (0.6, 1.0); p < 0.001 twice) are kept in DeepSeek's end-expiratory transpulmonary pressure outcome with the kept arm labels.",
+      "evidence": "p. 4-5 Results 5.3"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptp ei derived elastance @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's Ptp_ei_derived at OP: the same readings (24.74/21.00/21.04; p 0.042, 0.046) are kept in DeepSeek's elastance-derived outcome with the kept arm labels.",
+      "evidence": "p. 4 Results 5.2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure directly measured vs ela @repeated measures]",
+      "decision": "glm",
+      "reason": "Ptp_ei_direct was lower than Ptp_ei_derived with mean difference 10.91 +/- 3.82, so derived minus direct is +10.91 as GLM codes it; DeepSeek writes 'Ptp_ei_direct minus Ptp_ei_derived' with +10.91, the wrong sign.",
+      "evidence": "p. 5 Results 5.4"
+    },
+    {
+      "target": "outcomes[other eit derived percentage of overdistension c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's overdistension outcome: identical readings (17, 0, 5, 10.5, 6.8 %; p 0.002, 0.004) kept in DeepSeek's EIT overdistension outcome with kept arm labels.",
+      "evidence": "p. 4 Results 5.2"
+    },
+    {
+      "target": "outcomes[other eit measured percentage of lung collapse c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's collapse outcome: identical readings (Crs 13 (6, 19); Ptp_ee 1.5 (0.0, 7.5)) kept in DeepSeek's EIT collapse outcome with kept arm labels.",
+      "evidence": "p. 5 Results 5.3"
+    },
+    {
+      "target": "outcomes[hemodynamics hr sv co ppv during decremental pee @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM bundles four hemodynamic variables and two analyses into one outcome with list-valued p_value_verbatim; DeepSeek records each variable and analysis separately with the same p-values.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory transpulm @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptp_ee_direct at OP, Crs -2.3 (-4.2, -0.8), CL -2.3 (-4.5, -0.8), EIT -1.5 (-2.9, 1.7), Ptp_ee 0.4 (0.6, 1.0) as printed; p < 0.001 vs Crs and CL. Note: DeepSeek's test_used 'Bonferroni-adjusted' is not supported for these contrasts (the Bonferroni phrase on p. 4 refers to the SpO2/FiO2 comparisons); the p-values themselves are correct.",
+      "evidence": "p. 4-5 Results 5.3; p. 7 Figure 4"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure elastance derived end in @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ptp_ei_derived means 24.74 +/- 4.79 (Ptp_ee), 21.00 +/- 4.54 (CL), 21.04 +/- 4.17 (Crs); p 0.042 and 0.046. Note: DeepSeek's test_used 'Bonferroni-adjusted' is not supported for these contrasts (the Bonferroni phrase on p. 4 refers to the SpO2/FiO2 comparisons); the p-values themselves are correct.",
+      "evidence": "p. 4 Results 5.2"
+    },
+    {
+      "target": "outcomes[other eit derived overdistension percentage at o @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: EIT overdistension 17 (6, 22) Ptp_ee, 0 (0, 8.5) Crs, 5 (0, 9) CL, 10.5 (0, 22) Ptp_ei, 6.8 (4.0, 10.8) EIT; p 0.002 and 0.004. Note: DeepSeek's test_used 'Bonferroni-adjusted' is not supported for these contrasts (the Bonferroni phrase on p. 4 refers to the SpO2/FiO2 comparisons); the p-values themselves are correct.",
+      "evidence": "p. 4 Results 5.2"
+    },
+    {
+      "target": "outcomes[other eit derived collapse percentage at op cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: EIT collapse Crs 13 (6, 19), Ptp_ee 1.5 (0.0, 7.5); other conditions not reported (the Conclusion's (6, 21) for Crs is an inconsistency in the paper).",
+      "evidence": "p. 5 Results 5.3"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate during titration continu @repeated measures]",
+      "decision": "deepseek",
+      "reason": "HR during decremental titration, p = 1.000; GLM had it only inside a bundled outcome.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics stroke volume during titration cont @repeated measures]",
+      "decision": "deepseek",
+      "reason": "SV during decremental titration, p = 0.992.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac output during titration con @repeated measures]",
+      "decision": "deepseek",
+      "reason": "CO during decremental titration, p = 0.990.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics pulse pressure variation during tit @repeated measures]",
+      "decision": "deepseek",
+      "reason": "PPV declined during titration, p = 0.375; GLM omitted it.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate at op continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "HR at OP across the five methods, Kruskal-Wallis p = 0.987.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac output at op continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "CO at OP across the five methods, Kruskal-Wallis p = 0.992.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "target": "outcomes[hemodynamics pulse pressure variation at op cont @crossover condition]",
+      "decision": "deepseek",
+      "reason": "PPV at OP across the five methods, Kruskal-Wallis p = 0.975.",
+      "evidence": "p. 5 Results 5.5"
+    },
+    {
+      "id": "9c65c369d6",
+      "decision": "deepseek",
+      "reason": "The comparators are the best-Crs and best-CL PEEPs (best_compliance_peep) and the EIT crossing point (other); the decremental PEEP trial is the shared measurement procedure for all five methods, including the Ptp ones, not a comparator.",
+      "evidence": "p. 3 Outcomes list; Methods 2.2.3"
+    },
+    {
+      "id": "9bc90061a7",
+      "decision": "deepseek",
+      "reason": "EIT balance of overdistension and collapse has no specific comparator code, so 'other' is correct alongside best_compliance_peep.",
+      "evidence": "p. 4 Outcomes item 5"
+    },
+    {
+      "id": "c524bab2c3",
+      "decision": "deepseek",
+      "reason": "A prospective observational study in which all five OPs were derived from one decremental PEEP trial in every patient; there was no allocation, so randomised is false by construction.",
+      "evidence": "p. 2 Methods; p. 5 Discussion para 1"
+    },
+    {
+      "id": "82f22067fa",
+      "decision": "deepseek",
+      "reason": "The flow chart lists balloon insertion as a protocol step for the 26 eligible patients but never states how many placements succeeded; 26 is an inference.",
+      "evidence": "p. 3 Figure 1"
+    },
+    {
+      "id": "9206ca556a",
+      "decision": "glm",
+      "reason": "Patients were deeply sedated on cisatracurium, i.e. passive; the codebook codes the occlusion test in passive patients as dynamic_occlusion_test (Baydur is the spontaneous-effort version).",
+      "evidence": "p. 2 Methods 2.2 and 2.2.1"
+    },
+    {
+      "id": "2f2383787a",
+      "decision": "glm",
+      "reason": "Balloon insertion is the first protocol step after eligibility (Figure 1); timing is known only relative to study entry, which the codebook codes as enrolment (timing_subgroup stays unclear).",
+      "evidence": "p. 3 Figure 1; CODEBOOK timing ruling"
+    },
+    {
+      "id": "56490eac20",
+      "decision": "glm",
+      "reason": "26 eligible patients entered the protocol (balloon, EIT, RM); 5 were excluded afterwards for RM instability or incomplete EIT data, leaving 21 analysed. n_enrolled is 26; 21 is n_analysed.",
+      "evidence": "p. 3 Figure 1; p. 4 Results 5.1"
+    },
+    {
+      "id": "bdaa33edda",
+      "decision": "glm",
+      "reason": "The method is the lowest PEEP giving Ptp_ee_direct >= 0, which titrates end-expiratory Ptp to about zero rather than to a positive range.",
+      "evidence": "p. 4 Outcomes item 3; p. 2 Introduction"
+    }
+  ]
+}

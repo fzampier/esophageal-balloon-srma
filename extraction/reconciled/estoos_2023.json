@@ -1,0 +1,3474 @@
+{
+ "record_meta": {
+  "study_id": "estoos_2023",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/1-s2.0-S0883944123000230-main.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 139 reviewer differences: 107 in scope. Settled by human rulings 20, model rulings 84, content-neutral rules 6; 25 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 4 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Estoos",
+  "year": 2023,
+  "title": "Optimal positive end-expiratory pressure reduces right ventricular dysfunction in COVID-19 patients on venovenous extracorporeal membrane oxygenation: A retrospective single-center study",
+  "journal": "Journal of Critical Care",
+  "doi": "10.1016/j.jcrc.2023.154274",
+  "pmid": null,
+  "trial_registration": null,
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021. All patients were hospitalized at OHSU, an academic medical center in Portland, OR with an intensivist-run VV ECMO program",
+     "location": "Methods, Study design and setting, para 1"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Prior to January 2021, our VV ECMO program routinely utilized pressure control ventilation with an inspiratory pressure of 10 cm H2O, PEEP of 10 cm H2O, and a rate of 10 breaths per minute.",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "All patients were hospitalized at OHSU, an academic medical center in Portland, OR with an intensivist-run VV ECMO program",
+     "location": "Methods, Study design and setting, para 1"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Starting in January 2021, our program switched to an optimal PEEP strategy wherein PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Secondary outcomes included ECMO duration, survival to ECMO decannulation, survival to hospital discharge, incidence of barotrauma, and intensive care unit (ICU) and hospital length of stay (LOS).",
+     "location": "Methods, Outcome measures"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Of the 69 included patients, 25 were in the standard PEEP group and 44 in the optimal PEEP group.",
+     "location": "Results, para 1"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+     "location": "Methods, Study design and setting, para 1"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "J Crit Care 75 (2023) 154274",
+     "location": "Page 1 header"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "retrospective_cohort",
+  "study_design_verbatim": {
+   "value": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+   "provenance": {
+    "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "comparison_structure": "parallel_arms",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": null,
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "derived": true,
+   "derivation": "Single center stated in title and methods; all patients hospitalized at OHSU.",
+   "provenance": {
+    "quote": "All patients were hospitalized at OHSU, an academic medical center in Portland, OR",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "countries": [
+   "United States"
+  ],
+  "location_provenance": {
+   "quote": "Department of Pulmonary and Critical Care Medicine, Oregon Health & Science University, 3181 S.W. Sam Jackson Park Road, Portland, OR 97239, United States of America",
+   "location": "Author affiliations, p. 1"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": null,
+  "stopped_early": null,
+  "stopping_rule": null,
+  "setting": {
+   "value": "Academic ICU (ECMO Center)",
+   "provenance": {
+    "quote": "All patients were hospitalized at OHSU, an academic medical center in Portland, OR with an intensivist-run VV ECMO program that was recently awarded a Platinum Level Center for Excellence Award by the Extracorporeal Life Support Organization (ELSO).",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "enrolment_start": "2020-03",
+  "enrolment_end": "2021-11",
+  "consecutive_enrolment": true,
+  "funding_source": {
+   "value": "This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",
+   "provenance": {
+    "quote": "This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",
+    "location": "Disclosures, p. 4"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 69,
+   "provenance": {
+    "quote": "Of the 69 included patients, 25 were in the standard PEEP group and 44 in the optimal PEEP group.",
+    "location": "Results, para 1"
+   }
+  },
+  "n_analysed": {
+   "value": 69,
+   "provenance": {
+    "quote": "Outcome ... All patients (n = 69) ... Optimal PEEP group (n = 44) ... Standard PEEP group (n = 25)",
+    "location": "Table 3, column headers"
+   }
+  },
+  "population_description": {
+   "value": "All COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021",
+   "provenance": {
+    "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "All COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021",
+   "provenance": {
+    "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "Three were excluded with two being transferred immediately after cannulation to other centers given capacity limitations and one dying during cannulation after an arterial injury.",
+   "provenance": {
+    "quote": "Seventy-two patients were identified. Three were excluded with two being transferred immediately after cannulation to other centers given capacity limitations and one dying during cannulation after an arterial injury.",
+    "location": "Results, para 1"
+   }
+  },
+  "age": {
+   "value_type": null,
+   "value": 46.6,
+   "dispersion_type": null,
+   "dispersion": null,
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "n": 69,
+   "unit": "yr",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Age (yr) — 46.6 (All Patients n = 69)",
+    "location": "Table 1, row: Age (yr)"
+   }
+  },
+  "sex_female": {
+   "n": 21,
+   "total": 69,
+   "derived": true,
+   "derivation": "69 patients minus 48 male; the table reports male sex only",
+   "provenance": {
+    "quote": "Male, n (%) 48 (69.6)",
+    "location": "Table 1, row: Male, All Patients (n = 69), p. 2"
+   }
+  },
+  "sex_male": {
+   "n": 48,
+   "total": 69,
+   "percent_as_reported": 69.6,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Male, n (%) — 48 (69.6) [All Patients]",
+    "location": "Table 1, row: Male, n (%)"
+   }
+  },
+  "bmi": {
+   "value_type": "median",
+   "value": 39.5,
+   "dispersion_type": null,
+   "dispersion": null,
+   "dispersion_low": null,
+   "dispersion_high": null,
+   "n": 69,
+   "unit": "kg/m2",
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Body Mass Index, median (kg/m2) — 39.5 [All Patients]",
+    "location": "Table 1, row: Body Mass Index, median (kg/m2)"
+   }
+  },
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": null,
+  "n_ards": {
+   "n": 69,
+   "total": 69,
+   "derived": true,
+   "derivation": "All patients are described as having COVID-19 ARDS and initiated on VV ECMO; n_ards equals total included.",
+   "provenance": {
+    "quote": "COVID-19 ARDS patients requiring VV ECMO",
+    "location": "Methods, Intervention, para 1"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "all",
+  "cause_of_respiratory_failure": {
+   "value": "COVID-19",
+   "provenance": {
+    "quote": "This was a retrospective study of all COVID-19 ECMO patients initiated on VV ECMO from March 2020 through November 2021.",
+    "location": "Methods, Study design and setting, para 1"
+   }
+  },
+  "pao2_fio2_baseline": null,
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": {
+   "n": 64,
+   "total": 69,
+   "percent_as_reported": 92.8,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Pre-ECMO proning, n (%) — 64 (92.8) [All Patients]",
+    "location": "Table 1, row: Pre-ECMO proning, n (%)"
+   }
+  },
+  "n_neuromuscular_blockade": {
+   "n": 65,
+   "total": 69,
+   "percent_as_reported": 94.2,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Paralytics, n (%) — 65 (94.2) [All Patients]",
+    "location": "Table 1, row: Paralytics, n (%)"
+   }
+  },
+  "n_ecmo": {
+   "n": 69,
+   "total": 69,
+   "percent_as_reported": null,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Of the 69 included patients, 25 were in the standard PEEP group and 44 in the optimal PEEP group.",
+    "location": "Results, para 1"
+   }
+  },
+  "n_vasopressors": {
+   "n": 40,
+   "total": 69,
+   "percent_as_reported": 58.0,
+   "derived": false,
+   "derivation": null,
+   "provenance": {
+    "quote": "Vasopressor, n (%) — 40 (58.0) [All Patients, pre-ECMO]",
+    "location": "Table 1, row: Vasopressor, n (%)"
+   }
+  },
+  "additional_baseline": [
+   {
+    "name_verbatim": "Murray Score, median",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 3.75,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Murray Score, median — 3.75 [All Patients]",
+      "location": "Table 1, row: Murray Score, median"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Pre-ECMO ventilator days",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": 3.38,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Pre-ECMO ventilator days — 3.38 [All Patients]",
+      "location": "Table 1, row: Pre-ECMO ventilator days"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "HFNC, n (%)",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 56,
+     "total": 69,
+     "percent_as_reported": 81.2,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "HFNC, n (%) — 56 (81.2) [All Patients]",
+      "location": "Table 1, row: HFNC, n (%)"
+     }
+    }
+   },
+   {
+    "name_verbatim": "NIPPV, n (%)",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 28,
+     "total": 69,
+     "percent_as_reported": 40.6,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "NIPPV, n (%) — 28 (40.6) [All Patients]",
+      "location": "Table 1, row: NIPPV, n (%)"
+     }
+    }
+   },
+   {
+    "name_verbatim": "ABG prior to cannulation: pH",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": 7.26,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "pH — 7.26 [All Patients]",
+      "location": "Table 1, section: ABG prior to cannulation, row: pH"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "ABG prior to cannulation: pCO2 (mmHg)",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": 68.4,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "pCO2 (mmHg) — 68.4 [All Patients]",
+      "location": "Table 1, section: ABG prior to cannulation, row: pCO2 (mmHg)"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "ABG prior to cannulation: pO2 (mm Hg)",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": 73.9,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "pO2 (mm Hg) — 73.9 [All Patients]",
+      "location": "Table 1, section: ABG prior to cannulation, row: pO2 (mm Hg)"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "ABG prior to cannulation: Bicarbonate (mEq/L)",
+    "arm_label": null,
+    "continuous": {
+     "value_type": null,
+     "value": 29.6,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 69,
+     "unit": "mEq/L",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Bicarbonate (mEq/L) — 29.6 [All Patients]",
+      "location": "Table 1, section: ABG prior to cannulation, row: Bicarbonate (mEq/L)"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Comorbidities: Hypertension",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 15,
+     "total": 69,
+     "percent_as_reported": 21.7,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Hypertension — 15 (21.7) [All Patients]",
+      "location": "Table 1, section: Comorbidities, row: Hypertension"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Comorbidities: Diabetes Mellitus",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 20,
+     "total": 69,
+     "percent_as_reported": 29.0,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Diabetes Mellitus — 20 (29.0) [All Patients]",
+      "location": "Table 1, section: Comorbidities, row: Diabetes Mellitus"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Comorbidities: Immunocompromised",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 5,
+     "total": 69,
+     "percent_as_reported": 7.25,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Immunocompromised — 5 (7.25) [All Patients]",
+      "location": "Table 1, section: Comorbidities, row: Immunocompromised"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": [
+   {
+    "arm_label": "pes_guided",
+    "n": {
+     "value": 44,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Of the 69 included patients, 25 were in the standard PEEP group and 44 in the optimal PEEP group.",
+      "location": "baseline characteristics table, n per arm"
+     }
+    },
+    "age": {
+     "value_type": null,
+     "value": 43.3,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "yr",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Age (yr) — 46.6 | 43.3 | 52.3 | 0.004",
+      "location": "Table 1, row: Age (yr)"
+     }
+    },
+    "sex_female": {
+     "n": 16,
+     "total": 44,
+     "derived": true,
+     "derivation": "44 patients minus 28 male; the table reports male sex only",
+     "provenance": {
+      "quote": "Male, n (%) 28 (63.6)",
+      "location": "Table 1, row: Male, Optimal PEEP Group (n = 44), p. 2"
+     }
+    },
+    "bmi": {
+     "value_type": "median",
+     "value": 42.5,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "kg/m2",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Body Mass Index, median (kg/m2) — 39.5 | 42.5 | 34.2 | 0.011",
+      "location": "Table 1, row: Body Mass Index, median (kg/m2)"
+     }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "standard_peep",
+    "n": {
+     "value": 25,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Of the 69 included patients, 25 were in the standard PEEP group and 44 in the optimal PEEP group.",
+      "location": "baseline characteristics table, n per arm"
+     }
+    },
+    "age": {
+     "value_type": null,
+     "value": 52.3,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "yr",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Age (yr) — 46.6 | 43.3 | 52.3 | 0.004",
+      "location": "Table 1, row: Age (yr)"
+     }
+    },
+    "sex_female": {
+     "n": 5,
+     "total": 25,
+     "derived": true,
+     "derivation": "25 patients minus 20 male; the table reports male sex only",
+     "provenance": {
+      "quote": "Male, n (%) 20 (80.0)",
+      "location": "Table 1, row: Male, Standard PEEP Group (n = 25), p. 2"
+     }
+    },
+    "bmi": {
+     "value_type": "median",
+     "value": 34.2,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "kg/m2",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Body Mass Index, median (kg/m2) — 39.5 | 42.5 | 34.2 | 0.011",
+      "location": "Table 1, row: Body Mass Index, median (kg/m2)"
+     }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null
+   }
+  ]
+ },
+ "intervention": {
+  "device_brand": null,
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "not_reported",
+   "method_verbatim": null,
+   "position_verification": null,
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "not_reported",
+   "method_verbatim": null,
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_positive_range",
+   "strategy_verbatim": {
+    "value": "PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run",
+    "provenance": {
+     "quote": "Starting in January 2021, our program switched to an optimal PEEP strategy wherein PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run [10].",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "PEEP titrated to an end-expiratory transpulmonary pressure 0-3 cm H2O",
+     "location": "Abstract"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 3,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "PEEP titrated to an end-expiratory transpulmonary pressure 0-3 cm H2O",
+     "location": "Abstract"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "daily",
+    "provenance": {
+     "quote": "PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run",
+     "location": "Methods, Intervention, para 1"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": {
+    "value": "4 ml/kg of ideal body weight or less",
+    "provenance": {
+     "quote": "In both groups, to ensure compliance with ultra-LPV, if necessary, inspiratory pressure was reduced to achieve a tidal volume of 4 ml/kg of ideal body weight or less.",
+     "location": "Methods, Intervention, para 1"
+    }
+   },
+   "plateau_or_ptp_ceiling": null,
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Ultra-lung protective ventilation in both groups; proning on ECMO introduced near the end of the study period and more frequent in the optimal PEEP group.",
+    "provenance": {
+     "quote": "proning while on ECMO was incorporated into our program's practice near the end of the study period, accounting for the difference in prone position rates between the standard and optimal PEEP groups.",
+     "location": "Discussion, limitations, para 1"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "other",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "Starting in January 2021, our program switched to an optimal PEEP strategy ... throughout the ECMO run",
+    "provenance": {
+     "quote": "Starting in January 2021, our program switched to an optimal PEEP strategy wherein PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run",
+     "location": "Methods, Intervention, para 1"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "throughout the ECMO run",
+   "provenance": {
+    "quote": "PEEP was titrated daily using esophageal manometry to an end-expiratory transpulmonary pressure of 0-3 cm H2O throughout the ECMO run",
+    "location": "Methods, Intervention, para 1"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "fixed_peep"
+  ],
+  "comparator_verbatim": {
+   "value": "Prior to January 2021, our VV ECMO program routinely utilized pressure control ventilation with an inspiratory pressure of 10 cm H2O, PEEP of 10 cm H2O, and a rate of 10 breaths per minute. Patients underwent standard PEEP (typically 10 cm H2O)",
+   "provenance": {
+    "quote": "Prior to January 2021, our VV ECMO program routinely utilized pressure control ventilation with an inspiratory pressure of 10 cm H2O, PEEP of 10 cm H2O, and a rate of 10 breaths per minute.",
+    "location": "Methods, Intervention, para 1; also Abstract: 'standard PEEP (typically 10 cm H2O)'"
+   }
+  },
+  "crossover_order": null,
+  "washout_or_stabilisation": null
+ },
+ "arms": [
+  {
+   "label": "pes_guided",
+   "label_verbatim": "Optimal PEEP Group",
+   "role": "intervention",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 44,
+    "provenance": {
+     "quote": "Optimal PEEP group (n = 44)",
+     "location": "Table 1, column header"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": null,
+    "value": 17.9,
+    "dispersion_type": null,
+    "dispersion": null,
+    "dispersion_low": null,
+    "dispersion_high": null,
+    "n": 44,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Mean PEEP on ECMO day 2 (cm H20) — 15.3 | 17.9 | 10.8 | <0.0001",
+     "location": "Table 2, row: Mean PEEP on ECMO day 2 (cm H20)"
+    }
+   }
+  },
+  {
+   "label": "standard_peep",
+   "label_verbatim": "Standard PEEP Group",
+   "role": "comparator",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 25,
+    "provenance": {
+     "quote": "Standard PEEP Group (n = 25)",
+     "location": "Table 1, column header"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": null,
+    "value": 10.8,
+    "dispersion_type": null,
+    "dispersion": null,
+    "dispersion_low": null,
+    "dispersion_high": null,
+    "n": 25,
+    "unit": "cmH2O",
+    "derived": false,
+    "derivation": null,
+    "provenance": {
+     "quote": "Mean PEEP on ECMO day 2 (cm H20) — 15.3 | 17.9 | 10.8 | <0.0001",
+     "location": "Table 2, row: Mean PEEP on ECMO day 2 (cm H20)"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "RV dysfunction post-cannulation",
+   "definition_verbatim": "hemodynamically significant RV dysfunction on echocardiogram (tricuspid annular plane systolic excursion <1.7 cm) requiring inotropic support",
+   "is_primary_outcome": true,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "post-cannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 2,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "RV dysfunction post-cannulation, n (%) — 13 (18.8) | 2 (4.55) | 11 (44.0) | 0.0001",
+      "location": "Table 3, row: RV dysfunction post-cannulation, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 11,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "RV dysfunction post-cannulation, n (%) — 13 (18.8) | 2 (4.55) | 11 (44.0) | 0.0001",
+      "location": "Table 3, row: RV dysfunction post-cannulation, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": "odds_ratio",
+     "value": 0.06,
+     "ci_low": 0.01,
+     "ci_high": 0.27,
+     "ci_level": 95,
+     "p_value": 0.0008,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "univariate logistic regression",
+     "provenance": {
+      "quote": "RV dysfunction-post-cannulation — 0.06 (0.01-0.27) | 0.0008",
+      "location": "Table 4, row: RV dysfunction-post-cannulation, univariate"
+     }
+    },
+    {
+     "type": "odds_ratio",
+     "value": 0.07,
+     "ci_low": 0.004,
+     "ci_high": 0.47,
+     "ci_level": 95,
+     "p_value": 0.02,
+     "p_value_verbatim": null,
+     "adjusted": true,
+     "adjustment_covariates": "age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",
+     "test_used": "multivariate logistic regression",
+     "provenance": {
+      "quote": "RV dysfunction-post-cannulation — 0.07 (0.004-0.47) | 0.02",
+      "location": "Table 4, row: RV dysfunction-post-cannulation, multivariate"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.0001,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "RV dysfunction post-cannulation, n (%) — 13 (18.8) | 2 (4.55) | 11 (44.0) | 0.0001",
+      "location": "Table 3, row: RV dysfunction post-cannulation, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "successful_extubation_or_weaning",
+   "name_verbatim": "Survival to decannulation",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Survival to decannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 32,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Survival to decannulation, n (%) — 43 (62.3) | 32 (72.7) | 11 (44.0) | 0.022",
+      "location": "Table 3, row: Survival to decannulation, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 11,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Survival to decannulation, n (%) — 43 (62.3) | 32 (72.7) | 11 (44.0) | 0.022",
+      "location": "Table 3, row: Survival to decannulation, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": "odds_ratio",
+     "value": 3.39,
+     "ci_low": 1.23,
+     "ci_high": 9.79,
+     "ci_level": 95,
+     "p_value": 0.02,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "univariate logistic regression",
+     "provenance": {
+      "quote": "Survival to decannulation — 3.39 (1.23-9.79) | 0.02",
+      "location": "Table 4, row: Survival to decannulation, univariate"
+     }
+    },
+    {
+     "type": "odds_ratio",
+     "value": 2.86,
+     "ci_low": 0.75,
+     "ci_high": 12.06,
+     "ci_level": 95,
+     "p_value": 0.13,
+     "p_value_verbatim": null,
+     "adjusted": true,
+     "adjustment_covariates": "age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",
+     "test_used": "multivariate logistic regression",
+     "provenance": {
+      "quote": "Survival to decannulation — 2.86 (0.75-12.06) | 0.13",
+      "location": "Table 4, row: Survival to decannulation, multivariate"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.022,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Survival to decannulation, n (%) — 43 (62.3) | 32 (72.7) | 11 (44.0) | 0.022",
+      "location": "Table 3, row: Survival to decannulation, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "Survival to discharge",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "hospital_discharge",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Survival to discharge"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 27,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Survival to discharge, n (%) — 38 (55.1) | 27 (61.4) | 11 (44.0) | 0.211",
+      "location": "Table 3, row: Survival to discharge, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 11,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Survival to discharge, n (%) — 38 (55.1) | 27 (61.4) | 11 (44.0) | 0.211",
+      "location": "Table 3, row: Survival to discharge, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": "odds_ratio",
+     "value": 2.02,
+     "ci_low": 0.75,
+     "ci_high": 5.58,
+     "ci_level": 95,
+     "p_value": 0.17,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "univariate logistic regression",
+     "provenance": {
+      "quote": "Survival to discharge — 2.02 (0.75-5.58) | 0.17",
+      "location": "Table 4, row: Survival to discharge, univariate"
+     }
+    },
+    {
+     "type": "odds_ratio",
+     "value": 1.94,
+     "ci_low": 0.5,
+     "ci_high": 8.13,
+     "ci_level": 95,
+     "p_value": 0.34,
+     "p_value_verbatim": null,
+     "adjusted": true,
+     "adjustment_covariates": "age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",
+     "test_used": "multivariate logistic regression",
+     "provenance": {
+      "quote": "Survival to discharge — 1.94 (0.50-8.13) | 0.34",
+      "location": "Table 4, row: Survival to discharge, multivariate"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.211,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Survival to discharge, n (%) — 38 (55.1) | 27 (61.4) | 11 (44.0) | 0.211",
+      "location": "Table 3, row: Survival to discharge, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "Overall mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "hospital_discharge",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Overall mortality"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 17,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Overall mortality, n (%) — 31 (44.9) | 17 (38.6) | 14 (56.0) | 0.211",
+      "location": "Table 3, row: Overall mortality, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 14,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Overall mortality, n (%) — 31 (44.9) | 17 (38.6) | 14 (56.0) | 0.211",
+      "location": "Table 3, row: Overall mortality, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.211,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Overall mortality, n (%) — 31 (44.9) | 17 (38.6) | 14 (56.0) | 0.211",
+      "location": "Table 3, row: Overall mortality, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Barotrauma on ECMO",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "on ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 16,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Barotrauma on ECMO, n (%) — 23 (33.3) | 16 (36.4) | 7 (28.0) | 0.598",
+      "location": "Table 3, row: Barotrauma on ECMO, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 7,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Barotrauma on ECMO, n (%) — 23 (33.3) | 16 (36.4) | 7 (28.0) | 0.598",
+      "location": "Table 3, row: Barotrauma on ECMO, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": "odds_ratio",
+     "value": 0.49,
+     "ci_low": 0.14,
+     "ci_high": 1.62,
+     "ci_level": 95,
+     "p_value": 0.24,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "univariate logistic regression",
+     "provenance": {
+      "quote": "Barotrauma on ECMO — 0.49 (0.14-1.62) | 0.24",
+      "location": "Table 4, row: Barotrauma on ECMO, univariate"
+     }
+    },
+    {
+     "type": "odds_ratio",
+     "value": 0.86,
+     "ci_low": 0.2,
+     "ci_high": 3.52,
+     "ci_level": 95,
+     "p_value": 0.84,
+     "p_value_verbatim": null,
+     "adjusted": true,
+     "adjustment_covariates": "age, history of hypertension, history of diabetes, admission to hospital after 7/1/2021",
+     "test_used": "multivariate logistic regression",
+     "provenance": {
+      "quote": "Barotrauma on ECMO — 0.86 (0.20-3.52) | 0.84",
+      "location": "Table 4, row: Barotrauma on ECMO, multivariate"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.598,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Barotrauma on ECMO, n (%) — 23 (33.3) | 16 (36.4) | 7 (28.0) | 0.598",
+      "location": "Table 3, row: Barotrauma on ECMO, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Pneumothorax",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "on ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 9,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Pneumothorax — 13 (18.8) | 9 (20.5) | 4 (16.0) | 0.756",
+      "location": "Table 3, row: Pneumothorax"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 4,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Pneumothorax — 13 (18.8) | 9 (20.5) | 4 (16.0) | 0.756",
+      "location": "Table 3, row: Pneumothorax"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.756,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Pneumothorax — 13 (18.8) | 9 (20.5) | 4 (16.0) | 0.756",
+      "location": "Table 3, row: Pneumothorax"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Chest tube inserted",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "on ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 7,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Chest tube inserted — 10 (14.5) | 7 (15.9) | 3 (12.0) | 0.737",
+      "location": "Table 3, row: Chest tube inserted"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 3,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Chest tube inserted — 10 (14.5) | 7 (15.9) | 3 (12.0) | 0.737",
+      "location": "Table 3, row: Chest tube inserted"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.737,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Chest tube inserted — 10 (14.5) | 7 (15.9) | 3 (12.0) | 0.737",
+      "location": "Table 3, row: Chest tube inserted"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "ECMO duration",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ECMO duration (days)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 22.0,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ECMO duration (days) — 22.0 | 22.0 | 21.9 | 0.497",
+      "location": "Table 3, row: ECMO duration (days)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 21.9,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ECMO duration (days) — 22.0 | 22.0 | 21.9 | 0.497",
+      "location": "Table 3, row: ECMO duration (days)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.497,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "ECMO duration (days) — 22.0 | 22.0 | 21.9 | 0.497",
+      "location": "Table 3, row: ECMO duration (days)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "icu_length_of_stay",
+   "name_verbatim": "ICU LOS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ICU LOS (days)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 30.43,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU LOS (days) — 28.84 | 30.43 | 26.32 | 0.174",
+      "location": "Table 3, row: ICU LOS (days)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 26.32,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "ICU LOS (days) — 28.84 | 30.43 | 26.32 | 0.174",
+      "location": "Table 3, row: ICU LOS (days)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.174,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "ICU LOS (days) — 28.84 | 30.43 | 26.32 | 0.174",
+      "location": "Table 3, row: ICU LOS (days)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "hospital_length_of_stay",
+   "name_verbatim": "Hospital LOS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Hospital LOS (days)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 40.82,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Hospital LOS (days) — 38.88 | 40.82 | 35.48 | 0.553",
+      "location": "Table 3, row: Hospital LOS (days)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 35.48,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "days",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Hospital LOS (days) — 38.88 | 40.82 | 35.48 | 0.553",
+      "location": "Table 3, row: Hospital LOS (days)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.553,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Hospital LOS (days) — 38.88 | 40.82 | 35.48 | 0.553",
+      "location": "Table 3, row: Hospital LOS (days)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Mean PEEP on ECMO day 2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "sequence_position": null,
+    "days": 2,
+    "hours": null,
+    "label_verbatim": "ECMO day 2"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 17.9,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 2 (cm H20) 15.3 17.9 10.8 <0.0001",
+      "location": "Table 2, row: Mean PEEP on ECMO day 2"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 10.8,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 2 (cm H20) 15.3 17.9 10.8 <0.0001",
+      "location": "Table 2, row: Mean PEEP on ECMO day 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": null,
+     "p_value_verbatim": "<0.0001",
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 2 (cm H20) — 15.3 | 17.9 | 10.8 | <0.0001",
+      "location": "Table 2, row: Mean PEEP on ECMO day 2 (cm H20)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Mean PEEP on ECMO day 7",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "sequence_position": null,
+    "days": 7,
+    "hours": null,
+    "label_verbatim": "ECMO day 7"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 14.1,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 7 (cm H20) 13.4 14.1 11.5 0.079",
+      "location": "Table 2, row: Mean PEEP on ECMO day 7"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 11.5,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 7 (cm H20) 13.4 14.1 11.5 0.079",
+      "location": "Table 2, row: Mean PEEP on ECMO day 7"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.079,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean PEEP on ECMO day 7 (cm H20) — 13.4 | 14.1 | 11.5 | 0.079",
+      "location": "Table 2, row: Mean PEEP on ECMO day 7 (cm H20)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Mean driving pressure on ECMO day 2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "sequence_position": null,
+    "days": 2,
+    "hours": null,
+    "label_verbatim": "ECMO day 2"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 9.53,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 2 (cm H20) 9.37 9.53 10.2 0.665",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 2"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 10.2,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 2 (cm H20) 9.37 9.53 10.2 0.665",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.665,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 2 (cm H20) — 9.37 | 9.53 | 10.2 | 0.665",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 2 (cm H20)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Mean driving pressure on ECMO day 7",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "sequence_position": null,
+    "days": 7,
+    "hours": null,
+    "label_verbatim": "ECMO day 7"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 10.6,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 7 (cm H20) 10.5 10.6 10.1 0.370",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 7"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 10.1,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 7 (cm H20) 10.5 10.6 10.1 0.370",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 7"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.37,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean driving pressure on ECMO day 7 (cm H20) — 10.5 | 10.6 | 10.1 | 0.370",
+      "location": "Table 2, row: Mean driving pressure on ECMO day 7 (cm H20)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "successful_extubation_or_weaning",
+   "name_verbatim": "Extubated on ECMO",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "on ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 3,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Extubated on ECMO, n (%) — 21 (30.4) | 3 (6.82) | 18 (72.0) | <0.0001",
+      "location": "Table 2, row: Extubated on ECMO, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 18,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Extubated on ECMO, n (%) — 21 (30.4) | 3 (6.82) | 18 (72.0) | <0.0001",
+      "location": "Table 2, row: Extubated on ECMO, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": null,
+     "p_value_verbatim": "<0.0001",
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Extubated on ECMO, n (%) — 21 (30.4) | 3 (6.82) | 18 (72.0) | <0.0001",
+      "location": "Table 2, row: Extubated on ECMO, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "successful_extubation_or_weaning",
+   "name_verbatim": "Reintubated",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": null
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 2,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Reintubated, n (%) — 12 (17.4) | 2 (4.55) | 10 (40.0) | 0.0004",
+      "location": "Table 2, row: Reintubated, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 10,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Reintubated, n (%) — 12 (17.4) | 2 (4.55) | 10 (40.0) | 0.0004",
+      "location": "Table 2, row: Reintubated, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.0004,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Reintubated, n (%) — 12 (17.4) | 2 (4.55) | 10 (40.0) | 0.0004",
+      "location": "Table 2, row: Reintubated, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "Proning on ECMO",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": null
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 10,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Proning on ECMO, n (%) — 10 (14.5) | 10 (22.7) | 0 (0) | 0.011",
+      "location": "Table 2, row: Proning on ECMO, n (%)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 0,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Proning on ECMO, n (%) — 10 (14.5) | 10 (22.7) | 0 (0) | 0.011",
+      "location": "Table 2, row: Proning on ECMO, n (%)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.011,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Proning on ECMO, n (%) — 10 (14.5) | 10 (22.7) | 0 (0) | 0.011",
+      "location": "Table 2, row: Proning on ECMO, n (%)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "ABG prior to cannulation: pO2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "sequence_position": null,
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ABG prior to cannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 68.7,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "pO2 (mm Hg) — 73.9 | 68.7 | 83.1 | 0.160",
+      "location": "Table 1, section: ABG prior to cannulation, row: pO2 (mm Hg)"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": null,
+     "value": 83.1,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "mm Hg",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "pO2 (mm Hg) — 73.9 | 68.7 | 83.1 | 0.160",
+      "location": "Table 1, section: ABG prior to cannulation, row: pO2 (mm Hg)"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "p_value": 0.16,
+     "p_value_verbatim": null,
+     "adjusted": null,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "pO2 (mm Hg) — 73.9 | 68.7 | 83.1 | 0.160",
+      "location": "Table 1, section: ABG prior to cannulation, row: pO2 (mm Hg)"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Tracheostomy",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "during ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 24,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tracheostomy, n (%) 35 (50.1) 24 (54.5) 11 (44.0) 0.458",
+      "location": "Table 2, row: Tracheostomy"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 11,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Tracheostomy, n (%) 35 (50.1) 24 (54.5) 11 (44.0) 0.458",
+      "location": "Table 2, row: Tracheostomy"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.458,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Tracheostomy, n (%) 35 (50.1) 24 (54.5) 11 (44.0) 0.458",
+      "location": "Table 2, row: Tracheostomy"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "VTE",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "during ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 25,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "VTE, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: VTE"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 12,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "VTE, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: VTE"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.616,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "VTE, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: VTE"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "Vasopressors",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "during ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 40,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Vasopressors, n (%) 59 (85.5) 40 (90.9) 19 (76.0) 0.152",
+      "location": "Table 2, row: Vasopressors"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 19,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Vasopressors, n (%) 59 (85.5) 40 (90.9) 19 (76.0) 0.152",
+      "location": "Table 2, row: Vasopressors"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.152,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Vasopressors, n (%) 59 (85.5) 40 (90.9) 19 (76.0) 0.152",
+      "location": "Table 2, row: Vasopressors"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "CRRT",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "during ECMO"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 25,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "CRRT, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: CRRT"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 12,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "CRRT, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: CRRT"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.616,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "CRRT, n (%) 37 (53.6) 25 (56.8) 12 (48.0) 0.616",
+      "location": "Table 2, row: CRRT"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Sedative infusion at ECMO day 2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 2,
+    "label_verbatim": "ECMO day 2"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 37,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 2, n (%) 55 (79.7) 37 (84.1) 18 (72.0) 0.350",
+      "location": "Table 2, row: Sedative infusion at ECMO day 2"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 18,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 2, n (%) 55 (79.7) 37 (84.1) 18 (72.0) 0.350",
+      "location": "Table 2, row: Sedative infusion at ECMO day 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.35,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 2, n (%) 55 (79.7) 37 (84.1) 18 (72.0) 0.350",
+      "location": "Table 2, row: Sedative infusion at ECMO day 2"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Sedative infusion at ECMO day 7",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 7,
+    "label_verbatim": "ECMO day 7"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 36,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 7, n (%) 48 (69.6) 36 (81.8) 12 (48.0) 0.006",
+      "location": "Table 2, row: Sedative infusion at ECMO day 7"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 12,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 7, n (%) 48 (69.6) 36 (81.8) 12 (48.0) 0.006",
+      "location": "Table 2, row: Sedative infusion at ECMO day 7"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.006,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Sedative infusion at ECMO day 7, n (%) 48 (69.6) 36 (81.8) 12 (48.0) 0.006",
+      "location": "Table 2, row: Sedative infusion at ECMO day 7"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "RASS at ECMO day 2",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 2,
+    "label_verbatim": "ECMO day 2"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": -2.27,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 2 −2.16 −2.27 −1.96 0.219",
+      "location": "Table 2, row: Mean RASS at ECMO day 2"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": -1.96,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 2 −2.16 −2.27 −1.96 0.219",
+      "location": "Table 2, row: Mean RASS at ECMO day 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.219,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 2 −2.16 −2.27 −1.96 0.219",
+      "location": "Table 2, row: Mean RASS at ECMO day 2"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "RASS at ECMO day 7",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 7,
+    "label_verbatim": "ECMO day 7"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": -1.76,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 7 −1.66 −1.76 −1.48 0.365",
+      "location": "Table 2, row: Mean RASS at ECMO day 7"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": -1.48,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 7 −1.66 −1.76 −1.48 0.365",
+      "location": "Table 2, row: Mean RASS at ECMO day 7"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.365,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean RASS at ECMO day 7 −1.66 −1.76 −1.48 0.365",
+      "location": "Table 2, row: Mean RASS at ECMO day 7"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "ECMO FSO2 at 48 h",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 48,
+    "label_verbatim": "48 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 85.3,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "%",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO FSO2 at 48 h 89.9 85.3 98.0 0.001",
+      "location": "Table 2, row: Mean ECMO FSO2 at 48 h"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 98.0,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "%",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO FSO2 at 48 h 89.9 85.3 98.0 0.001",
+      "location": "Table 2, row: Mean ECMO FSO2 at 48 h"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.001,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean ECMO FSO2 at 48 h 89.9 85.3 98.0 0.001",
+      "location": "Table 2, row: Mean ECMO FSO2 at 48 h"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "ECMO blood flow at 48 h",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 48,
+    "label_verbatim": "48 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 4.32,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "L/min",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO blood flow at 48 h (L/min) 4.26 4.32 4.15 0.558",
+      "location": "Table 2, row: Mean ECMO blood flow at 48 h"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 4.15,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "L/min",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO blood flow at 48 h (L/min) 4.26 4.32 4.15 0.558",
+      "location": "Table 2, row: Mean ECMO blood flow at 48 h"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.558,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean ECMO blood flow at 48 h (L/min) 4.26 4.32 4.15 0.558",
+      "location": "Table 2, row: Mean ECMO blood flow at 48 h"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "ECMO sweep gas flow at 48 h",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 48,
+    "label_verbatim": "48 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 6.7,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "L/min",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO sweep gas flow at 48 h (L/min) 6.62 6.70 6.48 0.923",
+      "location": "Table 2, row: Mean ECMO sweep gas flow at 48 h"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 6.48,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "L/min",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO sweep gas flow at 48 h (L/min) 6.62 6.70 6.48 0.923",
+      "location": "Table 2, row: Mean ECMO sweep gas flow at 48 h"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.923,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean ECMO sweep gas flow at 48 h (L/min) 6.62 6.70 6.48 0.923",
+      "location": "Table 2, row: Mean ECMO sweep gas flow at 48 h"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "ECMO RPM at 48 h",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 48,
+    "label_verbatim": "48 h"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 3131,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "rpm",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO RPM at 48 h 3159 3131 3208 0.855",
+      "location": "Table 2, row: Mean ECMO RPM at 48 h"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 3208,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 25,
+     "unit": "rpm",
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Mean ECMO RPM at 48 h 3159 3131 3208 0.855",
+      "location": "Table 2, row: Mean ECMO RPM at 48 h"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.855,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Mann-Whitney U test",
+     "provenance": {
+      "quote": "Mean ECMO RPM at 48 h 3159 3131 3208 0.855",
+      "location": "Table 2, row: Mean ECMO RPM at 48 h"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "Blood culture positivity",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "post-cannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 20,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Blood, n (%) 29 (42.0) 20 (45.5) 9 (36.0) 0.612",
+      "location": "Table 2, row: Blood"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 9,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Blood, n (%) 29 (42.0) 20 (45.5) 9 (36.0) 0.612",
+      "location": "Table 2, row: Blood"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.612,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Blood, n (%) 29 (42.0) 20 (45.5) 9 (36.0) 0.612",
+      "location": "Table 2, row: Blood"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "Urine culture positivity",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "post-cannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 8,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Urine, n (%) 13 (18.8) 8 (18.2) 5 (11.36) >0.999",
+      "location": "Table 2, row: Urine"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 5,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Urine, n (%) 13 (18.8) 8 (18.2) 5 (11.36) >0.999",
+      "location": "Table 2, row: Urine"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": null,
+     "p_value_verbatim": ">0.999",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Urine, n (%) 13 (18.8) 8 (18.2) 5 (11.36) >0.999",
+      "location": "Table 2, row: Urine"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "Sputum culture positivity",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported",
+    "label_verbatim": "post-cannulation"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "pes_guided",
+     "events": 35,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sputum, n (%) 54 (78.3) 35 (79.5) 19 (76.0) 0.767",
+      "location": "Table 2, row: Sputum"
+     }
+    },
+    {
+     "arm_label": "standard_peep",
+     "events": 19,
+     "total": 25,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": null,
+     "derived": false,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "Sputum, n (%) 54 (78.3) 35 (79.5) 19 (76.0) 0.767",
+      "location": "Table 2, row: Sputum"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.767,
+     "p_value_verbatim": null,
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "Fischer exact test",
+     "provenance": {
+      "quote": "Sputum, n (%) 54 (78.3) 35 (79.5) 19 (76.0) 0.767",
+      "location": "Table 2, row: Sputum"
+     }
+    }
+   ],
+   "provenance": null
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": null,
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": null,
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "unclear",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_only: population is COVID-19 VV ECMO with median Murray Score 3.75 and the introduction frames the cohort as 'COVID-19 ARDS patients requiring VV ECMO', though no formal ARDS definition is stated — flagged. obese_population: median BMI 39.5 overall (42.5 optimal, 34.2 standard), all arms at or above 30 kg/m2. timing_subgroup unclear: the intervention is defined by the January 2021 program switch, i.e. relative to enrolment/period, not to a clinical reference event with a measurable interval. ptp_target_subgroups: end-expiratory transpulmonary pressure target 0-3 cm H2O; computation method not stated, so classified as absolute positive end-expiratory Ptp. is_longest_reported_mortality set on 'Overall mortality' because it is the only mortality entry; survival to discharge is a discharge-based outcome recorded separately."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap with any COHORTS.md cluster. Single-center study at OHSU, Portland, OR, USA; enrolment March 2020 to November 2021; no trial registration. The only other VV-ECMO report in the pool, boesing_2024b, is from a different centre (Mannheim) with a different population; no shared authors or institution with any cluster in COHORTS.md.",
+  "unclear_items": [
+   "population.age / baseline_by_arm.age: Table 1 reports a single value per arm with no dispersion and does not state whether mean or median; value_type left null.",
+   "eligibility.criteria.adults_18_plus: no explicit age criterion stated; coded yes because the setting is plainly an adult ICU/ECMO program.",
+   "population.ards_status: cohort defined as COVID-19 ECMO patients, not formally by an ARDS definition; coded all_ards on the introduction's framing ('COVID-19 ARDS patients requiring VV ECMO') and Murray Score 3.75, but no ARDS definition is applied.",
+   "outcomes (Overall mortality): the paper does not state whether 'Overall mortality' is hospital or ICU mortality or a fixed-day mortality; recorded as not_reported timepoint.",
+   "intervention.ptp_computation.method: the paper does not state how transpulmonary pressure was computed from esophageal pressure.",
+   "intervention.balloon_calibration: no information on balloon filling, calibration, or position verification.",
+   "design.consecutive_enrolment: coded true from 'all COVID-19 ECMO patients initiated on VV ECMO', an inference from the 'all patients' framing rather than an explicit consecutive-enrolment statement."
+  ],
+  "data_only_in_figure": [],
+  "contact_author_needed": false,
+  "general_notes": "Retrospective cohort with a before/after programmatic change (January 2021) as the basis of the two groups; confounding by calendar period (Delta variant) and by proning and BMI differences is acknowledged by the authors. Esophageal manometry technique (device, calibration, Ptp computation) is entirely unreported. Discharge location distribution (Table 3) recorded here as having no dedicated schema field: 'Discharge location (n, %) — Home (22, 31.9), SNF (14, 20.3), Transfer (2, 2.90) [All Patients]'."
+ }
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rob-schema.json",
+  "title": "Risk-of-bias record (one study, one tool)",
+  "description": "RoB 2 (parallel or crossover) per result, or an NIH quality assessment tool per study. Version 1.0.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_meta", "study_id", "tool", "results", "nih"],
+  "properties": {
+    "record_meta": {
+      "type": "object",
+      "description": "Stamped by analysis/rob.py, not by the reviewer.",
+      "properties": {
+        "study_id": { "type": "string" },
+        "reviewer": { "type": "string" },
+        "model": { "type": "string" },
+        "assessment_date": { "type": "string" },
+        "source_file": { "type": "string" },
+        "schema_version": { "type": "string" }
+      }
+    },
+    "study_id": { "type": "string", "pattern": "^[a-z]+(_[a-z]+)?_[0-9]{4}[a-z]?$" },
+    "tool": { "enum": ["rob2_parallel", "rob2_crossover", "nih_cohort", "nih_before_after"] },
+    "results": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/rob2Result" }
+    },
+    "nih": {
+      "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/nihAssessment" }]
+    }
+  },
+  "$defs": {
+    "support": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 600,
+      "description": "Verbatim quote from the report, or a one-sentence statement of what was looked for and not found."
+    },
+    "rob2Answer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["response", "support", "location"],
+      "properties": {
+        "response": { "enum": ["Y", "PY", "PN", "N", "NI", "NA"] },
+        "support": { "$ref": "#/$defs/support" },
+        "location": { "type": "string", "minLength": 2 }
+      }
+    },
+    "judgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["judgement", "rationale"],
+      "properties": {
+        "judgement": { "enum": ["Low", "Some concerns", "High"] },
+        "rationale": { "type": "string", "minLength": 10 }
+      }
+    },
+    "rob2Result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result_id", "outcome", "numerical_result", "result_location", "answers", "domains", "overall"],
+      "properties": {
+        "result_id": { "type": "string" },
+        "outcome": { "type": "string" },
+        "numerical_result": { "type": "string", "description": "The result assessed, as printed (e.g. '8/30 vs 14/31')." },
+        "result_location": { "type": "string" },
+        "answers": {
+          "type": "object",
+          "propertyNames": { "pattern": "^([1-5]\\.[1-7]|S\\.[1-3])$" },
+          "additionalProperties": { "$ref": "#/$defs/rob2Answer" }
+        },
+        "domains": {
+          "type": "object",
+          "propertyNames": { "enum": ["D1", "DS", "D2", "D3", "D4", "D5"] },
+          "additionalProperties": { "$ref": "#/$defs/judgement" }
+        },
+        "overall": { "$ref": "#/$defs/judgement" }
+      }
+    },
+    "nihAnswer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["response", "support", "location"],
+      "properties": {
+        "response": { "enum": ["Yes", "No", "CD", "NR", "NA"] },
+        "support": { "$ref": "#/$defs/support" },
+        "location": { "type": "string", "minLength": 2 }
+      }
+    },
+    "nihAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["items", "rating", "rationale"],
+      "properties": {
+        "items": {
+          "type": "object",
+          "propertyNames": { "pattern": "^([1-9]|1[0-4])$" },
+          "additionalProperties": { "$ref": "#/$defs/nihAnswer" }
+        },
+        "rating": { "enum": ["Good", "Fair", "Poor"] },
+        "rationale": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

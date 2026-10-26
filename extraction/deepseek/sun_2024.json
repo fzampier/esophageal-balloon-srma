@@ -1,0 +1,1636 @@
+{
+  "record_meta": {
+    "study_id": "sun_2024",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/Lungprotective2024.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Sun",
+    "year": 2024,
+    "title": "The impact of a lung-protective ventilation mode using transpulmonary driving pressure titrated positive end-expiratory pressure on the prognosis of patients with acute respiratory distress syndrome",
+    "journal": "Journal of Clinical Monitoring and Computing",
+    "doi": "10.1007/s10877-024-01198-3",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Age between 18 and 80 years, and both genders.",
+          "location": "Methods, Inclusion criteria, p. 1407"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Initiation of invasive mechanical ventilation within 48 h of inclusion",
+          "location": "Methods, Inclusion criteria, p. 1407"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This prospective study was conducted at our hospital’s intensive care unit (ICU)",
+          "location": "Methods, Study population, p. 1407"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The 28-day mortality rate, duration of mechanical ventilation, length of hospital stay, and ventilator-associated pneumonia (VAP) incidence were compared between the two groups.",
+          "location": "Abstract, Methods, p. 1405"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A total of 105 ARDS patients were randomly assigned to either the control group (n = 51) or the study group (n = 53)",
+          "location": "Abstract, p. 1405"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Random assignment of patients into either the control group or the study group was performed using a random number table.",
+          "location": "Methods, Study population, p. 1407"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The impact of a lung-protective ventilation mode using transpulmonary driving pressure titrated positive end-expiratory pressure on the prognosis of patients with acute respiratory distress syndrome",
+          "location": "Title, p. 1405"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "This prospective study was conducted at our hospital’s intensive care unit (ICU) from January 2020 to December 2023. The study included patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies. Random assignment of patients into either the control group or the study group was performed using a random number table.",
+      "provenance": {
+        "quote": "This prospective study was conducted at our hospital’s intensive care unit (ICU) from January 2020 to December 2023. The study included patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies. Random assignment of patients into either the control group or the study group was performed using a random number table.",
+        "location": "Methods, Study population, p. 1407"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": "51:54",
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "our hospital’s intensive care unit",
+        "location": "Methods, Study population, p. 1407"
+      }
+    },
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "Shanghai Sixth People’s Hospital, No. 600, Yishan Road, Xuhui District, Shanghai 200233, China",
+      "location": "Author affiliations, p. 1405"
+    },
+    "planned_sample_size": {
+      "value": null,
+      "provenance": null
+    },
+    "sample_size_calculation": {
+      "value": "Based on the preliminary clinical findings, this study considers the effect size (Δ) of the new intervention compared to the existing treatment to be 10%. Assuming a probability (P0) of adverse events occurring in patients under the existing treatment is 25%, which can be estimated from historical data. The significance level (α) is set at 0.05 (i.e., a 5% probability). A desired level of statistical power (1-β) is set at 80% or above to ensure the reliability of the study results. ... n=[(Zα/2 + Zβ)²×2×P0×(1-P0)]/(Δ²) ... Obtaining a sample size of 100–120 patients would be appropriate.",
+      "provenance": {
+        "quote": "Based on the preliminary clinical findings, this study considers the effect size (Δ) of the new intervention compared to the existing treatment to be 10%. Assuming a probability (P0) of adverse events occurring in patients under the existing treatment is 25%, which can be estimated from historical data. The significance level (α) is set at 0.05 (i.e., a 5% probability). A desired level of statistical power (1-β) is set at 80% or above to ensure the reliability of the study results. ... n=[(Zα/2 + Zβ)²×2×P0×(1-P0)]/(Δ²) ... Obtaining a sample size of 100–120 patients would be appropriate.",
+        "location": "Results, Sample size, p. 1408"
+      }
+    },
+    "stopped_early": null,
+    "stopping_rule": {
+      "value": null,
+      "provenance": null
+    },
+    "setting": {
+      "value": "intensive care unit",
+      "provenance": {
+        "quote": "our hospital’s intensive care unit (ICU)",
+        "location": "Methods, Study population, p. 1407"
+      }
+    },
+    "enrolment_start": "2020-01",
+    "enrolment_end": "2023-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "No external funding received to conduct this study.",
+      "provenance": {
+        "quote": "No external funding received to conduct this study.",
+        "location": "Funding statement, p. 1413"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 105,
+      "provenance": {
+        "quote": "In the control group, the mean age was (55.55 ± 10.51) years, with 33 females and 18 males. ... In the study group, the mean age was (57.33 ± 12.21) years, with 29 females and 25 males.",
+        "location": "Results, Baseline characteristics, p. 1409"
+      }
+    },
+    "n_analysed": {
+      "value": 105,
+      "provenance": {
+        "quote": "In the control group, the mean age was (55.55 ± 10.51) years, with 33 females and 18 males. ... In the study group, the mean age was (57.33 ± 12.21) years, with 29 females and 25 males.",
+        "location": "Results, Baseline characteristics, p. 1409"
+      }
+    },
+    "population_description": {
+      "value": "This study included patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies.",
+      "provenance": {
+        "quote": "This study included patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies.",
+        "location": "Methods, Study population, p. 1407"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Age between 18 and 80 years, and both genders. Diagnosis of ARDS based on the 2012 Berlin definition. Initiation of invasive mechanical ventilation within 48 h of inclusion, and an anticipated need for mechanical ventilation for more than 72 h.",
+      "provenance": {
+        "quote": "Age between 18 and 80 years, and both genders. Diagnosis of ARDS based on the 2012 Berlin definition. Initiation of invasive mechanical ventilation within 48 h of inclusion, and an anticipated need for mechanical ventilation for more than 72 h.",
+        "location": "Methods, Inclusion criteria, p. 1407"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Pre-ICU mechanical ventilation duration exceeding 48 h. Arterial blood gas analysis showing a PaO2/FiO2 ratio greater than 150 mmHg before enrollment. Duration of ARDS exceeding 72 h. Presence of conditions such as pneumothorax, mediastinal emphysema, large pleural effusion, diaphragmatic hernia, chest wall deformities, or significant lung bullae. Patients with severe respiratory central depression, neuromuscular conduction block diseases, or severe central nervous system lesions.",
+      "provenance": {
+        "quote": "Pre-ICU mechanical ventilation duration exceeding 48 h. Arterial blood gas analysis showing a PaO2/FiO2 ratio greater than 150 mmHg before enrollment. Duration of ARDS exceeding 72 h. Presence of conditions such as pneumothorax, mediastinal emphysema, large pleural effusion, diaphragmatic hernia, chest wall deformities, or significant lung bullae. Patients with severe respiratory central depression, neuromuscular conduction block diseases, or severe central nervous system lesions.",
+        "location": "Methods, Exclusion criteria, p. 1407"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "2012 Berlin definition",
+      "provenance": {
+        "quote": "Diagnosis of ARDS based on the 2012 Berlin definition.",
+        "location": "Inclusion criteria, p. 1407"
+      }
+    },
+    "n_ards": {
+      "n": 105,
+      "total": 105,
+      "derived": true,
+      "derivation": "All enrolled patients were diagnosed with ARDS per the inclusion criteria.",
+      "provenance": {
+        "quote": "Diagnosis of ARDS based on the 2012 Berlin definition.",
+        "location": "Inclusion criteria, p. 1407"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": null,
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Hospital stay before ICU admission, hours",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 32.56,
+          "dispersion_type": "sd",
+          "dispersion": 9.89,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The pre-ICU hospital stay was (32.56 ± 9.89) hours",
+            "location": "Results, Baseline characteristics, p. 1409"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hospital stay before ICU admission, hours",
+        "arm_label": "study",
+        "continuous": {
+          "value_type": "mean",
+          "value": 33.42,
+          "dispersion_type": "sd",
+          "dispersion": 10.75,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The pre-ICU hospital stay was (33.42 ± 10.75) hours",
+            "location": "Results, Baseline characteristics, p. 1409"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Murray lung injury score",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 4.31,
+          "dispersion_type": "sd",
+          "dispersion": 0.94,
+          "provenance": {
+            "quote": "the mean Murray Acute Lung Injury score was (4.31 ± 0.94)",
+            "location": "Results, Baseline characteristics, p. 1409"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Murray lung injury score",
+        "arm_label": "study",
+        "continuous": {
+          "value_type": "mean",
+          "value": 4.45,
+          "dispersion_type": "sd",
+          "dispersion": 0.88,
+          "provenance": {
+            "quote": "the mean Murray Acute Lung Injury score was (4.45 ± 0.88)",
+            "location": "Results, Baseline characteristics, p. 1409"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS - Pulmonary factor",
+        "arm_label": "control",
+        "count": {
+          "n": 30,
+          "total": 51,
+          "percent_as_reported": 58.82,
+          "provenance": {
+            "quote": "Pulmonary factor 30 (58.82)",
+            "location": "Table 1, row: Cause of ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS - Extra-pulmonary factor",
+        "arm_label": "control",
+        "count": {
+          "n": 21,
+          "total": 51,
+          "percent_as_reported": 41.18,
+          "provenance": {
+            "quote": "Extra-pulmonary factor 21 (41.18)",
+            "location": "Table 1, row: Cause of ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS - Pulmonary factor",
+        "arm_label": "study",
+        "count": {
+          "n": 38,
+          "total": 54,
+          "percent_as_reported": 70.37,
+          "provenance": {
+            "quote": "Pulmonary factor 38 (70.37)",
+            "location": "Table 1, row: Cause of ARDS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cause of ARDS - Extra-pulmonary factor",
+        "arm_label": "study",
+        "count": {
+          "n": 16,
+          "total": 54,
+          "percent_as_reported": 29.63,
+          "provenance": {
+            "quote": "Extra-pulmonary factor 16 (29.63)",
+            "location": "Table 1, row: Cause of ARDS"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "control",
+        "n": {
+          "value": 51,
+          "provenance": {
+            "quote": "n 51",
+            "location": "Table 1, row: n"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 55.55,
+          "dispersion_type": "sd",
+          "dispersion": 10.51,
+          "unit": "years old",
+          "provenance": {
+            "quote": "Age, years old: 55.55 ± 10.51",
+            "location": "Table 1"
+          }
+        },
+        "sex_female": {
+          "n": 33,
+          "total": 51,
+          "percent_as_reported": 64.71,
+          "provenance": {
+            "quote": "Female 33 (64.71)",
+            "location": "Table 1"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 22.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.88,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2: 22.50 ± 2.88",
+            "location": "Table 1"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 186.36,
+          "dispersion_type": "sd",
+          "dispersion": 17.22,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "OI Before intervention: 186.36 ± 17.22",
+            "location": "Table 3"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 19.08,
+          "dispersion_type": "sd",
+          "dispersion": 4.67,
+          "provenance": {
+            "quote": "APACHE II score: 19.08 ± 4.67",
+            "location": "Table 1"
+          }
+        }
+      },
+      {
+        "arm_label": "study",
+        "n": {
+          "value": 54,
+          "provenance": {
+            "quote": "n 54",
+            "location": "Table 1"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 57.33,
+          "dispersion_type": "sd",
+          "dispersion": 12.21,
+          "unit": "years old",
+          "provenance": {
+            "quote": "Age, years old: 57.33 ± 12.21",
+            "location": "Table 1"
+          }
+        },
+        "sex_female": {
+          "n": 29,
+          "total": 54,
+          "percent_as_reported": 53.7,
+          "provenance": {
+            "quote": "Female 29 (53.70)",
+            "location": "Table 1"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 21.84,
+          "dispersion_type": "sd",
+          "dispersion": 2.83,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2: 21.84 ± 2.83",
+            "location": "Table 1"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 184.59,
+          "dispersion_type": "sd",
+          "dispersion": 15.91,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "OI Before intervention: 184.59 ± 15.91",
+            "location": "Table 3"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 20.23,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "provenance": {
+            "quote": "APACHE II score: 20.23 ± 5.00",
+            "location": "Table 1"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": null,
+      "provenance": null
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": {
+        "value": "Esophageal pressure was measured as a surrogate for pleural pressure using an esophageal pressure measurement catheter connected to the ventilator.",
+        "provenance": {
+          "quote": "Esophageal pressure was measured as a surrogate for pleural pressure using an esophageal pressure measurement catheter connected to the ventilator.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Inspiratory transpulmonary pressure was calculated as the difference between inspiratory airway plateau pressure and inspiratory esophageal pressure, while expiratory transpulmonary pressure was calculated as the difference between expiratory airway plateau pressure and expiratory esophageal pressure. Transpulmonary driving pressure was determined by subtracting the end-expiratory transpulmonary pressure from the end-inspiratory transpulmonary pressure.",
+        "provenance": {
+          "quote": "Inspiratory transpulmonary pressure was calculated as the difference between inspiratory airway plateau pressure and inspiratory esophageal pressure, while expiratory transpulmonary pressure was calculated as the difference between expiratory airway plateau pressure and expiratory esophageal pressure. Transpulmonary driving pressure was determined by subtracting the end-expiratory transpulmonary pressure from the end-inspiratory transpulmonary pressure.",
+          "location": "Methods, Intervention methods, p. 1408"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "driving_ptp_target",
+      "strategy_verbatim": {
+        "value": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+        "provenance": {
+          "quote": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, p. 1408"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": {
+        "value": 15,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "aiming to maintain a transpulmonary driving pressure below 15 cmH2O",
+          "location": "Methods, Intervention methods, p. 1408"
+        }
+      },
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "2–4 times per day",
+        "provenance": {
+          "quote": "Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, p. 1408"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "tidal_volume_target": null,
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Initiation of invasive mechanical ventilation within 48 h of inclusion",
+        "provenance": {
+          "quote": "Initiation of invasive mechanical ventilation within 48 h of inclusion",
+          "location": "Methods, Inclusion criteria, p. 1407"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "clinician_discretion_usual_care"
+    ],
+    "comparator_verbatim": {
+      "value": "The control group received PEEP titration based on tidal volume. A volume-controlled mode was used, with a tidal volume of 6 mL/kg, flow rate of 30–60 L/min, frequency of 16–20 breaths/min, constant flow rate, inspiratory-to-expiratory ratio of 1:1 to 1:1.5, and a plateau pressure ≤ 30–35 cmH2O. PEEP was adjusted to maintain oxygen saturation (SaO2) at or above 90%, taking into account blood pressure.",
+      "provenance": {
+        "quote": "The control group received PEEP titration based on tidal volume. A volume-controlled mode was used, with a tidal volume of 6 mL/kg, flow rate of 30–60 L/min, frequency of 16–20 breaths/min, constant flow rate, inspiratory-to-expiratory ratio of 1:1 to 1:1.5, and a plateau pressure ≤ 30–35 cmH2O. PEEP was adjusted to maintain oxygen saturation (SaO2) at or above 90%, taking into account blood pressure.",
+        "location": "Abstract, Methods, p. 1405"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "control",
+      "label_verbatim": "control group",
+      "role": "comparator",
+      "n_randomised": {
+        "value": 51,
+        "provenance": {
+          "quote": "n 51",
+          "location": "Table 1"
+        }
+      },
+      "n_analysed": {
+        "value": 51,
+        "provenance": {
+          "quote": "n 51",
+          "location": "Table 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 6.17,
+        "dispersion_type": "sd",
+        "dispersion": 1.58,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 6.17 ± 1.58",
+          "location": "Table 2"
+        }
+      }
+    },
+    {
+      "label": "study",
+      "label_verbatim": "study group",
+      "role": "intervention",
+      "n_randomised": {
+        "value": 54,
+        "provenance": {
+          "quote": "n 54",
+          "location": "Table 1"
+        }
+      },
+      "n_analysed": {
+        "value": 54,
+        "provenance": {
+          "quote": "n 54",
+          "location": "Table 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 8.36,
+        "dispersion_type": "sd",
+        "dispersion": 1.72,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 8.36 ± 1.72",
+          "location": "Table 2"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-day mortality",
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-day mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "data": [
+        {
+          "arm_label": "control",
+          "events": 23,
+          "total": 51,
+          "provenance": {
+            "quote": "in the control group, 23 patients died within 28 days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        },
+        {
+          "arm_label": "study",
+          "events": 15,
+          "total": 54,
+          "provenance": {
+            "quote": "In the study group, 15 patients died within 28 days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.065,
+          "p_value_verbatim": "0.065",
+          "provenance": {
+            "quote": "χ²/t 3.407, P 0.065",
+            "location": "Table 5, row: 28-day mortality rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "60-day mortality",
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "label_verbatim": "60-day follow-up"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "control",
+          "events": 28,
+          "total": 51,
+          "provenance": {
+            "quote": "Of the 28 patients who died in the control group, 9 died of respiratory failure, 11 died of multi-organ failure, 8 died of sepsis.",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        },
+        {
+          "arm_label": "study",
+          "events": 20,
+          "total": 54,
+          "provenance": {
+            "quote": "Among the 20 patients who died in the study group, 6 died of respiratory failure, 10 died of multi-organ failure, and 4 died of sepsis.",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.565,
+          "ci_low": 0.32,
+          "ci_high": 0.999,
+          "ci_level": 95,
+          "p_value": 0.046,
+          "p_value_verbatim": "0.046",
+          "provenance": {
+            "quote": "HR = 0.565, 95% CI: 0.320–0.999",
+            "location": "Abstract, Results, p. 1405"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "duration of mechanical ventilation",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "duration of mechanical ventilation"
+      },
+      "is_longest_reported_mortality": false,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 15.36,
+          "dispersion_type": "sd",
+          "dispersion": 3.39,
+          "unit": "days",
+          "n": 51,
+          "provenance": {
+            "quote": "the duration of mechanical ventilation was (15.36 ± 3.39) days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 11.23,
+          "dispersion_type": "sd",
+          "dispersion": 3.17,
+          "unit": "days",
+          "n": 54,
+          "provenance": {
+            "quote": "The duration of mechanical ventilation was (11.23 ± 3.17) days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "t 6.451, P <0.001",
+            "location": "Table 5, row: Ventilation duration"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "length of hospital stay",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "length of hospital stay"
+      },
+      "is_longest_reported_mortality": false,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 29.26,
+          "dispersion_type": "sd",
+          "dispersion": 5.92,
+          "unit": "days",
+          "n": 51,
+          "provenance": {
+            "quote": "the length of hospital stay was (29.26 ± 5.92) days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 24.73,
+          "dispersion_type": "sd",
+          "dispersion": 4.85,
+          "unit": "days",
+          "n": 54,
+          "provenance": {
+            "quote": "The length of hospital stay was (24.73 ± 4.85) days",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "t 4.299, P <0.001",
+            "location": "Table 5, row: Hospital stay"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "incidence of ventilator-associated pneumonia (VAP)",
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "VAP incidence"
+      },
+      "is_longest_reported_mortality": false,
+      "data": [
+        {
+          "arm_label": "control",
+          "events": 16,
+          "total": 51,
+          "provenance": {
+            "quote": "with a total of 16 cases of VAP",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        },
+        {
+          "arm_label": "study",
+          "events": 14,
+          "total": 54,
+          "provenance": {
+            "quote": "with a total of 14 cases of VAP",
+            "location": "Results, Prognostic analysis, p. 1410"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.534,
+          "provenance": {
+            "quote": "χ²/t 0.381, P 0.534",
+            "location": "Table 5, row: VAP incidence"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 60.26,
+          "dispersion_type": "sd",
+          "dispersion": 12.01,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 60.26 ± 12.01",
+            "location": "Table 3, row: PaO2, Before intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 62.31,
+          "dispersion_type": "sd",
+          "dispersion": 14.52,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 62.31 ± 14.52",
+            "location": "Table 3, row: PaO2, Before intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.434,
+          "provenance": {
+            "quote": "t 0.786, P 0.434",
+            "location": "Table 3, row: PaO2, Before intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 70.61,
+          "dispersion_type": "sd",
+          "dispersion": 10.81,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 70.61 ± 10.81",
+            "location": "Table 3, row: PaO2, After intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 77.05,
+          "dispersion_type": "sd",
+          "dispersion": 9.26,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 77.05 ± 9.26",
+            "location": "Table 3, row: PaO2, After intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.001,
+          "provenance": {
+            "quote": "t 3.284, P 0.001",
+            "location": "Table 3, row: PaO2, After intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 35.61,
+          "dispersion_type": "sd",
+          "dispersion": 6.32,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 35.61 ± 6.32",
+            "location": "Table 3, row: PaCO2, Before intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 34.19,
+          "dispersion_type": "sd",
+          "dispersion": 5.39,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 34.19 ± 5.39",
+            "location": "Table 3, row: PaCO2, Before intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.217,
+          "provenance": {
+            "quote": "t 1.241, P 0.217",
+            "location": "Table 3, row: PaCO2, Before intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 42.15,
+          "dispersion_type": "sd",
+          "dispersion": 7.25,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 42.15 ± 7.25",
+            "location": "Table 3, row: PaCO2, After intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 43.69,
+          "dispersion_type": "sd",
+          "dispersion": 6.71,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 43.69 ± 6.71",
+            "location": "Table 3, row: PaCO2, After intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.261,
+          "provenance": {
+            "quote": "t 1.130, P 0.261",
+            "location": "Table 3, row: PaCO2, After intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "OI",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 186.36,
+          "dispersion_type": "sd",
+          "dispersion": 17.22,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 186.36 ± 17.22",
+            "location": "Table 3, row: OI, Before intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 184.59,
+          "dispersion_type": "sd",
+          "dispersion": 15.91,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 184.59 ± 15.91",
+            "location": "Table 3, row: OI, Before intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.585,
+          "provenance": {
+            "quote": "t 0.547, P 0.585",
+            "location": "Table 3, row: OI, Before intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "OI",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 240.26,
+          "dispersion_type": "sd",
+          "dispersion": 20.39,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 240.26 ± 20.39",
+            "location": "Table 3, row: OI, After intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 261.36,
+          "dispersion_type": "sd",
+          "dispersion": 22.49,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 261.36 ± 22.49",
+            "location": "Table 3, row: OI, After intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "t 5.027, P <0.001",
+            "location": "Table 3, row: OI, After intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Qs/Qt",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 20.02,
+          "dispersion_type": "sd",
+          "dispersion": 2.55,
+          "unit": "%",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 20.02 ± 2.55",
+            "location": "Table 3, row: Qs/Qt, Before intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 19.21,
+          "dispersion_type": "sd",
+          "dispersion": 2.47,
+          "unit": "%",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 19.21 ± 2.47",
+            "location": "Table 3, row: Qs/Qt, Before intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.101,
+          "provenance": {
+            "quote": "t 1.653, P 0.101",
+            "location": "Table 3, row: Qs/Qt, Before intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Qs/Qt",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 15.26,
+          "dispersion_type": "sd",
+          "dispersion": 2.82,
+          "unit": "%",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 15.26 ± 2.82",
+            "location": "Table 3, row: Qs/Qt, After intervention"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 11.91,
+          "dispersion_type": "sd",
+          "dispersion": 2.15,
+          "unit": "%",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 11.91 ± 2.15",
+            "location": "Table 3, row: Qs/Qt, After intervention"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "t 6.869, P <0.001",
+            "location": "Table 3, row: Qs/Qt, After intervention"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "Vd/Vt",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 37.26,
+          "dispersion_type": "sd",
+          "dispersion": 11.26,
+          "unit": "%",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 37.26 ± 11.26",
+            "location": "Table 2, row: Vd/Vt"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 32.17,
+          "dispersion_type": "sd",
+          "dispersion": 9.87,
+          "unit": "%",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 32.17 ± 9.87",
+            "location": "Table 2, row: Vd/Vt"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.015,
+          "provenance": {
+            "quote": "t 2.467, P 0.015",
+            "location": "Table 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 6.17,
+          "dispersion_type": "sd",
+          "dispersion": 1.58,
+          "unit": "cmH2O",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 6.17 ± 1.58",
+            "location": "Table 2, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 8.36,
+          "dispersion_type": "sd",
+          "dispersion": 1.72,
+          "unit": "cmH2O",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 8.36 ± 1.72",
+            "location": "Table 2, row: PEEP"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "t 6.783, P <0.001",
+            "location": "Table 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "MAP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 82.36,
+          "dispersion_type": "sd",
+          "dispersion": 14.02,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 82.36 ± 14.02",
+            "location": "Table 4, row: MAP"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 80.14,
+          "dispersion_type": "sd",
+          "dispersion": 12.39,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 80.14 ± 12.39",
+            "location": "Table 4, row: MAP"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.391,
+          "provenance": {
+            "quote": "t 0.861, P 0.391",
+            "location": "Table 4"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 10.36,
+          "dispersion_type": "sd",
+          "dispersion": 2.88,
+          "unit": "mmHg",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 10.36 ± 2.88",
+            "location": "Table 4, row: CVP"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 11.21,
+          "dispersion_type": "sd",
+          "dispersion": 2.93,
+          "unit": "mmHg",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 11.21 ± 2.93",
+            "location": "Table 4, row: CVP"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.137,
+          "provenance": {
+            "quote": "t 1.498, P 0.137",
+            "location": "Table 4"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, p. 1407"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 102.03,
+          "dispersion_type": "sd",
+          "dispersion": 18.29,
+          "unit": "beats/min",
+          "n": 51,
+          "provenance": {
+            "quote": "Control group 51 102.03 ± 18.29",
+            "location": "Table 4, row: HR"
+          }
+        },
+        {
+          "arm_label": "study",
+          "value_type": "mean",
+          "value": 97.26,
+          "dispersion_type": "sd",
+          "dispersion": 20.36,
+          "unit": "beats/min",
+          "n": 54,
+          "provenance": {
+            "quote": "Study group 54 97.26 ± 20.36",
+            "location": "Table 4, row: HR"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.21,
+          "provenance": {
+            "quote": "t 1.260, P 0.210",
+            "location": "Table 4"
+          }
+        }
+      ]
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "driving_ptp"
+    ],
+    "classification_notes": "Timing is known only relative to enrolment (inclusion criteria: initiation of invasive mechanical ventilation within 48 h of inclusion), so per ruling timing_subgroup is unclear. Obesity: mean BMI ~22 kg/m2, so non-obese. ARDS: all patients had ARDS per inclusion criteria."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap suspected. Checked COHORTS.md; this study is not listed in any cluster. No other report of this cohort identified.",
+    "unclear_items": [
+      "Study group n: abstract says 53, but Table 1 and results show 54. We used 54 from tables.",
+      "planned_sample_size: reported as a range 100–120, not a single number. Left null.",
+      "blinding: not reported.",
+      "Primary outcome: not explicitly specified; methods call 'primary outcomes' a group (pulmonary function and hemodynamic parameters). is_primary_outcome left null for all.",
+      "60-day mortality counts inferred from cause-of-death breakdown in text; not directly reported as a mortality rate.",
+      "CVP in text says 10.36 ± 1.68 but Table 4 shows 10.36 ± 2.88; used Table 4.",
+      "Device brand for esophageal balloon not reported.",
+      "Balloon calibration method (occlusion test, filling volume) not reported."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": null
+  }
+}

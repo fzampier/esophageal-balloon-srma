@@ -1,0 +1,4203 @@
+{
+ "record_meta": {
+  "study_id": "maia_2026",
+  "extractor": "reconciled",
+  "model": "Fernando Zampieri (human); claude-opus-5-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/maia_2026_with_suppl.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 145 reviewer differences: 76 in scope. Settled by human rulings 1, model rulings 72, content-neutral rules 2; 66 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 4 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Maia",
+  "year": 2026,
+  "title": "Comparison of PEEP titration methods to improve respiratory system compliance in acute respiratory distress syndrome: a randomized controlled study",
+  "journal": "Critical Care Science",
+  "doi": "10.62675/2965-2774.20260143",
+  "pmid": null,
+  "trial_registration": "REBEC RBR-9b7jbxm",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Patients younger than 18 years old, with intracranial hypertension, acute neurological disease, or the presence of bronchopleural fistula or barotrauma were excluded.",
+     "location": "Supplementary Material, Section 2S - Exclusion criteria"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "All patients under invasive mechanical ventilation used a closed suction system until extubation, minimizing disconnections and reducing complications.",
+     "location": "p. 3, Interventions, para 2"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Single-center, ten-bed respiratory medical ICU located in Florianópolis (SC), Brazil.",
+     "location": "p. 2, Methods, Study design"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure was titrated daily exclusively according to the randomly assigned method and maintained until the next morning... The esophageal catheter titrated PEEP was the pressure that resulted in transpulmonary expiratory pressure (PLexp) > 0 and ≤ 2cmH2O during the decremental PEEP maneuver.",
+     "location": "p. 3, Positive end-expiratory pressure titration from Day 1 to Day 3; Supplementary Material, Section 4S"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The primary outcome was mean respiratory system compliance (Crs) from Day 0 to Day 3.",
+     "location": "p. 3, Data collection and outcomes"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "49 patients included and randomized to the 4 treatment groups: 12 to the EIT Group, 13 to the esophageal Catheter Group, 12 to the best Crs group, and 12 to the PEEP/FiO2 table group.",
+     "location": "p. 4, Results, Patients"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Single-center, randomized study acute respiratory distress syndrome patients were assigned to one of four groups based on positive end-expiratory pressure titration methods",
+     "location": "p. 1, Abstract, Methods"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Crit Crit Sci. 2026;38:e20260143",
+     "location": "Full text, all pages"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "rct",
+  "study_design_verbatim": {
+   "value": "Single-center, randomized study acute respiratory distress syndrome patients were assigned to one of four groups based on positive end-expiratory pressure titration methods",
+   "provenance": {
+    "quote": "Methods: Single-center, randomized study acute respiratory distress syndrome patients were assigned to one of four groups based on positive end-expiratory pressure titration methods",
+    "location": "p. 1, Abstract, Methods"
+   }
+  },
+  "comparison_structure": "parallel_arms",
+  "randomised": true,
+  "allocation_ratio": "1:1:1:1",
+  "blinding": {
+   "value": "There was no blinding of investigators, participants, and outcome assessors.",
+   "provenance": {
+    "quote": "There was no blinding of investigators, participants, and outcome assessors.",
+    "location": "p. 3, Blinding"
+   }
+  },
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "Single-center, ten-bed respiratory medical ICU located in Florianópolis (SC), Brazil.",
+    "location": "p. 2, Methods, Study design"
+   },
+   "derivation": "The study is described as single-center; the number of centres is not printed as a numeral."
+  },
+  "countries": [
+   "Brazil"
+  ],
+  "location_provenance": {
+   "quote": "Single-center, ten-bed respiratory medical ICU located in Florianópolis (SC), Brazil. ... 1 Hospital Nereu Ramos - Florianópolis (SC), Brazil.",
+   "location": "p. 2, Study design; p. 1, author affiliations"
+  },
+  "planned_sample_size": {
+   "value": 60,
+   "provenance": {
+    "quote": "The calculated sample size was 15 patients in each group, resulting in a total of 60 patients in the final sample.",
+    "location": "p. 3, Statistical analysis"
+   }
+  },
+  "sample_size_calculation": {
+   "value": "80% power to detect a compliance difference of 5mL/cmH2O between groups, considering an alpha error of 5%, analysis of covariance (Ancova), standard deviation of 8mL/cmH2O, and a Pearson's r of 0.8 between baseline compliance and mean compliance on Days 0 to 3.",
+   "provenance": {
+    "quote": "With this sample size, the study would have 80% power to detect a compliance difference of 5mL/cmH2O between groups, considering an alpha error of 5%, analysis of covariance (Ancova), standard deviation of 8mL/cmH2O, and a Pearson's r of 0.8 between baseline compliance and mean compliance on Days 0 to 3.",
+    "location": "p. 3, Statistical analysis"
+   }
+  },
+  "stopped_early": true,
+  "stopping_rule": {
+   "value": "The study was stopped before reaching the predicted sample size due to a low recruitment rate and limited funding.",
+   "provenance": {
+    "quote": "The study was stopped before reaching the predicted sample size due to a low recruitment rate and limited funding.",
+    "location": "p. 4, Results, Patients, para 2"
+   }
+  },
+  "setting": {
+   "value": "ten-bed respiratory medical ICU",
+   "provenance": {
+    "quote": "Single-center, ten-bed respiratory medical ICU located in Florianópolis (SC), Brazil.",
+    "location": "p. 2, Methods, Study design"
+   }
+  },
+  "enrolment_start": "2018-04",
+  "enrolment_end": "2021-05",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "Programa de Pesquisa para o Sistema Único de Saúde (PPSUS) 2016TR2203; Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina (FAPESC) 380/2016; Timpel S.A. - São Paulo, Brasil.",
+   "provenance": {
+    "quote": "Programa de Pesquisa para o Sistema Único de Saúde (PPSUS) 2016TR2203; Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina (FAPESC) 380/2016; Timpel S.A. - São Paulo, Brasil.",
+    "location": "p. 12, Funders and supporters"
+   }
+  },
+  "industry_funded": true,
+  "conflicts_of_interest_declared": false
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 49,
+   "provenance": {
+    "quote": "From April 2018 to May 2021, 52 patients diagnosed with ARDS were screened, with 49 patients included and randomized to the 4 treatment groups",
+    "location": "p. 4, Results, Patients"
+   }
+  },
+  "n_analysed": {
+   "value": 49,
+   "provenance": {
+    "quote": "All randomized patients were followed for 28 days and included in the final analysis (Figure 1).",
+    "location": "p. 4, Results, para 2"
+   },
+   "derivation": "Figure 1: analysed n = 12 (EIT) + 13 (esophageal catheter) + 12 (best compliance) + 12 (low PEEP/FiO2 table) = 49."
+  },
+  "population_description": {
+   "value": "Eligible patients were those who met ARDS criteria for less than 36 hours. All 49 participants had ARDS of pulmonary origin, 59% of which were secondary to severe community-acquired pneumonia.",
+   "provenance": {
+    "quote": "Eligible patients were those who met ARDS criteria(30) for less than 36 hours. ... All 49 participants had ARDS of pulmonary origin, 59% of which were secondary to severe community-acquired pneumonia.",
+    "location": "p. 2, Patients; p. 4, Results"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "Eligible patients were those who met ARDS criteria for less than 36 hours. PaO2/FiO2 criterion was confirmed after one hour of standardized ventilation according to the ARDSNet protocol (VT ≤ 6mL/kg of predicted body weight, plateau pressure < 30cmH2O, and PEEP titrated according to the low PEEP/FiO2 table).",
+   "provenance": {
+    "quote": "Eligible patients were those who met ARDS criteria(30) for less than 36 hours. PaO2/FiO2 criterion was confirmed after one hour of standardized ventilation according to the ARDSNet protocol (VT ≤ 6mL/kg of predicted body weight, plateau pressure < 30cmH2O, and PEEP titrated according to the low PEEP/FiO2 table).(31)",
+    "location": "p. 2, Patients"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "Patients younger than 18 years old, with intracranial hypertension, acute neurological disease, or the presence of bronchopleural fistula or barotrauma were excluded.",
+   "provenance": {
+    "quote": "Patients younger than 18 years old, with intracranial hypertension, acute neurological disease, or the presence of bronchopleural fistula or barotrauma were excluded.",
+    "location": "Supplementary Material, Section 2S"
+   }
+  },
+  "age": {
+   "value_type": "median",
+   "value": 47,
+   "dispersion_type": "iqr",
+   "dispersion_low": 38,
+   "dispersion_high": 55,
+   "n": 49,
+   "unit": "years",
+   "provenance": {
+    "quote": "The median age was 47 years (IQR 38 - 55)",
+    "location": "p. 4, Results, para 3"
+   }
+  },
+  "sex_female": {
+   "n": 20,
+   "total": 49,
+   "percent_as_reported": 41,
+   "provenance": {
+    "quote": "Female 5/12 (42) 7/13 (54) 3/12 (25) 5/12 (42) 20/49 (41)",
+    "location": "p. 5, Table 1, row: Female"
+   }
+  },
+  "sex_male": {
+   "n": 29,
+   "total": 49,
+   "percent_as_reported": 59,
+   "provenance": {
+    "quote": "Male 7/12 (58) 6/13 (46) 9/12 (75) 7/12 (58) 29/49 (59)",
+    "location": "p. 5, Table 1, row: Male"
+   }
+  },
+  "bmi": null,
+  "weight_kg": null,
+  "predicted_body_weight_kg": {
+   "value_type": "median",
+   "value": 61,
+   "dispersion_type": "iqr",
+   "dispersion_low": 55,
+   "dispersion_high": 67,
+   "n": 49,
+   "unit": "kg",
+   "provenance": {
+    "quote": "PBW 59 (57 - 62) 59 (53 - 66) 64 (58 - 74) 66 (57 - 72) 61 (55 - 67)",
+    "location": "p. 5, Table 1, row: PBW"
+   }
+  },
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "ARDS criteria(30) — Berlin Definition (Ranieri VM et al., JAMA 2012)",
+   "provenance": {
+    "quote": "30. Ranieri VM, Rubenfeld GD, Thompson BT, Ferguson ND, Caldwell E, Fan E, et al.; ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition.",
+    "location": "p. 13, reference 30; cited at p. 2, Patients"
+   }
+  },
+  "n_ards": {
+   "n": 49,
+   "total": 49,
+   "percent_as_reported": 100,
+   "provenance": {
+    "quote": "Pulmonary ARDS 12/12 (100) 13/13 (100) 12/12 (100) 12/12 (100) 49/49 (100)",
+    "location": "p. 5, Table 1, row: Pulmonary ARDS"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "some",
+  "cause_of_respiratory_failure": {
+   "value": "All ARDS of pulmonary origin; community-acquired pneumonia 29/49 (59%), COVID-19 8/49 (16%), H1N1 4/49 (8%), Influenza A 2/49 (4%), bronchoaspiration 2/49 (4%)",
+   "provenance": {
+    "quote": "Community-acquired pneumonia 8/12 (67) 7/13 (54) 8/12 (67) 6/12 (50) 29/49 (59) / COVID-19 3/12 (25) 2/13 (15) 2/12 (17) 1/12 (8) 8/49 (16) / H1N1 0/12 (0) 2/13 (15) 0/12 (0) 2/12 (17) 4/49 (8) / Influenza A 0/12 (0) 0/13 (0) 1/12 (8) 1/12 (8) 2/49 (4) / Bronchoaspiration 0/12 (0) 1/13 (8) 0/12 (0) 1/12 (8) 2/49 (4)",
+    "location": "p. 5, Table 1, rows: Community-acquired pneumonia, COVID-19, H1N1, Influenza A, Bronchoaspiration"
+   }
+  },
+  "pao2_fio2_baseline": {
+   "value_type": "median",
+   "value": 172,
+   "dispersion_type": "iqr",
+   "dispersion_low": 117,
+   "dispersion_high": 203,
+   "n": 49,
+   "unit": "mmHg",
+   "provenance": {
+    "quote": "ARDS with a median PaO2/FiO2 ratio of 172mmHg (IQR 117 - 203)",
+    "location": "p. 5, Results, para after Table 1"
+   }
+  },
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": {
+   "n": 24,
+   "total": 49,
+   "percent_as_reported": 49,
+   "provenance": {
+    "quote": "Prone position 6/12 (50) 9/13 (70) 5/12 (42) 4/12 (33) 24/49 (49)",
+    "location": "Supplementary Material, Table 4S, row: Prone position"
+   }
+  },
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": null,
+  "n_vasopressors": null,
+  "additional_baseline": [
+   {
+    "name_verbatim": "SAPS 3",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 48,
+     "dispersion_type": "iqr",
+     "dispersion_low": 43,
+     "dispersion_high": 54,
+     "n": 49,
+     "provenance": {
+      "quote": "SAPS 3 51 (47 - 59) 45 (41 - 50) 48 (44 - 55) 47 (38 - 54) 48 (43 - 54)",
+      "location": "p. 5, Table 1, row: SAPS 3"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "HIV",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 17,
+     "total": 49,
+     "percent_as_reported": 35,
+     "provenance": {
+      "quote": "HIV 3/12 (25) 2/13 (15) 7/12 (58) 5/12 (42) 17/49 (35)",
+      "location": "p. 5, Table 1, row: HIV"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Obesity",
+    "arm_label": null,
+    "continuous": null,
+    "count": {
+     "n": 11,
+     "total": 49,
+     "percent_as_reported": 22,
+     "provenance": {
+      "quote": "Obesity 4/12 (33) 3/13 (23) 2/12 (17) 2/12 (17) 11/49 (22)",
+      "location": "p. 5, Table 1, row: Obesity"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Tidal volume; median/kg pbw",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 6.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.89,
+     "dispersion_high": 6.06,
+     "n": 49,
+     "unit": "mL/kg pbw",
+     "provenance": {
+      "quote": "Tidal volume; median/kg pbw 5.98 (5.95 - 6.09) 6 (5.89 - 6.1) 5.94 (5.08 - 6.01) 6.01 (5.95 - 6.03) 6.00 (5.89 - 6.06)",
+      "location": "p. 5, Table 1, row: Tidal volume; median/kg pbw"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "PEEP",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 14,
+     "n": 49,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP 12 (10 - 14) 10 (10 - 14) 11 (10 - 15) 10 (10 - 10.5) 10 (10 - 14)",
+      "location": "p. 5, Table 1, row: PEEP"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Pplat",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion_low": 23,
+     "dispersion_high": 30,
+     "n": 49,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat 25 (23 - 29) 27 (26 - 30) 29 (26 - 30) 24 (23 - 27) 26 (23 - 30)",
+      "location": "p. 5, Table 1, row: Pplat"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "Driving pressure",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 16,
+     "n": 49,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure 13 (11 - 14) 16 (15 - 18) 15 (12 - 19) 13 (12 - 16) 14 (12 - 16)",
+      "location": "p. 5, Table 1, row: Driving pressure"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "pH",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 7.28,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.22,
+     "dispersion_high": 7.35,
+     "n": 48,
+     "provenance": {
+      "quote": "pH Baseline 7.24 (7.16 - 7.27) 7.3 (7.26 - 7.31) 7.38 (7.25 - 7.41) 7.29 (7.23 - 7.33) 7.28 (7.22 - 7.35) (n = 48)",
+      "location": "Supplementary Material, Table 2S, row: pH, Baseline"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "PaO2",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 113,
+     "dispersion_type": "iqr",
+     "dispersion_low": 90,
+     "dispersion_high": 144,
+     "n": 47,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2 Baseline 86 (70 - 148) (n = 11) 106 (89 - 119) (n = 12) 112 (101 - 156) 117 (108 - 139) 113 (90 - 144) (n = 47)",
+      "location": "Supplementary Material, Table 2S, row: PaO2, Baseline"
+     }
+    },
+    "count": null
+   },
+   {
+    "name_verbatim": "PaCO2",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 51,
+     "dispersion_type": "iqr",
+     "dispersion_low": 45,
+     "dispersion_high": 60,
+     "n": 47,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 Baseline 52 [47 - 57] (n = 11) 58 (50 - 62) (n = 12) 50 (45 - 59) 47 (43 - 51) 51 (45 - 60) (n = 47)",
+      "location": "Supplementary Material, Table 2S, row: PaCO2, Baseline"
+     }
+    },
+    "count": null
+   }
+  ],
+  "baseline_by_arm": [
+   {
+    "arm_label": "esophageal_catheter",
+    "n": {
+     "value": 13,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "49 patients included and randomized to the 4 treatment groups: 12 to the EIT Group, 13 to the esophageal Catheter Group, 12 to the best Crs group, and 12 to the PEEP/FiO2 table group.",
+      "location": "p. 4, RESULTS, Patients"
+     }
+    },
+    "age": {
+     "value_type": "median",
+     "value": 47,
+     "dispersion_type": "iqr",
+     "dispersion_low": 42,
+     "dispersion_high": 55,
+     "provenance": {
+      "quote": "Age 50 (45 - 64) 47 (42 - 55) 44 (3 - 49) 42 (32 - 56) 47 (38 - 55)",
+      "location": "p. 5, Table 1, row: Age"
+     }
+    },
+    "sex_female": {
+     "n": 7,
+     "total": 13,
+     "percent_as_reported": 54,
+     "provenance": {
+      "quote": "Female 5/12 (42) 7/13 (54) 3/12 (25) 5/12 (42) 20/49 (41)",
+      "location": "p. 5, Table 1, row: Female"
+     }
+    },
+    "bmi": null,
+    "pao2_fio2_baseline": {
+     "value_type": "median",
+     "value": 165,
+     "dispersion_type": "iqr",
+     "dispersion_low": 105,
+     "dispersion_high": 196,
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "best_compliance",
+    "n": {
+     "value": 12,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "49 patients included and randomized to the 4 treatment groups: 12 to the EIT Group, 13 to the esophageal Catheter Group, 12 to the best Crs group, and 12 to the PEEP/FiO2 table group.",
+      "location": "p. 4, RESULTS, Patients"
+     }
+    },
+    "age": {
+     "value_type": "median",
+     "value": 44,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 49,
+     "provenance": {
+      "quote": "Age 50 (45 - 64) 47 (42 - 55) 44 (3 - 49) 42 (32 - 56) 47 (38 - 55)",
+      "location": "p. 5, Table 1, row: Age (best compliance column; lower IQR bound of 3 is likely a typographical error, presumably 39)"
+     }
+    },
+    "sex_female": {
+     "n": 3,
+     "total": 12,
+     "percent_as_reported": 25,
+     "provenance": {
+      "quote": "Female 5/12 (42) 7/13 (54) 3/12 (25) 5/12 (42) 20/49 (41)",
+      "location": "p. 5, Table 1, row: Female"
+     }
+    },
+    "bmi": null,
+    "pao2_fio2_baseline": {
+     "value_type": "median",
+     "value": 190,
+     "dispersion_type": "iqr",
+     "dispersion_low": 152,
+     "dispersion_high": 211,
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "peep_fio2_table",
+    "n": {
+     "value": 12,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "49 patients included and randomized to the 4 treatment groups: 12 to the EIT Group, 13 to the esophageal Catheter Group, 12 to the best Crs group, and 12 to the PEEP/FiO2 table group.",
+      "location": "p. 4, RESULTS, Patients"
+     }
+    },
+    "age": {
+     "value_type": "median",
+     "value": 42,
+     "dispersion_type": "iqr",
+     "dispersion_low": 32,
+     "dispersion_high": 56,
+     "provenance": {
+      "quote": "Age 50 (45 - 64) 47 (42 - 55) 44 (3 - 49) 42 (32 - 56) 47 (38 - 55)",
+      "location": "p. 5, Table 1, row: Age"
+     }
+    },
+    "sex_female": {
+     "n": 5,
+     "total": 12,
+     "percent_as_reported": 42,
+     "provenance": {
+      "quote": "Female 5/12 (42) 7/13 (54) 3/12 (25) 5/12 (42) 20/49 (41)",
+      "location": "p. 5, Table 1, row: Female"
+     }
+    },
+    "bmi": null,
+    "pao2_fio2_baseline": {
+     "value_type": "median",
+     "value": 192,
+     "dispersion_type": "iqr",
+     "dispersion_low": 169,
+     "dispersion_high": 219,
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "eit_guided",
+    "n": {
+     "value": 12,
+     "provenance": {
+      "quote": "EIT (n = 12)",
+      "location": "Table 1, column header 'EIT (n = 12)'"
+     }
+    },
+    "age": {
+     "value_type": "median",
+     "value": 50,
+     "dispersion_type": "iqr",
+     "dispersion_low": 45,
+     "dispersion_high": 64,
+     "n": 12,
+     "unit": "years",
+     "provenance": {
+      "quote": "Age - EIT (n = 12): 50 (45 - 64)",
+      "location": "Table 1, row 'Age', column 'EIT'"
+     }
+    },
+    "sex_female": {
+     "n": 5,
+     "total": 12,
+     "percent_as_reported": 42,
+     "provenance": {
+      "quote": "Sex, Female - 5/12 (42)",
+      "location": "Table 1, row 'Sex / Female', column 'EIT'"
+     }
+    },
+    "pao2_fio2_baseline": {
+     "value_type": "median",
+     "value": 129,
+     "dispersion_type": "iqr",
+     "dispersion_low": 77,
+     "dispersion_high": 182,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2 - EIT (n = 12): 129 (77 - 182)",
+      "location": "Table 1, row 'PaO2/FiO2', column 'EIT'"
+     }
+    }
+   }
+  ]
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "NutriVentTM; Seda S.p.A, Milan, Italy",
+   "provenance": {
+    "quote": "NutriVentTM; Seda S.p.A, Milan, Italy, was used as an esophageal catheter.",
+    "location": "Supplementary Material, Esophageal catheter procedure"
+   }
+  },
+  "balloon_inflation_volume_ml": {
+   "value_type": null,
+   "value": 3.5,
+   "dispersion_type": "none",
+   "n": null,
+   "unit": "mL air",
+   "provenance": {
+    "quote": "we inflated the balloon with 10mL of air and removed 6.5mL, the remaining 3.5mL in the catheter. This is the mean value of balloon air volume shown in the literature to be best associated with the appropriate ratio of esophageal pressure to airway pressure (DPes/DPaw) value between 0.8 and 1.2",
+    "location": "Supplementary Material, Esophageal catheter procedure"
+   }
+  },
+  "balloon_calibration": {
+   "method": "dynamic_occlusion_test",
+   "method_verbatim": {
+    "value": "The ratio was measured through a maneuver with 3 to 5 manual chest wall compressions, with the patient sedated in an expiratory pause... DPes/DPaw value between 0.8 and 1.2, which indicates the balloon is appropriately located",
+    "provenance": {
+     "quote": "The ratio was measured through a maneuver with 3 to 5 manual chest wall compressions, with the patient sedated in an expiratory pause.",
+     "location": "Supplementary Material, Esophageal catheter procedure"
+    }
+   },
+   "position_verification": {
+    "value": "Confirmation of the esophageal location of the catheter in the distal third of the esophagus was given by the presence of a cardiac artifact signal and/or visualization of the radiopaque markers of the device on the chest X-ray; esophageal pressure position validated daily before making any measurements.",
+    "provenance": {
+     "quote": "Confirmation of the esophageal location of the catheter in the distal third of the esophagus was given by the presence of a cardiac artifact signal and/or visualization of the radiopaque markers of the device on the chest X-ray. ... the esophageal pressure position was validated daily before making any measurements to ensure accuracy.",
+     "location": "Supplementary Material, Esophageal catheter procedure"
+    }
+   },
+   "occlusion_ratio_acceptance": {
+    "value": "DPes/DPaw between 0.8 and 1.2",
+    "provenance": {
+     "quote": "with the appropriate ratio of esophageal pressure to airway pressure (DPes/DPaw) value between 0.8 and 1.2, which indicates the balloon is appropriately located, providing a valid measurement of Pes.",
+     "location": "Supplementary Material, Esophageal catheter procedure"
+    }
+   }
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "The calculation of transpulmonary pressure was done using the absolute value of esophageal pressure (direct measure). PL insp= Pplat – Pes insp, expiratory transpulmonary pressure (PL exp= Pplat – Pes exp)",
+    "provenance": {
+     "quote": "The calculation of transpulmonary pressure was done using the absolute value of esophageal pressure (direct measure).(5)",
+     "location": "Supplementary Material, after Figure 4S description"
+    }
+   },
+   "pes_correction_applied": {
+    "value": "complete deflation of the balloon was performed with a negative pressure of -20cmH2O using a 10mL syringe before each measurement session; no fixed offset subtraction stated",
+    "provenance": {
+     "quote": "After confirmation, complete deflation of the balloon was performed with a negative pressure of -20cmH2O using a 10mL syringe.",
+     "location": "Supplementary Material, Esophageal catheter procedure"
+    }
+   }
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_positive_range",
+   "strategy_verbatim": {
+    "value": "transpulmonary expiratory pressure > 0 and ≤ 2cmH2O for the esophageal Catheter Group",
+    "provenance": {
+     "quote": "Titrated PEEP was considered according to the corresponding intercept point of cumulative collapse and overdistension curves for the EIT Group, transpulmonary expiratory pressure > 0 and ≤ 2cmH2O for the esophageal Catheter Group, and pressure measured immediately before the decrease ≥ 1cmH2O in Crs in the best compliance group.",
+     "location": "p. 3, Positive end-expiratory pressure titration immediately after randomization (Day 0)"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "transpulmonary expiratory pressure > 0 and ≤ 2cmH2O for the esophageal Catheter Group",
+     "location": "p. 3, PEEP titration immediately after randomization (Day 0)"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 2,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "transpulmonary expiratory pressure > 0 and ≤ 2cmH2O for the esophageal Catheter Group",
+     "location": "p. 3, PEEP titration immediately after randomization (Day 0)"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": {
+    "value": 23,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP was increased in steps of 2cmH2O every 30 seconds until a maximum of 23cmH2O, when a decremental PEEP maneuver was initiated until a minimum of 7cmH2O.",
+     "location": "p. 3, PEEP titration immediately after randomization (Day 0)"
+    }
+   },
+   "titration_frequency": {
+    "value": "daily, each morning from Day 1 to Day 3; re-titrated if SpO2 decreased to lower than 90%",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure was titrated daily exclusively according to the randomly assigned method and maintained until the next morning, except in the control group... except if SpO2 decreased to lower than 90%. In this case, PEEP was re-titrated with the assigned method.",
+     "location": "p. 3, PEEP titration from Day 1 to Day 3; Supplementary Material, Section 5S"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": false,
+   "recruitment_manoeuvre_detail": {
+    "value": "No recruitment maneuver was performed immediately after PEEP titration, as per the protocol.",
+    "provenance": {
+     "quote": "No recruitment maneuver was performed immediately after PEEP titration, as per the protocol.",
+     "location": "p. 3, Interventions, para 2"
+    }
+   },
+   "tidal_volume_target": {
+    "value": "4 to 6mL/kg of ideal body weight, Pplat < 30cmH2O",
+    "provenance": {
+     "quote": "Participants were ventilated in a volume-controlled mode with 4 to 6mL/kg of ideal body weight, Pplat < 30cmH2O, adequate RR to maintain pH > 7.30",
+     "location": "Supplementary Material, Section 5S"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "plateau pressure lower than 30cmH2O",
+    "provenance": {
+     "quote": "target tidal volume was 6mL/kg predicted body weight or lower (4 - 5mL/kg) to maintain plateau pressure lower than 30cmH2O.",
+     "location": "Supplementary Material, Section 3S"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Patients fully sedated and received neuromuscular blockade while supine, head of bed elevated to 30°; closed suction system until extubation; dead-space reduction with active external humidifier, treatment of hyperthermia, adequate sedation, and neuromuscular blockade used to manage respiratory acidosis.",
+    "provenance": {
+     "quote": "Patients were fully sedated and received neuromuscular blockade while in the supine position, with the head of the bed elevated to 30o. ... Dead-space reduction with replacement of the heat and moisture exchanger by active external humidifier, treatment of hyperthermia, adequate sedation, and neuromuscular blockade were also used to manage respiratory acidosis.",
+     "location": "p. 3, Interventions; Supplementary Material, Section 5S"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "ards_onset",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "Positive end-expiratory pressure titration immediately after randomization (Day 0); all patients received an esophageal balloon catheter and an EIT belt at this time.",
+    "provenance": {
+     "quote": "All patients received an esophageal balloon catheter and an EIT belt at this time.",
+     "location": "p. 3, Interventions, Preparation for all patients after randomization"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "PEEP set according to the assigned group and maintained until the next morning, daily re-titration from Day 1 to Day 3 (esophageal catheter applied to all patients for the D0 simultaneous titration; assigned-method titration up to Day 3)",
+   "provenance": {
+    "quote": "After determining the titrated PEEP using all individual methods for each patient, PEEP was set according to the assigned group and maintained until the next morning, except for the control group... Positive end-expiratory pressure was titrated daily exclusively according to the randomly assigned method and maintained until the next morning",
+    "location": "p. 3, PEEP titration immediately after randomization (Day 0) and from Day 1 to Day 3"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table"
+  ],
+  "comparator_verbatim": {
+   "value": "a control group using a low positive end-expiratory pressure/ fraction of inspired oxygen table with adjustments as necessary; PEEP/FiO2 combination to maintain SpO2 between 90 - 96% (Table 1S)",
+   "provenance": {
+    "quote": "Initially, PEEP was titrated according to the low PEEP/FiO2 table (Table 1S - Supplementary Material) to maintain SpO2 between 90 - 96%.",
+    "location": "p. 3, PEEP titration immediately after randomization (Day 0)"
+   }
+  },
+  "crossover_order": null,
+  "washout_or_stabilisation": null
+ },
+ "arms": [
+  {
+   "label": "esophageal_catheter",
+   "label_verbatim": "esophageal Catheter Group",
+   "role": "intervention",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 13,
+    "provenance": {
+     "quote": "Allocated to esophageal catheter (n = 13)",
+     "location": "p. 4, Figure 1, CONSORT flow diagram"
+    }
+   },
+   "n_analysed": {
+    "value": 13,
+    "provenance": {
+     "quote": "Analized (n = 13)",
+     "location": "p. 4, Figure 1, Analysis box, esophageal catheter arm"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "peep_fio2_table",
+   "label_verbatim": "PEEP/FiO2 table group",
+   "role": "comparator",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 12,
+    "provenance": {
+     "quote": "Allocated to low PEEP/FiO2 table (n = 12)",
+     "location": "p. 4, Figure 1, CONSORT flow diagram"
+    }
+   },
+   "n_analysed": {
+    "value": 12,
+    "provenance": {
+     "quote": "Analized (n = 12)",
+     "location": "p. 4, Figure 1, Analysis box, low PEEP/FiO2 table arm"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "eit_guided",
+   "label_verbatim": "EIT Group (electrical impedance tomography)",
+   "role": "alternative_titration_condition",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 12,
+    "provenance": {
+     "quote": "12 to the EIT Group",
+     "location": "Results, Patients, para 1"
+    }
+   },
+   "n_analysed": {
+    "value": 12,
+    "provenance": {
+     "quote": "Analized (n = 12) [EIT]",
+     "location": "Figure 1, Analysis box, EIT"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 10,
+    "dispersion_type": "iqr",
+    "dispersion_low": 9,
+    "dispersion_high": 14,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP, Median (d0 to d3) - EIT (n = 12): 10 (9 - 14)",
+     "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'EIT'"
+    }
+   }
+  },
+  {
+   "label": "best_compliance",
+   "label_verbatim": "best Crs group (best compliance)",
+   "role": "alternative_titration_condition",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 12,
+    "provenance": {
+     "quote": "12 to the best Crs group",
+     "location": "Results, Patients, para 1"
+    }
+   },
+   "n_analysed": {
+    "value": 12,
+    "provenance": {
+     "quote": "Analized (n = 12) [best compliance]",
+     "location": "Figure 1, Analysis box, best compliance"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 10,
+    "dispersion_type": "iqr",
+    "dispersion_low": 9,
+    "dispersion_high": 12,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP, Median (d0 to d3) - Best compliance (n = 12): 10 (9 - 12)",
+     "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'Best compliance'"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Expiratory transpulmonary pressure, baseline",
+   "definition_verbatim": "PL exp = Pplat - Pes exp (as printed)",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Measured after a 2-second expiratory pause; number of patients with a baseline measurement is given per arm (EIT n = 10, catheter n = 11, best compliance n = 9, PEEP table n = 12; total n = 42).",
+    "provenance": {
+     "quote": "Pes at the end of inspiration (Pes insp) and expiration (Pes exp) were measured after a 2-second inspiratory or expiratory pause in the ventilator",
+     "location": "Supplementary Material, Section 4S - Esophageal catheter procedure"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 1.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.3,
+     "dispersion_high": 2.5,
+     "n": 11,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure Baseline 0.4 (-1.9 - 1.9) (n = 10) 1.0 (0.3 - 2.5) (n = 11) 1.8 (-0.5 - 3.9) (n = 9) -0.2 (-3.3 - 1.0) (n = 12) 0.8 (-1.2 - 2.6) (n = 42)",
+      "location": "p. 5, Table 1, row: Expiratory transpulmonary pressure"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 1.8,
+     "dispersion_type": "iqr",
+     "dispersion_low": -0.5,
+     "dispersion_high": 3.9,
+     "n": 9,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure Baseline 0.4 (-1.9 - 1.9) (n = 10) 1.0 (0.3 - 2.5) (n = 11) 1.8 (-0.5 - 3.9) (n = 9) -0.2 (-3.3 - 1.0) (n = 12) 0.8 (-1.2 - 2.6) (n = 42)",
+      "location": "p. 5, Table 1, row: Expiratory transpulmonary pressure"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": -0.2,
+     "dispersion_type": "iqr",
+     "dispersion_low": -3.3,
+     "dispersion_high": 1.0,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure Baseline 0.4 (-1.9 - 1.9) (n = 10) 1.0 (0.3 - 2.5) (n = 11) 1.8 (-0.5 - 3.9) (n = 9) -0.2 (-3.3 - 1.0) (n = 12) 0.8 (-1.2 - 2.6) (n = 42)",
+      "location": "p. 5, Table 1, row: Expiratory transpulmonary pressure"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 0.4,
+     "dispersion_type": "iqr",
+     "dispersion_low": -1.9,
+     "dispersion_high": 1.9,
+     "n": 10,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Baseline - EIT: 0.4 (-1.9 - 1.9) (n = 10)",
+      "location": "Table 1 / Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Baseline', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.35,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Baseline - Total: 0.8 (-1.2 - 2.6) (n = 42) - p value 0.35",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "and transpulmonary expiratory pressure of 0.8cmH2O (IQR -1.2 - 2.6)",
+    "location": "Results, Patients, para 2"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FiO2, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 165,
+     "dispersion_type": "iqr",
+     "dispersion_low": 105,
+     "dispersion_high": 196,
+     "n": 13,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 190,
+     "dispersion_type": "iqr",
+     "dispersion_low": 152,
+     "dispersion_high": 211,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 192,
+     "dispersion_type": "iqr",
+     "dispersion_low": 169,
+     "dispersion_high": 219,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2 129 (77 - 182) 165 (105 - 196) 190 (152 - 211) 192 (169 - 219) 172 (117 - 203)",
+      "location": "p. 5, Table 1, row: PaO2/FiO2"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 129,
+     "dispersion_type": "iqr",
+     "dispersion_low": 77,
+     "dispersion_high": 182,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2, Baseline - EIT: 129 (77 - 182)",
+      "location": "Table 1 / Supplementary Table 2S, row 'PaO2/FiO2', Period 'Baseline', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.07,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaO2/FiO2, Baseline - Total: 172 (117 - 203) - p value 0.07",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Most patients had moderate ARDS with a median PaO2/FiO2 ratio of 172mmHg (IQR 117 - 203)",
+    "location": "Results, Patients, para 2"
+   }
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "28-day mortality",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 28,
+    "hours": null,
+    "label_verbatim": "28-day mortality"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "events": 4,
+     "total": 13,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "provenance": {
+      "quote": "28-day mortality 7/12 (58) 4/13 (31) 2/12 (17) 6/12 (50) 19/49 (39) 0.15",
+      "location": "Supplementary Material, Table 4S, row: 28-day mortality"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "events": 2,
+     "total": 12,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "provenance": {
+      "quote": "28-day mortality 7/12 (58) 4/13 (31) 2/12 (17) 6/12 (50) 19/49 (39) 0.15",
+      "location": "Supplementary Material, Table 4S, row: 28-day mortality"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "events": 6,
+     "total": 12,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "provenance": {
+      "quote": "28-day mortality 7/12 (58) 4/13 (31) 2/12 (17) 6/12 (50) 19/49 (39) 0.15",
+      "location": "Supplementary Material, Table 4S, row: 28-day mortality"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "events": 7,
+     "total": 12,
+     "provenance": {
+      "quote": "28-day mortality - EIT (n = 12): 7/12 (58)",
+      "location": "Supplementary Table 4S, row '28-day mortality', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.15,
+     "adjusted": false,
+     "test_used": "Fisher exact test (four-group comparison)",
+     "provenance": {
+      "quote": "28-day mortality - Total (n = 49): 19/49 (39) - p value* 0.15",
+      "location": "Supplementary Table 4S, row '28-day mortality', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "28-day mortality 7/12 (58) 4/13 (31) 2/12 (17) 6/12 (50) 19/49 (39)",
+    "location": "Supplementary Material, Table 4S, row: 28-day mortality"
+   }
+  },
+  {
+   "domain": "ventilator_free_days",
+   "name_verbatim": "Ventilator free days",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 28,
+    "hours": null,
+    "label_verbatim": "Ventilator free days"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 17,
+     "dispersion_type": "iqr",
+     "dispersion_low": 13,
+     "dispersion_high": 21,
+     "n": 13,
+     "unit": "days",
+     "provenance": {
+      "quote": "Ventilator free days 19 (14 - 23) 17 (13 - 21) 20 (11 - 23) 21 (18 - 22) 20 (13.73) 0.70",
+      "location": "Supplementary Material, Table 4S, row: Ventilator free days"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 20,
+     "dispersion_type": "iqr",
+     "dispersion_low": 11,
+     "dispersion_high": 23,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Ventilator free days 19 (14 - 23) 17 (13 - 21) 20 (11 - 23) 21 (18 - 22) 20 (13.73) 0.70",
+      "location": "Supplementary Material, Table 4S, row: Ventilator free days"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 21,
+     "dispersion_type": "iqr",
+     "dispersion_low": 18,
+     "dispersion_high": 22,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Ventilator free days 19 (14 - 23) 17 (13 - 21) 20 (11 - 23) 21 (18 - 22) 20 (13.73) 0.70",
+      "location": "Supplementary Material, Table 4S, row: Ventilator free days"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 19,
+     "dispersion_type": "iqr",
+     "dispersion_low": 14,
+     "dispersion_high": 23,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Ventilator free days - EIT (n = 12): 19 (14 - 23)",
+      "location": "Supplementary Table 4S, row 'Ventilator free days', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.7,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Ventilator free days - p value* 0.70",
+      "location": "Supplementary Table 4S, row 'Ventilator free days', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Ventilator free days 19 (14 - 23) 17 (13 - 21) 20 (11 - 23) 21 (18 - 22) 20 (13.73) 0.70",
+    "location": "Supplementary Material, Table 4S, row: Ventilator free days"
+   }
+  },
+  {
+   "domain": "icu_length_of_stay",
+   "name_verbatim": "ICU LOS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "ICU LOS"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 16,
+     "n": 13,
+     "unit": "days",
+     "provenance": {
+      "quote": "ICU LOS 13 (6 - 23) 13 (10 - 16) 13 (9 - 20) 9 (8 - 15) 12 (8 - 18) 0.73",
+      "location": "Supplementary Material, Table 4S, row: ICU LOS"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 20,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "ICU LOS 13 (6 - 23) 13 (10 - 16) 13 (9 - 20) 9 (8 - 15) 12 (8 - 18) 0.73",
+      "location": "Supplementary Material, Table 4S, row: ICU LOS"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 9,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8,
+     "dispersion_high": 15,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "ICU LOS 13 (6 - 23) 13 (10 - 16) 13 (9 - 20) 9 (8 - 15) 12 (8 - 18) 0.73",
+      "location": "Supplementary Material, Table 4S, row: ICU LOS"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 6,
+     "dispersion_high": 23,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "ICU LOS - EIT (n = 12): 13 (6 - 23)",
+      "location": "Supplementary Table 4S, row 'ICU LOS', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.73,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "ICU LOS - Total (n = 49): 12 (8 - 18) - p value* 0.73",
+      "location": "Supplementary Table 4S, row 'ICU LOS', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "ICU LOS 13 (6 - 23) 13 (10 - 16) 13 (9 - 20) 9 (8 - 15) 12 (8 - 18) 0.73",
+    "location": "Supplementary Material, Table 4S, row: ICU LOS"
+   }
+  },
+  {
+   "domain": "hospital_length_of_stay",
+   "name_verbatim": "Hospital LOS",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Hospital LOS"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 15,
+     "dispersion_type": "iqr",
+     "dispersion_low": 14,
+     "dispersion_high": 21,
+     "n": 13,
+     "unit": "days",
+     "provenance": {
+      "quote": "Hospital LOS 20 (7 - 24) 15 (14 - 21) 20.5 (3 - 22) 17 (9 - 22) 18 (11 - 23) 0.81",
+      "location": "Supplementary Material, Table 4S, row: Hospital LOS"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 20.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 22,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Hospital LOS 20 (7 - 24) 15 (14 - 21) 20.5 (3 - 22) 17 (9 - 22) 18 (11 - 23) 0.81",
+      "location": "Supplementary Material, Table 4S, row: Hospital LOS"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 17,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 22,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Hospital LOS 20 (7 - 24) 15 (14 - 21) 20.5 (3 - 22) 17 (9 - 22) 18 (11 - 23) 0.81",
+      "location": "Supplementary Material, Table 4S, row: Hospital LOS"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 20,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7,
+     "dispersion_high": 24,
+     "n": 12,
+     "unit": "days",
+     "provenance": {
+      "quote": "Hospital LOS - EIT (n = 12): 20 (7 - 24)",
+      "location": "Supplementary Table 4S, row 'Hospital LOS', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.81,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Hospital LOS - Total (n = 49): 18 (11 - 23) - p value* 0.81",
+      "location": "Supplementary Table 4S, row 'Hospital LOS', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Hospital LOS 20 (7 - 24) 15 (14 - 21) 20.5 (3 - 22) 17 (9 - 22) 18 (11 - 23) 0.81",
+    "location": "Supplementary Material, Table 4S, row: Hospital LOS"
+   }
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Barotrauma",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "end_of_study",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Barotrauma"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "esophageal_catheter",
+     "events": 0,
+     "total": 13,
+     "provenance": {
+      "quote": "Barotrauma 0/12 (0) 0/13 (0) 0/12 (0) 0/12 (0) 0/49 (0) 1",
+      "location": "Supplementary Material, Table 4S, row: Barotrauma"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "events": 0,
+     "total": 12,
+     "provenance": {
+      "quote": "Barotrauma 0/12 (0) 0/13 (0) 0/12 (0) 0/12 (0) 0/49 (0) 1",
+      "location": "Supplementary Material, Table 4S, row: Barotrauma"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "events": 0,
+     "total": 12,
+     "provenance": {
+      "quote": "Barotrauma 0/12 (0) 0/13 (0) 0/12 (0) 0/12 (0) 0/49 (0) 1",
+      "location": "Supplementary Material, Table 4S, row: Barotrauma"
+     }
+    },
+    {
+     "arm_label": "eit_guided",
+     "events": 0,
+     "total": 12,
+     "provenance": {
+      "quote": "Barotrauma - EIT (n = 12): 0/12 (0)",
+      "location": "Supplementary Table 4S, row 'Barotrauma', column 'EIT'"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 1,
+     "adjusted": false,
+     "test_used": "Fisher exact test",
+     "provenance": {
+      "quote": "Barotrauma - Total (n = 49): 0/49 (0) - p value* 1",
+      "location": "Supplementary Table 4S, row 'Barotrauma', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "None of the patients had barotrauma.",
+    "location": "p. 8, Exploratory outcomes"
+   }
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "Prone position",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "end_of_study",
+    "label_verbatim": "Prone position"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "events": 6,
+     "total": 12,
+     "provenance": {
+      "quote": "Prone position - EIT (n = 12): 6/12 (50)",
+      "location": "Supplementary Table 4S, row 'Prone position', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "events": 9,
+     "total": 13,
+     "provenance": {
+      "quote": "Prone position - Catheter (n = 13): 9/13 (70)",
+      "location": "Supplementary Table 4S, row 'Prone position', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "events": 5,
+     "total": 12,
+     "provenance": {
+      "quote": "Prone position - Best compliance (n = 12): 5/12 (42)",
+      "location": "Supplementary Table 4S, row 'Prone position', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "events": 4,
+     "total": 12,
+     "provenance": {
+      "quote": "Prone position - PEEP table (n = 12): 4/12 (33)",
+      "location": "Supplementary Table 4S, row 'Prone position', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.36,
+     "adjusted": false,
+     "test_used": "Fisher exact test",
+     "provenance": {
+      "quote": "Prone position - Total (n = 49): 24/49 (49) - p value* 0.36",
+      "location": "Supplementary Table 4S, row 'Prone position', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "28-day mortality was 39%, and 49% were submitted to the prone position.",
+    "location": "Results, Exploratory outcomes, para 1"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Time of sedation",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "label_verbatim": "Time of sedation"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 8,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5,
+     "dispersion_high": 12,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of sedation - EIT (n = 12): 8 (5 - 12)",
+      "location": "Supplementary Table 4S, row 'Time of sedation', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8,
+     "dispersion_high": 11,
+     "n": 13,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of sedation - Catheter (n = 13): 10 (8 - 11)",
+      "location": "Supplementary Table 4S, row 'Time of sedation', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 9,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5,
+     "dispersion_high": 13,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of sedation - Best compliance (n = 12): 9 (5 - 13)",
+      "location": "Supplementary Table 4S, row 'Time of sedation', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 7,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5,
+     "dispersion_high": 9,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of sedation - PEEP table (n = 12): 7 (5 - 9)",
+      "location": "Supplementary Table 4S, row 'Time of sedation', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.7,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Time of sedation - Total (n = 49): 9 (5 - 11) - p value* 0.7",
+      "location": "Supplementary Table 4S, row 'Time of sedation', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "duration of intravenous sedatives use, neuromuscular blocking agents, vasopressors, corticosteroids",
+    "location": "Supplementary Material, Section 7S - Exploratory outcomes"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Time of neuromuscular blocking agents",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "label_verbatim": "Time of neuromuscular blocking agents"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 6,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of neuromuscular blocking agents - EIT (n = 12): 5 (3 - 6)",
+      "location": "Supplementary Table 4S, row 'Time of neuromuscular blocking agents', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 4,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 5,
+     "n": 13,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of neuromuscular blocking agents - Catheter (n = 13): 4 (3 - 5)",
+      "location": "Supplementary Table 4S, row 'Time of neuromuscular blocking agents', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 6,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of neuromuscular blocking agents - Best compliance (n = 12): 3 (3 - 6)",
+      "location": "Supplementary Table 4S, row 'Time of neuromuscular blocking agents', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 4,
+     "dispersion_type": "iqr",
+     "dispersion_low": 3,
+     "dispersion_high": 6,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of neuromuscular blocking agents - PEEP table (n = 12): 4 (3 - 6)",
+      "location": "Supplementary Table 4S, row 'Time of neuromuscular blocking agents', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.89,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Time of neuromuscular blocking agents - Total (n = 49): 4 (3 - 6) - p value* 0.89",
+      "location": "Supplementary Table 4S, row 'Time of neuromuscular blocking agents', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "duration of intravenous sedatives use, neuromuscular blocking agents, vasopressors, corticosteroids",
+    "location": "Supplementary Material, Section 7S - Exploratory outcomes"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Time in vasopressors",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "label_verbatim": "Time in vasopressors"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 2,
+     "dispersion_high": 5,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time in vasopressors - EIT (n = 12): 3 (2 - 5)",
+      "location": "Supplementary Table 4S, row 'Time in vasopressors', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 2,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0,
+     "dispersion_high": 3,
+     "n": 13,
+     "unit": null,
+     "provenance": {
+      "quote": "Time in vasopressors - Catheter (n = 13): 2 (0 - 3)",
+      "location": "Supplementary Table 4S, row 'Time in vasopressors', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 2,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0,
+     "dispersion_high": 3.5,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time in vasopressors - Best compliance (n = 12): 2 (0 - 3.5)",
+      "location": "Supplementary Table 4S, row 'Time in vasopressors', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 2,
+     "dispersion_high": 6,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time in vasopressors - PEEP table (n = 12): 3 (2 - 6)",
+      "location": "Supplementary Table 4S, row 'Time in vasopressors', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.42,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Time in vasopressors - Total (n = 49): 2 (1 - 5) - p value* 0.42",
+      "location": "Supplementary Table 4S, row 'Time in vasopressors', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "duration of intravenous sedatives use, neuromuscular blocking agents, vasopressors, corticosteroids",
+    "location": "Supplementary Material, Section 7S - Exploratory outcomes"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Time of corticosteroids use",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "duration_until_event",
+    "label_verbatim": "Time of corticosteroids use"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1,
+     "dispersion_high": 16,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of corticosteroids use - EIT (n = 12): 5 (1 - 16)",
+      "location": "Supplementary Table 4S, row 'Time of corticosteroids use', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 4,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0,
+     "dispersion_high": 11,
+     "n": 13,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of corticosteroids use - Catheter (n = 13): 4 (0 - 11)",
+      "location": "Supplementary Table 4S, row 'Time of corticosteroids use', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 4,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1,
+     "dispersion_high": 8,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of corticosteroids use - Best compliance (n = 12): 4 (1 - 8)",
+      "location": "Supplementary Table 4S, row 'Time of corticosteroids use', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 8,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0,
+     "dispersion_high": 14,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "Time of corticosteroids use - PEEP table (n = 12): 8 (0 - 14)",
+      "location": "Supplementary Table 4S, row 'Time of corticosteroids use', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.93,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Time of corticosteroids use - Total (n = 49): 5 (0 - 12) - p value* 0.93",
+      "location": "Supplementary Table 4S, row 'Time of corticosteroids use', column 'p value*'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "duration of intravenous sedatives use, neuromuscular blocking agents, vasopressors, corticosteroids",
+    "location": "Supplementary Material, Section 7S - Exploratory outcomes"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Crs (respiratory system static compliance), baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Measured at the time eligibility criteria were being assessed, after 1 hour of standardized ventilation according to the ARDSNet protocol.",
+    "provenance": {
+     "quote": "Baseline values, including respiratory system compliance, were recorded at the time eligibility criteria were being assessed.",
+     "location": "Methods, Patients, para 2"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion_low": 25,
+     "dispersion_high": 33,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Crs - EIT (n = 12): 26 (25 - 33)",
+      "location": "Table 1, row 'Crs', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 22,
+     "dispersion_type": "iqr",
+     "dispersion_low": 18,
+     "dispersion_high": 25,
+     "n": 13,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Crs - Catheter (n = 13): 22 (18 - 25)",
+      "location": "Table 1, row 'Crs', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 25,
+     "dispersion_type": "iqr",
+     "dispersion_low": 21,
+     "dispersion_high": 29,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Crs - Best compliance (n = 12): 25 (21 - 29)",
+      "location": "Table 1, row 'Crs', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion_low": 23,
+     "dispersion_high": 33,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Crs - PEEP table (n = 12): 26 (23 - 33)",
+      "location": "Table 1, row 'Crs', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.12,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Compliance titrated PEEP, Baseline - Total (n = 49): 25 (22 - 32) - p value 0.12",
+      "location": "Supplementary Table 2S, row 'Compliance titrated PEEP', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "PEEP of 10cmH2O (IQR 10 - 14), compliance of 25mL/cmH2O (IQR 22 - 32)",
+    "location": "Results, Patients, para 2"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Mean respiratory system compliance (Crs) on Day 0",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 0,
+    "label_verbatim": "Day 0"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "mean",
+     "value": 29.5,
+     "dispersion_type": "sd",
+     "dispersion": 8.9,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "The mean respiratory system compliance on Day 0 was 29.5 (8.9) mL/cmH2O in the EIT Group",
+      "location": "Results, para 2 (p. 5-6)"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "mean",
+     "value": 24.9,
+     "dispersion_type": "sd",
+     "dispersion": 7.3,
+     "n": 13,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "24.9 (7.3) mL/cmH2O in the Catheter Group",
+      "location": "Results, para 2 (p. 5-6)"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "mean",
+     "value": 30.0,
+     "dispersion_type": "sd",
+     "dispersion": 12.6,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "30.0 (12.6) mL/cmH2O in the best compliance group",
+      "location": "Results, para 2 (p. 5-6)"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "mean",
+     "value": 29.9,
+     "dispersion_type": "sd",
+     "dispersion": 7.6,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "29.9 (7.6) mL/cmH2O in the PEEP/table group (Figure 2)",
+      "location": "Results, para 2 (p. 5-6)"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The mean respiratory system compliance on Day 0 was 29.5 (8.9) mL/cmH2O in the EIT Group, 24.9 (7.3) mL/cmH2O in the Catheter Group, 30.0 (12.6) mL/cmH2O in the best compliance group, and 29.9 (7.6) mL/cmH2O in the PEEP/table group (Figure 2).",
+    "location": "Results, para 2 (p. 5-6)"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Mean respiratory system compliance (Crs) from Day 0 to Day 3",
+   "definition_verbatim": "The primary outcome was mean respiratory system compliance (Crs) from Day 0 to Day 3.",
+   "is_primary_outcome": true,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Mean Crs from Day 0 to Day 3"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 29,
+     "dispersion_type": "iqr",
+     "dispersion_low": 24,
+     "dispersion_high": 33,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Compliance titrated PEEP, Median (d0 to d3) - EIT (n = 12): 29 (24 - 33)",
+      "location": "Supplementary Table 2S, row 'Compliance titrated PEEP', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 25,
+     "dispersion_type": "iqr",
+     "dispersion_low": 20,
+     "dispersion_high": 33,
+     "n": 13,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Compliance titrated PEEP, Median (d0 to d3) - Catheter (n = 13): 25 (20 - 33)",
+      "location": "Supplementary Table 2S, row 'Compliance titrated PEEP', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 27,
+     "dispersion_type": "iqr",
+     "dispersion_low": 24,
+     "dispersion_high": 34,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Compliance titrated PEEP, Median (d0 to d3) - Best compliance (n = 12): 27 (24 - 34)",
+      "location": "Supplementary Table 2S, row 'Compliance titrated PEEP', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 27,
+     "dispersion_type": "iqr",
+     "dispersion_low": 25,
+     "dispersion_high": 38,
+     "n": 12,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Compliance titrated PEEP, Median (d0 to d3) - PEEP table (n = 12): 27 (25 - 38)",
+      "location": "Supplementary Table 2S, row 'Compliance titrated PEEP', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": "mean_difference",
+     "value": 0.03,
+     "ci_low": -2.74,
+     "ci_high": 2.8,
+     "ci_level": 95,
+     "p_value": 0.98,
+     "adjusted": true,
+     "adjustment_covariates": "Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2)",
+     "provenance": {
+      "quote": "Group EIT - Estimate 0.03; SE 1.45; 95%CI (-2.74 - 2.8); p value 0.98",
+      "location": "Table 2, row 'Group EIT'"
+     }
+    },
+    {
+     "type": "mean_difference",
+     "value": 1.9,
+     "ci_low": -0.98,
+     "ci_high": 4.78,
+     "ci_level": 95,
+     "p_value": 0.2,
+     "adjusted": true,
+     "adjustment_covariates": "Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2)",
+     "provenance": {
+      "quote": "Group catheter - Estimate 1.90; SE 1.39; 95%CI (-0.98 - 4.78); p value 0.20",
+      "location": "Table 2, row 'Group catheter'"
+     }
+    },
+    {
+     "type": "mean_difference",
+     "value": 1.42,
+     "ci_low": -1.35,
+     "ci_high": 4.19,
+     "ci_level": 95,
+     "p_value": 0.31,
+     "adjusted": true,
+     "adjustment_covariates": "Reference group = low PEEP/FiO2 table; mixed linear regression adjusted for baseline compliance (Table 2)",
+     "provenance": {
+      "quote": "Group best compliance - Estimate 1.42; SE 1.39; 95%CI (-1.35 - 4.19); p value 0.31",
+      "location": "Table 2, row 'Group best compliance'"
+     }
+    },
+    {
+     "type": "mean_difference",
+     "value": 0.52,
+     "ci_low": -3.28,
+     "ci_high": 4.31,
+     "ci_level": 95,
+     "p_value": 0.79,
+     "adjusted": true,
+     "adjustment_covariates": "Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+     "provenance": {
+      "quote": "Group EIT - Estimate 0.52; SE 1.93; 95%CI (-3.28 - 4.31); p value 0.79",
+      "location": "Supplementary Table 5S, row 'Group EIT'"
+     }
+    },
+    {
+     "type": "mean_difference",
+     "value": -0.16,
+     "ci_low": -3.98,
+     "ci_high": 3.66,
+     "ci_level": 95,
+     "p_value": 0.93,
+     "adjusted": true,
+     "adjustment_covariates": "Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+     "provenance": {
+      "quote": "Group catheter - Estimate -0.16; SE 1.94; 95%CI (-3.98 - 3.66); p value 0.93",
+      "location": "Supplementary Table 5S, row 'Group catheter'"
+     }
+    },
+    {
+     "type": "mean_difference",
+     "value": 2.45,
+     "ci_low": -1.35,
+     "ci_high": 6.24,
+     "ci_level": 95,
+     "p_value": 0.21,
+     "adjusted": true,
+     "adjustment_covariates": "Post hoc sensitivity analysis, mixed model with group x time interaction; reference group = low PEEP/FiO2 table (Table 5S, main group term)",
+     "provenance": {
+      "quote": "Group best compliance - Estimate 2.45; SE 1.93; 95%CI (-1.35 - 6.24); p value 0.21",
+      "location": "Supplementary Table 5S, row 'Group best compliance'"
+     }
+    },
+    {
+     "type": "other",
+     "value": -0.36,
+     "ci_low": -2.07,
+     "ci_high": 1.36,
+     "ci_level": 95,
+     "p_value": 0.69,
+     "adjusted": true,
+     "adjustment_covariates": "Group x day interaction term (Table 5S)",
+     "provenance": {
+      "quote": "Group EIT (day) - Estimate -0.36; SE 0.89; 95%CI (-2.07 - 1.36); p value 0.69",
+      "location": "Supplementary Table 5S, row 'Group EIT (day)'"
+     }
+    },
+    {
+     "type": "other",
+     "value": 1.38,
+     "ci_low": -0.35,
+     "ci_high": 3.11,
+     "ci_level": 95,
+     "p_value": 0.13,
+     "adjusted": true,
+     "adjustment_covariates": "Group x day interaction term (Table 5S)",
+     "provenance": {
+      "quote": "Group catheter (day) - Estimate 1.38; SE 0.9; 95%CI (-0.35 - 3.11); p value 0.13",
+      "location": "Supplementary Table 5S, row 'Group catheter (day)'"
+     }
+    },
+    {
+     "type": "other",
+     "value": -0.74,
+     "ci_low": -2.45,
+     "ci_high": 0.98,
+     "ci_level": 95,
+     "p_value": 0.41,
+     "adjusted": true,
+     "adjustment_covariates": "Group x day interaction term (Table 5S)",
+     "provenance": {
+      "quote": "Group best compliance (day) - Estimate -0.74; SE 0.89; 95%CI (-2.45 - 0.98); p value 0.41",
+      "location": "Supplementary Table 5S, row 'Group best compliance (day)'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "As compared to the low PEEP/FIO2 table, the change in mean Crs from Day 0 to Day 3 adjusted by the baseline compliance was 0.03mL/cmH2O (95%CI -2.74 - 2.8; p = 0.98) in the EIT titration group, 1.9mL/cmH2O (95%CI -0.98 - 4.78; p = 0.20) in the esophageal catheter titration group, and 1.42mL/cmH2O (95%CI -1.35 - 4.19; p = 0.31) in the best Crs group.",
+    "location": "Results, Primary outcome, para 1; Table 2"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Crs values derived from the PEEP titrated by each method (Day 0)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 0,
+    "label_verbatim": "Day 0 titration, right after randomization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus catheter_guided",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "esophageal_catheter",
+     "mean_difference": 1.5,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -8.5 to 11.4 mL/cmH2O (Bland-Altman); stored in text, no schema slot for limits of agreement.",
+     "provenance": {
+      "quote": "the Crs values derived from PEEP titrated by PEEP/FiO2 table were 1.5cmH2O higher than Crs measured by the catheter with limits of agreement from -8.5 to 11.4cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus best_compliance",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "best_compliance",
+     "mean_difference": -2.0,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -6.4 to 2.5 mL/cmH2O.",
+     "provenance": {
+      "quote": "2cmH2O lower than Crs measured by the best compliance with limits of agreement from -6.4 to 2.5cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus eit_guided",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "eit_guided",
+     "mean_difference": -1.7,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -10.0 to 6.6 mL/cmH2O.",
+     "provenance": {
+      "quote": "1.7cmH2O lower than Crs measured by EIT with limits of agreement from -10.0 to 6.6cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "catheter_guided minus best_compliance",
+     "arm_label_a": "esophageal_catheter",
+     "arm_label_b": "best_compliance",
+     "mean_difference": -3.4,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -13.2 to 6.3 mL/cmH2O.",
+     "provenance": {
+      "quote": "Crs measured by the catheter was 3.4cmH2O lower than Crs measured by the best compliance with limits of agreement from -13.2 to 6.3cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "catheter_guided minus eit_guided",
+     "arm_label_a": "esophageal_catheter",
+     "arm_label_b": "eit_guided",
+     "mean_difference": -2.6,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -12.1 to 6.9 mL/cmH2O.",
+     "provenance": {
+      "quote": "2.6cmH2O lower than Crs measured by EIT with limits of agreement from -12.1 to 6.9cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "best_compliance minus eit_guided",
+     "arm_label_a": "best_compliance",
+     "arm_label_b": "eit_guided",
+     "mean_difference": 0.8,
+     "n_pairs": null,
+     "unit": "mL/cmH2O",
+     "derivation": "Limits of agreement reported as -2.7 to 4.4 mL/cmH2O.",
+     "provenance": {
+      "quote": "Crs measured by best compliance was 0.8cmH2O higher than Crs measured by the EIT with limits of agreement from -2.7 to 4.4cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The mean difference of Crs values derived from the titrated PEEP was slightly higher than the mean difference of PEEP values, varying from -3.4mL/cmH2O between the esophageal catheter and the best compliance method to 1.5mL/cmH2O between the PEEP-FiO2 table and the esophageal catheter.",
+    "location": "Results, p. 8, para 2; Supplementary Section 8S; Figure 5"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Pplat (plateau pressure), baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 25,
+     "dispersion_type": "iqr",
+     "dispersion_low": 23,
+     "dispersion_high": 29,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat - EIT (n = 12): 25 (23 - 29)",
+      "location": "Table 1, row 'Pplat', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 27,
+     "dispersion_type": "iqr",
+     "dispersion_low": 26,
+     "dispersion_high": 30,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat - Catheter (n = 13): 27 (26 - 30)",
+      "location": "Table 1, row 'Pplat', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 29,
+     "dispersion_type": "iqr",
+     "dispersion_low": 26,
+     "dispersion_high": 30,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat - Best compliance (n = 12): 29 (26 - 30)",
+      "location": "Table 1, row 'Pplat', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 24,
+     "dispersion_type": "iqr",
+     "dispersion_low": 23,
+     "dispersion_high": 27,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat - PEEP table (n = 12): 24 (23 - 27)",
+      "location": "Table 1, row 'Pplat', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.1,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Baseline - Total (n = 49): 26 (23 - 30) - p value 0.10",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Pplat - Total (n = 49): 26 (23 - 30)",
+    "location": "Table 1, row 'Pplat', column 'Total'"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Pplat titrated PEEP, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 24,
+     "dispersion_type": "iqr",
+     "dispersion_low": 22,
+     "dispersion_high": 27.6,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Median (d0 to d3) - EIT (n = 12): 24 (22 - 27.6)",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion_low": 24,
+     "dispersion_high": 28.7,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Median (d0 to d3) - Catheter (n = 13): 26 (24 - 28.7)",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 26,
+     "dispersion_type": "iqr",
+     "dispersion_low": 24,
+     "dispersion_high": 28,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Median (d0 to d3) - Best compliance (n = 12): 26 (24 - 28)",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 23,
+     "dispersion_type": "iqr",
+     "dispersion_low": 21,
+     "dispersion_high": 26,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Median (d0 to d3) - PEEP table (n = 12): 23 (21 - 26)",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.55,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Pplat titrated PEEP, Median (d0 to d3) - Total (n = 49): 25 (22 - 28) - p value 0.55",
+      "location": "Supplementary Table 2S, row 'Pplat titrated PEEP', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Ventilatory and blood gas variables were also adequately balanced between the groups at baseline ... as shown in table 1 and table 2S (Supplementary Material).",
+    "location": "Results, Patients, para 2; Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 11,
+     "dispersion_high": 14,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure - EIT (n = 12): 13 (11 - 14)",
+      "location": "Table 1, row 'Driving pressure', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 16,
+     "dispersion_type": "iqr",
+     "dispersion_low": 15,
+     "dispersion_high": 18,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure - Catheter (n = 13): 16 (15 - 18)",
+      "location": "Table 1, row 'Driving pressure', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 15,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 19,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure - Best compliance (n = 12): 15 (12 - 19)",
+      "location": "Table 1, row 'Driving pressure', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 16,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure - PEEP table (n = 12): 13 (12 - 16)",
+      "location": "Table 1, row 'Driving pressure', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.06,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Baseline - Total (n = 49): 14 (12 - 16) - p value 0.06",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Driving pressure - Total (n = 49): 14 (12 - 16)",
+    "location": "Table 1, row 'Driving pressure', column 'Total'"
+   }
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure titrated PEEP, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 14,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Median (d0 to d3) - EIT (n = 12): 13 (12 - 14)",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 17,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Median (d0 to d3) - Catheter (n = 13): 13 (12 - 17)",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 13,
+     "dispersion_high": 16,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Median (d0 to d3) - Best compliance (n = 12): 13 (13 - 16)",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 16,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Median (d0 to d3) - PEEP table (n = 12): 13 (12 - 16)",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.93,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Driving pressure titrated PEEP, Median (d0 to d3) - Total (n = 49): 13 (12 - 16) - p value 0.93",
+      "location": "Supplementary Table 2S, row 'Driving pressure titrated PEEP', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "There were no differences between groups in the median titrated PEEP values over time from Day 0 to Day 3.",
+    "location": "Results, para 1; Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Inspiratory transpulmonary pressure, baseline",
+   "definition_verbatim": "PL insp = Pplat - Pes insp",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Measured after a 2-second inspiratory pause; number of patients with a baseline measurement is given per arm (EIT n = 10, catheter n = 11, best compliance n = 9, PEEP table n = 12; total n = 42).",
+    "provenance": {
+     "quote": "Pes at the end of inspiration (Pes insp) and expiration (Pes exp) were measured after a 2-second inspiratory or expiratory pause in the ventilator",
+     "location": "Supplementary Material, Section 4S - Esophageal catheter procedure"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 13.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9.1,
+     "dispersion_high": 15,
+     "n": 10,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Baseline - EIT: 13.1 (9.1 - 15) (n = 10)",
+      "location": "Table 1 / Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Baseline', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 15.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 13.6,
+     "dispersion_high": 16.15,
+     "n": 11,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Baseline - Catheter: 15.1 (13.6 - 16.15) (n = 11)",
+      "location": "Table 1, row 'Inspiratory transpulmonary pressure', Period 'Baseline', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 11.9,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10.4,
+     "dispersion_high": 16,
+     "n": 9,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Baseline - Best compliance: 11.9 (10.4 - 16) (n = 9)",
+      "location": "Table 1, row 'Inspiratory transpulmonary pressure', Period 'Baseline', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 10.4,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8.1,
+     "dispersion_high": 14.2,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Baseline - PEEP table: 10.4 (8.1 - 14.2) (n = 12)",
+      "location": "Table 1, row 'Inspiratory transpulmonary pressure', Period 'Baseline', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.13,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Baseline - Total: 13.2 (10.2 - 15.9) (n = 42) - p value 0.13",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "transpulmonary inspiratory pressure of 13.2cmH2O (IQR 10.2 - 15.9)",
+    "location": "Results, Patients, para 2"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Inspiratory transpulmonary pressure, median (D0 to D3)",
+   "definition_verbatim": "PL insp = Pplat - Pes insp",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 12.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8.8,
+     "dispersion_high": 13.8,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Median (d0 to d3) - EIT: 12.1 (8.8 - 13.8)",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 12.3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 11.9,
+     "dispersion_high": 14,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Median (d0 to d3) - Catheter: 12.3 (11.9 - 14)",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 10.52,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8.4,
+     "dispersion_high": 14.4,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Median (d0 to d3) - Best compliance: 10.52 (8.4 - 14.4)",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 10.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 8.6,
+     "dispersion_high": 12.6,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Median (d0 to d3) - PEEP table: 10.0 (8.6 - 12.6)",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.34,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Inspiratory transpulmonary pressure, Median (d0 to d3) - Total: 11.9 (9.0 - 14) - p value 0.34",
+      "location": "Supplementary Table 2S, row 'Inspiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Ventilatory and blood gas variables were also adequately balanced between the groups at baseline ... as shown in table 1 and table 2S (Supplementary Material).",
+    "location": "Results, Patients, para 2; Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Expiratory transpulmonary pressure, median (D0 to D3)",
+   "definition_verbatim": "PL exp = Pplat - Pes exp (as printed)",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 0.4,
+     "dispersion_type": "iqr",
+     "dispersion_low": -1.4,
+     "dispersion_high": 2.6,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - EIT: 0.4 (-1.4 - 2.6)",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 1.2,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.6,
+     "dispersion_high": 2.9,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - Catheter: 1.2 (0.6 - 2.9)",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": -0.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": -2.6,
+     "dispersion_high": 1.7,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - Best compliance: -0.5 (-2.6 - 1.7)",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": -1.1,
+     "dispersion_type": "iqr",
+     "dispersion_low": -1.9,
+     "dispersion_high": 0.3,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - PEEP table: -1.1 (-1.9 - 0.3)",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.08,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - Total: 0.3 (-1.43 - 2.3) - p value 0.08",
+      "location": "Supplementary Table 2S, row 'Expiratory transpulmonary pressure', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Expiratory transpulmonary pressure, Median (d0 to d3) - Total (n = 49): 0.3 (-1.43 - 2.3)",
+    "location": "Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FiO2, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 211,
+     "dispersion_type": "iqr",
+     "dispersion_low": 151,
+     "dispersion_high": 242,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2, Median (d0 to d3) - EIT: 211 (151 - 242)",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 189,
+     "dispersion_type": "iqr",
+     "dispersion_low": 163,
+     "dispersion_high": 236,
+     "n": 13,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2, Median (d0 to d3) - Catheter: 189 (163 - 236)",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 259,
+     "dispersion_type": "iqr",
+     "dispersion_low": 239,
+     "dispersion_high": 267.06,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2, Median (d0 to d3) - Best compliance: 259 (239 - 267.06)",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 232,
+     "dispersion_type": "iqr",
+     "dispersion_low": 183,
+     "dispersion_high": 244,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FiO2, Median (d0 to d3) - PEEP table: 232 (183 - 244)",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.04,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaO2/FiO2, Median (d0 to d3) - Total: 226 (176 - 252) - p value 0.04",
+      "location": "Supplementary Table 2S, row 'PaO2/FiO2', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "PaO2/FiO2, Median (d0 to d3) - Total (n = 49): 226 (176 - 252) - p value 0.04",
+    "location": "Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 86,
+     "dispersion_type": "iqr",
+     "dispersion_low": 70,
+     "dispersion_high": 148,
+     "n": 11,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Baseline - EIT: 86 (70 - 148) (n = 11)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Baseline', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 106,
+     "dispersion_type": "iqr",
+     "dispersion_low": 89,
+     "dispersion_high": 119,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Baseline - Catheter: 106 (89 - 119) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Baseline', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 112,
+     "dispersion_type": "iqr",
+     "dispersion_low": 101,
+     "dispersion_high": 156,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Baseline - Best compliance: 112 (101 - 156) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Baseline', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 117,
+     "dispersion_type": "iqr",
+     "dispersion_low": 108,
+     "dispersion_high": 139,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Baseline - PEEP table: 117 (108 - 139) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Baseline', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.44,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaO2, Baseline - Total: 113 (90 - 144) (n = 47) - p value 0.44",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Acute Physiologic Score 3, Sequential Organ Failure Assessment variables, ventilatory parameters and arterial blood gas measurements (Tables 2S and 3S and Figures 5S and 6S)",
+    "location": "Supplementary Material, Section 6S - Data collection"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 105,
+     "dispersion_type": "iqr",
+     "dispersion_low": 94,
+     "dispersion_high": 116,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Median (d0 to d3) - EIT: 105 (94 - 116) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 115,
+     "dispersion_type": "iqr",
+     "dispersion_low": 88,
+     "dispersion_high": 12,
+     "n": 13,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "PaO2, Median (d0 to d3) - Catheter: 115 (88 - 12) (n = 13)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Median (d0 to d3)', column 'Catheter' (upper bound printed as 12; apparent typographical error)"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 126,
+     "dispersion_type": "iqr",
+     "dispersion_low": 108,
+     "dispersion_high": 140,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Median (d0 to d3) - Best compliance: 126 (108 - 140) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 109,
+     "dispersion_type": "iqr",
+     "dispersion_low": 107,
+     "dispersion_high": 129,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2, Median (d0 to d3) - PEEP table: 109 (107 - 129) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.37,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaO2, Median (d0 to d3) - Total: 111 (93 - 131) (n = 49) - p value 0.37",
+      "location": "Supplementary Table 2S, row 'PaO2', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "PaO2, Median (d0 to d3) - Total (n = 49): 111 (93 - 131)",
+    "location": "Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 52,
+     "dispersion_type": "iqr",
+     "dispersion_low": 47,
+     "dispersion_high": 57,
+     "n": 11,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Baseline - EIT: 52 [47 - 57] (n = 11)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Baseline', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 58,
+     "dispersion_type": "iqr",
+     "dispersion_low": 50,
+     "dispersion_high": 62,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Baseline - Catheter: 58 (50 - 62) (n = 12)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Baseline', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 50,
+     "dispersion_type": "iqr",
+     "dispersion_low": 45,
+     "dispersion_high": 59,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Baseline - Best compliance: 50 (45 - 59)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Baseline', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 47,
+     "dispersion_type": "iqr",
+     "dispersion_low": 43,
+     "dispersion_high": 51,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Baseline - PEEP table: 47 (43 - 51)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Baseline', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.1,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaCO2, Baseline - Total: 51 (45 - 60) (n = 47) - p value 0.10",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "participants in the EIT and esophageal catheter groups were older (Table 1). ... except for those in the EIT Group who had a lower PaO2/FiO2 ratio, higher PaCO2 and PaO2/FiO2 ratio in the catheter treatment group",
+    "location": "Results, Patients, para 2"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 58,
+     "dispersion_type": "iqr",
+     "dispersion_low": 53,
+     "dispersion_high": 64,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Median (d0 to d3) - EIT: 58 (53 - 64)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 60,
+     "dispersion_type": "iqr",
+     "dispersion_low": 57,
+     "dispersion_high": 69,
+     "n": 13,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Median (d0 to d3) - Catheter: 60 (57 - 69)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 53,
+     "dispersion_type": "iqr",
+     "dispersion_low": 46,
+     "dispersion_high": 60,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Median (d0 to d3) - Best compliance: 53 (46 - 60)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 51,
+     "dispersion_type": "iqr",
+     "dispersion_low": 48,
+     "dispersion_high": 54,
+     "n": 12,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2, Median (d0 to d3) - PEEP table: 51 (48 - 54)",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.03,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PaCO2, Median (d0 to d3) - Total: 56 (51 - 63) - p value 0.03",
+      "location": "Supplementary Table 2S, row 'PaCO2', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "PaCO2, Median (d0 to d3) - Total (n = 49): 56 (51 - 63) - p value 0.03",
+    "location": "Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "pH, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 7.24,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.16,
+     "dispersion_high": 7.27,
+     "n": null,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Baseline - EIT: 7.24 (7.16 - 7.27)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Baseline', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 7.3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.26,
+     "dispersion_high": 7.31,
+     "n": null,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Baseline - Catheter: 7.3 (7.26 - 7.31)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Baseline', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 7.38,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.25,
+     "dispersion_high": 7.41,
+     "n": null,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Baseline - Best compliance: 7.38 (7.25 - 7.41)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Baseline', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 7.29,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.23,
+     "dispersion_high": 7.33,
+     "n": null,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Baseline - PEEP table: 7.29 (7.23 - 7.33)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Baseline', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.15,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "pH, Baseline - Total: 7.28 (7.22 - 7.35) (n = 48) - p value 0.15",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "arterial blood gas measurements (Tables 2S and 3S and Figures 5S and 6S)",
+    "location": "Supplementary Material, Section 6S - Data collection; Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "pH, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 7.29,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.21,
+     "dispersion_high": 7.33,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Median (d0 to d3) - EIT: 7.29 (7.21 - 7.33)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 7.31,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.3,
+     "dispersion_high": 7.39,
+     "n": 13,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Median (d0 to d3) - Catheter: 7.31 (7.3 - 7.39)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 7.39,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.33,
+     "dispersion_high": 7.41,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Median (d0 to d3) - Best compliance: 7.39 (7.33 - 7.41)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 7.36,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7.23,
+     "dispersion_high": 7.41,
+     "n": 12,
+     "unit": null,
+     "provenance": {
+      "quote": "pH, Median (d0 to d3) - PEEP table: 7.36 (7.23 - 7.41)",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.17,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "pH, Median (d0 to d3) - Total: 7.33 (7.28 - 7.4) - p value 0.17",
+      "location": "Supplementary Table 2S, row 'pH', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "pH, Median (d0 to d3) - Total (n = 49): 7.33 (7.28 - 7.4) - p value 0.17",
+    "location": "Supplementary Table 2S"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 12,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 14,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - EIT (n = 12): 12 (10 - 14)",
+      "location": "Table 1, row 'PEEP', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 14,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - Catheter (n = 13): 10 (10 - 14)",
+      "location": "Table 1, row 'PEEP', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 11,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 15,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - Best compliance (n = 12): 11 (10 - 15)",
+      "location": "Table 1, row 'PEEP', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 10.5,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - PEEP table (n = 12): 10 (10 - 10.5)",
+      "location": "Table 1, row 'PEEP', column 'PEEP table' (Supplementary Table 2S prints 11 (10 - 15) for the same cell)"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.5,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PEEP, Baseline - Total: 10 (10 - 14) - p value 0.50",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Baseline', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "ARDS with a median PaO2/FiO2 ratio of 172mmHg (IQR 117 - 203), PEEP of 10cmH2O (IQR 10 - 14)",
+    "location": "Results, Patients, para 2; Table 1, row 'PEEP'"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP, median (D0 to D3)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures",
+    "label_verbatim": "Median (D0 to D3)"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 14,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, Median (d0 to d3) - EIT (n = 12): 10 (9 - 14)",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 11,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 13,
+     "n": 13,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, Median (d0 to d3) - Catheter (n = 13): 11 (10 - 13)",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 12,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, Median (d0 to d3) - Best compliance (n = 12): 10 (9 - 12)",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 12,
+     "n": 12,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, Median (d0 to d3) - PEEP table (n = 12): 10 (9 - 12)",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'PEEP table'"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.87,
+     "adjusted": false,
+     "test_used": "Kruskal-Wallis test",
+     "provenance": {
+      "quote": "PEEP, Median (d0 to d3) - Total (n = 49): 10 (9 - 13) - p value 0.87",
+      "location": "Supplementary Table 2S, row 'PEEP', Period 'Median (d0 to d3)', column 'p value'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "There were no differences between groups in the median titrated PEEP values over time from Day 0 to Day 3.",
+    "location": "Results, para 1"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Median titrated PEEP in each method in D0 only",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 0,
+    "label_verbatim": "D0 only"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "All four titration methods were applied to every patient during the same decremental PEEP manoeuvre immediately after randomization; each patient therefore contributes a titrated PEEP value to each method (within-patient comparison).",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure was titrated using all four methods at the same time (Figure 1S - Supplementary Material): EIT, transpulmonary pressure with an esophageal catheter, best compliance, and low PEEP/FiO2.",
+     "location": "Methods, Interventions, PEEP titration immediately after randomization (Day 0)"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 7,
+     "dispersion_high": 13,
+     "n": 48,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - EIT (n = 49): 10 (7 - 13) (n = 48)",
+      "location": "Supplementary Table 3S, row 'PEEP', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 11,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 13,
+     "n": 46,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - Catheter (n=49): 11 (9 - 13) (n = 46)",
+      "location": "Supplementary Table 3S, row 'PEEP', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 11,
+     "dispersion_type": "iqr",
+     "dispersion_low": 9,
+     "dispersion_high": 13,
+     "n": 46,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - Best compliance (n = 49): 11 (9 - 13) (n = 46)",
+      "location": "Supplementary Table 3S, row 'PEEP', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 10,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 14,
+     "n": 49,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP - PEEP table (n = 49): 10 (10 - 14) (n = 49)",
+      "location": "Supplementary Table 3S, row 'PEEP', column 'PEEP table'"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus catheter_guided",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "esophageal_catheter",
+     "mean_difference": -0.1,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -9.3 to 9.0 cmH2O (Bland-Altman); no schema slot for limits of agreement.",
+     "provenance": {
+      "quote": "the PEEP titrated by PEEP/FiO2 table was 0.1cmH2O lower than PEEP titrated by the catheter with limits of agreement from -9.3 to 9.0cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus best_compliance",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "best_compliance",
+     "mean_difference": 0.1,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -6.2 to 6.5 cmH2O.",
+     "provenance": {
+      "quote": "0.1cmH2O higher than PEEP titrated by the best compliance with limits of agreement from -6.2 to 6.5cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_table minus eit_guided",
+     "arm_label_a": "peep_fio2_table",
+     "arm_label_b": "eit_guided",
+     "mean_difference": 1.3,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -4.7 to 7.4 cmH2O.",
+     "provenance": {
+      "quote": "and 1.3cmH2O higher than PEEP titrated by EIT with limits of agreement from -4.7 to 7.4cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "catheter_guided minus best_compliance",
+     "arm_label_a": "esophageal_catheter",
+     "arm_label_b": "best_compliance",
+     "mean_difference": 0.3,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -8.2 to 8.8 cmH2O.",
+     "provenance": {
+      "quote": "PEEP titrated by the catheter was 0.3cmH2O higher than PEEP titrated by the best compliance with limits of agreement from -8.2 to 8.8cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "catheter_guided minus eit_guided",
+     "arm_label_a": "esophageal_catheter",
+     "arm_label_b": "eit_guided",
+     "mean_difference": 1.3,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -6.8 to 9.5 cmH2O.",
+     "provenance": {
+      "quote": "and 1.3cmH2O higher than PEEP titrated by EIT with limits of agreement from -6.8 to 9.5cmH2O",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "best_compliance minus eit_guided",
+     "arm_label_a": "best_compliance",
+     "arm_label_b": "eit_guided",
+     "mean_difference": 1.0,
+     "n_pairs": null,
+     "unit": "cmH2O",
+     "derivation": "Limits of agreement reported as -3.0 to 5.1 cmH2O.",
+     "provenance": {
+      "quote": "Finally, PEEP titrated by best compliance was 1.0cmH2O higher than PEEP titrated by the EIT with limits of agreement from -3.0 to 5.1cmH2O.",
+      "location": "Supplementary Material, Section 8S, para 1"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The Day 0 median titrated PEEP in the EIT Group was 11 (IQR 7 - 13), 11 (IQR 9 - 13) in the Catheter Group, 11 (IQR 9 - 13) in the best compliance group, and 10 (IQR 10 - 14) in the PEEP/FiO2 table group (Table 3S - Supplementary Material).",
+    "location": "Results, Primary outcome, para 2 (p. 6)"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "FiO2, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 85,
+     "dispersion_type": "iqr",
+     "dispersion_low": 68,
+     "dispersion_high": 100,
+     "n": 12,
+     "unit": "%",
+     "provenance": {
+      "quote": "FiO2 - EIT (n = 12): 85 (68 - 100)",
+      "location": "Table 1, row 'FiO2', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 70,
+     "dispersion_type": "iqr",
+     "dispersion_low": 60,
+     "dispersion_high": 80,
+     "n": 13,
+     "unit": "%",
+     "provenance": {
+      "quote": "FiO2 - Catheter (n = 13): 70 (60 - 80)",
+      "location": "Table 1, row 'FiO2', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 70,
+     "dispersion_type": "iqr",
+     "dispersion_low": 60,
+     "dispersion_high": 70,
+     "n": 12,
+     "unit": "%",
+     "provenance": {
+      "quote": "FiO2 - Best compliance (n = 12): 70 (60 - 70)",
+      "location": "Table 1, row 'FiO2', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 70,
+     "dispersion_type": "iqr",
+     "dispersion_low": 60,
+     "dispersion_high": 80,
+     "n": 12,
+     "unit": "%",
+     "provenance": {
+      "quote": "FiO2 - PEEP table (n = 12): 70 (60 - 80)",
+      "location": "Table 1, row 'FiO2', column 'PEEP table'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "FiO2 - Total (n = 49): 70 (60 - 80)",
+    "location": "Table 1, row 'FiO2', column 'Total'"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Tidal volume; median/kg pbw, baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Baseline"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "eit_guided",
+     "value_type": "median",
+     "value": 5.98,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.95,
+     "dispersion_high": 6.09,
+     "n": 12,
+     "unit": "mL/kg PBW",
+     "provenance": {
+      "quote": "Tidal volume; median/kg pbw - EIT (n = 12): 5.98 (5.95 - 6.09)",
+      "location": "Table 1, row 'Tidal volume; median/kg pbw', column 'EIT'"
+     }
+    },
+    {
+     "arm_label": "esophageal_catheter",
+     "value_type": "median",
+     "value": 6.0,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.89,
+     "dispersion_high": 6.1,
+     "n": 13,
+     "unit": "mL/kg PBW",
+     "provenance": {
+      "quote": "Tidal volume; median/kg pbw - Catheter (n = 13): 6 (5.89 - 6.1)",
+      "location": "Table 1, row 'Tidal volume; median/kg pbw', column 'Catheter'"
+     }
+    },
+    {
+     "arm_label": "best_compliance",
+     "value_type": "median",
+     "value": 5.94,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.08,
+     "dispersion_high": 6.01,
+     "n": 12,
+     "unit": "mL/kg PBW",
+     "provenance": {
+      "quote": "Tidal volume; median/kg pbw - Best compliance (n = 12): 5.94 (5.08 - 6.01)",
+      "location": "Table 1, row 'Tidal volume; median/kg pbw', column 'Best compliance'"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table",
+     "value_type": "median",
+     "value": 6.01,
+     "dispersion_type": "iqr",
+     "dispersion_low": 5.95,
+     "dispersion_high": 6.03,
+     "n": 12,
+     "unit": "mL/kg PBW",
+     "provenance": {
+      "quote": "Tidal volume; median/kg pbw - PEEP table (n = 12): 6.01 (5.95 - 6.03)",
+      "location": "Table 1, row 'Tidal volume; median/kg pbw', column 'PEEP table'"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Tidal volume; median/kg pbw - Total (n = 49): 6.00 (5.89 - 6.06)",
+    "location": "Table 1, row 'Tidal volume; median/kg pbw', column 'Total'"
+   }
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": {
+   "value": 49,
+   "provenance": {
+    "quote": "All patients received an esophageal balloon catheter and an EIT belt at this time.",
+    "location": "p. 3, Interventions, Preparation for all patients after randomization"
+   },
+   "derivation": "All 49 randomized patients received an esophageal balloon catheter; the number attempted equals the randomized total."
+  },
+  "n_placement_successful": null,
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": {
+   "value": "Full intervention (titration on all 3 study days) vs partial intervention documented in CONSORT: catheter loss (n = 2) D2, extubated in D2 (n = 1) in catheter arm; extubated D2 (n=1) in EIT arm; ventilatory weaned/extubation D2 (n=1) in best compliance arm; catheter position verified daily",
+   "provenance": {
+    "quote": "Discontinued intervention (n = 3) • Catheter loss (n = 2) D2 • Extubated in D2 (n = 1) • Death (n=1) D3 ... we mitigated this limitation by verifying catheter position daily using standardized maneuvers, consistently performed by the same physician–physiotherapist team.",
+    "location": "p. 4, Figure 1 follow-up boxes; p. 12, Discussion, limitations"
+   }
+  },
+  "protocol_deviations": {
+   "value": "Discontinued intervention: EIT n=1 (extubated D2); Catheter n=3 (catheter loss n=2 D2, death n=1 D3); best compliance n=1 (ventilatory weaned/extubation D2); PEEP table n=0. All 49 analysed.",
+   "provenance": {
+    "quote": "Discontinued intervention (n = 1) • Extubated in D2 (n = 1) ... Discontinued intervention (n = 3) • Catheter loss (n = 2) D2 • Death (n=1) D3 ... Discontinued intervention (n = 1) • Ventilatory weaned/extubation D2 (n =1)",
+    "location": "p. 4, Figure 1, CONSORT follow-up boxes"
+   }
+  },
+  "n_crossover_between_arms": {
+   "value": 0,
+   "provenance": {
+    "quote": "Positive end-expiratory pressure was titrated daily exclusively according to the randomly assigned method",
+    "location": "p. 3, PEEP titration from Day 1 to Day 3"
+   }
+  },
+  "n_lost_to_followup": {
+   "value": 0,
+   "provenance": {
+    "quote": "Loss to follow up (n = 0)",
+    "location": "p. 4, Figure 1, follow-up boxes"
+   }
+  }
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "mixed_bmi",
+  "timing_subgroup": "early_within_48h",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_subgroup: all 49 patients had ARDS (Berlin criteria), pulmonary origin, confirmed by 'Pulmonary ARDS - 49/49 (100)'. obesity_subgroup: enrolment did not require obesity and BMI is not reported, but obesity was present in 11/49 (22%) as a comorbidity, so the population is mixed by BMI; the mean/median BMI is unavailable and mean BMI is therefore not known to be >= 30 kg/m2. timing_subgroup: PEEP titration with the assigned method started immediately after randomization, and randomisation required ARDS criteria for less than 36 hours, so balloon-guided management started within 48 h of ARDS onset. ptp_target_subgroups: only the esophageal-catheter strategy used a transpulmonary-pressure target (end-expiratory PL > 0 and <= 2 cmH2O, absolute Pes subtraction); the EIT, best-compliance and PEEP/FiO2-table strategies used non-Ptp targets and therefore contribute no additional Ptp target subgroup. Longest reported mortality: only 28-day mortality is reported; it is the longest available follow-up (no 60-day, 90-day or hospital/ICU mortality is reported), so it is flagged is_longest_reported_mortality."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap found. Compared against all clusters in studies/COHORTS.md: this is a single-center Brazilian trial (ten-bed respiratory medical ICU, Florianópolis, Brazil), registered at REBEC RBR-9b7jbxm, enrolled April 2018 to May 2021. No registration, enrolment window, centre, or authorship match with epvent1/epvent2 (US, NCT), mannheim_boesing (Germany, DRKS), mgh_lung_rescue (US, NCT), or angers (France). Cohort unique to this report, so cohort_id is null.",
+  "unclear_items": [
+   "design.comparison_structure: although the trial randomises patients to parallel arms, all four titration methods were applied simultaneously to every patient at D0 and the Bland-Altman agreement analysis is within-patient; the schema provides no home for paired Bland-Altman contrasts (PEEP and Crs limits of agreement, e.g. -9.3 to 9.0 cmH2O and -8.5 to 11.4 mL/cmH2O) in a parallel_arms record — recorded here in general_notes.",
+   "outcomes (ventilator_settings).data[eit].value: main text reports EIT Day 0 median titrated PEEP 11 (IQR 7-13) but Table 3S reports 10 (7 - 13) for the same column.",
+   "population.baseline_by_arm[best_compliance].age: Table 1 reports best-compliance age as '44 (3 - 49)'; lower IQR bound of 3 years is almost certainly a typographical error (likely 39).",
+   "Supplementary Table 2S catheter-arm PaO2 d0-d3 reports '115 (88 - 12)'; upper bound 12 is a typographical error. Not extracted as an outcome.",
+   "Table 3S column headers read (n = 49) for all four methods but the row gives per-method n of 48, 46, 46, 49; header n appears to be an error.",
+   "Table 1 PEEP table-arm baseline PEEP is 10 (10 - 10.5) but Table 2S baseline PEEP for the same arm reads 11 (10 - 15); minor inconsistency between tables.",
+   "population.n_neuromuscular_blockade: neuromuscular blockade given to all patients during titration per protocol but no count/duration at baseline reported; duration of neuromuscular blocking agents reported only as exploratory outcome (Table 4S).",
+   "ventilator_free_days definition (window and death handling) not stated in the paper; definition_verbatim left null.",
+   "feasibility.n_placement_successful: all patients received a catheter but explicit placement success count is not stated; catheter loss occurred in 2 patients on D2."
+  ],
+  "data_only_in_figure": [
+   "Mean respiratory system compliance evolution from baseline through Day 3 (Figure 2) — per-day arm means shown graphically; only Day 0 values given in text",
+   "Mean titrated PEEP values from baseline through Day 3 (Figure 3) — per-day means shown graphically with some point labels"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Within-patient agreement analyses (Bland-Altman, six pairwise contrasts for titrated PEEP and six for derived Crs across the four methods, n=49 each) are reported in text, Figure 4, Figure 5 and Section 8S. Example verbatim: 'PEEP titrated by PEEP/FiO2 table was 0.1cmH2O lower than PEEP titrated by the catheter with limits of agreement from -9.3 to 9.0cmH2O'. These have no schema slot in a parallel_arms record; flagged in unclear_items. Pearson correlations between methods also reported (PEEP: catheter vs EIT r=0.34; catheter vs best compliance r=0.33; catheter vs table r=0.13; best compliance vs EIT r=0.84; table vs EIT r=0.54; table vs best compliance r=0.58; Crs from titrated PEEP all strong, Figure 8S). EIT device: Enlight 1800 Timpel SA Sao Paulo Brazil. Timpel S.A. is a funder and supplied EIT disposables and technical support — basis for industry_funded: true."
+ }
+}

@@ -1,0 +1,1190 @@
+{
+ "record_meta": {
+  "study_id": "thind_2022",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/Thind2022.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 70 reviewer differences: 38 in scope. Settled by human rulings 3, model rulings 33, content-neutral rules 1; 29 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 4 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Thind",
+  "year": 2022,
+  "title": "Evaluation of Esophageal Pressures in Mechanically Ventilated Obese Patients",
+  "journal": "Respiratory Care",
+  "doi": "10.4187/respcare.08978",
+  "pmid": null,
+  "trial_registration": null,
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": false,
+  "primary_exclusion_reason": "balloon_not_used_to_guide_peep",
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "an openly available database composed of 53,423 distinct hospital admissions of adult patients admitted to critical care units of a tertiary care hospital between 2001 and 2012",
+     "location": "Methods, para 1, p. 185"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The Medical Information Mart for Intensive Care-III critical care database was queried to gather data on Pes in subjects on mechanical ventilation.",
+     "location": "Abstract, METHODS, p. 184"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "adult patients admitted to critical care units of a tertiary care hospital between 2001 and 2012",
+     "location": "Methods, para 1, p. 185"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "no",
+    "provenance": {
+     "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity as well as those with class III obesity",
+     "location": "Methods, para 3, p. 185"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "the average Pes-guided PEEP would be 21.7 ± 5.2 cm H2O compared with the average empirical PEEP of 19.4 ± 3.2 cm H2O (P = .004). Furthermore, with the use of the Pes-guided protocol, the average end-expiratory transpulmonary pressure in these subjects who were obese would be 2.8 ± 2.3 cm H2O compared with 0.5 ± 6.2 cm H2O without Pes guidance (P < .001).",
+     "location": "Results, Primary Analysis, p. 185"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "A total of 105 subjects were eventually included for the analysis.",
+     "location": "Results, para 1, p. 185"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "The purpose of this study was to perform a retrospective analysis of Pes in subjects who were obese and on mechanical ventilation",
+     "location": "Introduction, para 3, p. 184"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "[Respir Care 2022;67(2):184–190. © 2022 Daedalus Enterprises]",
+     "location": "Abstract footer, p. 184"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "retrospective_cohort",
+  "study_design_verbatim": {
+   "value": "retrospective",
+   "provenance": {
+    "quote": "Major limitations of our study included its retrospective nature",
+    "location": "Discussion, para 1"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": null,
+  "centers": "single",
+  "n_centers": null,
+  "countries": [
+   "United States"
+  ],
+  "location_provenance": {
+   "quote": "Drs Thind, Mireles-Cabodevila, Mr Chatburn, and Dr Duggal are affiliated with the Department of Critical Care Medicine, Respiratory Institute, Cleveland Clinic, Cleveland, Ohio.",
+   "location": "Author affiliations footnote, p. 184"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": null,
+  "stopped_early": null,
+  "stopping_rule": null,
+  "setting": {
+   "value": "critical care units of a tertiary care hospital (MIMIC-III database)",
+   "provenance": {
+    "quote": "an openly available database composed of 53,423 distinct hospital admissions of adult patients admitted to critical care units of a tertiary care hospital between 2001 and 2012",
+    "location": "Methods, para 1, p. 185"
+   }
+  },
+  "enrolment_start": "2001",
+  "enrolment_end": "2012",
+  "consecutive_enrolment": null,
+  "funding_source": null,
+  "industry_funded": null,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 105,
+   "provenance": {
+    "quote": "A total of 105 subjects were eventually included for the analysis.",
+    "location": "Results, para 1, p. 185"
+   }
+  },
+  "n_analysed": {
+   "value": 105,
+   "provenance": {
+    "quote": "A total of 105 subjects were eventually included for the analysis.",
+    "location": "Results, para 1, p. 185"
+   }
+  },
+  "population_description": {
+   "value": "adult ICU patients on mechanical ventilation in whom end-expiratory transpulmonary pressure and total PEEP were charted concurrently, from the MIMIC-III database",
+   "provenance": {
+    "quote": "The study included all patients in whom end-expiratory transpulmonary pressure and total PEEP were charted concurrently.",
+    "location": "Methods, para 2, p. 185"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "all patients in whom end-expiratory transpulmonary pressure and total PEEP were charted concurrently",
+   "provenance": {
+    "quote": "The study included all patients in whom end-expiratory transpulmonary pressure and total PEEP were charted concurrently. In cases in which more than one set of values were available, the earliest set was included for the analysis.",
+    "location": "Methods, para 2, p. 185"
+   }
+  },
+  "exclusion_criteria": null,
+  "age": null,
+  "sex_female": null,
+  "sex_male": null,
+  "bmi": null,
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "not_reported",
+  "ards_definition_used": null,
+  "n_ards": null,
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "not_applicable",
+  "cause_of_respiratory_failure": null,
+  "pao2_fio2_baseline": null,
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": null,
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": null,
+  "n_vasopressors": null,
+  "additional_baseline": [
+   {
+    "name_verbatim": "Time from admission to Pes measurement, median (IQR) d",
+    "arm_label": "non_obese",
+    "continuous": {
+     "value_type": "median",
+     "value": 3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1,
+     "dispersion_high": 9,
+     "n": 44,
+     "unit": "days",
+     "provenance": {
+      "quote": "Time from admission to Pes measurement, median (IQR) d — 3 (1–9) [Non-Obese Subjects]",
+      "location": "p. 186, Table 1, row: Time from admission to Pes measurement"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Time from admission to Pes measurement, median (IQR) d",
+    "arm_label": "obese",
+    "continuous": {
+     "value_type": "median",
+     "value": 3,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1,
+     "dispersion_high": 7,
+     "n": 61,
+     "unit": "days",
+     "provenance": {
+      "quote": "Time from admission to Pes measurement, median (IQR) d — 3 (1–7) [Obese Subjects]",
+      "location": "p. 186, Table 1, row: Time from admission to Pes measurement"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Time from admission to Pes measurement, median (IQR) d",
+    "arm_label": "class_iii_obese",
+    "continuous": {
+     "value_type": "median",
+     "value": 3.5,
+     "dispersion_type": "iqr",
+     "dispersion_low": 1,
+     "dispersion_high": 6.5,
+     "n": 20,
+     "unit": "days",
+     "provenance": {
+      "quote": "Time from admission to Pes measurement, median (IQR) d — 3.5 (1–6.5) [Subjects With Class III Obesity]",
+      "location": "p. 186, Table 1, row: Time from admission to Pes measurement"
+     }
+    }
+   },
+   {
+    "name_verbatim": "FIO2",
+    "arm_label": "non_obese",
+    "continuous": {
+     "value_type": "mean",
+     "value": 0.73,
+     "dispersion_type": "sd",
+     "dispersion": 0.2,
+     "n": 44,
+     "provenance": {
+      "quote": "FIO2 — 0.73 ± 0.2 [Non-Obese Subjects]",
+      "location": "p. 186, Table 1, row: FIO2"
+     },
+     "unit": null
+    }
+   },
+   {
+    "name_verbatim": "FIO2",
+    "arm_label": "obese",
+    "continuous": {
+     "value_type": "mean",
+     "value": 0.7,
+     "dispersion_type": "sd",
+     "dispersion": 0.21,
+     "n": 61,
+     "provenance": {
+      "quote": "FIO2 — 0.70 ± 0.21 [Obese Subjects]",
+      "location": "p. 186, Table 1, row: FIO2"
+     },
+     "unit": null
+    }
+   },
+   {
+    "name_verbatim": "FIO2",
+    "arm_label": "class_iii_obese",
+    "continuous": {
+     "value_type": "mean",
+     "value": 0.64,
+     "dispersion_type": "sd",
+     "dispersion": 0.21,
+     "n": 20,
+     "provenance": {
+      "quote": "FIO2 — 0.64 ± 0.21 [Subjects With Class III Obesity]",
+      "location": "p. 186, Table 1, row: FIO2"
+     },
+     "unit": null
+    }
+   }
+  ],
+  "baseline_by_arm": [
+   {
+    "arm_label": "non_obese",
+    "n": {
+     "value": 44,
+     "provenance": {
+      "quote": "Subjects, n (%) — 44 (42) [Non-Obese Subjects (BMI < 30 kg/m2)]",
+      "location": "p. 186, Table 1, row: Subjects, n (%)"
+     }
+    },
+    "age": {
+     "value_type": "mean",
+     "value": 58,
+     "dispersion_type": "sd",
+     "dispersion": 16.8,
+     "unit": "y",
+     "provenance": {
+      "quote": "Age, mean ± SD y — 58 ± 16.8 [Non-Obese Subjects]",
+      "location": "p. 186, Table 1, row: Age"
+     }
+    },
+    "sex_female": {
+     "n": 17,
+     "total": 44,
+     "derived": true,
+     "derivation": "44 patients minus 27 male; the table reports male sex only",
+     "provenance": {
+      "quote": "Male, n/n (%) 27/44 (61)",
+      "location": "Table 1, row: Male, Non-Obese Subjects, p. 186"
+     }
+    },
+    "bmi": {
+     "value_type": "median",
+     "value": 26.6,
+     "dispersion_type": "iqr",
+     "dispersion_low": 24,
+     "dispersion_high": 28.1,
+     "unit": "kg/m2",
+     "provenance": {
+      "quote": "BMI, median (IQR) kg/m2 — 26.6 (24–28.1) [Non-Obese Subjects]",
+      "location": "p. 186, Table 1, row: BMI"
+     }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "obese",
+    "n": {
+     "value": 61,
+     "provenance": {
+      "quote": "Subjects, n (%) — 61 (58) [Obese Subjects (BMI ≥ 30 kg/m2)]",
+      "location": "p. 186, Table 1, row: Subjects, n (%)"
+     }
+    },
+    "age": {
+     "value_type": "mean",
+     "value": 54,
+     "dispersion_type": "sd",
+     "dispersion": 14.2,
+     "unit": "y",
+     "provenance": {
+      "quote": "Age, mean ± SD y — 54 ± 14.2 [Obese Subjects]",
+      "location": "p. 186, Table 1, row: Age"
+     }
+    },
+    "sex_female": {
+     "n": 24,
+     "total": 61,
+     "derived": true,
+     "derivation": "61 patients minus 37 male; the table reports male sex only",
+     "provenance": {
+      "quote": "Male, n/n (%) 37/61 (60)",
+      "location": "Table 1, row: Male, Obese Subjects, p. 186"
+     }
+    },
+    "bmi": {
+     "value_type": "median",
+     "value": 35.9,
+     "dispersion_type": "iqr",
+     "dispersion_low": 32.9,
+     "dispersion_high": 44.2,
+     "unit": "kg/m2",
+     "provenance": {
+      "quote": "BMI, median (IQR) kg/m2 — 35.9 (32.9–44.2) [Obese Subjects]",
+      "location": "p. 186, Table 1, row: BMI"
+     }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null
+   },
+   {
+    "arm_label": "class_iii_obese",
+    "n": {
+     "value": 20,
+     "provenance": {
+      "quote": "Subjects, n (%) — 20 (19) [Subjects With Class III Obesity (BMI ≥ 40 kg/m2)]",
+      "location": "p. 186, Table 1, row: Subjects, n (%)"
+     }
+    },
+    "age": {
+     "value_type": "mean",
+     "value": 52,
+     "dispersion_type": "sd",
+     "dispersion": 14.1,
+     "unit": "y",
+     "provenance": {
+      "quote": "Age, mean ± SD y — 52 ± 14.1 [Subjects With Class III Obesity]",
+      "location": "p. 186, Table 1, row: Age"
+     }
+    },
+    "sex_female": {
+     "n": 8,
+     "total": 20,
+     "derived": true,
+     "derivation": "20 patients minus 12 male; the table reports male sex only",
+     "provenance": {
+      "quote": "Male, n/n (%) 12/20 (60)",
+      "location": "Table 1, row: Male, Subjects With Class III Obesity, p. 186"
+     }
+    },
+    "bmi": {
+     "value_type": "median",
+     "value": 52.6,
+     "dispersion_type": "iqr",
+     "dispersion_low": 44.2,
+     "dispersion_high": 60.6,
+     "unit": "kg/m2",
+     "provenance": {
+      "quote": "BMI, median (IQR) kg/m2 — 52.6 (44.2–60.6) [Subjects With Class III Obesity]",
+      "location": "p. 186, Table 1, row: BMI"
+     }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null
+   }
+  ]
+ },
+ "intervention": {
+  "device_brand": null,
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "not_reported",
+   "method_verbatim": {
+    "value": "The information on the specific protocol used for obtaining Pes was not available from the database.",
+    "provenance": {
+     "quote": "The information on the specific protocol used for obtaining Pes was not available from the database.",
+     "location": "Methods, para 1, p. 185"
+    }
+   },
+   "position_verification": null,
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "End-expiratory Pes was calculated by subtracting end-expiratory transpulmonary pressure from total PEEP because direct documentation of Pes was not available from the database.",
+    "provenance": {
+     "quote": "End-expiratory Pes was calculated by subtracting end-expiratory transpulmonary pressure from total PEEP because direct documentation of Pes was not available from the database.",
+     "location": "Methods, para 2, p. 185"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_positive_range",
+   "strategy_verbatim": {
+    "value": "PEEP guided by Pes guidance to achieve a positive transpulmonary pressure (EPVent-2 protocol, applied theoretically)",
+    "provenance": {
+     "quote": "PEEP guided by Pes gudiance to acheive a positive transpulmonary pressure would have resulted in much higher PEEP than empirically derived PEEP.",
+     "location": "QUICK LOOK, What this paper contributes to our knowledge, p. 185"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": null,
+   "end_expiratory_ptp_target_high_cmh2o": null,
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": {
+    "value": 24,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "In both standard and high empirical protocols, the maximum allowed value of PEEP was 24 cm H2O.",
+     "location": "Discussion, para 5, p. 189"
+    }
+   },
+   "titration_frequency": null
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": null,
+   "plateau_or_ptp_ceiling": null,
+   "protocolised_weaning": null,
+   "other_co_interventions": null
+  },
+  "timing": {
+   "reference_event": "not_reported",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "The median (IQR) timing of the Pes measurement for the study population was 3 (1–7) d after admission.",
+    "provenance": {
+     "quote": "The median (IQR) timing of the Pes measurement for the study population was 3 (1–7) d after admission.",
+     "location": "Results, para 2, p. 185"
+    }
+   }
+  },
+  "duration_of_pes_guidance": null
+ },
+ "comparator": {
+  "comparator_types": [
+   "empirical_high_peep"
+  ],
+  "comparator_verbatim": {
+   "value": "the high empirical PEEP protocol of EPVent-2, applied theoretically: For a given value of FIO2, the lowest PEEP setting that corresponded to that value was used from the respective PEEP protocol of the EPVent-2 trial",
+   "provenance": {
+    "quote": "For a given value of FIO2, the lowest PEEP setting that corresponded to that value was used from the respective PEEP protocol of the EPVent-2 trial.4",
+    "location": "Methods, para 3, p. 185"
+   }
+  },
+  "crossover_order": {
+   "value": "Both hypothetical PEEP settings were computed for the same subjects from their charted Pes and FiO2; no sequence, no washout — this is a theoretical application, not a delivered sequence.",
+   "provenance": {
+    "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity as well as those with class III obesity",
+    "location": "Methods, para 3, p. 185"
+   }
+  },
+  "washout_or_stabilisation": null
+ },
+ "arms": [
+  {
+   "label": "non_obese",
+   "label_verbatim": "Non-Obese Subjects (BMI < 30 kg/m2)",
+   "role": "other_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 44,
+    "provenance": {
+     "quote": "Subjects, n (%) — 44 (42)",
+     "location": "p. 186, Table 1, row: Subjects, n (%)"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "obese",
+   "label_verbatim": "Obese Subjects (BMI ≥ 30 kg/m2)",
+   "role": "other_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 61,
+    "provenance": {
+     "quote": "Subjects, n (%) — 61 (58)",
+     "location": "p. 186, Table 1, row: Subjects, n (%)"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "class_iii_obese",
+   "label_verbatim": "Subjects With Class III Obesity (BMI ≥ 40 kg/m2)",
+   "role": "other_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 20,
+    "provenance": {
+     "quote": "Subjects, n (%) — 20 (19)",
+     "location": "p. 186, Table 1, row: Subjects, n (%)"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "empiric_peep",
+   "label_verbatim": "Empiric PEEP",
+   "role": "reference_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": null,
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "pes_guided_peep",
+   "label_verbatim": "Pes-Guided PEEP",
+   "role": "intervention",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": null,
+   "peep_applied_cmh2o": null
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "mortality",
+   "name_verbatim": "In-hospital mortality, %",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "hospital_discharge",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "In-hospital mortality"
+   },
+   "is_longest_reported_mortality": true,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "obese",
+     "events": 20,
+     "total": 61,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "derived": true,
+     "derivation": "20 from 32.8% of 61 (0.328*61=20.008)",
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "In-hospital mortality, % — 32.8",
+      "location": "Table 2, row: In-hospital mortality, %"
+     }
+    },
+    {
+     "arm_label": "non_obese",
+     "events": 21,
+     "total": 44,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "derived": true,
+     "derivation": "21 from 47.7% of 44 (0.477*44=20.988)",
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "In-hospital mortality, % — 47.7",
+      "location": "Table 2, row: In-hospital mortality, %"
+     }
+    },
+    {
+     "arm_label": "class_iii_obese",
+     "events": 6,
+     "total": 20,
+     "value_type": null,
+     "value": null,
+     "dispersion_type": null,
+     "dispersion": null,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": null,
+     "unit": "%",
+     "derived": true,
+     "derivation": "Paper reports 30% for the class III obesity group (n=20); events computed as 0.30 × 20 = 6.",
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "In-hospital mortality, % — 30 [Subjects With Class III Obesity]",
+      "location": "p. 187, Table 4, row: In-hospital mortality"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.12,
+     "p_value_verbatim": ".12",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": null,
+     "provenance": {
+      "quote": "The difference between the in-hospital mortality of the obese versus non-obese groups did not reach statistical significance (32.8% vs 47.7%; P = .12).",
+      "location": "Results, Primary Analysis, p. 185"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.19,
+     "p_value_verbatim": ".19",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": null,
+     "provenance": {
+      "quote": "the in-hospital mortality in the 2 groups was 30% versus 48% (P = .19).",
+      "location": "Results, Subgroup Analysis, p. 186"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "The in-hospital mortality rate of the study cohort was 39% (41/105).",
+    "location": "Results, para 2, p. 185"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "End-expiratory transpulmonary pressure",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "Theoretical application of EPVent-2 PEEP protocols (obese)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Theoretical application of EPVent-2 PEEP protocols to the obese group",
+    "provenance": {
+     "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity",
+     "location": "Methods, para 3"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "pes_guided_peep",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 2.8,
+     "dispersion_type": "sd",
+     "dispersion": 2.3,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 61,
+     "unit": "cm H2O",
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — 2.8 ± 2.3",
+      "location": "Table 3, row: End-expiratory transpulmonary pressure, Pes-Guided PEEP"
+     }
+    },
+    {
+     "arm_label": "empiric_peep",
+     "value_type": "mean",
+     "value": 0.5,
+     "dispersion_type": "sd",
+     "dispersion": 6.2,
+     "n": 61,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — 0.5 ± 6.2",
+      "location": "Table 3, row: End-expiratory transpulmonary pressure, Empiric PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pes_guided_peep minus empiric_peep",
+     "arm_label_a": "pes_guided_peep",
+     "arm_label_b": "empiric_peep",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 61,
+     "p_value": 0.008,
+     "p_value_verbatim": ".008",
+     "test_used": null,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "P .008",
+      "location": "Table 3, row: End-expiratory transpulmonary pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — 0.5 ± 6.2 vs 2.8 ± 2.3; P .008",
+    "location": "Table 3"
+   }
+  },
+  {
+   "domain": "esophageal_pressure",
+   "name_verbatim": "End-expiratory Pes, mean ± SD cm H2O",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "days": null,
+    "hours": null,
+    "label_verbatim": "at the time of Pes measurement (median 3 d after admission)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "End-expiratory Pes calculated by subtracting end-expiratory transpulmonary pressure from total PEEP; earliest charted set of values used; spontaneously breathing status not reported.",
+    "provenance": {
+     "quote": "End-expiratory Pes was calculated by subtracting end-expiratory transpulmonary pressure from total PEEP because direct documentation of Pes was not available from the database.",
+     "location": "Methods, para 2, p. 185"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "obese",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 18.8,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 61,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "End-expiratory Pes, mean ± SD cm H2O — 18.8 ± 5 [Obese Subjects]",
+      "location": "p. 186, Table 2, row: End-expiratory Pes"
+     }
+    },
+    {
+     "arm_label": "non_obese",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 16.8,
+     "dispersion_type": "sd",
+     "dispersion": 4.8,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 44,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "End-expiratory Pes, mean ± SD cm H2O — 16.8 ± 4.8 [Non-Obese Subjects]",
+      "location": "p. 186, Table 2, row: End-expiratory Pes"
+     }
+    },
+    {
+     "arm_label": "class_iii_obese",
+     "events": null,
+     "total": null,
+     "value_type": "mean",
+     "value": 21.3,
+     "dispersion_type": "sd",
+     "dispersion": 3.8,
+     "dispersion_low": null,
+     "dispersion_high": null,
+     "n": 20,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "within_arm_change": null,
+     "provenance": {
+      "quote": "End-expiratory Pes, mean ± SD cm H2O — 21.3 ± 3.8 [Subjects With Class III Obesity]",
+      "location": "p. 187, Table 4, row: End-expiratory Pes"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": 0.04,
+     "p_value_verbatim": ".04",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "2-sample t test",
+     "provenance": {
+      "quote": "The average end-expiratory Pes in the obese group was 18.8 ± 5 cm H2O compared with 16.8 ± 4.8 cm H2O in the non-obese group (P = .04)",
+      "location": "Results, Primary Analysis, p. 185"
+     }
+    },
+    {
+     "type": null,
+     "value": null,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": 95,
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "adjusted": false,
+     "adjustment_covariates": null,
+     "test_used": "2-sample t test",
+     "provenance": {
+      "quote": "End-expiratory Pes, mean ± SD cm H2O — 21.3 ± 3.8 [Subjects With Class III Obesity] vs 16.8 ± 4.8 [Non-Obese Subjects], P <.001",
+      "location": "p. 187, Table 4, row: End-expiratory Pes"
+     }
+    }
+   ],
+   "provenance": null
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Theoretical application of EPVent-2 PEEP protocols (obese)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Theoretical application of EPVent-2 PEEP protocols to the obese group",
+    "provenance": {
+     "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity",
+     "location": "Methods, para 3"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "empiric_peep",
+     "value_type": "mean",
+     "value": 19.4,
+     "dispersion_type": "sd",
+     "dispersion": 3.2,
+     "n": 61,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP, mean ± SD cm H2O — 19.4 ± 3.2",
+      "location": "Table 3, row: PEEP, Empiric PEEP"
+     }
+    },
+    {
+     "arm_label": "pes_guided_peep",
+     "value_type": "mean",
+     "value": 21.7,
+     "dispersion_type": "sd",
+     "dispersion": 5.2,
+     "n": 61,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP, mean ± SD cm H2O — 21.7 ± 5.2",
+      "location": "Table 3, row: PEEP, Pes-Guided PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pes_guided_peep minus empiric_peep",
+     "arm_label_a": "pes_guided_peep",
+     "arm_label_b": "empiric_peep",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 61,
+     "p_value": 0.004,
+     "p_value_verbatim": ".004",
+     "test_used": null,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "P .004",
+      "location": "Table 3, row: PEEP"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PEEP, mean ± SD cm H2O — 19.4 ± 3.2 vs 21.7 ± 5.2; P .004",
+    "location": "Table 3"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Theoretical application of EPVent-2 PEEP protocols (class III)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Theoretical application of EPVent-2 PEEP protocols to the class III obesity subgroup",
+    "provenance": {
+     "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity as well as those with class III obesity",
+     "location": "Methods, para 3"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "empiric_peep",
+     "value_type": "mean",
+     "value": 18.5,
+     "dispersion_type": "sd",
+     "dispersion": 3.9,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP, mean ± SD cm H2O — 18.5 ± 3.9",
+      "location": "Table 5, row: PEEP, Empiric PEEP"
+     }
+    },
+    {
+     "arm_label": "pes_guided_peep",
+     "value_type": "mean",
+     "value": 23.7,
+     "dispersion_type": "sd",
+     "dispersion": 4.5,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "PEEP, mean ± SD cm H2O — 23.7 ± 4.5",
+      "location": "Table 5, row: PEEP, Pes-Guided PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pes_guided_peep minus empiric_peep",
+     "arm_label_a": "pes_guided_peep",
+     "arm_label_b": "empiric_peep",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "test_used": null,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "P < .001",
+      "location": "Table 5, row: PEEP"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "PEEP, mean ± SD cm H2O — 18.5 ± 3.9 vs 23.7 ± 4.5; P < .001",
+    "location": "Table 5"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "End-expiratory transpulmonary pressure",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "Theoretical application of EPVent-2 PEEP protocols (class III)"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Theoretical application of EPVent-2 PEEP protocols to the class III obesity subgroup",
+    "provenance": {
+     "quote": "the Pes-guided PEEP and empirical PEEP protocols from the EPVent-2 trial4 were theoretically applied to all the subjects with obesity as well as those with class III obesity",
+     "location": "Methods, para 3"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "empiric_peep",
+     "value_type": "mean",
+     "value": -2.81,
+     "dispersion_type": "sd",
+     "dispersion": 4.87,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — –2.81 ± 4.87",
+      "location": "Table 5, row: End-expiratory transpulmonary pressure, Empiric PEEP"
+     }
+    },
+    {
+     "arm_label": "pes_guided_peep",
+     "value_type": "mean",
+     "value": 2.21,
+     "dispersion_type": "sd",
+     "dispersion": 2.27,
+     "n": 20,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — 2.21 ± 2.27",
+      "location": "Table 5, row: End-expiratory transpulmonary pressure, Pes-Guided PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pes_guided_peep minus empiric_peep",
+     "arm_label_a": "pes_guided_peep",
+     "arm_label_b": "empiric_peep",
+     "mean_difference": null,
+     "sd_of_difference": null,
+     "se_of_difference": null,
+     "ci_low": null,
+     "ci_high": null,
+     "n_pairs": 20,
+     "p_value": null,
+     "p_value_verbatim": "<.001",
+     "test_used": null,
+     "unit": "cm H2O",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "P < .001",
+      "location": "Table 5, row: End-expiratory transpulmonary pressure"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "End-expiratory transpulmonary pressure, mean ± SD cm H2O* — –2.81 ± 4.87 vs 2.21 ± 2.27; P < .001",
+    "location": "Table 5"
+   }
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": null,
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": null,
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "unclear",
+  "obesity_subgroup": "mixed_bmi",
+  "timing_subgroup": "unclear",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "obesity_subgroup: the full cohort spans BMI < 30 to > 60 kg/m2 (44 non-obese, 61 obese, 20 class III), so mixed_bmi; the theoretical PEEP application was restricted to the obese groups. ards_subgroup: an unselected ventilated population; ARDS status not reported ('We are unable to make any remarks on whether Pes guidance would improve outcomes in patients who are obese and on mechanical ventilation with or without ARDS'). timing_subgroup: Pes measurement occurred a median of 3 days after admission, but no intervention was delivered, so early/late classification is not meaningful. ptp_target_subgroups: the EPVent-2 Pes-guided protocol targets positive end-expiratory transpulmonary pressure via absolute Pes subtraction. Mortality ranking: in-hospital mortality is the only mortality outcome reported, so it carries is_longest_reported_mortality."
+ },
+ "reported_subgroups": [
+  {
+   "subgroup_variable": "Class III obesity (BMI ≥ 40 kg/m2) vs non-obese",
+   "outcome_name": "End-expiratory Pes",
+   "prespecified": null,
+   "result_verbatim": "the difference in the average end-expiratory Pes was higher (21.3 ± 3.8 cm H2O vs 16.8 ± 4.8 cm H2O; P < .001)",
+   "interaction_p_value": null,
+   "provenance": {
+    "quote": "When comparing the subjects with class III obesity versus the non-obese group, the difference in the average end-expiratory Pes was higher (21.3 ± 3.8 cm H2O vs 16.8 ± 4.8 cm H2O; P < .001)",
+    "location": "Results, Subgroup Analysis, p. 186"
+   }
+  },
+  {
+   "subgroup_variable": "Class III obesity (BMI ≥ 40 kg/m2) vs non-obese",
+   "outcome_name": "In-hospital mortality",
+   "prespecified": null,
+   "result_verbatim": "the in-hospital mortality in the 2 groups was 30% versus 48% (P = .19)",
+   "interaction_p_value": null,
+   "provenance": {
+    "quote": "the in-hospital mortality in the 2 groups was 30% versus 48% (P = .19).",
+    "location": "Results, Subgroup Analysis, p. 186"
+   }
+  }
+ ],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap with any cohort in COHORTS.md. This is a retrospective analysis of the MIMIC-III database (de-identified admissions 2001–2012 from a tertiary care hospital); it delivers no intervention and shares no patients with EPVent-2 (beitler_2019), EPVent-1 (talmor_2008), or any prospective cohort in the pool. It merely applies the EPVent-2 PEEP protocols in simulation. Compared registration (none for this study), enrolment window (database period 2001–2012), and population (unselected MIMIC-III ventilated subjects, obese and non-obese).",
+  "unclear_items": [
+   "eligibility.criteria.balloon_guided_peep_titration: coded 'no' — the EPVent-2 PEEP protocols were applied only theoretically to charted MIMIC-III data; no ventilator setting was ever changed in a patient (consistent with the COHORTS.md eligibility flag).",
+   "design.countries: inferred United States from the Cleveland Clinic, Ohio affiliation and the MIMIC-III database (US tertiary care hospital); the paper does not state a country.",
+   "outcomes[transpulmonary_pressure].paired_effects: the text reports P < .001 for the obese-group end-expiratory transpulmonary pressure contrast while Table 3 reports P = .008 for the same contrast; both recorded, table value used as p_value.",
+   "outcomes[mortality].data: events per group derived from reported percentages and denominators (32.8% of 61, 47.7% of 44, 30% of 20); the paper reports percentages, not event counts, except the cohort total 41/105.",
+   "design.comparison_structure: coded within_patient_crossover because the review-relevant contrast (empirical vs Pes-guided PEEP) applies two hypothetical protocols to the same subjects; the obese vs non-obese Pes comparison is between different patients and is captured as separate arms with effect_estimates.",
+   "design.enrolment_start/enrolment_end: set to the MIMIC-III database coverage period (2001–2012), which is when the underlying admissions occurred, not a study-specific enrolment window.",
+   "population.age/sex/bmi cohort-level fields left null because Table 1 reports characteristics only per group; recorded in baseline_by_arm instead.",
+   "intervention.peep_titration_target: the EPVent-2 numeric end-expiratory Ptp target range is not restated in this paper; only 'positive transpulmonary pressure' is stated, so the numeric low/high targets are null."
+  ],
+  "data_only_in_figure": [
+   "Fig. 1: box plots of esophageal pressure distributions (obese vs non-obese; class III obesity vs non-obese) — medians/IQRs not otherwise tabulated",
+   "Fig. 2: box plots of theoretical PEEP under empirical vs Pes-guided protocols in all obese subjects and class III obesity subgroup"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Simulation-only study: no esophageal balloon was placed by these authors and no ventilator setting was changed; excluded from the review (balloon_not_used_to_guide_peep) but extracted for the adjudicator. Pes was not directly charted — it was back-calculated as total PEEP minus charted end-expiratory transpulmonary pressure. Additional reported findings with no dedicated field: end-expiratory transpulmonary pressure negative in 44% (27/61) of obese subjects and 65% (13/20) of class III subjects under empirical PEEP; Pes > 24 cm H2O in 4.9% (2/41) non-obese, 13.1% (8/61) obese, and 20% (4/20) class III subjects; BMI–Pes correlation Pearson r = 0.29, P = .002; overall cohort in-hospital mortality 39% (41/105); class III empirical-PEEP end-expiratory Ptp range −17 to 3 cm H2O."
+ }
+}

@@ -1,0 +1,447 @@
+{
+  "study_id": "talmor_2008",
+  "tool": "rob2_parallel",
+  "results": [
+    {
+      "result_id": "mortality",
+      "outcome": "180-day all-cause mortality",
+      "numerical_result": "8/30 esophageal-pressure-guided vs 14/31 conventional (Table 4); adjusted hazard ratio 0.52 (95% CI 0.22 to 1.25)",
+      "result_location": "Table 4, page 2103; Cox model results, page 2102",
+      "answers": {
+        "1.1": {
+          "response": "PY",
+          "support": "patients were randomly assigned with the use of a block-randomization scheme",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of how the block-randomization sequence was concealed (e.g., central randomization or sealed envelopes) and found none in the report.",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "The characteristics of the patients in the two groups were well matched at baseline (Table 1).",
+          "location": "Page 2098, Results; Table 1 page 2099"
+        },
+        "2.1": {
+          "response": "N",
+          "support": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "After the measurements at 72 hours, the results of pressure measurements were made available to the caregivers",
+          "location": "Page 2097, right column"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "These care standards were aggressively applied in both groups.",
+          "location": "Page 2097, right column"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Conditional on 2.3 answered PN; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Conditional on 2.4; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.6": {
+          "response": "Y",
+          "support": "this patient is included in the analysis on the basis of the intention-to-treat principle",
+          "location": "Page 2098, Results"
+        },
+        "2.7": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 2.6; 2.6 answered Y.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "180-Day mortality — no. (%) 8 (27) 14 (45) with N=30 and N=31 columns",
+          "location": "Table 4, page 2103"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 3.1; 3.1 answered Y.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "Conditional on N/PN to 3.2; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 3.3; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "death within 28 days and 180 days after treatment",
+          "location": "Page 2097, right column (end points)"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "Mortality was ascertained identically in both groups through follow-up to 180 days.",
+          "location": "Page 2097-2098"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "The report does not describe any blinding of outcome assessment; caregivers knew the treatment assignment.",
+          "location": "Pages 2096-2097, Methods"
+        },
+        "4.4": {
+          "response": "N",
+          "support": "All-cause mortality at 180 days is an objective endpoint that knowledge of assignment could not plausibly influence.",
+          "location": "Table 4, page 2103"
+        },
+        "4.5": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 4.4; 4.4 answered N.",
+          "location": "RoB 2 algorithm, Domain 4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan available in sufficient detail before unblinded data were available and found none; only the article text is available, which states some analyses were prespecified.",
+          "location": "Pages 2098-2102, Statistical Analysis"
+        },
+        "5.2": {
+          "response": "N",
+          "support": "180-day mortality has only one possible measurement (vital status at 180 days), so no selection among measures was possible.",
+          "location": "Table 4, page 2103"
+        },
+        "5.3": {
+          "response": "PN",
+          "support": "Both the unadjusted relative risk (0.59; 95% CI, 0.29 to 1.20) and the APACHE II-adjusted hazard ratio (0.52; 95% CI, 0.22 to 1.25) are fully reported.",
+          "location": "Page 2102, right column"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "The sequence was probably random (block randomization), but the report gives no information on allocation concealment, so concerns about the randomization process cannot be excluded; baseline balance was adequate."
+        },
+        "D2": {
+          "judgement": "Low",
+          "rationale": "Participants were sedated/paralyzed and unaware of assignment; caregivers knew assignment but no trial-context deviations were evident, and the analysis was ITT including the patient in whom measurements could not be obtained."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "Mortality data are reported for all 30 and 31 randomized patients at 180 days; no missing outcome data apparent."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "Although outcome assessors were aware of assignment, 180-day mortality is an objective endpoint not susceptible to assessor knowledge."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol or SAP was available to verify prespecification (5.1 NI); however, only one way to measure 180-day mortality exists, and both unadjusted and adjusted analyses are fully reported, limiting concern. Algorithm would give some concerns via 5.1."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "Some concerns in Domain 1 (no information on allocation concealment) and Domain 5 (no protocol/SAP available); no domain at high risk of bias."
+      }
+    },
+    {
+      "result_id": "vfd",
+      "outcome": "Ventilator-free days at 28 days",
+      "numerical_result": "Median 11.5 (IQR 0.0-20.3) vs 7.0 (IQR 0.0-17.0), P=0.50",
+      "result_location": "Table 4, page 2103",
+      "answers": {
+        "1.1": {
+          "response": "PY",
+          "support": "patients were randomly assigned with the use of a block-randomization scheme",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of how the block-randomization sequence was concealed and found none in the report.",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "The characteristics of the patients in the two groups were well matched at baseline (Table 1).",
+          "location": "Page 2098, Results; Table 1 page 2099"
+        },
+        "2.1": {
+          "response": "N",
+          "support": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "After the measurements at 72 hours, the results of pressure measurements were made available to the caregivers",
+          "location": "Page 2097, right column"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "These care standards were aggressively applied in both groups.",
+          "location": "Page 2097, right column"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Conditional on 2.3 answered PN; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Conditional on 2.4; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.6": {
+          "response": "Y",
+          "support": "this patient is included in the analysis on the basis of the intention-to-treat principle",
+          "location": "Page 2098, Results"
+        },
+        "2.7": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 2.6; 2.6 answered Y.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "For patients who were deceased at day 28, a value of 0 days was assigned.",
+          "location": "Table 4 footnote, page 2103"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 3.1; 3.1 answered Y.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "Conditional on N/PN to 3.2; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 3.3; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "the number of ventilator-free days at 28 days",
+          "location": "Page 2097, right column (secondary end points)"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "Ventilator-free days were computed identically in both groups from ventilator records over the same 28-day window.",
+          "location": "Page 2097-2098; Table 4 page 2103"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "The report does not describe any blinding of outcome assessment; the weaning and ventilator-management caregivers knew the treatment assignment.",
+          "location": "Pages 2096-2097, Methods"
+        },
+        "4.4": {
+          "response": "PN",
+          "support": "Ventilator-free days are objectively counted from ventilator use, though the weaning decisions generating the count were made by unblinded caregivers.",
+          "location": "Page 2097, right column"
+        },
+        "4.5": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 4.4; 4.4 answered PN.",
+          "location": "RoB 2 algorithm, Domain 4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan available in sufficient detail before unblinded data were available and found none; only the article text is available.",
+          "location": "Pages 2098-2102, Statistical Analysis"
+        },
+        "5.2": {
+          "response": "PN",
+          "support": "Ventilator-free days at 28 days has essentially one accepted definition and only that measurement is reported, but no protocol confirms no other time points were computed.",
+          "location": "Table 4, page 2103"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "I looked for evidence about how ventilator-free days were analysed and found only the Mann-Whitney comparison of medians; analysis intentions were not available in detail.",
+          "location": "Pages 2098, 2103"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "Probably random sequence (block randomization) but no information on allocation concealment."
+        },
+        "D2": {
+          "judgement": "Low",
+          "rationale": "Caregivers knew assignment but no trial-context deviations were evident; standardized weaning protocols were applied in both groups and the analysis was ITT."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "A value of 0 ventilator-free days was assigned to patients deceased at day 28, so data appear available for all randomized participants (deaths coded as 0 rather than missing)."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "Ventilator-free days are objectively counted from ventilator records using identical methods in both groups; knowledge of assignment is unlikely to have altered the counting itself."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol or SAP was available; the measurement and analysis intentions cannot be verified, so the result may have been selected from among eligible analyses. Algorithm yields some concerns."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "Some concerns in Domains 1 and 5 (concealment not reported; no protocol/SAP to verify prespecified measurement and analysis); no high risk of bias in any domain."
+      }
+    },
+    {
+      "result_id": "duration_mv",
+      "outcome": "Days of ventilation among survivors",
+      "numerical_result": "Median 12.0 (IQR 7.0-27.5) vs 16.0 (IQR 7.0-20.0), P=0.71",
+      "result_location": "Table 4, page 2103",
+      "answers": {
+        "1.1": {
+          "response": "PY",
+          "support": "patients were randomly assigned with the use of a block-randomization scheme",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of how the block-randomization sequence was concealed and found none in the report.",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "The characteristics of the patients in the two groups were well matched at baseline (Table 1).",
+          "location": "Page 2098, Results; Table 1 page 2099"
+        },
+        "2.1": {
+          "response": "N",
+          "support": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver",
+          "location": "Page 2096, Measurements and Experimental Protocol"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "After the measurements at 72 hours, the results of pressure measurements were made available to the caregivers",
+          "location": "Page 2097, right column"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "These care standards were aggressively applied in both groups.",
+          "location": "Page 2097, right column"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Conditional on 2.3 answered PN; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Conditional on 2.4; not triggered.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "2.6": {
+          "response": "Y",
+          "support": "this patient is included in the analysis on the basis of the intention-to-treat principle",
+          "location": "Page 2098, Results"
+        },
+        "2.7": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 2.6; 2.6 answered Y.",
+          "location": "RoB 2 algorithm, Domain 2"
+        },
+        "3.1": {
+          "response": "PY",
+          "support": "No. of days of ventilation among survivors - the outcome is reported for the 29 surviving patients per group (deaths excluded by outcome definition, not by loss to follow-up).",
+          "location": "Table 2 footnote page 2100; Table 4 page 2103"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "Conditional on N/PN/NI to 3.1; 3.1 answered PY.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "Conditional on N/PN to 3.2; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 3.3; not triggered.",
+          "location": "RoB 2 algorithm, Domain 3"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "No. of days of ventilation among survivors",
+          "location": "Table 4, page 2103"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "Days of ventilation were ascertained identically from ventilator records in both groups.",
+          "location": "Page 2097-2098; Table 4 page 2103"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "The report does not describe blinding of outcome assessment; caregivers managing weaning knew the treatment assignment.",
+          "location": "Pages 2096-2097, Methods"
+        },
+        "4.4": {
+          "response": "PN",
+          "support": "Days of ventilation is objectively counted from ventilator records, though the underlying extubation decisions were made by unblinded caregivers using a weaning protocol.",
+          "location": "Page 2097, right column"
+        },
+        "4.5": {
+          "response": "NA",
+          "support": "Conditional on Y/PY/NI to 4.4; 4.4 answered PN.",
+          "location": "RoB 2 algorithm, Domain 4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan available in sufficient detail before unblinded data were available and found none; only the article text is available.",
+          "location": "Pages 2098-2102, Statistical Analysis"
+        },
+        "5.2": {
+          "response": "PN",
+          "support": "Only days of ventilation among survivors is reported, but without a protocol I cannot verify that no other ventilation-duration definitions (e.g., all patients) were computed and selectively omitted.",
+          "location": "Table 4, page 2103"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "I looked for evidence about how days of ventilation were analysed and found only the Mann-Whitney comparison; analysis intentions were not available.",
+          "location": "Pages 2098, 2103"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "Probably random sequence (block randomization) but no information on allocation concealment."
+        },
+        "D2": {
+          "judgement": "Low",
+          "rationale": "Caregivers knew assignment but standardized weaning protocols were aggressively applied in both groups and no trial-context deviations were evident; the ITT principle is documented."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "The outcome is defined among survivors; deaths are excluded by outcome definition rather than being missing outcome data, and ventilation-duration data were available for the survivors analysed."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "Days of ventilation is objectively ascertained from ventilator records with identical methods in both groups; assessor knowledge is unlikely to have influenced the count itself."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol or SAP available; the conditioning on survivors and choice of this ventilation-duration measure cannot be verified as prespecified, so selection among eligible analyses cannot be excluded."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "Some concerns in Domains 1 and 5 (concealment not reported; no protocol/SAP to verify prespecification of the survivors-only outcome); no domain at high risk of bias."
+      }
+    }
+  ],
+  "nih": null,
+  "record_meta": {
+    "study_id": "talmor_2008",
+    "reviewer": "glm",
+    "model": "glm-5.3-flash",
+    "assessment_date": "2026-09-28",
+    "source_file": "studies/fulltext/talmor2008.pdf",
+    "schema_version": "1.0.0"
+  }
+}

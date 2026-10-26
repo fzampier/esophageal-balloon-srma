@@ -1,0 +1,624 @@
+{
+  "study_id": "talmor_2008",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (PaO2:FiO2 147±56 vs 145±57, P=0.89, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system complia @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (compliance 36±12 vs 36±10, P=0.94, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[dead space ratio of physiological dead space to @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (Vd/Vt 0.67±0.11 vs 0.67±0.09, P=0.95, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (FiO2 0.66±0.17 vs 0.77±0.18, P=0.02, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (tidal volume 484±98 vs 491±105, P=0.80, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml per kg of pr @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (Vt/PBW 7.3±1.3 vs 7.9±1.4, P=0.12, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end inspi @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (PL end-insp 7.9±6.0 vs 8.6±5.4, P=0.61, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end expir @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (PL end-exp -2.8±5.0 vs -1.9±4.7, P=0.49, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure esophageal end inspiratory p @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (Pes end-insp 21.2±4.9 vs 20.7±5.1, P=0.68, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure esophageal end expiratory pr @baseline]",
+      "decision": "glm",
+      "reason": "Same arm values in both (Pes end-exp 17.2±4.4 vs 16.9±5.0, P=0.79, matching Table 2); GLM adds the reported baseline P value as a bare-p effect estimate (codebook: a bare P is an entry with type null), the verbatim label 'Baseline', is_primary_outcome false (baseline is not the primary entry) and the verbatim row name with unit.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system complia @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[dead space ratio of physiological dead space to @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml continuous @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml per kg of pr @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end inspi @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end expir @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure esophageal end inspiratory p @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure esophageal end expiratory pr @72h]",
+      "decision": "deepseek",
+      "reason": "72-h physiologic measurement: the schema reserves fixed_day for day-based endpoints and hours for short-term physiologic timepoints, so DeepSeek's minutes_hours_after_intervention (hours 72) is correct and GLM's fixed_day with null days is not. Arm values identical and match Table 2. GLM's bare 72-h P duplicates DeepSeek's entry; GLM's repeated-measures P values are kept as DeepSeek's separate repeated_measures entries.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "f8138b6423",
+      "decision": "glm",
+      "reason": "Unit mm Hg is reported for PaO2:FiO2 ('88 mm Hg higher', 'improved ... by 131 mm Hg').",
+      "evidence": "p. 4-5, Results"
+    },
+    {
+      "id": "67659938d9",
+      "decision": "glm",
+      "reason": "Unit mm Hg is reported for PaO2:FiO2 ('by 49 mm Hg ... in the control group').",
+      "evidence": "p. 5, Results"
+    },
+    {
+      "id": "ac94662cb9",
+      "decision": "glm",
+      "reason": "Paper reports the within-arm improvement over the first 72 h: 131 mm Hg (95% CI 79 to 182) in the esophageal-pressure-guided group; the 72-h entry is the right host.",
+      "evidence": "p. 5 (2099), Results para 1"
+    },
+    {
+      "id": "c813bca97b",
+      "decision": "glm",
+      "reason": "Paper reports a 49 mm Hg (95% CI 12 to 86) improvement over the first 72 h in the control group.",
+      "evidence": "p. 5 (2099), Results para 1"
+    },
+    {
+      "id": "f522170c1e",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "a46d9fa8d9",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "16ea507239",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "12c2c8ff41",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "74feb0af37",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "f28683fc8c",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "11f8d3b6d2",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "d76c7196d7",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "28bb1e508e",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "a81138b90f",
+      "decision": "glm",
+      "reason": "'72 Hr' is the verbatim column header of Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "a9c1c524b7",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "a8c7ba0b7b",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "817162f29f",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "a7ba2099e9",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "e9a218bc3f",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "eec0e62fde",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "d5d480252b",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "0186864068",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "e47c6f252e",
+      "decision": "glm",
+      "reason": "The primary endpoint is PaO2:FiO2 at 72 h only; this entry is not primary, so false (not null) is correct.",
+      "evidence": "p. 4, Statistical Analysis; Abstract"
+    },
+    {
+      "id": "751af44c5c",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "05fd2c2494",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "ca9a0a9b03",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "107c96bca4",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "1183f49f89",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "a3b10eb662",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "b294bb2ba0",
+      "decision": "glm",
+      "reason": "GLM's name is the complete verbatim Table 2 row label (with unit) and matches the name kept on the baseline entry of the same row.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "id": "3241bcec5c",
+      "decision": "unclear",
+      "reason": "Repeated-measures ANOVA P=0.29 for dead space is printed only in Fig. 2C and only GLM has it, attached to the 72-h entry, while every other repeated-measures P is kept as a separate repeated_measures entry. Co-author: record P=0.29 (RM ANOVA, 24/48/72 h) as a repeated_measures entry for Vd/Vt, or accept it on the 72-h entry.",
+      "evidence": "p. 7 (2101), Fig. 2C (page image)"
+    },
+    {
+      "id": "793e730af5",
+      "decision": "unclear",
+      "reason": "DeepSeek's reading is correct (tidal volume fell by 44 ml in the esophageal-pressure-guided group during the first day, P<0.001 paired t-test) but it is a first-day change hosted on the baseline entry; no 24-h tidal-volume entry exists. Co-author: decide the host.",
+      "evidence": "p. 4 (2098), Results, Physiological Measurements"
+    },
+    {
+      "id": "06b594f8b9",
+      "decision": "unclear",
+      "reason": "DeepSeek's reading is correct (control tidal volume fell by 67 ml during the first day, P<0.001 paired t-test) but it is a first-day change hosted on the baseline entry. Co-author: decide the host.",
+      "evidence": "p. 4 (2098), Results, Physiological Measurements"
+    },
+    {
+      "target": "outcomes[mortality 28 day mortality no dichotomous @28d]",
+      "decision": "glm",
+      "reason": "Events 5/30 vs 12/31, RR 0.43 (0.17-1.07) P=0.06 and adjusted RR 0.46 (0.19-1.0) P=0.049 identical in both; GLM's test_used 'Poisson regression with conservative robust error variance' is verbatim, its name is the full Table 4 row label, and is_primary_outcome false is correct.",
+      "evidence": "p. 9 Table 4; p. 4 Statistical Analysis; p. 8 Results"
+    },
+    {
+      "target": "outcomes[mortality 180 day mortality no dichotomous @180d]",
+      "decision": "glm",
+      "reason": "8/30 vs 14/31, RR 0.59 (0.29-1.20), adjusted HR 0.52 (0.22-1.25) identical; GLM's 'Cox proportional-regression model' is the paper's verbatim wording and its name is the full Table 4 row label.",
+      "evidence": "p. 9 Table 4; p. 4 Statistical Analysis; p. 8 Results"
+    },
+    {
+      "target": "outcomes[ventilator free days no of ventilator free days @28d]",
+      "decision": "glm",
+      "reason": "Median 11.5 (0.0-20.3) vs 7.0 (0.0-17.0), P=0.50 identical; GLM adds the verbatim timepoint label, denominators 30/31 (all patients, deaths assigned 0) and is_primary_outcome false.",
+      "evidence": "p. 9, Table 4 and footnote"
+    },
+    {
+      "target": "outcomes[icu free days no of icu free days at 28 days con @28d]",
+      "decision": "glm",
+      "reason": "Median 5.0 (0.0-14.0) vs 4.0 (0.0-16.0), P=0.96 identical; GLM adds the verbatim definition (footnote), label, denominators and is_primary_outcome false.",
+      "evidence": "p. 9, Table 4 and footnote"
+    },
+    {
+      "target": "outcomes[icu length of stay length of icu stay days conti @duration until event]",
+      "decision": "glm",
+      "reason": "Median 15.5 (10.8-28.5) vs 13.0 (7.0-22.0), P=0.16 identical; GLM's name is the full row label and is_primary_outcome false is correct.",
+      "evidence": "p. 9, Table 4"
+    },
+    {
+      "id": "b82d1247a2",
+      "decision": "deepseek",
+      "reason": "'Length of ICU stay — days' is the outcome row label, not a timepoint label; a duration_until_event timepoint needs none.",
+      "evidence": "p. 9, Table 4"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation no of days of ve @duration until event]",
+      "decision": "deepseek",
+      "reason": "Days of ventilation are 'among survivors', so GLM's n and total of 30/31 (all randomised patients) are wrong; the number of survivors contributing is not stated and DeepSeek leaves n null. Medians/IQRs and P=0.71 identical.",
+      "evidence": "p. 9, Table 4"
+    },
+    {
+      "id": "2e050ee2aa",
+      "decision": "glm",
+      "reason": "Not the primary endpoint (PaO2:FiO2 at 72 h); false is correct.",
+      "evidence": "p. 4, Statistical Analysis"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 mm hg continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PaO2 at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2 at baseline matches Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 mm hg continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PaO2 at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2 at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72).",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm of water continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PEEP at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEP at baseline matches Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm of water continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PEEP at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days, and puts the 24-h PEEP difference 7.7 (5.5-9.9) on the 72-h entry.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEP at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72).",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate breaths min @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's respiratory rate at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: respiratory rate at baseline matches Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate breaths min @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's respiratory rate at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: respiratory rate at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72).",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal cm of water contin @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PEEPtotal at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEPtotal at baseline matches Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal cm of water contin @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's PEEPtotal at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: PEEPtotal at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72).",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peak inspiratory pressure cm @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's peak inspiratory pressure at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peak inspiratory pressure @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: peak inspiratory pressure at baseline matches Table 2. Airway pressures resulting from the settings describe the patient's mechanics, as plateau pressure does, not a titrated setting; respiratory_mechanics is kept at both timepoints.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peak inspiratory pressure cm @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's peak inspiratory pressure at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peak inspiratory pressure @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: peak inspiratory pressure at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72). Airway pressures resulting from the settings describe the patient's mechanics, as plateau pressure does, not a titrated setting; respiratory_mechanics is kept at both timepoints.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings mean airway pressure cm of w @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's mean airway pressure at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mean airway pressure conti @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: mean airway pressure at baseline matches Table 2. Airway pressures resulting from the settings describe the patient's mechanics, as plateau pressure does, not a titrated setting; respiratory_mechanics is kept at both timepoints.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings mean airway pressure cm of w @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's mean airway pressure at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mean airway pressure conti @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: mean airway pressure at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72). Airway pressures resulting from the settings describe the patient's mechanics, as plateau pressure does, not a titrated setting; respiratory_mechanics is kept at both timepoints.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure cm of wat @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's plateau pressure at baseline restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). DeepSeek's version is kept at both timepoints of this row so baseline and 72 h share one name and domain.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure continuou @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: plateau pressure at baseline matches Table 2.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure cm of wat @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's plateau pressure at 72 h restates the reading kept under DeepSeek's element for the same Table 2 row (values identical). GLM's 72-h entry also carries fixed_day with null days.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure continuou @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: plateau pressure at 72 h matches Table 2; the 72-h timepoint is correctly minutes_hours_after_intervention (hours 72).",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[barotrauma barotrauma dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "Keep: 'There were no adverse events or incidents of barotrauma in either group' is a reported zero, 0/30 and 0/31.",
+      "evidence": "p. 4 (2098), Results para 1"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: PaO2:FiO2 higher in the esophageal-pressure-guided group 'was evident at 24 hours (P = 0.04)'; GLM misplaced this P on the 72-h entry.",
+      "evidence": "p. 5 (2099), Results"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: 'persistent over the entire follow-up time (at 24, 48, and 72 hours; P = 0.001 by repeated-measures analysis of variance)'. Fig. 2A prints P=0.002 under a caption saying RM ANOVA, a paper inconsistency.",
+      "evidence": "p. 1 Abstract; p. 7 Fig. 2A"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system complia @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: compliance better at 24, 48 and 72 h, P=0.01 by repeated-measures ANOVA.",
+      "evidence": "p. 1 Abstract; p. 5 Results; p. 7 Fig. 2B"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: 'At 24 hours, the difference in PEEP between the groups reached 7.7 cm of water (95% CI, 5.5 to 9.9), with a mean PEEP in the esophageal-pressure-guided group of 18.7±5.1'. The same sentence says '3 of the 31 patients in this group'; DeepSeek's n=30 follows the randomised N.",
+      "evidence": "p. 6 (2100), Results"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: significantly higher PEEP at 24, 48 and 72 h, P<0.001 by repeated-measures ANOVA.",
+      "evidence": "p. 6 Results; p. 7 Fig. 2D"
+    },
+    {
+      "target": "outcomes[ventilator settings inspiratory time continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: inspiratory time 0.8±0.1 vs 0.9±0.2 at baseline is a Table 2 row GLM omitted.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings inspiratory time continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: inspiratory time 0.8±0.1 vs 0.8±0.1, P=0.27 at 72 h is a Table 2 row GLM omitted.",
+      "evidence": "p. 6 (2100), Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics plateau pressure continuou @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: plateau pressure higher in the esophageal-pressure-guided group, P=0.003 by repeated-measures ANOVA.",
+      "evidence": "p. 6 Results; p. 7 Fig. 2F"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end inspi @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: transpulmonary end-inspiratory pressure did not differ, P=0.13 by repeated-measures ANOVA.",
+      "evidence": "p. 6 Results; p. 7 Fig. 2G"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary end expir @repeated measures]",
+      "decision": "deepseek",
+      "reason": "Keep: transpulmonary end-expiratory pressure above zero vs negative, P<0.001 by repeated-measures ANOVA.",
+      "evidence": "p. 6 Results; p. 7 Fig. 2E"
+    },
+    {
+      "id": "2cecc173e4",
+      "decision": "glm",
+      "reason": "Both forms appear; the full journal name printed in the page header is the more complete form.",
+      "evidence": "p. 1 header"
+    },
+    {
+      "id": "bab8442878",
+      "decision": "deepseek",
+      "reason": "Single centre: patients from the ICUs of Beth Israel Deaconess Medical Center; limitations call it 'a single-center study'.",
+      "evidence": "p. 2 Methods, Patients; p. 9 Discussion"
+    },
+    {
+      "id": "36504418d1",
+      "decision": "glm",
+      "reason": "'a mean (±SD) APACHE II score of 26.6±6.4' across all 61 patients is reported.",
+      "evidence": "p. 4 (2098), Results para 1"
+    }
+  ]
+}

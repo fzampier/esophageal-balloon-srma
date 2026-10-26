@@ -1,0 +1,4453 @@
+{
+ "record_meta": {
+  "study_id": "mezidi_2018",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/mezidi2018.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 130 reviewer differences: 95 in scope. Settled by human rulings 11, model rulings 86, content-neutral rules 2; 25 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 6 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Mezidi",
+  "year": 2018,
+  "title": "Effects of positive end-expiratory pressure strategy in supine and prone position on lung and chest wall mechanics in acute respiratory distress syndrome",
+  "journal": "Annals of Intensive Care",
+  "doi": "10.1186/s13613-018-0434-2",
+  "pmid": null,
+  "trial_registration": "NCT02416037",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Adult ARDS patients with PaO2/FIO2 ≤ 150 mmHg under invasive mechanical ventilation including PEEP ≥ 5 cmH2O and VT = 6 mL/kg predicted body weight were included",
+     "location": "Methods, Study design and population, p. 2"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Adult ARDS patients with PaO2/FIO2 ≤ 150 mmHg under invasive mechanical ventilation including PEEP ≥ 5 cmH2O and VT = 6 mL/kg predicted body weight were included",
+     "location": "Methods, Study design and population, p. 2"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "were included in two academic medical intensive care units (Additional file 1: Figure S1)",
+     "location": "Methods, Study design and population, p. 2"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Supine head-up at 30° at Pes-guided PEEP. PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O.",
+     "location": "Methods, Protocol, step 2, p. 2"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Table 1 Respiratory mechanics in supine and prone position according to PEEP strategy",
+     "location": "Results, Table 1, p. 4"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "From January 1, 2016, to March 31, 2017, 38 patients (27 male) were enrolled",
+     "location": "Results, Patients, p. 3"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "We performed a prospective, physiologic study in two ICUs in university hospitals on ARDS patients with PaO2/FIO2 < 150 mmHg.",
+     "location": "Abstract, Results, p. 1"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Mezidi et al. Ann. Intensive Care (2018) 8:86",
+     "location": "Header, p. 1"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "crossover_physiologic",
+  "study_design_verbatim": {
+   "value": "We performed a prospective, physiologic study in two ICUs in university hospitals on ARDS patients",
+   "provenance": {
+    "quote": "We performed a prospective, physiologic study in two ICUs in university hospitals on ARDS patients",
+    "location": "page 1, Abstract"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": null,
+  "centers": "multi",
+  "n_centers": {
+   "value": 2,
+   "provenance": {
+    "quote": "were included in two academic medical intensive care units (Additional file 1: Figure S1)",
+    "location": "Methods, Study design and population, p. 2"
+   }
+  },
+  "countries": [
+   "France",
+   "Spain"
+  ],
+  "location_provenance": {
+   "quote": "Service de Réanimation Médicale, Hôpital de la Croix‑Rousse, Hospices Civils de Lyon, Lyon, France ... Intensive Care Unit, Sant Pau Hospital, Barcelona, Spain",
+   "location": "page 8, Author details"
+  },
+  "planned_sample_size": {
+   "value": 38,
+   "provenance": {
+    "quote": "Sample size was computed to 28 based on primary endpoint (Pes,ee) [24]. To account for incomplete data, we planned to include 38 patients.",
+    "location": "Methods, Statistical analysis, p. 3"
+   }
+  },
+  "sample_size_calculation": {
+   "value": "Sample size was computed to 28 based on primary endpoint (Pes,ee) [24]. To account for incomplete data, we planned to include 38 patients.",
+   "provenance": {
+    "quote": "Sample size was computed to 28 based on primary endpoint (Pes,ee) [24]. To account for incomplete data, we planned to include 38 patients.",
+    "location": "Methods, Statistical analysis, p. 3"
+   }
+  },
+  "stopped_early": false,
+  "stopping_rule": null,
+  "setting": {
+   "value": "two academic medical intensive care units",
+   "provenance": {
+    "quote": "were included in two academic medical intensive care units (Additional file 1: Figure S1)",
+    "location": "Methods, Study design and population, p. 2"
+   }
+  },
+  "enrolment_start": "2016-01",
+  "enrolment_end": "2017-03",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "CG received the Bernhard-Dräger Grant 2014 from the European Society of Intensive Care Medicine. MM received grants from the University hospital of Montpellier, France, and the University Claude Bernard Lyon I, France... Engström R860 was provided by GE Health Care. EIT device was provided by Swisstom and Maquet.",
+   "provenance": {
+    "quote": "CG received the Bernhard-Dräger Grant 2014 from the European Society of Intensive Care Medicine. MM received grants from the University hospital of Montpellier, France, and the University Claude Bernard Lyon I, France, to support his 1-year research training period in the service de reanimation médicale, Hôpital de la Croix Rousse, Lyon, France. Engström R860 was provided by GE Health Care. EIT device was provided by Swisstom and Maquet.",
+    "location": "Funding, p. 9"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 38,
+   "provenance": {
+    "quote": "From January 1, 2016, to March 31, 2017, 38 patients (27 male) were enrolled",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "n_analysed": {
+   "value": 37,
+   "provenance": {
+    "quote": "38 patients (27 male) were enrolled ... Table 1: N* 37 (patients excluded for incomplete data)",
+    "location": "p. 3 Results, Patients; p. 4 Table 1 N* column and footnote"
+   }
+  },
+  "population_description": {
+   "value": "Thirty-eight ARDS patients (27 male), mean ± SD age 63 ± 13 years, were included. There were 33 primary ARDS and 26 moderate ARDS.",
+   "provenance": {
+    "quote": "Thirty-eight ARDS patients (27 male), mean ± SD age 63 ± 13 years, were included. There were 33 primary ARDS and 26 moderate ARDS. PaO2/FIO2 ratio was 120 ± 23 mmHg.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "Adult ARDS patients with PaO2/FIO2 ≤ 150 mmHg under invasive mechanical ventilation including PEEP ≥ 5 cmH2O and VT = 6 mL/kg predicted body weight",
+   "provenance": {
+    "quote": "Adult ARDS patients with PaO2/FIO2 ≤ 150 mmHg under invasive mechanical ventilation including PEEP ≥ 5 cmH2O and VT = 6 mL/kg predicted body weight were included",
+    "location": "Methods, Study design and population, p. 2"
+   }
+  },
+  "exclusion_criteria": null,
+  "age": {
+   "value_type": "mean",
+   "value": 63,
+   "dispersion_type": "sd",
+   "dispersion": 13,
+   "unit": "years",
+   "provenance": {
+    "quote": "Thirty-eight ARDS patients (27 male), mean ± SD age 63 ± 13 years, were included.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "sex_female": {
+   "n": 11,
+   "total": 38,
+   "derived": true,
+   "derivation": "38 enrolled minus 27 male as reported",
+   "provenance": {
+    "quote": "38 patients (27 male) were enrolled",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "sex_male": {
+   "n": 27,
+   "total": 38,
+   "provenance": {
+    "quote": "From January 1, 2016, to March 31, 2017, 38 patients (27 male) were enrolled",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "bmi": null,
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": null,
+  "n_ards": {
+   "n": 38,
+   "total": 38,
+   "provenance": {
+    "quote": "Thirty-eight ARDS patients (27 male), mean ± SD age 63 ± 13 years, were included.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": {
+    "n": 26,
+    "total": 38,
+    "provenance": {
+     "quote": "There were 33 primary ARDS and 26 moderate ARDS.",
+     "location": "Abstract, Results, p. 1"
+    }
+   },
+   "severe": null
+  },
+  "covid19_population": "not_applicable",
+  "cause_of_respiratory_failure": {
+   "value": "There were 33 primary ARDS and 26 moderate ARDS.",
+   "provenance": {
+    "quote": "There were 33 primary ARDS and 26 moderate ARDS.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "pao2_fio2_baseline": {
+   "value_type": "mean",
+   "value": 120,
+   "dispersion_type": "sd",
+   "dispersion": 23,
+   "unit": "mmHg",
+   "provenance": {
+    "quote": "PaO2/FIO2 ratio was 120 ± 23 mmHg.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "apache_ii": null,
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": {
+   "n": 38,
+   "total": 38,
+   "provenance": {
+    "quote": "Then, patients were turned to PP and received same amount of PEEP from PEEP/FIO2 table then Pes-guided strategy.",
+    "location": "Abstract, Results, p. 1"
+   }
+  },
+  "n_neuromuscular_blockade": {
+   "n": 38,
+   "total": 38,
+   "provenance": {
+    "quote": "Patients were under continuous intravenous sedation-analgesia and muscle paralysis and ventilated with Carestation R860 ventilator (GE Health Care, US) in volume-controlled mode",
+    "location": "Methods, Mechanical ventilation, p. 2"
+   }
+  },
+  "n_ecmo": null,
+  "n_vasopressors": null,
+  "additional_baseline": [],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "Nutrivent device (Sidam, Italy)",
+   "provenance": {
+    "quote": "Pes and gastric pressure (Pga) were recorded with Nutrivent device (Sidam, Italy)",
+    "location": "Methods, Measurements, p. 2"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "minimal_volume",
+   "method_verbatim": {
+    "value": "after verification of correct placement [19] and non-stress minimal volume implementation [20]",
+    "provenance": {
+     "quote": "Pes and gastric pressure (Pga) were recorded with Nutrivent device (Sidam, Italy) after verification of correct placement [19] and non-stress minimal volume implementation [20].",
+     "location": "Methods, Measurements, p. 2"
+    }
+   },
+   "position_verification": {
+    "value": "the correct placement of the esophageal balloon was assessed by the Baydur maneuver",
+    "provenance": {
+     "quote": "the correct placement of the esophageal balloon was assessed by the Baydur maneuver, and minimal non-stress esophageal balloon volume was determined",
+     "location": "Discussion, Limitations and strengths, p. 8"
+    }
+   },
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "PL,ee was equal to static end-expiratory pressure of respiratory system (Paw,ee) minus Pes,ee.",
+    "provenance": {
+     "quote": "PL,ee was equal to static end-expiratory pressure of respiratory system (Paw,ee) minus Pes,ee.",
+     "location": "Methods, Data analysis, p. 3"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_positive_range",
+   "strategy_verbatim": {
+    "value": "PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O. This average value was selected because it falls in the middle of the range of PL,ee values used to set PEEP from the Pes-guided strategy in the Epvent 2 trial [9].",
+    "provenance": {
+     "quote": "PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O. This average value was selected because it falls in the middle of the range of PL,ee values used to set PEEP from the Pes-guided strategy in the Epvent 2 trial [9].",
+     "location": "Methods, Protocol, step 2, p. 2"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 1,
+    "unit": "cmH2O",
+    "derived": true,
+    "derivation": "Target stated as 3 ± 2 cmH2O, giving a range of 1 to 5 cmH2O",
+    "provenance": {
+     "quote": "PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O.",
+     "location": "Methods, Protocol, step 2, p. 2"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 5,
+    "unit": "cmH2O",
+    "derived": true,
+    "derivation": "Target stated as 3 ± 2 cmH2O, giving a range of 1 to 5 cmH2O",
+    "provenance": {
+     "quote": "PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O.",
+     "location": "Methods, Protocol, step 2, p. 2"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "PEEP was titrated by 1 cmH2O-steps",
+    "provenance": {
+     "quote": "PEEP was titrated by 1 cmH2O-steps to reach PL,ee of 3 ± 2 cmH2O.",
+     "location": "Methods, Protocol, step 2, p. 2"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": {
+    "value": "VT = 6 mL/kg predicted body weight",
+    "provenance": {
+     "quote": "Adult ARDS patients with PaO2/FIO2 ≤ 150 mmHg under invasive mechanical ventilation including PEEP ≥ 5 cmH2O and VT = 6 mL/kg predicted body weight were included",
+     "location": "Methods, Study design and population, p. 2"
+    }
+   },
+   "plateau_or_ptp_ceiling": null,
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Patients were under continuous intravenous sedation-analgesia and muscle paralysis",
+    "provenance": {
+     "quote": "Patients were under continuous intravenous sedation-analgesia and muscle paralysis and ventilated with Carestation R860 ventilator (GE Health Care, US) in volume-controlled mode",
+     "location": "Methods, Mechanical ventilation, p. 2"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "enrolment",
+   "hours_from_reference": null,
+   "timing_verbatim": {
+    "value": "Protocol consisted of the following steps... 1. Supine head-up at 30° at baseline PEEP (PEEP/FIO2 table).",
+    "provenance": {
+     "quote": "Protocol consisted of the following steps (Additional file 1: Figure S2): 1. Supine head-up at 30° at baseline PEEP (PEEP/FIO2 table).",
+     "location": "Methods, Protocol, p. 2"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "Each PEEP strategy was applied to 19 patients for the rest of the PP session",
+   "provenance": {
+    "quote": "Each PEEP strategy was applied to 19 patients for the rest of the PP session (Additional file 1: Table S1).",
+    "location": "Results, Patients, p. 3"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table"
+  ],
+  "comparator_verbatim": {
+   "value": "PEEP set according to the low PEEP arm of the PEEP/FIO2 table used in the ARMA trial",
+   "provenance": {
+    "quote": "and PEEP set according to the low PEEP arm of the PEEP/FIO2 table used in the ARMA trial [2].",
+    "location": "Methods, Mechanical ventilation, p. 2"
+   }
+  },
+  "crossover_order": {
+   "value": "Steps 1-2 supine (PEEP/FIO2 table then Pes-guided), steps 3-4 prone (PEEP/FIO2 table then Pes-guided); early application of PEEP strategy was not randomised, random allocation only for the late prone phase",
+   "provenance": {
+    "quote": "the not randomized design in the early application of PEEP strategy, which might have resulted in a carry-over effect since each patient was own control",
+    "location": "Discussion, Limitations and strengths, p. 8"
+   }
+  },
+  "washout_or_stabilisation": {
+   "value": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+   "provenance": {
+    "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+    "location": "Methods, Protocol, p. 3"
+   }
+  }
+ },
+ "arms": [
+  {
+   "label": "peep_fio2_table_supine",
+   "label_verbatim": "Supine position PEEP/FIO2 table",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 37,
+    "provenance": {
+     "quote": "N* Due to incomplete data, some patients were excluded from the analysis",
+     "location": "Results, Table 1 footnote, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 10,
+    "dispersion_type": "sd",
+    "dispersion": 2,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP set on ventilator (cmH2O) — 10 ± 2",
+     "location": "Results, Table 1, row: PEEP set on ventilator, Supine PEEP/FIO2 table column, p. 4"
+    }
+   }
+  },
+  {
+   "label": "pes_guided_supine",
+   "label_verbatim": "Supine position Pes-guided strategy",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 37,
+    "provenance": {
+     "quote": "N* Due to incomplete data, some patients were excluded from the analysis",
+     "location": "Results, Table 1 footnote, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 12,
+    "dispersion_type": "sd",
+    "dispersion": 4,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP set on ventilator (cmH2O) — 12 ± 4",
+     "location": "Results, Table 1, row: PEEP set on ventilator, Supine Pes-guided strategy column, p. 4"
+    }
+   }
+  },
+  {
+   "label": "peep_fio2_table_prone",
+   "label_verbatim": "Prone position PEEP/FIO2 table",
+   "role": "reference_condition",
+   "sequence_position": 3,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 37,
+    "provenance": {
+     "quote": "N* Due to incomplete data, some patients were excluded from the analysis",
+     "location": "Results, Table 1 footnote, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 10,
+    "dispersion_type": "sd",
+    "dispersion": 2,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP set on ventilator (cmH2O) — 10 ± 2",
+     "location": "Results, Table 1, row: PEEP set on ventilator, Prone PEEP/FIO2 table column, p. 4"
+    }
+   }
+  },
+  {
+   "label": "pes_guided_prone",
+   "label_verbatim": "Prone position Pes-guided strategy",
+   "role": "intervention",
+   "sequence_position": 4,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 37,
+    "provenance": {
+     "quote": "N* Due to incomplete data, some patients were excluded from the analysis",
+     "location": "Results, Table 1 footnote, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 12,
+    "dispersion_type": "sd",
+    "dispersion": 5,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP set on ventilator (cmH2O) — 12 ± 5",
+     "location": "Results, Table 1, row: PEEP set on ventilator, Prone Pes-guided strategy column, p. 4"
+    }
+   }
+  },
+  {
+   "label": "all",
+   "label_verbatim": null,
+   "role": "single_group",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 38,
+    "provenance": {
+     "quote": "38 patients (27 male) were enrolled",
+     "location": "page 3, Results, Patients"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "late_table",
+   "label_verbatim": "Late prone PEEP/FIO2 table group",
+   "role": "comparator",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 19,
+    "provenance": {
+     "quote": "PEEP/FIO2 table group (n=19)",
+     "location": "Table 2, p. 7"
+    }
+   },
+   "n_analysed": {
+    "value": 19,
+    "provenance": {
+     "quote": "PEEP/FIO2 table group (n=19) ... Late prone position PEEP/FIO2 table group (n=19)",
+     "location": "Table 2, p. 7"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "late_pes",
+   "label_verbatim": "Late prone Pes-guided strategy group",
+   "role": "intervention",
+   "sequence_position": null,
+   "n_randomised": {
+    "value": 19,
+    "provenance": {
+     "quote": "Pes-guided group (n=19)",
+     "location": "Table 2, p. 7"
+    }
+   },
+   "n_analysed": {
+    "value": 17,
+    "provenance": {
+     "quote": "Pes-guided group (n=17)",
+     "location": "Table 2, p. 7"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "sp",
+   "label_verbatim": "Supine position",
+   "role": "other_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": null,
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "pp",
+   "label_verbatim": "Prone position",
+   "role": "other_condition",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": null,
+   "peep_applied_cmh2o": null
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP set on ventilator (cmH2O)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — 10 ± 2",
+      "location": "Results, Table 1, row: PEEP set on ventilator, Supine PEEP/FIO2 table column, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — 12 ± 4",
+      "location": "Results, Table 1, row: PEEP set on ventilator, Supine Pes-guided strategy column, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — 10 ± 2",
+      "location": "Results, Table 1, row: PEEP set on ventilator, Prone PEEP/FIO2 table column, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — 12 ± 5",
+      "location": "Results, Table 1, row: PEEP set on ventilator, Prone Pes-guided strategy column, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... Position effect P=0.96",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.05,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... PEEP strategy effect P=0.05",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... Position and PEEP effect interaction P=0.96",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FIO2 ratio (mmHg)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 143,
+     "dispersion_type": "sd",
+     "dispersion": 28,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — 143 ± 28",
+      "location": "Results, Table 1, row: PaO2/FIO2 ratio, Supine PEEP/FIO2 table column, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 149,
+     "dispersion_type": "sd",
+     "dispersion": 31,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — 149 ± 31",
+      "location": "Results, Table 1, row: PaO2/FIO2 ratio, Supine Pes-guided strategy column, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 172,
+     "dispersion_type": "sd",
+     "dispersion": 51,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — 172 ± 51",
+      "location": "Results, Table 1, row: PaO2/FIO2 ratio, Prone PEEP/FIO2 table column, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 187,
+     "dispersion_type": "sd",
+     "dispersion": 53,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — 187 ± 53",
+      "location": "Results, Table 1, row: PaO2/FIO2 ratio, Prone Pes-guided strategy column, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... Position effect P<0.001",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.03,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... PEEP strategy effect P=0.03",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.17,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... Position and PEEP effect interaction P=0.17",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "effect_estimates": []
+  },
+  {
+   "domain": "mortality",
+   "name_verbatim": "ICU mortality",
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "icu_discharge",
+    "label_verbatim": "during the ICU stay"
+   },
+   "is_longest_reported_mortality": true,
+   "data": [
+    {
+     "arm_label": "all",
+     "events": 14,
+     "total": 38,
+     "provenance": {
+      "quote": "Fourteen patients died during the ICU stay (37%)",
+      "location": "page 3, Results, Patients"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Fourteen patients died during the ICU stay (37%).",
+    "location": "Results, Patients, p. 3"
+   },
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "paired_effects": [],
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FIO2 ratio at baseline",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": null
+   },
+   "data": [
+    {
+     "arm_label": "all",
+     "value_type": "mean",
+     "value": 120,
+     "dispersion_type": "sd",
+     "dispersion": 23,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio was 120 ± 23 mmHg",
+      "location": "page 1, Abstract"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Paw,ee (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Supine PEEP/FIO2 table 11±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Supine Pes-guided 13±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Prone PEEP/FIO2 table 11±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Prone Pes-guided 13±5",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.47,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... Position effect P=0.47",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.05,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... PEEP strategy effect P=0.05",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.91,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... Position and PEEP effect interaction P=0.91",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Paw,ei (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 23,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Supine PEEP/FIO2 table 23±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 24,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Supine Pes-guided 24±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Prone PEEP/FIO2 table 22±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 24,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Prone Pes-guided 24±6",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.11,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... Position effect P=0.11",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.08,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... PEEP strategy effect P=0.08",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.78,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... Position and PEEP effect interaction P=0.78",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "esophageal_pressure",
+   "name_verbatim": "Pes,ee (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": true,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Supine PEEP/FIO2 table 9±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Supine Pes-guided 10±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Prone PEEP/FIO2 table 9±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Prone Pes-guided 10±5",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.88,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... Position effect P=0.88",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.05,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... PEEP strategy effect P=0.05",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.83,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... Position and PEEP effect interaction P=0.83",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "esophageal_pressure",
+   "name_verbatim": "Pes,ei (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Supine PEEP/FIO2 table 12±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Supine Pes-guided 14±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Prone PEEP/FIO2 table 13±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Prone Pes-guided 14±6",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.66,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... Position effect P=0.66",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.01,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... PEEP strategy effect P=0.01",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.8,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... Position and PEEP effect interaction P=0.80",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Pga,ee (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Supine PEEP/FIO2 table 12±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Supine Pes-guided 12±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 18,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Prone PEEP/FIO2 table 18±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 18,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Prone Pes-guided 18±7",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... Position effect P<0.001",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.19,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... PEEP strategy effect P=0.19",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.06,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... Position and PEEP effect interaction P=0.06",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Pga,ei (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Supine PEEP/FIO2 table 14±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Supine Pes-guided 14±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 20,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Prone PEEP/FIO2 table 20±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 21,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 31,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Prone Pes-guided 21±7",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... Position effect P<0.001",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.11,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... PEEP strategy effect P=0.11",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.04,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... Position and PEEP effect interaction P=0.04",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ee (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 2,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Supine PEEP/FIO2 table 2±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 2,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Supine Pes-guided 2±2",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 2,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Prone PEEP/FIO2 table 2±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Prone Pes-guided 3±2",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.78,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... Position effect P=0.78",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.15,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... PEEP strategy effect P=0.15",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... Position and PEEP effect interaction P=0.96",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ei (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Supine PEEP/FIO2 table 10±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Supine Pes-guided 11±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Prone PEEP/FIO2 table 10±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Prone Pes-guided 10±4",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.03,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... Position effect P=0.03",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.47,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... PEEP strategy effect P=0.47",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.66,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... Position and PEEP effect interaction P=0.66",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ei_Elastance (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 16,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Supine PEEP/FIO2 table 16±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 17,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Supine Pes-guided 17±6",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 15,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Prone PEEP/FIO2 table 15±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 15,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Prone Pes-guided 15±6",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... Position effect P<0.01",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.46,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... PEEP strategy effect P=0.46",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.34,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... Position and PEEP effect interaction P=0.34",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "DPrs (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Supine PEEP/FIO2 table 12±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Supine Pes-guided 12±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Prone PEEP/FIO2 table 11±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Prone Pes-guided 11±4",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... Position effect P<0.001",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.88,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... PEEP strategy effect P=0.88",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.65,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... Position and PEEP effect interaction P=0.65",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "DPcw (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Supine PEEP/FIO2 table 3±1",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Supine Pes-guided 3±2",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Prone PEEP/FIO2 table 3±1",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 4,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Prone Pes-guided 4±1",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.33,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... Position effect P=0.33",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.03,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... PEEP strategy effect P=0.03",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.42,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... Position and PEEP effect interaction P=0.42",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "DPL (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Supine PEEP/FIO2 table 9±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 8,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Supine Pes-guided 8±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 8,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Prone PEEP/FIO2 table 8±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 7,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Prone Pes-guided 7±4",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... Position effect P<0.001",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.34,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... PEEP strategy effect P=0.34",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.38,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... Position and PEEP effect interaction P=0.38",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,rs (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 34,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Supine PEEP/FIO2 table 34±14",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 35,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Supine Pes-guided 35±14",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 32,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Prone PEEP/FIO2 table 32±14",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 33,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Prone Pes-guided 33±14",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.04,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... Position effect P=0.04",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.46,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... PEEP strategy effect P=0.46",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.83,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... Position and PEEP effect interaction P=0.83",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,cw (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Supine PEEP/FIO2 table 9±4",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Supine Pes-guided 10±5",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Prone PEEP/FIO2 table 10±3",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Prone Pes-guided 11±4",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.22,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... Position effect P=0.22",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.01,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... PEEP strategy effect P=0.01",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.3,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... Position and PEEP effect interaction P=0.30",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,L (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 25,
+     "dispersion_type": "sd",
+     "dispersion": 15,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Supine PEEP/FIO2 table 25±15",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 25,
+     "dispersion_type": "sd",
+     "dispersion": 15,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Supine Pes-guided 25±15",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 15,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Prone PEEP/FIO2 table 22±15",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 15,
+     "n": 37,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Prone Pes-guided 22±15",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.01,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... Position effect P=0.01",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.71,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... PEEP strategy effect P=0.71",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.64,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... Position and PEEP effect interaction P=0.64",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2 (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 53,
+     "dispersion_type": "sd",
+     "dispersion": 16,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Supine PEEP/FIO2 table 53±16",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 55,
+     "dispersion_type": "sd",
+     "dispersion": 17,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Supine Pes-guided 55±17",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 52,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Prone PEEP/FIO2 table 52±14",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 52,
+     "dispersion_type": "sd",
+     "dispersion": 18,
+     "n": 36,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Prone Pes-guided 52±18",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.08,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... Position effect P=0.08",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.12,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... PEEP strategy effect P=0.12",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.36,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... Position and PEEP effect interaction P=0.36",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "lung_volume",
+   "name_verbatim": "EELV (early)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "After 1 h at each PEEP level",
+    "provenance": {
+     "quote": "For steps 1–4, measurements were done 1 h after change in PEEP.",
+     "location": "page 3, Protocol"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_fio2_table_supine",
+     "value_type": "mean",
+     "value": 1359,
+     "dispersion_type": "sd",
+     "dispersion": 503,
+     "n": 37,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Supine PEEP/FIO2 table 1359±503",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_supine",
+     "value_type": "mean",
+     "value": 1427,
+     "dispersion_type": "sd",
+     "dispersion": 456,
+     "n": 37,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Supine Pes-guided 1427±456",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "peep_fio2_table_prone",
+     "value_type": "mean",
+     "value": 1266,
+     "dispersion_type": "sd",
+     "dispersion": 391,
+     "n": 37,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Prone PEEP/FIO2 table 1266±391",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "arm_label": "pes_guided_prone",
+     "value_type": "mean",
+     "value": 1328,
+     "dispersion_type": "sd",
+     "dispersion": 415,
+     "n": 37,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Prone Pes-guided 1328±415",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.01,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... Position effect P=0.01",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.08,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... PEEP strategy effect P=0.08",
+      "location": "Table 1, p. 4"
+     }
+    },
+    {
+     "contrast_type": "omnibus",
+     "contrast": "sp_table, sp_pes, pp_table, pp_pes",
+     "p_value": 0.93,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... Position and PEEP effect interaction P=0.93",
+      "location": "Table 1, p. 4"
+     }
+    }
+   ],
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP set on ventilator (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — Late prone PEEP/FIO2 table group 10±2",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP set on ventilator (cmH2O) — Late prone Pes-guided group 12±4",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.53,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... Time effect P=0.53",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.23,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... PEEP strategy effect P=0.23",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.5,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PEEP set on ventilator ... Time and PEEP effect interaction P=0.50",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Paw,ee (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Late prone PEEP/FIO2 table group 11±3",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ee (cmH2O) — Late prone Pes-guided group 13±4",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.93,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... Time effect P=0.93",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.09,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... PEEP strategy effect P=0.09",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.26,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ee ... Time and PEEP effect interaction P=0.26",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Paw,ei (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Late prone PEEP/FIO2 table group 22±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 24,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Paw,ei (cmH2O) — Late prone Pes-guided group 24±4",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.79,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... Time effect P=0.79",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.28,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... PEEP strategy effect P=0.28",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.67,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Paw,ei ... Time and PEEP effect interaction P=0.67",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "esophageal_pressure",
+   "name_verbatim": "Pes,ee (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Late prone PEEP/FIO2 table group 9±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ee (cmH2O) — Late prone Pes-guided group 10±6",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.88,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... Time effect P=0.88",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.47,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... PEEP strategy effect P=0.47",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.07,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ee ... Time and PEEP effect interaction P=0.07",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "esophageal_pressure",
+   "name_verbatim": "Pes,ei (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Late prone PEEP/FIO2 table group 12±5",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pes,ei (cmH2O) — Late prone Pes-guided group 14±5",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.87,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... Time effect P=0.87",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.2,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... PEEP strategy effect P=0.20",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.07,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pes,ei ... Time and PEEP effect interaction P=0.07",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Pga,ee (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 17,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Late prone PEEP/FIO2 table group 17±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 17,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ee (cmH2O) — Late prone Pes-guided group 17±5",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.48,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... Time effect P=0.48",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... PEEP strategy effect P=0.96",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.77,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ee ... Time and PEEP effect interaction P=0.77",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Pga,ei (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 19,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Late prone PEEP/FIO2 table group 19±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 19,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Pga,ei (cmH2O) — Late prone Pes-guided group 19±6",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.43,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... Time effect P=0.43",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... PEEP strategy effect P=0.96",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.75,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Pga,ei ... Time and PEEP effect interaction P=0.75",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ee (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 2,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Late prone PEEP/FIO2 table group 2±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ee (cmH2O) — Late prone Pes-guided group 3±2",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.82,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... Time effect P=0.82",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.22,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... PEEP strategy effect P=0.22",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.38,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ee ... Time and PEEP effect interaction P=0.38",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ei (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Late prone PEEP/FIO2 table group 10±5",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei (cmH2O) — Late prone Pes-guided group 10±4",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.95,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... Time effect P=0.95",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.69,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... PEEP strategy effect P=0.69",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.11,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei ... Time and PEEP effect interaction P=0.11",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PL,ei_Elastance (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 15,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Late prone PEEP/FIO2 table group 15±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PL,ei_Elastance (cmH2O) — Late prone Pes-guided group 14±5",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.96,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... Time effect P=0.96",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.47,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... PEEP strategy effect P=0.47",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.16,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PL,ei_Elastance ... Time and PEEP effect interaction P=0.16",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "DPrs (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Late prone PEEP/FIO2 table group 11±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPrs (cmH2O) — Late prone Pes-guided group 11±4",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.79,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... Time effect P=0.79",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.51,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... PEEP strategy effect P=0.51",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.17,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPrs ... Time and PEEP effect interaction P=0.17",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "DPcw (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 3,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Late prone PEEP/FIO2 table group 3±1",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 4,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPcw (cmH2O) — Late prone Pes-guided group 4±1",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.52,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... Time effect P=0.52",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.02,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... PEEP strategy effect P=0.02",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.42,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPcw ... Time and PEEP effect interaction P=0.42",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "DPL (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 8,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 19,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Late prone PEEP/FIO2 table group 8±4",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 7,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 17,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "DPL (cmH2O) — Late prone Pes-guided group 7±3",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.82,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... Time effect P=0.82",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.19,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... PEEP strategy effect P=0.19",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.14,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "DPL ... Time and PEEP effect interaction P=0.14",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,rs (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 33,
+     "dispersion_type": "sd",
+     "dispersion": 16,
+     "n": 19,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Late prone PEEP/FIO2 table group 33±16",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 30,
+     "dispersion_type": "sd",
+     "dispersion": 12,
+     "n": 17,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,rs (cmH2O/L) — Late prone Pes-guided group 30±12",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.76,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... Time effect P=0.76",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.41,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... PEEP strategy effect P=0.41",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.24,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,rs ... Time and PEEP effect interaction P=0.24",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,cw (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 19,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Late prone PEEP/FIO2 table group 9±3",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 17,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,cw (cmH2O/L) — Late prone Pes-guided group 11±5",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.59,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... Time effect P=0.59",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.04,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... PEEP strategy effect P=0.04",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.37,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,cw ... Time and PEEP effect interaction P=0.37",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Est,L (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 24,
+     "dispersion_type": "sd",
+     "dispersion": 16,
+     "n": 19,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Late prone PEEP/FIO2 table group 24±16",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 19,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 17,
+     "unit": "cmH2O/L",
+     "provenance": {
+      "quote": "Est,L (cmH2O/L) — Late prone Pes-guided group 19±10",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.56,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... Time effect P=0.56",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.18,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... PEEP strategy effect P=0.18",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.12,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Est,L ... Time and PEEP effect interaction P=0.12",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "PaCO2 (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 45,
+     "dispersion_type": "sd",
+     "dispersion": 14,
+     "n": 19,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Late prone PEEP/FIO2 table group 45±14",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 48,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 17,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaCO2 (mmHg) — Late prone Pes-guided group 48±10",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... Time effect P<0.001",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.42,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... PEEP strategy effect P=0.42",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.43,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaCO2 ... Time and PEEP effect interaction P=0.43",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "PaO2/FIO2 ratio (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 223,
+     "dispersion_type": "sd",
+     "dispersion": 85,
+     "n": 19,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — Late prone PEEP/FIO2 table group 223±85",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 218,
+     "dispersion_type": "sd",
+     "dispersion": 65,
+     "n": 17,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio (mmHg) — Late prone Pes-guided group 218±65",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": null,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... Time effect P<0.001",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.82,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... PEEP strategy effect P=0.82",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.27,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "PaO2/FIO2 ratio ... Time and PEEP effect interaction P=0.27",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "lung_volume",
+   "name_verbatim": "EELV (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "At end of 16-h PP session",
+    "provenance": {
+     "quote": "Measurements were done at session end",
+     "location": "page 3, Protocol, step 5"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 1504,
+     "dispersion_type": "sd",
+     "dispersion": 547,
+     "n": 19,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Late prone PEEP/FIO2 table group 1504±547",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 1691,
+     "dispersion_type": "sd",
+     "dispersion": 950,
+     "n": 17,
+     "unit": "mL",
+     "provenance": {
+      "quote": "EELV (mL) — Late prone Pes-guided group 1691±950",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.01,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... Time effect P=0.01",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.63,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... PEEP strategy effect P=0.63",
+      "location": "Table 2, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.28,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "EELV ... Time and PEEP effect interaction P=0.28",
+      "location": "Table 2, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Sternal lung regions (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "Late prone position, EIT-derived",
+    "provenance": {
+     "quote": "Table 3, p. 7",
+     "location": "Table 3, p. 7"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 13,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Sternal lung regions (mL/cmH2O) — Late prone PEEP/FIO2 table 13±6",
+      "location": "Table 3, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 15,
+     "dispersion_type": "sd",
+     "dispersion": 8,
+     "n": 10,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Sternal lung regions (mL/cmH2O) — Late prone Pes-guided 15±8",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.002,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Sternal lung regions ... Position effect P=0.002",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.42,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Sternal lung regions ... PEEP strategy effect P=0.42",
+      "location": "Table 3, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.89,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Sternal lung regions ... Position and PEEP effect interaction P=0.89",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Spinal lung regions (late)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 16,
+    "label_verbatim": "Late prone position"
+   },
+   "measurement_context": {
+    "value": "Late prone position, EIT-derived",
+    "provenance": {
+     "quote": "Table 3, p. 7",
+     "location": "Table 3, p. 7"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "late_table",
+     "value_type": "mean",
+     "value": 21,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "n": 13,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Spinal lung regions (mL/cmH2O) — Late prone PEEP/FIO2 table 21±9",
+      "location": "Table 3, p. 7"
+     }
+    },
+    {
+     "arm_label": "late_pes",
+     "value_type": "mean",
+     "value": 24,
+     "dispersion_type": "sd",
+     "dispersion": 12,
+     "n": 10,
+     "unit": "mL/cmH2O",
+     "provenance": {
+      "quote": "Spinal lung regions (mL/cmH2O) — Late prone Pes-guided 24±12",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "omnibus",
+     "contrast": "early prone vs late prone",
+     "p_value": 0.99,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Spinal lung regions ... Position effect P=0.99",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ],
+   "effect_estimates": [
+    {
+     "type": null,
+     "p_value": 0.57,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Spinal lung regions ... PEEP strategy effect P=0.57",
+      "location": "Table 3, p. 7"
+     }
+    },
+    {
+     "type": null,
+     "p_value": 0.51,
+     "test_used": "repeated measures 2-factor ANOVA",
+     "provenance": {
+      "quote": "Spinal lung regions ... Position and PEEP effect interaction P=0.51",
+      "location": "Table 3, p. 7"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "lung_volume",
+   "name_verbatim": "Recruited lung volume",
+   "definition_verbatim": "Recruited lung volume elicited by the change in PEEP",
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "sequence_position": null,
+    "label_verbatim": "Early supine and prone positions"
+   },
+   "measurement_context": {
+    "value": "Recruited lung volume elicited by the change in PEEP",
+    "provenance": {
+     "quote": "Recruited lung volume elicited by the change in PEEP in the early stage of the study in SP and in PP was computed according to the method described by Dellamonica et al.",
+     "location": "page 3, Data analysis"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "sp",
+     "value_type": "mean",
+     "value": 40,
+     "dispersion_type": "sd",
+     "dispersion": 191,
+     "n": null,
+     "unit": "mL",
+     "provenance": {
+      "quote": "The recruited lung volume averaged 40 ± 191 and 82 ± 255 ml (P = 0.665) in SP and PP, respectively.",
+      "location": "page 4, Results, Effect of prone position and PEEP strategy"
+     }
+    },
+    {
+     "arm_label": "pp",
+     "value_type": "mean",
+     "value": 82,
+     "dispersion_type": "sd",
+     "dispersion": 255,
+     "n": null,
+     "unit": "mL",
+     "provenance": {
+      "quote": "The recruited lung volume averaged 40 ± 191 and 82 ± 255 ml (P = 0.665) in SP and PP, respectively.",
+      "location": "page 4, Results, Effect of prone position and PEEP strategy"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "sp minus pp",
+     "arm_label_a": "sp",
+     "arm_label_b": "pp",
+     "mean_difference": null,
+     "p_value": 0.665,
+     "test_used": null,
+     "unit": "mL",
+     "provenance": {
+      "quote": "The recruited lung volume averaged 40 ± 191 and 82 ± 255 ml (P = 0.665) in SP and PP, respectively.",
+      "location": "page 4, Results, Effect of prone position and PEEP strategy"
+     }
+    }
+   ],
+   "effect_estimates": []
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": null,
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": {
+   "value": 1,
+   "provenance": {
+    "quote": "All the data were lacking for Pes-guided PEEP in SP in one patient, who required immediate PP",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "measurement_failure_reasons": {
+   "value": "one patient, who required immediate PP",
+   "provenance": {
+    "quote": "All the data were lacking for Pes-guided PEEP in SP in one patient, who required immediate PP, and in late prone in 2 patients (1 death and 1 patient returned in SP for urgent coronarography).",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "balloon_related_complications": [],
+  "complications_explicitly_none": null,
+  "protocol_adherence": null,
+  "protocol_deviations": {
+   "value": "All the data were lacking for Pes-guided PEEP in SP in one patient, who required immediate PP, and in late prone in 2 patients (1 death and 1 patient returned in SP for urgent coronarography). EIT data were not available in 11 patients.",
+   "provenance": {
+    "quote": "All the data were lacking for Pes-guided PEEP in SP in one patient, who required immediate PP, and in late prone in 2 patients (1 death and 1 patient returned in SP for urgent coronarography). EIT data were not available in 11 patients.",
+    "location": "Results, Patients, p. 3"
+   }
+  },
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "unclear",
+  "timing_subgroup": "unclear",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ARDS-only population by inclusion criterion. BMI not reported so obesity subgroup unclear. Timing measured only from enrolment into the protocol sequence, so timing subgroup unclear per codebook ruling. PTP target is absolute end-expiratory transpulmonary pressure 3 ± 2 cmH2O via absolute Pes subtraction. ICU mortality is the only mortality reported and is therefore the longest reported mortality."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "No overlap with any cluster in COHORTS.md. Registration NCT02416037 is unique to this report; enrolment January 2016 to March 2017 at Hôpital de la Croix-Rousse, Lyon, France and Sant Pau Hospital, Barcelona, Spain does not match any listed cluster (EPVent trials were Boston-based; Boesing Mannheim; Fumagalli/Florio MGH; Angers). No shared cohort identified.",
+  "unclear_items": [
+   "design.randomised: the early PEEP strategy application was explicitly not randomised, but the late prone phase was randomly allocated; recorded as null since the design as a whole is a non-randomised physiologic protocol with a randomised component",
+   "population.ards_definition_used: ARDS diagnosis definition (Berlin or other) not stated in the report",
+   "population.ards_severity.mild and severe: only 33 primary ARDS and 26 moderate ARDS reported; severity distribution incomplete (26 moderate of 38, remainder not classifiable from the text)",
+   "feasibility.n_placement_attempted and n_placement_successful: inferred as 38 from the statement that Pes was recorded with verification of correct placement in all enrolled patients; no explicit placement success count given",
+   "population.n_analysed: set equal to n_enrolled (38) as the paper reports analyses on 37-38 patients per table with varying denominators; no single analysed n stated",
+   "outcomes mortality data: ICU mortality reported only for the whole cohort (14/38); no per-arm mortality breakdown available",
+   "intervention.timing: timing relative to intubation or ARDS onset not reported; protocol steps begin at enrolment"
+  ],
+  "data_only_in_figure": [
+   "Individual values of Pes,ee and PL,ee in supine and prone positions (Fig. 1)",
+   "Variation of PEEP with Pes-guided strategy in supine and prone position (Fig. 2)"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Within-patient physiologic study with four early crossover conditions (supine/prone × PEEP/FIO2 table/Pes-guided) plus a randomised late-prone phase (19 per strategy, 17 analysed in Pes-guided late prone). Table 1 reports the four early conditions; Table 2 reports early vs late prone by strategy. Only a subset of Table 1/2 rows recorded as outcomes; the full tables contain additional rows (Paw,ee, Paw,ei, Pes,ei, Pga,ee, Pga,ei, PL,ei, PL,ei_Elastance, DPrs, DPcw, PaCO2) available in the source. Mortality reported only as a cohort-level count (14/38, 37%) during ICU stay; no per-arm breakdown. EIT regional compliance data (Table 3) not extracted as outcomes due to incomplete denominators across conditions."
+ }
+}

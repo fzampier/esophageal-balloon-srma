@@ -1,0 +1,432 @@
+{
+  "study_id": "mezidi_2018",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[peep fio2 table supine supine position peep fio2]",
+      "decision": "glm",
+      "reason": "Within-patient condition: the PEEP/FIO2-table state is the conventional reference condition (codebook, Arms); GLM's n_analysed 37 and PEEP 10 +/- 2 match Table 1.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "arms[peep fio2 table prone prone position peep fio2 t]",
+      "decision": "glm",
+      "reason": "Same as the supine table condition: conventional reference condition; n 37 and PEEP 10 +/- 2 match Table 1.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "arms[peep fio2 table late prone late prone position p]",
+      "decision": "deepseek",
+      "reason": "Drop: the late-prone PEEP/FIO2-table randomised group is kept as DeepSeek's late_table arm, which the kept Table 2 late-prone outcomes reference; keeping both duplicates the group.",
+      "evidence": "p. 7, Table 2 (page image); p. 3 Protocol step 5"
+    },
+    {
+      "target": "arms[pes guided late prone late prone position pes gu]",
+      "decision": "deepseek",
+      "reason": "Drop: the late-prone Pes-guided randomised group (19 allocated, n=17 analysed) is kept as DeepSeek's late_pes arm, referenced by the kept Table 2 outcomes.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "arms[all single group]",
+      "decision": "deepseek",
+      "reason": "Whole-cohort pseudo-arm (38 enrolled) is needed for the cohort-level ICU mortality 14/38 and baseline PaO2/FIO2 120 +/- 23, which the paper reports only for all patients.",
+      "evidence": "p. 3 Results, Patients; p. 1 Abstract"
+    },
+    {
+      "target": "arms[late table late prone peep fio2 table group comp]",
+      "decision": "deepseek",
+      "reason": "Randomised late-prone PEEP/FIO2-table group, 19 allocated, n=19 in Table 2 header; comparator role fits a randomised allocation; referenced by the kept late outcomes.",
+      "evidence": "p. 7, Table 2 (page image); p. 3 Results"
+    },
+    {
+      "target": "arms[late pes late prone pes guided strategy group in]",
+      "decision": "deepseek",
+      "reason": "Randomised late-prone Pes-guided group, 19 allocated ('Each PEEP strategy was applied to 19 patients'), n=17 in Table 2 header.",
+      "evidence": "p. 7, Table 2 (page image); p. 3 Results"
+    },
+    {
+      "target": "arms[sp supine position other condition]",
+      "decision": "unclear",
+      "reason": "Condition exists only for the recruited-lung-volume outcome, which is itself unclear; keep if and only if that outcome is kept.",
+      "evidence": "p. 4, Results para after Table 1"
+    },
+    {
+      "target": "arms[pp prone position other condition]",
+      "decision": "unclear",
+      "reason": "Condition exists only for the recruited-lung-volume outcome, which is itself unclear; keep if and only if that outcome is kept.",
+      "evidence": "p. 4, Results para after Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep set on ventilator cmh2o @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Both carry identical Table 1 values (10+/-2, 12+/-4, 10+/-2, 12+/-5, n 37). DeepSeek records all three ANOVA P values (position 0.96, strategy 0.05, interaction 0.96) as the codebook requires, GLM only the strategy effect. Kept DeepSeek for consistency with the other Table 1 rows; name_verbatim ruled separately.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "id": "85748532f3",
+      "decision": "glm",
+      "reason": "'PEEP set on ventilator (cmH2O)' is the verbatim Table 1 row label; '(early)' is DeepSeek's addition.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio mmhg continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Identical Table 1 values (143+/-28, 149+/-31, 172+/-51, 187+/-53, n 36); DeepSeek keeps all three ANOVA P values (position <0.001 as null with quote, strategy 0.03, interaction 0.17), GLM only the strategy effect.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "id": "482eb64ad2",
+      "decision": "glm",
+      "reason": "'PaO2/FIO2 ratio (mmHg)' is the verbatim Table 1 row label.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[mortality icu mortality dichotomous @duration until event]",
+      "decision": "deepseek",
+      "reason": "'Fourteen patients died during the ICU stay (37%)' is a whole-cohort count: DeepSeek's 14/38 on the all-patients arm is right; GLM attaches total 38 with no events to the late-prone Pes-guided arm. ICU mortality is bounded by ICU discharge, not an elapsed duration.",
+      "evidence": "p. 3, Results, Patients"
+    },
+    {
+      "id": "5ccc266229",
+      "decision": "glm",
+      "reason": "'during the ICU stay' is verbatim and more complete than 'ICU stay'.",
+      "evidence": "p. 3, Results, Patients"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes ee cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 Pes,ee row kept under DeepSeek's 'Pes,ee (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 PL,ee row kept under DeepSeek's 'PL,ee (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv ml continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 EELV row kept under DeepSeek's 'EELV (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est rs cmh2o l continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 Est,rs row kept under DeepSeek's 'Est,rs (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est cw cmh2o l continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 Est,cw row kept under DeepSeek's 'Est,cw (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est l cmh2o l continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 Est,L row kept under DeepSeek's 'Est,L (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dpl cmh2o continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: restates the Table 1 DPL row kept under DeepSeek's 'DPL (early)' element (same four condition values and n); DeepSeek's version also carries the position and interaction P values. DPL is driving transpulmonary pressure, so transpulmonary_pressure is the codebook domain.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio at baseline continuo @baseline]",
+      "decision": "deepseek",
+      "reason": "Baseline PaO2/FIO2 120 +/- 23 mmHg for the 38 included patients is reported; the codebook puts baseline values in outcomes at timepoint baseline.",
+      "evidence": "p. 1, Abstract Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw ee early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Paw,ee 11+/-3, 13+/-4, 11+/-3, 13+/-5; P 0.47/0.05/0.91; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw ei early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Paw,ei 23+/-4, 24+/-6, 22+/-4, 24+/-6; P 0.11/0.08/0.78; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes ei early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Pes,ei 12+/-4, 14+/-5, 13+/-4, 14+/-6; P 0.66/0.01/0.80; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other pga ee early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Pga,ee 12+/-6, 12+/-5, 18+/-6, 18+/-7; P <0.001/0.19/0.06; n 31); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other pga ei early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Pga,ei 14+/-6, 14+/-6, 20+/-6, 21+/-7; P <0.001/0.11/0.04; n 31); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (PL,ee 2+/-3, 2+/-2, 2+/-3, 3+/-2; P 0.78/0.15/0.96; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (PL,ei 10+/-5, 11+/-5, 10+/-5, 10+/-4; P 0.03/0.47/0.66; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei elastance early co @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (PL,ei_Elastance 16+/-5, 17+/-6, 15+/-5, 15+/-6; P <0.01/0.46/0.34; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dprs early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (DPrs 12+/-4, 12+/-4, 11+/-3, 11+/-4; P <0.001/0.88/0.65; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dpcw early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (DPcw 3+/-1, 3+/-2, 3+/-1, 4+/-1; P 0.33/0.03/0.42; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure dpl early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (DPL 9+/-4, 8+/-4, 8+/-4, 7+/-4; P <0.001/0.34/0.38; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est rs early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Est,rs 34+/-14, 35+/-14, 32+/-14, 33+/-14; P 0.04/0.46/0.83; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est cw early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Est,cw 9+/-4, 10+/-5, 10+/-3, 11+/-4; P 0.22/0.01/0.30; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est l early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (Est,L 25+/-15 x2, 22+/-15 x2; P 0.01/0.71/0.64; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (PaCO2 53+/-16, 55+/-17, 52+/-14, 52+/-18; P 0.08/0.12/0.36; n 36); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv early continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 1 row reported in the paper, matches the page image (EELV 1359+/-503, 1427+/-456, 1266+/-391, 1328+/-415; P 0.01/0.08/0.93; n 37); GLM's equivalent, where it exists, is dropped as a duplicate.",
+      "evidence": "p. 4, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes ee early continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "Values and P values match Table 1 (9+/-4, 10+/-5, 9+/-4, 10+/-5; n 37; P 0.88/0.05/0.83) and this is the version to keep (GLM's Pes,ee element is dropped as a duplicate), but DeepSeek sets is_primary_outcome false while the paper names Pes,ee the primary endpoint. Co-author: keep this element and set is_primary_outcome true.",
+      "evidence": "p. 3, Statistical analysis ('primary endpoint (Pes,ee)'); p. 4 Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep set on ventilator late @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PEEP 10+/-2, 12+/-4; P 0.53/0.23/0.50; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw ee late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Paw,ee 11+/-3, 13+/-4; P 0.93/0.09/0.26; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw ei late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Paw,ei 22+/-4, 24+/-4; P 0.79/0.28/0.67; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes ee late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Pes,ee 9+/-4, 10+/-6; P 0.88/0.47/0.07; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes ei late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Pes,ei 12+/-5, 14+/-5; P 0.87/0.20/0.07; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other pga ee late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Pga,ee 17+/-4, 17+/-5; P 0.48/0.96/0.77; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other pga ei late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Pga,ei 19+/-4, 19+/-6; P 0.43/0.96/0.75; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PL,ee 2+/-4, 3+/-2; P 0.82/0.22/0.38; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PL,ei 10+/-5, 10+/-4; P 0.95/0.69/0.11; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei elastance late con @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PL,ei_Elastance 15+/-4, 14+/-5; P 0.96/0.47/0.16; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dprs late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (DPrs 11+/-4, 11+/-4; P 0.79/0.51/0.17; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics dpcw late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (DPcw 3+/-1, 4+/-1; P 0.52/0.02/0.42; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure dpl late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (DPL 8+/-4, 7+/-3; P 0.82/0.19/0.14; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est rs late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Est,rs 33+/-16, 30+/-12; P 0.76/0.41/0.24; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est cw late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Est,cw 9+/-3, 11+/-5; P 0.59/0.04/0.37; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics est l late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (Est,L 24+/-16, 19+/-10; P 0.56/0.18/0.12; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other paco2 late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PaCO2 45+/-14, 48+/-10; P <0.001/0.42/0.43; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (PaO2/FIO2 223+/-85, 218+/-65; P <0.001/0.82/0.27; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume eelv late continuous @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 late-prone columns by randomised group (n 19 / 17) match the page image (EELV 1504+/-547, 1691+/-950; P 0.01/0.63/0.28; time / strategy / interaction). GLM has no Table 2 outcome.",
+      "evidence": "p. 7, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics sternal lung regions early @crossover condition]",
+      "decision": "unclear",
+      "reason": "Values match Table 3 (11+/-4 vs 13+/-6; P 0.002/0.42/0.89) but the early-prone columns are the randomised groups (n=13 / n=10 with EIT, the same patients as the late columns), not the crossover prone conditions pp_table/pp_pes (n 37). The arm labels and crossover_condition timepoint misattribute them; a co-author should re-point the data to the randomised late_table/late_pes groups at an early-prone timepoint, or drop.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics spinal lung regions early @crossover condition]",
+      "decision": "unclear",
+      "reason": "Values match Table 3 (22+/-9 vs 24+/-9; P 0.99/0.57/0.51) but the early-prone columns are the randomised groups (n=13 / n=10 with EIT, the same patients as the late columns), not the crossover prone conditions pp_table/pp_pes (n 37). The arm labels and crossover_condition timepoint misattribute them; a co-author should re-point the data to the randomised late_table/late_pes groups at an early-prone timepoint, or drop.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics sternal lung regions late @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 3 late-prone EIT sternal compliance by randomised group 13+/-6 (n 13) vs 15+/-8 (n 10); P 0.002 / 0.42 / 0.89 match the page image.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics spinal lung regions late c @16h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 3 late-prone EIT spinal compliance 21+/-9 (n 13) vs 24+/-12 (n 10); P 0.99 / 0.57 / 0.51 match the page image.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume recruited lung volume continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "The paper reports recruited lung volume 40+/-191 (SP) and 82+/-255 ml (PP), P=0.665, and GLM omits it, but DeepSeek's version adds numbers the paper does not print: n=37 per condition, a mean_difference of -42 computed without derived:true, and test_used 'paired t-test?' (methods state repeated-measures ANOVA). Co-author: keep with n and mean_difference null (or derived) and test_used null, together with arms sp/pp; or drop all three.",
+      "evidence": "p. 4, Results para after Table 1; p. 3 Data analysis / Statistical analysis"
+    },
+    {
+      "id": "55c547a283",
+      "decision": "unclear",
+      "reason": "Neither reading fits: the early four-step crossover was not randomised ('not randomized design in the early application of PEEP strategy'), but the rest of the 16-h prone session was randomly allocated. GLM null says not reported; DeepSeek false ignores the randomised phase. Co-author decides how a partially randomised design is coded.",
+      "evidence": "p. 3 Protocol step 5; p. 8 Limitations"
+    },
+    {
+      "id": "73aaeb2d87",
+      "decision": "glm",
+      "reason": "The paper makes no statement about balloon or strategy complications; silence is null (codebook), and false would imply complications occurred.",
+      "evidence": "Whole paper; CODEBOOK Feasibility"
+    },
+    {
+      "id": "dbfca34539",
+      "decision": "deepseek",
+      "reason": "The paper gives no count of placement attempts; 38 is GLM's inference from 'after verification of correct placement', which carries no number.",
+      "evidence": "p. 2, Methods, Measurements"
+    },
+    {
+      "id": "d6ef1fb306",
+      "decision": "deepseek",
+      "reason": "No count of successful placements is reported; missing data are attributed to other causes (immediate proning, death, coronarography), so 38 is an inference.",
+      "evidence": "p. 2 Methods; p. 3 Results, Patients"
+    },
+    {
+      "id": "664e494215",
+      "decision": "glm",
+      "reason": "The field records how filling volume was chosen: 'non-stress minimal volume implementation [20]' is minimal_volume; the Baydur test [19] is the placement check ('after verification of correct placement').",
+      "evidence": "p. 2, Methods, Measurements; p. 5 Discussion"
+    },
+    {
+      "id": "576b1cd714",
+      "decision": "unclear",
+      "reason": "GLM's quote supports 38 enrolled, not analysed: Table 1 notes patients excluded for incomplete data (N 37 for most rows, 36 gas exchange, 31 Pga). Co-author decides whether population n_analysed is 38 (mortality) or 37 (Table 1 analysis).",
+      "evidence": "p. 3 Results, Patients; p. 4 Table 1 N* column and footnote"
+    },
+    {
+      "id": "7309a908f4",
+      "decision": "glm",
+      "reason": "38 enrolled, 27 male: 11 female, correctly marked derived with its derivation.",
+      "evidence": "p. 3, Results, Patients"
+    }
+  ]
+}

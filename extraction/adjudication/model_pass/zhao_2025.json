@@ -1,0 +1,744 @@
+{
+  "study_id": "zhao_2025",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[mortality 28 day mortality rate dichotomous @28d]",
+      "decision": "glm",
+      "reason": "12/62 vs 20/62, chi2 p=0.042 and the EPM-strategy OR 0.63 (0.08-4.73), p=0.653 match both versions; GLM's adjustment covariates (dPL, PL, PaO2/FiO2, static compliance, age, APACHE II) are the Table 6 model, DeepSeek's 'age and APACHE II score' is incomplete. GLM's extra dPL OR is removed by id.",
+      "evidence": "p. 10 Table 7; p. 9 Table 6; p. 8 section 3.7"
+    },
+    {
+      "id": "3c316c2ab6",
+      "decision": "deepseek",
+      "reason": "Drop: OR 1.56 (1.25-2.01) is the per-cmH2O effect of dPL at 72 h as a covariate in the mortality model, not a between-group estimate of the EPM strategy.",
+      "evidence": "p. 9, Table 6, row dPL"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation mechanical venti @duration until event]",
+      "decision": "glm",
+      "reason": "12.32+/-3.24 vs 16.83+/-4.52 d, t-test p=0.013 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[icu length of stay icu length of stay continuous @duration until event]",
+      "decision": "glm",
+      "reason": "18.53+/-4.62 vs 23.72+/-5.83 d, p=0.018 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[other vap incidence dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "9/62 vs 16/62, p=0.038 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning weaning success @end of study]",
+      "decision": "glm",
+      "reason": "53/62 vs 46/62, p=0.032 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning first weaning f @end of study]",
+      "decision": "glm",
+      "reason": "12/62 vs 18/62, p=0.042 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[other tracheotomy rate dichotomous @end of study]",
+      "decision": "glm",
+      "reason": "15/62 vs 21/62, p=0.048 identical in both; GLM sets is_primary_outcome false, which is correct (the primary endpoint is PaO2/FiO2), where DeepSeek leaves it null.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @baseline]",
+      "decision": "glm",
+      "reason": "PaO2/FiO2 baseline: means/SDs 142.86/143.73 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "id": "94ec37699e",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.887 for PaO2/FiO2 baseline; GLM omitted it.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @24h]",
+      "decision": "glm",
+      "reason": "PaO2/FiO2 24 h: means/SDs 186.42/165.52 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "id": "d75a2d1dcf",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.028 for PaO2/FiO2 24 h; GLM omitted it.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @48h]",
+      "decision": "glm",
+      "reason": "PaO2/FiO2 48 h: means/SDs 223.63/182.38 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "id": "156207310a",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.016 for PaO2/FiO2 48 h; GLM omitted it.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory pl conti @baseline]",
+      "decision": "glm",
+      "reason": "end-inspiratory PL baseline: means/SDs 22.86/22.73 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "c4afbd06d0",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.832 for end-inspiratory PL baseline; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory pl conti @24h]",
+      "decision": "glm",
+      "reason": "end-inspiratory PL 24 h: means/SDs 19.42/22.52 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "bdbbbf2d83",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.012 for end-inspiratory PL 24 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory pl conti @48h]",
+      "decision": "glm",
+      "reason": "end-inspiratory PL 48 h: means/SDs 17.63/22.38 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "81283f67f3",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.008 for end-inspiratory PL 48 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory pl conti @72h]",
+      "decision": "glm",
+      "reason": "end-inspiratory PL 72 h: means/SDs 16.82/22.41 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "6d34877816",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.006 for end-inspiratory PL 72 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory pl contin @baseline]",
+      "decision": "glm",
+      "reason": "end-expiratory PL baseline: means/SDs 6.13/6.15 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "7afe5a0ecc",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.951 for end-expiratory PL baseline; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory pl contin @24h]",
+      "decision": "glm",
+      "reason": "end-expiratory PL 24 h: means/SDs 5.10/6.09 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "9b53633102",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.037 for end-expiratory PL 24 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory pl contin @48h]",
+      "decision": "glm",
+      "reason": "end-expiratory PL 48 h: means/SDs 4.39/5.90 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "44309fab05",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.014 for end-expiratory PL 48 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory pl contin @72h]",
+      "decision": "glm",
+      "reason": "end-expiratory PL 72 h: means/SDs 4.46/5.89 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "3db2c4ccc2",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.020 for end-expiratory PL 72 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory pes continuou @baseline]",
+      "decision": "glm",
+      "reason": "end-expiratory Pes baseline: means/SDs 12.83/12.76 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "ad9f4d8579",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.872 for end-expiratory Pes baseline; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory pes continuou @24h]",
+      "decision": "glm",
+      "reason": "end-expiratory Pes 24 h: means/SDs 11.42/12.62 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "e8708bb5f2",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.042 for end-expiratory Pes 24 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory pes continuou @48h]",
+      "decision": "glm",
+      "reason": "end-expiratory Pes 48 h: means/SDs 10.86/12.58 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "304ca63092",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.038 for end-expiratory Pes 48 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory pes continuou @72h]",
+      "decision": "glm",
+      "reason": "end-expiratory Pes 72 h: means/SDs 10.43/12.52 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "id": "9670dfb167",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.032 for end-expiratory Pes 72 h; GLM omitted it.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @baseline]",
+      "decision": "glm",
+      "reason": "Pplat baseline: means/SDs 28.86/28.73 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "362618056e",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.832 for Pplat baseline; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @72h]",
+      "decision": "glm",
+      "reason": "Pplat 72 h: means/SDs 22.82/28.41 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "5cdb382a62",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.006 for Pplat 72 h; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @baseline]",
+      "decision": "glm",
+      "reason": "PEEP baseline: means/SDs 8.73/8.58 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "032dd4ed78",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.733 for PEEP baseline; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @24h]",
+      "decision": "glm",
+      "reason": "PEEP 24 h: means/SDs 12.32/10.43 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "5ee40db886",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.026 for PEEP 24 h; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @48h]",
+      "decision": "glm",
+      "reason": "PEEP 48 h: means/SDs 11.24/10.48 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "582e4461e9",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.048 for PEEP 48 h; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @72h]",
+      "decision": "glm",
+      "reason": "PEEP 72 h: means/SDs 10.36/10.52 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "id": "29e68fe74e",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.401 for PEEP 72 h; GLM omitted it.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[other cumulative fluid balance continuous @72h]",
+      "decision": "glm",
+      "reason": "cumulative fluid balance 72 h: means/SDs -352+/-628 / 483+/-712 identical in both; GLM carries the timepoint label and definition. Its missing P value is taken from DeepSeek by id.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "id": "339849c603",
+      "decision": "deepseek",
+      "reason": "The table prints p=0.005 for cumulative fluid balance 72 h (the text of section 3.5 gives p=0.042 for this comparison; the table prints 0.005); GLM omitted it.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "id": "6132397384",
+      "decision": "deepseek",
+      "reason": "The primary endpoint is PaO2/FiO2 at 72 h after intervention (sample-size statement); the baseline entry is not primary per the codebook ruling, so GLM's true is dropped.",
+      "evidence": "p. 3, sample size para; CODEBOOK is_primary_outcome ruling"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @72h]",
+      "decision": "unclear",
+      "reason": "Numbers agree (268.82+/-32.46 vs 195.41+/-28.23, MD 73.41, p=0.008), but this is the paper's primary endpoint (PaO2/FiO2 at 72 h, sample-size statement and section 3.4) and neither version sets is_primary_outcome true: GLM says false, DeepSeek null. Keep GLM's version with is_primary_outcome=true (DeepSeek's second effect entry only repeats p=0.008). The reported MD is '73.41 +/- 12.42 mmHg'; neither records the 12.42.",
+      "evidence": "p. 3 sample size; p. 7 section 3.4; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl transpulmonary drivin @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: dPL baseline (DeepSeek's dPL series) is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl transpulmonary drivin @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: dPL 24 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl transpulmonary drivin @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: dPL 48 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl transpulmonary drivin @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: dPL 72 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p driving pressure continu @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: dP baseline is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p driving pressure continu @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: dP 72 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt tidal volume ml kg pbw co @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: VT baseline is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt tidal volume ml kg pbw co @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: VT 72 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst static compliance of r @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Cst baseline is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst static compliance of r @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: Cst 72 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl lung compliance continu @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: CL baseline is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl lung compliance continu @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: CL 72 h is the same reading DeepSeek holds under its own target for this row and timepoint, with identical means/SDs plus the table P value.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event complications stress ulcer dichoto @end of study]",
+      "decision": "deepseek",
+      "reason": "Drop: stress ulcer 8/62 vs 10/62 is kept under DeepSeek's target with the verbatim row name and its P value.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event complications new onset arrhythmia @end of study]",
+      "decision": "deepseek",
+      "reason": "Drop: new-onset arrhythmia 6/62 vs 8/62 is kept under DeepSeek's target with the verbatim row name and its P value.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event complications acute kidney injury @end of study]",
+      "decision": "deepseek",
+      "reason": "Drop: acute kidney injury 7/62 vs 9/62 is kept under DeepSeek's target with the verbatim row name and its P value.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event complications thrombosis dichotomo @end of study]",
+      "decision": "deepseek",
+      "reason": "Drop: thrombosis 4/62 vs 5/62 is kept under DeepSeek's target with the verbatim row name and its P value.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[rescue therapy rescue therapies eccor and vv ecm @end of study]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 7 reports ECCOR and VV-ECMO as two separate rows (0 (0) vs 0 (0) each); GLM merges them into one non-verbatim 'Rescue therapies (ECCOR and VV-ECMO)' outcome. DeepSeek's two rows record what the table prints.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dPL baseline 16.73+/-2.52 vs 16.58+/-2.43, p=0.733, matching the table.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dPL 24 h 14.32+/-2.13 vs 16.43+/-2.38, p=0.015, matching the table.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dPL 48 h 13.24+/-1.92 vs 16.48+/-2.42, p=0.009, matching the table.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dPL 72 h 12.36+/-1.83 vs 16.52+/-2.37, p=0.007, matching the table.",
+      "evidence": "p. 6, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Pplat 24 h 25.42+/-2.83 vs 28.52+/-3.24, p=0.013, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Pplat 48 h 23.63+/-2.62 vs 28.38+/-3.18, p=0.008, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dP baseline 14.83+/-2.42 vs 14.76+/-2.38, p=0.872, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dP 24 h 12.42+/-2.13 vs 14.62+/-2.32, p=0.016, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dP 48 h 11.86+/-1.92 vs 14.58+/-2.28, p=0.011, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics p continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: dP 72 h 11.43+/-1.83 vs 14.52+/-2.24, p=0.008, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: VT baseline 6.01+/-0.12 vs 6.02+/-0.14 mL/kg PBW, p=0.667, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: VT 24 h 5.82+/-0.24 vs 6.00+/-0.18, p=0.021, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: VT 48 h 5.64+/-0.32 vs 5.98+/-0.32, p=0.013, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings vt continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: VT 72 h 5.43+/-0.38 vs 5.92+/-0.42, p=0.006, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Cst baseline 29.83+/-5.42 vs 29.76+/-5.38, p=0.943, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Cst 24 h 33.42+/-4.83 vs 29.52+/-5.24, p=0.024, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Cst 48 h 35.63+/-4.62 vs 29.38+/-5.18, p=0.015, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cst continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: Cst 72 h 37.82+/-4.46 vs 29.41+/-5.23, p=0.009, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: CL baseline 35.86+/-4.82 vs 36.12+/-4.97, p=0.767, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: CL 24 h 40.64+/-5.12 vs 36.52+/-4.87, p=0.027, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: CL 48 h 42.60+/-5.18 vs 36.28+/-4.93, p=0.013, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: CL 72 h 44.32+/-5.26 vs 35.81+/-4.98, p=0.007, matching the table.",
+      "evidence": "p. 7, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: PaCO2 baseline 46.8+/-5.9 vs 47.2+/-6.1, p=0.709, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: PaCO2 24 h 43.5+/-4.8 vs 42.9+/-5.2, p=0.496, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: PaCO2 48 h 42.1+/-4.5 vs 41.2+/-4.3, p=0.248, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: PaCO2 72 h 41.2+/-4.3 vs 40.8+/-4.1, p=0.612, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation ph continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: pH baseline 7.31+/-0.06 vs 7.30+/-0.07, p=0.391, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation ph continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: pH 24 h 7.34+/-0.05 vs 7.33+/-0.06, p=0.307, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation ph continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: pH 48 h 7.36+/-0.04 vs 7.35+/-0.05, p=0.224, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation ph continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: pH 72 h 7.38+/-0.04 vs 7.37+/-0.05, p=0.758, matching the table.",
+      "evidence": "p. 7, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid intake continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid intake Day 1 2842+/-483 vs 2924+/-512, p=0.353, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid intake continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid intake Day 2 2638+/-432 vs 2752+/-467, p=0.169, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid intake continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid intake Day 3 2473+/-398 vs 2512+/-423, p=0.598, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid output continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid output Day 1 2463+/-512 vs 2382+/-483, p=0.362, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid output continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid output Day 2 2748+/-463 vs 2483+/-428, p=0.038, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid output continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid output Day 3 2954+/-487 vs 2520+/-459, p=0.016, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid balance continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid balance Day 2 -110+/-187 vs 269+/-243, p=0.022, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid balance continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: daily fluid balance Day 3 -481+/-232 vs -8+/-198, p=0.011, matching the table. Day 1/2/3 are coded as 24/48/72 h, the end of each day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other cumulative fluid balance continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: cumulative fluid balance at 24 h, 379+/-216 vs 542+/-283, p=0.035, matching its own Table 5 row (numerically equal to the separate Day-1 daily balance row, which is also kept).",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other cumulative fluid balance continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: cumulative fluid balance 48 h 269+/-382 vs 811+/-497, p=0.009, matching the table.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event stress ulcer dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: stress ulcer 8/62 vs 10/62, p=0.609, matching the table.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event new onset arrhythmia dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: new-onset arrhythmia 6/62 vs 8/62, p=0.569, matching the table.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event acute kidney injury dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: acute kidney injury 7/62 vs 9/62, p=0.595, matching the table.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event thrombosis dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Reported reading only DeepSeek extracted: thrombosis 4/62 vs 5/62, p=0.729, matching the table.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[other daily fluid balance continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Table 5 reports Day-1 daily fluid balance as its own row, 379+/-216 vs 542+/-283, p=0.035. It shares numbers with the 24 h cumulative row but is a separately reported row, so both are recorded. Day 1 is coded as 24 h, the end of the day's collection window.",
+      "evidence": "p. 8, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[rescue therapy eccor dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Table 7 row ECCOR: 0 (0) vs 0 (0), no test reported; a reported zero, recorded as its own row.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "target": "outcomes[rescue therapy vv ecmo dichotomous @end of study]",
+      "decision": "deepseek",
+      "reason": "Table 7 row VV-ECMO: 0 (0) vs 0 (0), no test reported; a reported zero, recorded as its own row.",
+      "evidence": "p. 10, Table 7 (page image)"
+    },
+    {
+      "id": "b1f5975c86",
+      "decision": "deepseek",
+      "reason": "Inclusion required mechanical ventilation initiated within 48 h before enrolment and patients were screened within 48 h of ventilation, so the interval is anchored to the start of ventilation (intubation is the nearest enum) and bounded, not known only relative to enrolment.",
+      "evidence": "p. 3, section 2.1 inclusion (5) and randomisation para"
+    },
+    {
+      "id": "d65be7b49d",
+      "decision": "glm",
+      "reason": "Results give the whole-cohort age as 55.02+/-12.13 years for 124 patients.",
+      "evidence": "p. 5, section 3.1"
+    },
+    {
+      "id": "58cb0b8940",
+      "decision": "glm",
+      "reason": "'70 males and 54 females' of 124; Table 1 gives 26 + 28 females.",
+      "evidence": "p. 5, section 3.1; Table 1"
+    },
+    {
+      "id": "114ed0e40a",
+      "decision": "deepseek",
+      "reason": "Obesity was not an enrolment criterion and mean BMI is 24.82 and 24.56 kg/m2, well below 30; no BMI spread is reported that would support mixed_bmi.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "id": "f1db899e68",
+      "decision": "deepseek",
+      "reason": "The intervention began at enrolment, which inclusion criterion (5) places within 48 h of the start of mechanical ventilation, so the interval from that reference event is <48 h for every patient. That is a measured bound from ventilation onset, not enrolment-only timing.",
+      "evidence": "p. 3, section 2.1 inclusion (5)"
+    }
+  ]
+}

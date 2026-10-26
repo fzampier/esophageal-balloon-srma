@@ -1,0 +1,2502 @@
+{
+  "record_meta": {
+    "study_id": "pavlovsky_2024",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/1-s2.0-S2110582025001499-main.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Pavlovsky",
+    "year": 2024,
+    "title": "Bedside personalized methods based on electrical impedance tomography or respiratory mechanics to set PEEP in ARDS and recruitment-to-inflation ratio: a physiologic study",
+    "journal": "Annals of Intensive Care",
+    "doi": "10.1186/s13613-023-01228-4",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "ventilated in volume assist control mode using a Carescape R860 ventilator",
+          "location": "Methods, Patients’ installation and settings, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Medical ICU of the University Hospital of Angers, France",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP levels determined by the following strategies were studied: ... (2) minimal positive expiratory transpulmonary pressure (Positive PLe)",
+          "location": "Abstract, Methods"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Eleven patients (58%) died before day 28.",
+          "location": "Results, Patients’ characteristics"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In this exploratory, physiological study",
+          "location": "Introduction, para 3"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Pavlovsky et al. Annals of Intensive Care (2024) 14:1",
+          "location": "Header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "physiologic study",
+      "provenance": {
+        "quote": "Bedside personalized methods based on electrical impedance tomography or respiratory mechanics to set PEEP in ARDS and recruitment-to-inflation ratio: a physiologic study",
+        "location": "Title"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": null,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": true,
+      "derivation": "Single centre named in the author affiliation: Medical Intensive Care Unit, Vent’Lab, Angers University Hospital, University of Angers, 4 Rue Larrey, 49933 Angers Cedex 9, France.",
+      "provenance": {
+        "quote": "Medical Intensive Care Unit, Vent’Lab, Angers University Hospital, University of Angers, 4 Rue Larrey, 49933 Angers Cedex 9, France",
+        "location": "Author details, para 1"
+      }
+    },
+    "countries": [
+      "France"
+    ],
+    "location_provenance": {
+      "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France",
+      "location": "Methods, Study population, para 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Medical ICU",
+      "provenance": {
+        "quote": "Medical ICU of the University Hospital of Angers",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "enrolment_start": "2019-12",
+    "enrolment_end": "2020-04",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "No dedicated funding was allocated to this work.",
+      "provenance": {
+        "quote": "No dedicated funding was allocated to this work.",
+        "location": "Funding section"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 19,
+      "provenance": {
+        "quote": "Nineteen adult patients",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "n_analysed": {
+      "value": 19,
+      "provenance": {
+        "quote": "Nineteen adult patients",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "population_description": {
+      "value": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria.",
+      "provenance": {
+        "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria.",
+      "provenance": {
+        "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "exclusion_criteria": null,
+    "age": {
+      "value_type": "median",
+      "value": 64,
+      "dispersion_type": "iqr",
+      "dispersion_low": 54,
+      "dispersion_high": 67,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age, years 64 [54–67]",
+        "location": "Table 1, row: Age"
+      }
+    },
+    "sex_female": {
+      "n": 4,
+      "total": 19,
+      "percent_as_reported": 21,
+      "provenance": {
+        "quote": "Female gender (%) 4 (21)",
+        "location": "Table 1, row: Female gender"
+      }
+    },
+    "sex_male": null,
+    "bmi": {
+      "value_type": "median",
+      "value": 30.4,
+      "dispersion_type": "iqr",
+      "dispersion_low": 24.8,
+      "dispersion_high": 33.6,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "BMI, kg.m−2 30.4 [24.8–33.6]",
+        "location": "Table 1, row: BMI"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin criteria",
+      "provenance": {
+        "quote": "ARDS defined according to the Berlin criteria",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "n_ards": {
+      "n": 19,
+      "total": 19,
+      "provenance": {
+        "quote": "Nineteen adult patients ... diagnosed of ARDS",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": 3,
+        "total": 19,
+        "percent_as_reported": 16,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients’ characteristics, para 2"
+        }
+      },
+      "moderate": {
+        "n": 10,
+        "total": 19,
+        "percent_as_reported": 53,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients’ characteristics, para 2"
+        }
+      },
+      "severe": {
+        "n": 6,
+        "total": 19,
+        "percent_as_reported": 32,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients’ characteristics, para 2"
+        }
+      }
+    },
+    "covid19_population": "some",
+    "cause_of_respiratory_failure": {
+      "value": "Pulmonary 15 (79%), Extra-pulmonary 4 (21%)",
+      "provenance": {
+        "quote": "ARDS etiology (%) Pulmonary 15 (79) Extra-pulmonary 4 (21)",
+        "location": "Table 1, rows: ARDS etiology"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 120,
+      "dispersion_type": "iqr",
+      "dispersion_low": 94,
+      "dispersion_high": 168,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+        "location": "Table 1, row: PaO2/FiO2"
+      }
+    },
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": {
+      "value_type": "median",
+      "value": 45,
+      "dispersion_type": "iqr",
+      "dispersion_low": 38,
+      "dispersion_high": 51,
+      "provenance": {
+        "quote": "SAPS II score at ICU admission 45 [38–51]",
+        "location": "Table 1, row: SAPS II"
+      }
+    },
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": {
+      "n": 19,
+      "total": 19,
+      "derived": true,
+      "derivation": "All patients received continuous infusion of Cisatracurium as part of the study protocol.",
+      "provenance": {
+        "quote": "paralyzed by continuous infusion of Cisatracurium",
+        "location": "Methods, Patients’ installation and settings, para 1"
+      }
+    },
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "PaCO2, mmHg",
+        "continuous": {
+          "value_type": "median",
+          "value": 47,
+          "dispersion_type": "iqr",
+          "dispersion_low": 39,
+          "dispersion_high": 52,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg 47 [39–52]",
+            "location": "Table 1, row: PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "continuous": {
+          "value_type": "median",
+          "value": 7.33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.29,
+          "dispersion_high": 7.39,
+          "provenance": {
+            "quote": "pH 7.33 [7.29–7.39]",
+            "location": "Table 1, row: pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Ventilatory Ratio",
+        "continuous": {
+          "value_type": "median",
+          "value": 1.97,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.64,
+          "dispersion_high": 2.45,
+          "provenance": {
+            "quote": "Ventilatory Ratio 1.97 [1.64–2.45]",
+            "location": "Table 1, row: Ventilatory Ratio"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Tidal volume/PBW, mL.kg−1",
+        "continuous": {
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 6.2,
+          "unit": "mL/kg",
+          "provenance": {
+            "quote": "Tidal volume/PBW, mL.kg−1 6.1 [6.0–6.2]",
+            "location": "Table 1, row: Tidal volume/PBW"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory rate, min−1",
+        "continuous": {
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 29,
+          "unit": "min−1",
+          "provenance": {
+            "quote": "Respiratory rate, min−1 30 [24–29]",
+            "location": "Table 1, row: Respiratory rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PEEPtot, cmH2O",
+        "continuous": {
+          "value_type": "median",
+          "value": 7.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.5,
+          "dispersion_high": 8.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 7.0 [5.5–8.0]",
+            "location": "Table 1, row: PEEPtot"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Plateau pressure, cmH2O",
+        "continuous": {
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 18,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure, cmH2O 15 [14–18]",
+            "location": "Table 1, row: Plateau pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "CRS, mL.cmH2O−1",
+        "continuous": {
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "Table 1, row: CRS"
+          }
+        }
+      },
+      {
+        "name_verbatim": "CCW, mL.cmH2O−1",
+        "continuous": {
+          "value_type": "median",
+          "value": 158,
+          "dispersion_type": "iqr",
+          "dispersion_low": 131,
+          "dispersion_high": 219,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CCW, mL.cmH2O−1 158 [131–219]",
+            "location": "Table 1, row: CCW"
+          }
+        }
+      },
+      {
+        "name_verbatim": "EL/ERS ratio",
+        "continuous": {
+          "value_type": "median",
+          "value": 0.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.61,
+          "dispersion_high": 0.79,
+          "provenance": {
+            "quote": "EL/ERS ratio 0.70 [0.61–0.79]",
+            "location": "Table 1, row: EL/ERS ratio"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "NutriVent®, Sidam, San Giacomo Roncole, Italy",
+      "provenance": {
+        "quote": "Esophageal pressure measurements were obtained with a specific nasogastric feeding tube equipped with an esophageal balloon (NutriVent®, Sidam, San Giacomo Roncole, Italy) connected to the ventilator",
+        "location": "Methods, Patients’ installation and settings, para 3"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "PLe, difference between total PEEP and expiratory esophageal pressure",
+        "provenance": {
+          "quote": "PLe, difference between total PEEP and expiratory esophageal pressure",
+          "location": "Methods, Decremental PEEP trial, para 1"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PLe between 0 and 2 cmH2O (Positive PLe)",
+        "provenance": {
+          "quote": "PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": false,
+      "recruitment_manoeuvre_detail": {
+        "value": "No recruitment maneuver with PEEP higher than 20 cmH2O was performed prior to the PEEP trial.",
+        "provenance": {
+          "quote": "no recruitment maneuver with PEEP higher than 20 cmH2O was performed prior to the PEEP trial",
+          "location": "Discussion, Study limitations, para 1"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 mL.kg−1 predicted body weight",
+        "provenance": {
+          "quote": "tidal volume 6 mL.kg−1 predicted body weight (PBW)",
+          "location": "Methods, Patients’ installation and settings, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "ards_onset",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "enrolled within 24 h after the diagnosis of ARDS",
+        "provenance": {
+          "quote": "enrolled within 24 h after the diagnosis of ARDS",
+          "location": "Methods, Study population, para 1"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "Express (plateau pressure 28–30 cmH2O), CoV (center of ventilation closest to 50%), Crossing Point (intersection of EIT-based overdistension and lung collapse curves)",
+      "provenance": {
+        "quote": "PEEP levels determined by the following strategies were studied: (1) plateau pressure 28–30 cmH2O (Express), (3) center of ventilation closest to 0.5 (CoV) and (4) intersection of the EIT-based overdistension and lung collapse curves (Crossing Point).",
+        "location": "Methods, Decremental PEEP trial, para 2"
+      }
+    },
+    "crossover_order": {
+      "value": "A single decremental PEEP trial from PEEP 20 to 5 cmH2O with steps of 3 cmH2O every 3 minutes; order not randomised",
+      "provenance": {
+        "quote": "PEEP level was increased at 20 cmH2O then was progressively decreased by steps of 3 cmH2O every 3 min, until PEEP reached 5 cmH2O.",
+        "location": "Methods, Decremental PEEP trial, para 1"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "Each PEEP level was held for 3 minutes during the decremental trial; before the trial, PEEP 15 and 5 were held for 20 min each",
+      "provenance": {
+        "quote": "PEEP level of 15, then 5 cm H2O was applied for 20 min. At the end of each period, inspiratory and expiratory pauses were performed, and arterial blood gases were obtained.",
+        "location": "Methods, Exploration of response to PEEP, para 1"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "positive_ple",
+      "label_verbatim": "Positive PLe",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 7,
+        "dispersion_type": "iqr",
+        "dispersion_low": 10,
+        "dispersion_high": 14,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEPtot, cmH2O ... Positive PLe 7 [10–14]†",
+          "location": "Table 2, row: PEEPtot"
+        }
+      }
+    },
+    {
+      "label": "express",
+      "label_verbatim": "Express",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 18,
+        "dispersion_type": "iqr",
+        "dispersion_low": 16,
+        "dispersion_high": 19,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEPtot, cmH2O ... Express 18 [16–19]*",
+          "location": "Table 2, row: PEEPtot"
+        }
+      }
+    },
+    {
+      "label": "cov",
+      "label_verbatim": "CoV",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 20,
+        "dispersion_type": "iqr",
+        "dispersion_low": 19,
+        "dispersion_high": 20,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEPtot, cmH2O ... CoV 20 [19–20]*",
+          "location": "Table 2, row: PEEPtot"
+        }
+      }
+    },
+    {
+      "label": "crossing_point",
+      "label_verbatim": "Crossing Point",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 11,
+        "dispersion_type": "iqr",
+        "dispersion_low": 10,
+        "dispersion_high": 12,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEPtot, cmH2O ... Crossing Point 11 [10–12]†",
+          "location": "Table 2, row: PEEPtot"
+        }
+      }
+    },
+    {
+      "label": "cohort",
+      "label_verbatim": "All patients",
+      "role": "single_group",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "Nineteen adult patients",
+          "location": "Methods, Study population"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 at PEEP 5 cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "median",
+          "value": 120,
+          "dispersion_type": "iqr",
+          "dispersion_low": 94,
+          "dispersion_high": 168,
+          "n": 19,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+            "location": "Table 1, row: PaO2/FiO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS at PEEP 5 cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "n": 19,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "Table 1, row: CRS"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtot at PEEP 5 cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "median",
+          "value": 7.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.5,
+          "dispersion_high": 8.0,
+          "n": 19,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 7.0 [5.5–8.0]",
+            "location": "Table 1, row: PEEPtot"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure at PEEP 5 cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 18,
+          "n": 19,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure, cmH2O 15 [14–18]",
+            "location": "Table 1, row: Plateau pressure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Death before day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cohort",
+          "events": 11,
+          "total": 19,
+          "provenance": {
+            "quote": "Eleven patients (58%) died before day 28.",
+            "location": "Results, Patients’ characteristics, para 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtot at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 19,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O: CoV 20 [19–20]*; Crossing Point 11 [10–12]†; Express 18 [16–19]*; Positive PLe 7 [10–14]†; ANOVA p < .001",
+            "location": "Table 2, row: PEEPtot"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 31,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27,
+          "dispersion_high": 34,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27,
+          "dispersion_high": 28,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "Pplat, cmH2O: CoV 31 [27–34]*; Crossing Point 19 [17–20]†; Express 27 [27–28]*; Positive PLe 18 [14–21]†; ANOVA p < .001",
+            "location": "Table 2, row: Pplat"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PLe at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1,
+          "dispersion_high": 2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLe, cmH2O: CoV 7 [3–10]*; Crossing Point 2 [0–3]†; Express 6 [3–7]*; Positive PLe 2 [1–2]†; ANOVA p < .001",
+            "location": "Table 2, row: PLe"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PLi at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 22,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 15,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PLi, cmH2O: CoV 13 [10–22]*; Crossing Point 7 [3–10]†; Express 12 [10–15]*; Positive PLe 7 [5–10]†; ANOVA p < .001",
+            "location": "Table 2, row: PLi"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PplatL at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 15,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 22,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 15,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "PplatL, cmH2O: CoV 23 [16–27]*; Crossing Point 14 [10–15]†; Express 19 [16–22]*; Positive PLe 11 [8–15]†; ANOVA p < .001",
+            "location": "Table 2, row: PplatL"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPRS at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 13,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O: CoV 11 [9–13]*; Crossing Point 8 [7–10]†; Express 9 [8–10]*; Positive PLe 7 [7–10]†; ANOVA p < .001",
+            "location": "Table 2, row: ΔPRS"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 41,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28,
+          "dispersion_high": 50,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 54,
+          "dispersion_type": "iqr",
+          "dispersion_low": 43,
+          "dispersion_high": 67,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 45,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42,
+          "dispersion_high": 56,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 59,
+          "dispersion_type": "iqr",
+          "dispersion_low": 41,
+          "dispersion_high": 71,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1: CoV 41 [28–50]*; Crossing Point 54 [43–67]†; Express 45 [42–56]*; Positive PLe 59 [41–71]†; ANOVA p < .001",
+            "location": "Table 2, row: CRS"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 53,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 67,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 75,
+          "dispersion_type": "iqr",
+          "dispersion_low": 61,
+          "dispersion_high": 133,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 63,
+          "dispersion_type": "iqr",
+          "dispersion_low": 53,
+          "dispersion_high": 88,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 77,
+          "dispersion_type": "iqr",
+          "dispersion_low": 58,
+          "dispersion_high": 141,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CL, mL.cmH2O−1: CoV 53 [34–67]*; Crossing Point 75 [61–133]†; Express 63 [53–88]*; Positive PLe 77 [58–141]†; ANOVA p < .001",
+            "location": "Table 2, row: CL"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "OD at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 24,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15,
+          "dispersion_high": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 13,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 21,
+          "dispersion_type": "iqr",
+          "dispersion_low": 18,
+          "dispersion_high": 26,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 14,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "OD, %: CoV 24 [15–29]*; Crossing Point 9 [6–13]†; Express 21 [18–26]*; Positive PLe 5 [0–14]†; ANOVA p < .001",
+            "location": "Table 2, row: OD"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "LC at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 1,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 10,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 2,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2,
+          "dispersion_high": 14,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "LC, %: CoV 0 [0–1]*; Crossing Point 9 [4–10]†; Express 1 [0–2]*; Positive PLe 9 [2–14]†; ANOVA p < .001",
+            "location": "Table 2, row: LC"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "CoV at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 53,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51,
+          "dispersion_high": 56,
+          "unit": "%",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 57,
+          "dispersion_type": "iqr",
+          "dispersion_low": 53,
+          "dispersion_high": 60,
+          "unit": "%",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 54,
+          "dispersion_type": "iqr",
+          "dispersion_low": 51,
+          "dispersion_high": 57,
+          "unit": "%",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 56,
+          "dispersion_type": "iqr",
+          "dispersion_low": 55,
+          "dispersion_high": 59,
+          "unit": "%",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "CoV, %: CoV 53 [51–56]*; Crossing Point 57 [53–60]†; Express 54 [51–57]*; Positive PLe 56 [55–59]†; ANOVA p < .001",
+            "location": "Table 2, row: CoV"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "VREC from PEEP 5 cmH2O at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 511,
+          "dispersion_type": "iqr",
+          "dispersion_low": 216,
+          "dispersion_high": 785,
+          "unit": "mL",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 232,
+          "dispersion_type": "iqr",
+          "dispersion_low": 140,
+          "dispersion_high": 401,
+          "unit": "mL",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 517,
+          "dispersion_type": "iqr",
+          "dispersion_low": 239,
+          "dispersion_high": 749,
+          "unit": "mL",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 124,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 155,
+          "unit": "mL",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC from PEEP 5 cmH2O, mL: CoV 511 [216–785]*; Crossing Point 232 [140–401]†; Express 517 [239–749]*; Positive PLe 124 [0–155]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "VREC/PBW from PEEP 5 cmH2O at optimal PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 7.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.5,
+          "dispersion_high": 10.9,
+          "unit": "mL/kg",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 3.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.3,
+          "dispersion_high": 4.9,
+          "unit": "mL/kg",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 7.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.7,
+          "dispersion_high": 10.8,
+          "unit": "mL/kg",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 1.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 2.6,
+          "unit": "mL/kg",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Across all four strategies",
+          "p_value_verbatim": "<0.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "CoV minus Crossing Point",
+          "arm_label_a": "cov",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Express minus Crossing Point",
+          "arm_label_a": "express",
+          "arm_label_b": "crossing_point",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Crossing Point minus CoV",
+          "arm_label_a": "crossing_point",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Positive PLe minus CoV",
+          "arm_label_a": "positive_ple",
+          "arm_label_b": "cov",
+          "p_value_verbatim": "<0.05",
+          "provenance": {
+            "quote": "VREC/PBW from PEEP 5 cmH2O, mL.kg−1: CoV 7.4 [3.5–10.9]*; Crossing Point 3.3 [2.3–4.9]†; Express 7.5 [3.7–10.8]*; Positive PLe 1.5 [0.0–2.6]†*; ANOVA p < .001",
+            "location": "Table 2, row: VREC/PBW"
+          }
+        }
+      ],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": {
+      "value": 1,
+      "provenance": {
+        "quote": "Esophageal pressure data were missing for one patient, due to a technical limitation.",
+        "location": "Results, Patients’ characteristics, para 4"
+      }
+    },
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "All patients had ARDS per Berlin criteria. Median BMI 30.4 kg/m2, so obese population. Enrolled within 24h of ARDS diagnosis, so early. The esophageal-guided strategy used absolute end-expiratory transpulmonary pressure (PLe) between 0 and 2 cmH2O."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "COVID-19 status",
+      "outcome_name": "Optimal PEEP",
+      "prespecified": null,
+      "result_verbatim": "We observed no difference in the optimal PEEP levels between patients with C-ARDS and patients with ARDS of other etiologies in all the tested titration strategies",
+      "provenance": {
+        "quote": "We observed no difference in the optimal PEEP levels between patients with C-ARDS and patients with ARDS of other etiologies in all the tested titration strategies",
+        "location": "Results, PEEP levels determined according to the different titration strategies, para 2"
+      }
+    },
+    {
+      "subgroup_variable": "R/Iest group (higher vs lower)",
+      "outcome_name": "Optimal PEEP",
+      "prespecified": null,
+      "result_verbatim": "The determined PEEP levels did not differ between the Higher and Lower R/Iest ratio groups in all the tested PEEP titration strategies (Additional file 1: Fig. S6).",
+      "provenance": {
+        "quote": "The determined PEEP levels did not differ between the Higher and Lower R/Iest ratio groups in all the tested PEEP titration strategies",
+        "location": "Results, Optimal PEEP levels and recruitability, para 3"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": "angers",
+    "overlapping_cohort_with": [
+      "chean_2025"
+    ],
+    "overlap_evidence": "Suspected overlap based on same centre (Angers University Hospital) and shared authorship. The current report does not include a comparison of enrolment dates or trial registration with chean_2025 because that report was not available for extraction. Pavlovsky 2024 also states that 10 COVID-19 ARDS patients were previously published in Beloncle 2020, which is not in the current review pool. So overlap with chean_2025 is unconfirmed.",
+    "unclear_items": [
+      "Table 2 PEEPtot for Positive PLe is reported as 7 [10–14], which has an IQR lower bound (10) greater than the median (7) and is inconsistent with the abstract value of 8 [5–11]. Recorded as reported.",
+      "Table 2 PEEPtot for Express is reported as 18 [16–19], but the abstract reports 17 [14–17]. The decremental PEEP steps are 20, 17, 14, 11, 8, 5, so 18 is not a possible PEEP step. This inconsistency is unresolved.",
+      "Respiratory rate in Table 1 is reported as 30 [24–29] which is impossible (IQR lower bound greater than median). Recorded as reported.",
+      "Age, SAPS II, etc. are from Table 1; we assume all 19 patients contributed to all baseline values except where noted.",
+      "n_analysed is set to 19 for all arms, but esophageal pressure data were missing for one patient, so outcomes involving esophageal pressure (e.g., PLe, PLi) likely have n=18. This is not specified in the paper.",
+      "Arms: we added a 'cohort' arm to allow recording of the cohort-level 28-day mortality outcome, which is not specific to any crossover condition.",
+      "Blinding is not reported; assumed not blinded.",
+      "The study does not report a standard-care comparator arm; comparator_types are set to 'other' for the Express, CoV, and Crossing Point strategies."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Correlations between optimal PEEP and R/Iest: Crossing Point r2=0.073, p=0.263; CoV r2<0.001, p=0.941; Express r2<0.001, p=0.920; Positive PLe r2=0.037, p=0.461. Median ΔPaO2/FiO2 was 18.3 [−3.8–37.1] % and median ΔCRS was −5.6 [−31.9–14.9] % after PEEP increase from 5 to 15 cmH2O. No adverse event reported during the decremental PEEP trial."
+  }
+}

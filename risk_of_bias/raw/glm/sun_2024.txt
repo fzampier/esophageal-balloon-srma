@@ -1,0 +1,298 @@
+```json
+{
+  "record_meta": {},
+  "study_id": "sun_2024",
+  "tool": "rob2_parallel",
+  "results": [
+    {
+      "result_id": "mortality",
+      "outcome": "60-day mortality (longest follow-up)",
+      "numerical_result": "20/54 (study group) vs 28/51 (control group); consistent with Fig. 1 at-risk counts (34 and 23 alive at day 60)",
+      "result_location": "p. 1410, Section 3.5 and Fig. 1 (p. 1411)",
+      "answers": {
+        "1.1": {
+          "response": "Y",
+          "support": "Random assignment of patients into either the control group or the study group was performed using a random number table.",
+          "location": "p. 1407, Section 2.1"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of allocation concealment (central randomization, sealed opaque envelopes, or similar) and found none in the report.",
+          "location": "p. 1407, Section 2.1"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "They presented a homogeneous profile (all P > 0.05).",
+          "location": "p. 1409, Section 3.2 / Table 1"
+        },
+        "2.1": {
+          "response": "PN",
+          "support": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters.",
+          "location": "p. 1407, Section 2.3"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "The study group underwent PEEP titration based on transpulmonary driving pressure. Esophageal pressure was measured... Adjustments were made 2-4 times per day.",
+          "location": "p. 1407-1408, Section 2.3"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Condition not met: 2.3 answered PN.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Condition not met: 2.3 answered PN.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.6": {
+          "response": "Y",
+          "support": "All patients were followed up after discharge, with a follow-up period of 60 days from enrollment, and their survival status was recorded.",
+          "location": "p. 1410, Section 3.5"
+        },
+        "2.7": {
+          "response": "NA",
+          "support": "Condition not met: 2.6 answered Y.",
+          "location": "p. 1410, Section 2.5"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "All patients were followed up for 60 days after discharge to record their survival status.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "A 60-day follow-up was performed to record the survival status of the patients.",
+          "location": "p. 1405, Abstract / p. 1408 Section 2.4.4"
+        },
+        "4.2": {
+          "response": "N",
+          "support": "All patients were followed up for 60 days after discharge to record their survival status.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "The study design adhered to the ethical principles outlined in the Helsinki Declaration... and received approval from the ethics committee of our hospital. I found no statement that outcome assessors were blinded.",
+          "location": "p. 1407, Section 2.1"
+        },
+        "4.4": {
+          "response": "N",
+          "support": "Prognostic measures included 28-day mortality... All-cause death is an objective outcome unlikely to be influenced by knowledge of intervention received.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "4.5": {
+          "response": "NA",
+          "support": "Condition not met: 4.4 answered N.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan or trial registration to verify that analysis intentions were finalized before unblinded data were available, and found none in the report; no registry record is referenced.",
+          "location": "Whole report, e.g. p. 1408 Section 2.5"
+        },
+        "5.2": {
+          "response": "PN",
+          "support": "Prognostic measures included 28-day mortality... All patients were followed up for 60 days after discharge to record their survival status. Both time points are reported, so selection among measurements is unlikely.",
+          "location": "p. 1408 Section 2.4.4; p. 1410 Table 5 and Section 3.5"
+        },
+        "5.3": {
+          "response": "PN",
+          "support": "The secondary outcomes, such as 28-day mortality... were compared using chi-square tests or Fisher's exact tests, as appropriate.",
+          "location": "p. 1408, Section 2.5"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "Sequence generation was adequate (random number table) and baseline balanced, but allocation concealment is not reported (1.2 NI); the algorithm yields some concerns."
+        },
+        "D2": {
+          "judgement": "Low",
+          "rationale": "Carers were necessarily aware of the unblinded ventilation strategy, but deviations were consistent with the protocol, an ITT-type analysis with full follow-up was used (2.6 Y), so the effect of assignment is at low risk of bias. This matches the algorithm."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "Survival status was recorded for all patients at 60 days; the 20/28 deaths correspond to the at-risk numbers in Fig. 1, indicating essentially complete outcome data (3.1 Y)."
+        },
+        "D4": {
+          "judgement": "Low",
+          "rationale": "Mortality is an objective outcome; although assessors were presumably unblinded (4.3 Y), knowledge of allocation is unlikely to influence death ascertainment (4.4 N)."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No protocol or registry record is available to confirm pre-specified analyses (5.1 NI); however, both 28-day and 60-day mortality are reported, so selection of the result on the basis of findings is unlikely but cannot be excluded."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "Some concerns in D1 (unclear allocation concealment) and D5 (no pre-specified analysis plan available); no domain at high risk of bias."
+      }
+    },
+    {
+      "result_id": "duration_mv",
+      "outcome": "Duration of mechanical ventilation (days)",
+      "numerical_result": "mean 11.23 (SD 3.17) in study group (n=54) vs 15.36 (SD 3.39) in control group (n=51); t=6.451, P<0.001 (Table 5)",
+      "result_location": "p. 1410, Table 5 and Section 3.5",
+      "answers": {
+        "1.1": {
+          "response": "Y",
+          "support": "Random assignment of patients into either the control group or the study group was performed using a random number table.",
+          "location": "p. 1407, Section 2.1"
+        },
+        "1.2": {
+          "response": "NI",
+          "support": "I looked for any description of allocation concealment (central randomization, sealed opaque envelopes, or similar) and found none in the report.",
+          "location": "p. 1407, Section 2.1"
+        },
+        "1.3": {
+          "response": "N",
+          "support": "They presented a homogeneous profile (all P > 0.05).",
+          "location": "p. 1409, Section 3.2 / Table 1"
+        },
+        "2.1": {
+          "response": "PN",
+          "support": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters.",
+          "location": "p. 1407, Section 2.3"
+        },
+        "2.2": {
+          "response": "Y",
+          "support": "The study group underwent PEEP titration based on transpulmonary driving pressure... Adjustments were made 2-4 times per day.",
+          "location": "p. 1407-1408, Section 2.3"
+        },
+        "2.3": {
+          "response": "PN",
+          "support": "Tidal volume and PEEP were adjusted... aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.4": {
+          "response": "NA",
+          "support": "Condition not met: 2.3 answered PN.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.5": {
+          "response": "NA",
+          "support": "Condition not met: 2.3 answered PN.",
+          "location": "p. 1408, Section 2.3"
+        },
+        "2.6": {
+          "response": "Y",
+          "support": "The duration of mechanical ventilation was (11.23 ± 3.17) days... compared between the two patient groups (all randomized patients, n=51 and 54, analysed).",
+          "location": "p. 1410, Section 3.5 / Table 5"
+        },
+        "2.7": {
+          "response": "NA",
+          "support": "Condition not met: 2.6 answered Y.",
+          "location": "p. 1410, Section 2.5"
+        },
+        "3.1": {
+          "response": "Y",
+          "support": "The duration of mechanical ventilation was (15.36 ± 3.39) days... (11.23 ± 3.17) days... n=51 and n=54, matching all randomized patients.",
+          "location": "p. 1410, Table 5"
+        },
+        "3.2": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1410, Table 5"
+        },
+        "3.3": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1410, Table 5"
+        },
+        "3.4": {
+          "response": "NA",
+          "support": "Condition not met: 3.1 answered Y.",
+          "location": "p. 1410, Table 5"
+        },
+        "4.1": {
+          "response": "N",
+          "support": "The duration of mechanical ventilation was (15.36 ± 3.39) days... a standard, appropriate measurement of time on the ventilator.",
+          "location": "p. 1410, Section 3.5"
+        },
+        "4.2": {
+          "response": "PN",
+          "support": "Both groups received invasive mechanical ventilation... measured 48 h after initiation of mechanical ventilation; the report does not state that duration was ascertained by blinded or identical procedures, so I answer probably no with residual uncertainty.",
+          "location": "p. 1407-1408, Sections 2.3-2.4"
+        },
+        "4.3": {
+          "response": "Y",
+          "support": "I found no statement that outcome assessors or treating clinicians were blinded to group assignment, and the interventions are inherently unblinded ventilator strategies.",
+          "location": "p. 1407-1408, Sections 2.1 and 2.3"
+        },
+        "4.4": {
+          "response": "Y",
+          "support": "The study group showed a significantly shorter duration of mechanical ventilation... — the timing of extubation is an intervention-provider decision outcome that knowledge of the assigned strategy could influence.",
+          "location": "p. 1410, Section 3.5"
+        },
+        "4.5": {
+          "response": "PN",
+          "support": "The report gives no evidence that extubation decisions were systematically biased, but clinicians favouring the physiological strategy could wean earlier; influence is plausible but not clearly demonstrated.",
+          "location": "p. 1410, Sections 3.5 and 4"
+        },
+        "5.1": {
+          "response": "NI",
+          "support": "I looked for a pre-specified analysis plan or trial registration to verify analysis intentions and found none referenced in the report.",
+          "location": "Whole report, e.g. p. 1408 Section 2.5"
+        },
+        "5.2": {
+          "response": "PN",
+          "support": "Prognostic measures included 28-day mortality, duration of mechanical ventilation, length of hospital stay, and incidence of ventilator-associated pneumonia (VAP). — duration of ventilation has essentially one standard definition and is reported as specified.",
+          "location": "p. 1408, Section 2.4.4"
+        },
+        "5.3": {
+          "response": "NI",
+          "support": "The report does not state whether duration of ventilation was compared by t-test only or whether other analyses (e.g. median/IQR, time-to-event) were performed and selectively not reported; analysis intentions are unavailable.",
+          "location": "p. 1408, Section 2.5; p. 1410 Table 5"
+        }
+      },
+      "domains": {
+        "D1": {
+          "judgement": "Some concerns",
+          "rationale": "Adequate sequence generation but no information on allocation concealment (1.2 NI); algorithm yields some concerns."
+        },
+        "D2": {
+          "judgement": "Low",
+          "rationale": "Unblinded carers could not change the assigned ventilation strategy other than per protocol; all randomized patients were analysed (2.6 Y), so low risk of bias for the effect of assignment."
+        },
+        "D3": {
+          "judgement": "Low",
+          "rationale": "Duration data are presented for all 51 and 54 randomized patients, with no missing outcome data apparent (3.1 Y)."
+        },
+        "D4": {
+          "judgement": "Some concerns",
+          "rationale": "Extubation timing is a clinician-judgement outcome measured by unblinded treating clinicians (4.3 Y, 4.4 Y, 4.5 PN); knowledge of the assigned strategy could plausibly have hastened weaning in the study group, giving some concerns."
+        },
+        "D5": {
+          "judgement": "Some concerns",
+          "rationale": "No pre-specified analysis plan is available (5.1 NI, 5.3 NI), so selection among possible analyses of this outcome cannot be excluded."
+        }
+      },
+      "overall": {
+        "judgement": "Some concerns",
+        "rationale": "Some concerns in D1 (unclear concealment), D4 (unblinded judgement-based extubation outcome) and D5 (unclear pre-specification); these jointly lower confidence but no domain is at high risk of bias."
+      }
+    }
+  ],
+  "nih": null
+}
+```

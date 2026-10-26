@@ -1,0 +1,1375 @@
+{
+  "record_meta": {
+    "study_id": "weller_2026",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-09-29",
+    "source_file": "studies/fulltext/s40635-026-00885-6.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Weller",
+    "year": 2026,
+    "title": "Setting PEEP in patients with COVID-19-related ARDS: a physiological comparison between methods",
+    "journal": "Intensive Care Medicine Experimental",
+    "doi": "10.1186/s40635-026-00885-6",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "secondary_analysis"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients that met the following criteria were included: aged >= 18 years; polymerase chain reaction positive for COVID-19; ARDS according to the Berlin criteria [24]; intubated and on controlled mechanical ventilation, simultaneous Pes and EIT recordings available during PEEP titration and with adequate signal quality (e.g., calibrated balloon as per Baydur occlusion test and pulsating mattress turned off).",
+          "location": "p. 2, Methods, Study population and setting"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "intubated and on controlled mechanical ventilation, simultaneous Pes and EIT recordings available during PEEP titration and with adequate signal quality",
+          "location": "p. 2, Methods, Study population and setting"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Data were retrospectively analyzed from a cohort study conducted between March and October 2020 in the intensive care unit of the Erasmus MC, Rotterdam, and between March and December 2021 in the intensive care unit of the Maasstad Hospital, Rotterdam.",
+          "location": "p. 2, Methods, Study population and setting"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Positive PL,EE: we selected the lowest PEEP level yielding a PL,EE at or just above 0 cmH2O, or the lowest PEEP level if PL,EE did not fall below 0 cmH2O during the PEEP titration.",
+          "location": "p. 3, Endpoints"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We compared the recommended PEEP, as well as resulting PL,EE and amounts of overdistension and collapse at the suggested PEEP.",
+          "location": "p. 1, Abstract, Methods"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We reviewed all clinically performed EIT-based PEEP trials during the study period (65 in total) and included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality.",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals. Patients underwent a decremental PEEP trial, while EIT data and esophageal pressure data were recorded.",
+          "location": "p. 1, Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Weller et al. Intensive Care Medicine Experimental (2026) 14:37",
+          "location": "p. 1, article header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals. Patients underwent a decremental PEEP trial, while EIT data and esophageal pressure data were recorded.",
+      "provenance": {
+        "quote": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals. Patients underwent a decremental PEEP trial, while EIT data and esophageal pressure data were recorded.",
+        "location": "p. 1, Abstract, Methods"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "multi",
+    "n_centers": {
+      "value": 2,
+      "provenance": {
+        "quote": "Data were retrospectively analyzed from a cohort study conducted between March and October 2020 in the intensive care unit of the Erasmus MC, Rotterdam, and between March and December 2021 in the intensive care unit of the Maasstad Hospital, Rotterdam.",
+        "location": "p. 2, Methods, Study population and setting"
+      }
+    },
+    "countries": [
+      "Netherlands"
+    ],
+    "location_provenance": {
+      "quote": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals.",
+      "location": "p. 1, Abstract, Methods; corroborated by author details 'Department of Adult Intensive Care, Erasmus Medical Centre, Dr. Molewaterplein 40, 3015 GD Rotterdam, The Netherlands' and 'Department of Intensive Care, Maasstad Hospital, Rotterdam, The Netherlands', p. 8"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Intensive care units of the Erasmus MC, Rotterdam and the Maasstad Hospital, Rotterdam; patients with COVID-19-related ARDS on controlled mechanical ventilation undergoing a decremental PEEP trial",
+      "provenance": {
+        "quote": "Data were retrospectively analyzed from a cohort study conducted between March and October 2020 in the intensive care unit of the Erasmus MC, Rotterdam, and between March and December 2021 in the intensive care unit of the Maasstad Hospital, Rotterdam.",
+        "location": "p. 2, Methods, Study population and setting"
+      }
+    },
+    "enrolment_start": "2020-03",
+    "enrolment_end": "2021-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Not applicable.",
+      "provenance": {
+        "quote": "Funding\nNot applicable.",
+        "location": "p. 8, Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 29,
+      "provenance": {
+        "quote": "We reviewed all clinically performed EIT-based PEEP trials during the study period (65 in total) and included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality.",
+        "location": "p. 4, Results, Patient characteristics"
+      }
+    },
+    "n_analysed": {
+      "value": 29,
+      "provenance": {
+        "quote": "We reviewed all clinically performed EIT-based PEEP trials during the study period (65 in total) and included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality.",
+        "location": "p. 4, Results, Patient characteristics"
+      }
+    },
+    "population_description": {
+      "value": "29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals who underwent a decremental PEEP trial with simultaneous EIT and esophageal pressure recordings",
+      "provenance": {
+        "quote": "We reviewed all clinically performed EIT-based PEEP trials during the study period (65 in total) and included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality.",
+        "location": "p. 4, Results, Patient characteristics"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "aged >= 18 years; polymerase chain reaction positive for COVID-19; ARDS according to the Berlin criteria; intubated and on controlled mechanical ventilation, simultaneous Pes and EIT recordings available during PEEP titration and with adequate signal quality (e.g., calibrated balloon as per Baydur occlusion test and pulsating mattress turned off)",
+      "provenance": {
+        "quote": "Patients that met the following criteria were included: aged >= 18 years; polymerase chain reaction positive for COVID-19; ARDS according to the Berlin criteria [24]; intubated and on controlled mechanical ventilation, simultaneous Pes and EIT recordings available during PEEP titration and with adequate signal quality (e.g., calibrated balloon as per Baydur occlusion test and pulsating mattress turned off).",
+        "location": "p. 2, Methods, Study population and setting"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "No formal exclusion list is given; patients were excluded after review because of insufficient data quality (e.g., artefacts and/or very low pressure amplitude).",
+      "provenance": {
+        "quote": "Still, we had to exclude some patients due to insufficient data quality (e.g., artefacts and/or very low pressure amplitude).",
+        "location": "p. 7, Discussion, limitations paragraph"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 57,
+      "dispersion_type": "sd",
+      "dispersion": 14,
+      "n": 29,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age (y) 57 (+/- 14)",
+        "location": "p. 4, Table 1, row: Age (y) (column: Total (n = 29))"
+      }
+    },
+    "sex_female": null,
+    "sex_male": {
+      "n": 22,
+      "total": 29,
+      "percent_as_reported": 76,
+      "provenance": {
+        "quote": "Male gender 22 (76%)",
+        "location": "p. 4, Table 1, row: Male gender (column: Total (n = 29))"
+      }
+    },
+    "bmi": {
+      "value_type": "mean",
+      "value": 33,
+      "dispersion_type": "sd",
+      "dispersion": 7,
+      "n": 29,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "BMI kg/m2 33 (+/- 7)",
+        "location": "p. 4, Table 1, row: BMI kg/m2 (column: Total (n = 29))"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin criteria",
+      "provenance": {
+        "quote": "ARDS according to the Berlin criteria [24]",
+        "location": "p. 2, Methods, Study population and setting"
+      }
+    },
+    "n_ards": {
+      "n": 29,
+      "total": 29,
+      "derived": true,
+      "derivation": "All included patients had ARDS by the inclusion criterion ('ARDS according to the Berlin criteria'), and the cohort is described as '29 patients with COVID-19-related ARDS'; the count 29 is derived from that condition rather than printed as an n_ards value.",
+      "provenance": {
+        "quote": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals.",
+        "location": "p. 1, Abstract, Methods"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "all",
+    "cause_of_respiratory_failure": {
+      "value": "COVID-19-related ARDS",
+      "provenance": {
+        "quote": "Post-hoc analysis of 29 patients with COVID-19-related ARDS from cohorts of two Dutch hospitals.",
+        "location": "p. 1, Abstract, Methods"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 151,
+      "dispersion_type": "iqr",
+      "dispersion_low": 112,
+      "dispersion_high": 176,
+      "n": 29,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "P/F ratio prior to EIT (mmHg) 151 [112-176]",
+        "location": "p. 4, Table 1, row: P/F ratio prior to EIT (mmHg) (column: Total (n = 29))"
+      }
+    },
+    "apache_ii": null,
+    "sofa": {
+      "value_type": "median",
+      "value": 7,
+      "dispersion_type": "iqr",
+      "dispersion_low": 6,
+      "dispersion_high": 10,
+      "n": 29,
+      "unit": "points",
+      "provenance": {
+        "quote": "SOFA Total 7 [6-10]",
+        "location": "p. 4, Table 1, row: SOFA Total (column: Total (n = 29))"
+      }
+    },
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "APACHE IV score at ICU admission",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 55,
+          "dispersion_type": "iqr",
+          "dispersion_low": 49,
+          "dispersion_high": 73,
+          "n": 29,
+          "unit": "points",
+          "provenance": {
+            "quote": "APACHE IV score at ICU admission 55 [49-73]",
+            "location": "p. 4, Table 1, row: APACHE IV score at ICU admission (column: Total (n = 29))"
+          }
+        }
+      },
+      {
+        "name_verbatim": "SOFA Respiration",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 3,
+          "n": 29,
+          "unit": "points",
+          "provenance": {
+            "quote": "SOFA Respiration 3 [3-3]",
+            "location": "p. 4, Table 1, row: SOFA Respiration (column: Total (n = 29))"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Time intubation to EIT (days)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 3,
+          "n": 29,
+          "unit": "days",
+          "provenance": {
+            "quote": "Time intubation to EIT (days) 1 [0-3]",
+            "location": "p. 4, Table 1, row: Time intubation to EIT (days) (column: Total (n = 29))"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "balloon catheter (CooperSurgical, Trumbull, USA)",
+      "provenance": {
+        "quote": "Monitoring of Pes was performed with a balloon catheter (CooperSurgical, Trumbull, USA) placed in the mid-thoracic region.",
+        "location": "p. 2, Methods, Continuous monitoring"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "baydur_occlusion_test",
+      "method_verbatim": {
+        "value": "...with adequate signal quality (e.g., calibrated balloon as per Baydur occlusion test and pulsating mattress turned off)",
+        "provenance": {
+          "quote": "simultaneous Pes and EIT recordings available during PEEP titration and with adequate signal quality (e.g., calibrated balloon as per Baydur occlusion test and pulsating mattress turned off)",
+          "location": "p. 2, Methods, Study population and setting"
+        }
+      },
+      "position_verification": {
+        "value": "Balloon placed in the mid-thoracic region; Baydur manoeuvres performed to assess balloon placement and accuracy.",
+        "provenance": {
+          "quote": "We performed Baydur maneuvers to assess balloon placement and accuracy.",
+          "location": "p. 7, Discussion, limitations paragraph"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Expiratory transpulmonary pressure (PL,EE) was computed as Paw,EE-Pes,EE.",
+        "provenance": {
+          "quote": "Expiratory transpulmonary pressure (PL,EE) was computed as Paw,EE-Pes,EE.",
+          "location": "p. 3, Analysis, first paragraph"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "Positive PL,EE: we selected the lowest PEEP level yielding a PL,EE at or just above 0 cmH2O, or the lowest PEEP level if PL,EE did not fall below 0 cmH2O during the PEEP titration.",
+        "provenance": {
+          "quote": "Positive PL,EE: we selected the lowest PEEP level yielding a PL,EE at or just above 0 cmH2O, or the lowest PEEP level if PL,EE did not fall below 0 cmH2O during the PEEP titration.",
+          "location": "p. 3, Endpoints, bullet 'Positive PL,EE'"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Positive PL,EE: we selected the lowest PEEP level yielding a PL,EE at or just above 0 cmH2O, or the lowest PEEP level if PL,EE did not fall below 0 cmH2O during the PEEP titration.",
+          "location": "p. 3, Endpoints, bullet 'Positive PL,EE'"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "One decremental PEEP trial per included patient (first trial during controlled ventilation in supine position); after a stabilisation period of at least 60 s, PEEP was reduced by 2 cmH2O every 30 s",
+        "provenance": {
+          "quote": "After a stabilization period of at least 60 s, PEEP was reduced by 2 cmH2O every 30 s.",
+          "location": "p. 2, Methods, PEEP titration"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": null,
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Driving pressure held constant during the PEEP trial; PEEP stepwise increased to 10 cmH2O above baseline clinical PEEP (minimum 24 cmH2O) before the decremental trial; inspiratory and expiratory holds at baseline clinical PEEP and at the highest and lowest PEEP level",
+        "provenance": {
+          "quote": "Driving pressure was held constant during the PEEP trial.",
+          "location": "p. 2, Methods, PEEP titration"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": {
+        "value_type": "median",
+        "value": 1,
+        "dispersion_type": "iqr",
+        "dispersion_low": 0,
+        "dispersion_high": 3,
+        "unit": "days",
+        "provenance": {
+          "quote": "PEEP trials were initiated at a median of 1 day [0-3] after intubation.",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "timing_verbatim": {
+        "value": "PEEP trials were initiated at a median of 1 day [0-3] after intubation.",
+        "provenance": {
+          "quote": "PEEP trials were initiated at a median of 1 day [0-3] after intubation.",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "best_compliance_peep",
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "We, therefore, aimed to compare different PEEP-setting strategies-guided by EIT, based on lung mechanics (highest CRS), and guided by PL,EE-in patients with COVID-19-related ARDS.",
+      "provenance": {
+        "quote": "We, therefore, aimed to compare different PEEP-setting strategies-guided by EIT, based on lung mechanics (highest CRS), and guided by PL,EE-in patients with COVID-19-related ARDS.",
+        "location": "p. 2, Introduction, last paragraph"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": {
+      "value": "After a stabilization period of at least 60 s, PEEP was reduced by 2 cmH2O every 30 s; the decremental PEEP trial ended usually at a PEEP of 6 cmH2O, or earlier when EIT showed significant collapse combined with a declining SpO2.",
+      "provenance": {
+        "quote": "After a stabilization period of at least 60 s, PEEP was reduced by 2 cmH2O every 30 s.",
+        "location": "p. 2, Methods, PEEP titration"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "eit_cp",
+      "label_verbatim": "EITCP: targeting crossing point",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "eit_acp",
+      "label_verbatim": "EITACP: targeting after crossing point",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "eit_lc",
+      "label_verbatim": "EITLC: targeting low compliance (<= 5%)",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "positive_pl_ee",
+      "label_verbatim": "Positive PL,EE",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "highest_crs",
+      "label_verbatim": "Highest CRS",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "included 29 patients in whom simultaneous Pes and EIT recordings were performed and with adequate signal quality",
+          "location": "p. 4, Results, Patient characteristics"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "cov_50",
+      "label_verbatim": "CoV: we selected the PEEP step, where the center of ventilation is closest to 50%",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": null,
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "vd_ratio_1",
+      "label_verbatim": "V/D ratio: we selected the PEEP step, where the ventral-to-dorsal ratio is closest to 1",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": null,
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Recommended PEEP according to the different methods",
+      "definition_verbatim": "Individualized PEEP as per the different methods was defined as follows, and visually explained in Fig. 1",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "at the PEEP level suggested by each method during the decremental PEEP trial"
+      },
+      "measurement_context": {
+        "value": "PEEP suggested by each method from the same decremental PEEP trial, performed within routine care: PEEP stepwise increased to 10 cmH2O above baseline clinical PEEP (minimum 24 cmH2O), stabilisation >=60 s, then PEEP reduced by 2 cmH2O every 30 s, driving pressure held constant; patients on controlled mechanical ventilation in supine position",
+        "provenance": {
+          "quote": "The decremental PEEP trial was performed within routine care as follows: first, PEEP was stepwise increased to 10 cmH2O above baseline clinical PEEP, with a minimum of 24 cmH2O. After a stabilization period of at least 60 s, PEEP was reduced by 2 cmH2O every 30 s.",
+          "location": "p. 2, Methods, PEEP titration"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eit_cp",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 16,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP was highest with EITCP (14 [12-16] cmH2O) and lowest with Positive PL,EE (12 [8-14] cmH2O).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_acp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "eit_lc",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "positive_pl_ee",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 14,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP was highest with EITCP (14 [12-16] cmH2O) and lowest with Positive PL,EE (12 [8-14] cmH2O).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "highest_crs",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "cov_50",
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13.5,
+          "dispersion_high": 24.5,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Both resulted in high PEEP levels of 19 [13.5-24.5] and 22 [15.5-24.5] cmH2O, respectively.",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        },
+        {
+          "arm_label": "vd_ratio_1",
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15.5,
+          "dispersion_high": 24.5,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Both resulted in high PEEP levels of 19 [13.5-24.5] and 22 [15.5-24.5] cmH2O, respectively.",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across the five PEEP-setting methods (EITCP, EITACP, EITLC, Positive PL,EE, Highest CRS)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value": 0.012,
+          "test_used": "linear mixed-effects model with PEEP as dependent variable and method as fixed effect",
+          "provenance": {
+            "quote": "There was a significant effect of the method on the resulting PEEP (p = 0.012).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_cp minus eit_acp",
+          "arm_label_a": "eit_cp",
+          "arm_label_b": "eit_acp",
+          "p_value": 0.045,
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pairwise comparison showed that PEEP was significantly higher in EITCP compared to EITACP and Positive PL,EE (p = 0.045 and p = 0.031, respectively).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_cp minus positive_pl_ee",
+          "arm_label_a": "eit_cp",
+          "arm_label_b": "positive_pl_ee",
+          "p_value": 0.031,
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pairwise comparison showed that PEEP was significantly higher in EITCP compared to EITACP and Positive PL,EE (p = 0.045 and p = 0.031, respectively).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "cov_50 or vd_ratio_1 versus all other methods (seven-method model)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.01",
+          "test_used": "linear mixed-effects model including CoV and V/D-ratio methods",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "When included in the statistical model, PEEP (p < 0.01), PL,EE (p < 0.001) and overdistension (p < 0.001) differed only between CoV or V/D-ratio and all other methods.",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory transpulmonary pressure (PL,EE) at the suggested PEEP level of the different methods",
+      "definition_verbatim": "Expiratory transpulmonary pressure (PL,EE) was computed as Paw,EE-Pes,EE.",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "at the PEEP level suggested by each method during the decremental PEEP trial"
+      },
+      "measurement_context": {
+        "value": "PL,EE obtained at each PEEP level of the decremental PEEP trial, mean value calculated over the 30-s duration of each step (or from inspiratory and expiratory holds with linear interpolation for the standalone measurement setup); patients on controlled mechanical ventilation in supine position",
+        "provenance": {
+          "quote": "PL,EE was obtained at each PEEP level, and the mean value was calculated over the 30-s duration of each decremental PEEP trial step.",
+          "location": "p. 3, Analysis"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eit_cp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "eit_acp",
+          "value_type": "median",
+          "value": 1.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": -1.8,
+          "dispersion_high": 4.6,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "EITACP resulted in a slightly higher median PL,EE with larger variability (1.6 [-1.8-4.6] cmH2O).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_lc",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "positive_pl_ee",
+          "value_type": "median",
+          "value": 1.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.6,
+          "dispersion_high": 2.1,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median PL,EE was lowest when targeting Positive PL,EE, and variability was low, resulting in all-positive values (1.4 [0.6-2.1] cmH2O), inherent to this method.",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "highest_crs",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "cmH2O"
+        },
+        {
+          "arm_label": "cov_50",
+          "value_type": "median",
+          "value": 7.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.9,
+          "dispersion_high": 10.9,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "At these suggested PEEP levels, we found a high PL,EE (7.9 [1.9-10.9] and 8.8 [5.6-10.8] cmH2O)",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        },
+        {
+          "arm_label": "vd_ratio_1",
+          "value_type": "median",
+          "value": 8.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.6,
+          "dispersion_high": 10.8,
+          "n": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "At these suggested PEEP levels, we found a high PL,EE (7.9 [1.9-10.9] and 8.8 [5.6-10.8] cmH2O)",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across the five PEEP-setting methods (EITCP, EITACP, EITLC, Positive PL,EE, Highest CRS)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value": 0.011,
+          "test_used": "linear mixed-effects model with PL,EE as dependent variable and method as fixed effect",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "There was a significant effect of the method on the PL,EE (p = 0.011)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_cp minus positive_pl_ee",
+          "arm_label_a": "eit_cp",
+          "arm_label_b": "positive_pl_ee",
+          "p_value": 0.049,
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pairwise post-hoc comparison (Fig. 3) showing PL,EE with EITCP to be higher compared to Positive PL,EE (p = 0.049) and EITACP (p = 0.024)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_cp minus eit_acp",
+          "arm_label_a": "eit_cp",
+          "arm_label_b": "eit_acp",
+          "p_value": 0.024,
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "pairwise post-hoc comparison (Fig. 3) showing PL,EE with EITCP to be higher compared to Positive PL,EE (p = 0.049) and EITACP (p = 0.024)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_lc minus eit_acp",
+          "arm_label_a": "eit_lc",
+          "arm_label_b": "eit_acp",
+          "p_value": 0.049,
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PL,EE with EITLC to be higher compared to EITACP (p = 0.049).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "cov_50 or vd_ratio_1 versus all other methods (seven-method model)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "linear mixed-effects model including CoV and V/D-ratio methods",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "When included in the statistical model, PEEP (p < 0.01), PL,EE (p < 0.001) and overdistension (p < 0.001) differed only between CoV or V/D-ratio and all other methods.",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "Amount of overdistension",
+      "definition_verbatim": "Compliance loss due to overdistension were determined as described before by Costa et al. [26].",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "at the suggested PEEP level of each method"
+      },
+      "measurement_context": {
+        "value": "EIT-derived percentage of compliance loss due to overdistension at the PEEP level suggested by each method; EIT belt between the 4-5th intercostal space; measurements taken during the decremental PEEP trial",
+        "provenance": {
+          "quote": "At the PEEP levels suggested by the different approaches, we computed the PL,EE and percentages of overdistension and collapse",
+          "location": "p. 3, Other endpoints"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eit_cp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "eit_acp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "eit_lc",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "positive_pl_ee",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "highest_crs",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "cov_50",
+          "value_type": "median",
+          "value": 11.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.3,
+          "dispersion_high": 29.9,
+          "n": null,
+          "unit": "%",
+          "provenance": {
+            "quote": "high levels of overdistension (11.8 [1.3-29.9] and 11.8 [3.5-31.6]%)",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        },
+        {
+          "arm_label": "vd_ratio_1",
+          "value_type": "median",
+          "value": 11.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.5,
+          "dispersion_high": 31.6,
+          "n": null,
+          "unit": "%",
+          "provenance": {
+            "quote": "high levels of overdistension (11.8 [1.3-29.9] and 11.8 [3.5-31.6]%)",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across the five PEEP-setting methods (EITCP, EITACP, EITLC, Positive PL,EE, Highest CRS)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value": 0.054,
+          "test_used": "linear mixed-effects model with overdistension as dependent variable and method as fixed effect",
+          "unit": "%",
+          "provenance": {
+            "quote": "In contrast, the amount of overdistension did not differ between groups (p = 0.054).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "cov_50 or vd_ratio_1 versus all other methods (seven-method model)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "linear mixed-effects model including CoV and V/D-ratio methods",
+          "unit": "%",
+          "provenance": {
+            "quote": "When included in the statistical model, PEEP (p < 0.01), PL,EE (p < 0.001) and overdistension (p < 0.001) differed only between CoV or V/D-ratio and all other methods.",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "Amount of collapse",
+      "definition_verbatim": "Compliance loss due to collapse were determined as described before by Costa et al. [26].",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "at the suggested PEEP level of each method"
+      },
+      "measurement_context": {
+        "value": "EIT-derived percentage of compliance loss due to collapse at the PEEP level suggested by each method; EIT belt between the 4-5th intercostal space; measurements taken during the decremental PEEP trial",
+        "provenance": {
+          "quote": "At the PEEP levels suggested by the different approaches, we computed the PL,EE and percentages of overdistension and collapse",
+          "location": "p. 3, Other endpoints"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eit_cp",
+          "value_type": "median",
+          "value": 3.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.0,
+          "dispersion_high": 4.0,
+          "n": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "Collapse was lowest with EITCP and EITLC (3.0 [2.0-4.0]% and 3.4 [2.7-4.1]%, p < 0.025 compared to all other methods).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_acp",
+          "value_type": "median",
+          "value": 6.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.1,
+          "dispersion_high": 8.0,
+          "n": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "The median collapse was highest in EITACP (6.0 [4.1-8.0]%), but the estimated marginal means showed the collapse to be highest when targeting a positive PL,EE (5.4 [2.0-12.0]%, p = 0.020 vs. EITACP).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_lc",
+          "value_type": "median",
+          "value": 3.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.7,
+          "dispersion_high": 4.1,
+          "n": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "Collapse was lowest with EITCP and EITLC (3.0 [2.0-4.0]% and 3.4 [2.7-4.1]%, p < 0.025 compared to all other methods).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "positive_pl_ee",
+          "value_type": "median",
+          "value": 5.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.0,
+          "dispersion_high": 12.0,
+          "n": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "The median collapse was highest in EITACP (6.0 [4.1-8.0]%), but the estimated marginal means showed the collapse to be highest when targeting a positive PL,EE (5.4 [2.0-12.0]%, p = 0.020 vs. EITACP).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "highest_crs",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "n": null,
+          "unit": "%"
+        },
+        {
+          "arm_label": "cov_50",
+          "value_type": "median",
+          "value": 1.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 8.7,
+          "n": null,
+          "unit": "%",
+          "provenance": {
+            "quote": "and low levels of collapse (1.0 [0.0-8.7] and 0.0 [0.0-5.7]%).",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        },
+        {
+          "arm_label": "vd_ratio_1",
+          "value_type": "median",
+          "value": 0.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 5.7,
+          "n": null,
+          "unit": "%",
+          "provenance": {
+            "quote": "and low levels of collapse (1.0 [0.0-8.7] and 0.0 [0.0-5.7]%).",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across the five PEEP-setting methods (EITCP, EITACP, EITLC, Positive PL,EE, Highest CRS)",
+          "arm_label_a": null,
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "linear mixed-effects model with collapse as dependent variable and method as fixed effect",
+          "unit": "%",
+          "provenance": {
+            "quote": "There is a significant effect of the method on the amount of collapse (p < 0.001).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_cp versus all other methods",
+          "arm_label_a": "eit_cp",
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.025",
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "%",
+          "provenance": {
+            "quote": "Collapse was lowest with EITCP and EITLC (3.0 [2.0-4.0]% and 3.4 [2.7-4.1]%, p < 0.025 compared to all other methods).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "eit_lc versus all other methods",
+          "arm_label_a": "eit_lc",
+          "arm_label_b": null,
+          "p_value_verbatim": "<0.025",
+          "test_used": "post-hoc pairwise comparison, FDR-adjusted p values",
+          "unit": "%",
+          "provenance": {
+            "quote": "Collapse was lowest with EITCP and EITLC (3.0 [2.0-4.0]% and 3.4 [2.7-4.1]%, p < 0.025 compared to all other methods).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "positive_pl_ee minus eit_acp (estimated marginal means)",
+          "arm_label_a": "positive_pl_ee",
+          "arm_label_b": "eit_acp",
+          "p_value": 0.02,
+          "test_used": "generalized linear mixed-effects model with FDR-adjusted post-hoc comparison",
+          "unit": "%",
+          "provenance": {
+            "quote": "the estimated marginal means showed the collapse to be highest when targeting a positive PL,EE (5.4 [2.0-12.0]%, p = 0.020 vs. EITACP)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "cov_50 minus positive_pl_ee",
+          "arm_label_a": "cov_50",
+          "arm_label_b": "positive_pl_ee",
+          "p_value_verbatim": "<0.01",
+          "unit": "%",
+          "provenance": {
+            "quote": "Collapse was lower with the CoV method compared to targeting a Positive PL,EE (p < 0.01)",
+            "location": "p. 5, Results, secondary endpoints paragraph"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "vd_ratio_1 minus positive_pl_ee",
+          "arm_label_a": "vd_ratio_1",
+          "arm_label_b": "positive_pl_ee",
+          "p_value_verbatim": "<0.001",
+          "unit": "%",
+          "provenance": {
+            "quote": "and lower in the V/D-ratio method compared to targeting Positive PL,EE (p < 0.001) and Highest CRS (p < 0.01).",
+            "location": "p. 6, Results, continuation of secondary endpoints paragraph"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "vd_ratio_1 minus highest_crs",
+          "arm_label_a": "vd_ratio_1",
+          "arm_label_b": "highest_crs",
+          "p_value_verbatim": "<0.01",
+          "unit": "%",
+          "provenance": {
+            "quote": "and lower in the V/D-ratio method compared to targeting Positive PL,EE (p < 0.001) and Highest CRS (p < 0.01).",
+            "location": "p. 6, Results, continuation of secondary endpoints paragraph"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Number of patients with high values (> 10%) of either overdistension or collapse",
+      "definition_verbatim": "We calculated the number of patients with > 10% collapse or overdistension for each method.",
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "at the suggested PEEP level of each method"
+      },
+      "measurement_context": {
+        "value": "Count of patients in whom the EIT-derived collapse or overdistension at the PEEP level suggested by each method exceeded 10%",
+        "provenance": {
+          "quote": "We calculated the number of patients with > 10% collapse or overdistension for each method.",
+          "location": "p. 3, Other endpoints"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eit_cp",
+          "events": 2,
+          "total": 29,
+          "provenance": {
+            "quote": "Setting PEEP using Positive PL,EE resulted in more patients with high values (> 10%) of either overdistension or collapse (in 15/29 of patients) compared to all other methods (p = 0.004 vs. EITCP (n = 2/29), EITACP (n = 2/29), EITLC (n = 3/29), p = 0.035 vs. Highest CRS (n = 8/29))",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_acp",
+          "events": 2,
+          "total": 29,
+          "provenance": {
+            "quote": "Setting PEEP using Positive PL,EE resulted in more patients with high values (> 10%) of either overdistension or collapse (in 15/29 of patients) compared to all other methods (p = 0.004 vs. EITCP (n = 2/29), EITACP (n = 2/29), EITLC (n = 3/29), p = 0.035 vs. Highest CRS (n = 8/29))",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "eit_lc",
+          "events": 3,
+          "total": 29,
+          "provenance": {
+            "quote": "Setting PEEP using Positive PL,EE resulted in more patients with high values (> 10%) of either overdistension or collapse (in 15/29 of patients) compared to all other methods (p = 0.004 vs. EITCP (n = 2/29), EITACP (n = 2/29), EITLC (n = 3/29), p = 0.035 vs. Highest CRS (n = 8/29))",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "positive_pl_ee",
+          "events": 15,
+          "total": 29,
+          "provenance": {
+            "quote": "Setting PEEP using Positive PL,EE resulted in more patients with high values (> 10%) of either overdistension or collapse (in 15/29 of patients)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "highest_crs",
+          "events": 8,
+          "total": 29,
+          "provenance": {
+            "quote": "p = 0.035 vs. Highest CRS (n = 8/29)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "arm_label": "cov_50",
+          "events": null,
+          "total": null
+        },
+        {
+          "arm_label": "vd_ratio_1",
+          "events": null,
+          "total": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "positive_pl_ee versus eit_cp, eit_acp and eit_lc",
+          "arm_label_a": "positive_pl_ee",
+          "arm_label_b": null,
+          "p_value": 0.004,
+          "test_used": "generalized linear mixed-effects model for binomial data with FDR-adjusted post-hoc comparison",
+          "provenance": {
+            "quote": "(p = 0.004 vs. EITCP (n = 2/29), EITACP (n = 2/29), EITLC (n = 3/29)",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "positive_pl_ee versus highest_crs",
+          "arm_label_a": "positive_pl_ee",
+          "arm_label_b": "highest_crs",
+          "p_value": 0.035,
+          "test_used": "generalized linear mixed-effects model for binomial data with FDR-adjusted post-hoc comparison",
+          "provenance": {
+            "quote": "p = 0.035 vs. Highest CRS (n = 8/29))",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "highest_crs versus eit_cp and eit_acp",
+          "arm_label_a": "highest_crs",
+          "arm_label_b": null,
+          "p_value": 0.035,
+          "test_used": "generalized linear mixed-effects model for binomial data with FDR-adjusted post-hoc comparison",
+          "provenance": {
+            "quote": "while Highest CRS resulted in more high values of either overdistension or collapse compared to EITCP and EITACP (p = 0.035) (see Figure S4).",
+            "location": "p. 5, Results, Comparison of individualized PEEP methods"
+          }
+        }
+      ],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": {
+      "value": "Some patients were excluded because of insufficient data quality (e.g., artefacts and/or very low pressure amplitude); the number is not reported.",
+      "provenance": {
+        "quote": "Still, we had to exclude some patients due to insufficient data quality (e.g., artefacts and/or very low pressure amplitude).",
+        "location": "p. 7, Discussion, limitations paragraph"
+      }
+    },
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": {
+      "value": "Stabilisation time at the highest PEEP level ranged from 43 to 213 s with an average of 86 s (protocol required at least 60 s).",
+      "provenance": {
+        "quote": "The stabilization time at the highest PEEP level ranged from 43 to 213s with an average of 86s.",
+        "location": "p. 4, Results, Patient characteristics"
+      }
+    },
+    "protocol_deviations": {
+      "value": "The 60-s stabilisation period was not met in all patients (average stabilisation 86 s).",
+      "provenance": {
+        "quote": "This duration was not met in all patients, but the average stabilization period was higher (86 s).",
+        "location": "p. 7, Discussion, protocol paragraph"
+      }
+    },
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS: every included patient had COVID-19-related ARDS by the Berlin criteria, so the cohort is ARDS-only. Obesity: mean BMI 33 kg/m2, i.e. >= 30 kg/m2. Timing: PEEP trials (and therefore the Pes measurements used for the esophageal-guided PEEP level) were initiated a median of 1 day [0-3] after intubation, i.e. within 48 h; the reference event is intubation, not enrolment. Ptp target: the esophageal-guided strategy selects the lowest PEEP with end-expiratory PL,EE at or just above 0 cmH2O - an absolute (Paw - Pes) positive end-expiratory Ptp target; no elastance-derived, release-derived or driving-Ptp strategy is applied. No mortality, ventilator-free-day or length-of-stay outcome is reported, so no mortality ranking was required."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No trial registration number is reported for this analysis. Enrolment windows and centres: Erasmus MC, Rotterdam, March-October 2020 and Maasstad Hospital, Rotterdam, March-December 2021. The report states that data from part of the first cohort were presented earlier in refs [22] van der Zee 2020 (Am J Respir Crit Care Med) and [23] Somhorst 2022 (Crit Care); neither reference is listed in studies/COHORTS.md, and the cluster list there (epvent1, epvent2, mannheim_boesing, mgh_lung_rescue, angers) does not match this report's centres, registration or enrolment dates, so no overlapping record in this review was identified and no cohort_id was assigned. If the van der Zee 2020 or Somhorst 2022 reports are found in the full candidate pool, this record should be re-checked against them for partial patient overlap.",
+    "unclear_items": [
+      "eligibility.criteria.balloon_guided_peep_titration: an explicit rule linking Pes to PEEP exists ('Positive PL,EE: we selected the lowest PEEP level yielding a PL,EE at or just above 0 cmH2O'), but the report never states that the P_L,EE-recommended PEEP was actually used to change these patients' ventilator settings; the PEEP trial itself followed a fixed decremental protocol and the paper calls itself a physiological study without treatment effects. Coded 'yes' on the presence of a Pes-based PEEP selection rule.",
+      "arms: the seven PEEP-setting methods are alternative analyses of the same decremental PEEP trial rather than conditions applied one after another; sequence_position and comparator.crossover_order are therefore null and the within-patient structure is data-level, not time-level.",
+      "outcomes[].data for 'Amount of collapse', arm positive_pl_ee: the value 5.4 [2.0-12.0] % is attributed in the text to 'estimated marginal means' while the paper's stated convention is median [1st quartile-3rd quartile]; recorded as median with IQR.",
+      "outcomes[].data for 'Recommended PEEP': numeric values for EIT_ACP, EIT_LC and Highest CRS are not given in the text and appear only in Figure 2 (and Table S3, supplement not supplied).",
+      "domain for the EIT-derived 'overdistension' and 'collapse' outcomes: no domain matches exactly; coded as lung_volume (regional aeration), but respiratory_mechanics or other could be argued.",
+      "design.consecutive_enrolment: the report states that all clinically performed EIT-based PEEP trials during the study period were reviewed (65 in total) and 29 patients included, but does not state whether inclusion was consecutive.",
+      "arms cov_50 and vd_ratio_1, n_analysed: the number of patients contributing to the CoV and V/D-ratio endpoints is not reported (CoV was not available from online EIT results for some patients).",
+      "population.exclusion_criteria: the paper gives no formal exclusion list; the only exclusion statement is in the Discussion (patients excluded after review for insufficient data quality), which is recorded verbatim there.",
+      "design.randomised: coded false as the analysis is explicitly a post-hoc retrospective physiological comparison; no randomisation of methods is described."
+    ],
+    "data_only_in_figure": [
+      "Recommended PEEP for EITACP, EITLC and Highest CRS (Figure 2 box plots; no numeric values in text or tables)",
+      "Pairwise differences in recommended PEEP between methods (Figure S2 and Table S3; supplement not supplied)",
+      "Amount of overdistension per method (Figure 4; no numeric values in text or tables)",
+      "Absolute difference between the amounts of overdistension and collapse (Figure S3; supplement not supplied)",
+      "Number of patients with > 10% overdistension or collapse per method (Figure S4; only the counts quoted in the text were recorded)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "This is a post-hoc physiological comparison of PEEP-setting methods, not a clinical-outcome study: no mortality, ventilator-free days, length of stay or other patient-centred outcome is reported. The report is a post-hoc analysis of patients from two Dutch cohorts, part of which was published earlier (refs 22 and 23). Additional file 1 (Tables S2-S3, Figures S2-S4) was not provided with the review material, so several per-method endpoint values remain available only as figures. Some patients underwent multiple PEEP trials during their ICU admission; only the first PEEP trial during controlled ventilation in supine position was analysed, so arms here are analytic conditions of that single trial rather than a sequence of applied strategies."
+  }
+}

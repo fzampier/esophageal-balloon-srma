@@ -1,0 +1,366 @@
+{
+  "study_id": "chean_2025",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[peep5 peep 5 cmh2o reference condition 1]",
+      "decision": "glm",
+      "reason": "Keep: PEEP was set at 5 cmH2O for 45 min as the first protocol step, with gas exchange, haemodynamics and mechanics reported for it in Table 1; the codebook makes the pre state of a within-patient study a reference_condition with its sequence_position.",
+      "evidence": "p. 2, Study protocol - Settings; p. 5, Table 1 'at PEEP 5 cmH2O'"
+    },
+    {
+      "target": "arms[express peepexpress express strategy pplat 28 30]",
+      "decision": "glm",
+      "reason": "Keep: the Express step (Pplat 28-30 cmH2O, 45 min, second in sequence) is an applied condition with its own Table 1 block; DeepSeek has no representation of it, so dropping it would lose every PEEPExpress reading.",
+      "evidence": "p. 2, Study protocol - Settings; pp. 5-6, Table 1 'at PEEPExpress'"
+    },
+    {
+      "target": "arms[pl insp pl insp strategy peeppl insp alternative]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version of the PL,insp condition in favour of DeepSeek's: DeepSeek's label_verbatim 'PL, insp strategy' is the Table 2 header as printed (GLM's adds a parenthetical), and it codes the first of the two tested esophageal strategies as intervention with PL,exp as the second strategy under test, which the schema's role definitions allow; GLM leaves the study with no intervention arm.",
+      "evidence": "p. 7, Table 2 header; schema arms.role"
+    },
+    {
+      "target": "arms[pl exp pl exp strategy peeppl exp alternative ti]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version of the PL,exp condition: same role in both (alternative_titration_condition); DeepSeek's label_verbatim is as printed and it records the delivered PEEPtot 15.0 (11.0-18.0).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "arms[all all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep: ICU mortality (7/20) is a whole-cohort count and needs a whole-cohort arm; GLM files it under the PEEP 5 cmH2O condition.",
+      "evidence": "p. 4, Results 'Seven patients (35%) died in the ICU.'"
+    },
+    {
+      "target": "arms[pl insp pl insp strategy intervention]",
+      "decision": "deepseek",
+      "reason": "Keep DeepSeek's PL,insp condition (see GLM's pl_insp target): verbatim label, peep_applied 17.0 (13.7-20.0) matches Table 2 PEEPtot.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "arms[pl exp pl exp strategy alternative titration con]",
+      "decision": "deepseek",
+      "reason": "Keep DeepSeek's PL,exp condition: verbatim label, peep_applied 15.0 (11.0-18.0) matches Table 2 PEEPtot.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[mortality icu mortality dichotomous @icu discharge]",
+      "decision": "deepseek",
+      "reason": "7/20 died in the ICU is reported for all patients, not for the PEEP 5 cmH2O condition; DeepSeek files it under the whole-cohort arm, GLM under peep5.",
+      "evidence": "p. 4, Results"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "GLM holds all four conditions: PEEP 5 101 (78-124) and Express 152 (120-202) from Table 1, PL,insp 148 (126-232) and PL,exp 133 (109-187) from Table 2, all matching; DeepSeek has only the two tested strategies and puts PEEP 5 in a separate baseline entry (dropped there), losing Express. GLM's row label with unit is verbatim; p 0.08 kept verbatim.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation shunt fraction continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions: PEEP 5 29 (24-47) %, Express printed 0.27 (0.20-0.30) under a % row label (GLM records it as printed and flags the unit), PL,insp 25 (18-30), PL,exp 29 (21-37), p 0.07.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[dead space dead space fraction continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 65 (47-71), 68 (56-74), 68 (60-74), 66 (59-73), p 0.10.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[other ventilatory ratio continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 2.03 (1.91-2.60), 2.25 (1.93-2.78), 2.25 (1.96-2.76), 2.24 (1.87-2.87), p 0.20.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery index ml min m2 con @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 412 (366-531), 381 (335-472), 382 (338-471), 391 (341-446), p 0.50.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cmh2o con @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 10.0 (8.5-14.0), 11.0 (10-13.5), 11.0 (9.7-12.5), 10.5 (9.0-13.5), p 0.09.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el ers continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 0.73 (0.68-0.79), 0.76 (0.70-0.84), 0.75 (0.69-0.80), 0.78 (0.67-0.80), p 0.70.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung strain continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 0.75 (0.66-1.17), 0.75 (0.54-0.96), 0.73 (0.56-0.97), 0.73 (0.54-1.04), p 0.90.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure measured pl exp cmh2o co @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: -4.0 (-6.5-0.5), 5.0 (0.8-7.0), 5.0 (1.8-8.0), 2.5 (1.0-4.0), p 0.04.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure calculated pl insp cmh2o @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 12.8 (11.6-14.7), 21.8 (20.1-24.6), 20.8 (20.4-21.4), 18.3 (16.0-22.7), p 0.30.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @crossover condition]",
+      "decision": "glm",
+      "reason": "All four conditions match: 8.0 (6.0-9.0), 9.0 (7.0-10.3), 8.50 (7.00-10.00), 7.50 (6.75-11.00), p 0.50.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[lung volume end expiratory lung volume ml contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Identical numbers (2,105 vs 1,869 mL, p 0.20); GLM's name carries the row label with unit and the nitrogen-washout measurement context.",
+      "evidence": "p. 7 Table 2; p. 4 Methods"
+    },
+    {
+      "target": "outcomes[lung volume recruited volume from peep 5 cmh2o m @crossover condition]",
+      "decision": "glm",
+      "reason": "Identical numbers (677 vs 361 mL, p 0.50); GLM's name is the full row label with unit.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[other dorsal fraction of ventilation tvdependent @crossover condition]",
+      "decision": "glm",
+      "reason": "Identical numbers (0.47 vs 0.39, p 0.01); p value kept as printed. The domain difference is reserved for the co-authors and not decided here.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs non dependent ml cmh2o @crossover condition]",
+      "decision": "glm",
+      "reason": "Identical numbers (20 vs 22 mL/cmH2O, p 0.01); GLM's name is the row label with unit.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep levels determined by th @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's entry has no values in either data row, and its p 0.11 is the Table 2 PEEPtot p value; the text gives no whole-population median set PEEP or p (only 'not significantly different', Fig. 2A). The PEEPtot row is kept separately.",
+      "evidence": "p. 4 Results; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 mmhg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PaCO2 at all four conditions matches 44 (37-48), 46 (41-49), 45 (42-51), 45 (42-53), p 0.20; DeepSeek's two-condition crossover and baseline entries for PaCO2 are dropped.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac index l min m2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: cardiac index 3.10 (2.43-3.85), 2.65 (2.20-3.18), 2.50 (2.25-3.28), 2.60 (2.18-3.73), p 0.10.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs ml cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: CRS 38 (34-48), 36 (29-41), 39 (31-42), 38 (33-48), p 0.06.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: Pplat 17.0 (15.5-21.0), 29.0 (28.0-29.0), 28.5 (26.0-30.0), 27.5 (22.0-30.5), p 0.09.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ccw ml cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: CCW 150 (118-200), 146 (108-216), 142 (116-188), 175 (138-213), p 0.07.",
+      "evidence": "pp. 5-6 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs dependent ml cmh2o con @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: CRS dependent 18 (14-20) vs 16 (13-19), p 0.20; GLM's name is the row label with unit.",
+      "evidence": "p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot cmh2o continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: PEEPtot 6.0 (6.0-8.5), 17.5 (15.0-18.2), 17.0 (13.7-20.0), 15.0 (11.0-18.0), p 0.11.",
+      "evidence": "p. 5 Table 1; p. 7 Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: the PEEP 5 cmH2O reading (101 (78-124)) is kept as the peep5 condition inside the PaO2/FiO2 crossover outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation shunt fraction continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 shunt 29 (24-47) is kept as the peep5 condition of the shunt outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 PaCO2 44 (37-48) is kept as the peep5 condition of GLM's PaCO2 outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL,insp/PL,exp PaCO2 readings kept in GLM's four-condition PaCO2 outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[other ventilatory ratio continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 ventilatory ratio 2.03 (1.91-2.60) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[dead space dead space fraction continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 dead space 65 (47-71) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac index continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 cardiac index 3.10 (2.43-3.85) is kept as the peep5 condition of GLM's cardiac index outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac index continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL-strategy cardiac index readings kept in GLM's four-condition outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics oxygen delivery index continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 oxygen delivery index 412 (366-531) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 PEEPtot 6.0 (6.0-8.5) is kept as the peep5 condition of GLM's PEEPtot outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptot continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL-strategy PEEPtot readings kept in GLM's four-condition outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 Pplat 17.0 (15.5-21.0) is kept as the peep5 condition of GLM's Pplat outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL-strategy Pplat readings kept in GLM's four-condition outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure continuou @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 driving pressure 10.0 (8.5-14.0) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 CRS 38 (34-48) is kept as the peep5 condition of GLM's CRS outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL-strategy CRS readings kept in GLM's four-condition outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure measured pl exp continuo @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 measured PL,exp -4.0 (-6.5-0.5) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure calculated pl insp conti @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 calculated PL,insp 12.8 (11.6-14.7) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ccw continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 CCW 150 (118-200) is kept as the peep5 condition of GLM's CCW outcome.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ccw continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PL-strategy CCW readings kept in GLM's four-condition outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el ers continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 EL/ERS 0.73 (0.68-0.79) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 transpulmonary driving pressure 8.0 (6.0-9.0) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics lung strain continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: PEEP 5 lung strain 0.75 (0.66-1.17) is kept as the peep5 condition.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs dependent continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the CRS dependent readings kept in GLM's outcome.",
+      "evidence": "p. 7 Table 2"
+    },
+    {
+      "id": "c19b9a29b2",
+      "decision": "glm",
+      "reason": "The same patients were studied at PEEP 5 cmH2O (fixed PEEP) and at Express PEEP (Pplat 28-30, 'other') before the two tested strategies; both conditions are kept as arms with data, so both comparator types apply.",
+      "evidence": "p. 2, Study protocol - Settings"
+    },
+    {
+      "id": "a94e65841b",
+      "decision": "glm",
+      "reason": "Express (PEEP to reach Pplat 28-30 cmH2O) is a comparator strategy applied in the same patients with no dedicated enum value.",
+      "evidence": "p. 2, Study protocol - Settings; pp. 5-6 Table 1"
+    },
+    {
+      "id": "259c7be373",
+      "decision": "unclear",
+      "reason": "DeepSeek's signal_quality_verification_only is wrong: a filling calibration is reported (balloon inflated to 2, 3 and 4 mL, volume giving maximal tidal Pes retained) plus a modified Baydur occlusion test with 0.8-1.2 acceptance. GLM's 'other' is defensible, but choosing the filling volume with the largest tidal Pes swing is arguably best_compliance_or_pressure_volume_filling. Co-author: choose between 'other' and best_compliance_or_pressure_volume_filling.",
+      "evidence": "p. 2, Study protocol - Settings; p. 3 first line; CODEBOOK Calibration"
+    },
+    {
+      "id": "ff33d8082b",
+      "decision": "glm",
+      "reason": "Table 1 reports time from ARDS diagnosis to inclusion 39 (27-51) h, which matches reference_event ards_onset (both reviewers); the tested strategies followed inclusion after the 45-min PEEP 5 and Express steps.",
+      "evidence": "p. 5, Table 1"
+    },
+    {
+      "id": "5dc94e65a8",
+      "decision": "unclear",
+      "reason": "Median 39 h from ARDS diagnosis, IQR 27-51 h, enrolment allowed up to 72 h: the upper quartile lies beyond the 48-h cut. The codebook gives a median rule for obesity but none for timing, so early_within_48h (median) and mixed (distribution) are both defensible. Co-author: decide the aggregation rule and apply it consistently across studies.",
+      "evidence": "p. 2, Study patients; p. 5, Table 1; CODEBOOK Subgroup flags"
+    }
+  ]
+}

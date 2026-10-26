@@ -1,0 +1,288 @@
+{
+ "study_id": "maia_2026",
+ "adjudicator": "claude-opus-5-5",
+ "rulings": [
+  {
+   "target": "arms[eit eit group alternative titration condition]",
+   "decision": "deepseek",
+   "reason": "Drop GLM's EIT arm: same arm kept under DeepSeek's label. Arm vocabulary kept consistent with DeepSeek's labels (eit_guided, best_compliance) used by every outcome kept; same n 12/12 (Figure 1); DeepSeek adds peep_applied 10 (9-14) / 10 (9-12), matching Table 2S PEEP median D0-D3",
+   "evidence": "p. 4 Figure 1; p. 19 Table 2S"
+  },
+  {
+   "target": "arms[best compliance best crs group alternative titra]",
+   "decision": "deepseek",
+   "reason": "Drop GLM's best-compliance arm: same arm kept under DeepSeek's entry. Arm vocabulary kept consistent with DeepSeek's labels (eit_guided, best_compliance) used by every outcome kept; same n 12/12 (Figure 1); DeepSeek adds peep_applied 10 (9-14) / 10 (9-12), matching Table 2S PEEP median D0-D3",
+   "evidence": "p. 4 Figure 1; p. 19 Table 2S"
+  },
+  {
+   "target": "arms[eit guided eit group electrical impedance tomogr]",
+   "decision": "deepseek",
+   "reason": "Arm vocabulary kept consistent with DeepSeek's labels (eit_guided, best_compliance) used by every outcome kept; same n 12/12 (Figure 1); DeepSeek adds peep_applied 10 (9-14) / 10 (9-12), matching Table 2S PEEP median D0-D3",
+   "evidence": "p. 4 Figure 1; p. 19 Table 2S"
+  },
+  {
+   "target": "arms[best compliance best crs group best compliance a]",
+   "decision": "deepseek",
+   "reason": "Arm vocabulary kept consistent with DeepSeek's labels (eit_guided, best_compliance) used by every outcome kept; same n 12/12 (Figure 1); DeepSeek adds peep_applied 10 (9-14) / 10 (9-12), matching Table 2S PEEP median D0-D3",
+   "evidence": "p. 4 Figure 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[transpulmonary pressure expiratory transpulmonar @baseline]",
+   "decision": "deepseek",
+   "reason": "Identical arm data (Table 1); DeepSeek adds the Kruskal-Wallis P = 0.35 printed in Table 2S and uses the consistent EIT label",
+   "evidence": "p. 5 Table 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 fio2 baseline continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Identical arm data; DeepSeek adds P = 0.07 from Table 2S",
+   "evidence": "p. 5 Table 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[mortality 28 day mortality dichotomous @28d]",
+   "decision": "deepseek",
+   "reason": "Identical counts 7/12, 4/13, 2/12, 6/12; both give P 0.15 Fisher; DeepSeek label consistent",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[ventilator free days ventilator free days contin @28d]",
+   "decision": "deepseek",
+   "reason": "Same values; DeepSeek's timepoint label is verbatim, GLM's is a paraphrase",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[icu length of stay icu los continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Same values and P 0.73; consistent EIT label",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[hospital length of stay hospital los continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Same values and P 0.81; consistent EIT label",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[barotrauma barotrauma dichotomous @end of study]",
+   "decision": "deepseek",
+   "reason": "Same 0/12,0/13,0/12,0/12; DeepSeek's label verbatim and adds P = 1",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[respiratory mechanics mean respiratory system co @repeated measures]",
+   "decision": "deepseek",
+   "reason": "GLM's arm data 29.5 (8.9), 24.9 (7.3), 30.0 (12.6), 29.9 (7.6) are the Day 0 mean Crs, not the D0-D3 outcome; DeepSeek gives the Table 2S 'Compliance titrated PEEP, median (d0 to d3)' 29/25/27/27 with correct IQRs and all Table 2 and Table 5S estimates (groups identified in provenance). Day 0 means kept in the separate Day 0 element",
+   "evidence": "p. 5-6 text; p. 7 Table 2; p. 19 Table 2S; p. 20 Table 5S"
+  },
+  {
+   "target": "outcomes[respiratory mechanics crs baseline before random @baseline]",
+   "decision": "deepseek",
+   "reason": "Drop: duplicates the baseline Crs reading kept under DeepSeek's element (same values, DeepSeek adds P 0.12)",
+   "evidence": "p. 5 Table 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[ventilator settings day 0 median titrated peep p @baseline]",
+   "decision": "deepseek",
+   "reason": "Drop: duplicates the Day 0 per-method titrated PEEP kept under DeepSeek's element, which records Table 3S's EIT 10 (7-13) as printed (GLM used the text's 11 and mislabelled it derived) and adds the Bland-Altman contrasts",
+   "evidence": "p. 19 Table 3S; p. 6 text; p. 21 Section 8S"
+  },
+  {
+   "target": "outcomes[rescue therapy prone position dichotomous @end of study]",
+   "decision": "deepseek",
+   "reason": "Reported exploratory outcome, values match: prone 6/12, 9/13, 5/12, 4/12, P 0.36",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[other time of sedation continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Reported exploratory outcome, values match: sedation time 8/10/9/7 with IQRs, P 0.7",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[other time of neuromuscular blocking agents cont @duration until event]",
+   "decision": "deepseek",
+   "reason": "Reported exploratory outcome, values match: NMBA time 5/4/3/4, P 0.89",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[other time in vasopressors continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Reported exploratory outcome, values match: vasopressor time 3/2/2/3, P 0.42",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[other time of corticosteroids use continuous @duration until event]",
+   "decision": "deepseek",
+   "reason": "Reported exploratory outcome, values match: corticosteroid time 5/4/4/8, P 0.93",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "target": "outcomes[respiratory mechanics crs respiratory system sta @baseline]",
+   "decision": "deepseek",
+   "reason": "Baseline Crs 26/22/25/26 with IQRs and P 0.12 match; kept in place of GLM's duplicate",
+   "evidence": "p. 5 Table 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[respiratory mechanics mean respiratory system co @baseline]",
+   "decision": "deepseek",
+   "reason": "Day 0 mean (SD) Crs 29.5 (8.9), 24.9 (7.3), 30.0 (12.6), 29.9 (7.6) as printed, correctly at Day 0",
+   "evidence": "p. 5-6 text"
+  },
+  {
+   "target": "outcomes[respiratory mechanics crs values derived from th @baseline]",
+   "decision": "deepseek",
+   "reason": "Six Crs Bland-Altman mean differences with signs matching the text (table-catheter +1.5, table-best -2, table-EIT -1.7, catheter-best -3.4, catheter-EIT -2.6, best-EIT +0.8)",
+   "evidence": "p. 8 text; p. 21 Section 8S"
+  },
+  {
+   "target": "outcomes[respiratory mechanics pplat plateau pressure bas @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: Pplat baseline 25/27/29/24, P 0.10",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[respiratory mechanics pplat titrated peep median @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: Pplat D0-D3 24/26/26/23, P 0.55",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[respiratory mechanics driving pressure baseline @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: driving pressure baseline 13/16/15/13, P 0.06",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[respiratory mechanics driving pressure titrated @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: driving pressure D0-D3 13 in all, P 0.93",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[transpulmonary pressure inspiratory transpulmona @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PL insp baseline 13.1/15.1/11.9/10.4, n 10/11/9/12, P 0.13",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[transpulmonary pressure inspiratory transpulmona @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PL insp D0-D3 12.1/12.3/10.52/10.0, P 0.34",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[transpulmonary pressure expiratory transpulmonar @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PL exp D0-D3 0.4/1.2/-0.5/-1.1, P 0.08",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 fio2 median d0 to d3 continuous @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: P/F D0-D3 211/189/259/232, P 0.04",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 baseline continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PaO2 baseline 86/106/112/117, n 11/12/12/12, P 0.44",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[oxygenation pao2 median d0 to d3 continuous @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PaO2 D0-D3 105/115/126/109; catheter IQR '88 - 12' is the paper's own misprint, transcribed as printed",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[other paco2 baseline continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PaCO2 baseline 52/58/50/47, P 0.10; best-compliance and table values sit in their columns on the image",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[other paco2 median d0 to d3 continuous @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PaCO2 D0-D3 58/60/53/51, P 0.03",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[other ph median d0 to d3 continuous @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: pH D0-D3 7.29/7.31/7.39/7.36, P 0.17",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[ventilator settings peep median d0 to d3 continu @repeated measures]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: PEEP D0-D3 10/11/10/10, P 0.87",
+   "evidence": "p. 19 Table 2S (image checked)"
+  },
+  {
+   "target": "outcomes[ventilator settings fio2 baseline continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: FiO2 baseline 85/70/70/70 %",
+   "evidence": "p. 5 Table 1"
+  },
+  {
+   "target": "outcomes[ventilator settings tidal volume median kg pbw b @baseline]",
+   "decision": "deepseek",
+   "reason": "Reported; values match: Vt baseline 5.98/6/5.94/6.01 mL/kg PBW",
+   "evidence": "p. 5 Table 1"
+  },
+  {
+   "target": "outcomes[ventilator settings peep baseline continuous @baseline]",
+   "decision": "deepseek",
+   "reason": "Values are Table 1's PEEP row (PEEP table arm 10 (10-10.5)); note Table 2S prints 11 (10-15) for the PEEP-table baseline, a conflict within the paper, and P 0.50 comes from Table 2S",
+   "evidence": "p. 5 Table 1; p. 19 Table 2S"
+  },
+  {
+   "target": "outcomes[ventilator settings median titrated peep in each @baseline]",
+   "decision": "deepseek",
+   "reason": "Table 3S values 10 (7-13) n48, 11 (9-13) n46, 11 (9-13) n46, 10 (10-14) n49 as printed; six PEEP Bland-Altman differences with signs matching Section 8S. Kept in place of GLM's duplicate",
+   "evidence": "p. 19 Table 3S; p. 21 Section 8S"
+  },
+  {
+   "target": "outcomes[other ph baseline continuous @baseline]",
+   "decision": "unclear",
+   "reason": "Values and P 0.15 are right, but DeepSeek's per-arm n 12/13/12/12 (sum 49) cannot be: Table 2S gives total n = 48 for baseline pH and no per-arm n, so one arm's n is wrong; set per-arm n to null (or the arm totals minus the unknown one) before keeping DeepSeek's element",
+   "evidence": "p. 19 Table 2S, pH baseline row"
+  },
+  {
+   "id": "2cce5af2f3",
+   "decision": "deepseek",
+   "reason": "first_author is the surname by convention across the reconciled records",
+   "evidence": "p. 1 author line"
+  },
+  {
+   "id": "7d166ee440",
+   "decision": "glm",
+   "reason": "Every pooled quantity (28-day mortality, VFD, LOS, barotrauma) is printed per arm in Table 4S; the misprints (age IQR '3 - 49', PaO2 '88 - 12', EIT Day 0 PEEP 10 vs 11) do not touch pooled data",
+   "evidence": "p. 20 Table 4S"
+  },
+  {
+   "id": "97ec7c9c33",
+   "decision": "deepseek",
+   "reason": "Eligibility required ARDS criteria for less than 36 hours and the balloon was placed immediately after randomization, so the interval is anchored to ARDS onset, not merely enrolment",
+   "evidence": "p. 2-3 Methods, Patients and Interventions"
+  },
+  {
+   "id": "c09848da56",
+   "decision": "deepseek",
+   "reason": "Drop: same EIT baseline values kept under DeepSeek's eit_guided label, matching the arm vocabulary kept",
+   "evidence": "p. 5 Table 1"
+  },
+  {
+   "id": "b50d5c811b",
+   "decision": "deepseek",
+   "reason": "EIT baseline: age 50 (45-64), female 5/12, P/F 129 (77-182) match Table 1",
+   "evidence": "p. 5 Table 1"
+  },
+  {
+   "id": "21f34e79a5",
+   "decision": "deepseek",
+   "reason": "Balloon-guided titration began within 36 h of ARDS onset (eligibility < 36 h, titration immediately after randomization), an interval from ARDS onset, so early_within_48h per codebook",
+   "evidence": "p. 2-3 Methods"
+  }
+ ]
+}

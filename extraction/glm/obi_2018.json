@@ -1,0 +1,2031 @@
+{
+  "record_meta": {
+    "study_id": "obi_2018",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/obi2018.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Obi",
+    "year": 2018,
+    "title": "Obesity and Weaning from Mechanical Ventilation—An Exploratory Study",
+    "journal": "Clinical Medicine Insights: Circulatory, Respiratory and Pulmonary Medicine",
+    "doi": "10.1177/1179548418801004",
+    "pmid": null,
+    "trial_registration": "NCT02323009",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Tracheotomized morbidly obese adult subjects (body mass index [BMI] ⩾ 40; age > 18 years)",
+          "location": "p. 2, Study subjects, para 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "for non-ARDS hypoxic and/or hypercapnic respiratory failure with need for intubation and mechanical ventilation, with subsequent tracheostomy creation for failure to liberate from the ventilator",
+          "location": "p. 2, Study subjects, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The study was conducted in a university teaching hospital with a 9-bed respiratory intermediate unit (RIU).",
+          "location": "p. 2, Study design, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Subjects randomized to the ESO group had PEEP adjusted to overcome negative Ptp with a goal to maintaining Ptp positive (Ptp 0-5 cmH2O), maintaining as close to zero as possible.",
+          "location": "p. 2, Study treatments, para 2"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The study outcomes were the percentage of subjects weaned from the ventilator at day 30 and time to wean from the ventilator.",
+          "location": "p. 3-4, Study outcomes"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A total of 25 subjects were prospectively enrolled.",
+          "location": "p. 2, Study subjects, para 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Prospectively enrolled morbidly obese subjects admitted from January 2011 through September 2013 were randomized in a simple 1:1 ratio to 1 of 2 protocols for setting PEEP",
+          "location": "p. 2, Study design, para 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Obesity and Weaning from Mechanical Ventilation—An Exploratory Study",
+          "location": "p. 1, title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "Pilot study ... We randomly assigned 25 morbidly obese adult tracheotomized subjects ... to 1 of 2 methods of setting PEEP",
+      "provenance": {
+        "quote": "Pilot study to determine whether morbidly obese adult tracheotomized subjects (body mass index [BMI] ⩾ 40) can be more efficiently weaned from the ventilator by optimizing their positive end-expiratory pressure (PEEP) using either an esophageal balloon or the best achieved static effective compliance.",
+        "location": "p. 1, Abstract, Objective"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": "1:1",
+    "blinding": {
+      "value": "open label; due to the nature of our intervention, our study could not be blinded to either the subjects or the therapists",
+      "provenance": {
+        "quote": "due to the nature of our intervention, our study could not be blinded to either the subjects or the therapists",
+        "location": "p. 8, Discussion, limitations"
+      }
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "this is a single-center study in an institution with experience in managing morbidly obese subjects",
+        "location": "p. 8, Discussion, limitations"
+      }
+    },
+    "countries": [
+      "United States"
+    ],
+    "location_provenance": {
+      "quote": "Division of Pulmonary, Critical Care, and Sleep Medicine, Brody School of Medicine, East Carolina University, Greenville, NC, USA. Department of Respiratory Care, Vidant Medical Center, Greenville, NC, USA.",
+      "location": "p. 1, author affiliations"
+    },
+    "planned_sample_size": {
+      "value": 56,
+      "derived": true,
+      "derivation": "Paper states 28 subjects per group; 28 x 2 = 56 total.",
+      "provenance": {
+        "quote": "We determined that enrollment of 28 subjects per group would detect a 2-day difference in time to wean from mechanical ventilation with 80% power assuming a standard deviation of 3 days at a 2-sided α level of .05.",
+        "location": "p. 4, Statistical analysis, para 1"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "enrollment of 28 subjects per group would detect a 2-day difference in time to wean from mechanical ventilation with 80% power assuming a standard deviation of 3 days at a 2-sided α level of .05",
+      "provenance": {
+        "quote": "We determined that enrollment of 28 subjects per group would detect a 2-day difference in time to wean from mechanical ventilation with 80% power assuming a standard deviation of 3 days at a 2-sided α level of .05.",
+        "location": "p. 4, Statistical analysis, para 1"
+      }
+    },
+    "stopped_early": true,
+    "stopping_rule": {
+      "value": "did not achieve target enrollment because of significant changes in ventilator weaning practices at our institution ... After 6 months of minimal subject recruitment, the authors decided to prematurely terminate the study.",
+      "provenance": {
+        "quote": "We did not achieve target enrollment because of significant changes in ventilator weaning practices at our institution. ... After 6 months of minimal subject recruitment, the authors decided to prematurely terminate the study.",
+        "location": "p. 4, Results, para 1"
+      }
+    },
+    "setting": {
+      "value": "9-bed respiratory intermediate unit (RIU) in a university teaching hospital",
+      "provenance": {
+        "quote": "The study was conducted in a university teaching hospital with a 9-bed respiratory intermediate unit (RIU).",
+        "location": "p. 2, Study design, para 1"
+      }
+    },
+    "enrolment_start": "2011-01",
+    "enrolment_end": "2013-09",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "The author(s) received no financial support for the research, authorship, and/or publication of this article.",
+      "provenance": {
+        "quote": "Funding: The author(s) received no financial support for the research, authorship, and/or publication of this article.",
+        "location": "p. 1, Funding statement"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 25,
+      "provenance": {
+        "quote": "A total of 25 subjects were prospectively enrolled.",
+        "location": "p. 2, Study subjects, para 1"
+      }
+    },
+    "n_analysed": {
+      "value": 23,
+      "derived": true,
+      "derivation": "ITT population = all randomized except those where technical difficulties precluded balloon passage or Cstat measurement, and 2 subjects with very early protocol violations from whom no data were collected were excluded; 25 - 2 = 23.",
+      "provenance": {
+        "quote": "All analyses were performed in the intention-to-treat population which was defined as all subjects who had undergone randomization except those where technical difficulties precluded passing the esophageal balloon or obtaining Cstat measurements. Two subjects with very early protocol violations from whom no data were collected were also excluded from the intention-to-treat population.",
+        "location": "p. 4, Statistical analysis, para 2"
+      }
+    },
+    "population_description": {
+      "value": "Tracheotomized morbidly obese adult subjects (BMI ⩾ 40; age > 18 years) with recent admission to the intensive care unit for non-ARDS hypoxic and/or hypercapnic respiratory failure with need for intubation and mechanical ventilation, with subsequent tracheostomy creation for failure to liberate from the ventilator, who had failed at least one post-tracheostomy weaning attempt during their index hospitalization.",
+      "provenance": {
+        "quote": "Tracheotomized morbidly obese adult subjects (body mass index [BMI] ⩾ 40; age > 18 years) with recent admission to the intensive care unit, for non-ARDS hypoxic and/or hypercapnic respiratory failure with need for intubation and mechanical ventilation, with subsequent tracheostomy creation for failure to liberate from the ventilator were enrolled if they had failed at least one post-tracheostomy weaning attempt during their index hospitalization.",
+        "location": "p. 2, Study subjects, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Tracheotomized morbidly obese adult subjects (BMI ⩾ 40; age > 18 years) with recent ICU admission for non-ARDS hypoxic and/or hypercapnic respiratory failure, tracheostomy for failure to liberate from the ventilator, failed at least one post-tracheostomy weaning attempt, tolerated PSV with FiO2 ⩽ 0.6 for at least 24 hours prior to enrollment.",
+      "provenance": {
+        "quote": "Subjects were required to tolerate pressure support ventilation (PSV) mode with fractional inspired oxygen (FiO2) of 0.6 or less for at least 24 hours prior to enrollment.",
+        "location": "p. 2, Study subjects, para 1"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Any active lung, neuromuscular, or cardiac disease that would preclude ventilator weaning; naso-facial, esophageal, or other gastrointestinal abnormalities that would contraindicate placement of an esophageal balloon; hemodynamically unstable or unable to tolerate PSV.",
+      "provenance": {
+        "quote": "Subjects were excluded if there was any active lung, neuromuscular, or cardiac disease that would preclude ventilator weaning. We also excluded subjects with naso-facial, esophageal, or other gastrointestinal abnormalities that would contraindicate placement of an esophageal balloon. ... Subjects who were hemodynamically unstable or unable to tolerate PSV were excluded from the study.",
+        "location": "p. 2, Study subjects, para 1"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": {
+      "value_type": "median",
+      "value": 53.4,
+      "dispersion_type": "iqr",
+      "dispersion": 26.4,
+      "dispersion_low": null,
+      "dispersion_high": null,
+      "n": 25,
+      "unit": "kg/m2",
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "We randomly assigned 25 morbidly obese adult tracheotomized subjects (median [interquartile range] BMI 53.4 [26.4]; range 40.4-113.8)",
+        "location": "p. 1, Abstract, Methods"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "no_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 0,
+      "total": 25,
+      "percent_as_reported": null,
+      "derived": true,
+      "derivation": "ARDS was an exclusion criterion: subjects were enrolled only for 'non-ARDS hypoxic and/or hypercapnic respiratory failure', so n_ards is 0 by construction.",
+      "provenance": {
+        "quote": "for non-ARDS hypoxic and/or hypercapnic respiratory failure with need for intubation and mechanical ventilation",
+        "location": "p. 2, Study subjects, para 1"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Primary pulmonary injuries include OSA/OHS (8 patients); OSA + COPD ± pneumonia (4 patients). One patient had diffuse alveolar hemorrhage, another had influenza A pneumonia and another had sarcoidosis and renal failure. Nonpulmonary etiologies include case of scrotal abscess, very large goiter after thyroidectomy, traumatic quadriplegia, and incarcerated umbilical hernia with prolonged postsurgical recovery.",
+      "provenance": {
+        "quote": "Primary pulmonary injuries include OSA/OHS (8 patients); OSA + COPD ± pneumonia (4 patients). One patient had diffuse alveolar hemorrhage, another had influenza A pneumonia and another had sarcoidosis and renal failure. ... Nonpulmonary etiologies include case of scrotal abscess, very large goiter after thyroidectomy, traumatic quadriplegia, and incarcerated umbilical hernia with prolonged postsurgical recovery.",
+        "location": "p. 5, Table 1 footnotes"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Height, m (median [IQR])",
+        "arm_label": "eso_guided",
+        "continuous": {
+          "value_type": "median",
+          "value": 1.68,
+          "dispersion_type": "iqr",
+          "dispersion": 0.23,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "m",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Height, m (median [IQR]) — 1.68 (0.23)",
+            "location": "p. 5, Table 1, row: Height, ESO group"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "Height, m (median [IQR])",
+        "arm_label": "cstat",
+        "continuous": {
+          "value_type": "median",
+          "value": 1.61,
+          "dispersion_type": "iqr",
+          "dispersion": 0.23,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "m",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Height, m (median [IQR]) — 1.61 (0.23)",
+            "location": "p. 5, Table 1, row: Height, Cstat group"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "Pulmonary, No (%)",
+        "arm_label": "eso_guided",
+        "continuous": null,
+        "count": {
+          "n": 7,
+          "total": 13,
+          "percent_as_reported": 54,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Pulmonary, No (%) — 7 (54)",
+            "location": "p. 5, Table 1, row: Pulmonary, ESO group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pulmonary, No (%)",
+        "arm_label": "cstat",
+        "continuous": null,
+        "count": {
+          "n": 7,
+          "total": 12,
+          "percent_as_reported": 58,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Pulmonary, No (%) — 7 (58)",
+            "location": "p. 5, Table 1, row: Pulmonary, Cstat group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pulmonary ± other comorbidity, No (%)",
+        "arm_label": "eso_guided",
+        "continuous": null,
+        "count": {
+          "n": 3,
+          "total": 13,
+          "percent_as_reported": 23,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Pulmonary ± other comorbidity, No (%) — 3 (23)",
+            "location": "p. 5, Table 1, row: Pulmonary ± other comorbidity, ESO group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pulmonary ± other comorbidity, No (%)",
+        "arm_label": "cstat",
+        "continuous": null,
+        "count": {
+          "n": 4,
+          "total": 12,
+          "percent_as_reported": 33,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Pulmonary ± other comorbidity, No (%) — 4 (33)",
+            "location": "p. 5, Table 1, row: Pulmonary ± other comorbidity, Cstat group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Nonpulmonary (No (%)",
+        "arm_label": "eso_guided",
+        "continuous": null,
+        "count": {
+          "n": 3,
+          "total": 13,
+          "percent_as_reported": 23,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Nonpulmonary (No (%) — 3 (23)",
+            "location": "p. 5, Table 1, row: Nonpulmonary, ESO group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Nonpulmonary (No (%)",
+        "arm_label": "cstat",
+        "continuous": null,
+        "count": {
+          "n": 1,
+          "total": 12,
+          "percent_as_reported": 8,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Nonpulmonary (No (%) — 1 (8)",
+            "location": "p. 5, Table 1, row: Nonpulmonary, Cstat group"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "eso_guided",
+        "n": {
+          "value": 13,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "randomized in a simple 1:1 ratio to 1 of 2 protocols for setting PEEP",
+            "location": "p. 2, Study design, para 1"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 58,
+          "dispersion_type": "sd",
+          "dispersion": 9,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "years",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Age, y — 58 ± 9",
+            "location": "p. 5, Table 1, row: Age, ESO group"
+          }
+        },
+        "sex_female": {
+          "n": 8,
+          "total": 13,
+          "percent_as_reported": 62,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Female sex, No (%) — 8 (62)",
+            "location": "p. 5, Table 1, row: Female sex, ESO group"
+          }
+        },
+        "bmi": {
+          "value_type": "median",
+          "value": 68.4,
+          "dispersion_type": "iqr",
+          "dispersion": 31.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "kg/m2",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "BMI, kg/m2 (median [IQR]) — 68.4 (31.3)",
+            "location": "p. 5, Table 1, row: BMI, ESO group"
+          }
+        },
+        "pao2_fio2_baseline": null,
+        "apache_ii": null,
+        "sofa": null
+      },
+      {
+        "arm_label": "cstat",
+        "n": {
+          "value": 12,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "randomized in a simple 1:1 ratio to 1 of 2 protocols for setting PEEP",
+            "location": "p. 2, Study design, para 1"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 53,
+          "dispersion_type": "sd",
+          "dispersion": 15,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "years",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Age, y — 53 ± 15",
+            "location": "p. 5, Table 1, row: Age, Cstat group"
+          }
+        },
+        "sex_female": {
+          "n": 7,
+          "total": 12,
+          "percent_as_reported": 58,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Female sex, No (%) — 7 (58)",
+            "location": "p. 5, Table 1, row: Female sex, Cstat group"
+          }
+        },
+        "bmi": {
+          "value_type": "median",
+          "value": 73.9,
+          "dispersion_type": "iqr",
+          "dispersion": 26,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "kg/m2",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "BMI, kg/m2 (median [IQR]) — 73.9 (26)",
+            "location": "p. 5, Table 1, row: BMI, Cstat group"
+          }
+        },
+        "pao2_fio2_baseline": null,
+        "apache_ii": null,
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "Ackrad Labs, Adult Esophageal Balloon Catheter Set, manufactured by CooperSurgical, Trumbull, CT, USA",
+      "provenance": {
+        "quote": "Placement of the esophageal balloon (Ackrad Labs, Adult Esophageal Balloon Catheter Set, manufactured by CooperSurgical, Trumbull, CT, USA) was performed using previously described technique.",
+        "location": "p. 2, Study treatments, para 3"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": 1.0,
+      "dispersion_type": "none",
+      "dispersion": null,
+      "dispersion_low": null,
+      "dispersion_high": null,
+      "n": null,
+      "unit": "mL air",
+      "derived": false,
+      "derivation": null,
+      "provenance": {
+        "quote": "The balloon was then inflated with 1.0 mL of air and intragastric position confirmed by gentle compression of the epigastrium causing an increased pressure reading on the manometer.",
+        "location": "p. 2, Study treatments, para 3"
+      }
+    },
+    "balloon_calibration": {
+      "method": "fixed_volume_no_validation",
+      "method_verbatim": {
+        "value": "The balloon was then inflated with 1.0 mL of air and intragastric position confirmed by gentle compression of the epigastrium causing an increased pressure reading on the manometer. The catheter was then withdrawn to approximately 40 cm mark while watching for cardiac oscillations on the esophageal pressure wave form to confirm appropriate mid-esophageal placement.",
+        "provenance": {
+          "quote": "The balloon was then inflated with 1.0 mL of air and intragastric position confirmed by gentle compression of the epigastrium causing an increased pressure reading on the manometer. The catheter was then withdrawn to approximately 40 cm mark while watching for cardiac oscillations on the esophageal pressure wave form to confirm appropriate mid-esophageal placement.",
+          "location": "p. 2, Study treatments, para 3"
+        }
+      },
+      "position_verification": {
+        "value": "Intragastric position confirmed by epigastric compression causing increased manometer reading; withdrawal to ~40 cm watching for cardiac oscillations to confirm mid-esophageal placement.",
+        "provenance": {
+          "quote": "intragastric position confirmed by gentle compression of the epigastrium causing an increased pressure reading on the manometer. The catheter was then withdrawn to approximately 40 cm mark while watching for cardiac oscillations on the esophageal pressure wave form to confirm appropriate mid-esophageal placement.",
+          "location": "p. 2, Study treatments, para 3"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Ptp was calculated as airway pressure (Paw) minus esophageal pressure (Pes).",
+        "provenance": {
+          "quote": "Ptp was calculated as airway pressure (Paw) minus esophageal pressure (Pes).",
+          "location": "p. 2, Study treatments, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "Subjects randomized to the ESO group had PEEP adjusted to overcome negative Ptp with a goal to maintaining Ptp positive (Ptp 0-5 cmH2O), maintaining as close to zero as possible. ... The PEEP was then adjusted to maintain Ptp ⩾ 0 cmH2O.",
+        "provenance": {
+          "quote": "Subjects randomized to the ESO group had PEEP adjusted to overcome negative Ptp with a goal to maintaining Ptp positive (Ptp 0-5 cmH2O), maintaining as close to zero as possible.",
+          "location": "p. 2, Study treatments, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "goal Ptp 0-5 cmH2O",
+          "location": "p. 1, Abstract, Methods"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 5,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "goal Ptp 0-5 cmH2O",
+          "location": "p. 1, Abstract, Methods"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "Repeat PEEP assessments were made daily at 8 am prior to initiating trach-collar-trials; balloon remained in place a maximum of 7 days.",
+        "provenance": {
+          "quote": "Repeat PEEP assessments were made daily at 8 am prior to initiating trach-collar-trials to ensure that PEEP remained optimized prior to spontaneous breathing trial. If PEEP settings were found on the following morning to be suboptimal (measured Ptp now negative or measured Cstat less than previous day's values), PEEP would be re-optimized as above.",
+          "location": "p. 2, Study treatments, para 4"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "we adjusted pressure support (PS) to maintain tidal volumes (VT) at 6 to 8 cm3/kg IBW",
+        "provenance": {
+          "quote": "Once optimal PEEP was achieved (using either Cstat or Ptp), we adjusted pressure support (PS) to maintain tidal volumes (VT) at 6 to 8 cm3/kg IBW14 and titrated FiO2 to maintain oxygen saturation of 90% or greater (SaO2 ⩾ 90%).",
+          "location": "p. 2, Study treatments, para 3"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": true,
+      "other_co_interventions": {
+        "value": "After rapid decompensation of the first 2 subjects, protocol modified to require trach-collar-trials with a Passy Muir speaking valve in place; all enrollees wore speaking valves continuously once disconnected from the ventilator.",
+        "provenance": {
+          "quote": "After rapid decompensation of our first 2 subjects following transition from high PEEP levels to a spontaneous trach-collar-trial (presumed zero-PEEP), our protocol was modified to require performance of trach-collar-trials with a Passy Muir speaking valve in place.",
+          "location": "p. 3, Study treatments, para 3"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Intervention applied at randomization in tracheotomized subjects who had failed at least one post-tracheostomy weaning attempt during their index hospitalization.",
+        "provenance": {
+          "quote": "The time to wean was measured from the date of randomization to the date of liberation from mechanical ventilation.",
+          "location": "p. 4, Study outcomes, para 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "The esophageal balloon remained in place for a maximum of 7 days but was removed earlier if a subject weaned.",
+      "provenance": {
+        "quote": "The esophageal balloon remained in place for a maximum of 7 days but was removed earlier if a subject weaned.",
+        "location": "p. 3, Study treatments, para 2"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "best_compliance_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "Subjects randomized to the Cstat group had PEEP adjusted to achieve the best static effective compliance (Cstat) ... Positive end-expiratory pressure was adjusted in increments of 3 cmH2O until there was a less than 5% observed improvement in the measured Cstat averaged over 5 breaths. The PEEP with the best achieved Cstat was chosen.",
+      "provenance": {
+        "quote": "Subjects randomized to the Cstat group had PEEP adjusted to achieve the best static effective compliance (Cstat) as ... Positive end-expiratory pressure was adjusted in increments of 3 cmH2O until there was a less than 5% observed improvement in the measured Cstat averaged over 5 breaths. The PEEP with the best achieved Cstat was chosen.",
+        "location": "p. 2, Study treatments, para 1"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "eso_guided",
+      "label_verbatim": "ESO group",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 13,
+        "provenance": {
+          "quote": "ESO group (N = 13)",
+          "location": "p. 5, Table 1, column header"
+        }
+      },
+      "n_analysed": {
+        "value": 13,
+        "provenance": {
+          "quote": "A: Pre- and post-intervention effects for ESO group (N = 13)",
+          "location": "p. 6, Table 2, panel A header"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 26.5,
+        "dispersion_type": "sd",
+        "dispersion": 5.7,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "n": 13,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "Optimal PEEP in the ESO and Cstat groups was similar (ESO mean ± SD = 26.5 ± 5.7 cmH2O and Cstat 24.2 ± 7 cmH2O (P = .38).",
+          "location": "p. 1, Abstract, Results"
+        }
+      }
+    },
+    {
+      "label": "cstat",
+      "label_verbatim": "Cstat group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 12,
+        "provenance": {
+          "quote": "Cstat group (N = 12)",
+          "location": "p. 5, Table 1, column header"
+        }
+      },
+      "n_analysed": {
+        "value": 12,
+        "provenance": {
+          "quote": "B: Pre- and post-intervention effects for Cstat group (N = 12)",
+          "location": "p. 6, Table 2, panel B header"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 24.2,
+        "dispersion_type": "sd",
+        "dispersion": 7.0,
+        "dispersion_low": null,
+        "dispersion_high": null,
+        "n": 12,
+        "unit": "cmH2O",
+        "derived": false,
+        "derivation": null,
+        "provenance": {
+          "quote": "The mean PEEP level considered optimal was the same whether esophageal balloon or Cstat was used for adjustment (26.5 ± 5.7 cmH2O vs 24.2 ± 7.0 cmH2O; P = .38).",
+          "location": "p. 5, Results, para 2"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "successful_extubation_or_weaning",
+      "name_verbatim": "percentage of subjects weaned from the ventilator at day 30",
+      "definition_verbatim": "A subject was considered successfully weaned if spontaneously breathing without ventilator support for at least 24 hours by day 30. Subjects who required resumption of mechanical ventilation after an initial liberation were presumed to have failed if they were still on the ventilator by day 30.",
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "sequence_position": null,
+        "days": 30,
+        "hours": null,
+        "label_verbatim": "day 30"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": 8,
+          "total": 13,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Eight subjects (62%) were weaned in the ESO group vs 9 (75%) in the Cstat group (P = .67).",
+            "location": "p. 4, Outcomes, para 1"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": 9,
+          "total": 12,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Eight subjects (62%) were weaned in the ESO group vs 9 (75%) in the Cstat group (P = .67).",
+            "location": "p. 4, Outcomes, para 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.67,
+          "p_value_verbatim": ".67",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Pearson χ2 or Fisher exact test (not specified which)",
+          "provenance": {
+            "quote": "Eight subjects (62%) were weaned in the ESO group vs 9 (75%) in the Cstat group (P = .67).",
+            "location": "p. 4, Outcomes, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The study outcomes were the percentage of subjects weaned from the ventilator at day 30 and time to wean from the ventilator.",
+        "location": "p. 3-4, Study outcomes"
+      }
+    },
+    {
+      "domain": "successful_extubation_or_weaning",
+      "name_verbatim": "time to wean (days to ventilator liberation, among the 17 subjects who weaned)",
+      "definition_verbatim": "The time to wean was measured from the date of randomization to the date of liberation from mechanical ventilation.",
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "time to wean"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 3.5,
+          "dispersion_type": "range",
+          "dispersion": null,
+          "dispersion_low": 1,
+          "dispersion_high": 16,
+          "n": 8,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Subjects in the ESO group weaned in a median of 3.5 days (range 1-16 days) vs a median of 14 days (range 7-26 days) for subjects in the Cstat group (P = .012).",
+            "location": "p. 4, Discussion, para 2"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "range",
+          "dispersion": null,
+          "dispersion_low": 7,
+          "dispersion_high": 26,
+          "n": 9,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Subjects in the ESO group weaned in a median of 3.5 days (range 1-16 days) vs a median of 14 days (range 7-26 days) for subjects in the Cstat group (P = .012).",
+            "location": "p. 4, Discussion, para 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.012,
+          "p_value_verbatim": "0.012",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Mann Whitney U Test",
+          "provenance": {
+            "quote": "*Days to Wean Mean ± SD (Median) — ESO (N = 8) 6.25 ± 6.1 (3.5); Cstat (N = 9) 15.1 ± 6.9 (14); P-Value 0.012* ... *Statistically significant difference – Mann Whitney U Test P = 0.012",
+            "location": "p. 7, Figure 1, embedded table"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.892,
+          "p_value_verbatim": "0.892",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Kaplan-Meier with log-rank test, entire cohort (N=25)",
+          "provenance": {
+            "quote": "Log Rank Test — Log Rank Chi-Square 0.018, df 1, P-Value 0.892",
+            "location": "p. 8, Figure 2, embedded table"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Among the 17 subjects who successfully weaned, subjects in the ESO group weaned significantly quicker than those in the Cstat group. Subjects in the ESO group weaned in a median of 3.5 days vs 14 days for subjects in the Cstat group (P = .012; Figure 1).",
+        "location": "p. 4, Outcomes, para 1"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP, cmH2O (baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Initial measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Baseline ventilator settings on PSV prior to study PEEP adjustment.",
+        "provenance": {
+          "quote": "We compared the initial and final respiratory variables within each group using the paired t test.",
+          "location": "p. 4, Statistical analysis, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 14,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O — 14 (5)",
+            "location": "p. 6, Table 2, panel A, row: PEEP, Initial measure"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 14,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP, cmH2O — 14 (2)",
+            "location": "p. 6, Table 2, panel B, row: PEEP, Initial measure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Initial PS mean (±SD) in both groups was 13 ± 4 cmH2O and initial PEEP in ESO group was 14 ± 5 cmH2O vs 14 ± 2 cmH2O in Cstat group.",
+        "location": "p. 4, Results, para 2"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP, cmH2O (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 27,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 13,
+            "dispersion_type": "sd",
+            "dispersion": 7,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<.001",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "PEEP, cmH2O — 14 (5) | 27 (6) | 13 (7) | <.001*",
+              "location": "p. 6, Table 2, panel A, row: PEEP"
+            }
+          },
+          "provenance": {
+            "quote": "PEEP, cmH2O — 14 (5) | 27 (6) | 13 (7) | <.001*",
+            "location": "p. 6, Table 2, panel A, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 24,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 10,
+            "dispersion_type": "sd",
+            "dispersion": 8,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.001,
+            "p_value_verbatim": ".001",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "PEEP, cmH2O — 14 (2) | 24 (7) | 10 (8) | .001*",
+              "location": "p. 6, Table 2, panel B, row: PEEP"
+            }
+          },
+          "provenance": {
+            "quote": "PEEP, cmH2O — 14 (2) | 24 (7) | 10 (8) | .001*",
+            "location": "p. 6, Table 2, panel B, row: PEEP"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.38,
+          "p_value_verbatim": ".38",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "PEEP, cmH2O — 27 (6) | 24 (7.0) | .38",
+            "location": "p. 6, Table 3, row: PEEP"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The mean post adjustment PEEP levels in both groups were similar at 27 ± 6 cmH2O in the ESO group and 24 ± 7.0 cmH2O in the Cstat group (P = .38).",
+        "location": "p. 4, Results, para 4"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptp, cmH2O (end-expiratory transpulmonary pressure)",
+      "definition_verbatim": "Ptp was calculated as airway pressure (Paw) minus esophageal pressure (Pes).",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Initial measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Measured at end-expiration with subject supine, head of bed 45°, on PSV; cursor identified point of end-expiration on frozen ventilator graphics.",
+        "provenance": {
+          "quote": "Using the cursor, we identified the point of end-expiration and measured Paw and Pes, from which we calculated the Ptp (Paw − Pes).",
+          "location": "p. 2, Study treatments, para 3"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": -11.2,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ptp, cmH2O — -11.2 (5.8)",
+            "location": "p. 6, Table 2, panel A, row: Ptp, Initial measure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Ptp increased from a mean value of minus 11.2 ± 5.8 cmH2O at baseline to positive 0.7 ± 3.6 cmH2O postintervention (P < .001).",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptp, cmH2O (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 0.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 11.8,
+            "dispersion_type": "sd",
+            "dispersion": 6.7,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<.001",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "Ptp, cmH2O — -11.2 (5.8) | 0.7 (3.6) | 11.8 (6.7) | <.001*",
+              "location": "p. 6, Table 2, panel A, row: Ptp"
+            }
+          },
+          "provenance": {
+            "quote": "Ptp, cmH2O — -11.2 (5.8) | 0.7 (3.6) | 11.8 (6.7) | <.001*",
+            "location": "p. 6, Table 2, panel A, row: Ptp"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Ptp increased from a mean value of minus 11.2 ± 5.8 cmH2O at baseline to positive 0.7 ± 3.6 cmH2O postintervention (P < .001).",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Pes, cmH2O (esophageal pressure)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Initial measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 24.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Pes, cmH2O — 24.4 (3.4)",
+            "location": "p. 6, Table 2, panel A, row: Pes, Initial measure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Pes, cmH2O — 24.4 (3.4) | 26.1 (6.6) | 1.7 (4.8) | .223",
+        "location": "p. 6, Table 2, panel A, row: Pes"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Pes, cmH2O (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 26.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 1.7,
+            "dispersion_type": "sd",
+            "dispersion": 4.8,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.223,
+            "p_value_verbatim": ".223",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "Pes, cmH2O — 24.4 (3.4) | 26.1 (6.6) | 1.7 (4.8) | .223",
+              "location": "p. 6, Table 2, panel A, row: Pes"
+            }
+          },
+          "provenance": {
+            "quote": "Pes, cmH2O — 24.4 (3.4) | 26.1 (6.6) | 1.7 (4.8) | .223",
+            "location": "p. 6, Table 2, panel A, row: Pes"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "The RR, VT, and Pes were unchanged.",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cstat (static effective compliance, baseline)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Initial measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 40,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Cstat — 40 (18)",
+            "location": "p. 6, Table 2, panel A, row: Cstat, Initial measure"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 36,
+          "dispersion_type": "sd",
+          "dispersion": 16,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Cstat — 36 (16)",
+            "location": "p. 6, Table 2, panel B, row: Cstat, Initial measure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Cstat — 40 ± 18 | 36 ± 16 | .54",
+        "location": "p. 5, Table 1, row: Cstat"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cstat (static effective compliance, post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 63,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 23,
+            "dispersion_type": "sd",
+            "dispersion": 19,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.001,
+            "p_value_verbatim": ".001",
+            "test_used": "paired t test",
+            "unit": null,
+            "provenance": {
+              "quote": "Cstat — 40 (18) | 63 (19) | 23 (19) | .001*",
+              "location": "p. 6, Table 2, panel A, row: Cstat"
+            }
+          },
+          "provenance": {
+            "quote": "Cstat — 40 (18) | 63 (19) | 23 (19) | .001*",
+            "location": "p. 6, Table 2, panel A, row: Cstat"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 67,
+          "dispersion_type": "sd",
+          "dispersion": 34,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 31,
+            "dispersion_type": "sd",
+            "dispersion": 27,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.002,
+            "p_value_verbatim": ".002",
+            "test_used": "paired t test",
+            "unit": null,
+            "provenance": {
+              "quote": "Cstat — 36 (16) | 67 (34) | 31 (27) | .002*",
+              "location": "p. 6, Table 2, panel B, row: Cstat"
+            }
+          },
+          "provenance": {
+            "quote": "Cstat — 36 (16) | 67 (34) | 31 (27) | .002*",
+            "location": "p. 6, Table 2, panel B, row: Cstat"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.76,
+          "p_value_verbatim": ".76",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "Cstat — 63 (19) | 67 (34) | .76",
+            "location": "p. 6, Table 3, row: Cstat"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The observed Cstat was noted to increase from 40 ± 18 at baseline to 63 ± 19 (P = .001) postadjustment.",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Pressure support, cmH2O (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 8,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": -5,
+            "dispersion_type": "sd",
+            "dispersion": 4,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.001,
+            "p_value_verbatim": ".001",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "PS, cmH2O — 13 (4) | 8 (3) | −5 (4) | .001*",
+              "location": "p. 6, Table 2, panel A, row: PS"
+            }
+          },
+          "provenance": {
+            "quote": "PS, cmH2O — 13 (4) | 8 (3) | −5 (4) | .001*",
+            "location": "p. 6, Table 2, panel A, row: PS"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 7,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "cmH2O",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": -7,
+            "dispersion_type": "sd",
+            "dispersion": 5,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<.001",
+            "test_used": "paired t test",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "PS, cmH2O — 13 (4) | 7 (4) | −7 (5) | <.001*",
+              "location": "p. 6, Table 2, panel B, row: PS"
+            }
+          },
+          "provenance": {
+            "quote": "PS, cmH2O — 13 (4) | 7 (4) | −7 (5) | <.001*",
+            "location": "p. 6, Table 2, panel B, row: PS"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.23,
+          "p_value_verbatim": ".23",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "PS, cmH2O — 8 (3) | 7 (4) | .23",
+            "location": "p. 6, Table 3, row: PS"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The PS decreased from 13 ± 4 cmH2O to 8 ± 3 cmH2O postadjustment (P = .001)",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "FiO2 (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 0.27,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": -0.09,
+            "dispersion_type": "sd",
+            "dispersion": 0.07,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<.001",
+            "test_used": "paired t test",
+            "unit": null,
+            "provenance": {
+              "quote": "FiO2 — 0.37 (0.07) | 0.27 (0.09) | −0.09 (0.07) | <.001*",
+              "location": "p. 6, Table 2, panel A, row: FiO2"
+            }
+          },
+          "provenance": {
+            "quote": "FiO2 — 0.37 (0.07) | 0.27 (0.09) | −0.09 (0.07) | <.001*",
+            "location": "p. 6, Table 2, panel A, row: FiO2"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 0.25,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": -0.12,
+            "dispersion_type": "sd",
+            "dispersion": 0.13,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.006,
+            "p_value_verbatim": ".006",
+            "test_used": "paired t test",
+            "unit": null,
+            "provenance": {
+              "quote": "FiO2 — 0.38 (0.12) | 0.25 (0.04) | −0.12 (0.13) | .006*",
+              "location": "p. 6, Table 2, panel B, row: FiO2"
+            }
+          },
+          "provenance": {
+            "quote": "FiO2 — 0.38 (0.12) | 0.25 (0.04) | −0.12 (0.13) | .006*",
+            "location": "p. 6, Table 2, panel B, row: FiO2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.49,
+          "p_value_verbatim": ".49",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "FiO2 — 0.27 (0.09) | 0.25 (0.04) | .49",
+            "location": "p. 6, Table 3, row: FiO2"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "the FiO2 decreased from 0.37 at baseline to 0.27 (P < .001) postintervention.",
+        "location": "p. 4, Results, para 3"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT/IBW, cm3/kg (tidal volume per ideal body weight, post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 6.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "cm3/kg",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 0.3,
+            "dispersion_type": "sd",
+            "dispersion": 1.6,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.568,
+            "p_value_verbatim": ".568",
+            "test_used": "paired t test",
+            "unit": "cm3/kg",
+            "provenance": {
+              "quote": "VT/IBW, cm3/kg — 6.5 (1.2) | 6.8 (1.4) | 0.3 (1.6) | .568",
+              "location": "p. 6, Table 2, panel A, row: VT/IBW"
+            }
+          },
+          "provenance": {
+            "quote": "VT/IBW, cm3/kg — 6.5 (1.2) | 6.8 (1.4) | 0.3 (1.6) | .568",
+            "location": "p. 6, Table 2, panel A, row: VT/IBW"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 6.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "cm3/kg",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 0.13,
+            "dispersion_type": "sd",
+            "dispersion": 1.9,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.815,
+            "p_value_verbatim": ".815",
+            "test_used": "paired t test",
+            "unit": "cm3/kg",
+            "provenance": {
+              "quote": "VT/IBW, cm3/kg — 6.4 (1.5) | 6.6 (1.3) | 0.13 (1.9) | .815",
+              "location": "p. 6, Table 2, panel B, row: VT/IBW"
+            }
+          },
+          "provenance": {
+            "quote": "VT/IBW, cm3/kg — 6.4 (1.5) | 6.6 (1.3) | 0.13 (1.9) | .815",
+            "location": "p. 6, Table 2, panel B, row: VT/IBW"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.66,
+          "p_value_verbatim": ".66",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "VT/IBW, cm3/kg — 6.8 (1.4) | 6.6 (1.3) | .66",
+            "location": "p. 6, Table 3, row: VT/IBW"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "VT/IBW, cm3/kg — 6.8 (1.4) | 6.6 (1.3) | .66",
+        "location": "p. 6, Table 3, row: VT/IBW"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "RR, breaths/min (post-adjustment)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "not_reported",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Postadjustment measure"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 22,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 13,
+          "unit": "breaths/min",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 1,
+            "dispersion_type": "sd",
+            "dispersion": 5,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.751,
+            "p_value_verbatim": ".751",
+            "test_used": "paired t test",
+            "unit": "breaths/min",
+            "provenance": {
+              "quote": "RR, breaths/min — 21 (7) | 22 (5) | 1 (5) | .751",
+              "location": "p. 6, Table 2, panel A, row: RR"
+            }
+          },
+          "provenance": {
+            "quote": "RR, breaths/min — 21 (7) | 22 (5) | 1 (5) | .751",
+            "location": "p. 6, Table 2, panel A, row: RR"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 22,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 12,
+          "unit": "breaths/min",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": {
+            "value": 2,
+            "dispersion_type": "sd",
+            "dispersion": 9,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": 0.525,
+            "p_value_verbatim": ".525",
+            "test_used": "paired t test",
+            "unit": "breaths/min",
+            "provenance": {
+              "quote": "RR, breaths/min — 21 (8) | 22 (6) | 2 (9) | .525",
+              "location": "p. 6, Table 2, panel B, row: RR"
+            }
+          },
+          "provenance": {
+            "quote": "RR, breaths/min — 21 (8) | 22 (6) | 2 (9) | .525",
+            "location": "p. 6, Table 2, panel B, row: RR"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.73,
+          "p_value_verbatim": ".73",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Student t test (between groups)",
+          "provenance": {
+            "quote": "RR, breaths/min — 22 (5) | 22 (6) | .73",
+            "location": "p. 6, Table 3, row: RR"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RR, breaths/min — 22 (5) | 22 (6) | .73",
+        "location": "p. 6, Table 3, row: RR"
+      }
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "adverse consequences of the high PEEP levels",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "sequence_position": null,
+        "days": 30,
+        "hours": null,
+        "label_verbatim": "during the study"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "eso_guided",
+          "events": 0,
+          "total": 13,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": true,
+          "derivation": "Paper states 'There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study', covering both groups; recorded as 0 events per arm by construction of the negative statement.",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study.",
+            "location": "p. 5, Results, para 3"
+          }
+        },
+        {
+          "arm_label": "cstat",
+          "events": 0,
+          "total": 12,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": true,
+          "derivation": "Paper states 'There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study', covering both groups; recorded as 0 events per arm by construction of the negative statement.",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study.",
+            "location": "p. 5, Results, para 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "There were no observed adverse consequences of the high PEEP levels (range 13-37 cmH2O) used in our study.",
+        "location": "p. 5, Results, para 3"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": null,
+    "protocol_deviations": {
+      "value": "Two subjects with very early protocol violations from whom no data were collected were excluded from the intention-to-treat population.",
+      "provenance": {
+        "quote": "Two subjects with very early protocol violations from whom no data were collected were also excluded from the intention-to-treat population.",
+        "location": "p. 4, Statistical analysis, para 2"
+      }
+    },
+    "n_crossover_between_arms": {
+      "value": 0,
+      "provenance": null
+    },
+    "n_lost_to_followup": {
+      "value": 0,
+      "provenance": null
+    }
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "non_ards",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_subgroup: enrolment required non-ARDS respiratory failure. obesity_subgroup: enrolment required BMI >= 40. timing_subgroup: intervention began at randomization in already-tracheotomized weaning-phase subjects; no interval from intubation/ICU admission/ARDS onset is reported, so coded unclear per codebook ruling. ptp_target_subgroups: end-expiratory Ptp target 0-5 cmH2O using absolute Pes subtraction. Mortality: no mortality reported in this study, so no entry carries is_longest_reported_mortality."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Not listed in any COHORTS.md cluster. Single centre (Vidant Medical Center / East Carolina University, Greenville, NC), registration NCT02323009, enrolment January 2011 to September 2013, tracheotomized obese weaning population — no other record in the review shares this registration, centre, or population.",
+    "unclear_items": [
+      "eligibility.criteria.icu_setting: study conducted in a 9-bed respiratory intermediate unit (RIU) rather than an ICU proper, though subjects had recent ICU admission; coded yes, routed for adjudication.",
+      "feasibility.n_placement_attempted / n_placement_successful: paper states technical difficulties precluded passing the esophageal balloon or obtaining Cstat measurements in some subjects and 2 subjects were excluded, but does not state how many balloon placements were attempted or failed, nor in which arm(s).",
+      "population.n_analysed: derived as 25 - 2 = 23; the paper does not print the analysed total explicitly, and the arm-level split of the 2 excluded subjects is not given (Tables show N=13 and N=12).",
+      "outcomes: time-to-wean arm-level data appear in Figure 1's embedded table (mean ± SD and median); the medians with ranges in the text and the means in the figure are both recorded, but the figure is the only source for the means.",
+      "feasibility.n_crossover_between_arms and n_lost_to_followup: no values reported; recorded as 0 by inference from a 30-day follow-up with no losses mentioned — flagged for adjudication rather than silently assumed.",
+      "design.countries: inferred from the institutional affiliation (Greenville, NC, USA); the paper does not state the country explicitly."
+    ],
+    "data_only_in_figure": [
+      "time to wean, mean ± SD per arm (Figure 1 embedded table: ESO 6.25 ± 6.1 days; Cstat 15.1 ± 6.9 days)",
+      "Kaplan-Meier time-to-wean curves for the entire cohort (Figure 2)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Population is tracheotomized weaning-phase morbidly obese subjects in a respiratory intermediate unit, not acutely ventilated ICU patients; the balloon remained in place up to 7 days. No mortality, ventilator-free days, or ICU/hospital length-of-stay outcomes are reported. The primary outcome per the statistical analysis section was time to wean. Table 2 also reports End Exp AWP (end-expiratory airway pressure) for the ESO group (13.2 ± 4.7 baseline to 26.8 ± 5.5 post, delta 13.5 ± 6.8, P < .001), which has no dedicated schema field beyond the ventilator_settings entries recorded. The Image 1 caption computes Ptp as 'Paux – Paw' which appears to be a typographical inversion of the methods' Paw − Pes."
+  }
+}

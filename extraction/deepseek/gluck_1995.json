@@ -1,0 +1,677 @@
+{
+  "record_meta": {
+    "study_id": "gluck_1995",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/Medical_effectiveness_of_esophageal_balloon.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Gluck",
+    "year": 1995,
+    "title": "Medical effectiveness of esophageal balloon pressure manometry in weaning patients from mechanical ventilation",
+    "journal": "Critical Care Medicine",
+    "doi": null,
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": false,
+    "primary_exclusion_reason": "balloon_not_used_to_guide_peep",
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Age (yr) 65.2 ± 13.5",
+          "location": "Table 5, row: Age (yr)"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients were included in the study if they received mechanical ventilation for at least 3 days",
+          "location": "Methods, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The medical ICU of Rush-Presbyterian-St. Luke's Medical Center provided all of the patients for this study.",
+          "location": "Methods, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "no",
+        "provenance": {
+          "quote": "The weaning protocol, which used data from an esophageal balloon Table 2, was established based on a review of the literature for each of the individual parameters.",
+          "location": "Methods, para 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "we elected to use the potential shortening of the weaning process as our primary measurement.",
+          "location": "Introduction, para 4"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The series consisted of 23 consecutive patients who were ready to wean from mechanical ventilation.",
+          "location": "Abstract"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Each of the patients served as his or her own control.",
+          "location": "Abstract"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Critical Care Medicine. 23:p 504-509, March 1995.",
+          "location": "Title page"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "Prospective study of patients who were deemed ready to be weaned after having required mechanical ventilation for a minimum of 3 days. Each of the patients served as his or her own control.",
+      "provenance": {
+        "quote": "Prospective study of patients who were deemed ready to be weaned after having required mechanical ventilation for a minimum of 3 days. Each of the patients served as his or her own control.",
+        "location": "Abstract"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "The medical ICU of Rush-Presbyterian-St. Luke's Medical Center provided all of the patients for this study.",
+        "location": "Methods, para 1"
+      }
+    },
+    "countries": [
+      "United States"
+    ],
+    "location_provenance": {
+      "quote": "From the Chicago Medical School and the North Chicago Veterans Administration Medical Center, Chicago, IL (Dr. Gluck); the Rush-Presbyterian-St. Luke's Medical Center, Chicago, IL ...",
+      "location": "Title page, Author Information"
+    },
+    "planned_sample_size": {
+      "value": null,
+      "provenance": null
+    },
+    "sample_size_calculation": {
+      "value": null,
+      "provenance": null
+    },
+    "stopped_early": null,
+    "stopping_rule": {
+      "value": null,
+      "provenance": null
+    },
+    "setting": {
+      "value": "University medical intensive care unit",
+      "provenance": {
+        "quote": "University medical intensive care unit.",
+        "location": "Abstract"
+      }
+    },
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "Bicore Monitoring Systems",
+      "provenance": {
+        "quote": "This study was funded, in part, by Bicore Monitoring Systems.",
+        "location": "Title page, Author Information"
+      }
+    },
+    "industry_funded": true,
+    "conflicts_of_interest_declared": null
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 23,
+      "provenance": {
+        "quote": "The series consisted of 23 consecutive patients who were ready to wean from mechanical ventilation.",
+        "location": "Abstract"
+      }
+    },
+    "n_analysed": {
+      "value": 23,
+      "provenance": {
+        "quote": "Twenty-three patients were entered into the study and are described in Table 5.",
+        "location": "Results, para 1"
+      }
+    },
+    "population_description": {
+      "value": "Patients who received mechanical ventilation for at least 3 days and were able to tolerate intermittent mandatory ventilation with or without pressure support as their primary mode of ventilation.",
+      "provenance": {
+        "quote": "Patients were included in the study if they received mechanical ventilation for at least 3 days and were able to tolerate intermittent mandatory ventilation with or without pressure support as their primary mode of ventilation.",
+        "location": "Methods, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients were included in the study if they received mechanical ventilation for at least 3 days and were able to tolerate intermittent mandatory ventilation with or without pressure support as their primary mode of ventilation.",
+      "provenance": {
+        "quote": "Patients were included in the study if they received mechanical ventilation for at least 3 days and were able to tolerate intermittent mandatory ventilation with or without pressure support as their primary mode of ventilation.",
+        "location": "Methods, para 1"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Patients were excluded from the study for the following reasons: a) an existing contraindication for placing an esophageal balloon; b) the patient required continuous paralysis or heavy sedation; c) the patient was comatose or had a progressive neurologic injury; d) the patient had a chest tube in place that might interfere with some of the necessary measurements; and e) the patient was receiving peritoneal dialysis or had acquired immunodeficiency syndrome.",
+      "provenance": {
+        "quote": "Patients were excluded from the study for the following reasons: a) an existing contraindication for placing an esophageal balloon; b) the patient required continuous paralysis or heavy sedation; c) the patient was comatose or had a progressive neurologic injury; d) the patient had a chest tube in place that might interfere with some of the necessary measurements; and e) the patient was receiving peritoneal dialysis or had acquired immunodeficiency syndrome.",
+        "location": "Methods, para 1"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 65.2,
+      "dispersion_type": "se",
+      "dispersion": 13.5,
+      "unit": "yr",
+      "provenance": {
+        "quote": "Age (yr) 65.2 ± 13.5",
+        "location": "Table 5, row: Age (yr)"
+      }
+    },
+    "sex_female": {
+      "n": 10,
+      "total": 23,
+      "provenance": {
+        "quote": "Number of patients 23 (13 male, ten female)",
+        "location": "Table 5, row: Number of patients"
+      }
+    },
+    "sex_male": {
+      "n": 13,
+      "total": 23,
+      "provenance": {
+        "quote": "Number of patients 23 (13 male, ten female)",
+        "location": "Table 5, row: Number of patients"
+      }
+    },
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "mixed_some_ards",
+    "ards_definition_used": {
+      "value": null,
+      "provenance": null
+    },
+    "n_ards": {
+      "n": 3,
+      "total": 23,
+      "provenance": {
+        "quote": "Primary diagnosis or cause of respiratory failure: 12 COPD; two asthma; three ARDS; two pneumonia; two sepsis; two neurologic disorders",
+        "location": "Table 5, row: Primary diagnosis or cause of respiratory failure"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "none",
+    "cause_of_respiratory_failure": {
+      "value": "12 COPD; two asthma; three ARDS; two pneumonia; two sepsis; two neurologic disorders",
+      "provenance": {
+        "quote": "Primary diagnosis or cause of respiratory failure: 12 COPD; two asthma; three ARDS; two pneumonia; two sepsis; two neurologic disorders",
+        "location": "Table 5, row: Primary diagnosis or cause of respiratory failure"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Duration of MV before study entry (days)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "mean",
+          "value": 4.8,
+          "dispersion_type": "se",
+          "dispersion": 1.2,
+          "unit": "days",
+          "provenance": {
+            "quote": "Duration of MV before study entry (days) 4.8 ± 1.2",
+            "location": "Table 5, row: Duration of MV before study entry (days)"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "CP 100, Bicore, Irvine, CA",
+      "provenance": {
+        "quote": "Airway occlusion pressure at 100 msecs after the onset of inspiration, work of breathing, and frequency/tidal volume were measured using a ventilatory monitor (CP 100, Bicore, Irvine, CA).",
+        "location": "Methods, para 2"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": null
+    },
+    "balloon_calibration": {
+      "method": "signal_quality_verification_only",
+      "method_verbatim": {
+        "value": "an esophageal balloon was placed and its position verified in the usual manner",
+        "provenance": {
+          "quote": "Once a patient met the above requirements, an esophageal balloon was placed and its position verified in the usual manner.",
+          "location": "Methods, para 2"
+        }
+      },
+      "position_verification": {
+        "value": "usual manner",
+        "provenance": {
+          "quote": "an esophageal balloon was placed and its position verified in the usual manner",
+          "location": "Methods, para 2"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "not_reported",
+      "strategy_verbatim": null,
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": null,
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": true,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Once a patient met the above requirements, an esophageal balloon was placed.",
+        "provenance": {
+          "quote": "Once a patient met the above requirements, an esophageal balloon was placed.",
+          "location": "Methods, para 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "From the day that the patient entered into the study until extubation",
+      "provenance": {
+        "quote": "The total time of the weaning was determined from the day that the patient entered into the study.",
+        "location": "Methods, para 4"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "clinician_discretion_usual_care"
+    ],
+    "comparator_verbatim": {
+      "value": "The clinical weaning protocol allowed the clinician the latitude of either increasing or decreasing the number of weaning steps allowed by one step, based on his or her clinical experience (``the twinkle in the patient's eye'').",
+      "provenance": {
+        "quote": "The clinical weaning protocol allowed the clinician the latitude of either increasing or decreasing the number of weaning steps allowed by one step, based on his or her clinical experience (``the twinkle in the patient's eye'').",
+        "location": "Methods, para 3"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "esophageal_weaning",
+      "label_verbatim": "Esophageal weaning protocol",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 23,
+        "provenance": {
+          "quote": "The series consisted of 23 consecutive patients who were ready to wean from mechanical ventilation.",
+          "location": "Abstract"
+        }
+      },
+      "n_analysed": {
+        "value": 23,
+        "provenance": {
+          "quote": "Twenty-three patients were entered into the study and are described in Table 5.",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "clinical_weaning",
+      "label_verbatim": "Clinical weaning protocol",
+      "role": "reference_condition",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 23,
+        "provenance": {
+          "quote": "The series consisted of 23 consecutive patients who were ready to wean from mechanical ventilation.",
+          "location": "Abstract"
+        }
+      },
+      "n_analysed": {
+        "value": 23,
+        "provenance": {
+          "quote": "Twenty-three patients were entered into the study and are described in Table 5.",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "Duration of mechanical ventilation after study entry",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "esophageal_weaning",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 5.33,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "The mean duration of mechanical ventilation after study entry was 5.33 +/- 2.5 days.",
+            "location": "Results, para 2"
+          }
+        },
+        {
+          "arm_label": "clinical_weaning",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 7.02,
+          "dispersion_type": "sd",
+          "dispersion": 2.66,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "If the clinician had noted the ``twinkle in the patient's eye'' on all occasions, the duration on mechanical ventilation would have been 7.02 +/- 2.66 days after entry into the study.",
+            "location": "Results, para 2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "clinical_weaning minus esophageal_weaning",
+          "arm_label_a": "clinical_weaning",
+          "arm_label_b": "esophageal_weaning",
+          "mean_difference": 1.68,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 23,
+          "p_value": null,
+          "p_value_verbatim": "<0.05",
+          "test_used": "Student's paired t-test",
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "Comparing this latter result to the actual duration of mechanical ventilation using the Student's paired t-test shows that the esophageal weaning protocol shortened ventilatory stay by 1.68 days when compared with the clinical weaning protocol (p < .05).",
+            "location": "Results, para 2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "Calculated duration of mechanical ventilation if weaned solely by clinical evaluation",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": null
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "clinical_weaning",
+          "events": null,
+          "total": null,
+          "value_type": "mean",
+          "value": 7.81,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 23,
+          "unit": "days",
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Had the patient been weaned solely by the clinical evaluation, the duration of mechanical ventilation would have been 7.81 +/- 2.8 days.",
+            "location": "Results, para 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Comparison of esophageal and clinical weaning protocols",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Overall weaning period"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "Esophageal weaning protocol more aggressive than clinical weaning protocol (40.5% vs 11.6% of 138 decisions)",
+          "arm_label_a": "esophageal_weaning",
+          "arm_label_b": "clinical_weaning",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "se_of_difference": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n_pairs": 138,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "test_used": "McNemar's statistic",
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "McNemar's statistic for comparing dichotomous outcomes demonstrated that the esophageal weaning protocol was more aggressive than the clinical weaning protocol (p < .001)",
+            "location": "Results, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Weaning decisions not tolerated",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "sequence_position": null,
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Overall weaning period"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "clinical_weaning",
+          "events": 5,
+          "total": 138,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "In five instances in the clinical protocol and in six instances in the esophageal protocol, the patient did not tolerate the predicted number of weaning steps.",
+            "location": "Results, para 1"
+          }
+        },
+        {
+          "arm_label": "esophageal_weaning",
+          "events": 6,
+          "total": 138,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "derived": false,
+          "derivation": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "In five instances in the clinical protocol and in six instances in the esophageal protocol, the patient did not tolerate the predicted number of weaning steps.",
+            "location": "Results, para 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 23,
+      "provenance": {
+        "quote": "Twenty-three patients were entered into the study",
+        "location": "Results, para 1"
+      }
+    },
+    "n_placement_successful": {
+      "value": 23,
+      "provenance": {
+        "quote": "Once a patient met the above requirements, an esophageal balloon was placed and its position verified in the usual manner.",
+        "location": "Methods, para 2"
+      }
+    },
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "mixed",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "unclear"
+    ],
+    "classification_notes": "Study used esophageal balloon to guide weaning, not PEEP titration; no transpulmonary pressure target. Timing from intubation not reported; patients had been ventilated for at least 3 days before study entry."
+  },
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap suspected; unique cohort.",
+    "unclear_items": [
+      "adults_18_plus: No explicit age criterion stated; assumed adult ICU.",
+      "balloon_calibration.method: Position verified 'in the usual manner' but no specific calibration method reported.",
+      "timing_subgroup: Reference event unclear; patients had MV for at least 3 days before study entry but exact time from intubation not reported.",
+      "Outcome data: Clinical weaning duration of 7.81 days (without acceleration) and 7.02 days (with acceleration) both reported; used 7.02 for paired comparison and 7.81 as separate calculated outcome."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Study excluded from review because esophageal balloon data guided weaning, not PEEP titration."
+  }
+}

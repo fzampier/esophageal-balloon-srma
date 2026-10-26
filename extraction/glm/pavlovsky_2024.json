@@ -1,0 +1,1841 @@
+{
+  "record_meta": {
+    "study_id": "pavlovsky_2024",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/1-s2.0-S2110582025001499-main.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Pavlovsky",
+    "year": 2024,
+    "title": "Bedside personalized methods based on electrical impedance tomography or respiratory mechanics to set PEEP in ARDS and recruitment-to-inflation ratio: a physiologic study",
+    "journal": "Annals of Intensive Care",
+    "doi": "10.1186/s13613-023-01228-4",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "ventilated in volume assist control mode using a Caresscape R860 ventilator",
+          "location": "Methods, Patients' installation and settings"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "admitted to the Medical ICU of the University Hospital of Angers, France",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Based on this single trial, optimal PEEP levels for each PEEP strategy were defined as the one associated with: (1) Pplat between 28 and 30 cmH2O (Express) [6], (2) PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]†",
+          "location": "p. 7, Table 2, row: CRS"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Nineteen patients with ARDS were enrolled.",
+          "location": "Abstract, Methods"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In this exploratory, physiological study, we aimed to compare the PEEP levels determined by two EIT-based PEEP titration strategies and two respiratory mechanics-based methods",
+          "location": "Introduction, last para"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Pavlovsky et al. Annals of Intensive Care (2024) 14:1",
+          "location": "Header, p. 1"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "In this exploratory, physiological study, we aimed to compare the PEEP levels determined by two EIT-based PEEP titration strategies and two respiratory mechanics-based methods",
+      "provenance": {
+        "quote": "In this exploratory, physiological study, we aimed to compare the PEEP levels determined by two EIT-based PEEP titration strategies and two respiratory mechanics-based methods and to assess the relation between these determined PEEP levels and the recruitability",
+        "location": "Introduction, last para"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "admitted to the Medical ICU of the University Hospital of Angers, France",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "countries": [
+      "France"
+    ],
+    "location_provenance": {
+      "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled",
+      "location": "Methods, Study population, para 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Medical ICU",
+      "provenance": {
+        "quote": "admitted to the Medical ICU of the University Hospital of Angers, France",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "enrolment_start": "2019-12",
+    "enrolment_end": "2020-04",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "No dedicated funding was allocated to this work.",
+      "provenance": {
+        "quote": "No dedicated funding was allocated to this work.",
+        "location": "Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 19,
+      "provenance": {
+        "quote": "Nineteen patients with ARDS were enrolled.",
+        "location": "Abstract, Methods"
+      }
+    },
+    "n_analysed": {
+      "value": 19,
+      "provenance": {
+        "quote": "Baseline characteristics at inclusion of the 19 patients are summarized in the Table 1.",
+        "location": "Results, Patients' characteristics"
+      }
+    },
+    "population_description": {
+      "value": "Nineteen adult patients with moderate to severe ARDS admitted to the Medical ICU of the University Hospital of Angers",
+      "provenance": {
+        "quote": "Nineteen adult patients, admitted to the Medical ICU of the University Hospital of Angers, France, from December 2019 to April 2020 were enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "ARDS defined according to the Berlin criteria, enrolled within 24 h after diagnosis",
+      "provenance": {
+        "quote": "enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "exclusion_criteria": null,
+    "age": {
+      "value_type": "median",
+      "value": 64,
+      "dispersion_type": "iqr",
+      "dispersion_low": 54,
+      "dispersion_high": 67,
+      "n": 19,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age, years 64 [54–67]",
+        "location": "p. 4, Table 1, row: Age, years"
+      }
+    },
+    "sex_female": {
+      "n": 4,
+      "total": 19,
+      "percent_as_reported": 21,
+      "provenance": {
+        "quote": "Female gender (%) 4 (21)",
+        "location": "p. 4, Table 1, row: Female gender (%)"
+      }
+    },
+    "sex_male": null,
+    "bmi": {
+      "value_type": "median",
+      "value": 30.4,
+      "dispersion_type": "iqr",
+      "dispersion_low": 24.8,
+      "dispersion_high": 33.6,
+      "n": 19,
+      "unit": "kg.m−2",
+      "provenance": {
+        "quote": "BMI, kg.m−2 30.4 [24.8–33.6]",
+        "location": "p. 4, Table 1, row: BMI, kg.m−2"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin criteria",
+      "provenance": {
+        "quote": "the diagnosis of ARDS defined according to the Berlin criteria",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "n_ards": {
+      "n": 19,
+      "total": 19,
+      "provenance": {
+        "quote": "Nineteen patients with ARDS were enrolled.",
+        "location": "Abstract, Methods"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": 3,
+        "total": 19,
+        "percent_as_reported": 16,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients' characteristics"
+        }
+      },
+      "moderate": {
+        "n": 10,
+        "total": 19,
+        "percent_as_reported": 53,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients' characteristics"
+        }
+      },
+      "severe": {
+        "n": 6,
+        "total": 19,
+        "percent_as_reported": 32,
+        "provenance": {
+          "quote": "severe, moderate, and mild ARDS were present at enrollment in 6 (32%), 10 (53%) and 3 (16%) patients, respectively.",
+          "location": "Results, Patients' characteristics"
+        }
+      }
+    },
+    "covid19_population": "some",
+    "cause_of_respiratory_failure": {
+      "value": "Pulmonary 15 (79), Extra-pulmonary 4 (21); more than half of the patients had COVID-19 associated ARDS (10 patients)",
+      "provenance": {
+        "quote": "ARDS etiology (%) Pulmonary 15 (79) Extra-pulmonary 4 (21)",
+        "location": "p. 4, Table 1, rows: ARDS etiology"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 120,
+      "dispersion_type": "iqr",
+      "dispersion_low": 94,
+      "dispersion_high": 168,
+      "n": 19,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+        "location": "p. 4, Table 1, row: PaO2/FiO2, mmHg (at PEEP 5 cmH2O)"
+      }
+    },
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": {
+      "value_type": "median",
+      "value": 45,
+      "dispersion_type": "iqr",
+      "dispersion_low": 38,
+      "dispersion_high": 51,
+      "n": 19,
+      "provenance": {
+        "quote": "SAPS II score at ICU admission 45 [38–51]",
+        "location": "p. 4, Table 1, row: SAPS II score at ICU admission"
+      }
+    },
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": {
+      "n": 19,
+      "total": 19,
+      "provenance": {
+        "quote": "Patients were deeply sedated by Midazolam and Fentanyl and paralyzed by continuous infusion of Cisatracurium.",
+        "location": "Methods, Patients' installation and settings"
+      }
+    },
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "PaCO2, mmHg",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 47,
+          "dispersion_type": "iqr",
+          "dispersion_low": 39,
+          "dispersion_high": 52,
+          "n": 19,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg 47 [39–52]",
+            "location": "p. 4, Table 1, row: PaCO2, mmHg"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 7.33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.29,
+          "dispersion_high": 7.39,
+          "n": 19,
+          "provenance": {
+            "quote": "pH 7.33 [7.29–7.39]",
+            "location": "p. 4, Table 1, row: pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Ventilatory Ratio",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 1.97,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.64,
+          "dispersion_high": 2.45,
+          "n": 19,
+          "provenance": {
+            "quote": "Ventilatory Ratio 1.97 [1.64–2.45]",
+            "location": "p. 4, Table 1, row: Ventilatory Ratio"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Tidal volume/PBW, mL.kg−1",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 6.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 6.2,
+          "n": 19,
+          "unit": "mL.kg−1",
+          "provenance": {
+            "quote": "Tidal volume/PBW, mL.kg−1 6.1 [6.0–6.2]",
+            "location": "p. 4, Table 1, row: Tidal volume/PBW, mL.kg−1"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Respiratory rate, min−1",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 29,
+          "n": 19,
+          "unit": "min−1",
+          "provenance": {
+            "quote": "Respiratory rate, min−1 30 [24–29]",
+            "location": "p. 4, Table 1, row: Respiratory rate, min−1"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PEEPtot, cmH2O",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 7.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.5,
+          "dispersion_high": 8.0,
+          "n": 19,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 7.0 [5.5–8.0]",
+            "location": "p. 4, Table 1, row: PEEPtot, cmH2O"
+          }
+        }
+      },
+      {
+        "name_verbatim": "AOP > 5 cmH2O (%)",
+        "arm_label": null,
+        "count": {
+          "n": 4,
+          "total": 19,
+          "percent_as_reported": 21,
+          "provenance": {
+            "quote": "AOP > 5 cmH2O (%) 4 (21)",
+            "location": "p. 4, Table 1, row: AOP > 5 cmH2O (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "CCW, mL.cmH2O−1",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 158,
+          "dispersion_type": "iqr",
+          "dispersion_low": 131,
+          "dispersion_high": 219,
+          "n": 19,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CCW, mL.cmH2O−1 158 [131–219]",
+            "location": "p. 4, Table 1, row: CCW, mL.cmH2O−1"
+          }
+        }
+      },
+      {
+        "name_verbatim": "EL/ERS ratio",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 0.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.61,
+          "dispersion_high": 0.79,
+          "n": 19,
+          "provenance": {
+            "quote": "EL/ERS ratio 0.70 [0.61–0.79]",
+            "location": "p. 4, Table 1, row: EL/ERS ratio"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Median R/Iest",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 0.67,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.48,
+          "dispersion_high": 1.18,
+          "n": 19,
+          "provenance": {
+            "quote": "Median R/Iest was 0.67 [0.48–1.18].",
+            "location": "Results, Optimal PEEP levels and recruitability"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Median VREC/kg PBW",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 4.9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.9,
+          "dispersion_high": 7.9,
+          "n": 19,
+          "unit": "mL.kg−1 PBW",
+          "provenance": {
+            "quote": "Median VREC/kg PBW was 4.9 [2.9–7.9] mL.kg−1 PBW.",
+            "location": "Results, Optimal PEEP levels and recruitability"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "NutriVent®, Sidam, San Giacomo Roncole, Italy",
+      "provenance": {
+        "quote": "Esophageal pressure measurements were obtained with a specific nasogastric feeding tube equipped with an esophageal balloon (NutriVent®, Sidam, San Giacomo Roncole, Italy)",
+        "location": "Methods, Patients' installation and settings"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "expiratory transpulmonary pressure (PLe, difference between total PEEP and expiratory esophageal pressure)",
+        "provenance": {
+          "quote": "Pplat and expiratory transpulmonary pressure (PLe, difference between total PEEP and expiratory esophageal pressure) across the different PEEP levels were computed offline",
+          "location": "Methods, Decremental PEEP trial, para 1"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "PLe between 0 and 2 cmH2O (Positive PLe)",
+        "provenance": {
+          "quote": "optimal PEEP levels for each PEEP strategy were defined as the one associated with: ... (2) PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "(2) PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "(2) PLe between 0 and 2 cmH2O (Positive PLe) [16]",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": {
+        "value": 20,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP level was increased at 20 cmH2O then was progressively decreased by steps of 3 cmH2O every 3 min, until PEEP reached 5 cmH2O.",
+          "location": "Methods, Decremental PEEP trial, para 1"
+        }
+      },
+      "titration_frequency": {
+        "value": "once, during a single decremental PEEP trial",
+        "provenance": {
+          "quote": "Based on this single trial, optimal PEEP levels for each PEEP strategy were defined",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": false,
+      "recruitment_manoeuvre_detail": {
+        "value": "no recruitment maneuver with PEEP higher than 20 cmH2O was performed prior to the PEEP trial",
+        "provenance": {
+          "quote": "In particular, no recruitment maneuver with PEEP higher than 20 cmH2O was performed prior to the PEEP trial.",
+          "location": "Discussion, Study limitations"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 mL.kg−1 predicted body weight (PBW)",
+        "provenance": {
+          "quote": "tidal volume 6 mL.kg−1 predicted body weight (PBW)",
+          "location": "Methods, Patients' installation and settings"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "respiratory rate set by the attending physician adjusted to maintain arterial pH above 7.30 (up to 35 min−1), FiO2 to obtain SpO2 > 94%",
+        "provenance": {
+          "quote": "respiratory rate set by the attending physician adjusted to maintain arterial pH above 7.30 (up to 35 min−1), FiO2 to obtain SpO2 > 94%",
+          "location": "Methods, Patients' installation and settings"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "ards_onset",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "enrolled within 24 h after the diagnosis of ARDS",
+        "provenance": {
+          "quote": "enrolled within 24 h after the diagnosis of ARDS defined according to the Berlin criteria",
+          "location": "Methods, Study population, para 1"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "single decremental PEEP trial session (PEEP decreased by steps of 3 cmH2O every 3 min from 20 to 5 cmH2O)",
+      "provenance": {
+        "quote": "PEEP level was increased at 20 cmH2O then was progressively decreased by steps of 3 cmH2O every 3 min, until PEEP reached 5 cmH2O.",
+        "location": "Methods, Decremental PEEP trial, para 1"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "decremental_peep_trial",
+      "fixed_peep"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEP level of 15, then 5 cmH2O was applied for 20 min; then a decremental PEEP trial from PEEP 20 to 5 cmH2O",
+      "provenance": {
+        "quote": "PEEP level of 15, then 5 cmH2O was applied for 20 min. ... Then, a decremental PEEP trial from PEEP 20 to 5 cmH2O was performed.",
+        "location": "Abstract, Methods; Methods, Study protocol"
+      }
+    },
+    "crossover_order": {
+      "value": "Fixed sequence: PEEP 15 then 5 cmH2O (20 min each), then decremental PEEP trial from 20 to 5 cmH2O; the four PEEP strategies were computed from this single trial, not applied sequentially. Not randomised.",
+      "provenance": {
+        "quote": "PEEP level of 15, then 5 cmH2O was applied for 20 min. ... PEEP level was increased at 20 cmH2O then was progressively decreased by steps of 3 cmH2O every 3 min, until PEEP reached 5 cmH2O. ... Based on this single trial, optimal PEEP levels for each PEEP strategy were defined",
+        "location": "Methods, Study protocol and Decremental PEEP trial"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "20 min at each PEEP level (15 and 5 cmH2O); 3 min at each step of the decremental PEEP trial",
+      "provenance": {
+        "quote": "PEEP level of 15, then 5 cmH2O was applied for 20 min. ... decreased by steps of 3 cmH2O every 3 min",
+        "location": "Methods, Study protocol; Decremental PEEP trial"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "express",
+      "label_verbatim": "Express",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "In the whole cohort, the four PEEP titration strategies led to different PEEP levels (Fig. 2).",
+          "location": "Results, PEEP levels determined according to the different titration strategies"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 17,
+        "dispersion_type": "iqr",
+        "dispersion_low": 14,
+        "dispersion_high": 17,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+          "location": "Abstract, Results"
+        }
+      }
+    },
+    {
+      "label": "positive_ple",
+      "label_verbatim": "Positive PLe",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 18,
+        "derived": true,
+        "derivation": "19 enrolled minus 1 patient whose esophageal pressure data were missing due to a technical limitation; the Positive PLe strategy requires esophageal pressure.",
+        "provenance": {
+          "quote": "Esophageal pressure data were missing for one patient, due to a technical limitation.",
+          "location": "Results, Patients' characteristics"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 8,
+        "dispersion_type": "iqr",
+        "dispersion_low": 5,
+        "dispersion_high": 11,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+          "location": "Abstract, Results"
+        }
+      }
+    },
+    {
+      "label": "cov",
+      "label_verbatim": "CoV",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "In the whole cohort, the four PEEP titration strategies led to different PEEP levels (Fig. 2).",
+          "location": "Results, PEEP levels determined according to the different titration strategies"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 20,
+        "dispersion_type": "iqr",
+        "dispersion_low": 17,
+        "dispersion_high": 20,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+          "location": "Abstract, Results"
+        }
+      }
+    },
+    {
+      "label": "crossing_point",
+      "label_verbatim": "Crossing Point",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 19,
+        "provenance": {
+          "quote": "In the whole cohort, the four PEEP titration strategies led to different PEEP levels (Fig. 2).",
+          "location": "Results, PEEP levels determined according to the different titration strategies"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 10,
+        "dispersion_type": "iqr",
+        "dispersion_low": 8,
+        "dispersion_high": 11,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+          "location": "Abstract, Results"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Optimal PEEP levels determined by the different titration strategies",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "optimal PEEP level computed for each strategy from the decremental PEEP trial"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "PEEP levels computed offline from a single decremental PEEP trial (20 to 5 cmH2O, steps of 3 cmH2O every 3 min) in deeply sedated, paralysed patients",
+        "provenance": {
+          "quote": "Based on this single trial, optimal PEEP levels for each PEEP strategy were defined as the one associated with: (1) Pplat between 28 and 30 cmH2O (Express) [6], (2) PLe between 0 and 2 cmH2O (Positive PLe) [16], (3) CoV closest to 50% (CoV) [12] and (4) intersection of LC and OD curves in a visual representation (Crossing Point)",
+          "location": "Methods, Decremental PEEP trial, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+            "location": "Abstract, Results"
+          }
+        },
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+            "location": "Abstract, Results"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 11,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+            "location": "Abstract, Results"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 11,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+            "location": "Abstract, Results"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: express, cov, positive_ple, crossing_point",
+          "p_value_verbatim": "< 0.001",
+          "test_used": "Friedman test or ANOVA as appropriate (multiple comparisons, Bonferroni's or Tukey's correction)",
+          "provenance": {
+            "quote": "Express and CoV strategies led to higher PEEP levels than the Positive PLe and Crossing Point ones (17 [14–17], 20 [17–20], 8 [5–11], 10 [8–11] respectively, p < 0.001)",
+            "location": "Abstract, Results; Fig. 2 legend: Overall p<0.001"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "In the whole cohort, the four PEEP titration strategies led to different PEEP levels (Fig. 2).",
+        "location": "Results, PEEP levels determined according to the different titration strategies"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2, mmHg",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Mechanics and gas exchange at PEEP 5 cmH2O"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "at PEEP 5 cmH2O, after 20 min at each PEEP level, paralysed",
+        "provenance": {
+          "quote": "Mechanics and gas exchange at PEEP 5 cmH2O ... PEEP level of 15, then 5 cmH2O was applied for 20 min. At the end of each period, inspiratory and expiratory pauses were performed, and arterial blood gases were obtained.",
+          "location": "p. 4, Table 1 section heading; Methods, Study protocol"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 120,
+          "dispersion_type": "iqr",
+          "dispersion_low": 94,
+          "dispersion_high": 168,
+          "n": 19,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+            "location": "p. 4, Table 1, row: PaO2/FiO2, mmHg"
+          }
+        },
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 120,
+          "dispersion_type": "iqr",
+          "dispersion_low": 94,
+          "dispersion_high": 168,
+          "n": 19,
+          "unit": "mmHg",
+          "derived": true,
+          "derivation": "Baseline values reported for the whole cohort (n=19) only; recorded under each condition label for schema consistency. Same single-cohort value.",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+            "location": "p. 4, Table 1, row: PaO2/FiO2, mmHg"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 120,
+          "dispersion_type": "iqr",
+          "dispersion_low": 94,
+          "dispersion_high": 168,
+          "n": 19,
+          "unit": "mmHg",
+          "derived": true,
+          "derivation": "Baseline values reported for the whole cohort (n=19) only; recorded under each condition label for schema consistency. Same single-cohort value.",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+            "location": "p. 4, Table 1, row: PaO2/FiO2, mmHg"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 120,
+          "dispersion_type": "iqr",
+          "dispersion_low": 94,
+          "dispersion_high": 168,
+          "n": 19,
+          "unit": "mmHg",
+          "derived": true,
+          "derivation": "Baseline values reported for the whole cohort (n=19) only; recorded under each condition label for schema consistency. Same single-cohort value.",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg 120 [94–168]",
+            "location": "p. 4, Table 1, row: PaO2/FiO2, mmHg"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS, mL.cmH2O−1",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Mechanics and gas exchange at PEEP 5 cmH2O"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "at PEEP 5 cmH2O, paralysed",
+        "provenance": {
+          "quote": "Mechanics and gas exchange at PEEP 5 cmH2O",
+          "location": "p. 4, Table 1 section heading"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "n": 19,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "p. 4, Table 1, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "n": 19,
+          "unit": "mL.cmH2O−1",
+          "derived": true,
+          "derivation": "Whole-cohort baseline value recorded under each condition label for schema consistency.",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "p. 4, Table 1, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "n": 19,
+          "unit": "mL.cmH2O−1",
+          "derived": true,
+          "derivation": "Whole-cohort baseline value recorded under each condition label for schema consistency.",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "p. 4, Table 1, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 50,
+          "dispersion_type": "iqr",
+          "dispersion_low": 40,
+          "dispersion_high": 63,
+          "n": 19,
+          "unit": "mL.cmH2O−1",
+          "derived": true,
+          "derivation": "Whole-cohort baseline value recorded under each condition label for schema consistency.",
+          "provenance": {
+            "quote": "CRS, mL.cmH2O−1 50 [40–63]",
+            "location": "p. 4, Table 1, row: CRS, mL.cmH2O−1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PEEPtot, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "Respiratory mechanics and Electrical Impedance Tomography based measurements at the optimal Positive End-Expiratory Pressure (PEEP) levels computed for each tested PEEP titration strategy",
+          "location": "p. 7, Table 2 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 19,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 20 [19–20]* 11 [10–12]† 18 [16–19]* 7 [10–14]† < .001",
+            "location": "p. 7, Table 2, row: PEEPtot, cmH2O"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 12,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 20 [19–20]* 11 [10–12]† 18 [16–19]* 7 [10–14]† < .001",
+            "location": "p. 7, Table 2, row: PEEPtot, cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 19,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 20 [19–20]* 11 [10–12]† 18 [16–19]* 7 [10–14]† < .001",
+            "location": "p. 7, Table 2, row: PEEPtot, cmH2O"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 20 [19–20]* 11 [10–12]† 18 [16–19]* 7 [10–14]† < .001",
+            "location": "p. 7, Table 2, row: PEEPtot, cmH2O"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O 20 [19–20]* 11 [10–12]† 18 [16–19]* 7 [10–14]† < .001",
+            "location": "p. 7, Table 2, row: PEEPtot, cmH2O, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "Respiratory mechanics and Electrical Impedance Tomography based measurements at the optimal Positive End-Expiratory Pressure (PEEP) levels computed for each tested PEEP titration strategy",
+          "location": "p. 7, Table 2 title"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 31,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27,
+          "dispersion_high": 34,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O 31 [27–34]* 19 [17–20]† 27 [27–28]* 18 [14–21]† < .001",
+            "location": "p. 7, Table 2, row: Pplat, cmH2O"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 19,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O 31 [27–34]* 19 [17–20]† 27 [27–28]* 18 [14–21]† < .001",
+            "location": "p. 7, Table 2, row: Pplat, cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27,
+          "dispersion_high": 28,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O 31 [27–34]* 19 [17–20]† 27 [27–28]* 18 [14–21]† < .001",
+            "location": "p. 7, Table 2, row: Pplat, cmH2O"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 21,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O 31 [27–34]* 19 [17–20]† 27 [27–28]* 18 [14–21]† < .001",
+            "location": "p. 7, Table 2, row: Pplat, cmH2O"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Pplat, cmH2O 31 [27–34]* 19 [17–20]† 27 [27–28]* 18 [14–21]† < .001",
+            "location": "p. 7, Table 2, row: Pplat, cmH2O, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PLe, cmH2O",
+      "definition_verbatim": "expiratory transpulmonary pressure (PLe, difference between total PEEP and expiratory esophageal pressure)",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "tele-expiratory transpulmonary pressure at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "PLe expiratory transpulmonary pressure",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O 7 [3–10]* 2 [0–3]† 6 [3–7]* 2 [1–2]† < .001",
+            "location": "p. 7, Table 2, row: PLe, cmH2O"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O 7 [3–10]* 2 [0–3]† 6 [3–7]* 2 [1–2]† < .001",
+            "location": "p. 7, Table 2, row: PLe, cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O 7 [3–10]* 2 [0–3]† 6 [3–7]* 2 [1–2]† < .001",
+            "location": "p. 7, Table 2, row: PLe, cmH2O"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1,
+          "dispersion_high": 2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLe, cmH2O 7 [3–10]* 2 [0–3]† 6 [3–7]* 2 [1–2]† < .001",
+            "location": "p. 7, Table 2, row: PLe, cmH2O"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PLe, cmH2O 7 [3–10]* 2 [0–3]† 6 [3–7]* 2 [1–2]† < .001",
+            "location": "p. 7, Table 2, row: PLe, cmH2O, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "PLi, cmH2O",
+      "definition_verbatim": "PLi inspiratory transpulmonary pressure",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "end-inspiratory transpulmonary pressure at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "PLi inspiratory transpulmonary pressure",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 22,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O 13 [10–22]* 7 [3–10]† 12 [10–15]* 7 [5–10]† < .001",
+            "location": "p. 7, Table 2, row: PLi, cmH2O"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O 13 [10–22]* 7 [3–10]† 12 [10–15]* 7 [5–10]† < .001",
+            "location": "p. 7, Table 2, row: PLi, cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 15,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O 13 [10–22]* 7 [3–10]† 12 [10–15]* 7 [5–10]† < .001",
+            "location": "p. 7, Table 2, row: PLi, cmH2O"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PLi, cmH2O 13 [10–22]* 7 [3–10]† 12 [10–15]* 7 [5–10]† < .001",
+            "location": "p. 7, Table 2, row: PLi, cmH2O"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "PLi, cmH2O 13 [10–22]* 7 [3–10]† 12 [10–15]* 7 [5–10]† < .001",
+            "location": "p. 7, Table 2, row: PLi, cmH2O, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS, mL.cmH2O−1 (at optimal PEEP)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "respiratory system compliance at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "CRS respiratory system compliance",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 41,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28,
+          "dispersion_high": 50,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]† < .001",
+            "location": "p. 7, Table 2, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 54,
+          "dispersion_type": "iqr",
+          "dispersion_low": 43,
+          "dispersion_high": 67,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]† < .001",
+            "location": "p. 7, Table 2, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 45,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42,
+          "dispersion_high": 56,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]† < .001",
+            "location": "p. 7, Table 2, row: CRS, mL.cmH2O−1"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 59,
+          "dispersion_type": "iqr",
+          "dispersion_low": 41,
+          "dispersion_high": 71,
+          "unit": "mL.cmH2O−1",
+          "provenance": {
+            "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]† < .001",
+            "location": "p. 7, Table 2, row: CRS, mL.cmH2O−1"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "CRS, mL. cmH2O−1 41 [28–50]* 54 [43–67]† 45 [42–56]* 59 [41–71]† < .001",
+            "location": "p. 7, Table 2, row: CRS, mL.cmH2O−1, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔPRS, cmH2O",
+      "definition_verbatim": "ΔPRS respiratory system driving pressure",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "respiratory system driving pressure at the optimal PEEP level of each strategy, paralysed",
+        "provenance": {
+          "quote": "ΔPRS respiratory system driving pressure",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 11,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 13,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O 11 [9–13]* 8 [7–10]† 9 [8–10]* 7 [7–10]† < .001",
+            "location": "p. 7, Table 2, row: ΔPRS, cmH2O"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O 11 [9–13]* 8 [7–10]† 9 [8–10]* 7 [7–10]† < .001",
+            "location": "p. 7, Table 2, row: ΔPRS, cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O 11 [9–13]* 8 [7–10]† 9 [8–10]* 7 [7–10]† < .001",
+            "location": "p. 7, Table 2, row: ΔPRS, cmH2O"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O 11 [9–13]* 8 [7–10]† 9 [8–10]* 7 [7–10]† < .001",
+            "location": "p. 7, Table 2, row: ΔPRS, cmH2O"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "ΔPRS, cmH2O 11 [9–13]* 8 [7–10]† 9 [8–10]* 7 [7–10]† < .001",
+            "location": "p. 7, Table 2, row: ΔPRS, cmH2O, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "OD, % (Overdistension)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "EIT-based overdistension at the optimal PEEP level of each strategy",
+        "provenance": {
+          "quote": "OD OverDistension",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 24,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15,
+          "dispersion_high": 29,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, % 24 [15–29]* 9 [6–13]† 21 [18–26]* 5 [0–14]† < .001",
+            "location": "p. 7, Table 2, row: OD, %"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6,
+          "dispersion_high": 13,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, % 24 [15–29]* 9 [6–13]† 21 [18–26]* 5 [0–14]† < .001",
+            "location": "p. 7, Table 2, row: OD, %"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 21,
+          "dispersion_type": "iqr",
+          "dispersion_low": 18,
+          "dispersion_high": 26,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, % 24 [15–29]* 9 [6–13]† 21 [18–26]* 5 [0–14]† < .001",
+            "location": "p. 7, Table 2, row: OD, %"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 14,
+          "unit": "%",
+          "provenance": {
+            "quote": "OD, % 24 [15–29]* 9 [6–13]† 21 [18–26]* 5 [0–14]† < .001",
+            "location": "p. 7, Table 2, row: OD, %"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "OD, % 24 [15–29]* 9 [6–13]† 21 [18–26]* 5 [0–14]† < .001",
+            "location": "p. 7, Table 2, row: OD, %, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "LC, % (Lung Collapse)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "at the optimal PEEP levels computed for each tested PEEP titration strategy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "EIT-based lung collapse at the optimal PEEP level of each strategy",
+        "provenance": {
+          "quote": "LC Lung Collapse",
+          "location": "p. 7, Table 2 footnote"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "cov",
+          "value_type": "median",
+          "value": 0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 1,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, % 0 [0–1]* 9 [4–10]† 1 [0–2]* 9 [2–14]† < .001",
+            "location": "p. 7, Table 2, row: LC, %"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4,
+          "dispersion_high": 10,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, % 0 [0–1]* 9 [4–10]† 1 [0–2]* 9 [2–14]† < .001",
+            "location": "p. 7, Table 2, row: LC, %"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0,
+          "dispersion_high": 2,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, % 0 [0–1]* 9 [4–10]† 1 [0–2]* 9 [2–14]† < .001",
+            "location": "p. 7, Table 2, row: LC, %"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "value_type": "median",
+          "value": 9,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2,
+          "dispersion_high": 14,
+          "unit": "%",
+          "provenance": {
+            "quote": "LC, % 0 [0–1]* 9 [4–10]† 1 [0–2]* 9 [2–14]† < .001",
+            "location": "p. 7, Table 2, row: LC, %"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "across all four conditions: cov, crossing_point, express, positive_ple",
+          "p_value_verbatim": "<.001",
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "LC, % 0 [0–1]* 9 [4–10]† 1 [0–2]* 9 [2–14]† < .001",
+            "location": "p. 7, Table 2, row: LC, %, ANOVA p value column"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Died before day 28",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "died before day 28"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "express",
+          "events": 11,
+          "total": 19,
+          "derived": true,
+          "derivation": "Mortality reported for the whole cohort only; recorded under each condition label for schema consistency. Same 11/19 cohort value.",
+          "provenance": {
+            "quote": "Eleven patients (58%) died before day 28.",
+            "location": "Results, Patients' characteristics"
+          }
+        },
+        {
+          "arm_label": "cov",
+          "events": 11,
+          "total": 19,
+          "derived": true,
+          "derivation": "Mortality reported for the whole cohort only; recorded under each condition label for schema consistency. Same 11/19 cohort value.",
+          "provenance": {
+            "quote": "Eleven patients (58%) died before day 28.",
+            "location": "Results, Patients' characteristics"
+          }
+        },
+        {
+          "arm_label": "positive_ple",
+          "events": 11,
+          "total": 19,
+          "derived": true,
+          "derivation": "Mortality reported for the whole cohort only; recorded under each condition label for schema consistency. Same 11/19 cohort value.",
+          "provenance": {
+            "quote": "Eleven patients (58%) died before day 28.",
+            "location": "Results, Patients' characteristics"
+          }
+        },
+        {
+          "arm_label": "crossing_point",
+          "events": 11,
+          "total": 19,
+          "derived": true,
+          "derivation": "Mortality reported for the whole cohort only; recorded under each condition label for schema consistency. Same 11/19 cohort value.",
+          "provenance": {
+            "quote": "Eleven patients (58%) died before day 28.",
+            "location": "Results, Patients' characteristics"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 19,
+      "derived": true,
+      "derivation": "Esophageal balloon (NutriVent) was used in all enrolled patients; placement attempted in all 19. Inferred from the study protocol; not stated as a count.",
+      "provenance": {
+        "quote": "Esophageal pressure measurements were obtained with a specific nasogastric feeding tube equipped with an esophageal balloon (NutriVent®, Sidam, San Giacomo Roncole, Italy)",
+        "location": "Methods, Patients' installation and settings"
+      }
+    },
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": {
+      "value": 1,
+      "provenance": {
+        "quote": "Esophageal pressure data were missing for one patient, due to a technical limitation.",
+        "location": "Results, Patients' characteristics"
+      }
+    },
+    "measurement_failure_reasons": {
+      "value": "technical limitation",
+      "provenance": {
+        "quote": "Esophageal pressure data were missing for one patient, due to a technical limitation.",
+        "location": "Results, Patients' characteristics"
+      }
+    },
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_only: all patients met Berlin ARDS criteria at enrolment. obese_population: median BMI 30.4 kg/m2 is at or above the 30 kg/m2 threshold. timing_subgroup: enrolment within 24 h of ARDS diagnosis, below the 48 h cut. ptp_target_subgroups: only the Positive PLe strategy sets PEEP from esophageal pressure, targeting end-expiratory PLe 0-2 cmH2O (absolute positive end-expiratory Ptp); the other three strategies are EIT- or plateau-based. Mortality ranking: day-28 is the only mortality timepoint reported, so it is the longest."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "COVID-19 associated ARDS vs non-COVID ARDS",
+      "outcome_name": "Optimal PEEP levels determined by the different titration strategies",
+      "prespecified": null,
+      "result_verbatim": "We observed no difference in the optimal PEEP levels between patients with C-ARDS and patients with ARDS of other etiologies in all the tested titration strategies (Additional file 1: Fig. S3).",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "We observed no difference in the optimal PEEP levels between patients with C-ARDS and patients with ARDS of other etiologies in all the tested titration strategies (Additional file 1: Fig. S3).",
+        "location": "Results, PEEP levels determined according to the different titration strategies"
+      }
+    },
+    {
+      "subgroup_variable": "Higher vs Lower R/Iest groups (based on cohort median)",
+      "outcome_name": "Optimal PEEP levels determined by the different titration strategies",
+      "prespecified": null,
+      "result_verbatim": "The determined PEEP levels did not differ between the Higher and Lower R/Iest ratio groups in all the tested PEEP titration strategies (Additional file 1: Fig. S6).",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "The determined PEEP levels did not differ between the Higher and Lower R/Iest ratio groups in all the tested PEEP titration strategies (Additional file 1: Fig. S6).",
+        "location": "Results, Optimal PEEP levels and recruitability"
+      }
+    },
+    {
+      "subgroup_variable": "ΔPaO2/FiO2 response to PEEP increase (above vs below cohort median)",
+      "outcome_name": "Optimal PEEP levels determined by the different titration strategies",
+      "prespecified": null,
+      "result_verbatim": "Optimal PEEP levels defined by each strategy were not different between the patients for whom oxygenation significantly increased after an increase in PEEP and those for whom oxygenation did not increase (Additional file 1: Fig. S7A).",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "Optimal PEEP levels defined by each strategy were not different between the patients for whom oxygenation significantly increased after an increase in PEEP and those for whom oxygenation did not increase (Additional file 1: Fig. S7A).",
+        "location": "Results, Changes in oxygenation and respiratory system compliance in response to PEEP increase"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": "angers",
+    "overlapping_cohort_with": [
+      "chean_2025"
+    ],
+    "overlap_evidence": "COHORTS.md suspects an 'angers' cluster of pavlovsky_2024 and chean_2025. Confirmed grounds visible in this report: single centre (Medical ICU, University Hospital of Angers), substantially shared authorship (Dara Chean, Beloncle, Mercat, Pavlovsky, Richard, Desprez, Fage, Lesimple, Courtais), and the text states that 10 of its COVID-ARDS patients 'have been included in a previously published study [14]' (Beloncle et al., Ann Intensive Care 2020), which is not in this folder. Enrolment window Dec 2019-Apr 2020. chean_2025 full text not available to this extractor; the overlap with chean_2025 specifically (registration, enrolment dates) could not be checked beyond the COHORTS.md assertion and shared centre/authors, so the cluster is treated as confirmed per COHORTS.md but flagged for adjudication.",
+    "unclear_items": [
+      "design.randomised: coded false — the four strategies were computed from a single decremental PEEP trial in fixed order, no randomisation described; the paper does not explicitly state 'not randomised'.",
+      "intervention.balloon_calibration: coded not_reported in the main text; the paper refers to 'the Additional file 1 for further information' on esophageal pressure measurement, which was not provided to this extractor — calibration method may be described there.",
+      "outcomes: Table 2 row 'PEEPtot, cmH2O' for the Positive PLe strategy reads '7 [10–14]' in both the text layer and the rendered image — the IQR lower bound exceeds the upper bound and the median is below the abstract's reported optimal PEEP of 8 [5–11] for that strategy; recorded verbatim and flagged as a probable typographical error.",
+      "population.n_analysed: coded 19 (all enrolled analysed), but esophageal pressure data were missing for one patient, so esophageal-based analyses likely used 18; per-analysis denominators are not stated.",
+      "feasibility.n_placement_attempted: inferred as 19 from the protocol; the paper does not report placement attempts or failures as counts.",
+      "eligibility.criteria.adults_18_plus: the paper says 'Nineteen adult patients' but no explicit age eligibility criterion is stated; coded yes on the adult ICU setting and 'adult patients' wording.",
+      "arms[].n_analysed for positive_ple: set to 18 by derivation (19 minus 1 missing esophageal pressure); the paper does not state the per-strategy denominator.",
+      "reported_subgroups.prespecified: the paper does not state whether the COVID/R/Iest/ΔPaO2FiO2 groupings were prespecified."
+    ],
+    "data_only_in_figure": [
+      "Optimal PEEP levels per strategy are shown in Fig. 2 (medians/IQRs available in abstract text); individual patient data only in figure",
+      "Correlations between R/Iest and optimal PEEP per strategy (Fig. 3) — r2 and p values in text, scatter data only in figure",
+      "Optimal PEEP by PEEP range for Crossing Point method (Fig. 4) — values only in figure",
+      "Changes in CoV, OD, LC, Pplat, PLe across the decremental PEEP trial (Fig. 1) — values only in figure"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "This is a four-condition physiologic crossover: the four PEEP strategies (Express, Positive PLe, CoV, Crossing Point) were computed offline from a single decremental PEEP trial rather than applied sequentially to the patient. Only the Positive PLe strategy uses esophageal pressure to set PEEP; the study qualifies on the balloon_guided_peep_titration criterion through that strategy. Additional file 1 (Table S1, Figs S1-S9) was not provided; several subgroup results and the balloon calibration details reside there. Table 2 also reports PplatL, CL, CoV, VREC and VREC/PBW per strategy, not transcribed here as separate outcomes to keep the record focused; they are available in the table quote of the CRS/OD/LC rows' location (p. 7, Table 2)."
+  }
+}

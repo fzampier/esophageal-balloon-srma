@@ -1,0 +1,1557 @@
+{
+  "record_meta": {
+    "study_id": "gibot_2021",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/fmed-08-720920.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Gibot",
+    "year": 2021,
+    "title": "Positive End-Expiratory Pressure Setting in COVID-19-Related Acute Respiratory Distress Syndrome: Comparison Between Electrical Impedance Tomography, PEEP/FiO2 Tables, and Transpulmonary Pressure",
+    "journal": "Frontiers in Medicine",
+    "doi": "10.3389/fmed.2021.720920",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Seventeen patients (15 men, 2 women) were enrolled. Median age was 65 (62–71) years",
+          "location": "Results, para 1, p. 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "we enrolled the patients with 2019 coronavirus disease (COVID-19)-related acute respiratory distress syndrome (ARDS), who required mechanical ventilation",
+          "location": "Abstract, Methods"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "we enrolled some mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU) because of a COVID-19-related moderate-to-severe ARDS",
+          "location": "Methods, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Next, PEEP as based upon end-expiratory PL/FiO2 table, was applied (3).",
+          "location": "Methods, para 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "TABLE 1 | Effect of positive end-expiratory pressure (PEEP) settings on respiratory mechanics.",
+          "location": "p. 3, Table 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Seventeen patients were enrolled.",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We describe a case series of patients suffering from 2019 coronavirus disease (COVID-19)-related ARDS in whom we compared PEEP settings based on PEEP/FiO2 tables, PL/ FiO2 table, and EIT.",
+          "location": "Introduction, para 3"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Front. Med. 8:720920. doi: 10.3389/fmed.2021.720920",
+          "location": "p. 1, Citation block"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "We describe a case series of patients suffering from 2019 coronavirus disease (COVID-19)-related ARDS in whom we compared PEEP settings based on PEEP/FiO2 tables, PL/ FiO2 table, and EIT.",
+      "provenance": {
+        "quote": "We describe a case series of patients suffering from 2019 coronavirus disease (COVID-19)-related ARDS in whom we compared PEEP settings based on PEEP/FiO2 tables, PL/ FiO2 table, and EIT.",
+        "location": "Introduction, para 3"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": null,
+    "countries": [
+      "France"
+    ],
+    "location_provenance": {
+      "quote": "Service de Réanimation Médicale, Hôpital Central, CHRU, Nancy, France",
+      "location": "p. 1, author affiliations"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Intensive Care Unit (ICU), Service de Réanimation Médicale",
+      "provenance": {
+        "quote": "we enrolled some mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU)",
+        "location": "Methods, para 1"
+      }
+    },
+    "enrolment_start": "2021-03",
+    "enrolment_end": "2021-03",
+    "consecutive_enrolment": null,
+    "funding_source": null,
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 17,
+      "provenance": {
+        "quote": "Seventeen patients (15 men, 2 women) were enrolled.",
+        "location": "Results, para 1"
+      }
+    },
+    "n_analysed": {
+      "value": 17,
+      "provenance": {
+        "quote": "Seventeen patients were enrolled. PEEP values derived from EIT (PEEPEIT) were different from those based upon other techniques",
+        "location": "Abstract, Results"
+      }
+    },
+    "population_description": {
+      "value": "mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU) because of a COVID-19-related moderate-to-severe ARDS",
+      "provenance": {
+        "quote": "we enrolled some mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU) because of a COVID-19-related moderate-to-severe ARDS",
+        "location": "Methods, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "COVID-19-related moderate-to-severe ARDS requiring mechanical ventilation, admitted to ICU in March 2021",
+      "provenance": {
+        "quote": "In March 2021, we enrolled some mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU) because of a COVID-19-related moderate-to-severe ARDS.",
+        "location": "Methods, para 1"
+      }
+    },
+    "exclusion_criteria": null,
+    "age": {
+      "value_type": "median",
+      "value": 65,
+      "dispersion_type": "iqr",
+      "dispersion_low": 62,
+      "dispersion_high": 71,
+      "n": 17,
+      "unit": "years",
+      "provenance": {
+        "quote": "Median age was 65 (62–71) years",
+        "location": "Results, para 1"
+      }
+    },
+    "sex_female": {
+      "n": 2,
+      "total": 17,
+      "provenance": {
+        "quote": "Seventeen patients (15 men, 2 women) were enrolled.",
+        "location": "Results, para 1"
+      }
+    },
+    "sex_male": {
+      "n": 15,
+      "total": 17,
+      "provenance": {
+        "quote": "Seventeen patients (15 men, 2 women) were enrolled.",
+        "location": "Results, para 1"
+      }
+    },
+    "bmi": {
+      "value_type": "median",
+      "value": 31.1,
+      "dispersion_type": "iqr",
+      "dispersion_low": 28.5,
+      "dispersion_high": 33.0,
+      "n": 17,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "body mass index was 31.1 (28.5–33.0)",
+        "location": "Results, para 1"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": null,
+    "n_ards": {
+      "n": 17,
+      "total": 17,
+      "provenance": {
+        "quote": "we enrolled some mechanically ventilated patients who were admitted to our Intensive Care Unit (ICU) because of a COVID-19-related moderate-to-severe ARDS",
+        "location": "Methods, para 1"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": {
+        "n": 11,
+        "total": 17,
+        "provenance": {
+          "quote": "The ARDS was severe in 6 and moderate in 11 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "severe": {
+        "n": 6,
+        "total": 17,
+        "provenance": {
+          "quote": "The ARDS was severe in 6 and moderate in 11 patients",
+          "location": "Results, para 1"
+        }
+      }
+    },
+    "covid19_population": "all",
+    "cause_of_respiratory_failure": {
+      "value": "COVID-19-related ARDS",
+      "provenance": {
+        "quote": "The diagnosis of COVID-19 relied upon positive result on polymerase chain reaction of sputum or nasal swab.",
+        "location": "Methods, para 1"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 136,
+      "dispersion_type": "iqr",
+      "dispersion_low": 103,
+      "dispersion_high": 155,
+      "n": 17,
+      "unit": null,
+      "provenance": {
+        "quote": "the PaO2/FiO2 was 136 (103–155)",
+        "location": "Results, para 1"
+      }
+    },
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Vt (mL/kg IBW)",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 6.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.2,
+          "dispersion_high": 7.0,
+          "n": 17,
+          "unit": "mL/kg IBW",
+          "provenance": {
+            "quote": "Vt 6.6 (6.2–7.0) mL/kg IBW",
+            "location": "Results, para 1"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "RR",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 24,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22,
+          "dispersion_high": 27,
+          "n": 17,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR 24 (22–27)",
+            "location": "Results, para 1"
+          }
+        },
+        "count": null
+      },
+      {
+        "name_verbatim": "High-flow oxygen therapy before intubation",
+        "arm_label": null,
+        "continuous": null,
+        "count": {
+          "n": 12,
+          "total": 17,
+          "provenance": {
+            "quote": "Twelve patients were under high-flow oxygen therapy for a median of 1 (1, 2) day before intubation.",
+            "location": "Results, para 1"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "esophageal balloon catheter (Nutrivent; Sidam, Mirandola, Italy)",
+      "provenance": {
+        "quote": "Transpulmonary pressures were measured with the use of an esophageal balloon catheter (Nutrivent; Sidam, Mirandola, Italy)",
+        "location": "Methods, para 2"
+      }
+    },
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "dynamic_occlusion_test",
+      "method_verbatim": {
+        "value": "after its correct positioning has been verified through passive chest compression during occlusion",
+        "provenance": {
+          "quote": "after its correct positioning has been verified through passive chest compression during occlusion",
+          "location": "Methods, para 2"
+        }
+      },
+      "position_verification": {
+        "value": "correct positioning verified through passive chest compression during occlusion",
+        "provenance": {
+          "quote": "after its correct positioning has been verified through passive chest compression during occlusion",
+          "location": "Methods, para 2"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "The transpulmonary pressure is measured using an esophageal balloon catheter that approximates the pleural pressure.",
+        "provenance": {
+          "quote": "The transpulmonary pressure is measured using an esophageal balloon catheter that approximates the pleural pressure.",
+          "location": "Introduction, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "PEEP has to be set to maintain the end-expiratory PL above zero to avoid collapse of dependent dorsal lung regions, and the end-inspiratory PL below 20–25 cmH2O to decrease the risk of overdistension of non-dependent regions.",
+        "provenance": {
+          "quote": "Using this technique, PEEP has to be set to maintain the end-expiratory PL above zero to avoid collapse of dependent dorsal lung regions, and the end-inspiratory PL below 20–25 cmH2O to decrease the risk of overdistension of non-dependent regions.",
+          "location": "Introduction, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP has to be set to maintain the end-expiratory PL above zero",
+          "location": "Introduction, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "the end-inspiratory PL below 20–25 cmH2O to decrease the risk of overdistension",
+          "location": "Introduction, para 2"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "PEEP applied once per strategy in a fixed sequence during a single session",
+        "provenance": {
+          "quote": "PEEP was first set according to the lower, then, to the higher PEEP/FiO2 ALVEOLI table (2). Next, PEEP as based upon end-expiratory PL/FiO2 table, was applied (3). Finally, an automated decremental PEEP trial was performed under EIT monitoring",
+          "location": "Methods, para 3"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "tidal volume (Vt): 6–7 ml/kg ideal body weight (IBW)",
+        "provenance": {
+          "quote": "All patients were ventilated in volume control mode [tidal volume (Vt): 6–7 ml/kg ideal body weight (IBW)]",
+          "location": "Methods, para 2"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "FiO2 set to achieve SpO2 between 92 and 95%; RR set to reach PaCO2 between 38 and 45 mmHg; sedation (midazolam and sufentanyl) and paralysis (cisatracurium or atracurium)",
+        "provenance": {
+          "quote": "with FiO2 set to achieve peripheral oxygen saturation (SpO2) between 92 and 95%, and respiratory rate (RR) set to reach PaCO2 between 38 and 45 mmHg",
+          "location": "Methods, para 2"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": {
+        "value_type": null,
+        "value": null,
+        "unit": "hours",
+        "provenance": {
+          "quote": "Within 48 h after the start of mechanical ventilation, different levels of PEEP were applied",
+          "location": "Abstract, Methods"
+        }
+      },
+      "timing_verbatim": {
+        "value": "Within 48 h after the start of mechanical ventilation",
+        "provenance": {
+          "quote": "Within 48 h after the start of mechanical ventilation, different levels of PEEP were applied based upon PEEP/FiO2 tables, positive end-expiratory transpulmonary (PL)/ FiO2 table, and EIT.",
+          "location": "Abstract, Methods"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "single session; measurements after 10 min at each PEEP level",
+      "provenance": {
+        "quote": "Respiratory mechanics variables were recorded after 10 min at different PEEP levels while all the other parameters (FiO2, Vt, RR, flow rates, etc.) remained unchanged.",
+        "location": "Methods, para 2"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table",
+      "ardsnet_high_peep_fio2_table",
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEP was first set according to the lower, then, to the higher PEEP/FiO2 ALVEOLI table (2). Next, PEEP as based upon end-expiratory PL/FiO2 table, was applied (3).",
+      "provenance": {
+        "quote": "PEEP was first set according to the lower, then, to the higher PEEP/FiO2 ALVEOLI table (2). Next, PEEP as based upon end-expiratory PL/FiO2 table, was applied (3).",
+        "location": "Methods, para 3"
+      }
+    },
+    "crossover_order": {
+      "value": "Fixed sequence, not randomised: lower PEEP/FiO2 table, then higher PEEP/FiO2 table, then PL/FiO2 table, then EIT decremental PEEP trial.",
+      "provenance": {
+        "quote": "PEEP was first set according to the lower, then, to the higher PEEP/FiO2 ALVEOLI table (2). Next, PEEP as based upon end-expiratory PL/FiO2 table, was applied (3). Finally, an automated decremental PEEP trial was performed under EIT monitoring",
+        "location": "Methods, para 3"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "Respiratory mechanics variables were recorded after 10 min at different PEEP levels",
+      "provenance": {
+        "quote": "Respiratory mechanics variables were recorded after 10 min at different PEEP levels while all the other parameters (FiO2, Vt, RR, flow rates, etc.) remained unchanged.",
+        "location": "Methods, para 2"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "lower_peep_fio2",
+      "label_verbatim": "Lower PaO2/FiO2 table",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 17,
+        "provenance": {
+          "quote": "Seventeen patients were enrolled.",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 10,
+        "dispersion_type": "iqr",
+        "dispersion_low": 10,
+        "dispersion_high": 14,
+        "n": 17,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm H2O) — 10 (10 to 14)",
+          "location": "p. 3, Table 1, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "higher_peep_fio2",
+      "label_verbatim": "Higher PaO2/FiO2 table",
+      "role": "comparator",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 17,
+        "provenance": {
+          "quote": "Seventeen patients were enrolled.",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 17,
+        "dispersion_type": "iqr",
+        "dispersion_low": 16,
+        "dispersion_high": 20,
+        "n": 17,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm H2O) — 17 (16 to 20)",
+          "location": "p. 3, Table 1, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "pl_fio2",
+      "label_verbatim": "PL/FiO2 table",
+      "role": "alternative_titration_condition",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 17,
+        "provenance": {
+          "quote": "Seventeen patients were enrolled.",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 15,
+        "dispersion_type": "iqr",
+        "dispersion_low": 14,
+        "dispersion_high": 20,
+        "n": 17,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm H2O) — 15 (14 to 20)",
+          "location": "p. 3, Table 1, row: PEEP"
+        }
+      }
+    },
+    {
+      "label": "peep_eit",
+      "label_verbatim": "PEEPEIT",
+      "role": "alternative_titration_condition",
+      "sequence_position": 4,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 17,
+        "provenance": {
+          "quote": "Seventeen patients were enrolled.",
+          "location": "Abstract, Results"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "median",
+        "value": 13,
+        "dispersion_type": "iqr",
+        "dispersion_low": 12,
+        "dispersion_high": 14,
+        "n": 17,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm H2O) — 13 (12 to 14)*#",
+          "location": "p. 3, Table 1, row: PEEP"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "Discharged alive",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "hospital_discharge",
+        "label_verbatim": "discharged alive"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "peep_eit",
+          "events": 16,
+          "total": 17,
+          "derived": true,
+          "derivation": "Cohort-level mortality, not condition-specific; assigned to the peep_eit arm label only because the schema requires an arm_label. Events computed from 'All patients, except for one, were discharged alive' (17 enrolled, 16 discharged alive).",
+          "provenance": {
+            "quote": "All patients, except for one, were discharged alive.",
+            "location": "Results, para 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "on enrolment, before PEEP strategies"
+      },
+      "measurement_context": {
+        "value": "at enrolment, before the PEEP titration manoeuvres",
+        "provenance": {
+          "quote": "The ARDS was severe in 6 and moderate in 11 patients, while the PaO2/FiO2 was 136 (103–155)",
+          "location": "Results, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 136,
+          "dispersion_type": "iqr",
+          "dispersion_low": 103,
+          "dispersion_high": 155,
+          "n": 17,
+          "derived": true,
+          "derivation": "Cohort-level baseline value recorded once; assigned to the first condition's arm label because the schema requires an arm_label.",
+          "provenance": {
+            "quote": "the PaO2/FiO2 was 136 (103–155)",
+            "location": "Results, para 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "measurement_context": {
+        "value": "after 10 min at each PEEP level, sedated and paralysed, supine, 24–48 h after start of mechanical ventilation",
+        "provenance": {
+          "quote": "Some maneuvers were performed in supine position after 24–48 h of mechanical ventilation while the patients were still sedated (midazolam and sufentanyl) and paralyzed (cisatracurium or atracurium). Respiratory mechanics variables were recorded after 10 min at different PEEP levels",
+          "location": "Methods, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 10,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — 10 (10 to 14)",
+            "location": "p. 3, Table 1, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 17,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16,
+          "dispersion_high": 20,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — 17 (16 to 20)",
+            "location": "p. 3, Table 1, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 15,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 20,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — 15 (14 to 20)",
+            "location": "p. 3, Table 1, row: PEEP"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 14,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm H2O) — 13 (12 to 14)*#",
+            "location": "p. 3, Table 1, row: PEEP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus lower_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "lower_peep_fio2",
+          "mean_difference": 1.3,
+          "ci_low": -8.5,
+          "ci_high": 11.2,
+          "n_pairs": 17,
+          "test_used": "Bland-Altman bias and limits of agreement",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The Bland-Altman analysis showed that PEEPEIT was 1.3 cm H2O higher than the lower PEEP/FiO2 table with limits of agreement from −8.5 to 11.2 cm H2O.",
+            "location": "Results, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "mean_difference": -5,
+          "n_pairs": 17,
+          "test_used": "Bland-Altman bias",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "By contrast, PEEPEIT was 5 and 4 cm H2O lower, respectively, than higher PEEP/FiO2 and PL/FiO2 tables, with again wide limits of agreement",
+            "location": "Results, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "mean_difference": -4,
+          "n_pairs": 17,
+          "test_used": "Bland-Altman bias",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "By contrast, PEEPEIT was 5 and 4 cm H2O lower, respectively, than higher PEEP/FiO2 and PL/FiO2 tables, with again wide limits of agreement",
+            "location": "Results, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit vs lower_peep_fio2 (PEEPEIT higher than the lower PEEP/FiO2 table)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "lower_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "It was higher than the lower PEEP/FiO2 table, and lower than the higher PEEP/FiO2 or PL/FiO2 tables (Table 1).",
+            "location": "Results, para 2; Table 1 footnote: *p < 0.05 PEEPEIT vs. Lower PaO2/FiO2 table."
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit vs higher_peep_fio2 (PEEPEIT lower)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit vs pl_fio2 (PEEPEIT lower)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "PPLAT (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "measurement_context": {
+        "value": "after 10 min at each PEEP level, sedated and paralysed, supine",
+        "provenance": {
+          "quote": "Respiratory mechanics variables were recorded after 10 min at different PEEP levels while all the other parameters (FiO2, Vt, RR, flow rates, etc.) remained unchanged.",
+          "location": "Methods, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 20,
+          "dispersion_high": 26,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLAT (cm H2O) — 23 (20 to 26)",
+            "location": "p. 3, Table 1, row: PPLAT"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 33,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28,
+          "dispersion_high": 38,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLAT (cm H2O) — 33 (28 to 38)",
+            "location": "p. 3, Table 1, row: PPLAT"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 29,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 37,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLAT (cm H2O) — 29 (24 to 37)",
+            "location": "p. 3, Table 1, row: PPLAT"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22,
+          "dispersion_high": 27,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PPLAT (cm H2O) — 25 (22 to 27)#",
+            "location": "p. 3, Table 1, row: PPLAT"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Driving Pressure (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 14,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving Pressure (cm H2O) — 12 (10 to 14)",
+            "location": "p. 3, Table 1, row: Driving Pressure"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 14,
+          "dispersion_type": "iqr",
+          "dispersion_low": 12,
+          "dispersion_high": 18,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving Pressure (cm H2O) — 14 (12 to 18)",
+            "location": "p. 3, Table 1, row: Driving Pressure"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 13,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 16,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving Pressure (cm H2O) — 13 (11 to 16)",
+            "location": "p. 3, Table 1, row: Driving Pressure"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11,
+          "dispersion_high": 13,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving Pressure (cm H2O) — 12 (11 to 13)",
+            "location": "p. 3, Table 1, row: Driving Pressure"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS (mL/cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 48,
+          "n": 17,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS (mL/cm H2O) — 39 (34 to 48)",
+            "location": "p. 3, Table 1, row: CRS"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 37,
+          "n": 17,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS (mL/cm H2O) — 30 (24 to 37)",
+            "location": "p. 3, Table 1, row: CRS"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 35,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26,
+          "dispersion_high": 43,
+          "n": 17,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS (mL/cm H2O) — 35 (26 to 43)",
+            "location": "p. 3, Table 1, row: CRS"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 38,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 45,
+          "n": 17,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS (mL/cm H2O) — 38 (34 to 45)#",
+            "location": "p. 3, Table 1, row: CRS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mechanical Power (J/min)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 25.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22.7,
+          "dispersion_high": 34.3,
+          "n": 17,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical Power (J/min) — 25.1 (22.7 to 34.3)",
+            "location": "p. 3, Table 1, row: Mechanical Power"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 34.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28.0,
+          "dispersion_high": 43.6,
+          "n": 17,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical Power (J/min) — 34.4 (28.0 to 43.6)",
+            "location": "p. 3, Table 1, row: Mechanical Power"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 34.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26.0,
+          "dispersion_high": 40.7,
+          "n": 17,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical Power (J/min) — 34.1 (26.0 to 40.7)",
+            "location": "p. 3, Table 1, row: Mechanical Power"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 28.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24.4,
+          "dispersion_high": 32.0,
+          "n": 17,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical Power (J/min) — 28.4 (24.4 to 32.0)#",
+            "location": "p. 3, Table 1, row: Mechanical Power"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Inspiratory Transpulmonary pressure (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 6.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.3,
+          "dispersion_high": 13.5,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Inspiratory Transpulmonary pressure (cm H2O) — 6.6 (4.3 to 13.5)",
+            "location": "p. 3, Table 1, row: Inspiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 17.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.9,
+          "dispersion_high": 21.6,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Inspiratory Transpulmonary pressure (cm H2O) — 17.5 (9.9 to 21.6)",
+            "location": "p. 3, Table 1, row: Inspiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 14.7,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.4,
+          "dispersion_high": 18.7,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Inspiratory Transpulmonary pressure (cm H2O) — 14.7 (9.4 to 18.7)",
+            "location": "p. 3, Table 1, row: Inspiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 11.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.4,
+          "dispersion_high": 14.3,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Inspiratory Transpulmonary pressure (cm H2O) — 11.5 (6.4 to 14.3)#",
+            "location": "p. 3, Table 1, row: Inspiratory Transpulmonary pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Expiratory Transpulmonary pressure (cm H2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "after 10 min at each PEEP level"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": -0.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": -2.8,
+          "dispersion_high": 3.6,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Expiratory Transpulmonary pressure (cm H2O) — −0.3 (−2.8 to 3.6)",
+            "location": "p. 3, Table 1, row: Expiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 5.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.0,
+          "dispersion_high": 8.0,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Expiratory Transpulmonary pressure (cm H2O) — 5.0 (2.0 to 8.0)",
+            "location": "p. 3, Table 1, row: Expiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 4.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.5,
+          "dispersion_high": 6.5,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Expiratory Transpulmonary pressure (cm H2O) — 4.0 (1.5 to 6.5)",
+            "location": "p. 3, Table 1, row: Expiratory Transpulmonary pressure"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 1.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.1,
+          "dispersion_high": 2.0,
+          "n": 17,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Expiratory Transpulmonary pressure (cm H2O) — 1.3 (0.1 to 2.0)#",
+            "location": "p. 3, Table 1, row: Expiratory Transpulmonary pressure"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Silent spaces (%)",
+      "definition_verbatim": "Regional hypoventilated lung units ('Silent spaces') correspond to both collapsed areas in the dependent territories, and distended areas in the non-dependent regions.",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "under different PEEP settings"
+      },
+      "data": [
+        {
+          "arm_label": "lower_peep_fio2",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 26,
+          "n": 17,
+          "unit": "%",
+          "provenance": {
+            "quote": "Silent spaces (%) — 18 (10 to 26)",
+            "location": "p. 3, Table 1, row: Silent spaces"
+          }
+        },
+        {
+          "arm_label": "higher_peep_fio2",
+          "value_type": "median",
+          "value": 30,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 48,
+          "n": 17,
+          "unit": "%",
+          "provenance": {
+            "quote": "Silent spaces (%) — 30 (13 to 48)",
+            "location": "p. 3, Table 1, row: Silent spaces"
+          }
+        },
+        {
+          "arm_label": "pl_fio2",
+          "value_type": "median",
+          "value": 23,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17,
+          "dispersion_high": 35,
+          "n": 17,
+          "unit": "%",
+          "provenance": {
+            "quote": "Silent spaces (%) — 23 (17 to 35)",
+            "location": "p. 3, Table 1, row: Silent spaces"
+          }
+        },
+        {
+          "arm_label": "peep_eit",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9,
+          "dispersion_high": 23,
+          "n": 17,
+          "unit": "%",
+          "provenance": {
+            "quote": "Silent spaces (%) — 16 (9 to 23)*#",
+            "location": "p. 3, Table 1, row: Silent spaces"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus lower_peep_fio2 (lung collapse)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "lower_peep_fio2",
+          "mean_difference": -4,
+          "p_value": 0.04,
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "lung collapse was lower with PEEPEIT than with lower PEEP/FiO2 table (9 vs. 13%; p = 0.04)",
+            "location": "Results, para 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2 (lung distension)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "mean_difference": -14,
+          "p_value_verbatim": "<0.01",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "lung distension was reduced as compared to higher PEEP/FiO2 and PL/FiO2 tables (6 vs. 20 and 13%, respectively; p < 0.01)",
+            "location": "Results, para 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2 (lung distension)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "mean_difference": -7,
+          "p_value_verbatim": "<0.01",
+          "test_used": "Wilcoxon signed-rank test",
+          "unit": "%",
+          "provenance": {
+            "quote": "lung distension was reduced as compared to higher PEEP/FiO2 and PL/FiO2 tables (6 vs. 20 and 13%, respectively; p < 0.01)",
+            "location": "Results, para 3"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus lower_peep_fio2 (total silent spaces)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "lower_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "*p < 0.05 PEEPEIT vs. Lower PaO2/FiO2 table.",
+            "location": "p. 3, Table 1 footnote, row: Silent spaces"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus higher_peep_fio2 (total silent spaces)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "higher_peep_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote, row: Silent spaces"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "peep_eit minus pl_fio2 (total silent spaces)",
+          "arm_label_a": "peep_eit",
+          "arm_label_b": "pl_fio2",
+          "p_value_verbatim": "<0.05",
+          "test_used": "Wilcoxon signed-rank test",
+          "provenance": {
+            "quote": "#p < 0.05 PEEPEIT vs. Higher PaO2/FiO2 and PL/FiO2 tables.",
+            "location": "p. 3, Table 1 footnote, row: Silent spaces"
+          }
+        }
+      ],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": {
+      "value": 17,
+      "provenance": {
+        "quote": "Patients were monitored by an esophageal catheter and a 32-electrode EIT device.",
+        "location": "Abstract, Methods"
+      }
+    },
+    "n_placement_successful": {
+      "value": 17,
+      "derived": true,
+      "derivation": "All 17 patients had transpulmonary pressures measured and reported, implying successful positioning in all; the paper does not state placement success explicitly.",
+      "provenance": {
+        "quote": "Transpulmonary pressures were measured with the use of an esophageal balloon catheter (Nutrivent; Sidam, Mirandola, Italy) after its correct positioning has been verified through passive chest compression during occlusion.",
+        "location": "Methods, para 2"
+      }
+    },
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ards_only: all patients had COVID-19-related moderate-to-severe ARDS. obese_population: median BMI 31.1 kg/m2 exceeds 30. early_within_48h: manoeuvres performed within 48 h after the start of mechanical ventilation. ptp_target_subgroups: the PL/FiO2 table targets end-expiratory PL above zero (absolute positive end-expiratory PL) with an end-inspiratory PL limit of 20-25 cmH2O; the schema has no separate end-inspiratory-limit code, so only the end-expiratory code is listed. The EIT condition is not a transpulmonary-pressure target and contributes to no PTP subgroup."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No overlap with any COHORTS.md cluster. Single centre (CHRU Nancy, France) with no shared authors or institution with the epvent1/epvent2, mannheim_boesing, mgh_lung_rescue, or angers clusters; enrolment restricted to March 2021, which does not overlap the enrolment windows of those cohorts; no trial registration number reported to cross-check. The paper cites Scaramuzzo et al. but as external prior work, not shared patients.",
+    "unclear_items": [
+      "outcomes[mortality].data[0].arm_label: mortality is cohort-level ('All patients, except for one, were discharged alive') but the schema requires an arm label; assigned to peep_eit arbitrarily — adjudicator may prefer a different convention.",
+      "outcomes[oxygenation].data[0].arm_label: baseline PaO2/FiO2 is cohort-level; assigned to lower_peep_fio2 (first condition) arbitrarily.",
+      "design.industry_funded: coded false from the conflict-of-interest statement ('conducted in the absence of any commercial or financial relationships'); no explicit funding statement is given.",
+      "intervention.peep_titration_target.end_inspiratory_ptp_limit_cmh2o: paper states a range 'below 20–25 cmH2O'; recorded the upper bound 25.",
+      "design.n_centers: single centre evident from the affiliation but no explicit number of centres stated.",
+      "paired_effects p-values: the paper reports only thresholded significance markers (* and #, both p < 0.05) for Table 1 variables; exact Wilcoxon p-values not given except for the collapse contrast (p = 0.04).",
+      "population.ards_definition_used: severity is described in moderate/severe terms but no ARDS definition (e.g. Berlin) is cited."
+    ],
+    "data_only_in_figure": [
+      "Bland-Altman limits of agreement for PEEPEIT vs higher PEEP/FiO2 and PEEPEIT vs PL/FiO2 (Figure 1 upper right and lower left panels; biases -5.0 and -3.8 shown in figure, limits not reported in text)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Within-patient physiologic study in which each patient served as own control under four PEEP strategies in fixed sequence. The esophageal-pressure-guided strategy (PL/FiO2 table) is the intervention relevant to this review; the EIT-guided strategy is not esophageal-based. Driving pressures were explicitly not significantly different between conditions, so no paired effects are recorded for that outcome. Cohort-level values (mortality, baseline PaO2/FiO2, Vt, RR) were assigned to a single arm label for schema compliance; see unclear_items."
+  }
+}

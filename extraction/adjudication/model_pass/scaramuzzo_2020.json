@@ -1,0 +1,246 @@
+{
+  "study_id": "scaramuzzo_2020",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[ventilator settings set peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Set PEEP 14 (8-17) PEEP_EIT vs 13 (11-15) PEEP_PL, p 0.95 match in both. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a; p. 3 Results"
+    },
+    {
+      "id": "3e4345aefb",
+      "decision": "deepseek",
+      "reason": "No outcome is named primary; the sample size was powered on the correlation (Rs) between the two selected PEEP levels, not on this paired comparison of set PEEP.",
+      "evidence": "p. 3 (1150) Statistical Analysis"
+    },
+    {
+      "id": "be6b72da6b",
+      "decision": "deepseek",
+      "reason": "GLM records the 'intraindividual difference of 1.5 cm H2O (-7.0 to 5.8)' as a mean difference with a 95% CI, but Methods define it as the median (interquartile range) of the paired differences; the schema has no median-difference slot, so the mean/CI coding is wrong. Keep DeepSeek's contrast (p 0.95, n 20).",
+      "evidence": "p. 3 (1150) Statistical Analysis and Results para 2"
+    },
+    {
+      "id": "286226faaa",
+      "decision": "deepseek",
+      "reason": "Same contrast without the mis-typed median difference: p 0.95, 20 pairs.",
+      "evidence": "p. 5 Table 2; p. 3 Results"
+    },
+    {
+      "target": "outcomes[ventilator settings total peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Total PEEP 14.8 (8.5-16.9) vs 13.2 (10.3-15.6), p 0.60 match in both. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Tidal volume 375 (328-448) vs 365 (341-448), p 0.92 match; GLM's name 'Tidal volume (mL)' is the verbatim row label. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system dp cont @crossover condition]",
+      "decision": "glm",
+      "reason": "Respiratory system DP 11.2 (9-13.8) vs 9.8 (8.4-13), p 0.04 match text and Figure 1. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary dp contin @crossover condition]",
+      "decision": "glm",
+      "reason": "Transpulmonary DP 7 (5-10.1) vs 6.9 (4.8-8.8), p 0.13 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory pl conti @crossover condition]",
+      "decision": "glm",
+      "reason": "End-inspiratory PL 11.8 (5.6-13.8) vs 8 (7.3-11.8), p 0.32 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory pl contin @crossover condition]",
+      "decision": "glm",
+      "reason": "End-expiratory PL 2.8 (-0.18-6.5) vs 1.6 (0.5-2.8), p 0.2 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mechanical power continuou @crossover condition]",
+      "decision": "glm",
+      "reason": "Mechanical power 20.1 (14.2-32.8) vs 17.2 (13.6-26.7), p 0.2 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other total silent spaces continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Total Silent Spaces 11.3 (9.6-13.4) vs 16 (10-21), p 0.02 match Table 2 (the text's 13.8 upper IQR is a text/table inconsistency; both use the table). GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other dependent silent spaces continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Dependent Silent Spaces 8 (6.4-11) vs 12 (7.7-18), p 0.02 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other nondependent silent spaces continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Nondependent Silent Spaces 2.1 (0.4-6) vs 2.5 (0.1-5.2), p 0.56 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other cov right left continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "COV right-left 38.9 (33.6-45.3) vs 40.9 (32.4-43.3), p 0.04 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other cov ventrodorsal continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "COV ventrodorsal 49.9 (44.5-53) vs 47.2 (45.6-51.3), p 0.31 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "PaO2/FiO2 167 (106-251) vs 173 (118-246), p 0.15 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Heart rate 97 (81-110) vs 92 (80-106), p 0.20 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[hemodynamics mean arterial pressure continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "MAP 71 (66-83) vs 75 (70-80), p 0.32 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other ph continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "pH 7.34 (7.14-7.38) vs 7.35 (7.15-7.39), p 0.55 match. GLM's test_used 'Wilcoxon 2-tailed matched-pairs signed-rank test' is the Table 2 footnote wording; DeepSeek's 'Wilcoxon signed-rank test' is the paper's name for the one-sample test against hypothetical medians, and its timepoint label 'After 20 minutes at each PEEP level' is a paraphrase.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 mm hg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "PaO2 77 (69-89) vs 75 (66-81), p 0.47 match; GLM's name 'Pao2 (mm Hg)' is the verbatim row label, and DeepSeek's duplicate under another target is dropped.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other paco2 mm hg continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "PaCO2 61 (47-71) vs 60 (48-73), p 0.53 match; GLM's name 'Paco2 (mm Hg)' is the verbatim row label.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the same PaCO2 reading is kept under GLM's 'Paco2 (mm Hg)' entry.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: the same PaO2 reading is kept under GLM's 'Pao2 (mm Hg)' entry.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 ratio continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 enrolment PaO2/FiO2 149 (96-211) is cohort-level, not a PEEP_PL-condition reading as GLM's arm label claims, and it is already kept in population.pao2_fio2_baseline by both reviewers.",
+      "evidence": "p. 4 (1151) Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings positive end expiratory pres @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: clinical PEEP at enrolment 12 (10-15) is cohort-level, not a PEEP_PL-condition reading, and both reviewers already hold it in population.additional_baseline.",
+      "evidence": "p. 4 (1151) Table 1"
+    },
+    {
+      "target": "outcomes[mortality survival rate dichotomous @not reported]",
+      "decision": "unclear",
+      "reason": "Table 1 reports 'Survival rate 12/20 (60%)' for the whole cohort with no timepoint. GLM files it under the peep_pl condition arm and sets is_longest_reported_mortality, which would present a cohort figure as condition-specific mortality in a crossover. A co-author should decide whether to keep it as cohort-level mortality (needs a single-group arm; 8/20 deaths or 12/20 survivors, timepoint not_reported) or drop it from outcomes.",
+      "evidence": "p. 4 (1151) Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings minute ventilation continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Minute ventilation 7.7 (5.9-8.6) vs 7.6 (6-8.6), p 0.08 is in Table 2; GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[ventilator settings respiratory rate continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Respiratory rate 20 (17-25) vs 19 (16-25), p 0.75 is in Table 2 (the table prints 'beats/min'); GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics regional compliance roi1 c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Regional compliance ROI1 6.5 (4.7-8.9) vs 7 (5.6-9), p 0.18; GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics regional compliance roi2 c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Regional compliance ROI2 10.8 (10-18) vs 14.2 (9.8-19.5), p 0.11; GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics regional compliance roi3 c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Regional compliance ROI3 10.4 (7.8-14) vs 11.8 (8.8-14), p 0.28; GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "target": "outcomes[respiratory mechanics regional compliance roi4 c @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Regional compliance ROI4 5 (2.1-6.6) vs 4 (2.8-6.2), p 0.78; GLM omitted it.",
+      "evidence": "p. 5 (1152), Table 2 and footnote a"
+    },
+    {
+      "id": "f0211f9b8a",
+      "decision": "glm",
+      "reason": "All 20 enrolled patients were monitored with the esophageal balloon after enrolment and all 20 contribute PL values to Table 2; GLM marks the count derived and explains it.",
+      "evidence": "p. 2 (1149) Respiratory Monitoring; Table 2"
+    },
+    {
+      "id": "59f2ce29fa",
+      "decision": "glm",
+      "reason": "End-inspiratory and end-expiratory PL are reported for all 20 patients in both steps, so 20 successful placements follows from the reported data; flagged derived.",
+      "evidence": "p. 5 Table 2; p. 3 Results"
+    },
+    {
+      "id": "92976333c0",
+      "decision": "unclear",
+      "reason": "Balloon 'inflated as recommended by the manufacturer' (filling = manufacturer_recommended_volume) and position 'verified using passive chest compressions during occlusions' (a dynamic occlusion test in paralysed patients). The schema defines method as how the filling volume was chosen, while the codebook's categories imply an occlusion test takes precedence over a stated volume. A co-author needs to set which axis wins; both reviewers read the paper correctly.",
+      "evidence": "p. 2 (1149) Respiratory Monitoring; CODEBOOK Calibration"
+    },
+    {
+      "id": "992acf8242",
+      "decision": "deepseek",
+      "reason": "Table 1 reports 'Days of intubation [before] study 3 (2-5)', an interval measured from intubation, so the reference event is intubation, not enrolment.",
+      "evidence": "p. 4 (1151) Table 1 (page image)"
+    },
+    {
+      "id": "c287a7d9a9",
+      "decision": "deepseek",
+      "reason": "Median BMI 28 kg/m2 with IQR 24-33: below the obese_population threshold, but the upper quartile is obese, and the authors call the population pre-obese. mixed_bmi fits better than non_obese_population.",
+      "evidence": "p. 4 Table 1; Discussion limitations"
+    },
+    {
+      "id": "218ed9ac3e",
+      "decision": "deepseek",
+      "reason": "The EIT Silent Spaces strategy is not a transpulmonary pressure target; the study applies one Ptp strategy (positive end-expiratory PL via the sliding table).",
+      "evidence": "p. 3 (1150) Study Protocol"
+    },
+    {
+      "id": "467f4fb7ba",
+      "decision": "deepseek",
+      "reason": "Timing is known relative to intubation: median 3 days (IQR 2-5) of intubation before the study, so at least three quarters of patients were at or beyond 48 h: late_after_48h.",
+      "evidence": "p. 4 (1151) Table 1; CODEBOOK timing ruling"
+    }
+  ]
+}

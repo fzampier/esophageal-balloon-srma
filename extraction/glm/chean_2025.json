@@ -1,0 +1,2625 @@
+{
+  "record_meta": {
+    "study_id": "chean_2025",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s13054-025-05626-x.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Chean",
+    "year": 2025,
+    "title": "Comparison of two transpulmonary pressure-based positive end-expiratory pressure titration strategies in acute respiratory distress syndrome: a randomized crossover study",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-025-05626-x",
+    "pmid": null,
+    "trial_registration": "NCT03281473",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients older than 18 years with ARDS according to the Berlin definition [16] with a ratio of the partial pressure of arterial oxygen to the fraction of inspired oxygen (PaO2/FiO2) ratio lower than 150 mmHg were enrolled",
+          "location": "Materials and methods, Study patients, p. 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "They were ventilated using an Engström® or Carescape R860® ventilator (GE Healthcare, Madison, USA). Vt was set to 6 mL/kg of predicted body weight (PBW)",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The study was conducted in the medical Intensive Care Unit (ICU) of the Angers University Hospital (France) from October 2018 to January 2022.",
+          "location": "Materials and methods, Study patients, p. 2"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In the PL, exp strategy, PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes) of 0 to 10 cmH2O depending on the severity of hypoxemia using a PL, exp/FiO2 table as proposed by Talmor et al.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Respiratory system compliance (CRS), chest wall compliance (CCW), directly measured PL, exp, calculated PL, insp (using the EL/ERS ratio), transpulmonary driving pressure and lung strain were calculated as defined in additional file 1 (Table S2).",
+          "location": "Materials and methods, Measurements and collected data, p. 3-4"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Twenty patients with moderate to severe ARDS (PaO2/FiO2 < 150 mmHg) were included in an academic intensive care unit.",
+          "location": "Abstract, Methods, p. 1"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This was a randomized crossover physiological study.",
+          "location": "Abstract, Methods, p. 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Chean et al. Critical Care     (2025) 29:409",
+          "location": "Header, p. 1"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "This was a randomized crossover physiological study.",
+      "provenance": {
+        "quote": "This was a randomized crossover physiological study.",
+        "location": "Abstract, Methods, p. 1"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": true,
+      "derivation": "Single centre inferred: the study was conducted in one named ICU (Angers University Hospital) and no other centres are mentioned.",
+      "provenance": {
+        "quote": "The study was conducted in the medical Intensive Care Unit (ICU) of the Angers University Hospital (France) from October 2018 to January 2022.",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "countries": [
+      "France"
+    ],
+    "location_provenance": {
+      "quote": "The study was conducted in the medical Intensive Care Unit (ICU) of the Angers University Hospital (France) from October 2018 to January 2022.",
+      "location": "Materials and methods, Study patients, p. 2"
+    },
+    "planned_sample_size": {
+      "value": 20,
+      "provenance": {
+        "quote": "In the absence of preliminary data, we arbitrarily planned to include 20 patients.",
+        "location": "Statistical analysis, p. 4"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "In the absence of preliminary data, we arbitrarily planned to include 20 patients.",
+      "provenance": {
+        "quote": "In the absence of preliminary data, we arbitrarily planned to include 20 patients.",
+        "location": "Statistical analysis, p. 4"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": {
+      "value": null,
+      "provenance": null
+    },
+    "setting": {
+      "value": "medical Intensive Care Unit (ICU) of the Angers University Hospital",
+      "provenance": {
+        "quote": "The study was conducted in the medical Intensive Care Unit (ICU) of the Angers University Hospital (France)",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "enrolment_start": "2018-10",
+    "enrolment_end": "2022-01",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "DC and AC received a 1-year research fellowship grant from the University Hospital of Angers, France.",
+      "provenance": {
+        "quote": "DC and AC received a 1-year research fellowship grant from the University Hospital of Angers, France.",
+        "location": "Funding, p. 8"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 20,
+      "provenance": {
+        "quote": "Twenty patients with moderate to severe ARDS (PaO2/FiO2 < 150 mmHg) were included in an academic intensive care unit.",
+        "location": "Abstract, Methods, p. 1"
+      }
+    },
+    "n_analysed": {
+      "value": 20,
+      "provenance": {
+        "quote": "The main characteristics of the 20 patients included in the study are presented in Table 1.",
+        "location": "Results, Patients, p. 4"
+      }
+    },
+    "population_description": {
+      "value": "Twenty patients with moderate to severe ARDS (PaO2/FiO2 < 150 mmHg) included in an academic intensive care unit, enrolled within 72 h after the diagnosis of ARDS.",
+      "provenance": {
+        "quote": "Twenty patients with moderate to severe ARDS (PaO2/FiO2 < 150 mmHg) were included in an academic intensive care unit.",
+        "location": "Abstract, Methods, p. 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients older than 18 years with ARDS according to the Berlin definition with a PaO2/FiO2 ratio lower than 150 mmHg with a minimal PEEP level of 5 cmH2O were enrolled within 72 h after the diagnosis of ARDS.",
+      "provenance": {
+        "quote": "Patients older than 18 years with ARDS according to the Berlin definition [16] with a ratio of the partial pressure of arterial oxygen to the fraction of inspired oxygen (PaO2/FiO2) ratio lower than 150 mmHg with a minimal PEEP level of 5 cmH2O were enrolled within 72 h after the diagnosis of ARDS.",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Exclusion criteria were legal protection, pregnancy, severe hemodynamic instability, pneumothorax or need for extracorporeal membrane oxygenation (ECMO).",
+      "provenance": {
+        "quote": "Exclusion criteria were legal protection, pregnancy, severe hemodynamic instability, pneumothorax or need for extracorporeal membrane oxygenation (ECMO).",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "age": {
+      "value_type": "median",
+      "value": 64,
+      "dispersion_type": "iqr",
+      "dispersion_low": 51,
+      "dispersion_high": 68,
+      "n": 20,
+      "unit": "years",
+      "provenance": {
+        "quote": "Age, years — 64 (51–68)",
+        "location": "Table 1, row: Age, years"
+      }
+    },
+    "sex_female": {
+      "n": 5,
+      "total": 20,
+      "derived": true,
+      "derivation": "Table 1 reports Gender (M/F) as 15/5; female count taken from the F component.",
+      "provenance": {
+        "quote": "Gender (M/F) — 15/5",
+        "location": "Table 1, row: Gender (M/F)"
+      }
+    },
+    "sex_male": {
+      "n": 15,
+      "total": 20,
+      "provenance": {
+        "quote": "Gender (M/F) — 15/5",
+        "location": "Table 1, row: Gender (M/F)"
+      }
+    },
+    "bmi": {
+      "value_type": "median",
+      "value": 28.1,
+      "dispersion_type": "iqr",
+      "dispersion_low": 26.2,
+      "dispersion_high": 34.0,
+      "n": 20,
+      "unit": "kg/m2",
+      "provenance": {
+        "quote": "Body mass index, kg/m2 — 28.1 (26.2–34.0)",
+        "location": "Table 1, row: Body mass index, kg/m2"
+      }
+    },
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin definition",
+      "provenance": {
+        "quote": "Patients older than 18 years with ARDS according to the Berlin definition [16]",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "n_ards": {
+      "n": 20,
+      "total": 20,
+      "provenance": {
+        "quote": "Twenty patients with moderate to severe ARDS (PaO2/FiO2 < 150 mmHg) were included",
+        "location": "Abstract, Methods, p. 1"
+      }
+    },
+    "ards_severity": {
+      "mild": null,
+      "moderate": null,
+      "severe": null
+    },
+    "covid19_population": "some",
+    "cause_of_respiratory_failure": {
+      "value": "Pneumonia was the main cause for ARDS in 17 patients (85%). Twelve patients (60%) had COVID-19 associated ARDS.",
+      "provenance": {
+        "quote": "Pneumonia was the main cause for ARDS in 17 patients (85%). Twelve patients (60%) had COVID-19 associated ARDS.",
+        "location": "Results, Patients, p. 4"
+      }
+    },
+    "pao2_fio2_baseline": {
+      "value_type": "median",
+      "value": 101,
+      "dispersion_type": "iqr",
+      "dispersion_low": 78,
+      "dispersion_high": 124,
+      "n": 20,
+      "unit": "mmHg",
+      "provenance": {
+        "quote": "PaO2/FiO2, mmHg — 101 (78–124)",
+        "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+      }
+    },
+    "apache_ii": null,
+    "sofa": {
+      "value_type": "median",
+      "value": 5,
+      "dispersion_type": "iqr",
+      "dispersion_low": 3,
+      "dispersion_high": 7,
+      "n": 20,
+      "provenance": {
+        "quote": "SOFA score at admission — 5 (3–7)",
+        "location": "Table 1, row: SOFA score at admission"
+      }
+    },
+    "saps_ii": {
+      "value_type": "median",
+      "value": 40,
+      "dispersion_type": "iqr",
+      "dispersion_low": 29,
+      "dispersion_high": 45,
+      "n": 20,
+      "provenance": {
+        "quote": "SAPSII at admission — 40 (29–45)",
+        "location": "Table 1, row: SAPSII at admission"
+      }
+    },
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": {
+      "n": 0,
+      "total": 20,
+      "derived": true,
+      "derivation": "Need for ECMO was an exclusion criterion, so no enrolled patient was on ECMO by construction.",
+      "provenance": {
+        "quote": "Exclusion criteria were legal protection, pregnancy, severe hemodynamic instability, pneumothorax or need for extracorporeal membrane oxygenation (ECMO).",
+        "location": "Materials and methods, Study patients, p. 2"
+      }
+    },
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Time from admission to ARDS diagnosis, hours",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1,
+          "dispersion_high": 37,
+          "n": 20,
+          "unit": "hours",
+          "provenance": {
+            "quote": "Time from admission to ARDS diagnosis, hours — 3 (1–37)",
+            "location": "Table 1, row: Time from admission to ARDS diagnosis, hours"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Time from ARDS diagnosis to inclusion, hours",
+        "arm_label": null,
+        "continuous": {
+          "value_type": "median",
+          "value": 39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 27,
+          "dispersion_high": 51,
+          "n": 20,
+          "unit": "hours",
+          "provenance": {
+            "quote": "Time from ARDS diagnosis to inclusion, hours — 39 (27–51)",
+            "location": "Table 1, row: Time from ARDS diagnosis to inclusion, hours"
+          }
+        }
+      },
+      {
+        "name_verbatim": "COVID-19 pneumonia",
+        "arm_label": null,
+        "count": {
+          "n": 12,
+          "total": 20,
+          "percent_as_reported": 60,
+          "provenance": {
+            "quote": "COVID-19 pneumonia — 12 (60%)",
+            "location": "Table 1, ARDS risk factor, row: COVID-19 pneumonia"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Non-COVID-19 pneumonia",
+        "arm_label": null,
+        "count": {
+          "n": 5,
+          "total": 20,
+          "percent_as_reported": 25,
+          "provenance": {
+            "quote": "Non-COVID-19 pneumonia — 5 (25%)",
+            "location": "Table 1, ARDS risk factor, row: Non-COVID-19 pneumonia"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Aspiration",
+        "arm_label": null,
+        "count": {
+          "n": 2,
+          "total": 20,
+          "percent_as_reported": 10,
+          "provenance": {
+            "quote": "Aspiration — 2 (10%)",
+            "location": "Table 1, ARDS risk factor, row: Aspiration"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pancreatitis",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 20,
+          "percent_as_reported": 5,
+          "provenance": {
+            "quote": "Pancreatitis — 1 (5%)",
+            "location": "Table 1, ARDS risk factor, row: Pancreatitis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diabetes",
+        "arm_label": null,
+        "count": {
+          "n": 5,
+          "total": 20,
+          "percent_as_reported": 25,
+          "provenance": {
+            "quote": "Diabetes — 5 (25%)",
+            "location": "Table 1, Comorbidities, row: Diabetes"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Chronic hypertension",
+        "arm_label": null,
+        "count": {
+          "n": 9,
+          "total": 20,
+          "percent_as_reported": 45,
+          "provenance": {
+            "quote": "Chronic hypertension — 9 (45%)",
+            "location": "Table 1, Comorbidities, row: Chronic hypertension"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Cancer or hematologic malignancy",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 20,
+          "percent_as_reported": 5,
+          "provenance": {
+            "quote": "Cancer or hematologic malignancy — 1 (5%)",
+            "location": "Table 1, Comorbidities, row: Cancer or hematologic malignancy"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Chronic heart failure",
+        "arm_label": null,
+        "count": {
+          "n": 3,
+          "total": 20,
+          "percent_as_reported": 15,
+          "provenance": {
+            "quote": "Chronic heart failure — 3 (15%)",
+            "location": "Table 1, Comorbidities, row: Chronic heart failure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Chronic obstructive pulmonary disease",
+        "arm_label": null,
+        "count": {
+          "n": 1,
+          "total": 20,
+          "percent_as_reported": 5,
+          "provenance": {
+            "quote": "Chronic obstructive pulmonary disease — 1 (5%)",
+            "location": "Table 1, Comorbidities, row: Chronic obstructive pulmonary disease"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "NutriVent®, Sidam, San Giacomo Roncole, Italy",
+      "provenance": {
+        "quote": "Pes measurements were obtained with a dedicated nasogastric feeding tube equipped with an esophageal balloon (NutriVent®, Sidam, San Giacomo Roncole, Italy) connected to the auxiliary pressure transducer of the ventilator.",
+        "location": "Materials and methods, Study protocol - Settings, p. 2"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": null,
+      "dispersion_type": "none",
+      "provenance": null
+    },
+    "balloon_calibration": {
+      "method": "other",
+      "method_verbatim": {
+        "value": "The balloon was consecutively inflated to achieve a filling volume of 2, 3 and 4 mL. Finally, the volume insufflated in the esophageal balloon for the measurements was defined as the one allowing to obtain the maximal tidal Pes.",
+        "provenance": {
+          "quote": "The balloon was consecutively inflated to achieve a filling volume of 2, 3 and 4 mL. Finally, the volume insufflated in the esophageal balloon for the measurements was defined as the one allowing to obtain the maximal tidal Pes.",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      },
+      "position_verification": {
+        "value": "Correct positioning of the esophageal balloon was then verified by chest radiography and an occlusion test (modified Baydur's maneuver), as previously described [17].",
+        "provenance": {
+          "quote": "Correct positioning of the esophageal balloon was then verified by chest radiography and an occlusion test (modified Baydur's maneuver), as previously described [17].",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      },
+      "occlusion_ratio_acceptance": {
+        "value": "A ratio of Pes swing to Paw swing (ΔPes/ΔPaw) during the occlusion test was considered acceptable if comprised between 0.8 and 1.2.",
+        "provenance": {
+          "quote": "A ratio of Pes swing to Paw swing (ΔPes/ΔPaw) during the occlusion test was considered acceptable if comprised between 0.8 and 1.2.",
+          "location": "Materials and methods, p. 3, first paragraph"
+        }
+      }
+    },
+    "ptp_computation": {
+      "method": "both_absolute_and_elastance",
+      "method_verbatim": {
+        "value": "In the PL, exp strategy, PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes)... In the PL, insp strategy, PEEP was set to maintain the calculated PL, insp using EL/ERS ratio (PL, insp = Pplat x EL/ERS) between 20 and 22 cmH2O.",
+        "provenance": {
+          "quote": "In the PL, exp strategy, PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes) of 0 to 10 cmH2O depending on the severity of hypoxemia using a PL, exp/FiO2 table as proposed by Talmor et al. (additional file 1, Table S1) [12]. ... In the PL, insp strategy, PEEP was set to maintain the calculated PL, insp using EL/ERS ratio (PL, insp = Pplat x EL/ ERS) between 20 and 22 cmH2O.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "pes_correction_applied": {
+        "value": null,
+        "provenance": null
+      }
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "PL,exp strategy: PEEP set to target a directly measured PL,exp of 0 to 10 cmH2O using a PL,exp/FiO2 table (Talmor); PL,insp strategy: PEEP set to maintain calculated PL,insp between 20 and 22 cmH2O.",
+        "provenance": {
+          "quote": "In the PL, exp strategy, PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes) of 0 to 10 cmH2O depending on the severity of hypoxemia using a PL, exp/FiO2 table as proposed by Talmor et al. ... In the PL, insp strategy, PEEP was set to maintain the calculated PL, insp using EL/ERS ratio (PL, insp = Pplat x EL/ ERS) between 20 and 22 cmH2O.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes) of 0 to 10 cmH2O",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP was set to target a directly measured PL, exp (PL, exp = total PEEP – expiratory Pes) of 0 to 10 cmH2O",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 22,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP was set to maintain the calculated PL, insp using EL/ERS ratio (PL, insp = Pplat x EL/ ERS) between 20 and 22 cmH2O.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": {
+        "value": 24,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "In both tested strategies, the maximum level of PEEP was limited to 24 cmH2O for safety reasons.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "titration_frequency": {
+        "value": "Each strategy applied once for 45 min.",
+        "provenance": {
+          "quote": "The two tested PL-based PEEP titration strategies (PL, exp and PL, insp strategies) were applied for 45 min each in a randomized order.",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "6 mL/kg of predicted body weight (PBW); Vt remained unchanged across the study",
+        "provenance": {
+          "quote": "Vt was set to 6 mL/kg of predicted body weight (PBW), respiratory rate was set to maintain pH between 7.35 and 7.45, and FiO₂ was set to maintain pulsed oxygen saturation between 92 and 98%. Vt remained unchanged across the study.",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "In both tested strategies, the maximum level of PEEP was limited to 24 cmH2O for safety reasons. PEEP increases were also limited in the event of hemodynamic instability (defined as the need for more than 1 L of fluid therapy or increased vasopressor doses).",
+        "provenance": {
+          "quote": "In both tested strategies, the maximum level of PEEP was limited to 24 cmH2O for safety reasons. PEEP increases were also limited in the event of hemodynamic instability (defined as the need for more than 1 L of fluid therapy or increased vasopressor doses).",
+          "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Patients were sedated, paralyzed, and placed in the supine semi-recumbent 30° position.",
+        "provenance": {
+          "quote": "Patients were sedated, paralyzed, and placed in the supine semi-recumbent 30° position.",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "ards_onset",
+      "hours_from_reference": {
+        "value_type": "median",
+        "value": 39,
+        "dispersion_type": "iqr",
+        "dispersion_low": 27,
+        "dispersion_high": 51,
+        "n": 20,
+        "unit": "hours",
+        "provenance": {
+          "quote": "Time from ARDS diagnosis to inclusion, hours — 39 (27–51)",
+          "location": "Table 1, row: Time from ARDS diagnosis to inclusion, hours"
+        }
+      },
+      "timing_verbatim": {
+        "value": "enrolled within 72 h after the diagnosis of ARDS",
+        "provenance": {
+          "quote": "Patients older than 18 years with ARDS according to the Berlin definition [16] with a ratio of the partial pressure of arterial oxygen to the fraction of inspired oxygen (PaO2/FiO2) ratio lower than 150 mmHg with a minimal PEEP level of 5 cmH2O were enrolled within 72 h after the diagnosis of ARDS.",
+          "location": "Materials and methods, Study patients, p. 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "The two tested PL-based PEEP titration strategies (PL, exp and PL, insp strategies) were applied for 45 min each in a randomized order.",
+      "provenance": {
+        "quote": "The two tested PL-based PEEP titration strategies (PL, exp and PL, insp strategies) were applied for 45 min each in a randomized order.",
+        "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "fixed_peep",
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "After inclusion, PEEP was consecutively set at 5 cmH2O for 45 min and at a PEEP level allowing to reach a Pplat between 28 and 30 cmH2O, as described in the Express strategy, for 45 min, before the application of the tested PEEP titration strategies.",
+      "provenance": {
+        "quote": "After inclusion, PEEP was consecutively set at 5 cmH2O for 45 min and at a PEEP level allowing to reach a Pplat between 28 and 30 cmH2O, as described in the Express strategy, for 45 min [4], before the application of the tested PEEP titration strategies.",
+        "location": "Materials and methods, Study protocol - Settings, p. 2"
+      }
+    },
+    "crossover_order": {
+      "value": "PEEP 5 cmH2O 45 min, then PEEP set to target Pplat 28-30 cmH2O (Express) 45 min, then the two tested strategies (PL,insp and PL,exp) applied for 45 min each in randomized order, separated by a 45-minute Express-strategy washout period.",
+      "provenance": {
+        "quote": "The two tested PL-based PEEP titration strategies (PL, exp and PL, insp strategies) were applied for 45 min each in a randomized order. A 45-minute washout period (Express strategy) was applied between the two tested strategy.",
+        "location": "Materials and methods, -PEEP Titration strategies, p. 3; Fig. 1, p. 3"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "A 45-minute washout period (Express strategy) was applied between the two tested strategy.",
+      "provenance": {
+        "quote": "A 45-minute washout period (Express strategy) was applied between the two tested strategy.",
+        "location": "Materials and methods, -PEEP Titration strategies, p. 3"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "peep5",
+      "label_verbatim": "PEEP 5 cmH2O",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 20,
+        "provenance": {
+          "quote": "Gas exchange at PEEP 5 cmH2O ... n = 20",
+          "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": null,
+        "value": 5,
+        "dispersion_type": "none",
+        "provenance": {
+          "quote": "After inclusion, PEEP was consecutively set at 5 cmH2O for 45 min",
+          "location": "Materials and methods, Study protocol - Settings, p. 2"
+        }
+      }
+    },
+    {
+      "label": "express",
+      "label_verbatim": "PEEPExpress (Express strategy, Pplat 28-30 cmH2O)",
+      "role": "other_condition",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 20,
+        "provenance": {
+          "quote": "Gas exchange at PEEPExpress ... n = 20",
+          "location": "Table 1, section: Gas exchange at PEEPExpress"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "pl_insp",
+      "label_verbatim": "PL, insp strategy (PEEPPL, insp)",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 20,
+        "provenance": {
+          "quote": "PL, insp strategy n = 20",
+          "location": "Table 2, column header: PL, insp strategy n = 20"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "pl_exp",
+      "label_verbatim": "PL, exp strategy (PEEPPL, exp)",
+      "role": "alternative_titration_condition",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 20,
+        "provenance": {
+          "quote": "PL, exp strategy n = 20",
+          "location": "Table 2, column header: PL, exp strategy n = 20"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "ICU mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "icu_discharge",
+        "label_verbatim": "ICU mortality"
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "events": 7,
+          "total": 20,
+          "provenance": {
+            "quote": "Seven patients (35%) died in the ICU.",
+            "location": "Results, Patients, p. 4"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP levels determined by the two transpulmonary pressure-based titration strategies (PEEPPL, insp and PEEPPL, exp)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "PEEP determined by each strategy, applied 45 min, sedated and paralyzed patients",
+        "provenance": {
+          "quote": "Gas exchange, hemodynamics, partitioned respiratory mechanics and gas distribution in the lungs were assessed at the end of each PEEP application period",
+          "location": "Materials and methods, p. 3"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Black lines represent the median values of PEEP levels determined by each strategy across the entire study population.",
+            "location": "Fig. 2A caption, p. 6"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": null,
+          "dispersion_type": null,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Black lines represent the median values of PEEP levels determined by each strategy across the entire study population.",
+            "location": "Fig. 2A caption, p. 6"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.11",
+          "test_used": "Wilcoxon pairwise test",
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The median PEEP levels determined by the two tested strategies were not significantly different (Fig. 2A)",
+            "location": "Results, PEEP levels determined by the two transpulmonary pressure-based titration strategies, p. 4; Fig. 2A shows p = 0.11"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2, mmHg",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 101,
+          "dispersion_type": "iqr",
+          "dispersion_low": 78,
+          "dispersion_high": 124,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg — 101 (78–124)",
+            "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 152,
+          "dispersion_type": "iqr",
+          "dispersion_low": 120,
+          "dispersion_high": 202,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg — 152 (120–202)",
+            "location": "Table 1, section: Gas exchange at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 148,
+          "dispersion_type": "iqr",
+          "dispersion_low": 126,
+          "dispersion_high": 232,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg — 148 (126–232)",
+            "location": "Table 2, row: PaO2/FiO2, mmHg, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 133,
+          "dispersion_type": "iqr",
+          "dispersion_low": 109,
+          "dispersion_high": 187,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg — 133 (109–187)",
+            "location": "Table 2, row: PaO2/FiO2, mmHg, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.08",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg — 148 (126–232) / 133 (109–187) — 0.08",
+            "location": "Table 2, row: PaO2/FiO2, mmHg"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2, mmHg",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 44,
+          "dispersion_type": "iqr",
+          "dispersion_low": 37,
+          "dispersion_high": 48,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg — 44 (37–48)",
+            "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 46,
+          "dispersion_type": "iqr",
+          "dispersion_low": 41,
+          "dispersion_high": 49,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg — 46 (41–49)",
+            "location": "Table 1, section: Gas exchange at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 45,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42,
+          "dispersion_high": 51,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg — 45 (42–51)",
+            "location": "Table 2, row: PaCO2, mmHg, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 45,
+          "dispersion_type": "iqr",
+          "dispersion_low": 42,
+          "dispersion_high": 53,
+          "n": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2, mmHg — 45 (42–53)",
+            "location": "Table 2, row: PaCO2, mmHg, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.20",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "PaCO2, mmHg — 45 (42–51) / 45 (42–53) — 0.20",
+            "location": "Table 2, row: PaCO2, mmHg"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "Shunt fraction, %",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 29,
+          "dispersion_type": "iqr",
+          "dispersion_low": 24,
+          "dispersion_high": 47,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction, % — 29 (24–47)",
+            "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 0.27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.2,
+          "dispersion_high": 0.3,
+          "n": 20,
+          "unit": "fraction (as printed)",
+          "provenance": {
+            "quote": "Shunt fraction, % — 0.27 (0.20–0.30)",
+            "location": "Table 1, section: Gas exchange at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 18,
+          "dispersion_high": 30,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction, % — 25 (18–30)",
+            "location": "Table 2, row: Shunt fraction, %, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 29,
+          "dispersion_type": "iqr",
+          "dispersion_low": 21,
+          "dispersion_high": 37,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Shunt fraction, % — 29 (21–37)",
+            "location": "Table 2, row: Shunt fraction, %, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.07",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Shunt fraction, % — 25 (18–30) / 29 (21–37) — 0.07",
+            "location": "Table 2, row: Shunt fraction, %"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "Dead space fraction, %",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 65,
+          "dispersion_type": "iqr",
+          "dispersion_low": 47,
+          "dispersion_high": 71,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Dead space fraction, % — 65 (47–71)",
+            "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 68,
+          "dispersion_type": "iqr",
+          "dispersion_low": 56,
+          "dispersion_high": 74,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Dead space fraction, % — 68 (56–74)",
+            "location": "Table 1, section: Gas exchange at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 68,
+          "dispersion_type": "iqr",
+          "dispersion_low": 60,
+          "dispersion_high": 74,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Dead space fraction, % — 68 (60–74)",
+            "location": "Table 2, row: Dead space fraction, %, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 66,
+          "dispersion_type": "iqr",
+          "dispersion_low": 59,
+          "dispersion_high": 73,
+          "n": 20,
+          "unit": "%",
+          "provenance": {
+            "quote": "Dead space fraction, % — 66 (59–73)",
+            "location": "Table 2, row: Dead space fraction, %, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.10",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Dead space fraction, % — 68 (60–74) / 66 (59–73) — 0.10",
+            "location": "Table 2, row: Dead space fraction, %"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Ventilatory Ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 2.03,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.91,
+          "dispersion_high": 2.6,
+          "n": 20,
+          "provenance": {
+            "quote": "Ventilatory Ratio — 2.03 (1.91–2.60)",
+            "location": "Table 1, section: Gas exchange at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 2.25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.93,
+          "dispersion_high": 2.78,
+          "n": 20,
+          "provenance": {
+            "quote": "Ventilatory Ratio — 2.25 (1.93–2.78)",
+            "location": "Table 1, section: Gas exchange at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 2.25,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.96,
+          "dispersion_high": 2.76,
+          "n": 20,
+          "provenance": {
+            "quote": "Ventilatory Ratio — 2.25 (1.96–2.76)",
+            "location": "Table 2, row: Ventilatory Ratio, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 2.24,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.87,
+          "dispersion_high": 2.87,
+          "n": 20,
+          "provenance": {
+            "quote": "Ventilatory Ratio — 2.24 (1.87–2.87)",
+            "location": "Table 2, row: Ventilatory Ratio, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.20",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Ventilatory Ratio — 2.25 (1.96–2.76) / 2.24 (1.87–2.87) — 0.20",
+            "location": "Table 2, row: Ventilatory Ratio"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac index, L/min/m2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 3.1,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.43,
+          "dispersion_high": 3.85,
+          "n": 20,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index, L/min/m2 — 3.10 (2.43–3.85)",
+            "location": "Table 1, section: Hemodynamics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 2.65,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.2,
+          "dispersion_high": 3.18,
+          "n": 20,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index, L/min/m2 — 2.65 (2.20–3.18)",
+            "location": "Table 1, section: Hemodynamics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 2.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.25,
+          "dispersion_high": 3.28,
+          "n": 20,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index, L/min/m2 — 2.50 (2.25–3.28)",
+            "location": "Table 2, row: Cardiac index, L/min/m2, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 2.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 2.18,
+          "dispersion_high": 3.73,
+          "n": 20,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index, L/min/m2 — 2.60 (2.18–3.73)",
+            "location": "Table 2, row: Cardiac index, L/min/m2, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.10",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Cardiac index, L/min/m2 — 2.50 (2.25–3.28) / 2.60 (2.18–3.73) — 0.10",
+            "location": "Table 2, row: Cardiac index, L/min/m2"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Oxygen delivery index, mL/min/m2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 412,
+          "dispersion_type": "iqr",
+          "dispersion_low": 366,
+          "dispersion_high": 531,
+          "n": 20,
+          "unit": "mL/min/m2",
+          "provenance": {
+            "quote": "Oxygen delivery index, mL/min/m2 — 412 (366–531)",
+            "location": "Table 1, section: Hemodynamics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 381,
+          "dispersion_type": "iqr",
+          "dispersion_low": 335,
+          "dispersion_high": 472,
+          "n": 20,
+          "unit": "mL/min/m2",
+          "provenance": {
+            "quote": "Oxygen delivery index, mL/min/m2 — 381 (335–472)",
+            "location": "Table 1, section: Hemodynamics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 382,
+          "dispersion_type": "iqr",
+          "dispersion_low": 338,
+          "dispersion_high": 471,
+          "n": 20,
+          "unit": "mL/min/m2",
+          "provenance": {
+            "quote": "Oxygen delivery index, mL/ min/m2 — 382 (338–471)",
+            "location": "Table 2, row: Oxygen delivery index, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 391,
+          "dispersion_type": "iqr",
+          "dispersion_low": 341,
+          "dispersion_high": 446,
+          "n": 20,
+          "unit": "mL/min/m2",
+          "provenance": {
+            "quote": "Oxygen delivery index, mL/ min/m2 — 391 (341–446)",
+            "location": "Table 2, row: Oxygen delivery index, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.50",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Oxygen delivery index, mL/ min/m2 — 382 (338–471) / 391 (341–446) — 0.50",
+            "location": "Table 2, row: Oxygen delivery index"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS, mL/cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 38,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34,
+          "dispersion_high": 48,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL/cmH2O — 38 (34–48)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 36,
+          "dispersion_type": "iqr",
+          "dispersion_low": 29,
+          "dispersion_high": 41,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL/cmH2O — 36 (29–41)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 31,
+          "dispersion_high": 42,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL/cmH2O — 39 (31–42)",
+            "location": "Table 2, row: CRS, mL/cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 38,
+          "dispersion_type": "iqr",
+          "dispersion_low": 33,
+          "dispersion_high": 48,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, mL/cmH2O — 38 (33–48)",
+            "location": "Table 2, row: CRS, mL/cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.06",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "CRS, mL/cmH2O — 39 (31–42) / 38 (33–48) — 0.06",
+            "location": "Table 2, row: CRS, mL/cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 17.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15.5,
+          "dispersion_high": 21.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O — 17.0 (15.5–21.0)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 29.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28.0,
+          "dispersion_high": 29.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O — 29.0 (28.0–29.0)",
+            "location": "Table 1, section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 28.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26.0,
+          "dispersion_high": 30.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O — 28.5 (26.0–30.0)",
+            "location": "Table 2, row: Pplat, cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 27.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 22.0,
+          "dispersion_high": 30.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat, cmH2O — 27.5 (22.0–30.5)",
+            "location": "Table 2, row: Pplat, cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.09",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Pplat, cmH2O — 28.5 (26.0–30.0) / 27.5 (22.0–30.5) — 0.09",
+            "location": "Table 2, row: Pplat, cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Driving pressure, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 10.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 8.5,
+          "dispersion_high": 14.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure, cmH2O — 10.0 (8.5–14.0)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 11.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10,
+          "dispersion_high": 13.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure, cmH2O — 11.0 (10–13.5)",
+            "location": "Table 1, section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 11.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.7,
+          "dispersion_high": 12.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure, cmH2O — 11.0 (9.7–12.5)",
+            "location": "Table 2, row: Driving pressure, cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 10.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 9.0,
+          "dispersion_high": 13.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Driving pressure, cmH2O — 10.5 (9.0–13.5)",
+            "location": "Table 2, row: Driving pressure, cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.09",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Driving pressure, cmH2O — 11.0 (9.7–12.5) / 10.5 (9.0–13.5) — 0.09",
+            "location": "Table 2, row: Driving pressure, cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CCW, mL/cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 150,
+          "dispersion_type": "iqr",
+          "dispersion_low": 118,
+          "dispersion_high": 200,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CCW, mL/cmH2O — 150 (118–200)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 146,
+          "dispersion_type": "iqr",
+          "dispersion_low": 108,
+          "dispersion_high": 216,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CCW, mL/cmH2O — 146 (108–216)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 142,
+          "dispersion_type": "iqr",
+          "dispersion_low": 116,
+          "dispersion_high": 188,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CCW, mL/cmH2O — 142 (116–188)",
+            "location": "Table 2, row: CCW, mL/cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 175,
+          "dispersion_type": "iqr",
+          "dispersion_low": 138,
+          "dispersion_high": 213,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CCW, mL/cmH2O — 175 (138–213)",
+            "location": "Table 2, row: CCW, mL/cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.07",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "CCW, mL/cmH2O — 142 (116–188) / 175 (138–213) — 0.07",
+            "location": "Table 2, row: CCW, mL/cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "EL/ERS",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 0.73,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.68,
+          "dispersion_high": 0.79,
+          "n": 20,
+          "provenance": {
+            "quote": "EL/ERS — 0.73 (0.68–0.79)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 0.76,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.7,
+          "dispersion_high": 0.84,
+          "n": 20,
+          "provenance": {
+            "quote": "EL/ERS — 0.76 (0.70–0.84)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 0.75,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.69,
+          "dispersion_high": 0.8,
+          "n": 20,
+          "provenance": {
+            "quote": "EL/ERS — 0.75 (0.69–0.80)",
+            "location": "Table 2, row: EL/ERS, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 0.78,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.67,
+          "dispersion_high": 0.8,
+          "n": 20,
+          "provenance": {
+            "quote": "EL/ERS — 0.78 (0.67–0.80)",
+            "location": "Table 2, row: EL/ERS, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.70",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "EL/ERS — 0.75 (0.69–0.80) / 0.78 (0.67–0.80) — 0.70",
+            "location": "Table 2, row: EL/ERS"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Lung strain",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 0.75,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.66,
+          "dispersion_high": 1.17,
+          "n": 20,
+          "provenance": {
+            "quote": "Lung strain — 0.75 (0.66–1.17)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 0.75,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.54,
+          "dispersion_high": 0.96,
+          "n": 20,
+          "provenance": {
+            "quote": "Lung strain — 0.75 (0.54–0.96)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 0.73,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.56,
+          "dispersion_high": 0.97,
+          "n": 20,
+          "provenance": {
+            "quote": "Lung strain — 0.73 (0.56–0.97)",
+            "location": "Table 2, row: Lung strain, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 0.73,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.54,
+          "dispersion_high": 1.04,
+          "n": 20,
+          "provenance": {
+            "quote": "Lung strain — 0.73 (0.54–1.04)",
+            "location": "Table 2, row: Lung strain, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.90",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Lung strain — 0.73 (0.56–0.97) / 0.73 (0.54–1.04) — 0.90",
+            "location": "Table 2, row: Lung strain"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Measured PL, exp, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": -4.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": -6.5,
+          "dispersion_high": 0.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Measured PL, exp, cmH2O — −4.0 (−6.5–0.5)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 5.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.8,
+          "dispersion_high": 7.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Measured PL, exp, cmH2O — 5.0 (0.8–7.0)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 5.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.8,
+          "dispersion_high": 8.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Measured PL, exp, cmH2O — 5.0 (1.8–8.0)",
+            "location": "Table 2, row: Measured PL, exp, cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 2.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1.0,
+          "dispersion_high": 4.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Measured PL, exp, cmH2O — 2.5 (1.0–4.0)",
+            "location": "Table 2, row: Measured PL, exp, cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.04",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Measured PL, exp, cmH2O — 5.0 (1.8–8.0) / 2.5 (1.0–4.0) — 0.04",
+            "location": "Table 2, row: Measured PL, exp, cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Calculated PL, insp, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 12.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.6,
+          "dispersion_high": 14.7,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Calculated PL, insp, cmH2O — 12.8 (11.6–14.7)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 21.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 20.1,
+          "dispersion_high": 24.6,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Calculated PL, insp, cmH2O — 21.8 (20.1–24.6)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 20.8,
+          "dispersion_type": "iqr",
+          "dispersion_low": 20.4,
+          "dispersion_high": 21.4,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Calculated PL, insp, cmH2O — 20.8 (20.4–21.4)",
+            "location": "Table 2, row: Calculated PL, insp, cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 18.3,
+          "dispersion_type": "iqr",
+          "dispersion_low": 16.0,
+          "dispersion_high": 22.7,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Calculated PL, insp, cmH2O — 18.3 (16.0–22.7)",
+            "location": "Table 2, row: Calculated PL, insp, cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.30",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Calculated PL, insp, cmH2O — 20.8 (20.4–21.4) / 18.3 (16.0–22.7) — 0.30",
+            "location": "Table 2, row: Calculated PL, insp, cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary driving pressure, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 8.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 9.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cmH2O — 8.0 (6.0–9.0)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 9.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.0,
+          "dispersion_high": 10.3,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure, cmH2O — 9.0 (7.0–10.3)",
+            "location": "Table 1 (continued), section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 8.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.0,
+          "dispersion_high": 10.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pres­ sure, cmH2O — 8.50 (7.00–10.00)",
+            "location": "Table 2, row: Transpulmonary driving pressure, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 7.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.75,
+          "dispersion_high": 11.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pres­ sure, cmH2O — 7.50 (6.75–11.00)",
+            "location": "Table 2, row: Transpulmonary driving pressure, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.50",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Transpulmonary driving pres­ sure, cmH2O — 8.50 (7.00–10.00) / 7.50 (6.75–11.00) — 0.50",
+            "location": "Table 2, row: Transpulmonary driving pressure"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "End-expiratory lung volume, mL",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "EELV measured using nitrogen washout technique (E-COVX module sensor)",
+        "provenance": {
+          "quote": "End-expiratory lung volume (EELV) was also measured at PEEP 5 cmH2O and at the end of each step using nitrogen washout technique (E-COVX® module sensor, GE Healthcare).",
+          "location": "Materials and methods, Measurements and collected data, p. 4"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 2105,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1700,
+          "dispersion_high": 2818,
+          "n": 20,
+          "unit": "mL",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL — 2,105 (1,700–2,818)",
+            "location": "Table 2, row: End-expiratory lung volume, mL, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 1869,
+          "dispersion_type": "iqr",
+          "dispersion_low": 1472,
+          "dispersion_high": 2288,
+          "n": 20,
+          "unit": "mL",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL — 1,869 (1,472–2,288)",
+            "location": "Table 2, row: End-expiratory lung volume, mL, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.20",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "End-expiratory lung volume, mL — 2,105 (1,700–2,818) / 1,869 (1,472–2,288) — 0.20",
+            "location": "Table 2, row: End-expiratory lung volume, mL"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "Recruited volume from PEEP 5 cmH2O, mL",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 677,
+          "dispersion_type": "iqr",
+          "dispersion_low": 247,
+          "dispersion_high": 870,
+          "n": 20,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Recruited volume from PEEP 5 cmH2O, mL — 677 (247–870)",
+            "location": "Table 2, row: Recruited volume from PEEP 5 cmH2O, mL, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 361,
+          "dispersion_type": "iqr",
+          "dispersion_low": 149,
+          "dispersion_high": 906,
+          "n": 20,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Recruited volume from PEEP 5 cmH2O, mL — 361 (149–906)",
+            "location": "Table 2, row: Recruited volume from PEEP 5 cmH2O, mL, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.50",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Recruited volume from PEEP 5 cmH2O, mL — 677 (247–870) / 361 (149–906) — 0.50",
+            "location": "Table 2, row: Recruited volume from PEEP 5 cmH2O, mL"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Dorsal fraction of ventilation (TVdependent/TVglobal)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "assessed using EIT (Dräger C500)",
+        "provenance": {
+          "quote": "Dorsal fraction of ventilation (TVdependent/TVglobal), regional compliance of dependent lung (CRS, dep) and non-dependent lung (CRS, non−dep) were assessed using EIT",
+          "location": "Materials and methods, Measurements and collected data, p. 4"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 0.47,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.39,
+          "dispersion_high": 0.58,
+          "n": 20,
+          "provenance": {
+            "quote": "Dorsal fraction of ventilation (TVdependent/TVglobal) — 0.47 (0.39–0.58)",
+            "location": "Table 2, row: Dorsal fraction of ventilation, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 0.39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.27,
+          "dispersion_high": 0.55,
+          "n": 20,
+          "provenance": {
+            "quote": "Dorsal fraction of ventilation (TVdependent/TVglobal) — 0.39 (0.27–0.55)",
+            "location": "Table 2, row: Dorsal fraction of ventilation, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.01",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "Dorsal fraction of ventilation (TVdependent/TVglobal) — 0.47 (0.39–0.58) / 0.39 (0.27–0.55) — 0.01",
+            "location": "Table 2, row: Dorsal fraction of ventilation"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS, non−dependent, mL/cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 20,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15,
+          "dispersion_high": 24,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, non−dependent, mL/cmH2O — 20 (15–24)",
+            "location": "Table 2, row: CRS, non−dependent, mL/cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 22,
+          "dispersion_type": "iqr",
+          "dispersion_low": 18,
+          "dispersion_high": 28,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, non−dependent, mL/cmH2O — 22 (18–28)",
+            "location": "Table 2, row: CRS, non−dependent, mL/cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.01",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "CRS, non−dependent, mL/cmH2O — 20 (15–24) / 22 (18–28) — 0.01",
+            "location": "Table 2, row: CRS, non−dependent, mL/cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CRS, dependent, mL/cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 18,
+          "dispersion_type": "iqr",
+          "dispersion_low": 14,
+          "dispersion_high": 20,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, dependent, mL/cmH2O — 18 (14–20)",
+            "location": "Table 2, row: CRS, dependent, mL/cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 16,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13,
+          "dispersion_high": 19,
+          "n": 20,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CRS, dependent, mL/cmH2O — 16 (13–19)",
+            "location": "Table 2, row: CRS, dependent, mL/cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.20",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "CRS, dependent, mL/cmH2O — 18 (14–20) / 16 (13–19) — 0.20",
+            "location": "Table 2, row: CRS, dependent, mL/cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtot, cmH2O",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "label_verbatim": "end of each PEEP application period"
+      },
+      "is_longest_reported_mortality": null,
+      "data": [
+        {
+          "arm_label": "peep5",
+          "value_type": "median",
+          "value": 6.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 6.0,
+          "dispersion_high": 8.5,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O — 6.0 (6.0–8.5)",
+            "location": "Table 1, section: Respiratory mechanics at PEEP 5 cmH2O"
+          }
+        },
+        {
+          "arm_label": "express",
+          "value_type": "median",
+          "value": 17.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 15.0,
+          "dispersion_high": 18.2,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O — 17.5 (15.0–18.2)",
+            "location": "Table 1, section: Respiratory mechanics at PEEPExpress"
+          }
+        },
+        {
+          "arm_label": "pl_insp",
+          "value_type": "median",
+          "value": 17.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 13.7,
+          "dispersion_high": 20.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O — 17.0 (13.7–20.0)",
+            "location": "Table 2, row: PEEPtot, cmH2O, column: PL, insp strategy"
+          }
+        },
+        {
+          "arm_label": "pl_exp",
+          "value_type": "median",
+          "value": 15.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 11.0,
+          "dispersion_high": 18.0,
+          "n": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O — 15.0 (11.0–18.0)",
+            "location": "Table 2, row: PEEPtot, cmH2O, column: PL, exp strategy"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "pairwise",
+          "contrast": "pl_insp minus pl_exp",
+          "arm_label_a": "pl_insp",
+          "arm_label_b": "pl_exp",
+          "p_value_verbatim": "0.11",
+          "test_used": "Wilcoxon pairwise test",
+          "provenance": {
+            "quote": "PEEPtot, cmH2O — 17.0 (13.7–20.0) / 15.0 (11.0–18.0) — 0.11",
+            "location": "Table 2, row: PEEPtot, cmH2O"
+          }
+        }
+      ],
+      "effect_estimates": []
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "mixed_bmi",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp",
+      "elastance_derived"
+    ],
+    "classification_notes": "ards_only: all patients met Berlin ARDS with PaO2/FiO2 < 150. mixed_bmi: median BMI 28.1 kg/m2 but the study explicitly analyses obese (n=9, BMI >= 30) and non-obese (n=11) subgroups. timing_subgroup: median time from ARDS diagnosis to inclusion 39 (27–51) hours, i.e. under 48 h at the median, within the 72-h window; classified early_within_48h although the IQR crosses 48 h. ptp_target_subgroups: the study applies both an absolute end-expiratory PL target (0-10 cmH2O, Talmor table) and an elastance-derived end-inspiratory PL target (20-22 cmH2O)."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "Obesity (BMI < 30 vs >= 30 kg/m2)",
+      "outcome_name": "PEEP levels determined by the two titration strategies (PEEPPL, insp vs PEEPPL, exp)",
+      "prespecified": null,
+      "result_verbatim": "PEEPPL, insp was higher than PEEPPL, exp in the non-obese patients (n = 11; 16 (14-18.5) cmH2O and 10 (7.5–15) cmH2O, respectively; p = 0.03). But no difference was observed between PEEPPL, insp and PEEPPL, exp in the obese patients (n = 9; 16 (12–18) cmH2O and 15 (15–18) cmH2O, respectively; p = 0.78)",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "PEEPPL, insp was higher than PEEPPL, exp in the non-obese patients (n = 11; 16 (14-18.5) cmH2O and 10 (7.5–15) cmH2O, respectively; p = 0.03). But no difference was observed between PEEPPL, insp and PEEPPL, exp in the obese patients (n = 9; 16 (12–18) cmH2O and 15 (15–18) cmH2O, respectively; p = 0.78) (Fig. 2A).",
+        "location": "Results, PEEP levels determined by the two transpulmonary pressure-based titration strategies, p. 4"
+      }
+    },
+    {
+      "subgroup_variable": "COVID-19 associated ARDS vs ARDS from other causes",
+      "outcome_name": "Main characteristics and respiratory mechanics at PEEP 5 cmH2O and at PEEP set according to the Express strategy",
+      "prespecified": null,
+      "result_verbatim": "The main characteristics and respiratory mechanics at PEEP 5 cmH2O and at PEEP set according to the Express strategy did not significantly differ between the patients with COVID-19 associated ARDS and those with ARDS from other causes (additional file 1, Table S3).",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "The main characteristics and respiratory mechanics at PEEP 5 cmH2O and at PEEP set according to the Express strategy did not significantly differ between the patients with COVID-19 associated ARDS and those with ARDS from other causes (additional file 1, Table S3).",
+        "location": "Results, Patients, p. 4"
+      }
+    },
+    {
+      "subgroup_variable": "PEEPPL, exp lower than vs higher than or equal to PEEPPL, insp",
+      "outcome_name": "CRS, BMI, Pplat, respiratory system driving pressure and transpulmonary driving pressure at PEEP 5 cmH2O",
+      "prespecified": null,
+      "result_verbatim": "Compared to the patients with PEEPPL, exp lower than PEEPPL, insp, those with PEEPPL, exp higher than or equal to PEEPPL, insp were characterized by significantly lower CRS and higher BMI, Pplat, respiratory system driving pressure and transpulmonary driving pressure at PEEP 5 cmH2O.",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "Compared to the patients with PEEPPL, exp lower than PEEPPL, insp, those with PEEPPL, exp higher than or equal to PEEPPL, insp were characterized by signifi­ cantly lower CRS and higher BMI, Pplat, respiratory system driving pressure and transpulmonary driving pressure at PEEP 5 cmH2O.",
+        "location": "Results, PEEP levels determined by the two transpulmonary pressure-based titration strategies, p. 4"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "COHORTS.md suspects an 'angers' cluster with pavlovsky_2024 (same ICU, shared authorship: Pavlovsky, Desprez, Richard, Chean, Mercat, Beloncle appear on both). Checks run on this report: (1) registration — this study is NCT03281473, registered 12 September 2017; pavlovsky_2024 (ref 23, Ann Intensive Care 2024, EIT/recruitment-to-inflation ratio physiologic study) is a different protocol and its registration is not stated in this PDF; (2) enrolment window — this study enrolled October 2018 to January 2022; (3) design and population — this is a randomized crossover of two PL-based PEEP titration strategies in 20 patients, whereas pavlovsky_2024 compares EIT-based and respiratory-mechanics-based PEEP methods, a distinct protocol. Pavlovsky 2024 additionally stated that 10 of its COVID-ARDS patients were published earlier in a paper not in this folder. I could not conclusively confirm or refute patient sharing from this report alone; cohort_id left null pending adjudication.",
+    "unclear_items": [
+      "extraction_flags.cohort_id — possible 'angers' cluster with pavlovsky_2024 on shared ICU/authors; registration and protocol differ but patient-level overlap cannot be excluded from this report alone.",
+      "arms[].sequence_position for pl_insp and pl_exp — the order of the two tested strategies was randomized, so no fixed sequence position exists; left null.",
+      "outcomes (ventilator_settings, PEEP levels) data[].value — whole-population median PEEP under each strategy appears only in Fig. 2A (black lines); values would require digitisation.",
+      "design.blinding — no blinding described; open-label physiological crossover implied but not stated.",
+      "design.consecutive_enrolment — not stated.",
+      "feasibility fields — no report of placement attempts, failures, or balloon-related complications; silence, not a negative statement.",
+      "Table 1 shunt fraction units inconsistent: 'Shunt fraction, %' reported as 29 (24–47) at PEEP 5 but 0.27 (0.20–0.30) at PEEPExpress; recorded verbatim.",
+      "adults_18_plus — explicit age criterion (>18 years) is stated, so coded yes without inference; no ambiguity."
+    ],
+    "data_only_in_figure": [
+      "Median PEEP levels determined by each strategy across the entire study population (Fig. 2A black lines)",
+      "Individual PEEPPL, insp and PEEPPL, exp values and their correlation (Fig. 2B, R = 0.25, p = 0.286)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Additional paired results reported in text but not in Table 2: PEEPPL, insp and PEEPPL, exp were higher than the Express-strategy PEEP in 7 (35%) and 6 (30%) patients; the difference between PEEPPL, insp and PEEPPL, exp was at least 3 cmH2O in 14 (70%) patients; PEEPPL, exp was lower than PEEPPL, insp in 12 patients (60%) and higher than or equal in 8 (40%); PL, exp was negative in 2 (10%) patients with the PL, insp strategy and calculated PL, insp was higher than 22 cmH2O in 7 (35%) patients with the PL, exp strategy; carry-over test on PaO2/FiO2 using a linear mixed-effects model p = 0.07. Tidal volume was 400 (362–450) mL and unchanged across conditions. Obese/non-obese and COVID/non-COVID subgroup data are in additional file 1 (Tables S3-S6), not provided. The proportion of patients with Pplat > 30 cmH2O or driving pressure > 14 cmH2O did not differ between strategies (additional file 1, Table S6)."
+  }
+}

@@ -1,0 +1,744 @@
+{
+  "study_id": "wang_2018",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[ventilator settings peep continuous @baseline]",
+      "decision": "unclear",
+      "reason": "Co-author rulings already set this entry's Pes-arm value to 12.3 and dispersion type to SD, i.e. the Table 2 'same day' column, but the entry is typed baseline. That column is post-titration (p. 6 section 6.2), and its readings are kept at hour 0 under GLM's 'PEEP (cm H2O)' entry. GLM's own version (PEEP 5 in both arms, 'basic state') is the pre-grouping ventilator protocol setting, not a reported result. Co-author: drop this entry, or, if the same-day column is to be treated as baseline, drop GLM's hour-0 PEEP entry instead.",
+      "evidence": "p. 2-3 sections 2.2.1 and 2.2.4; p. 6 Table 2 and section 6.2"
+    },
+    {
+      "target": "outcomes[oxygenation ph continuous @baseline]",
+      "decision": "glm",
+      "reason": "pH 7.43 +/- 0.1 vs 7.45 +/- 0.09 matches. The 'same day' column is hour 0 after titration, so GLM's minutes_hours_after_intervention hours 0 is right and DeepSeek's baseline is not. Domain is reserved for the co-authors.",
+      "evidence": "p. 6 Table 3; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation mechanical venti @duration until event]",
+      "decision": "glm",
+      "reason": "Means 8.6 +/- 1.8 vs 14.5 +/- 6.8 d, p < 0.05 match; GLM's name is the verbatim Table 1 row 'Mechanical ventilation time (day)'.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[icu length of stay live time of icu day continuo @duration until event]",
+      "decision": "glm",
+      "reason": "13.1 +/- 3.9 vs 20.9 +/- 20.5 d, p > 0.05 match; GLM's name is the verbatim Table 1 row 'Live time of ICU (day)'.",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (PEEP 12.3 +/- 3.9 vs 5 +/- 3, p < 0.05, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 2; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[ventilator settings peep cm h2o continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp end expirator @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's basic-state end-expiratory transpulmonary pressure entry has no values; the paper reports none.",
+      "evidence": "p. 3 section 2.2.4; p. 5-6 Tables 1-2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp cm h2o contin @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (Ptrans-exp 0.6 +/- 0.3 vs -0.3 +/- 4.2, p > 0.05, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 2; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp cm h2o contin @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp cm h2o contin @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp cm h2o contin @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp of selecting @not reported]",
+      "decision": "glm",
+      "reason": "Keep: the pooled 'total measurement' Ptrans-exp at the best PEEP, 0.5 +/- 0.7 vs -1.1 +/- 3.3 cm H2O (P < 0.05), is reported in the text only; not a duplicate of any table cell.",
+      "evidence": "p. 6 section 6.3"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins end inspirato @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (Ptrans-ins 5.7 +/- 2.4 vs 5.8 +/- 5.5, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 2; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins cm h2o contin @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins cm h2o contin @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins cm h2o contin @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak airway peak pressure @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (Ppeak 20.5 +/- 6.3 vs 22.8 +/- 4.5, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 2; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak cm h2o continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl compliance of the lung @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (CL 57 +/- 21 vs 37.7 +/- 10.1, p < 0.05, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 2; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl ml cm h2o continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl ml cm h2o continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl ml cm h2o continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 2; p. 4 step I"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl when the best peep was @not reported]",
+      "decision": "glm",
+      "reason": "Keep: CL when the best PEEP was set, 52.3 +/- 26.2 vs 37.5 +/- 18.4 ml/cm H2O (P < 0.05), is reported in the text only.",
+      "evidence": "p. 7 section 6.3 para 2"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index pao2 fio2 continuo @baseline]",
+      "decision": "glm",
+      "reason": "Keep: pre-intervention oxygenation index 239.2 +/- 87.7 vs 276.4 +/- 85.1 mm Hg is a Table 1 baseline value (codebook: baseline values belong in outcomes).",
+      "evidence": "p. 5 Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mm hg continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (PaO2/FiO2 309.6 +/- 95.4 vs 270.4 +/- 78.8, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 3; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mm hg continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 3; p. 4 step I"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mm hg continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 3; p. 4 step I"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 mm hg continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 6 Table 3; p. 4 step I"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index of titrating peep @not reported]",
+      "decision": "glm",
+      "reason": "Keep: oxygenation index of titrating PEEP, 324.2 +/- 104.5 vs 261.8 +/- 67.3 mm Hg (P < 0.05), is reported in the text only.",
+      "evidence": "p. 7-8 section 6.4"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 mm hg continuous @baseline]",
+      "decision": "unclear",
+      "reason": "Values 42.1 +/- 6.7 vs 40.4 +/- 8.5 and hours 0 are right, but GLM codes PaCO2 as oxygenation; the codebook reserves oxygenation for PaO2/FiO2, PaO2 and oxygenation index. DeepSeek's copy has domain other but the wrong (baseline) timepoint. Co-author: keep GLM's entry with domain other (or align with the co-authors' pH domain ruling, which is reserved).",
+      "evidence": "p. 6 Table 3; CODEBOOK Physiologic outcomes"
+    },
+    {
+      "target": "outcomes[other lac lactic acid continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 lactate 1.8 +/- 1.7 vs 1.6 +/- 0.6 is identical, arm for arm, to the 'same day' cell of Tables 3-4 kept under GLM's hour-0 entry (which the pipeline treats as the same timepoint as baseline); keeping both records one reading twice.",
+      "evidence": "p. 5 Table 1; p. 6 Table 3; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[other lac mmol l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (Lac 1.8 +/- 1.7 vs 1.6 +/- 0.6, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 6 Table 3; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp central venous pressure continu @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 CVP (Pes 10.3 +/- 3.4, ARDSNet 8.2 +/- 1.6) sits at the same baseline/hour-0 point as the Table 4 'same day' CVP kept under GLM's entry (10 +/- 2 vs 8.2 +/- 1.6, with its p value); the ARDSNet reading is identical. Note the Pes arm differs slightly between the two tables (10.3 vs 10); the kept Table 4 series is the one the paper tests.",
+      "evidence": "p. 5 Table 1; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mm hg continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (CVP 10 +/- 2 vs 8.2 +/- 1.6, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 4; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mm hg continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 7 Table 4; p. 4 step I"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mm hg continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 7 Table 4; p. 4 step I"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp mm hg continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the same 24/48/72 h reading is kept under DeepSeek's entry, which codes 'after grouping for 24, 48 and 72 hours' as minutes_hours_after_intervention with hours (the schema's type for short-term physiologic times); GLM codes it fixed_day. Values identical.",
+      "evidence": "p. 7 Table 4; p. 4 step I"
+    },
+    {
+      "target": "outcomes[hemodynamics hr heart rate continuous @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 heart rate 106 +/- 20 vs 100 +/- 14 is identical, arm for arm, to the 'same day' cell of Tables 3-4 kept under GLM's hour-0 entry (which the pipeline treats as the same timepoint as baseline); keeping both records one reading twice.",
+      "evidence": "p. 5 Table 1; p. 6 Table 3; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics hr beat min continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (HR 106 +/- 20 vs 100 +/- 14, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 4; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp systolic blood pressure continu @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 SBP 128.3 +/- 29.5 vs 111.5 +/- 5.7 is identical, arm for arm, to the 'same day' cell of Tables 3-4 kept under GLM's hour-0 entry (which the pipeline treats as the same timepoint as baseline); keeping both records one reading twice.",
+      "evidence": "p. 5 Table 1; p. 6 Table 3; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp mm hg continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (SBP 128.3 +/- 29.5 vs 111.5 +/- 5.7, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 4; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp diastolic blood pressure contin @baseline]",
+      "decision": "deepseek",
+      "reason": "Drop: Table 1 DBP 70.7 +/- 19.9 vs 64.4 +/- 7.6 is identical, arm for arm, to the 'same day' cell of Tables 3-4 kept under GLM's hour-0 entry (which the pipeline treats as the same timepoint as baseline); keeping both records one reading twice.",
+      "evidence": "p. 5 Table 1; p. 6 Table 3; p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp mm hg continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (DBP 70.7 +/- 19.9 vs 64.4 +/- 7.6, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 4; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other hs crp mg l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (hs-CRP 119.6 +/- 24.3 vs 129.8 +/- 53.2, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 5; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other hs crp mg l continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the third-day reading is kept under DeepSeek's entry at 72 h after grouping, as the Methods state ('at 72 hours'); values identical.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other hs crp mg l continuous @144h]",
+      "decision": "glm",
+      "reason": "Keep: sixth-day reading as reported ('On the sixth day', fixed_day 6); values match.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other pct ng ml continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (PCT 3.5 +/- 2.7 vs 1.6 +/- 3.1, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 5; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other pct ng ml continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the third-day reading is kept under DeepSeek's entry at 72 h after grouping, as the Methods state ('at 72 hours'); values identical.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other pct ng ml continuous @144h]",
+      "decision": "glm",
+      "reason": "Keep: sixth-day reading as reported ('On the sixth day', fixed_day 6); values match.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other il 6 ng l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (IL-6 6 +/- 2.2 vs 6.9 +/- 2, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 5; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other il 6 ng l continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the third-day reading is kept under DeepSeek's entry at 72 h after grouping, as the Methods state ('at 72 hours'); values identical.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other il 8 ng l continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep the 'same day' reading (IL-8 799.4 +/- 240.2 vs 782.3 +/- 574.6, matches the page) at hours 0: the 'same day' column is the day-0 measurement after grouping and titration (p. 6 section 6.2: the PEEP 'titration value ... on the current day of grouping' was higher; p. 3 section 2.2.4: basic-state values were recorded before recruitment and titration), so it is hour 0 after the intervention, not pre-intervention baseline. DeepSeek's copy typed baseline is dropped.",
+      "evidence": "p. 7 Table 5; p. 3 section 2.2.4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other il 8 ng l continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Drop: the third-day reading is kept under DeepSeek's entry at 72 h after grouping, as the Methods state ('at 72 hours'); values identical.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 2; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans exp continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 2; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptrans ins continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 2; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 2; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics cl continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 3; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other ph continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other ph continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other ph continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 3; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other paco2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other lac continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 6 Table 3; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other lac continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other lac continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other lac continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this cell; Pes 1 +/- 0.5 and ARDSNet 11 +/- 0.3 as printed (11 is very likely a typesetting error for 1.1, but extraction records what the paper prints).",
+      "evidence": "p. 6 Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: values and p value match the page image for this 24/48/72 h cell; time after grouping coded as minutes_hours_after_intervention.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics sbp continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 4; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[hemodynamics dbp continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: GLM has no entry for this reported 24/48/72 h cell; values and p value match the page image.",
+      "evidence": "p. 7 Table 4"
+    },
+    {
+      "target": "outcomes[other hs crp continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 5; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other hs crp continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: third-day reading at 72 h after grouping, as the Methods state; values match; 'The third day' is the verbatim column label.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other hs crp continuous @144h]",
+      "decision": "glm",
+      "reason": "Drop: the sixth-day reading is kept under GLM's fixed_day 6 entry. The paper says 'the 6th day after the grouping'; DeepSeek's 144 hours is an unstated conversion.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other pct continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 5; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other pct continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: third-day reading at 72 h after grouping, as the Methods state; values match; 'The third day' is the verbatim column label.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other pct continuous @144h]",
+      "decision": "glm",
+      "reason": "Drop: the sixth-day reading is kept under GLM's fixed_day 6 entry. The paper says 'the 6th day after the grouping'; DeepSeek's 144 hours is an unstated conversion.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other il 6 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 5; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other il 6 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: third-day reading at 72 h after grouping, as the Methods state; values match; 'The third day' is the verbatim column label.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "target": "outcomes[other il 8 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the 'same day' reading kept at hours 0 under GLM's entry; DeepSeek types this post-titration column as pre-intervention baseline.",
+      "evidence": "p. 7 Table 5; p. 6 section 6.2"
+    },
+    {
+      "target": "outcomes[other il 8 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: third-day reading at 72 h after grouping, as the Methods state; values match; 'The third day' is the verbatim column label.",
+      "evidence": "p. 7 Table 5; p. 4 step I"
+    },
+    {
+      "id": "3f1aa046b4",
+      "decision": "deepseek",
+      "reason": "GLM's test_used 'two samples t-test' is not stated for this row; the paper used a t test or a rank-sum test depending on distribution. Keep DeepSeek's P-only entry.",
+      "evidence": "p. 5 section 5"
+    },
+    {
+      "id": "da1168b5aa",
+      "decision": "deepseek",
+      "reason": "Same P value (< 0.05) without an unstated test.",
+      "evidence": "p. 5 Table 1; section 5"
+    },
+    {
+      "id": "05b373f7e6",
+      "decision": "deepseek",
+      "reason": "Both reviewers code the study single-centre; the only site named is the ICU of Xiamen Third Hospital, so n_centers 1.",
+      "evidence": "p. 1 affiliation; p. 5 section 6.1"
+    },
+    {
+      "id": "5aad8acc71",
+      "decision": "deepseek",
+      "reason": "Not reported: catheter insertion (step C) preceded randomisation, and whether catheters were placed in the 8 who died and 4 who left before analysis is not stated; 23 is only the analysed number.",
+      "evidence": "p. 4 steps C-D; p. 5 section 6.1"
+    },
+    {
+      "id": "64b0833398",
+      "decision": "deepseek",
+      "reason": "Not reported: no count of successful placements is given; 23 is the analysed number, not a placement outcome.",
+      "evidence": "p. 5 section 6.1"
+    },
+    {
+      "id": "3aad00f84e",
+      "decision": "deepseek",
+      "reason": "Titration began at grouping (randomisation), after haemodynamic stabilisation and definitive surgery; in a randomised trial the intervention starts at enrolment (codebook).",
+      "evidence": "p. 2 section 2.1.3; p. 4 steps D-F; CODEBOOK timing_subgroup ruling"
+    },
+    {
+      "id": "5cb37f433c",
+      "decision": "deepseek",
+      "reason": "The paper reports the overall mean age, 35.6 +/- 11.5 years.",
+      "evidence": "p. 5 section 6.1"
+    },
+    {
+      "id": "a1f9f658ed",
+      "decision": "deepseek",
+      "reason": "The paper reports 17 male and 6 female of 23.",
+      "evidence": "p. 5 section 6.1"
+    }
+  ]
+}

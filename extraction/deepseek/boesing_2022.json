@@ -1,0 +1,4529 @@
+{
+  "record_meta": {
+    "study_id": "boesing_2022",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/s13054-022-03956-8.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Boesing",
+    "year": 2022,
+    "title": "Effects of different positive end-expiratory pressure titration strategies during prone positioning in patients with acute respiratory distress syndrome: a prospective interventional study",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-022-03956-8",
+    "pmid": null,
+    "trial_registration": "DRKS00017449",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Exclusion criteria were age younger than 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury and hemodynamic instability",
+          "location": "Methods, Experimental protocol, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "All mechanically ventilated patients in the ICU were screened for the presence of moderate to severe ARDS",
+          "location": "Methods, para 2"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "in the intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine, University Medical Centre Mannheim",
+          "location": "Methods, para 2"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "targeting a positive Ptpexp ... PEEP was set to the Ptpexp target according to the empirical table of the EPVent-2 trial (PEEPPtpexp)",
+          "location": "Abstract, Methods / Methods, Experimental protocol"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The primary endpoint was to analyze whether Ptpexp differed significantly according to PEEP titration strategy during supine and prone positioning.",
+          "location": "Abstract, Methods"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "40 consecutive patients with moderate to severe ARDS",
+          "location": "Methods, para 2"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This prospective interventional study was conducted from July 2019 to February 2021",
+          "location": "Methods, para 2"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Title and text in English",
+          "location": "Title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "crossover_physiologic",
+    "study_design_verbatim": {
+      "value": "a prospective interventional study",
+      "provenance": {
+        "quote": "This prospective interventional study was conducted from July 2019 to February 2021",
+        "location": "Methods, para 2"
+      }
+    },
+    "comparison_structure": "within_patient_crossover",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "University Medical Centre Mannheim, Mannheim, Germany",
+        "location": "Methods, para 2"
+      }
+    },
+    "countries": [
+      "Germany"
+    ],
+    "location_provenance": {
+      "quote": "University Medical Centre Mannheim, Medical Faculty Mannheim of the University of Heidelberg, Mannheim, Germany",
+      "location": "Author details / Methods"
+    },
+    "planned_sample_size": {
+      "value": 40,
+      "provenance": {
+        "quote": "a sample size of 40 patients showed a power higher than 80%",
+        "location": "Statistical analysis, para 1"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "The number of patients was calculated based on a previous study conducted by our group [28], in which we assumed that the expected value of Ptpexp at PEEP titrated to the lowest Estat,RS is zero with a standard deviation of 4.40 in the supine position. For the prone position, we assumed the same standard deviation but an expected value of Ptpexp equal to 3 cm H2O. We further assumed that the correlation between both measures would be non-negative. Therefore, under these conditions, a sample size of 40 patients showed a power higher than 80% for a two-way repeated measurement ANOVA, with a significance level of 5%.",
+      "provenance": {
+        "quote": "The number of patients was calculated based on a previous study conducted by our group [28] ...",
+        "location": "Statistical analysis, para 1"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine",
+      "provenance": {
+        "quote": "in the intensive care unit (ICU) of the Department of Anesthesiology and Critical Care Medicine, University Medical Centre Mannheim",
+        "location": "Methods, para 2"
+      }
+    },
+    "enrolment_start": "2019-07",
+    "enrolment_end": "2021-02",
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "This study was supported by departmental funds.",
+      "provenance": {
+        "quote": "This study was supported by departmental funds.",
+        "location": "Funding section"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 40,
+      "provenance": {
+        "quote": "40 consecutive patients with moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg) were studied.",
+        "location": "Methods, para 2"
+      }
+    },
+    "n_analysed": {
+      "value": 40,
+      "provenance": {
+        "quote": "Forty consecutively identified patients with moderate to severe ARDS (PaO2/FiO2 < 150) were included in the analysis.",
+        "location": "Results, para 1"
+      }
+    },
+    "population_description": {
+      "value": "forty consecutive patients with moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg)",
+      "provenance": {
+        "quote": "40 consecutive patients with moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg) were studied.",
+        "location": "Methods, para 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "All mechanically ventilated patients in the ICU were screened for the presence of moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg). After obtaining written informed consent from each patient or their relatives, 40 consecutive patients ... were studied.",
+      "provenance": {
+        "quote": "All mechanically ventilated patients in the ICU were screened for the presence of moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg) [20]. After obtaining written informed consent from each patient or their relatives, 40 consecutive patients with moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg) were studied.",
+        "location": "Methods, para 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Exclusion criteria were age younger than 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury and hemodynamic instability (mean arterial pressure [MAP] < 65 mm Hg, cardiac index [CI] of < 2.0 L/min/m2).",
+      "provenance": {
+        "quote": "Exclusion criteria were age younger than 18 years, pregnancy, end-stage chronic organ failure, inherited cardiac malformations, severe head injury and hemodynamic instability (mean arterial pressure [MAP] < 65 mm Hg, cardiac index [CI] of < 2.0 L/min/m2).",
+        "location": "Methods, paras 2-3"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin Definition",
+      "provenance": {
+        "quote": "moderate to severe ARDS (defined by the ratio of arterial oxygen partial pressure divided by the fraction of inspired oxygen [PaO2/FiO2] < 150 mm Hg)",
+        "location": "Methods, para 2"
+      }
+    },
+    "n_ards": {
+      "n": 40,
+      "total": 40,
+      "provenance": {
+        "quote": "40 consecutive patients with moderate to severe ARDS",
+        "location": "Methods, para 2"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": null,
+        "total": null,
+        "percent_as_reported": null,
+        "derived": false,
+        "derivation": null,
+        "provenance": null
+      },
+      "moderate": {
+        "n": null,
+        "total": null,
+        "percent_as_reported": null,
+        "derived": false,
+        "derivation": null,
+        "provenance": null
+      },
+      "severe": {
+        "n": null,
+        "total": null,
+        "percent_as_reported": null,
+        "derived": false,
+        "derivation": null,
+        "provenance": null
+      }
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": null,
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": {
+      "n": 40,
+      "total": 40,
+      "provenance": {
+        "quote": "Patients were then moved to the prone position and all the physiological measurements were repeated",
+        "location": "Methods, Experimental protocol"
+      }
+    },
+    "n_neuromuscular_blockade": {
+      "n": 40,
+      "total": 40,
+      "provenance": {
+        "quote": "Cisatracurium was infused continuously for neuromuscular blockade throughout the study period.",
+        "location": "Methods, para 3"
+      }
+    },
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [],
+    "baseline_by_arm": []
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "esophageal balloon catheter (NutriVent™ nasogastric catheter, Sidam, Mirandola, Italy)",
+      "provenance": {
+        "quote": "Esophageal pressure was measured with an esophageal balloon catheter (NutriVent™ nasogastric catheter, Sidam, Mirandola, Italy)",
+        "location": "Methods, para 3"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": 4,
+      "unit": "mL",
+      "provenance": {
+        "quote": "filled with 4 mL of air as indicated by the manufacturer.",
+        "location": "Methods, para 3"
+      }
+    },
+    "balloon_calibration": {
+      "method": "manufacturer_recommended_volume",
+      "method_verbatim": {
+        "value": "filled with 4 mL of air as indicated by the manufacturer",
+        "provenance": {
+          "quote": "filled with 4 mL of air as indicated by the manufacturer.",
+          "location": "Methods, para 3"
+        }
+      },
+      "position_verification": {
+        "value": "The esophageal balloon catheter was positioned by slow retraction from the stomach until maximal respiratory pressure swings and minimal cardiac oscillation artefacts were obtained. Catheter positioning was confirmed by applying manual compression on the chest during an end-expiratory airway occlusion.",
+        "provenance": {
+          "quote": "The esophageal balloon catheter was positioned by slow retraction from the stomach until maximal respiratory pressure swings and minimal cardiac oscillation artefacts were obtained. Catheter positioning was confirmed by applying manual compression on the chest during an end-expiratory airway occlusion.",
+          "location": "Methods, para 3"
+        }
+      },
+      "occlusion_ratio_acceptance": {
+        "value": "0.8–1.2",
+        "provenance": {
+          "quote": "Correct positioning was verified by a ratio of change in esophageal pressure to the change in airway pressure of 0.8–1.2",
+          "location": "Methods, para 3"
+        }
+      }
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "End-inspiratory esophageal pressure (Pesinsp) and end-expiratory esophageal pressure (Pesexp) were recorded during a 5-s inspiratory and 5-s expiratory hold, respectively.",
+        "provenance": {
+          "quote": "End-inspiratory esophageal pressure (Pesinsp) and end-expiratory esophageal pressure (Pesexp) were recorded during a 5-s inspiratory and 5-s expiratory hold, respectively.",
+          "location": "Methods, Respiratory mechanics, gas exchange and hemodynamics"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "targeting a positive Ptpexp",
+        "provenance": {
+          "quote": "targeting a positive Ptpexp",
+          "location": "Background, para 1"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "once per condition (after recruitment manoeuvre and 30-min equilibration)",
+        "provenance": {
+          "quote": "After a recruitment maneuver as described, PEEP was set to the Ptpexp target according to the empirical table of the EPVent-2 trial (PEEPPtpexp). After a 30-min equilibration period, complete measurement ... was performed.",
+          "location": "Methods, Experimental protocol"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "a standardized dynamic recruitment maneuver and a decremental PEEP trial was performed",
+        "provenance": {
+          "quote": "After complete measurement of respiratory mechanics, gas exchange, and hemodynamics at PEEPARDSNetwork, a standardized dynamic recruitment maneuver and a decremental PEEP trial was performed",
+          "location": "Methods, Experimental protocol"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 mL/kg predicted body weight",
+        "provenance": {
+          "quote": "The patients were ventilated in a volume-controlled mode with tidal volumes (VT) of 6 mL/kg predicted body weight",
+          "location": "Methods, para 3"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "All mechanically ventilated patients in the ICU were screened for the presence of moderate to severe ARDS",
+        "provenance": {
+          "quote": "All mechanically ventilated patients in the ICU were screened for the presence of moderate to severe ARDS",
+          "location": "Methods, para 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "PEEP was initially set using the ARDS Network lower PEEP table (PEEPARDSNetwork)",
+      "provenance": {
+        "quote": "PEEP was initially set using the ARDS Network lower PEEP table (PEEPARDSNetwork)",
+        "location": "Methods, para 3"
+      }
+    },
+    "crossover_order": {
+      "value": "The non-randomized sequence of positioning and PEEP titration strategies may influence the results",
+      "provenance": {
+        "quote": "The non-randomized sequence of positioning and PEEP titration strategies may influence the results",
+        "location": "Discussion, Limitations"
+      }
+    },
+    "washout_or_stabilisation": {
+      "value": "a 30-min equilibration period between the measurements",
+      "provenance": {
+        "quote": "a 30-min equilibration period between the measurements was permitted",
+        "location": "Discussion, Limitations"
+      }
+    }
+  },
+  "arms": [
+    {
+      "label": "ardsnet_supine",
+      "label_verbatim": "PEEPARDSNetwork supine",
+      "role": "reference_condition",
+      "sequence_position": 1,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "ardsnet_prone",
+      "label_verbatim": "PEEPARDSNetwork prone",
+      "role": "positional_variant",
+      "sequence_position": 4,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "estat_supine",
+      "label_verbatim": "PEEPEstat,RS supine",
+      "role": "alternative_titration_condition",
+      "sequence_position": 2,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 11.6,
+        "dispersion_type": "sd",
+        "dispersion": 3.9,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The titrated PEEP levels were lower in the prone position compared with the supine position using PEEPEstat,RS (11.6 ± 3.9 versus 9.0 ± 3.3 cm H2O, p < 0.001)",
+          "location": "Results, Respiratory mechanics, para 1"
+        }
+      }
+    },
+    {
+      "label": "estat_prone",
+      "label_verbatim": "PEEPEstat,RS prone",
+      "role": "alternative_titration_condition",
+      "sequence_position": 5,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 9.0,
+        "dispersion_type": "sd",
+        "dispersion": 3.3,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The titrated PEEP levels were lower in the prone position compared with the supine position using PEEPEstat,RS (11.6 ± 3.9 versus 9.0 ± 3.3 cm H2O, p < 0.001)",
+          "location": "Results, Respiratory mechanics, para 1"
+        }
+      }
+    },
+    {
+      "label": "ptpexp_supine",
+      "label_verbatim": "PEEPPtpexp supine",
+      "role": "intervention",
+      "sequence_position": 3,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 16.1,
+        "dispersion_type": "sd",
+        "dispersion": 5.8,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "and PEEPPtpexp (16.1 ± 5.8 versus 11.8 ± 6.3 cm H2O, p < 0.001)",
+          "location": "Results, Respiratory mechanics, para 1"
+        }
+      }
+    },
+    {
+      "label": "ptpexp_prone",
+      "label_verbatim": "PEEPPtpexp prone",
+      "role": "intervention",
+      "sequence_position": 6,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "40 patients",
+          "location": "Results, para 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 11.8,
+        "dispersion_type": "sd",
+        "dispersion": 6.3,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "and PEEPPtpexp (16.1 ± 5.8 versus 11.8 ± 6.3 cm H2O, p < 0.001)",
+          "location": "Results, Respiratory mechanics, para 1"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptpexp",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured after 30-min equilibration at each PEEP strategy in each position",
+        "provenance": {
+          "quote": "After a 30-min equilibration period, complete measurement of respiratory mechanics, gas exchange, and hemodynamics was performed.",
+          "location": "Methods, Experimental protocol"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": -2.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpexp using PEEPARDSNetwork supine: -2.4 ± 3.5 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 1.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpexp using PEEPARDSNetwork prone: 1.1 ± 3.4 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": -0.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpexp using PEEPEstat,RS supine: -0.5 ± 2.1 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 1.1,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpexp using PEEPEstat,RS prone: 1.1 ± 2.5 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value": null,
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect across all PEEP strategies",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "positioning effect p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect across both positions",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "PEEP strategy effect p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction between positioning and PEEP strategy",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "interaction between position and PEEP strategy p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ardsnet_prone minus ardsnet_supine",
+          "arm_label_a": "ardsnet_prone",
+          "arm_label_b": "ardsnet_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "Prone compared to supine positioning increased end-expiratory transpulmonary pressure (Ptpexp) when using PEEPARDSNetwork (−2.4 ± 3.5 versus 1.1 ± 3.4 cm H2O, p < 0.001)",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "Prone compared to supine positioning increased ... PEEPEstat,RS (−0.5 ± 2.1 versus 1.1 ± 2.5 cm H2O, p < 0.001)",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "Ptpexp increased progressively with prone positioning compared with supine positioning as well as with PEEPEstat,RS and PEEPPtpexp compared with PEEPARDSNetwork (positioning effect p < 0.001, PEEP strategy effect p < 0.001).",
+        "location": "Abstract, Results"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptpinsp",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured after 30-min equilibration at each PEEP strategy in each position",
+        "provenance": {
+          "quote": "After a 30-min equilibration period, complete measurement of respiratory mechanics, gas exchange, and hemodynamics was performed.",
+          "location": "Methods, Experimental protocol"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 3.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpinsp using PEEPARDSNetwork supine: 3.3 ± 4.2 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 6.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.6,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpinsp using PEEPARDSNetwork prone: 6.3 ± 4.6 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 4.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpinsp using PEEPEstat,RS supine: 4.7 ± 3.0 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 6.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpinsp using PEEPEstat,RS prone: 6.1 ± 3.5 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value": null,
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect across all PEEP strategies",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "positioning effect p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect across both positions",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "PEEP strategy effect p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction between positioning and PEEP strategy",
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "interaction between position and PEEP strategy p < 0.001",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ardsnet_prone minus ardsnet_supine",
+          "arm_label_a": "ardsnet_prone",
+          "arm_label_b": "ardsnet_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "End-inspiratory transpulmonary pressure (Ptpinsp) also increased using PEEPARDSNetwork (3.3 ± 4.2 versus 6.3 ± 4.6 cm H2O, p < 0.001)",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "and PEEPEstat,RS (4.7 ± 3.0 versus 6.1 ± 3.5 cm H2O, p < 0.001)",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Ptpdriv",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured after 30-min equilibration",
+        "provenance": {
+          "quote": "After a 30-min equilibration period, complete measurement ... was performed.",
+          "location": "Methods, Experimental protocol"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 5.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpdriv using PEEPARDSNetwork supine: 5.7 ± 2.2 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 5.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ptpdriv using PEEPARDSNetwork prone: 5.2 ± 2.1 cm H2O",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "estat_prone",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value": null,
+          "provenance": null
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect across all PEEP strategies",
+          "p_value": 0.019,
+          "p_value_verbatim": "p = 0.019",
+          "provenance": {
+            "quote": "Positioning effect: p=0.019",
+            "location": "Fig. 4 caption"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect across both positions",
+          "p_value": 0.281,
+          "p_value_verbatim": "p = 0.281",
+          "provenance": {
+            "quote": "PEEP strategy effect: p=0.281",
+            "location": "Fig. 4 caption"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction between positioning and PEEP strategy",
+          "p_value": 0.116,
+          "p_value_verbatim": "p = 0.116",
+          "provenance": {
+            "quote": "Interaction: p=0.116",
+            "location": "Fig. 4 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ardsnet_prone minus ardsnet_supine",
+          "arm_label_a": "ardsnet_prone",
+          "arm_label_b": "ardsnet_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": 0.031,
+          "p_value_verbatim": "p = 0.031",
+          "provenance": {
+            "quote": "Prone positioning reduced transpulmonary driving pressure (Ptpdriv) when using PEEPARDSNetwork (5.7 ± 2.2 versus 5.2 ± 2.1 cm H2O, p = 0.031)",
+            "location": "Results, Transpulmonary pressures, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Pesinsp",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "recorded during a 5-s inspiratory hold",
+        "provenance": {
+          "quote": "End-inspiratory esophageal pressure (Pesinsp) and end-expiratory esophageal pressure (Pesexp) were recorded during a 5-s inspiratory and 5-s expiratory hold, respectively.",
+          "location": "Methods, Respiratory mechanics"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 14.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 11.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 14.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 11.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.6,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 17.1,
+          "dispersion_type": "sd",
+          "dispersion": 5.7,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 13.0,
+          "dispersion_type": "sd",
+          "dispersion": 6.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesinsp (cm H2O) 14.2±3.5 11.4±3.7* 14.8±4.4 11.4±4.6* 17.1±5.7 13.0±6.0*",
+            "location": "Table 1, row: Pesinsp"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: Pesinsp"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.007,
+          "p_value_verbatim": "0.007",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.007",
+            "location": "Table 1, row: Pesinsp"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Pesexp",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "recorded during a 5-s expiratory hold",
+        "provenance": {
+          "quote": "End-inspiratory esophageal pressure (Pesinsp) and end-expiratory esophageal pressure (Pesexp) were recorded during a 5-s inspiratory and 5-s expiratory hold, respectively.",
+          "location": "Methods, Respiratory mechanics"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 11.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 7.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 12.1,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 7.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 13.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 9.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pesexp (cm H2O) 11.3±3.1 7.7±3.2* 12.1±4.0 7.9±4.0* 13.4±5.4 9.4±5.4*",
+            "location": "Table 1, row: Pesexp"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: Pesexp"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.572,
+          "p_value_verbatim": "0.572",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.572",
+            "location": "Table 1, row: Pesexp"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "∆Pes",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 2.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 3.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 2.7,
+          "dispersion_type": "sd",
+          "dispersion": 1.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 3.5,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 3.0,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 3.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "∆Pes (cm H2O) 2.9±1.6 3.6±1.9* 2.7±1.5 3.5±1.9* 3.0±1.8 3.5±2.0*",
+            "location": "Table 1, row: ∆Pes"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.141,
+          "p_value_verbatim": "0.141",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.141",
+            "location": "Table 1, row: ∆Pes"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.339,
+          "p_value_verbatim": "0.339",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.339",
+            "location": "Table 1, row: ∆Pes"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "RR",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 22.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "n": 40,
+          "unit": "breaths/min",
+          "provenance": {
+            "quote": "RR (breaths/min) 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9 22.3±1.9",
+            "location": "Table 1, row: RR (breaths/min)"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 1.000",
+            "location": "Table 1, row: RR"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 1.000",
+            "location": "Table 1, row: RR"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 1.000",
+            "location": "Table 1, row: RR"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "VT",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3 6.2±0.3",
+            "location": "Table 1, row: VT (mL/kg PBW)"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 1.000",
+            "location": "Table 1, row: VT"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 1.000",
+            "location": "Table 1, row: VT"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 1.0,
+          "p_value_verbatim": "1.000",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 1.000",
+            "location": "Table 1, row: VT"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ppeak,RS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 23.3,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 23.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 25.0,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 23.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 30.6,
+          "dispersion_type": "sd",
+          "dispersion": 8.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 27.2,
+          "dispersion_type": "sd",
+          "dispersion": 8.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Ppeak,RS (cm H2O) 23.3±5.1 23.5±4.5 25.0±5.1 23.3±4.5* 30.6±8.8 27.2±8.8*",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 1, row: Ppeak,RS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pmean,RS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 13.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 13.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 15.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 13.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 20.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 16.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pmean,RS (cm H2O) 13.5±2.9 13.5±2.7 15.8±4.0 13.6±3.4* 20.5±6.1 16.5±6.5*",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 1, row: Pmean,RS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Estat,RS",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 21.3,
+          "dispersion_type": "sd",
+          "dispersion": 6.5,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 21.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.0,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 19.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 20.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 20.7,
+          "dispersion_type": "sd",
+          "dispersion": 8.0,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 22.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.4,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,RS (cm H2O/L) 21.3±6.5 21.7±6.0 19.5±5.8 20.8±5.2* 20.7±8.0 22.1±6.4*",
+            "location": "Table 1, row: Estat,RS"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.032,
+          "p_value_verbatim": "0.032",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 0.032",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.023,
+          "p_value_verbatim": "0.023",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.023",
+            "location": "Table 1, row: Estat,RS"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.255,
+          "p_value_verbatim": "0.255",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.255",
+            "location": "Table 1, row: Estat,RS"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Estat,CW",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 7.1,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 9.0,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 6.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 8.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 8.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,CW (cm H2O/L) 7.1±4.2 9.0±5.0* 6.6±4.2 8.6±4.9* 7.3±4.8 8.8±5.2*",
+            "location": "Table 1, row: Estat,CW"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.132,
+          "p_value_verbatim": "0.132",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.132",
+            "location": "Table 1, row: Estat,CW"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.397,
+          "p_value_verbatim": "0.397",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.397",
+            "location": "Table 1, row: Estat,CW"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Estat,L",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 14.0,
+          "dispersion_type": "sd",
+          "dispersion": 5.5,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 13.0,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 12.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 12.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 13.4,
+          "dispersion_type": "sd",
+          "dispersion": 6.9,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 13.9,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "n": 40,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Estat,L (cm H2O/L) 14.0±5.5 13.0±5.3 12.8±4.8 12.6±5.4 13.4±6.9 13.9±6.8",
+            "location": "Table 1, row: Estat,L"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.565,
+          "p_value_verbatim": "0.565",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 0.565",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.093,
+          "p_value_verbatim": "0.093",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.093",
+            "location": "Table 1, row: Estat,L"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.087,
+          "p_value_verbatim": "0.087",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.087",
+            "location": "Table 1, row: Estat,L"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mechanical power",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.7,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 17.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.5,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 19.2,
+          "dispersion_type": "sd",
+          "dispersion": 5.9,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 24.4,
+          "dispersion_type": "sd",
+          "dispersion": 9.8,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 21.0,
+          "dispersion_type": "sd",
+          "dispersion": 9.6,
+          "n": 40,
+          "unit": "J/min",
+          "provenance": {
+            "quote": "Mechanical power (J/min) 17.5±5.7 17.6±5.5 19.2±5.9 17.5±5.8* 24.4±9.8 21.0±9.6*",
+            "location": "Table 1, row: Mechanical power"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 1, row: Mechanical power"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "Mechanical power decreased using PEEPEstat,RS (19.2 ± 5.9 versus 17.5 ± 5.8 J/min, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptpexp_prone minus ptpexp_supine",
+          "arm_label_a": "ptpexp_prone",
+          "arm_label_b": "ptpexp_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "and PEEPPtpexp (24.4 ± 9.8 versus 21.0 ± 9.6 J/min, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "IAP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 8.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 11.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.0,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 8.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 11.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 9.9,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 12.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "IAP (cm H2O) 8.3±2.8 11.1±3.0* 8.7±2.9 11.1±3.5* 9.9±3.5 12.1±3.8*",
+            "location": "Table 1, row: IAP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: IAP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.238,
+          "p_value_verbatim": "0.238",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.238",
+            "location": "Table 1, row: IAP"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "VD/VT",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 28.5,
+          "dispersion_type": "sd",
+          "dispersion": 10.9,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 25.2,
+          "dispersion_type": "sd",
+          "dispersion": 9.0,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 27.6,
+          "dispersion_type": "sd",
+          "dispersion": 10.8,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 24.7,
+          "dispersion_type": "sd",
+          "dispersion": 9.5,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 28.4,
+          "dispersion_type": "sd",
+          "dispersion": 10.5,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 25.8,
+          "dispersion_type": "sd",
+          "dispersion": 9.5,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "VD/VT (%) 28.5±10.9 25.2±9.0* 27.6±10.8 24.7±9.5* 28.4±10.5 25.8±9.5*",
+            "location": "Table 1, row: VD/VT"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning effect <0.001",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.224,
+          "p_value_verbatim": "0.224",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.224",
+            "location": "Table 1, row: VD/VT"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.739,
+          "p_value_verbatim": "0.739",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.739",
+            "location": "Table 1, row: VD/VT"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Ventilatory rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 2.09,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 2.11,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 2.12,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 2.13,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 2.13,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 2.14,
+          "dispersion_type": "sd",
+          "dispersion": 0.5,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "Ventilatory rate 2.09±0.5 2.11±0.5 2.12±0.5 2.13±0.5 2.13±0.5 2.14±0.5",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.308,
+          "p_value_verbatim": "0.308",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 0.308",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.176,
+          "p_value_verbatim": "0.176",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect 0.176",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.345,
+          "p_value_verbatim": "0.345",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction 0.345",
+            "location": "Table 1, row: Ventilatory rate"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "lung_volume",
+      "name_verbatim": "EELV",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 1630,
+          "dispersion_type": "sd",
+          "dispersion": 552,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 1972,
+          "dispersion_type": "sd",
+          "dispersion": 693,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 1920,
+          "dispersion_type": "sd",
+          "dispersion": 556,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 1993,
+          "dispersion_type": "sd",
+          "dispersion": 627,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 2140,
+          "dispersion_type": "sd",
+          "dispersion": 615,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 2108,
+          "dispersion_type": "sd",
+          "dispersion": 736,
+          "n": 40,
+          "unit": "mL",
+          "provenance": {
+            "quote": "EELV (mL) 1630±552 1972±693* 1920±556 1993±627 2140±615 2108±736",
+            "location": "Table 1, row: EELV"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.011,
+          "p_value_verbatim": "0.011",
+          "provenance": {
+            "quote": "Table 1: Positioning effect 0.011",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: PEEP strategy effect <0.001",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 1: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 1, row: EELV"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ardsnet_prone minus ardsnet_supine",
+          "arm_label_a": "ardsnet_prone",
+          "arm_label_b": "ardsnet_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": 0.026,
+          "p_value_verbatim": "p = 0.026",
+          "provenance": {
+            "quote": "End-expiratory lung volume (EELV) increased using PEEPARDSNetwork (1630 ± 552 versus 1972 ± 693 mL, p = 0.026)",
+            "location": "Results, Respiratory mechanics, para 3"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 11.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The titrated PEEP levels were lower in the prone position compared with the supine position using PEEPEstat,RS (11.6 ± 3.9 versus 9.0 ± 3.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 9.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "The titrated PEEP levels were lower in the prone position compared with the supine position using PEEPEstat,RS (11.6 ± 3.9 versus 9.0 ± 3.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 16.1,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (16.1 ± 5.8 versus 11.8 ± 6.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 11.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.3,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (16.1 ± 5.8 versus 11.8 ± 6.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "The titrated PEEP levels were lower in the prone position compared with the supine position using PEEPEstat,RS (11.6 ± 3.9 versus 9.0 ± 3.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptpexp_prone minus ptpexp_supine",
+          "arm_label_a": "ptpexp_prone",
+          "arm_label_b": "ptpexp_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "and PEEPPtpexp (16.1 ± 5.8 versus 11.8 ± 6.3 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Pplat",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 19.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "in the prone position, end-inspiratory plateau airway pressure (Pplat) decreased using PEEPEstat,RS (19.5 ± 4.2 versus 17.5 ± 3.3 cm H2O, p = 0.04)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "in the prone position, end-inspiratory plateau airway pressure (Pplat) decreased using PEEPEstat,RS (19.5 ± 4.2 versus 17.5 ± 3.3 cm H2O, p = 0.04)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 24.5,
+          "dispersion_type": "sd",
+          "dispersion": 7.1,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (24.5 ± 7.1 versus 20.9 ± 7.2 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 20.9,
+          "dispersion_type": "sd",
+          "dispersion": 7.2,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (24.5 ± 7.1 versus 20.9 ± 7.2 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "PEEP and Pplat differed significantly according to the position (p < 0.001) and PEEP strategy (p < 0.001). There was an interaction between position and PEEP strategy for PEEP and Pplat (p < 0.001).",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": 0.04,
+          "p_value_verbatim": "p = 0.04",
+          "provenance": {
+            "quote": "in the prone position, end-inspiratory plateau airway pressure (Pplat) decreased using PEEPEstat,RS (19.5 ± 4.2 versus 17.5 ± 3.3 cm H2O, p = 0.04)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptpexp_prone minus ptpexp_supine",
+          "arm_label_a": "ptpexp_prone",
+          "arm_label_b": "ptpexp_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": null,
+          "p_value_verbatim": "p < 0.001",
+          "provenance": {
+            "quote": "and PEEPPtpexp (24.5 ± 7.1 versus 20.9 ± 7.2 cm H2O, p < 0.001)",
+            "location": "Results, Respiratory mechanics, para 1"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pdriv",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value": null,
+          "provenance": null
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 7.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "In the prone position, driving pressure (Pdriv) increased using PEEPEstat,RS (7.9 ± 1.8 versus 8.5 ± 1.7 cm H2O, p = 0.002)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 8.5,
+          "dispersion_type": "sd",
+          "dispersion": 1.7,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "In the prone position, driving pressure (Pdriv) increased using PEEPEstat,RS (7.9 ± 1.8 versus 8.5 ± 1.7 cm H2O, p = 0.002)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 8.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (8.4 ± 2.8 versus 9.1 ± 2.4 cm H2O, p = 0.02)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 9.1,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "n": 40,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "and PEEPPtpexp (8.4 ± 2.8 versus 9.1 ± 2.4 cm H2O, p = 0.02)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.019,
+          "p_value_verbatim": "p = 0.019",
+          "provenance": {
+            "quote": "The effects of positioning (p = 0.019) and PEEP strategy (p = 0.006) were significant for Pdriv.",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.006,
+          "p_value_verbatim": "p = 0.006",
+          "provenance": {
+            "quote": "The effects of positioning (p = 0.019) and PEEP strategy (p = 0.006) were significant for Pdriv.",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.381,
+          "p_value_verbatim": "p = 0.381",
+          "provenance": {
+            "quote": "Fig. 4A caption: interaction: p=0.381",
+            "location": "Fig. 4 caption"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "estat_prone minus estat_supine",
+          "arm_label_a": "estat_prone",
+          "arm_label_b": "estat_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": 0.002,
+          "p_value_verbatim": "p = 0.002",
+          "provenance": {
+            "quote": "In the prone position, driving pressure (Pdriv) increased using PEEPEstat,RS (7.9 ± 1.8 versus 8.5 ± 1.7 cm H2O, p = 0.002)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        },
+        {
+          "contrast_type": "pairwise",
+          "contrast": "ptpexp_prone minus ptpexp_supine",
+          "arm_label_a": "ptpexp_prone",
+          "arm_label_b": "ptpexp_supine",
+          "mean_difference": null,
+          "sd_of_difference": null,
+          "p_value": 0.02,
+          "p_value_verbatim": "p = 0.02",
+          "provenance": {
+            "quote": "and PEEPPtpexp (8.4 ± 2.8 versus 9.1 ± 2.4 cm H2O, p = 0.02)",
+            "location": "Results, Respiratory mechanics, para 2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 136,
+          "dispersion_type": "sd",
+          "dispersion": 36,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 228,
+          "dispersion_type": "sd",
+          "dispersion": 86,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 170,
+          "dispersion_type": "sd",
+          "dispersion": 72,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 237,
+          "dispersion_type": "sd",
+          "dispersion": 91,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 192,
+          "dispersion_type": "sd",
+          "dispersion": 76,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 240,
+          "dispersion_type": "sd",
+          "dispersion": 100,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2/FiO2 (mm Hg) 136±36 228±86* 170±72 237±91* 192±76 240±100*",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning effect <0.001",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect <0.001",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 2, row: PaO2/FiO2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 57.0,
+          "dispersion_type": "sd",
+          "dispersion": 10.5,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 57.9,
+          "dispersion_type": "sd",
+          "dispersion": 10.5,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 57.6,
+          "dispersion_type": "sd",
+          "dispersion": 10.3,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 57.7,
+          "dispersion_type": "sd",
+          "dispersion": 10.7,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 57.6,
+          "dispersion_type": "sd",
+          "dispersion": 10.4,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 58.0,
+          "dispersion_type": "sd",
+          "dispersion": 10.4,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 (mm Hg) 57.0±10.5 57.9±10.5 57.6±10.3 57.7±10.7 57.6±10.4 58.0±10.4",
+            "location": "Table 2, row: PaCO2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.346,
+          "p_value_verbatim": "0.346",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.346",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.308,
+          "p_value_verbatim": "0.308",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.308",
+            "location": "Table 2, row: PaCO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.297,
+          "p_value_verbatim": "0.297",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.297",
+            "location": "Table 2, row: PaCO2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pHa",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 40,
+          "unit": null,
+          "provenance": {
+            "quote": "pHa 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1 7.3±0.1",
+            "location": "Table 2, row: pHa"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.812,
+          "p_value_verbatim": "0.812",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.812",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.07,
+          "p_value_verbatim": "0.070",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.070",
+            "location": "Table 2, row: pHa"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.101,
+          "p_value_verbatim": "0.101",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.101",
+            "location": "Table 2, row: pHa"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "MAP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 83.0,
+          "dispersion_type": "sd",
+          "dispersion": 10.8,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 87.1,
+          "dispersion_type": "sd",
+          "dispersion": 11.2,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 82.6,
+          "dispersion_type": "sd",
+          "dispersion": 9.8,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 89.5,
+          "dispersion_type": "sd",
+          "dispersion": 11.9,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 79.2,
+          "dispersion_type": "sd",
+          "dispersion": 11.3,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 87.6,
+          "dispersion_type": "sd",
+          "dispersion": 11.4,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "MAP (mm Hg) 83.0±10.8 87.1±11.2* 82.6±9.8 89.5±11.9* 79.2±11.3 87.6±11.4*",
+            "location": "Table 2, row: MAP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning effect <0.001",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.009,
+          "p_value_verbatim": "0.009",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.009",
+            "location": "Table 2, row: MAP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.011,
+          "p_value_verbatim": "0.011",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.011",
+            "location": "Table 2, row: MAP"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "HR",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 92.6,
+          "dispersion_type": "sd",
+          "dispersion": 19.1,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 93.1,
+          "dispersion_type": "sd",
+          "dispersion": 21.2,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 92.8,
+          "dispersion_type": "sd",
+          "dispersion": 20.5,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 93.2,
+          "dispersion_type": "sd",
+          "dispersion": 21.4,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 92.6,
+          "dispersion_type": "sd",
+          "dispersion": 19.2,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 92.4,
+          "dispersion_type": "sd",
+          "dispersion": 20.6,
+          "n": 40,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "HR (beats/min) 92.6±19.1 93.1±21.2 92.8±20.5 93.2±21.4 92.6±19.2 92.4±20.6",
+            "location": "Table 2, row: HR"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.903,
+          "p_value_verbatim": "0.903",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.903",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.603,
+          "p_value_verbatim": "0.603",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.603",
+            "location": "Table 2, row: HR"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.711,
+          "p_value_verbatim": "0.711",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.711",
+            "location": "Table 2, row: HR"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Norepinephrine",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.3,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.2,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 0.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.2,
+          "n": 40,
+          "unit": "µg/kg/min",
+          "provenance": {
+            "quote": "Norepinephrine (µg/kg/min) 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.3 0.2±0.2 0.2±0.2",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.182,
+          "p_value_verbatim": "0.182",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.182",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.458,
+          "p_value_verbatim": "0.458",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.458",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.756,
+          "p_value_verbatim": "0.756",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.756",
+            "location": "Table 2, row: Norepinephrine"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CVP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 14.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.4,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 16.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.6,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 15.1,
+          "dispersion_type": "sd",
+          "dispersion": 6.9,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 16.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.2,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 16.4,
+          "dispersion_type": "sd",
+          "dispersion": 7.4,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "n": 40,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "CVP (mm Hg) 14.1±6.4 16.8±5.6* 15.1±6.9 16.8±6.2 16.4±7.4 17.5±6.8",
+            "location": "Table 2, row: CVP"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.068,
+          "p_value_verbatim": "0.068",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.068",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect <0.001",
+            "location": "Table 2, row: CVP"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 2, row: CVP"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "ScvO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 75.3,
+          "dispersion_type": "sd",
+          "dispersion": 7.4,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 81.2,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 77.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 82.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.2,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 77.6,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 81.4,
+          "dispersion_type": "sd",
+          "dispersion": 6.3,
+          "n": 40,
+          "unit": "%",
+          "provenance": {
+            "quote": "ScvO2 (%) 75.3±7.4 81.2±6.8 77.6±5.2 82.8±6.2 77.6±6.1 81.4±6.3",
+            "location": "Table 2, row: ScvO2"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning effect <0.001",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.002,
+          "p_value_verbatim": "0.002",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect 0.002",
+            "location": "Table 2, row: ScvO2"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.046,
+          "p_value_verbatim": "0.046",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction 0.046",
+            "location": "Table 2, row: ScvO2"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "CI",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "crossover_condition",
+        "sequence_position": null,
+        "label_verbatim": "during supine and prone positioning"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "ardsnet_supine",
+          "value_type": "mean",
+          "value": 3.7,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "arm_label": "ardsnet_prone",
+          "value_type": "mean",
+          "value": 3.7,
+          "dispersion_type": "sd",
+          "dispersion": 0.9,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "arm_label": "estat_supine",
+          "value_type": "mean",
+          "value": 3.5,
+          "dispersion_type": "sd",
+          "dispersion": 0.9,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "arm_label": "estat_prone",
+          "value_type": "mean",
+          "value": 3.7,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "arm_label": "ptpexp_supine",
+          "value_type": "mean",
+          "value": 3.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.7,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "arm_label": "ptpexp_prone",
+          "value_type": "mean",
+          "value": 3.6,
+          "dispersion_type": "sd",
+          "dispersion": 0.8,
+          "n": 40,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "CI (L/min/m2) 3.7±1.0 3.7±0.9 3.5±0.9 3.7±1.0* 3.2±0.7 3.6±0.8*",
+            "location": "Table 2, row: CI"
+          }
+        }
+      ],
+      "paired_effects": [
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Positioning effect",
+          "p_value": 0.004,
+          "p_value_verbatim": "0.004",
+          "provenance": {
+            "quote": "Table 2: Positioning effect 0.004",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "PEEP strategy effect",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: PEEP strategy effect <0.001",
+            "location": "Table 2, row: CI"
+          }
+        },
+        {
+          "contrast_type": "omnibus",
+          "contrast": "Interaction",
+          "p_value": 0.001,
+          "p_value_verbatim": "< 0.001",
+          "provenance": {
+            "quote": "Table 2: Positioning and PEEP strategy interaction <0.001",
+            "location": "Table 2, row: CI"
+          }
+        }
+      ],
+      "effect_estimates": [],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS: all patients had moderate to severe ARDS. Obesity: not reported. Timing: not reported relative to intubation or ARDS onset."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Suspected overlap with boesing_2024a per COHORTS.md (same centre, similar protocol). Not confirmed from this paper alone; boesing_2024a not assessed. Compare enrolment dates and registration (DRKS00017449) if available.",
+    "unclear_items": [
+      "Data for Ptpexp and Ptpinsp under the PEEPPtpexp strategy are only in figures; exact values not extracted.",
+      "Data for PEEP, Pplat, and Pdriv for the ARDSNetwork strategy are only in figures; exact values not extracted.",
+      "Ptpdriv for Estat and Ptpexp strategies only in figures; not extracted.",
+      "Demographic baseline characteristics are in Additional file 1: Table S3, not available; age, sex, BMI etc. not recorded.",
+      "Timing of balloon-guided strategy relative to intubation/ARDS onset not reported; timing_subgroup is unclear."
+    ],
+    "data_only_in_figure": [
+      "Ptpexp (PEEPPtpexp conditions)",
+      "Ptpinsp (PEEPPtpexp conditions)",
+      "PEEP (ARDSNetwork conditions)",
+      "Pplat (ARDSNetwork conditions)",
+      "Pdriv (ARDSNetwork conditions)",
+      "Ptpdriv (Estat and Ptpexp conditions)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Study is a within-patient crossover comparing 3 PEEP strategies in supine and prone positions. Only physiologic outcomes reported; no clinical outcomes."
+  }
+}

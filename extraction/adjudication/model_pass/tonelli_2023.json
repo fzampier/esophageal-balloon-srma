@@ -1,0 +1,222 @@
+{
+  "study_id": "tonelli_2023",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[ild peeplow peeplow phase ae ild uip alternative]",
+      "decision": "glm",
+      "reason": "PEEPLOW (4-8 cmH2O) is a second PEEP-setting strategy tested in the same patients (the authors even favour it), so alternative_titration_condition fits better than comparator; PEEP 4 (4-4) matches.",
+      "evidence": "p. 3, Table 1; p. 2 Methods"
+    },
+    {
+      "target": "arms[ards zeep zeep phase ards reference condition 1]",
+      "decision": "glm",
+      "reason": "ARDS ZEEP condition, sequence 1, PEEP 0; GLM's label vocabulary is kept throughout this study.",
+      "evidence": "p. 2 Methods"
+    },
+    {
+      "target": "arms[ards peeplow peeplow phase ards alternative titr]",
+      "decision": "glm",
+      "reason": "ARDS PEEPLOW, PEEP 4 (4-5) matches; alternative_titration_condition as for the AE-ILD-UIP group.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "arms[peep low ild peeplow ae ild uip comparator 2]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's duplicate of the AE-ILD-UIP PEEPLOW condition; kept as GLM's ild_peeplow.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "arms[zeep ards zeep ards reference condition 1]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's duplicate of the ARDS ZEEP condition; kept as GLM's ards_zeep.",
+      "evidence": "p. 2 Methods"
+    },
+    {
+      "target": "arms[peep low ards peeplow ards comparator 2]",
+      "decision": "glm",
+      "reason": "Drop DeepSeek's duplicate of the ARDS PEEPLOW condition; kept as GLM's ards_peeplow.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation po2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "pO2 PEEPLOW 93.5 (73.3-107) vs 74.5 (68.3-80.5), p 0.1; PEEPTITRATED 80 (58-93) vs 105 (80-134), p 0.01 all match (unit printed as cmH2O in the table, kept as printed). ZEEP values are kept in GLM's ZEEP entry. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "PEEP at PEEPLOW 4 (4-4) vs 4 (4-5), p 0.2 and PEEPTITRATED 12 (10-14) vs 14 (12-17.5), p 0.03 match; GLM also records the text's conflicting 'p < 0.001' for the titrated comparison, which the paper does print. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1; p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el lung elastance continuo @baseline]",
+      "decision": "glm",
+      "reason": "ZEEP EL 44.4 (39.7-50.7) vs 17.9 (9.9-23.3), p < 0.0001; every paired p matches Figure 1 A/B (AE-ILD-UIP 0.995, <0.001, 0.004; ARDS 0.365, 0.720, 0.480) and the interaction p < 0.001. (GLM's contrast strings run opposite to its arm_label_a/b, harmless because no mean difference is recorded.)",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el lung elastance continuo @crossover condition]",
+      "decision": "glm",
+      "reason": "EL PEEPLOW 43.3 (36.8-53) vs 14.6 (12.2-19.1) and PEEPTITRATED 48.8 (42.8-59, printed reversed) vs 15.2 (12.4-19.7), p < 0.0001 both, match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee end expiratory tra @baseline]",
+      "decision": "unclear",
+      "reason": "ZEEP PL,EE data (-4.3 (-7.6 to -2.3) vs -4.1 (-7.6 to -2.9), p 0.66) and interaction p 0.51 are right, but GLM's paired p-values are misplaced and DeepSeek's are also wrong. Figure 1 C (AE-ILD-UIP): ZEEP-PEEPLOW 0.001, PEEPLOW-PEEPTITRATED 0.003, ZEEP-PEEPTITRATED <0.001 (GLM has <0.001 and 0.003 swapped). Figure 1 D (ARDS): ZEEP-PEEPLOW 0.044, PEEPLOW-PEEPTITRATED 0.002, ZEEP-PEEPTITRATED <0.001 (GLM has <0.001 / 0.044 / 0.002). Keep GLM's entry with these p-values corrected.",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee end expiratory tra @crossover condition]",
+      "decision": "glm",
+      "reason": "PL,EE PEEPLOW -2.6 (-4.3 to -1.2) vs -2.5 (-4.6 to -0.5), p 0.75; PEEPTITRATED 0.8 (0.3-1.5) vs 2.4 (0.6-4.9), p 0.04 match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei end inspiratory tr @baseline]",
+      "decision": "unclear",
+      "reason": "ZEEP PL,EI data (16.7 (14.8-19) vs 4.4 (2.9-6.3), p < 0.0001), interaction p < 0.001 and the AE-ILD-UIP paired p-values (0.230, <0.001, 0.003) are right, but the ARDS PEEPLOW-PEEPTITRATED and ZEEP-PEEPTITRATED p-values are swapped: Figure 1 F shows 0.005 and <0.001 (GLM has <0.001 and 0.005). DeepSeek's version is also wrong (0.259, 0.008). Keep GLM's entry with the two ARDS values corrected.",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei end inspiratory tr @crossover condition]",
+      "decision": "glm",
+      "reason": "PL,EI PEEPLOW 15.3 (11.3-18.7) vs 10.5 (5-14), p 0.01; PEEPTITRATED 23.3 (21.3-26.7) vs 16.9 (13.5-19.2), p 0.001 match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pl transpulmonary driving @baseline]",
+      "decision": "unclear",
+      "reason": "ZEEP deltaPL data (21.1 (17.8-23.6) vs 9.3 (7-11.5), p < 0.0001), interaction p < 0.001 and five of six paired p-values are right, but ARDS ZEEP-PEEPTITRATED is 0.042 in Figure 1 H; GLM has 0.942. DeepSeek's version is also wrong (0.267, 0.852). Keep GLM's entry with 0.042 corrected.",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pl transpulmonary driving @crossover condition]",
+      "decision": "glm",
+      "reason": "deltaPL PEEPLOW 18.4 (15.6-21.8) vs 12.3 (8.5-16.6), p 0.02; PEEPTITRATED 22.6 (20.8-25.8) vs 13.9 (6.6-16.5), p 0.0001 match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics etot respiratory system el @baseline]",
+      "decision": "glm",
+      "reason": "ZEEP Etot 49 (43.9-54.7) vs 22 (16.8-28), p < 0.0001 match.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics etot respiratory system el @crossover condition]",
+      "decision": "glm",
+      "reason": "Etot PEEPLOW 48.5 (40-56.8) vs 22.1 (19.1-25.2); PEEPTITRATED 55.3 (45.9-62.5) vs 20.6 (19-24.5); p < 0.0001 both, match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw chest wall elastance c @baseline]",
+      "decision": "glm",
+      "reason": "ZEEP Ecw 3.2 (2.5-5.7) vs 5.4 (4-7.4), p 0.12 match.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw chest wall elastance c @crossover condition]",
+      "decision": "glm",
+      "reason": "Ecw PEEPLOW 3.4 (2.3-5.6) vs 5.7 (4.3-8.3), p 0.09; PEEPTITRATED 3.7 (3.2-5.9) vs 5.7 (4.7-7.2), p 0.1 match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw driving pressure conti @baseline]",
+      "decision": "glm",
+      "reason": "ZEEP deltaPaw 16.8 (13.8-19.3) vs 14.4 (11.5-21.2), p 0.56 match.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw driving pressure conti @crossover condition]",
+      "decision": "glm",
+      "reason": "deltaPaw PEEPLOW 16.8 (14.3-18.6) vs 15.1 (11.9-21.4), p 0.9; PEEPTITRATED 19.1 (16.1-21.6) vs 15.3 (9.4-17), p 0.01 match. GLM keeps one entry per PEEP phase, so each Table 1 between-group p-value stays tied to its phase; DeepSeek's single entry lists three unlabeled effect_estimates that cannot be assigned to a phase, and its arm labels (peep_low_ild, zeep_ards, peep_low_ards) do not match the kept arms.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation po2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "ZEEP pO2 74 (66.5-80) vs 83 (75-89), p 0.3 match.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[mortality died while on mv dichotomous @duration until event]",
+      "decision": "unclear",
+      "reason": "The paper states that all 10 AE-ILD-UIP patients 'died while on MV' (ARDS-control mortality not reported). GLM files 10/10 under the ild_zeep condition arm with timepoint duration_until_event and is_longest_reported_mortality true: the arm is a PEEP condition, not the patient group, and the timepoint type is for elapsed durations. A co-author should decide whether to keep a group-level mortality entry (needs a group label; window 'while on MV') or drop it.",
+      "evidence": "p. 3 Results para 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics el continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase. Its Figure 1 B p-values are also wrong (ARDS ZEEP-PEEPLOW 0.005 and ZEEP-PEEPTITRATED 0.817; the figure shows 0.365 and 0.480).",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ecw continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics etot continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ei continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase. Its Figure 1 E/F p-values are also wrong (0.259 for 0.230, 0.008 for 0.005) and two contrasts are missing.",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl ee continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase. Its Figure 1 C/D p-values are also wrong (AE-ILD-UIP PEEPLOW-PEEPTITRATED <0.001 for 0.003, ZEEP-PEEPTITRATED 0.004 for <0.001; ARDS PEEPLOW-PEEPTITRATED 0.020 for 0.002).",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics paw continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: DeepSeek's single all-phase entry restates the Table 1 values kept in GLM's per-phase entries, uses arm labels that do not match the kept arms, and its effect_estimates carry no phase. Its Figure 1 H p-values are also wrong (0.267 for 0.087, 0.852 for 0.632).",
+      "evidence": "p. 3, Table 1; p. 5, Figure 1 (page image, enlarged)"
+    },
+    {
+      "target": "outcomes[other ph continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "pH values are correct and only DeepSeek has them (ZEEP 7.42 (7.41-7.42) vs 7.4 (7.37-7.41), p 0.07; PEEPLOW 7.41 (7.38-7.42) vs 7.4 (7.36-7.42), p 0.3; PEEPTITRATED 7.38 (7.35-7.4) vs 7.37 (7.34-7.4), p 0.34), but its arm labels zeep_ards, peep_low_ild and peep_low_ards do not exist in the kept arms, and its three effect_estimates carry no phase. Re-key to ild_zeep/ards_zeep, ild_peeplow/ards_peeplow, ild_peeptitrated/ards_peeptitrated, one entry per phase with its p-value, to match the other outcomes.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "target": "outcomes[other pco2 continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "pCO2 values are correct and only DeepSeek has them (ZEEP 39.5 (38-45) vs 39 (36.8-40), p 0.06; PEEPLOW 41 (38.5-42) vs 42 (39.8-47), p 0.18; PEEPTITRATED 42 (39.5-43.3) vs 45 (40-48), p 0.08; unit printed cmH2O), but it uses DeepSeek arm labels absent from the kept arms and phase-less effect_estimates. Re-key per phase with GLM's labels.",
+      "evidence": "p. 3, Table 1"
+    },
+    {
+      "id": "2d52bba7da",
+      "decision": "deepseek",
+      "reason": "GLM gives no reason for author contact; the missing details (baseline characteristics, balloon calibration, PL computation) are in the published Additional file 1, which should be retrieved rather than requested from the authors.",
+      "evidence": "p. 2 Methods (Additional file 1 references)"
+    },
+    {
+      "id": "810381ba9d",
+      "decision": "glm",
+      "reason": "The titration follows Talmor's protocol (ref 7) and PL,EE takes negative values (-4.3 at ZEEP), which only absolute Paw - Pes subtraction produces; the codebook says to code the mechanism when a method is described without being named. GLM flags the inference.",
+      "evidence": "p. 2 Background and Methods; Table 1; CODEBOOK Intervention"
+    },
+    {
+      "id": "5340ad97f4",
+      "decision": "deepseek",
+      "reason": "'within 24 h from admission' is an upper bound, not a measured interval; recording 24 as the value misstates it. The phrase is already in timing_verbatim.",
+      "evidence": "p. 2 Study procedures and aim"
+    }
+  ]
+}

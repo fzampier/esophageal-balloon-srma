@@ -1,0 +1,318 @@
+{
+  "study_id": "rowley_2021",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[ventilator settings set peep continuous @baseline]",
+      "decision": "glm",
+      "reason": "Set PEEP before: 14 (14-20) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings set peep continuous @24h]",
+      "decision": "glm",
+      "reason": "Set PEEP after: 18 (16-23), P .009 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "FIO2 before: 0.53 (0.40-0.81) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @24h]",
+      "decision": "glm",
+      "reason": "FIO2 after: 0.33 (0.30-0.40), P <.001 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml continuous @baseline]",
+      "decision": "glm",
+      "reason": "Tidal volume, mL before: 420 (365-454) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml continuous @24h]",
+      "decision": "glm",
+      "reason": "Tidal volume, mL after: 435 (380-460), P .64 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings total peep continuous @baseline]",
+      "decision": "glm",
+      "reason": "Total PEEP before: 15 (14-22) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings total peep continuous @24h]",
+      "decision": "glm",
+      "reason": "Total PEEP after: 19 (17-23), P .049 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure continuou @baseline]",
+      "decision": "glm",
+      "reason": "Driving pressure before: 13 (10-15) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure continuou @24h]",
+      "decision": "glm",
+      "reason": "Driving pressure after: 10 (8-11), P .006 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics inspiratory pplat continuo @baseline]",
+      "decision": "glm",
+      "reason": "Inspiratory Pplat before: 30 (27-33) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics inspiratory pplat continuo @24h]",
+      "decision": "glm",
+      "reason": "Inspiratory Pplat after: 28 (26-36), P .96 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peak inspiratory pressure @baseline]",
+      "decision": "glm",
+      "reason": "Peak inspiratory pressure before: 39 (32-42) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics peak inspiratory pressure @24h]",
+      "decision": "glm",
+      "reason": "Peak inspiratory pressure after: 37 (33-43), P .66 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure expiratory pl continuous @baseline]",
+      "decision": "glm",
+      "reason": "Expiratory PL before: -3 (-5 to 1) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure expiratory pl continuous @24h]",
+      "decision": "glm",
+      "reason": "Expiratory PL after: 1 (-1 to 3), P .02 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure inspiratory pl continuou @baseline]",
+      "decision": "glm",
+      "reason": "Inspiratory PL before: 7 (2-11) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure inspiratory pl continuou @24h]",
+      "decision": "glm",
+      "reason": "Inspiratory PL after: 7 (5-9), P .90 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl driving pressure cont @baseline]",
+      "decision": "glm",
+      "reason": "PL driving pressure before: 10 (7-12) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure pl driving pressure cont @24h]",
+      "decision": "glm",
+      "reason": "PL driving pressure after: 6 (4-8), P .001 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "PaO2/FIO2 before: 156 (97-190) matches in both. GLM's timepoint label is the verbatim Table 2 column header 'Before PL-Guided Ventilator Setting Adjustment' (DeepSeek's 'Before' is a fragment), and it adds hours 0 and derived false.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @24h]",
+      "decision": "glm",
+      "reason": "PaO2/FIO2 after: 240 (207-266), P .002 matches in both. GLM's paired contrast is complete (n_pairs 20, the printed P verbatim, unit), and its label is the verbatim column header 'After PL-Guided Ventilator Setting Adjustment'.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation spo2 fio2 continuous @repeated measures]",
+      "decision": "deepseek",
+      "reason": "The codebook asks for one entry per outcome per timepoint. DeepSeek keeps baseline SpO2/FIO2 192 (122-243) as a baseline entry and gives 24, 48, 72 and 96 h their own entries with values and P vs baseline. GLM folds everything into one repeated-measures entry that holds only the baseline value, drops the four post-values, and leaves arm_label_a null on three contrasts.",
+      "evidence": "p. 1052, Results right column; p. 1051 Statistical Analysis"
+    },
+    {
+      "target": "outcomes[oxygenation spo2 fio2 continuous @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: the 24 h SpO2/FIO2 310 (245-330) with P = .18 vs baseline (Friedman, Bonferroni) is reported and exists only in DeepSeek's per-timepoint entries.",
+      "evidence": "p. 1052, Results right column; Fig. 4"
+    },
+    {
+      "target": "outcomes[oxygenation spo2 fio2 continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: the 48 h SpO2/FIO2 300 (245-376) with P = .006 vs baseline (Friedman, Bonferroni) is reported and exists only in DeepSeek's per-timepoint entries.",
+      "evidence": "p. 1052, Results right column; Fig. 4"
+    },
+    {
+      "target": "outcomes[oxygenation spo2 fio2 continuous @72h]",
+      "decision": "deepseek",
+      "reason": "Keep: the 72 h SpO2/FIO2 319 (266-393) with P < .001 vs baseline (Friedman, Bonferroni) is reported and exists only in DeepSeek's per-timepoint entries.",
+      "evidence": "p. 1052, Results right column; Fig. 4"
+    },
+    {
+      "target": "outcomes[oxygenation spo2 fio2 continuous @96h]",
+      "decision": "deepseek",
+      "reason": "Keep: the 96 h SpO2/FIO2 283 (277-363) with P < .001 vs baseline (Friedman, Bonferroni) is reported and exists only in DeepSeek's per-timepoint entries.",
+      "evidence": "p. 1052, Results right column; Fig. 4"
+    },
+    {
+      "target": "outcomes[hemodynamics vasoactive drug requirement dichoto @baseline]",
+      "decision": "glm",
+      "reason": "Vasoactive drug requirement before: 12 (60) of 20 in both; GLM's label is the verbatim column header.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics vasoactive drug requirement dichoto @24h]",
+      "decision": "glm",
+      "reason": "10 (50) after, P .53 in both. GLM adds n_pairs and the printed P verbatim, and its test_used marks McNemar as assumed; the paper names McNemar only for binned hypoxemia severity, so DeepSeek's unqualified 'McNemar test' asserts more than the paper says.",
+      "evidence": "p. 1052 (page 4), Table 2; p. 1051 Statistical Analysis"
+    },
+    {
+      "target": "outcomes[ventilator free days ventilator free days contin @not reported]",
+      "decision": "glm",
+      "reason": "'the median number of ventilator-free days was 7 d (IQR 6-10)' with no window stated. duration_until_event is for elapsed-time outcomes such as length of stay, not free-days counts; not_reported is right. GLM's label 'count of ventilator-free days' is verbatim from the abstract.",
+      "evidence": "p. 1052 ICU Outcomes; Abstract"
+    },
+    {
+      "target": "outcomes[icu length of stay icu length of stay continuous @duration until event]",
+      "decision": "glm",
+      "reason": "ICU LOS 14 d (IQR 10-25) in both; GLM's label 'median ICU length of stay' is the more complete verbatim phrase.",
+      "evidence": "p. 1052 ICU Outcomes; Abstract"
+    },
+    {
+      "target": "outcomes[barotrauma pneumothorax dichotomous @not reported]",
+      "decision": "unclear",
+      "reason": "Both keep 0/20 from 'No pneumothorax resulted from PL-guided set PEEP or VT increase'. GLM sets derived false; per the codebook a zero drawn from a negative statement is a derivation. DeepSeek's end_of_study timepoint and paraphrased label are inferred, since no timepoint is stated. Co-author: keep 0/20, timepoint not_reported, derived true with that sentence as derivation.",
+      "evidence": "p. 1052 left column; p. 1056 Discussion; CODEBOOK logical implications"
+    },
+    {
+      "target": "outcomes[ventilator settings frequency breaths min contin @baseline]",
+      "decision": "glm",
+      "reason": "Frequency before 26 (22-31) matches; verbatim column-header label. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings frequency breaths min contin @24h]",
+      "decision": "glm",
+      "reason": "Frequency after 24 (20-29), P .19 matches, with complete paired contrast. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs respiratory system com @baseline]",
+      "decision": "glm",
+      "reason": "CRS before 30.7 (26.6-41.5) matches; verbatim column-header label. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs respiratory system com @24h]",
+      "decision": "glm",
+      "reason": "CRS after 44.6 (37.6-51.0), P .001 matches, with complete paired contrast. DeepSeek's duplicate is dropped.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[mortality all cause icu mortality within 28 d af @28d]",
+      "decision": "deepseek",
+      "reason": "Drop GLM's version: DeepSeek's entry under 'all cause icu mortality @28d' holds the same 3/20. Its name 'All-cause ICU mortality' and label 'within 28 d after ICU admission' are both verbatim, while GLM's name stitches the two phrases together.",
+      "evidence": "p. 1052 ICU Outcomes; Abstract"
+    },
+    {
+      "target": "outcomes[ventilator settings frequency continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the frequency-before reading kept under GLM's target.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings frequency continuous @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the frequency-after reading kept under GLM's target, which also has n_pairs and P verbatim.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml kg pbw conti @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: tidal volume mL/kg PBW before 6.0 (5.6-6.0) is a Table 2 row that GLM did not extract.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume ml kg pbw conti @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: tidal volume mL/kg PBW after 6.0 (6.0-7.0), P .17 is a Table 2 row that GLM did not extract.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the CRS-before reading kept under GLM's target.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics crs continuous @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the CRS-after reading kept under GLM's target.",
+      "evidence": "p. 1052 (page 4), Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation moderate or severe hypoxemia dichoto @baseline]",
+      "decision": "deepseek",
+      "reason": "Keep: 'Sixteen of 20 subjects had either moderate hypoxemia (n = 12) or severe hypoxemia (n = 4)' before; GLM did not extract the binned hypoxemia outcome, a stated secondary outcome.",
+      "evidence": "p. 1051 Results; Table 1; Abstract"
+    },
+    {
+      "target": "outcomes[oxygenation moderate or severe hypoxemia dichoto @24h]",
+      "decision": "deepseek",
+      "reason": "Keep: after adjustment none severe and 7 moderate, i.e. 7/20 moderate-or-severe; McNemar on the binned classification P = .71 matches the stated method.",
+      "evidence": "p. 1052 right column; Fig. 3; p. 1051 Statistical Analysis"
+    },
+    {
+      "target": "outcomes[mortality all cause icu mortality dichotomous @28d]",
+      "decision": "deepseek",
+      "reason": "Keep: 'Three of 20 subjects died within 28 d after ICU admission'; 'All-cause ICU mortality was 15% (n = 3)'. This is the single mortality entry, flagged longest.",
+      "evidence": "Abstract; p. 1052 ICU Outcomes"
+    },
+    {
+      "id": "53d0609f68",
+      "decision": "deepseek",
+      "reason": "The only negative statement is 'No pneumothorax resulted from PL-guided set PEEP or VT increase', which covers one ventilation event, not the balloon, the manometry or the strategy as a whole; the codebook requires the latter, so null.",
+      "evidence": "p. 1052; p. 1056; CODEBOOK complications_explicitly_none"
+    },
+    {
+      "id": "d739d72281",
+      "decision": "deepseek",
+      "reason": "The paper reports only the 20 patients 'found to be eligible for analysis'; patients with failed or abandoned placement may not have entered the analysis, so the number of attempts is not reported.",
+      "evidence": "p. 1050 Patients; Procedure and Measurements"
+    },
+    {
+      "id": "4776d107e8",
+      "decision": "glm",
+      "reason": "Position was confirmed with 'an expiratory airway occlusion maneuver with a simultaneous gentle chest compression' in sedated (20/20), often paralysed patients. That is the passive-patient occlusion test (dynamic_occlusion_test), not the Baydur spontaneous-effort test.",
+      "evidence": "p. 1050-1051 Procedure and Measurements; Table 1"
+    },
+    {
+      "id": "3a283882b7",
+      "decision": "deepseek",
+      "reason": "Timing is given from the start of mechanical ventilation ('Mechanical ventilation duration before PL measurement, h 16 (8-21)'; 'within 16 h of initiating mechanical ventilation'), which maps to intubation; 'other' discards that.",
+      "evidence": "p. 1051 Table 1 and Results; p. 1056 Discussion"
+    },
+    {
+      "id": "0535edb606",
+      "decision": "deepseek",
+      "reason": "The population is defined by obesity, mechanical ventilation and a PL consult, and ARDS is only one of several consult triggers; no count or proportion of ARDS patients is reported, so ards_status is not_reported, not mixed_some_ards.",
+      "evidence": "p. 1050 Patients; Table 1"
+    },
+    {
+      "id": "e3e8cf2894",
+      "decision": "deepseek",
+      "reason": "With ARDS status not reported, the ARDS subgroup cannot be classified as mixed; 'unclear' follows.",
+      "evidence": "p. 1050 Patients; Table 1"
+    }
+  ]
+}

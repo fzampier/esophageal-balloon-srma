@@ -1,0 +1,198 @@
+{
+  "study_id": "sun_2024",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[mortality 28 day mortality rate dichotomous @28d]",
+      "decision": "glm",
+      "reason": "Both give 23/51 vs 15/54 and P 0.065, matching Table 5. GLM's name '28-day mortality rate' is the Table 5 column header (the more complete verbatim form) and it records the chi-square test.",
+      "evidence": "p. 1410, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @48h]",
+      "decision": "glm",
+      "reason": "Same Table 2 values (6.17+/-1.58 n 51 vs 8.36+/-1.72 n 54, t 6.783, P <0.001). DeepSeek sets is_longest_reported_mortality false on a non-mortality outcome and fills measurement_context with an unrelated sedation sentence; GLM's context states the 48-h timing. Timepoint label ruled separately.",
+      "evidence": "p. 1409, Table 2 (page image)"
+    },
+    {
+      "id": "f1faa5b581",
+      "decision": "deepseek",
+      "reason": "GLM's label carries an editorial note ('assumed; table does not state timing') that belongs in measurement_context, where GLM already has it; 'After intervention' is the paper's own wording for the 48-h measurement.",
+      "evidence": "p. 1409, Table 3 header; Section 3.3"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same Table 3 values (60.26+/-12.01 vs 62.31+/-14.52, t 0.786, P 0.434). DeepSeek sets is_longest_reported_mortality false on a non-mortality outcome and fills measurement_context with an unrelated sedation sentence; GLM's context is accurate.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 continuous @48h]",
+      "decision": "glm",
+      "reason": "Same Table 3 values (70.61+/-10.81 vs 77.05+/-9.26, t 3.284, P 0.001). DeepSeek sets is_longest_reported_mortality false on a non-mortality outcome and fills measurement_context with an unrelated sedation sentence; GLM's context states the 48-h timing.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same Table 3 values (35.61+/-6.32 vs 34.19+/-5.39, t 1.241, P 0.217). DeepSeek sets is_longest_reported_mortality false on a non-mortality outcome and fills measurement_context with an unrelated sedation sentence; GLM's context is accurate.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @48h]",
+      "decision": "glm",
+      "reason": "Same Table 3 values (42.15+/-7.25 vs 43.69+/-6.71, t 1.130, P 0.261). DeepSeek sets is_longest_reported_mortality false on a non-mortality outcome and fills measurement_context with an unrelated sedation sentence; GLM's context states the 48-h timing.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[duration mechanical ventilation duration of mech @duration until event]",
+      "decision": "glm",
+      "reason": "Same values (15.36+/-3.39 vs 11.23+/-3.17 days, t 6.451, P <0.001). Both labels are verbatim; GLM's 'Ventilation duration' is the Table 5 header, and DeepSeek adds a spurious is_longest_reported_mortality false.",
+      "evidence": "p. 1410, Table 5 (page image); Section 3.5"
+    },
+    {
+      "target": "outcomes[hospital length of stay length of hospital stay @duration until event]",
+      "decision": "glm",
+      "reason": "Same values (29.26+/-5.92 vs 24.73+/-4.85 days, t 4.299, P <0.001). GLM's 'Hospital stay' is the Table 5 header; DeepSeek adds a spurious is_longest_reported_mortality false.",
+      "evidence": "p. 1410, Table 5 (page image)"
+    },
+    {
+      "target": "outcomes[other incidence of ventilator associated pneumon @not reported]",
+      "decision": "glm",
+      "reason": "Same counts (16/51 vs 14/54, chi2 0.381, P 0.534). The paper gives no window for VAP, so timepoint not_reported (GLM) is right; end_of_study is an assumption. The domain conflict is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 1410, Table 5 (page image); Section 2.4.4"
+    },
+    {
+      "target": "outcomes[mortality survival status at 60 day follow up ka @60d]",
+      "decision": "deepseek",
+      "reason": "Drop: the 60-day follow-up is kept under DeepSeek's 60-day mortality, which carries the same HR 0.565 (0.320-0.999), P 0.046 and adds the reported death counts (28/51 control, 20/54 study), consistent with the Fig. 1 day-60 numbers at risk (23 = 51-28, 34 = 54-20). GLM records totals only.",
+      "evidence": "p. 1410 Section 3.5 para 2-3; p. 1411 Fig. 1"
+    },
+    {
+      "target": "outcomes[mortality 60 day mortality dichotomous @60d]",
+      "decision": "deepseek",
+      "reason": "Keep: deaths 28/51 (control) and 20/54 (study) are stated in the 60-day follow-up paragraph and match the Fig. 1 day-60 numbers at risk; HR 0.565, 95% CI 0.320-0.999, P 0.046 (Fig. 1). The longest reported mortality.",
+      "evidence": "p. 1410 Section 3.5; p. 1411 Fig. 1 (page image)"
+    },
+    {
+      "target": "outcomes[dead space dead space in the respiratory tract v @48h]",
+      "decision": "glm",
+      "reason": "Keep GLM's Vd/Vt (37.26+/-11.26 vs 32.17+/-9.87 %, t 2.467, P 0.015): verbatim name and timing from Methods 2.4.2 and the t-test recorded.",
+      "evidence": "p. 1409, Table 2 (page image); Section 2.4.2"
+    },
+    {
+      "target": "outcomes[dead space vd vt continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 2 Vd/Vt reading kept under GLM's 'dead space in the respiratory tract (Vd/Vt)'.",
+      "evidence": "p. 1409, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index oi continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep: OI before intervention 186.36+/-17.22 vs 184.59+/-15.91, t 0.547, P 0.585; GLM adds the paper's OI definition.",
+      "evidence": "p. 1409, Table 3 (page image); Section 2.4.2"
+    },
+    {
+      "target": "outcomes[oxygenation oi continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 3 OI-before reading kept under GLM's 'oxygenation index (OI)'.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation oxygenation index oi continuous @48h]",
+      "decision": "glm",
+      "reason": "Keep: OI after intervention 240.26+/-20.39 vs 261.36+/-22.49, t 5.027, P <0.001, with the paper's definition.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation oi continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 3 OI-after reading kept under GLM's element.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[other pulmonary shunt fraction qs qt continuous @baseline]",
+      "decision": "glm",
+      "reason": "Keep: Qs/Qt before 20.02+/-2.55 vs 19.21+/-2.47, t 1.653, P 0.101. Shunt fraction is not among the codebook's oxygenation measures (PaO2/FiO2, PaO2, OI), so domain other (GLM) follows the codebook literally.",
+      "evidence": "p. 1409, Table 3 (page image); CODEBOOK Physiologic outcomes"
+    },
+    {
+      "target": "outcomes[oxygenation qs qt continuous @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 3 Qs/Qt-before reading kept under GLM's element.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[other pulmonary shunt fraction qs qt continuous @48h]",
+      "decision": "glm",
+      "reason": "Keep: Qs/Qt after 15.26+/-2.82 vs 11.91+/-2.15, t 6.869, P <0.001; domain other per codebook.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation qs qt continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 3 Qs/Qt-after reading kept under GLM's element.",
+      "evidence": "p. 1409, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics mean arterial pressure map continuo @48h]",
+      "decision": "glm",
+      "reason": "Keep: MAP 82.36+/-14.02 vs 80.14+/-12.39, t 0.861, P 0.391; verbatim name and 48-h timing from Methods 2.4.3.",
+      "evidence": "p. 1410, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics map continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 4 MAP reading kept under GLM's element.",
+      "evidence": "p. 1410, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics central venous pressure cvp continu @48h]",
+      "decision": "glm",
+      "reason": "Keep: CVP 10.36+/-2.88 vs 11.21+/-2.93, t 1.498, P 0.137 as in Table 4 (the Results text prints SDs 1.68 and 1.93; GLM's quote flags the discrepancy, both reviewers took the table).",
+      "evidence": "p. 1410, Table 4 (page image); p. 1409 Section 3.4"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 4 CVP reading kept under GLM's element.",
+      "evidence": "p. 1410, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics heart rate continuous @48h]",
+      "decision": "glm",
+      "reason": "Keep: HR 102.03+/-18.29 vs 97.26+/-20.36, t 1.260, P 0.210.",
+      "evidence": "p. 1410, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @48h]",
+      "decision": "glm",
+      "reason": "Drop: restates the Table 4 HR reading kept under GLM's element.",
+      "evidence": "p. 1410, Table 4 (page image)"
+    },
+    {
+      "id": "83038baa4f",
+      "decision": "deepseek",
+      "reason": "The control arm's PEEP has no table or numeric rule: it starts at 3-5 cmH2O and is 'adjusted gradually based on the patient's response', to SaO2 >= 90% 'taking into account blood pressure', with feedback that 'assists physicians in determining the optimal PEEP level' - clinician-directed usual care.",
+      "evidence": "p. 1407, Section 2.3 Intervention methods"
+    },
+    {
+      "id": "3978772f2a",
+      "decision": "deepseek",
+      "reason": "'conducted at our hospital's intensive care unit' with every author from one hospital: a single centre.",
+      "evidence": "p. 1407, Section 2.1; p. 1405 affiliations"
+    },
+    {
+      "id": "a16ec37f60",
+      "decision": "glm",
+      "reason": "The paper is internally inconsistent on points that affect extraction: study-group n 53 (Abstract) vs 54 (tables); CVP SDs 1.68/1.93 (text) vs 2.88/2.93 (Table 4); 60-day follow-up 'after discharge' vs 'from enrollment'; 60-day death counts given only via cause-of-death text. Contacting the authors is warranted.",
+      "evidence": "p. 1405 Abstract; p. 1409 Section 3.4; p. 1408 Section 2.4.4; p. 1410 Section 3.5"
+    },
+    {
+      "id": "cbc743eff0",
+      "decision": "deepseek",
+      "reason": "ARDS by the Berlin definition is an inclusion criterion, so all 105 have ARDS; the codebook codes such logical implications as derived counts, which DeepSeek does.",
+      "evidence": "p. 1407, Inclusion criteria; CODEBOOK 'Logical implications are derivations'"
+    }
+  ]
+}

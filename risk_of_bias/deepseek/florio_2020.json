@@ -1,0 +1,89 @@
+{
+  "record_meta": {
+    "study_id": "florio_2020",
+    "reviewer": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "assessment_date": "2026-09-28",
+    "source_file": "studies/fulltext/a-lung-rescue-team-improves-survival-in-obesity-with-acute-respi-2020.pdf",
+    "schema_version": "1.0.0"
+  },
+  "study_id": "florio_2020",
+  "tool": "nih_cohort",
+  "results": [],
+  "nih": {
+    "items": {
+      "1": {
+        "response": "Yes",
+        "support": "The aim of the present study was to determine whether an individualized titration of mechanical ventilation according to cardiopulmonary physiology reduces the mortality in patients with class III obesity and ARDS.",
+        "location": "p.1, Abstract (Background)"
+      },
+      "2": {
+        "response": "Yes",
+        "support": "Adult patients (≥18 years of age) with the following entry criteria were enrolled: (I) class III obesity (BMI > 40 kg/m2), (II) diagnosis of ARDS, (III) mechanical ventilation for > 48 h, and (IV) admission to MGH surgical or medical ICU",
+        "location": "p.2, Methods – Patients and measurements"
+      },
+      "3": {
+        "response": "CD",
+        "support": "The report gives no number of patients screened for eligibility and no participation rate; it states \"Please see supplementary materials for details regarding patient screening\", and that supplement is not part of the report, so the proportion of eligible persons enrolled cannot be determined.",
+        "location": "p.2, Methods – Patients and measurements; p.4, Statistical analysis"
+      },
+      "4": {
+        "response": "No",
+        "support": "During 2012–2014, mechanical ventilation settings of the first cohort of patients (standard protocol-based cohort) was titrated according to ARDSnet PEEP/FiO2 guidelines. During 2015–2017, mechanical ventilation of the second cohort of patients (lung rescue team cohort) was treated by the lung rescue team.",
+        "location": "p.2, Methods – Patients and measurements"
+      },
+      "5": {
+        "response": "Yes",
+        "support": "hazard ratio (HR) 0.32; 95% confidence interval (CI95%) 0.13–0.78",
+        "location": "p.1, Abstract (Results); effect estimates with 95% CIs also given in Table 3, p.7, where the report nevertheless states on p.4 that 'an a priori sample size calculation was not performed'"
+      },
+      "6": {
+        "response": "Yes",
+        "support": "During ICU admission and the first 4 days of mechanical ventilation, patient characteristics together with cardiopulmonary and hemodynamic were recorded. Patients' outcomes up to 1-year follow-up were also recorded.",
+        "location": "p.2, Methods – Patients and measurements"
+      },
+      "7": {
+        "response": "Yes",
+        "support": "The effect of lung rescue ventilation strategy on mortality up to 1-year follow-up was assessed using Kaplan-Meier curves, and hazard ratio was calculated using the Cox proportional hazard model.",
+        "location": "p.4, Statistical analysis; mortality at 28 days, 3, 6 months and 1 year in Table 3, p.7 and Fig. 2, p.7"
+      },
+      "8": {
+        "response": "NA",
+        "support": "one cohort (2012–2014) had ventilator settings determined by the ARDSnet table for lower positive end-expiratory pressure/higher inspiratory fraction of oxygen (standard protocol-based cohort); the other cohort (2015–2017) had ventilator settings determined by an individualized protocol established by a lung rescue team",
+        "location": "p.1, Abstract (Methods)"
+      },
+      "9": {
+        "response": "Yes",
+        "support": "For the standard protocol-based cohort (Fig. 1, panel 1), ventilation of patients with class III obesity was managed using ARDSnet PEEP/FiO2 tables [11].",
+        "location": "p.2, Methods – Interventions; lung rescue team protocol detailed on p.2–3 and Fig. 1 (p.3)"
+      },
+      "10": {
+        "response": "Yes",
+        "support": "In contrast to the standard protocol-based cohort, the lung rescue team cohort showed a remarkable improvement in respiratory mechanics and oxygenation throughout the first 4 days of ventilation.",
+        "location": "p.4, Results – Ventilation settings; daily PEEP, driving pressure, compliance and PaO2/FiO2 for days 1–4 in Table 2, p.6"
+      },
+      "11": {
+        "response": "Yes",
+        "support": "The primary outcome was mortality at 28 days and was decided a priori during the study design process.",
+        "location": "p.4, Statistical analysis; definitions and counts for ICU, hospital, 28-day, 3-, 6-month and 1-year mortality in Table 3, p.7"
+      },
+      "12": {
+        "response": "NA",
+        "support": "The report nowhere describes blinding or masking of the persons assessing outcomes; outcomes were collected retrospectively for patients identified by calendar period (2012–2014 vs 2015–2017) and the exposure was a care-delivery strategy that cannot be concealed, so assessor blinding was not possible.",
+        "location": "p.2, Methods – Patients and measurements and Interventions; p.4, Statistical analysis"
+      },
+      "13": {
+        "response": "Yes",
+        "support": "No losses to follow-up are reported: Table 3 reports mortality at 28 days, 3 months, 6 months and 1 year with the full cohort denominators (N = 70 and N = 50), and Fig. 2 carries Kaplan-Meier curves out to 365 days with no censoring reported.",
+        "location": "Table 3 and Fig. 2, p.7; p.5, Results – Mortality and in-hospital outcomes"
+      },
+      "14": {
+        "response": "Yes",
+        "support": "The Cox proportional hazard model was used to examine differences in survival after adjusting for predetermined potential confounders (BMI, age, APACHE, PaO2/FiO2 ratio).",
+        "location": "p.4, Statistical analysis; adjusted HRs with 95% CIs in Table 3, p.7 and Fig. 2, p.7"
+      }
+    },
+    "rating": "Fair",
+    "rationale": "Rated Fair. Strengths: the objective is clearly stated (item 1), the single-centre population, setting and time window are specified with prespecified entry criteria applied to a consecutive series (items 2, 4 partly), exposure and outcomes are objectively defined and measured consistently (items 9, 11), vital status through 1 year is complete with no reported losses (item 13), and the four prespecified confounders (BMI, age, APACHE, PaO2/FiO2) were adjusted for in the Cox model (item 14). Downgrades: the participation/eligibility rate is not reported (item 3, CD), the two cohorts were recruited in different calendar periods (2012–2014 vs 2015–2017), so the comparison is exposed to secular-trend confounding that the authors themselves discuss (item 4, No), no a priori sample size or power calculation was performed (item 5 answered Yes only because effect estimates with 95% CIs are reported), and outcome assessment was not blinded (item 12, NA). These are shortcomings of a small, single-centre retrospective before-after design rather than a fatal flaw, and the multivariable adjustment and complete objective outcome ascertainment argue against a Poor rating."
+  }
+}

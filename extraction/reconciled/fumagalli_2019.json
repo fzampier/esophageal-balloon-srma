@@ -1,0 +1,2796 @@
+{
+ "record_meta": {
+  "study_id": "fumagalli_2019",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-09-29",
+  "source_file": "studies/fulltext/lung_recruitment_in_obese_patients_with_acute.25.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 176 reviewer differences: 124 in scope. Settled by human rulings 10, model rulings 118, content-neutral rules 6; 37 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 5 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Fumagalli",
+  "year": 2019,
+  "title": "Lung Recruitment in Obese Patients with Acute Respiratory Distress Syndrome",
+  "journal": "Anesthesiology",
+  "doi": "10.1097/ALN.0000000000002638",
+  "pmid": null,
+  "trial_registration": "NCT02503241",
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "From April 1, 2016 to July 30, 2017 severely obese adult patients (body mass index greater than 35 kg/m2) admitted to the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts) entered the study",
+     "location": "p. 792, Study Population, para 1"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Among patients admitted to the participating intensive care units during the study period and requiring mechanical ventilation lasting longer than 24 h (N = 1,053), 117 patients had a body mass index greater than 35 kg/m2.",
+     "location": "p. 794, Results, para 1"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "admitted to the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts)",
+     "location": "p. 792, Study Population, para 1"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Pleural pressure targeted-incremental PEEP (PEEPINCREMENTAL): PEEP progressively increased by 2 cm H2O every 60 s until the end-expiratory transpulmonary pressure equaled 0 to 2 cm H2O representing the optimal incremental PEEP.",
+     "location": "p. 792, Study Procedures, list item 2"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Compared to PEEPARDSNET, at PEEPINCREMENTAL level (22 ± 3 cm H2O) lung volume increased (977 ± 708 ml), lung elastance decreased (23 ± 7 cm H2O/l), lung collapse decreased (18 ± 10%), and ventilation homogeneity increased thus rising oxygenation (251 ± 105 mmHg)",
+     "location": "p. 791, Abstract, Results"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Fourteen severely obese patients (body mass index = 58.6 ± 11.0 kg/m2) matched the Berlin definition criteria for ARDS diagnosis.",
+     "location": "p. 794, Results, para 1"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "we designed a clinical crossover physiologic study in severely obese patients (body mass index greater than 35 kg/m2) with ARDS",
+     "location": "p. 792, Introduction, final para"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Anesthesiology 2019; 130:791–803",
+     "location": "p. 791, footer"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "crossover_physiologic",
+  "study_design_verbatim": {
+   "value": "we designed a clinical crossover physiologic study in severely obese patients (body mass index greater than 35 kg/m2) with ARDS",
+   "provenance": {
+    "quote": "we designed a clinical crossover physiologic study in severely obese patients (body mass index greater than 35 kg/m2) with ARDS",
+    "location": "p. 792, Introduction, final para"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": {
+   "value": "The radiologist evaluated difference in lung volumes ... blinded to the order of image acquisition. The order of the study procedures was not randomized.",
+   "provenance": {
+    "quote": "The order of the study procedures was not randomized.",
+    "location": "p. 800, Limitations of the Study, para 1"
+   }
+  },
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "admitted to the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts)",
+    "location": "p. 792, Study Population, para 1"
+   }
+  },
+  "countries": [
+   "United States"
+  ],
+  "location_provenance": {
+   "quote": "the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts)",
+   "location": "p. 792, Study Population, para 1"
+  },
+  "planned_sample_size": {
+   "value": 14,
+   "provenance": {
+    "quote": "We anticipated enrolling 14 patients in this two-treatment crossover study based on an expected decrease in lung elastance of 1.7 ± 1.8 cm H2O/l11 at PEEPDECREMENTAL versus PEEPINCREMENTAL, with a power of 90% and a two-sided 0.05 significance level.",
+    "location": "p. 794, Statistical Analysis, para 1"
+   }
+  },
+  "sample_size_calculation": {
+   "value": "14",
+   "provenance": {
+    "quote": "We anticipated enrolling 14 patients in this two-treatment crossover study based on an expected decrease in lung elastance of 1.7 ± 1.8 cm H2O/l11 at PEEPDECREMENTAL versus PEEPINCREMENTAL, with a power of 90% and a two-sided 0.05 significance level.",
+    "location": "p. 794, Statistical Analysis, para 1"
+   }
+  },
+  "stopped_early": false,
+  "stopping_rule": null,
+  "setting": {
+   "value": "Medical or Surgical intensive care units",
+   "provenance": {
+    "quote": "admitted to the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts)",
+    "location": "p. 792, Study Population, para 1"
+   }
+  },
+  "enrolment_start": "2016-04",
+  "enrolment_end": "2017-07",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "The study was funded by the Departments of Anesthesia, Critical Care and Pain Medicine, and Respiratory Care at Massachusetts General Hospital, Boston, Massachusetts.",
+   "provenance": {
+    "quote": "The study was funded by the Departments of Anesthesia, Critical Care and Pain Medicine, and Respiratory Care at Massachusetts General Hospital, Boston, Massachusetts.",
+    "location": "p. 800, Research Support"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 24,
+   "provenance": {
+    "quote": "24 patients were enrolled and completed the study procedures",
+    "location": "p. 794, Results"
+   }
+  },
+  "n_analysed": {
+   "value": 14,
+   "provenance": {
+    "quote": "Data from 14 patients.",
+    "location": "p. 795, Table 2 footnote"
+   }
+  },
+  "population_description": {
+   "value": "Severely obese adult patients (BMI > 35 kg/m2) with ARDS meeting Berlin criteria, admitted to the Medical or Surgical ICUs of Massachusetts General Hospital.",
+   "provenance": {
+    "quote": "From April 1, 2016 to July 30, 2017 severely obese adult patients (body mass index greater than 35 kg/m2) admitted to the Medical or Surgical intensive care units of the Massachusetts General Hospital (Boston, Massachusetts) entered the study after written informed consent was obtained. Among patients enrolled in the study, those meeting the Berlin criteria for ARDS23 were included in the present analysis.",
+    "location": "p. 792, Study Population, para 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "Severely obese adult patients (body mass index greater than 35 kg/m2) requiring mechanical ventilation longer than 24 h; those meeting the Berlin criteria for ARDS were included in the present analysis.",
+   "provenance": {
+    "quote": "Among patients enrolled in the study, those meeting the Berlin criteria for ARDS23 were included in the present analysis.",
+    "location": "p. 792, Study Population, para 1"
+   }
+  },
+  "exclusion_criteria": {
+   "value": null,
+   "provenance": null
+  },
+  "age": {
+   "value_type": "mean",
+   "value": 52,
+   "dispersion_type": "sd",
+   "dispersion": 15,
+   "n": 14,
+   "unit": "years",
+   "provenance": {
+    "quote": "Age, years — 52 ± 15",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "sex_female": {
+   "n": 8,
+   "total": 14,
+   "percent_as_reported": 57,
+   "provenance": {
+    "quote": "Female, n (%) — 8 (57)",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "sex_male": null,
+  "bmi": {
+   "value_type": "mean",
+   "value": 58.6,
+   "dispersion_type": "sd",
+   "dispersion": 11.0,
+   "n": 14,
+   "unit": "kg/m2",
+   "provenance": {
+    "quote": "BMI, kg/m2 — 58.6 ± 11.0",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "weight_kg": {
+   "value_type": "mean",
+   "value": 167.4,
+   "dispersion_type": "sd",
+   "dispersion": 34.8,
+   "n": 14,
+   "unit": "kg",
+   "provenance": {
+    "quote": "Actual weight, kg — 167.4 ± 34.8",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "predicted_body_weight_kg": {
+   "value_type": "mean",
+   "value": 62.7,
+   "dispersion_type": "sd",
+   "dispersion": 11.0,
+   "n": 14,
+   "unit": "kg",
+   "provenance": {
+    "quote": "Predicted body weight, kg — 62.7 ± 11.0",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "Berlin definition",
+   "provenance": {
+    "quote": "Fourteen severely obese patients (body mass index = 58.6 ± 11.0 kg/m2) matched the Berlin definition criteria for ARDS diagnosis.",
+    "location": "p. 794, Results, para 1"
+   }
+  },
+  "n_ards": {
+   "n": 14,
+   "total": 14,
+   "provenance": {
+    "quote": "Fourteen severely obese patients (body mass index = 58.6 ± 11.0 kg/m2) matched the Berlin definition criteria for ARDS diagnosis.",
+    "location": "p. 794, Results, para 1"
+   }
+  },
+  "ards_severity": {
+   "mild": null,
+   "moderate": null,
+   "severe": null
+  },
+  "covid19_population": "not_applicable",
+  "cause_of_respiratory_failure": {
+   "value": "Reason for ICU admission: Medical 6 (43%), Surgical 8 (57%)",
+   "provenance": {
+    "quote": "Reason for ICU admission — Medical, n (%) 6 (43); Surgical, n (%) 8 (57)",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "pao2_fio2_baseline": {
+   "value_type": "mean",
+   "value": 150,
+   "dispersion_type": "sd",
+   "dispersion": 81,
+   "n": 13,
+   "unit": "mmHg",
+   "provenance": {
+    "quote": "Pao2/Fio2, mmHg* — 150 ± 81 ... *At the time of screening, N = 13.",
+    "location": "p. 794, Table 1 and footnote"
+   }
+  },
+  "apache_ii": {
+   "value_type": "mean",
+   "value": 21.8,
+   "dispersion_type": "sd",
+   "dispersion": 8.8,
+   "n": 14,
+   "provenance": {
+    "quote": "APACHE II score — 21.8 ± 8.8",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "sofa": null,
+  "saps_ii": null,
+  "n_prone_positioning": {
+   "n": 0,
+   "total": 14,
+   "derived": true,
+   "derivation": "Paper states prone positioning was never attempted: 'Prone positioning was never attempted because it was considered unsafe due to patients' body habitus and hemodynamic instability.'",
+   "provenance": {
+    "quote": "Prone positioning was never attempted because it was considered unsafe due to patients' body habitus and hemodynamic instability.",
+    "location": "p. 794, Results, para 2"
+   }
+  },
+  "n_neuromuscular_blockade": {
+   "n": 7,
+   "total": 14,
+   "percent_as_reported": 50,
+   "provenance": {
+    "quote": "NMBA continuous infusion, n (%) — 7 (50)",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "n_ecmo": {
+   "n": 0,
+   "total": 14,
+   "derived": true,
+   "derivation": "ECMO was discussed in four patients but initiation was declined; no patient received ECMO.",
+   "provenance": {
+    "quote": "In four patients, extracorporeal membrane oxygenation support was discussed as rescue therapy by the intensive care unit team but initiation of extracorporeal membrane oxygenation was declined due to severe obesity and difficulties associated with cannula placement.",
+    "location": "p. 794, Results, para 2"
+   }
+  },
+  "n_vasopressors": {
+   "n": 12,
+   "total": 14,
+   "percent_as_reported": 86,
+   "provenance": {
+    "quote": "Hypotension requiring vasopressors, n (%) — 12 (86)",
+    "location": "p. 794, Table 1"
+   }
+  },
+  "additional_baseline": [
+   {
+    "name_verbatim": "MV prior the study, days",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 1,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0,
+     "dispersion_high": 4,
+     "unit": "days",
+     "provenance": {
+      "quote": "MV prior the study, days — 1 [0 - 4]",
+      "location": "p. 794, Table 1"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Rescue therapies, n (%)",
+    "arm_label": null,
+    "count": {
+     "n": 7,
+     "total": 14,
+     "percent_as_reported": 50,
+     "provenance": {
+      "quote": "Rescue therapies, n (%) — 7 (50)",
+      "location": "p. 794, Table 1"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Pulmonary vasodilators, n (%)",
+    "arm_label": null,
+    "count": {
+     "n": 3,
+     "total": 14,
+     "percent_as_reported": 21,
+     "provenance": {
+      "quote": "Pulmonary vasodilators, n (%) — 3 (21)",
+      "location": "p. 794, Table 1"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Reason for ICU admission: Medical, n (%)",
+    "arm_label": null,
+    "count": {
+     "n": 6,
+     "total": 14,
+     "percent_as_reported": 43,
+     "provenance": {
+      "quote": "Medical, n (%) — 6 (43)",
+      "location": "p. 794, Table 1"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Reason for ICU admission: Surgical, n (%)",
+    "arm_label": null,
+    "count": {
+     "n": 8,
+     "total": 14,
+     "percent_as_reported": 57,
+     "provenance": {
+      "quote": "Surgical, n (%) — 8 (57)",
+      "location": "p. 794, Table 1"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "AVEA Ventilator Nasogastric Pressure Monitoring Tube Set; CareFusion, USA",
+   "provenance": {
+    "quote": "A nasogastric tube with esophageal balloon was inserted (AVEA Ventilator Nasogastric Pressure Monitoring Tube Set; CareFusion, USA)",
+    "location": "p. 792, Respiratory Mechanics, para 1"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "baydur_occlusion_test",
+   "method_verbatim": {
+    "value": "balloon positioning and inflation volume were verified (references 25, 26: Baydur 1982 occlusion technique; Mojoli 2016 in vivo calibration), details in Supplemental Digital Content 1",
+    "provenance": {
+     "quote": "balloon positioning and inflation volume were verified25,26 (see Supplemental Digital Content 1, http://links.lww.com/ALN/B878, and Supplemental Digital Content 2, figure E1, http://links.lww.com/ALN/B879, for details).",
+     "location": "p. 792, Respiratory Mechanics, para 1"
+    }
+   },
+   "position_verification": {
+    "value": "balloon positioning and inflation volume were verified; end-expiratory esophageal pressure recorded 'after optimizing balloon volume'",
+    "provenance": {
+     "quote": "absolute esophageal pressure at end-inspiration and end-expiration (after optimizing balloon volume) were recorded",
+     "location": "p. 793, left column, para 2"
+    }
+   },
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "PLE = PEEP − end-expiratory PES",
+    "provenance": {
+     "quote": "we used the difference between airway opening pressure (PAW) and esophageal pressure (PES) at end expiration to calculate end-expiratory transpulmonary pressure (PLE) ... PLE = PEEP − end-expiratory PES",
+     "location": "p. 793, left column, para 3"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "end_expiratory_ptp_positive_range",
+   "strategy_verbatim": {
+    "value": "PEEP progressively increased by 2 cm H2O every 60 s until the end-expiratory transpulmonary pressure equaled 0 to 2 cm H2O representing the optimal incremental PEEP",
+    "provenance": {
+     "quote": "Pleural pressure targeted-incremental PEEP (PEEPINCREMENTAL): PEEP progressively increased by 2 cm H2O every 60 s until the end-expiratory transpulmonary pressure equaled 0 to 2 cm H2O representing the optimal incremental PEEP.21",
+     "location": "p. 792, Study Procedures, list item 2"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": 0,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "until the end-expiratory transpulmonary pressure equaled 0 to 2 cm H2O",
+     "location": "p. 792, Study Procedures, list item 2"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 2,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "until the end-expiratory transpulmonary pressure equaled 0 to 2 cm H2O",
+     "location": "p. 792, Study Procedures, list item 2"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": null,
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "PEEP progressively increased by 2 cm H2O every 60 s (incremental); PEEP decreased by 2 cm H2O every 60 s (decremental trial); titrated PEEP maintained up to 24 h",
+    "provenance": {
+     "quote": "All patients completed the entire study procedures and were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+     "location": "p. 797, right column, para 1"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": true,
+   "recruitment_manoeuvre_detail": {
+    "value": "A recruitment maneuver was performed in pressure control ventilation, driving pressure of 10 cm H2O, by stepwise increase in PEEP 5 cm H2O every 30 s targeting a maximum plateau pressure of 50 cm H2O held for 1 min; performed before the decremental PEEP trial.",
+    "provenance": {
+     "quote": "A recruitment maneuver was performed in pressure control ventilation, driving pressure of 10 cm H2O, by stepwise increase in PEEP 5 cm H2O every 30 s targeting a maximum plateau pressure of 50 cm H2O held for 1 min",
+     "location": "p. 792, Study Procedures, list item 3"
+    }
+   },
+   "tidal_volume_target": {
+    "value": "6 ml/kg of predicted body weight",
+    "provenance": {
+     "quote": "Patients were ventilated in volume-controlled ventilation at 6 ml/kg of predicted body weight",
+     "location": "p. 792, Study Procedures, para 2"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "maximum plateau pressure of 50 cm H2O during recruitment maneuver; plateau pressure less than 50 cm H2O at start of decremental trial",
+    "provenance": {
+     "quote": "targeting a maximum plateau pressure of 50 cm H2O held for 1 min ... starting at a PEEP level that maintained the plateau pressure less than 50 cm H2O",
+     "location": "p. 792, Study Procedures, list item 3"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Patients paralyzed with 0.2 mg/kg cisatracurium besylate; FiO2 and respiratory rate maintained as per clinical management to keep SpO2 88–95% and PaCO2 < 50 mmHg; I:E 1:2 with 0.3 s inspiratory pause.",
+    "provenance": {
+     "quote": "After assessing proper sedation level patients were paralyzed by administration of 0.2 mg/kg of cisatracurium besylate. Patients were ventilated in volume-controlled ventilation at 6 ml/kg of predicted body weight, Fio2 and respiratory rate were maintained as set per clinical management to maintain Spo2 = 88 to 95% and Paco2 less than 50 mmHg",
+     "location": "p. 792, Study Procedures, para 2"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "intubation",
+   "hours_from_reference": {
+    "value_type": "median",
+    "value": 1,
+    "dispersion_type": "range",
+    "dispersion_low": 0,
+    "dispersion_high": 4,
+    "unit": "days",
+    "provenance": {
+     "quote": "After consent was obtained, study procedures were started on average 1 [range 0 - 4] day after the initiation of mechanical ventilation.",
+     "location": "p. 795, Results"
+    }
+   },
+   "timing_verbatim": {
+    "value": "study procedures were started on average 1 [range 0 - 4] day after the initiation of mechanical ventilation",
+    "provenance": {
+     "quote": "After consent was obtained, study procedures were started on average 1 [range 0 - 4] day after the initiation of mechanical ventilation.",
+     "location": "p. 795, left column, para 2"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "All patients ... were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+   "provenance": {
+    "quote": "All patients completed the entire study procedures and were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+    "location": "p. 797, right column, para 1"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "ardsnet_low_peep_fio2_table",
+   "decremental_peep_trial"
+  ],
+  "comparator_verbatim": {
+   "value": "PEEP titrated according to the low PEEP/Fio2 ARDSnet table (PEEPARDSnet); Optimal Decremental PEEP (PEEPDECREMENTAL): PEEP level resulting in the lowest respiratory system elastance during a decremental PEEP trial after a recruitment maneuver.",
+   "provenance": {
+    "quote": "1. PEEP titrated according to the low PEEP/Fio2 ARDSnet table2: (PEEPARDSnet). ... 3. Optimal Decremental PEEP (PEEPDECREMENTAL): ... The PEEP level resulting in the lowest respiratory system elastance identified the optimal PEEPDECREMENTAL.22",
+    "location": "p. 792, Study Procedures, list items 1 and 3"
+   }
+  },
+  "crossover_order": {
+   "value": "Fixed, not randomised: (1) PEEPARDSnet, (2) PEEPINCREMENTAL, (3) recruitment maneuver then PEEPDECREMENTAL trial, then PEEPDECREMENTAL. 'The order of the study procedures was not randomized.'",
+   "provenance": {
+    "quote": "The study protocol had three phases, always performed in the following order (fig. 1): ... The order of the study procedures was not randomized.",
+    "location": "p. 792, Study Procedures, para 3; p. 800, Limitations, para 1"
+   }
+  },
+  "washout_or_stabilisation": {
+   "value": "All measurements ... were performed at steady state after 10 to 15 min on stable ventilatory settings.",
+   "provenance": {
+    "quote": "All measurements during PEEPARDSnet, PEEPINCREMENTAL, and PEEPDECREMENTAL were performed at steady state after 10 to 15 min on stable ventilatory settings.24",
+    "location": "p. 792, Measurements, para 1"
+   }
+  }
+ },
+ "arms": [
+  {
+   "label": "peep_ardsnet",
+   "label_verbatim": "PEEPARDSnet",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 14,
+    "provenance": {
+     "quote": "Data from 14 patients.",
+     "location": "p. 795, Table 2 footnote"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 13,
+    "dispersion_type": "sd",
+    "dispersion": 1,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "PEEP, cm H2O 13 ± 1",
+     "location": "p. 795, Table 2, row: PEEP, cm H2O, column: PEEP ARDSnet"
+    }
+   }
+  },
+  {
+   "label": "peep_incremental",
+   "label_verbatim": "PEEPINCREMENTAL",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 14,
+    "provenance": {
+     "quote": "Data from 14 patients.",
+     "location": "p. 795, Table 2 footnote"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 22,
+    "dispersion_type": "sd",
+    "dispersion": 3,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "PEEP, cm H2O 22 ± 3*",
+     "location": "p. 795, Table 2, row: PEEP, cm H2O, column: PEEP INCREMENTAL"
+    }
+   }
+  },
+  {
+   "label": "peep_decremental",
+   "label_verbatim": "PEEPDECREMENTAL",
+   "role": "alternative_titration_condition",
+   "sequence_position": 3,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 14,
+    "provenance": {
+     "quote": "Data from 14 patients.",
+     "location": "p. 795, Table 2 footnote"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "mean",
+    "value": 21,
+    "dispersion_type": "sd",
+    "dispersion": 4,
+    "unit": "cmH2O",
+    "provenance": {
+     "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*",
+     "location": "p. 795, Table 2, row: PEEP"
+    }
+   }
+  },
+  {
+   "label": "all_patients",
+   "label_verbatim": "All patients",
+   "role": "single_group",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 14,
+    "provenance": {
+     "quote": "Fourteen severely obese patients (body mass index = 58.6 ± 11.0 kg/m2) matched the Berlin definition criteria for ARDS diagnosis.",
+     "location": "p. 794, Results"
+    }
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure, cm H2O",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O 13 ± 4",
+      "location": "p. 795, Table 2, row: Driving pressure, cm H2O, column: PEEP ARDSnet"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 11,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 14,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O 11 ± 2*",
+      "location": "p. 795, Table 2, row: Driving pressure, cm H2O, column: PEEP INCREMENTAL"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O — 13 ± 4, 11 ± 2*, 10 ± 2*§",
+      "location": "p. 795, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -3,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O — 13 ± 4, 11 ± 2*, 10 ± 2*§, −2 [−3;−1], −3 [−5;−2], −1 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving pressure"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -3,
+     "ci_low": -5,
+     "ci_high": -2,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O — 13 ± 4, 11 ± 2*, 10 ± 2*§, −2 [−3;−1], −3 [−5;−2], −1 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving pressure"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -1,
+     "ci_low": -2,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving pressure, cm H2O — 13 ± 4, 11 ± 2*, 10 ± 2*§, −2 [−3;−1], −3 [−5;−2], −1 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Driving pressure, cm H2O 13 ± 4 11 ± 2* 10 ± 2*§",
+    "location": "p. 795, Table 2, row: Driving pressure, cm H2O"
+   }
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Pao2/Fio2",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 194,
+     "dispersion_type": "sd",
+     "dispersion": 111,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 251,
+     "dispersion_type": "sd",
+     "dispersion": 105,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 329,
+     "dispersion_type": "sd",
+     "dispersion": 82,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 57,
+     "ci_low": 13,
+     "ci_high": 101,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§, 57 [13;101], 134 [70;199], 77 [36;119]",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 134,
+     "ci_low": 70,
+     "ci_high": 199,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§, 57 [13;101], 134 [70;199], 77 [36;119]",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 77,
+     "ci_low": 36,
+     "ci_high": 119,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Pao2/Fio2 — 194 ± 111, 251 ± 105*, 329 ± 82*§, 57 [13;101], 134 [70;199], 77 [36;119]",
+      "location": "p. 795, Table 2, row: Pao2/Fio2"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "At screening, within 6 h after the start of mechanical ventilation, patients were hypoxemic (Pao2/Fio2 = 150 ± 81) on a PEEP greater than or equal to 5 cm H2O",
+    "location": "p. 794, Results"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "pH",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 7.35,
+     "dispersion_type": "sd",
+     "dispersion": 0.06,
+     "n": 14,
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§",
+      "location": "p. 795, Table 2, row: pH"
+     },
+     "unit": null
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 7.34,
+     "dispersion_type": "sd",
+     "dispersion": 0.07,
+     "n": 14,
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§",
+      "location": "p. 795, Table 2, row: pH"
+     },
+     "unit": null
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 7.32,
+     "dispersion_type": "sd",
+     "dispersion": 0.07,
+     "n": 14,
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§",
+      "location": "p. 795, Table 2, row: pH"
+     },
+     "unit": null
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -0.0,
+     "ci_low": -0.02,
+     "ci_high": 0.01,
+     "n_pairs": 14,
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§, −0.00 [−0.02;0.01], −0.03 [−0.05;−0.01], −0.02 [−0.03;−0.01]",
+      "location": "p. 795, Table 2, row: pH"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -0.03,
+     "ci_low": -0.05,
+     "ci_high": -0.01,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§, −0.00 [−0.02;0.01], −0.03 [−0.05;−0.01], −0.02 [−0.03;−0.01]",
+      "location": "p. 795, Table 2, row: pH"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -0.02,
+     "ci_low": -0.03,
+     "ci_high": -0.01,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "provenance": {
+      "quote": "pH — 7.35 ± 0.06, 7.34 ± 0.07, 7.32 ± 0.07*§, −0.00 [−0.02;0.01], −0.03 [−0.05;−0.01], −0.02 [−0.03;−0.01]",
+      "location": "p. 795, Table 2, row: pH"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "pH 7.35 ± 0.06 7.34 ± 0.07 7.32 ± 0.07*§",
+    "location": "p. 795, Table 2, row: pH"
+   }
+  },
+  {
+   "domain": "dead_space",
+   "name_verbatim": "VD/VT Physiologic, %",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 49,
+     "dispersion_type": "sd",
+     "dispersion": 11,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12 ... †N = 11",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 47,
+     "dispersion_type": "sd",
+     "dispersion": 11,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12 ... †N = 11",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 47,
+     "dispersion_type": "sd",
+     "dispersion": 12,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12 ... †N = 11",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -4,
+     "ci_high": 1,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12, −2 [−4;1], −1 [−5;2], 0 [−2;2]",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -1,
+     "ci_low": -5,
+     "ci_high": 2,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12, −2 [−4;1], −1 [−5;2], 0 [−2;2]",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 0,
+     "ci_low": -2,
+     "ci_high": 2,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "VD/VT† Physiologic, % — 49 ± 11, 47 ± 11, 47 ± 12, −2 [−4;1], −1 [−5;2], 0 [−2;2]",
+      "location": "p. 795, Table 2, row: VD/VT Physiologic"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "VD/VT Physiologic, % 49 ± 11 47 ± 11 47 ± 12",
+    "location": "p. 795, Table 2, row: VD/VT Physiologic, %"
+   }
+  },
+  {
+   "domain": "dead_space",
+   "name_verbatim": "VD/VT Airways, %",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 30,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 33,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 31,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 3,
+     "ci_low": 1,
+     "ci_high": 5,
+     "n_pairs": 11,
+     "p_value_verbatim": "<0.05",
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7, 3 [1;5], 1 [−2;4], −2 [−5;1]",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 1,
+     "ci_low": -2,
+     "ci_high": 4,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7, 3 [1;5], 1 [−2;4], −2 [−5;1]",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -2,
+     "ci_low": -5,
+     "ci_high": 1,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Airways, % — 30 ± 5, 33 ± 6*, 31 ± 7, 3 [1;5], 1 [−2;4], −2 [−5;1]",
+      "location": "p. 795, Table 2, row: VD/VT Airways"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "VD/VT Airways, % 30 ± 5 33 ± 6* 31 ± 7",
+    "location": "p. 795, Table 2, row: VD/VT Airways, %"
+   }
+  },
+  {
+   "domain": "dead_space",
+   "name_verbatim": "VD/VT Alveolar, %",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 19,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 15,
+     "dispersion_type": "sd",
+     "dispersion": 8,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 16,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "n": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -4,
+     "ci_low": -8,
+     "ci_high": -1,
+     "n_pairs": 11,
+     "p_value_verbatim": "<0.05",
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9, −4 [-8;−1], −3 [−7;2], 2 [−1;5]",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -3,
+     "ci_low": -7,
+     "ci_high": 2,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9, −4 [-8;−1], −3 [−7;2], 2 [−1;5]",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 2,
+     "ci_low": -1,
+     "ci_high": 5,
+     "n_pairs": 11,
+     "unit": "%",
+     "provenance": {
+      "quote": "Alveolar, % — 19 ± 9, 15 ± 8*, 16 ± 9, −4 [-8;−1], −3 [−7;2], 2 [−1;5]",
+      "location": "p. 795, Table 2, row: VD/VT Alveolar"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "VD/VT Alveolar, % 19 ± 9 15 ± 8* 16 ± 9",
+    "location": "p. 795, Table 2, row: VD/VT Alveolar, %"
+   }
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Lung collapse (EIT)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures"
+   },
+   "measurement_context": {
+    "value": "Lung collapse percentages were determined by comparing each electrical impedance tomography pixel-compliance during PEEPARDSnet, PEEPINCREMENTAL, and PEEPDECREMENTAL ventilation.",
+    "provenance": {
+     "quote": "Lung collapse and overdistension percentages were determined by comparing each electrical impedance tomography pixel-compliance during PEEPARDSnet, PEEPINCREMENTAL, and PEEPDECREMENTAL ventilation.",
+     "location": "p. 793, Electrical Impedance Tomography Lung Imaging"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value": null,
+     "provenance": {
+      "quote": "Lung collapse decreases at positive end-expiratory pressure (PEEP)INCREMENTAL levels compared to PEEPARDSnet levels and further decreases at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5A caption"
+     },
+     "unit": "%"
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value": null,
+     "unit": "%",
+     "provenance": {
+      "quote": "Lung collapse decreases at positive end-expiratory pressure (PEEP)INCREMENTAL levels compared to PEEPARDSnet levels and further decreases at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5A caption"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value": null,
+     "unit": "%",
+     "provenance": {
+      "quote": "Lung collapse decreases at positive end-expiratory pressure (PEEP)INCREMENTAL levels compared to PEEPARDSnet levels and further decreases at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5A caption"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "p_value_verbatim": "<0.05",
+     "unit": "%",
+     "provenance": {
+      "quote": "lung collapse decreased (18 ± 10%), and ventilation homogeneity increased thus rising oxygenation (251 ± 105 mmHg), despite higher overdistension levels (16 ± 12%), all values P < 0.05 versus PEEPARDSnet",
+      "location": "p. 791, Abstract, Results"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "p_value_verbatim": "<0.05",
+     "unit": "%",
+     "provenance": {
+      "quote": "while reducing lung collapse (9 ± 2%) and overdistension (11 ± 2%), all values P < 0.05 versus PEEPARDSnet and PEEPINCREMENTAL",
+      "location": "p. 791, Abstract, Results"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "p_value_verbatim": "<0.05",
+     "unit": "%",
+     "provenance": {
+      "quote": "while reducing lung collapse (9 ± 2%) and overdistension (11 ± 2%), all values P < 0.05 versus PEEPARDSnet and PEEPINCREMENTAL",
+      "location": "p. 791, Abstract, Results"
+     }
+    }
+   ],
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "is_longest_reported_mortality": null,
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Lung collapse decreases at positive end-expiratory pressure (PEEP)INCREMENTAL levels compared to PEEPARDSnet levels and further decreases at PEEPDECREMENTAL levels after a recruitment maneuver.",
+    "location": "p. 798, Figure 5A caption"
+   }
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP, cm H2O",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition",
+    "label_verbatim": "PEEPARDSnet / PEEPINCREMENTAL / PEEPDECREMENTAL"
+   },
+   "measurement_context": {
+    "value": "Measurements performed at steady state after 10 to 15 min on stable ventilatory settings; patients paralyzed.",
+    "provenance": {
+     "quote": "All measurements during PEEPARDSnet, PEEPINCREMENTAL, and PEEPDECREMENTAL were performed at steady state after 10 to 15 min on stable ventilatory settings.",
+     "location": "p. 792, Measurements, para 1"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 13,
+     "dispersion_type": "sd",
+     "dispersion": 1,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 22,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 21,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 9,
+     "ci_low": 7,
+     "ci_high": 11,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*, 9 [7;11], 9 [7;11], −1 [−2;1]",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 9,
+     "ci_low": 7,
+     "ci_high": 11,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*, 9 [7;11], 9 [7;11], −1 [−2;1]",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -1,
+     "ci_low": -2,
+     "ci_high": 1,
+     "n_pairs": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "PEEP, cm H2O — 13 ± 1, 22 ± 3*, 21 ± 4*, 9 [7;11], 9 [7;11], −1 [−2;1]",
+      "location": "p. 795, Table 2, row: PEEP"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "P-plat, cm H2O",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 26,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 33,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 31,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 7,
+     "ci_low": 5,
+     "ci_high": 9,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*, 7 [5;9], 5 [3;7], −2 [−4;0]",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 5,
+     "ci_low": 3,
+     "ci_high": 7,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*, 7 [5;9], 5 [3;7], −2 [−4;0]",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -2,
+     "ci_low": -4,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P-plat, cm H2O — 26 ± 4, 33 ± 4*, 31 ± 4*, 7 [5;9], 5 [3;7], −2 [−4;0]",
+      "location": "p. 795, Table 2, row: P-plat"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "PLE, cm H2O (end-expiratory transpulmonary pressure)",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": -5,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*",
+      "location": "p. 795, Table 2, row: P_E (PLE)"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 1,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*",
+      "location": "p. 795, Table 2, row: P_E (PLE)"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 1,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*",
+      "location": "p. 795, Table 2, row: P_E (PLE)"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 6,
+     "ci_low": 4,
+     "ci_high": 8,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*, 6 [4;8], 6 [4;8], 0 [−2;1]",
+      "location": "p. 795, Table 2, row: P_E"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 6,
+     "ci_low": 4,
+     "ci_high": 8,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*, 6 [4;8], 6 [4;8], 0 [−2;1]",
+      "location": "p. 795, Table 2, row: P_E"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 0,
+     "ci_low": -2,
+     "ci_high": 1,
+     "n_pairs": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "P_E, cm H2O — −5 ± 5, 1 ± 4*, 1 ± 4*, 6 [4;8], 6 [4;8], 0 [−2;1]",
+      "location": "p. 795, Table 2, row: P_E"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "Driving PL, cm H2O",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 10,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 9,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 7,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -1,
+     "ci_low": -2,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§, −1 [−2;0], −3 [−4;−1], −2 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -3,
+     "ci_low": -4,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§, −1 [−2;0], −3 [−4;−1], −2 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -2,
+     "ci_low": -2,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O",
+     "provenance": {
+      "quote": "Driving P_L, cm H2O — 10 ± 4, 9 ± 3*, 7 ± 4*§, −1 [−2;0], −3 [−4;−1], −2 [−2;0]",
+      "location": "p. 795, Table 2, row: Driving P_L"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "ElastanceRS, cm H2O/l",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 34,
+     "dispersion_type": "sd",
+     "dispersion": 13,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 29,
+     "dispersion_type": "sd",
+     "dispersion": 8,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 25,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -6,
+     "ci_low": -9,
+     "ci_high": -2,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§, −6 [−9;−2], −10 [−14;−5], −4 [−7;−2]",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -10,
+     "ci_low": -14,
+     "ci_high": -5,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§, −6 [−9;−2], −10 [−14;−5], −4 [−7;−2]",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -4,
+     "ci_low": -7,
+     "ci_high": -2,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_rs, cm H2O/l — 34 ± 13, 29 ± 8*, 25 ± 6*§, −6 [−9;−2], −10 [−14;−5], −4 [−7;−2]",
+      "location": "p. 795, Table 2, row: Elastance_rs"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "ElastanceL, cm H2O/l",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 27,
+     "dispersion_type": "sd",
+     "dispersion": 12,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 23,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 19,
+     "dispersion_type": "sd",
+     "dispersion": 6,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -4,
+     "ci_low": -7,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§, −4 [−7;−1], −7 [−11;−3], −4 [−6;−1]",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -7,
+     "ci_low": -11,
+     "ci_high": -3,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§, −4 [−7;−1], −7 [−11;−3], −4 [−6;−1]",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": -4,
+     "ci_low": -6,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_L, cm H2O/l — 27 ± 12, 23 ± 7*, 19 ± 6*§, −4 [−7;−1], −7 [−11;−3], −4 [−6;−1]",
+      "location": "p. 795, Table 2, row: Elastance_L"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "ElastanceCW, cm H2O/l",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 8,
+     "dispersion_type": "sd",
+     "dispersion": 5,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 6,
+     "dispersion_type": "sd",
+     "dispersion": 4,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 6,
+     "dispersion_type": "sd",
+     "dispersion": 3,
+     "n": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -3,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*, −2 [−3;0], −2 [−4;0], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -4,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*, −2 [−3;0], −2 [−4;0], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 0,
+     "ci_low": -1,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "unit": "cmH2O/l",
+     "provenance": {
+      "quote": "Elastance_cw, cm H2O/l — 8 ± 5, 6 ± 4*, 6 ± 3*, −2 [−3;0], −2 [−4;0], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: Elastance_cw"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "RAW, cm H2O · l-1 · sec-1",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 14,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 14,
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 14,
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 12,
+     "dispersion_type": "sd",
+     "dispersion": 2,
+     "n": 14,
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -3,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*, −2 [−3;−1], −2 [−3;−1], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -3,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*, −2 [−3;−1], −2 [−3;−1], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 0,
+     "ci_low": -1,
+     "ci_high": 0,
+     "n_pairs": 14,
+     "unit": "cmH2O·l-1·sec-1",
+     "provenance": {
+      "quote": "R_aw, cm H2O · l-1 · sec-1 — 14 ± 2, 12 ± 2*, 12 ± 2*, −2 [−3;−1], −2 [−3;−1], 0 [−1;0]",
+      "location": "p. 795, Table 2, row: R_aw"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "lung_volume",
+   "name_verbatim": "EELV, ml",
+   "definition_verbatim": "EELV is expressed as volume increment from the PEEPARDSnet level",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value": null,
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 977,
+     "dispersion_type": "sd",
+     "dispersion": 708,
+     "n": 14,
+     "unit": "ml",
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 1064,
+     "dispersion_type": "sd",
+     "dispersion": 813,
+     "n": 14,
+     "unit": "ml",
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 978,
+     "ci_low": 569,
+     "ci_high": 1386,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "ml",
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*, 978 [569;1386], 1065 [596;1535], 88 [−283;459]",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 1065,
+     "ci_low": 596,
+     "ci_high": 1535,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "ml",
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*, 978 [569;1386], 1065 [596;1535], 88 [−283;459]",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 88,
+     "ci_low": -283,
+     "ci_high": 459,
+     "n_pairs": 14,
+     "unit": "ml",
+     "provenance": {
+      "quote": "EELV, ml‡ — −, 977 ± 708*, 1064 ± 813*, 978 [569;1386], 1065 [596;1535], 88 [−283;459]",
+      "location": "p. 795, Table 2, row: EELV"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Pao2/Fio2 at screening",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "At the time of screening"
+   },
+   "measurement_context": {
+    "value": "At screening, within 6 h after the start of mechanical ventilation, on a PEEP >= 5 cm H2O, before study procedures.",
+    "provenance": {
+     "quote": "At screening, within 6 h after the start of mechanical ventilation, patients were hypoxemic (Pao2/Fio2 = 150 ± 81) on a PEEP greater than or equal to 5 cm H2O and met the Berlin criteria for ARDS.",
+     "location": "p. 794, Results, para 2"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "all_patients",
+     "value_type": "mean",
+     "value": 150,
+     "dispersion_type": "sd",
+     "dispersion": 81,
+     "n": 13,
+     "unit": "mmHg",
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "Pao2/Fio2, mmHg* — 150 ± 81 ... *At the time of screening, N = 13.",
+      "location": "p. 794, Table 1 and footnote"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "HR, bpm",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 89,
+     "dispersion_type": "sd",
+     "dispersion": 22,
+     "n": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 85,
+     "dispersion_type": "sd",
+     "dispersion": 20,
+     "n": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 87,
+     "dispersion_type": "sd",
+     "dispersion": 20,
+     "n": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -4,
+     "ci_low": -9,
+     "ci_high": 1,
+     "n_pairs": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20, −4 [−9;1], −2 [−9;4], 1 [−2;5]",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -2,
+     "ci_low": -9,
+     "ci_high": 4,
+     "n_pairs": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20, −4 [−9;1], −2 [−9;4], 1 [−2;5]",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 1,
+     "ci_low": -2,
+     "ci_high": 5,
+     "n_pairs": 14,
+     "unit": "bpm",
+     "provenance": {
+      "quote": "HR, bpm — 89 ± 22, 85 ± 20, 87 ± 20, −4 [−9;1], −2 [−9;4], 1 [−2;5]",
+      "location": "p. 795, Table 2, row: HR"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "hemodynamics",
+   "name_verbatim": "MAP, mmHg",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 83,
+     "dispersion_type": "sd",
+     "dispersion": 11,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 77,
+     "dispersion_type": "sd",
+     "dispersion": 7,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 82,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -6,
+     "ci_low": -11,
+     "ci_high": -1,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§, −6 [−11;−1], −1 [−8;6], 5 [1;9]",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": -1,
+     "ci_low": -8,
+     "ci_high": 6,
+     "n_pairs": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§, −6 [−11;−1], −1 [−8;6], 5 [1;9]",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 5,
+     "ci_low": 1,
+     "ci_high": 9,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "MAP, mmHg — 83 ± 11, 77 ± 7, 82 ± 9§, −6 [−11;−1], −1 [−8;6], 5 [1;9]",
+      "location": "p. 795, Table 2, row: MAP"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Paco2, mmHg",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "crossover_condition"
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value_type": "mean",
+     "value": 45,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value_type": "mean",
+     "value": 46,
+     "dispersion_type": "sd",
+     "dispersion": 9,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value_type": "mean",
+     "value": 49,
+     "dispersion_type": "sd",
+     "dispersion": 10,
+     "n": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_incremental minus peep_ardsnet",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 1,
+     "ci_low": -1,
+     "ci_high": 2,
+     "n_pairs": 14,
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§, 1 [−1;2], 3 [1;6], 3 [1;5]",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_ardsnet",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_ardsnet",
+     "mean_difference": 3,
+     "ci_low": 1,
+     "ci_high": 6,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§, 1 [−1;2], 3 [1;6], 3 [1;5]",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    },
+    {
+     "contrast_type": "pairwise",
+     "contrast": "peep_decremental minus peep_incremental",
+     "arm_label_a": "peep_decremental",
+     "arm_label_b": "peep_incremental",
+     "mean_difference": 3,
+     "ci_low": 1,
+     "ci_high": 5,
+     "n_pairs": 14,
+     "p_value_verbatim": "<0.05",
+     "unit": "mmHg",
+     "provenance": {
+      "quote": "Paco2, mmHg — 45 ± 10, 46 ± 9, 49 ± 10*§, 1 [−1;2], 3 [1;6], 3 [1;5]",
+      "location": "p. 795, Table 2, row: Paco2"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Barotrauma (pneumothorax, pneumomediastinum)",
+   "definition_verbatim": "The presence of barotrauma (pneumothorax, pneumomediastinum) was also assessed.",
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "fixed_day",
+    "days": 1,
+    "label_verbatim": "Chest radiograph performed within 24 h after the study procedures"
+   },
+   "data": [
+    {
+     "arm_label": "peep_decremental",
+     "events": 0,
+     "total": 14,
+     "derived": true,
+     "derivation": "Events = 0 derived from the negative statement 'did not show barotrauma' in all 14 patients; patients were ventilated at the PEEPDECREMENTAL level after the procedures. Arm assignment is an extraction convention.",
+     "provenance": {
+      "quote": "Chest radiograph performed within 24 h after the study procedures did not show barotrauma.",
+      "location": "p. 797, left column, para 3"
+     }
+    }
+   ]
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Overdistension (EIT)",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Overdistension was identified when, for a given pixel, aeration increased and compliance worsened.",
+    "provenance": {
+     "quote": "Overdistension was identified when, for a given pixel, aeration increased and compliance worsened.",
+     "location": "p. 793, Electrical Impedance Tomography Lung Imaging"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "peep_ardsnet",
+     "value": null,
+     "unit": "%",
+     "provenance": {
+      "quote": "Lung overdistension increases at PEEPINCREMENTAL levels compared to PEEPARDSnet, while it is unaltered at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5B caption"
+     }
+    },
+    {
+     "arm_label": "peep_incremental",
+     "value": null,
+     "unit": "%",
+     "provenance": {
+      "quote": "Lung overdistension increases at PEEPINCREMENTAL levels compared to PEEPARDSnet, while it is unaltered at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5B caption"
+     }
+    },
+    {
+     "arm_label": "peep_decremental",
+     "value": null,
+     "unit": "%",
+     "provenance": {
+      "quote": "Lung overdistension increases at PEEPINCREMENTAL levels compared to PEEPARDSnet, while it is unaltered at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Figure 5B caption"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "PEEPINCREMENTAL vs PEEPARDSnet (overdistension increased); unaltered at PEEPDECREMENTAL",
+     "arm_label_a": "peep_incremental",
+     "arm_label_b": "peep_ardsnet",
+     "p_value_verbatim": "<0.05",
+     "provenance": {
+      "quote": "Lung overdistension increases at PEEPINCREMENTAL levels compared to PEEPARDSnet, while it is unaltered at PEEPDECREMENTAL levels after a recruitment maneuver.",
+      "location": "p. 798, Fig. 5B legend (* P < 0.05)"
+     }
+    }
+   ],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "Lung overdistension increases at PEEPINCREMENTAL levels compared to PEEPARDSnet, while it is unaltered at PEEPDECREMENTAL levels after a recruitment maneuver.",
+    "location": "p. 798, Figure 5B caption"
+   }
+  },
+  {
+   "domain": "lung_volume",
+   "name_verbatim": "Change in lung volumes on chest radiograph",
+   "definition_verbatim": null,
+   "is_primary_outcome": false,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "repeated_measures"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Routine portable chest radiographs performed within 24 h before and 24 h after the study protocol were reviewed by a board-certified fellowship-trained thoracic radiologist blinded to the order of image acquisition.",
+    "provenance": {
+     "quote": "Routine portable chest radiographs performed within 24 h before and 24 h after the study protocol were reviewed by a board-certified fellowship-trained thoracic radiologist (F.J.F.) blinded to the order of image acquisition.",
+     "location": "p. 794, Radiologic Imaging"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "all_patients",
+     "value_type": "median",
+     "value": 0.7,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.2,
+     "dispersion_high": 1.1,
+     "unit": "intercostal spaces",
+     "provenance": {
+      "quote": "lung volumes increased in all cases after the intervention by 0.7 [0.2; 1.1] intercostal spaces on average.",
+      "location": "p. 796, Results, paragraph: Titrated PEEP Levels Improved Homogeneity of Ventilation"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "lung volumes increased in all cases after the intervention by 0.7 [0.2; 1.1] intercostal spaces on average.",
+    "location": "p. 796, Results, paragraph: Titrated PEEP Levels Improved Homogeneity of Ventilation"
+   }
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": {
+   "value": 14,
+   "provenance": {
+    "quote": "A nasogastric tube with esophageal balloon was inserted (AVEA Ventilator Nasogastric Pressure Monitoring Tube Set; CareFusion, USA), and balloon positioning and inflation volume were verified",
+    "location": "p. 792, Respiratory Mechanics, para 1"
+   }
+  },
+  "n_placement_successful": {
+   "value": 14,
+   "derived": true,
+   "derivation": "All 14 patients completed the study procedures with esophageal pressure data reported for all; no placement failures reported.",
+   "provenance": {
+    "quote": "All patients completed the entire study procedures and were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+    "location": "p. 797, right column, para 1"
+   }
+  },
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [],
+  "complications_explicitly_none": true,
+  "protocol_adherence": {
+   "value": "All patients completed the entire study procedures and were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+   "provenance": {
+    "quote": "All patients completed the entire study procedures and were ventilated at titrated PEEPDECREMENTAL level for at least 24 h after the study procedures.",
+    "location": "p. 797, right column, para 1"
+   }
+  },
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": {
+   "value": 0,
+   "provenance": {
+    "quote": "No data was missing on any patient unless specifically reported.",
+    "location": "p. 795, left column, para 2"
+   }
+  }
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "early_within_48h",
+  "ptp_target_subgroups": [
+   "absolute_positive_end_expiratory_ptp"
+  ],
+  "classification_notes": "ards_only: all 14 patients met Berlin ARDS criteria. obese_population: enrolment required BMI > 35 kg/m2 and mean BMI 58.6 kg/m2. timing_subgroup: procedures started on average 1 [range 0-4] day after initiation of mechanical ventilation, i.e. within 48 h of intubation. ptp_target_subgroups: PEEPINCREMENTAL targeted end-expiratory Ptp 0-2 cmH2O by absolute Pes subtraction (absolute_positive_end_expiratory_ptp); PEEPDECREMENTAL targeted lowest respiratory system elastance after a recruitment maneuver without esophageal pressure (other)."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "COHORTS.md suspects a mgh_lung_rescue cluster with florio_2020. Checks: (1) registration — this study is NCT02503241 / IRB 2015P001515; per COHORTS.md, Florio requires ARDS plus BMI above 40 and states that none of its patients participated in any ongoing MGH ARDS interventional trial, which refutes overlap; (2) enrolment — this study enrolled April 1, 2016 to July 30, 2017 at Massachusetts General Hospital; (3) eligibility — this study requires Berlin ARDS and BMI > 35. Concluded no overlap with florio_2020; also distinct from pirrone_2016 (refuted cluster per COHORTS.md).",
+  "unclear_items": [
+   "outcomes[oxygenation baseline].data[0].arm_label: screening PaO2/FiO2 (150 ± 81, N = 13) precedes all crossover conditions; assigned to 'peep_ardsnet' only because the schema requires an arm label matching arms[].",
+   "outcomes[barotrauma].data[0].arm_label: post-procedure chest radiograph finding attributed to 'peep_decremental' (the level patients were ventilated at after procedures); the paper does not assign it to a condition.",
+   "population.exclusion_criteria: detailed inclusion/exclusion criteria are in Supplemental Digital Content 1, not in the main text.",
+   "intervention.balloon_calibration: the main text says positioning and inflation volume 'were verified' citing Baydur 1982 and Mojoli 2016; the exact method and acceptance criteria are in the supplement, so coded baydur_occlusion_test from the citation.",
+   "feasibility.n_placement_attempted/n_placement_successful: the paper does not explicitly report placement success counts; inferred from 'all patients completed the entire study procedures' and complete esophageal pressure data.",
+   "design.randomised: coded false because 'The order of the study procedures was not randomized'; the study is not a randomised trial.",
+   "EIT collapse and overdistension values at PEEPARDSnet appear only in figure 5 and would require digitisation."
+  ],
+  "data_only_in_figure": [
+   "Lung collapse (EIT, %) at PEEPARDSnet — fig. 5A",
+   "Lung overdistension (EIT, %) at PEEPARDSnet — fig. 5B",
+   "Distribution of ventilation by ROI at the three study steps — fig. 5C",
+   "Elastance during incremental and decremental PEEP trials at each PEEP step — fig. 2",
+   "Airways resistance across the decremental PEEP trial — fig. 4",
+   "Lung collapse and overdistension at each PEEP step of the decremental trial — fig. 6"
+  ],
+  "contact_author_needed": false,
+  "general_notes": "No mortality, ventilator-free days, ICU/hospital length of stay, or successful extubation outcomes are reported; the study is purely physiologic with 24-h hemodynamic safety follow-up. One patient developed new-onset atrial fibrillation during the 24-h period after procedures, treated with amiodarone; the paper does not attribute it to the balloon or the PEEP strategy. EELV is expressed as volume increment from the PEEPARDSnet level. VD/VT rows have N = 11. No schema field exists for the EIT distribution-of-ventilation (ROI 1-4) data or for the decremental-trial stepwise PEEP/Ple trajectories (figs. 2, 4, 6); these are figure-only."
+ }
+}

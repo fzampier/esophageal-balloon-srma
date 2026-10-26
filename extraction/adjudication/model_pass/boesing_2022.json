@@ -1,0 +1,384 @@
+{
+  "study_id": "boesing_2022",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[ptpexp supine peepptpexp supine alternative titr]",
+      "decision": "deepseek",
+      "reason": "PEEPPtpexp (PEEP set to a positive end-expiratory transpulmonary pressure target from esophageal pressure) is the balloon-guided strategy under review, i.e. the intervention; GLM's alternative_titration_condition misclassifies it.",
+      "evidence": "Methods, Experimental protocol, p. 3"
+    },
+    {
+      "target": "arms[ptpexp prone peepptpexp prone alternative titrat]",
+      "decision": "deepseek",
+      "reason": "The prone PEEPPtpexp condition is still the esophageal-guided strategy; intervention, as for supine.",
+      "evidence": "Methods, Experimental protocol, p. 3"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mechanical power continuou @crossover condition]",
+      "decision": "glm",
+      "reason": "All six condition means/SDs (17.5±5.7 ... 21.0±9.6 J/min) and both prone-vs-supine contrasts (<0.001) match in both versions; GLM adds n_pairs and unit. Omnibus tests and timepoint label ruled separately.",
+      "evidence": "p. 6, Table 1 and Results para 1"
+    },
+    {
+      "id": "77b6563bed",
+      "decision": "deepseek",
+      "reason": "'during supine and prone positioning' is verbatim from the table title; GLM's appended 'at each PEEP titration strategy' is not in the paper.",
+      "evidence": "p. 6, Table 1 title"
+    },
+    {
+      "id": "a577321c52",
+      "decision": "deepseek",
+      "reason": "Drop GLM's single entry merging three separate ANOVA tests; the paper reports positioning, PEEP-strategy and interaction effects as three p values, kept as DeepSeek's three omnibus entries.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "id": "1122351429",
+      "decision": "deepseek",
+      "reason": "Mechanical power positioning effect p < 0.001 is reported as its own test; p_value_verbatim '< 0.001' carries the threshold.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "id": "66021aa5ce",
+      "decision": "deepseek",
+      "reason": "Mechanical power PEEP strategy effect p < 0.001 is reported as its own test; p_value_verbatim '< 0.001' carries the threshold.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "id": "f22f21ee57",
+      "decision": "deepseek",
+      "reason": "Mechanical power interaction p < 0.001 is reported as its own test; p_value_verbatim '< 0.001' carries the threshold.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation pao2 fio2 continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Condition means/SDs match (136±36, 228±86, 170±72, 237±91, 192±76, 240±100 mm Hg); only GLM records the three reported prone-vs-supine contrasts (p<0.001, 0.002, 0.002). Omnibus tests and timepoint label ruled separately.",
+      "evidence": "p. 6 Results, Gas exchange; p. 7, Table 2"
+    },
+    {
+      "id": "f7df3c71eb",
+      "decision": "deepseek",
+      "reason": "'during supine and prone positioning' is verbatim from the table title; GLM's extension is not.",
+      "evidence": "p. 7, Table 2 title"
+    },
+    {
+      "id": "8922aaa97b",
+      "decision": "deepseek",
+      "reason": "Drop GLM's merged omnibus entry; the three ANOVA effects are kept as DeepSeek's separate entries.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "id": "33994f7ac4",
+      "decision": "deepseek",
+      "reason": "PaO2/FiO2 positioning effect p < 0.001 reported as its own test.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "id": "0d65a07ec5",
+      "decision": "deepseek",
+      "reason": "PaO2/FiO2 PEEP strategy effect p < 0.001 reported as its own test.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "id": "7ae38d4409",
+      "decision": "deepseek",
+      "reason": "PaO2/FiO2 interaction p < 0.001 reported as its own test.",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory transpulm @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: -2.4±3.5 vs 1.1±3.4 and -0.5±2.1 vs 1.1±2.5 cmH2O, both p<0.001, match; PEEPPtpexp values figure-only in both. Kept over DeepSeek's 'Ptpexp' entry, which holds the same readings; GLM's name is verbatim and it adds n_pairs and paralysis context.",
+      "evidence": "p. 4 Results; Fig. 2A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpexp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Ptpexp readings kept under GLM's entry (outcomes[transpulmonary pressure end expiratory transpulm @crossover condition]).",
+      "evidence": "p. 4 Results; Fig. 2A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory transpul @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 3.3±4.2 vs 6.3±4.6 and 4.7±3.0 vs 6.1±3.5 cmH2O match; same readings as DeepSeek's 'Ptpinsp' entry, which is dropped.",
+      "evidence": "p. 4 Results; Fig. 2B"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpinsp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Ptpinsp readings kept under GLM's entry (outcomes[transpulmonary pressure end inspiratory transpul @crossover condition]).",
+      "evidence": "p. 4 Results; Fig. 2B"
+    },
+    {
+      "target": "outcomes[ventilator settings peep setting continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 11.6±3.9 vs 9.0±3.3 and 16.1±5.8 vs 11.8±6.3 cmH2O, p<0.001 each, match; ARDSNet PEEP figure-only. Same readings as DeepSeek's 'PEEP' entry, which is dropped.",
+      "evidence": "p. 5 Results; Fig. 3A"
+    },
+    {
+      "target": "outcomes[ventilator settings peep continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the PEEP readings kept under GLM's entry (outcomes[ventilator settings peep setting continuous @crossover condition]).",
+      "evidence": "p. 5 Results; Fig. 3A"
+    },
+    {
+      "target": "outcomes[respiratory mechanics end inspiratory plateau ai @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 19.5±4.2 vs 17.5±3.3 (p=0.04) and 24.5±7.1 vs 20.9±7.2 (p<0.001) match. Plateau pressure is respiratory_mechanics per the codebook; DeepSeek's duplicate 'Pplat' entry is coded ventilator_settings and is dropped.",
+      "evidence": "p. 5 Results; Fig. 3B"
+    },
+    {
+      "target": "outcomes[ventilator settings pplat continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pplat readings kept under GLM's entry (outcomes[respiratory mechanics end inspiratory plateau ai @crossover condition]).",
+      "evidence": "p. 5 Results; Fig. 3B"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure pdriv con @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 7.9±1.8 vs 8.5±1.7 (p=0.002), 8.4±2.8 vs 9.1±2.4 (p=0.02) match; GLM's interaction p=0.261 matches Fig. 4A, DeepSeek's duplicate entry gives 0.381 and is dropped.",
+      "evidence": "p. 5-6 Results; Fig. 4A"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pdriv continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pdriv readings kept under GLM's entry (outcomes[respiratory mechanics driving pressure pdriv con @crossover condition]).",
+      "evidence": "p. 5-6 Results; Fig. 4A"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: 5.7±2.2 vs 5.2±2.1, p=0.031 match; Fig. 4B prints positioning p=0.133, strategy p=0.267, interaction p=0.116 as GLM has; DeepSeek's duplicate entry gives 0.019 and 0.281 (0.019 is the Pdriv panel) and is dropped.",
+      "evidence": "p. 5, Fig. 4B"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure ptpdriv continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Ptpdriv readings kept under GLM's entry (outcomes[transpulmonary pressure transpulmonary driving p @crossover condition]).",
+      "evidence": "p. 5, Fig. 4B"
+    },
+    {
+      "target": "outcomes[lung volume end expiratory lung volume eelv cont @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs, pairwise p=0.026 and omnibus p values (0.011, <0.001, <0.001) match; same readings as DeepSeek's 'EELV' entry, which is dropped.",
+      "evidence": "p. 6, Table 1 and Results"
+    },
+    {
+      "target": "outcomes[lung volume eelv continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the EELV readings kept under GLM's entry (outcomes[lung volume end expiratory lung volume eelv cont @crossover condition]).",
+      "evidence": "p. 6, Table 1 and Results"
+    },
+    {
+      "target": "outcomes[esophageal pressure end inspiratory esophageal p @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values (<0.001, <0.001, 0.007) match; same readings as DeepSeek's 'Pesinsp' entry, which is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[esophageal pressure pesinsp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pesinsp readings kept under GLM's entry (outcomes[esophageal pressure end inspiratory esophageal p @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[esophageal pressure end expiratory esophageal pr @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values (<0.001, <0.001, 0.572) match; same readings as DeepSeek's 'Pesexp' entry, which is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[esophageal pressure pesexp continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Pesexp readings kept under GLM's entry (outcomes[esophageal pressure end expiratory esophageal pr @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics static elastance of the re @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values (0.032, 0.023, 0.255) match; same readings as DeepSeek's 'Estat,RS' entry, which is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics estat rs continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Estat,RS readings kept under GLM's entry (outcomes[respiratory mechanics static elastance of the re @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics static elastance of the ch @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values (<0.001, 0.132, 0.397) match; same readings as DeepSeek's 'Estat,CW' entry, which is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics estat cw continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Estat,CW readings kept under GLM's entry (outcomes[respiratory mechanics static elastance of the ch @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics static elastance of the lu @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values (0.565, 0.093, 0.087) match; same readings as DeepSeek's 'Estat,L' entry, which is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics estat l continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the Estat,L readings kept under GLM's entry (outcomes[respiratory mechanics static elastance of the lu @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[dead space vd vt ratio of physiologic dead space @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs and omnibus p values match; dead space fraction is dead_space per the codebook. DeepSeek's duplicate 'VD/VT' entry is coded respiratory_mechanics and is dropped.",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics vd vt continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the VD/VT readings kept under GLM's entry (outcomes[dead space vd vt ratio of physiologic dead space @crossover condition]).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[hemodynamics mean arterial pressure map continuo @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs match; only GLM records the three reported prone-vs-supine contrasts (p=0.005, <0.001, <0.001). DeepSeek's duplicate 'MAP' entry, without them, is dropped.",
+      "evidence": "p. 6 Results; p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics map continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the MAP readings kept under GLM's entry (outcomes[hemodynamics mean arterial pressure map continuo @crossover condition]).",
+      "evidence": "p. 6 Results; p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics cardiac index ci continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Keep: all six means/SDs match; only GLM records the reported contrasts (p=0.021, <0.001). DeepSeek's duplicate 'CI' entry, without them, is dropped.",
+      "evidence": "p. 6 Results; p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics ci continuous @crossover condition]",
+      "decision": "glm",
+      "reason": "Drop: restates the CI readings kept under GLM's entry (outcomes[hemodynamics cardiac index ci continuous @crossover condition]).",
+      "evidence": "p. 6 Results; p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[esophageal pressure pes continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ∆Pes is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (2.9±1.6, 3.6±1.9, 2.7±1.5, 3.5±1.9, 3.0±1.8, 3.5±2.0; p <0.001/0.141/0.339).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ppeak rs continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ppeak,RS is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (23.3±5.1 ... 27.2±8.8; all p <0.001).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pmean rs continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Pmean,RS is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (13.5±2.9 ... 16.5±6.5; all p <0.001).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics iap continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: IAP is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (8.3±2.8 ... 12.1±3.8; p <0.001/<0.001/0.238).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[respiratory mechanics ventilatory rate continuou @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Ventilatory rate (ratio) is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (2.09 ... 2.14, SD 0.5; p 0.308/0.176/0.345; unitless ratio).",
+      "evidence": "p. 6, Table 1"
+    },
+    {
+      "target": "outcomes[oxygenation paco2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: PaCO2 is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (57.0±10.5 ... 58.0±10.4; p 0.346/0.308/0.297).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation pha continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: pHa is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (7.3±0.1 in all six; p 0.812/0.070/0.101. Domain 'oxygenation' is the class under co-author panel ruling in boesing_2024a/b; apply that ruling here too).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics hr continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: HR is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (92.6±19.1 ... 92.4±20.6; p 0.903/0.603/0.711).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics norepinephrine continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: Norepinephrine is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (0.2±0.3 (x4), 0.2±0.2 (Ptpexp); p 0.182/0.458/0.756).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics cvp continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: CVP is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (14.1±6.4 ... 17.5±6.8; p 0.068/<0.001/<0.001).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[hemodynamics scvo2 continuous @crossover condition]",
+      "decision": "deepseek",
+      "reason": "Keep: ScvO2 is a reported table row GLM did not transcribe; all six condition values and the three ANOVA p values checked (75.3±7.4 ... 81.4±6.3; p <0.001/0.002/0.046).",
+      "evidence": "p. 7, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics rr continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep the RR row (22.3±1.9 in all six conditions, p=1.000 x3, all correct), but the codebook puts respiratory rate under ventilator_settings; DeepSeek codes it respiratory_mechanics and GLM has no entry. Co-author: keep with domain ventilator_settings.",
+      "evidence": "p. 6, Table 1, row RR"
+    },
+    {
+      "target": "outcomes[respiratory mechanics vt continuous @crossover condition]",
+      "decision": "unclear",
+      "reason": "Keep the VT row (6.2±0.3 mL/kg PBW in all six conditions, p=1.000 x3, all correct), but the codebook puts tidal volume under ventilator_settings; DeepSeek codes it respiratory_mechanics and GLM has no entry. Co-author: keep with domain ventilator_settings.",
+      "evidence": "p. 6, Table 1, row VT"
+    },
+    {
+      "id": "7d0ffb8da6",
+      "decision": "glm",
+      "reason": "PEEPEstat,RS sets PEEP at the lowest static elastance of the respiratory system, i.e. best-compliance PEEP, a comparator strategy DeepSeek omitted.",
+      "evidence": "Methods, Experimental protocol, p. 3"
+    },
+    {
+      "id": "06ca2aa86d",
+      "decision": "deepseek",
+      "reason": "The decremental PEEP trial is the procedure that locates the lowest-Estat,RS PEEP, not a separate strategy applied to patients; coding it too double-counts one comparator (both reviewers code the same group's Cstat strategy in boesing_2024a as best_compliance_peep only).",
+      "evidence": "Methods, Experimental protocol, p. 3"
+    },
+    {
+      "id": "6d65094784",
+      "decision": "deepseek",
+      "reason": "What GLM lists as missing (demographics, Ptpexp target table, Tables S4-S9) is in the published Additional file 1, and the remaining gaps are figure-only values; nothing requires contacting the authors.",
+      "evidence": "p. 4 Results; p. 6 'Additional file 1: Table S4 to S9'"
+    },
+    {
+      "id": "fac1d82d24",
+      "decision": "deepseek",
+      "reason": "Filling volume was chosen by the manufacturer's indication (4 mL air); the chest-compression occlusion test (ratio 0.8-1.2) verified position and is recorded by both in position_verification/occlusion_ratio_acceptance. Same coding both reviewers used for the identical method in boesing_2024a.",
+      "evidence": "Methods, p. 3 para 1"
+    },
+    {
+      "id": "70236224e7",
+      "decision": "glm",
+      "reason": "Measurements were made in one session once consent was obtained; timing is known only relative to study entry, which the codebook codes as enrolment (timing_subgroup stays unclear, as both have).",
+      "evidence": "Methods, p. 2; CODEBOOK timing ruling"
+    },
+    {
+      "id": "7d2327b727",
+      "decision": "deepseek",
+      "reason": "ptp_target_subgroups lists transpulmonary-pressure target strategies; the ARDSNet table and lowest-Estat,RS strategies are not Ptp targets, so adding 'other' would place the study in a subgroup it does not belong to.",
+      "evidence": "Methods, Experimental protocol, p. 3"
+    }
+  ]
+}

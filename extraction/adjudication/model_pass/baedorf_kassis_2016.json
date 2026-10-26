@@ -1,0 +1,300 @@
+{
+  "study_id": "baedorf_kassis_2016",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[mortality 28 day mortality dichotomous @28d]",
+      "decision": "glm",
+      "reason": "10/29 vs 4/27, P=0.085 identical; GLM's label 'died by 28 days' is verbatim from the sentence carrying the counts and its test 'chi-square analysis with Fisher's exact test' is the Methods wording.",
+      "evidence": "p. 3 Results; p. 3 Statistical analysis"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal continuous @baseline]",
+      "decision": "glm",
+      "reason": "Table 2 prints P=0.8 for baseline PEEPtotal (14.8±3.6 vs 14.5±4.8). DeepSeek's P=0.79 belongs to set PEEP before the protocol (13.0 vs 12.7 cmH2O, p = 0.79), a different quantity.",
+      "evidence": "p. 5, Table 2 (page image); p. 4 Results"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal continuous @5min]",
+      "decision": "glm",
+      "reason": "Same reading in both (15.0±3.3 vs 21.9±5.1, P<0.0001, as Table 2 prints); GLM keeps the row's definition consistent with the baseline entry. DeepSeek's 'ANOVA' is an attribution from Methods, not stated for this row. The timepoint.hours difference is reserved.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings peeptotal continuous @24h]",
+      "decision": "glm",
+      "reason": "Same reading in both (13.1±3.4 vs 20.6±4.9, P<0.0001, as Table 2 prints); GLM kept for consistency with the baseline entry of the row.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume continuous @baseline]",
+      "decision": "glm",
+      "reason": "Same reading in both (490±108 vs 488±103, P=1.0). DeepSeek's test_used 'ANOVA' is inferred: Methods list ANOVA for DPRS, DPL, ERS, EL and PEEP, not tidal volume.",
+      "evidence": "p. 5, Table 2 (page image); p. 2 Statistical analysis"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume continuous @5min]",
+      "decision": "glm",
+      "reason": "Same reading in both (415±73 vs 441±82, P=0.2); tidal volume is not among the variables Methods say were compared by ANOVA. The timepoint.hours difference is reserved.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings tidal volume continuous @24h]",
+      "decision": "glm",
+      "reason": "Same reading in both (416±68 vs 448±64, P=0.07); DeepSeek's ANOVA attribution is inferred.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure respirato @baseline]",
+      "decision": "glm",
+      "reason": "Keep: DPRS baseline 14.0±3.5 vs 14.1±3.5, P=1.0 matches Table 2 (text gives p = 0.97 for the same comparison). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure respirato @5min]",
+      "decision": "glm",
+      "reason": "Keep: DPRS 5 min 12.2±3.3 vs 13.6±4.7, P=0.2 matches Table 2 (text p = 0.22). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure respirato @24h]",
+      "decision": "glm",
+      "reason": "Keep: DPRS 24 h 12.0±3.6 vs 11.1±3.4, P=0.3 matches Table 2; GLM alone carries the reported within-arm changes (ΔDPRS −2.39 control vs −2.97 intervention, p = 0.57) and the time×DPRS interaction p = 0.015. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving pressure transpu @baseline]",
+      "decision": "glm",
+      "reason": "Keep: DPL baseline 10.1±3.3 vs 10.3±3.6, P=0.8 matches Table 2 and text (p = 0.80). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving pressure transpu @24h]",
+      "decision": "glm",
+      "reason": "Keep: DPL 24 h 9.4±3.6 vs 7.2±3.0, P=0.02 matches Table 2; GLM alone carries the reported ΔDPL −0.65 vs −3.07 (p = 0.004) and the time×DPL interaction p<0.001. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure chest wal @baseline]",
+      "decision": "glm",
+      "reason": "Keep: DPCW baseline 3.9±2.4 vs 3.8±0.7, P=0.7 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure chest wal @5min]",
+      "decision": "glm",
+      "reason": "Keep: DPCW 5 min 3.6±0.4 vs 3.8±0.4, P=0.7 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure chest wal @24h]",
+      "decision": "glm",
+      "reason": "Keep: DPCW 24 h 2.7±0.6 vs 3.9±0.6, P=0.1 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance respiratory syst @baseline]",
+      "decision": "glm",
+      "reason": "Keep: ERS baseline 29.9±10.7 vs 29.9±10.1, P=1.0 matches Table 2 (text p = 0.99). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance respiratory syst @5min]",
+      "decision": "glm",
+      "reason": "Keep: ERS 5 min 29.9±8.8 vs 32.2±15.3, P=0.5 matches Table 2 (text p = 0.48). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance respiratory syst @24h]",
+      "decision": "glm",
+      "reason": "Keep: ERS 24 h 29.8±10 vs 25.2±8.8, P=0.07 matches Table 2; GLM alone carries the reported ΔERS −0.09 vs −4.75 (p = 0.01). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance pulmonary el con @baseline]",
+      "decision": "glm",
+      "reason": "Keep: EL baseline 21.7±10.2 vs 22.1±10.1, P=0.9 matches Table 2 (text p = 0.86). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance pulmonary el con @5min]",
+      "decision": "glm",
+      "reason": "Keep: EL 5 min 21.1±8.9 vs 22.9±14.7, P=0.6 matches Table 2 (text p = 0.58). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance pulmonary el con @24h]",
+      "decision": "glm",
+      "reason": "Keep: EL 24 h 23.4±10.5 vs 16.5±7.6, P=0.007 matches Table 2; GLM alone carries the reported ΔEL 1.69 vs −5.66 (p = 0.0002). GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance chest wall conti @baseline]",
+      "decision": "glm",
+      "reason": "Keep: Chest-wall elastance baseline 8.2±4.5 vs 7.8±3.7, P=0.7 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance chest wall conti @5min]",
+      "decision": "glm",
+      "reason": "Keep: Chest-wall elastance 5 min 8.7±4.1 vs 8.7±5.1, P=1.0 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[respiratory mechanics elastance chest wall conti @24h]",
+      "decision": "glm",
+      "reason": "Keep: Chest-wall elastance 24 h 6.4±5.9 vs 8.7±6.6, P=0.2 matches Table 2. GLM's Table 2 row structure is kept across the block so each measure's three timepoints share one name.",
+      "evidence": "p. 5, Table 2 (page image); p. 3-4 Results"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure driving pressure transpu @5min]",
+      "decision": "deepseek",
+      "reason": "Drop: GLM's DPL 5-min P=0.8 copies Table 2, but the text reports p = 0.35 for the same comparison (8.5 vs 9.5 cmH2O), and 8.5±3.1 vs 9.5±4.4 with n 29/27 gives about p 0.33; the table cell repeats the baseline value. DeepSeek's element carries p = 0.35.",
+      "evidence": "p. 5, Table 2 (page image); p. 3 Results last para"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system driving @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system driving @5min]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system driving @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label). DeepSeek's 24-h entry also lacks the reported within-arm changes (and, for DPRS/DPL, the interaction P) that GLM records.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label). DeepSeek's 24-h entry also lacks the reported within-arm changes (and, for DPRS/DPL, the interaction P) that GLM records.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall driving pressur @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall driving pressur @5min]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall driving pressur @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system elastan @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system elastan @5min]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics respiratory system elastan @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label). DeepSeek's 24-h entry also lacks the reported within-arm changes (and, for DPRS/DPL, the interaction P) that GLM records.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pulmonary elastance el con @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pulmonary elastance el con @5min]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pulmonary elastance el con @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label). DeepSeek's 24-h entry also lacks the reported within-arm changes (and, for DPRS/DPL, the interaction P) that GLM records.",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall elastance ecw c @baseline]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall elastance ecw c @5min]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics chest wall elastance ecw c @24h]",
+      "decision": "glm",
+      "reason": "Drop: restates the same Table 2 arm values kept under GLM's element for this measure and timepoint (differences are only text-precision P values and an ANOVA label).",
+      "evidence": "p. 5, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure transpulmonary driving p @5min]",
+      "decision": "deepseek",
+      "reason": "Keep: DPL 5 min 8.5±3.1 vs 9.5±4.4 with p = 0.35 as stated in the Results text; Table 2's 0.8 is inconsistent with the text and the means/SDs. Note this entry's name differs from GLM's DPL entries at baseline and 24 h.",
+      "evidence": "p. 3 Results last para; p. 5, Table 2 (page image)"
+    },
+    {
+      "id": "ca3f4cdea6",
+      "decision": "glm",
+      "reason": "The page header prints the abbreviation 'Intensive Care Med'; the full journal name is the form used in the reconciled records so far (gluck_1995: 'Critical Care Medicine').",
+      "evidence": "p. 1 header"
+    },
+    {
+      "id": "8683e0ebf9",
+      "decision": "glm",
+      "reason": "The paper is a reanalysis of EPVent ('Fifty-six patients from a previous study'; 'The full results of the EPVent trial have been published elsewhere'); the acronym is reported. GLM's parenthetical gloss is annotation around the correct acronym.",
+      "evidence": "p. 2 Methods, Study cohort"
+    },
+    {
+      "id": "d374738137",
+      "decision": "deepseek",
+      "reason": "EPVent was run at Beth Israel Deaconess Medical Center only (IRB there; parent report calls it single-center), so 1 is correct; the quote here is indirect.",
+      "evidence": "p. 2 Methods, Study cohort; talmor_2008 p. 9"
+    },
+    {
+      "id": "3643b6f58e",
+      "decision": "glm",
+      "reason": "Setting is reported: the EPVent cohort of mechanically ventilated ALI/ARDS patients at Beth Israel Deaconess Medical Center, Boston.",
+      "evidence": "p. 2 Methods, Study cohort"
+    },
+    {
+      "id": "afd2bbfb2a",
+      "decision": "glm",
+      "reason": "Measurements at baseline, 5 min and 24 h of the randomised protocol; timing known only relative to trial entry is coded enrolment (codebook timing ruling).",
+      "evidence": "p. 2 Physiologic measurements; CODEBOOK"
+    },
+    {
+      "id": "f37354ced2",
+      "decision": "glm",
+      "reason": "Inclusion was 'acute lung injury or ARDS' (AECC), so not all 56 had ARDS (the parent trial reports 49/61 with ARDS); the ARDS count for these 56 is not reported, and DeepSeek's derived 56 is wrong.",
+      "evidence": "p. 2 Methods, Study cohort; talmor_2008 p. 4"
+    }
+  ]
+}

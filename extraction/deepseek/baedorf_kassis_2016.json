@@ -1,0 +1,2730 @@
+{
+  "record_meta": {
+    "study_id": "baedorf_kassis_2016",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/baedorfkassis2016.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Baedorf Kassis",
+    "year": 2016,
+    "title": "Mortality and pulmonary mechanics in relation to respiratory system and transpulmonary driving pressures in ARDS",
+    "journal": "Intensive Care Med",
+    "doi": "10.1007/s00134-016-4403-7",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": false,
+    "report_type": "secondary_analysis"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients were included in the study if they had acute lung injury or ARDS as defined by the American–European Consensus Conference [2].",
+          "location": "Methods, Study cohort"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Subjects were monitored while supine with the head of the bed elevated to 30°. An esophageal balloon-catheter was placed, and measurements were obtained to estimate intrathoracic pressures. Airway pressure, tidal volume and air flow were recorded during tidal ventilation.",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The EPvent study was approved by the institutional review board at the Beth Israel Deaconess Medical Center in Boston.",
+          "location": "Methods, Study cohort"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients in the intervention group had PEEP levels adjusted to achieve a positive transpulmonary pressure of 0–10 cm H2O at end-expiration according to a sliding scale based on the fraction of inspired oxygen.",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We have examined the relationships between respiratory system and transpulmonary driving pressure, pulmonary mechanics and 28-day mortality.",
+          "location": "Abstract"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Data from 29 patients in the control group and 27 patients in the intervention group were analyzed.",
+          "location": "Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Fifty-six patients from a previous study were analyzed to compare PEEP titration to maintain positive transpulmonary end-expiratory pressure to a control protocol.",
+          "location": "Abstract"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Mortality and pulmonary mechanics in relation to respiratory system and transpulmonary driving pressures in ARDS",
+          "location": "Title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "retrospective_cohort",
+    "study_design_verbatim": {
+      "value": "Fifty-six patients from a previous study were analyzed to compare PEEP titration to maintain positive transpulmonary end-expiratory pressure to a control protocol.",
+      "provenance": {
+        "quote": "Fifty-six patients from a previous study were analyzed to compare PEEP titration to maintain positive transpulmonary end-expiratory pressure to a control protocol.",
+        "location": "Abstract"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "The EPvent study was approved by the institutional review board at the Beth Israel Deaconess Medical Center in Boston",
+        "location": "Methods, Study cohort"
+      }
+    },
+    "countries": [
+      "United States"
+    ],
+    "location_provenance": {
+      "quote": "Boston, MA 02114, USA",
+      "location": "Author details"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": null,
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "There was no separate funding source for this study, however the original EPVent study was funded under Stephen Lorings RO1 Grant HL-52586.",
+      "provenance": {
+        "quote": "There was no separate funding source for this study, however the original EPVent study was funded under Stephen Lorings RO1 Grant HL-52586.",
+        "location": "Acknowledgements"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 56,
+      "provenance": {
+        "quote": "Fifty-six patients from a previous study were analyzed",
+        "location": "Abstract"
+      }
+    },
+    "n_analysed": {
+      "value": 56,
+      "provenance": {
+        "quote": "Data from 29 patients in the control group and 27 patients in the intervention group were analyzed.",
+        "location": "Results"
+      }
+    },
+    "population_description": {
+      "value": "Patients with acute lung injury or ARDS as defined by the American-European Consensus Conference",
+      "provenance": {
+        "quote": "Patients were included in the study if they had acute lung injury or ARDS as defined by the American–European Consensus Conference [2].",
+        "location": "Methods, Study cohort"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Acute lung injury or ARDS as defined by the American-European Consensus Conference",
+      "provenance": {
+        "quote": "Patients were included in the study if they had acute lung injury or ARDS as defined by the American–European Consensus Conference [2].",
+        "location": "Methods, Study cohort"
+      }
+    },
+    "exclusion_criteria": null,
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "American-European Consensus Conference (AECC)",
+      "provenance": {
+        "quote": "acute lung injury or ARDS as defined by the American–European Consensus Conference [2]",
+        "location": "Methods, Study cohort"
+      }
+    },
+    "n_ards": {
+      "n": 56,
+      "total": 56,
+      "derived": true,
+      "derivation": "All patients had ALI/ARDS by inclusion criteria",
+      "provenance": {
+        "quote": "Patients were included in the study if they had acute lung injury or ARDS as defined by the American–European Consensus Conference [2].",
+        "location": "Methods, Study cohort"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": null,
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Male sex",
+        "arm_label": "control",
+        "count": {
+          "n": 15,
+          "total": 29,
+          "percent_as_reported": 52,
+          "provenance": {
+            "quote": "Male sex 15 (52)",
+            "location": "Table 1, row: Male sex"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Male sex",
+        "arm_label": "intervention",
+        "count": {
+          "n": 18,
+          "total": 27,
+          "percent_as_reported": 67,
+          "provenance": {
+            "quote": "Male sex 18 (67)",
+            "location": "Table 1, row: Male sex"
+          }
+        }
+      },
+      {
+        "name_verbatim": "White race",
+        "arm_label": "control",
+        "count": {
+          "n": 25,
+          "total": 29,
+          "percent_as_reported": 86,
+          "provenance": {
+            "quote": "White race 25 (86)",
+            "location": "Table 1, row: White race"
+          }
+        }
+      },
+      {
+        "name_verbatim": "White race",
+        "arm_label": "intervention",
+        "count": {
+          "n": 23,
+          "total": 27,
+          "percent_as_reported": 85,
+          "provenance": {
+            "quote": "White race 23 (85)",
+            "location": "Table 1, row: White race"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Predicted body weight (kg)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 62,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Predicted body weight (kg) 62 ± 11",
+            "location": "Table 1, row: Predicted body weight"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Predicted body weight (kg)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 68,
+          "dispersion_type": "sd",
+          "dispersion": 9,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Predicted body weight (kg) 68 ± 9",
+            "location": "Table 1, row: Predicted body weight"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Pulmonary",
+        "arm_label": "control",
+        "count": {
+          "n": 5,
+          "total": 29,
+          "percent_as_reported": 17,
+          "provenance": {
+            "quote": "Pulmonary 5 (17)",
+            "location": "Table 1, row: Primary physiologic injury, Pulmonary"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Pulmonary",
+        "arm_label": "intervention",
+        "count": {
+          "n": 5,
+          "total": 27,
+          "percent_as_reported": 19,
+          "provenance": {
+            "quote": "Pulmonary 5 (19)",
+            "location": "Table 1, row: Primary physiologic injury, Pulmonary"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Abdominal",
+        "arm_label": "control",
+        "count": {
+          "n": 11,
+          "total": 29,
+          "percent_as_reported": 38,
+          "provenance": {
+            "quote": "Abdominal 11 (38)",
+            "location": "Table 1, row: Primary physiologic injury, Abdominal"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Abdominal",
+        "arm_label": "intervention",
+        "count": {
+          "n": 13,
+          "total": 27,
+          "percent_as_reported": 48,
+          "provenance": {
+            "quote": "Abdominal 13 (48)",
+            "location": "Table 1, row: Primary physiologic injury, Abdominal"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Trauma",
+        "arm_label": "control",
+        "count": {
+          "n": 9,
+          "total": 29,
+          "percent_as_reported": 31,
+          "provenance": {
+            "quote": "Trauma 9 (31)",
+            "location": "Table 1, row: Primary physiologic injury, Trauma"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Trauma",
+        "arm_label": "intervention",
+        "count": {
+          "n": 6,
+          "total": 27,
+          "percent_as_reported": 22,
+          "provenance": {
+            "quote": "Trauma 6 (22)",
+            "location": "Table 1, row: Primary physiologic injury, Trauma"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Sepsis",
+        "arm_label": "control",
+        "count": {
+          "n": 1,
+          "total": 29,
+          "percent_as_reported": 3,
+          "provenance": {
+            "quote": "Sepsis 1 (3)",
+            "location": "Table 1, row: Primary physiologic injury, Sepsis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Sepsis",
+        "arm_label": "intervention",
+        "count": {
+          "n": 2,
+          "total": 27,
+          "percent_as_reported": 7,
+          "provenance": {
+            "quote": "Sepsis 2 (7)",
+            "location": "Table 1, row: Primary physiologic injury, Sepsis"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Other",
+        "arm_label": "control",
+        "count": {
+          "n": 3,
+          "total": 29,
+          "percent_as_reported": 10,
+          "provenance": {
+            "quote": "Other 3 (10)",
+            "location": "Table 1, row: Primary physiologic injury, Other"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Primary physiologic injury - Other",
+        "arm_label": "intervention",
+        "count": {
+          "n": 1,
+          "total": 27,
+          "percent_as_reported": 4,
+          "provenance": {
+            "quote": "Other 1 (4)",
+            "location": "Table 1, row: Primary physiologic injury, Other"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Cardiac",
+        "arm_label": "control",
+        "count": {
+          "n": 10,
+          "total": 29,
+          "percent_as_reported": 35,
+          "provenance": {
+            "quote": "Cardiac 10 (35)",
+            "location": "Table 1, row: Organ failure at baseline, Cardiac"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Cardiac",
+        "arm_label": "intervention",
+        "count": {
+          "n": 8,
+          "total": 27,
+          "percent_as_reported": 30,
+          "provenance": {
+            "quote": "Cardiac 8 (30)",
+            "location": "Table 1, row: Organ failure at baseline, Cardiac"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Renal",
+        "arm_label": "control",
+        "count": {
+          "n": 14,
+          "total": 29,
+          "percent_as_reported": 48,
+          "provenance": {
+            "quote": "Renal 14 (48)",
+            "location": "Table 1, row: Organ failure at baseline, Renal"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Renal",
+        "arm_label": "intervention",
+        "count": {
+          "n": 17,
+          "total": 27,
+          "percent_as_reported": 63,
+          "provenance": {
+            "quote": "Renal 17 (63)",
+            "location": "Table 1, row: Organ failure at baseline, Renal"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Neurologic",
+        "arm_label": "control",
+        "count": {
+          "n": 11,
+          "total": 29,
+          "percent_as_reported": 38,
+          "provenance": {
+            "quote": "Neurologic 11 (38)",
+            "location": "Table 1, row: Organ failure at baseline, Neurologic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Neurologic",
+        "arm_label": "intervention",
+        "count": {
+          "n": 11,
+          "total": 27,
+          "percent_as_reported": 41,
+          "provenance": {
+            "quote": "Neurologic 11 (41)",
+            "location": "Table 1, row: Organ failure at baseline, Neurologic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Hepatic",
+        "arm_label": "control",
+        "count": {
+          "n": 8,
+          "total": 29,
+          "percent_as_reported": 28,
+          "provenance": {
+            "quote": "Hepatic 8 (28)",
+            "location": "Table 1, row: Organ failure at baseline, Hepatic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Hepatic",
+        "arm_label": "intervention",
+        "count": {
+          "n": 10,
+          "total": 27,
+          "percent_as_reported": 37,
+          "provenance": {
+            "quote": "Hepatic 10 (37)",
+            "location": "Table 1, row: Organ failure at baseline, Hepatic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Hematologic",
+        "arm_label": "control",
+        "count": {
+          "n": 3,
+          "total": 29,
+          "percent_as_reported": 10,
+          "provenance": {
+            "quote": "Hematologic 3 (10)",
+            "location": "Table 1, row: Organ failure at baseline, Hematologic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline - Hematologic",
+        "arm_label": "intervention",
+        "count": {
+          "n": 7,
+          "total": 27,
+          "percent_as_reported": 26,
+          "provenance": {
+            "quote": "Hematologic 7 (26)",
+            "location": "Table 1, row: Organ failure at baseline, Hematologic"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - pH",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 7.33,
+          "dispersion_type": "sd",
+          "dispersion": 0.08,
+          "unit": null,
+          "provenance": {
+            "quote": "pH 7.33 ± 0.08",
+            "location": "Table 1, row: Arterial blood gas, pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - pH",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 7.34,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "unit": null,
+          "provenance": {
+            "quote": "pH 7.34 ± 0.09",
+            "location": "Table 1, row: Arterial blood gas, pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - PaCO2 (mmHg)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 40,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 40 ± 8",
+            "location": "Table 1, row: Arterial blood gas, PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - PaCO2 (mmHg)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 42,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) 42 ± 8",
+            "location": "Table 1, row: Arterial blood gas, PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - PaO2 (mmHg)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 107,
+          "dispersion_type": "sd",
+          "dispersion": 45,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 107 ± 45",
+            "location": "Table 1, row: Arterial blood gas, PaO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Arterial blood gas - PaO2 (mmHg)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 90,
+          "dispersion_type": "sd",
+          "dispersion": 24,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 90 ± 24",
+            "location": "Table 1, row: Arterial blood gas, PaO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hemodynamic variable - Lactate (mg/dL)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "mg/dL",
+          "provenance": {
+            "quote": "Lactate (mg/dL) 3.2 ± 3.3",
+            "location": "Table 1, row: Hemodynamic variable, Lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hemodynamic variable - Lactate (mg/dL)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "unit": "mg/dL",
+          "provenance": {
+            "quote": "Lactate (mg/dL) 3.0 ± 3.6",
+            "location": "Table 1, row: Hemodynamic variable, Lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (beats/min)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 99,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate (beats/min) 99 ± 19",
+            "location": "Table 1, row: Hemodynamic variable, Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (beats/min)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 99,
+          "dispersion_type": "sd",
+          "dispersion": 25,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate (beats/min) 99 ± 25",
+            "location": "Table 1, row: Hemodynamic variable, Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systolic blood pressure (mmHg)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 108,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Systolic blood pressure (mmHg) 108 ± 18",
+            "location": "Table 1, row: Hemodynamic variable, Systolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systolic blood pressure (mmHg)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 109,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Systolic blood pressure (mmHg) 109 ± 19",
+            "location": "Table 1, row: Hemodynamic variable, Systolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diastolic blood pressure (mmHg)",
+        "arm_label": "control",
+        "continuous": {
+          "value_type": "mean",
+          "value": 55,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Diastolic blood pressure (mmHg) 55 ± 11",
+            "location": "Table 1, row: Hemodynamic variable, Diastolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diastolic blood pressure (mmHg)",
+        "arm_label": "intervention",
+        "continuous": {
+          "value_type": "mean",
+          "value": 59,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Diastolic blood pressure (mmHg) 59 ± 11",
+            "location": "Table 1, row: Hemodynamic variable, Diastolic blood pressure"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "control",
+        "n": {
+          "value": 29,
+          "provenance": {
+            "quote": "Data from 29 patients in the control group",
+            "location": "Results"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 52,
+          "dispersion_type": "sd",
+          "dispersion": 23,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) 52 ± 23",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 143,
+          "dispersion_type": "sd",
+          "dispersion": 56,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "P/F ratio (mmHg) 143 ± 56",
+            "location": "Table 1, row: P/F ratio"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "APACHE II score 27 ± 7",
+            "location": "Table 1, row: APACHE II score"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "intervention",
+        "n": {
+          "value": 27,
+          "provenance": {
+            "quote": "27 patients in the intervention group",
+            "location": "Results"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 54,
+          "dispersion_type": "sd",
+          "dispersion": 17,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) 54 ± 17",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 142,
+          "dispersion_type": "sd",
+          "dispersion": 52,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "P/F ratio (mmHg) 142 ± 52",
+            "location": "Table 1, row: P/F ratio"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 27,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "unit": null,
+          "provenance": {
+            "quote": "APACHE II score 27 ± 7",
+            "location": "Table 1, row: APACHE II score"
+          }
+        },
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Transpulmonary pressure was calculated as airway pressure minus esophageal pressure (a surrogate for intrathoracic pressure)",
+        "provenance": {
+          "quote": "Transpulmonary pressure was calculated as airway pressure minus esophageal pressure (a surrogate for intrathoracic pressure) (Fig. 1).",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "end_expiratory_ptp_positive_range",
+      "strategy_verbatim": {
+        "value": "Patients in the intervention group had PEEP levels adjusted to achieve a positive transpulmonary pressure of 0–10 cm H2O at end-expiration according to a sliding scale based on the fraction of inspired oxygen",
+        "provenance": {
+          "quote": "Patients in the intervention group had PEEP levels adjusted to achieve a positive transpulmonary pressure of 0–10 cm H2O at end-expiration according to a sliding scale based on the fraction of inspired oxygen",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "positive transpulmonary pressure of 0–10 cm H2O at end-expiration",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "positive transpulmonary pressure of 0–10 cm H2O at end-expiration",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Airway pressure increase to 40 cmH2O for 30 s",
+        "provenance": {
+          "quote": "every patient underwent a recruitment maneuver with an airway pressure increase to 40 cmH2O for 30 s",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 cc/kg ideal body weight",
+        "provenance": {
+          "quote": "VT set at 6 cc/kg ideal body weight",
+          "location": "Methods, Physiologic measurements"
+        }
+      },
+      "plateau_or_ptp_ceiling": null,
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": null
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "The control group had PEEP titrated as per the standard low PEEP ARDSnet tables",
+      "provenance": {
+        "quote": "The control group had PEEP titrated as per the standard low PEEP ARDSnet tables [5].",
+        "location": "Methods, Physiologic measurements"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "control",
+      "label_verbatim": "Control",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 29,
+        "provenance": {
+          "quote": "Data from 29 patients in the control group",
+          "location": "Results"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "intervention",
+      "label_verbatim": "Intervention",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 27,
+        "provenance": {
+          "quote": "27 patients in the intervention group",
+          "location": "Results"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "28 day mortality",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "hours": null,
+        "label_verbatim": "28 day"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "events": 10,
+          "total": 29,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "provenance": {
+            "quote": "ten of 29 (34.5 %) patients in the control group",
+            "location": "Results"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "events": 4,
+          "total": 27,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": null,
+          "unit": null,
+          "provenance": {
+            "quote": "four of 27 (14.8 %) patients in the intervention group",
+            "location": "Results"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.085,
+          "p_value_verbatim": "0.085",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "chi-square with Fisher's exact test",
+          "provenance": {
+            "quote": "died by 28 days (p = 0.085)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system driving pressure (DPRS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 14.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 14.0 ± 3.5, Intervention 14.1 ± 3.5",
+            "location": "Table 2, row: Respiratory system driving pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 14.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 14.0 ± 3.5, Intervention 14.1 ± 3.5",
+            "location": "Table 2, row: Respiratory system driving pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.97,
+          "p_value_verbatim": "0.97",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "There was no difference between groups in baseline DPRS (14.0 vs. 14.1 cmH2O; p = 0.97)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system driving pressure (DPRS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 12.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 12.2 ± 3.3, Intervention 13.6 ± 4.7",
+            "location": "Table 2, row: Respiratory system driving pressure, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 13.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 12.2 ± 3.3, Intervention 13.6 ± 4.7",
+            "location": "Table 2, row: Respiratory system driving pressure, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.22,
+          "p_value_verbatim": "0.22",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "5 min DPRS (12.2 vs. 13.6 cmH2O; p = 0.22)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system driving pressure (DPRS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 12.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 12.0 ± 3.6, Intervention 11.1 ± 3.4",
+            "location": "Table 2, row: Respiratory system driving pressure, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 11.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Respiratory system driving pressure (cmH2O) - Control 12.0 ± 3.6, Intervention 11.1 ± 3.4",
+            "location": "Table 2, row: Respiratory system driving pressure, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.31,
+          "p_value_verbatim": "0.31",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "at 24 h there was no difference in DPRS between groups (12.0 vs. 11.1 cmH2O; p = 0.31)",
+            "location": "Results"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.57,
+          "p_value_verbatim": "0.57",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA repeated measures",
+          "provenance": {
+            "quote": "In terms of changes between baseline and 24 h, the intervention group showed a non-significant change in DPRS (∆DPRS −2.39 vs. −2.97 cmH2O, p = 0.57)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary driving pressure (DPL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 10.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 10.1 ± 3.3, Intervention 10.3 ± 3.6",
+            "location": "Table 2, row: Transpulmonary driving pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 10.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 10.1 ± 3.3, Intervention 10.3 ± 3.6",
+            "location": "Table 2, row: Transpulmonary driving pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.8,
+          "p_value_verbatim": "0.80",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "baseline DPL (10.1 vs. 10.3 cmH2O; p = 0.80)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary driving pressure (DPL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 8.5,
+          "dispersion_type": "sd",
+          "dispersion": 3.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 8.5 ± 3.1, Intervention 9.5 ± 4.4",
+            "location": "Table 2, row: Transpulmonary driving pressure, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 9.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 8.5 ± 3.1, Intervention 9.5 ± 4.4",
+            "location": "Table 2, row: Transpulmonary driving pressure, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.35,
+          "p_value_verbatim": "0.35",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "5 min DPL (8.5 vs. 9.5 cmH2O; p = 0.35)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary driving pressure (DPL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 9.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 9.4 ± 3.6, Intervention 7.2 ± 3.0",
+            "location": "Table 2, row: Transpulmonary driving pressure, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 7.2,
+          "dispersion_type": "sd",
+          "dispersion": 3.0,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary driving pressure (cmH2O) - Control 9.4 ± 3.6, Intervention 7.2 ± 3.0",
+            "location": "Table 2, row: Transpulmonary driving pressure, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.02,
+          "p_value_verbatim": "0.02",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "while DPL was significantly lower in the intervention group (9.4 vs. 7.2 cmH2O; p = 0.02)",
+            "location": "Results"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.004,
+          "p_value_verbatim": "0.004",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA repeated measures",
+          "provenance": {
+            "quote": "a significant decrease in DPL (∆DPL −0.65 vs. −3.07 cmH2O, p = 0.004)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall driving pressure (DPCW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 3.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 3.9 ± 2.4, Intervention 3.8 ± 0.7",
+            "location": "Table 2, row: Chest wall driving pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 3.8,
+          "dispersion_type": "sd",
+          "dispersion": 0.7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 3.9 ± 2.4, Intervention 3.8 ± 0.7",
+            "location": "Table 2, row: Chest wall driving pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.7,
+          "p_value_verbatim": "0.7",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Baseline p 0.7",
+            "location": "Table 2, row: Chest wall driving pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall driving pressure (DPCW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 3.6,
+          "dispersion_type": "sd",
+          "dispersion": 0.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 3.6 ± 0.4, Intervention 3.8 ± 0.4",
+            "location": "Table 2, row: Chest wall driving pressure, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 3.8,
+          "dispersion_type": "sd",
+          "dispersion": 0.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 3.6 ± 0.4, Intervention 3.8 ± 0.4",
+            "location": "Table 2, row: Chest wall driving pressure, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.7,
+          "p_value_verbatim": "0.7",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - 5 min p 0.7",
+            "location": "Table 2, row: Chest wall driving pressure, 5 min"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall driving pressure (DPCW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 2.7,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 2.7 ± 0.6, Intervention 3.9 ± 0.6",
+            "location": "Table 2, row: Chest wall driving pressure, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 3.9,
+          "dispersion_type": "sd",
+          "dispersion": 0.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - Control 2.7 ± 0.6, Intervention 3.9 ± 0.6",
+            "location": "Table 2, row: Chest wall driving pressure, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.1,
+          "p_value_verbatim": "0.1",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall driving pressure (cmH2O) - 24 h p 0.1",
+            "location": "Table 2, row: Chest wall driving pressure, 24 h"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system elastance (ERS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 29.9,
+          "dispersion_type": "sd",
+          "dispersion": 10.7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.9 ± 10.7, Intervention 29.9 ± 10.1",
+            "location": "Table 2, row: Respiratory system elastance, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 29.9,
+          "dispersion_type": "sd",
+          "dispersion": 10.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.9 ± 10.7, Intervention 29.9 ± 10.1",
+            "location": "Table 2, row: Respiratory system elastance, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.99,
+          "p_value_verbatim": "0.99",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "baseline ERS (29.9 vs 29.9 cmH2O/L, p = 0.99)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system elastance (ERS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 29.9,
+          "dispersion_type": "sd",
+          "dispersion": 8.8,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.9 ± 8.8, Intervention 32.2 ± 15.3",
+            "location": "Table 2, row: Respiratory system elastance, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 32.2,
+          "dispersion_type": "sd",
+          "dispersion": 15.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.9 ± 8.8, Intervention 32.2 ± 15.3",
+            "location": "Table 2, row: Respiratory system elastance, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.48,
+          "p_value_verbatim": "0.48",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "5 min ERS (29.9 vs 32.2 cmH2O/L, p = 0.48)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory system elastance (ERS)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 29.8,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.8 ± 10, Intervention 25.2 ± 8.8",
+            "location": "Table 2, row: Respiratory system elastance, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 25.2,
+          "dispersion_type": "sd",
+          "dispersion": 8.8,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Respiratory system elastance (cmH2O/L) - Control 29.8 ± 10, Intervention 25.2 ± 8.8",
+            "location": "Table 2, row: Respiratory system elastance, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.07,
+          "p_value_verbatim": "0.07",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "at 24 h the intervention group had a slight decrease in ERS that did not reach statistical significance (29.8 vs 25.2 cmH2O/L, p = 0.07)",
+            "location": "Results"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.01,
+          "p_value_verbatim": "0.01",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA repeated measures",
+          "provenance": {
+            "quote": "greater change from baseline (ΔERS −0.09 vs −4.75 cmH2O/L, p = 0.01)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pulmonary elastance (EL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 21.7,
+          "dispersion_type": "sd",
+          "dispersion": 10.2,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 21.7 ± 10.2, Intervention 22.1 ± 10.1",
+            "location": "Table 2, row: Pulmonary elastance, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 22.1,
+          "dispersion_type": "sd",
+          "dispersion": 10.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 21.7 ± 10.2, Intervention 22.1 ± 10.1",
+            "location": "Table 2, row: Pulmonary elastance, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.86,
+          "p_value_verbatim": "0.86",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "baseline EL (21.7 vs 22.1 cmH2O/L, p = 0.86)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pulmonary elastance (EL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 21.1,
+          "dispersion_type": "sd",
+          "dispersion": 8.9,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 21.1 ± 8.9, Intervention 22.9 ± 14.7",
+            "location": "Table 2, row: Pulmonary elastance, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 22.9,
+          "dispersion_type": "sd",
+          "dispersion": 14.7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 21.1 ± 8.9, Intervention 22.9 ± 14.7",
+            "location": "Table 2, row: Pulmonary elastance, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.58,
+          "p_value_verbatim": "0.58",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "5 min EL (21.1 vs 22.9 cmH2O/L, p = 0.58)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pulmonary elastance (EL)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 23.4,
+          "dispersion_type": "sd",
+          "dispersion": 10.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 23.4 ± 10.5, Intervention 16.5 ± 7.6",
+            "location": "Table 2, row: Pulmonary elastance, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 16.5,
+          "dispersion_type": "sd",
+          "dispersion": 7.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Pulmonary elastance (cmH2O/L) - Control 23.4 ± 10.5, Intervention 16.5 ± 7.6",
+            "location": "Table 2, row: Pulmonary elastance, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.007,
+          "p_value_verbatim": "0.007",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "significantly lower EL (23.4 vs 16.5 cmH2O/L, p = 0.007)",
+            "location": "Results"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.0002,
+          "p_value_verbatim": "0.0002",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA repeated measures",
+          "provenance": {
+            "quote": "ΔEL 1.69 vs −5.66 cmH2O/L, p = 0.0002)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall elastance (ECW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 8.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 8.2 ± 4.5, Intervention 7.8 ± 3.7",
+            "location": "Table 2, row: Chest wall elastance, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 7.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 8.2 ± 4.5, Intervention 7.8 ± 3.7",
+            "location": "Table 2, row: Chest wall elastance, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.7,
+          "p_value_verbatim": "0.7",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Baseline p 0.7",
+            "location": "Table 2, row: Chest wall elastance, Baseline"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall elastance (ECW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 8.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 8.7 ± 4.1, Intervention 8.7 ± 5.1",
+            "location": "Table 2, row: Chest wall elastance, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 8.7,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 8.7 ± 4.1, Intervention 8.7 ± 5.1",
+            "location": "Table 2, row: Chest wall elastance, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 1.0,
+          "p_value_verbatim": "1.0",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - 5 min p 1.0",
+            "location": "Table 2, row: Chest wall elastance, 5 min"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Chest wall elastance (ECW)",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 6.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.9,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 6.4 ± 5.9, Intervention 8.7 ± 6.6",
+            "location": "Table 2, row: Chest wall elastance, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 8.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O/L",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - Control 6.4 ± 5.9, Intervention 8.7 ± 6.6",
+            "location": "Table 2, row: Chest wall elastance, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.2,
+          "p_value_verbatim": "0.2",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Chest wall elastance (cmH2O/L) - 24 h p 0.2",
+            "location": "Table 2, row: Chest wall elastance, 24 h"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtotal",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 14.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 14.8 ± 3.6, Intervention 14.5 ± 4.8",
+            "location": "Table 2, row: PEEPtotal, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 14.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 14.8 ± 3.6, Intervention 14.5 ± 4.8",
+            "location": "Table 2, row: PEEPtotal, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.79,
+          "p_value_verbatim": "0.79",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "At baseline, PEEP was the same between the control group and intervention group prior to initiating the protocol (13.0 vs. 12.7 cmH2O; p = 0.79)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtotal",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 15.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 15.0 ± 3.3, Intervention 21.9 ± 5.1",
+            "location": "Table 2, row: PEEPtotal, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 21.9,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 15.0 ± 3.3, Intervention 21.9 ± 5.1",
+            "location": "Table 2, row: PEEPtotal, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Targeting positive end-expiratory transpulmonary pressure in the intervention group resulted in increased PEEP at 5 min (12.9 vs. 20.0 cmH2O; p < 0.0001)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtotal",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 13.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 13.1 ± 3.4, Intervention 20.6 ± 4.9",
+            "location": "Table 2, row: PEEPtotal, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 20.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEPtotal (cmH2O) - Control 13.1 ± 3.4, Intervention 20.6 ± 4.9",
+            "location": "Table 2, row: PEEPtotal, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.0001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "and 24 h (11.0 vs. 19.3 cmH2O, p < 0.0001)",
+            "location": "Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "days": null,
+        "hours": null,
+        "label_verbatim": "Baseline"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 490,
+          "dispersion_type": "sd",
+          "dispersion": 108,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 490 ± 108, Intervention 488 ± 103",
+            "location": "Table 2, row: Tidal volume, Baseline"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 488,
+          "dispersion_type": "sd",
+          "dispersion": 103,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 490 ± 108, Intervention 488 ± 103",
+            "location": "Table 2, row: Tidal volume, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 1.0,
+          "p_value_verbatim": "1.0",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Baseline p 1.0",
+            "location": "Table 2, row: Tidal volume, Baseline"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 0.083,
+        "label_verbatim": "5 min"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 415,
+          "dispersion_type": "sd",
+          "dispersion": 73,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 415 ± 73, Intervention 441 ± 82",
+            "location": "Table 2, row: Tidal volume, 5 min"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 441,
+          "dispersion_type": "sd",
+          "dispersion": 82,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 415 ± 73, Intervention 441 ± 82",
+            "location": "Table 2, row: Tidal volume, 5 min"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.2,
+          "p_value_verbatim": "0.2",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Tidal volume (ml) - 5 min p 0.2",
+            "location": "Table 2, row: Tidal volume, 5 min"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "days": null,
+        "hours": 24,
+        "label_verbatim": "24 h"
+      },
+      "is_primary_outcome": null,
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "control",
+          "value_type": "mean",
+          "value": 416,
+          "dispersion_type": "sd",
+          "dispersion": 68,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 29,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 416 ± 68, Intervention 448 ± 64",
+            "location": "Table 2, row: Tidal volume, 24 h"
+          }
+        },
+        {
+          "arm_label": "intervention",
+          "value_type": "mean",
+          "value": 448,
+          "dispersion_type": "sd",
+          "dispersion": 64,
+          "dispersion_low": null,
+          "dispersion_high": null,
+          "n": 27,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) - Control 416 ± 68, Intervention 448 ± 64",
+            "location": "Table 2, row: Tidal volume, 24 h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.07,
+          "p_value_verbatim": "0.07",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "ANOVA",
+          "provenance": {
+            "quote": "Tidal volume (ml) - 24 h p 0.07",
+            "location": "Table 2, row: Tidal volume, 24 h"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS subgroup: all patients had ALI/ARDS by AECC criteria. Obesity subgroup: BMI not reported. Timing subgroup: intervention timing from intubation not reported; study began at enrollment. PTP target: absolute PEEP-guided PtP range 0-10 cmH2O at end-expiration."
+  },
+  "extraction_flags": {
+    "cohort_id": "epvent1",
+    "overlapping_cohort_with": [
+      "talmor_2008"
+    ],
+    "overlap_evidence": "Confirmed overlap with talmor_2008 (EPVent primary report). This paper states: 'Fifty-six patients from a previous study were analyzed' and the original study is EPVent (ref 15). Cohort_id 'epvent1' assigned. Primary report is talmor_2008.",
+    "unclear_items": [
+      "adults_18_plus: age criterion not explicitly stated; adult ICU setting inferred.",
+      "Table 2 p-values for some mechanics are rounded or discrepant with text; text p-values used where available.",
+      "Discrepancy in PEEPtotal values: text reports 13.0/12.7 cmH2O at baseline, 12.9/20.0 at 5 min, 11.0/19.3 at 24h; table reports 14.8/14.5, 15.0/21.9, 13.1/20.6. Table values used for outcome data, text values flagged.",
+      "Timing subgroup unclear as timing of intervention relative to intubation/ICU admission not reported.",
+      "Obesity subgroup unclear as BMI not reported."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "This is a secondary analysis of the EPVent trial. The study compares intervention vs control groups from the original RCT but does not report new randomization."
+  }
+}

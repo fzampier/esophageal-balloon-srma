@@ -1,0 +1,4762 @@
+{
+  "record_meta": {
+    "study_id": "dong_2023",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/PIIS0147956323001280.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Dong",
+    "year": 2023,
+    "title": "Effect of different titration methods on right heart function and prognosis in patients with acute respiratory distress syndrome",
+    "journal": "Heart & Lung",
+    "doi": "10.1016/j.hrtlng.2023.05.009",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "1) patients aged 18-75 years",
+          "location": "Methods, Patients, inclusion criteria, para 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "2) requirement for mechanical ventilation for a duration greater than 3 days",
+          "location": "Methods, Patients, inclusion criteria, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Department of Intensive Care Medicine, Shaanxi Provincial People’s Hospital, China",
+          "location": "Methods, first paragraph"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The optimal PEEP was determined by maintaining the transpulmonary pressure between 0 and 10 cm of water during end-expiratory occlusion and ensuring that the transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion.",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The secondary endpoints included arterial oxygenation parameters... and patient outcomes (i.e., the duration of mechanical ventilation and the length of stay in the ICU at 28 days, the proportion of patients managed with prone positioning during the ICU stay and its duration, the proportion of patients requiring ECMO and the ECMO duration, and 28-day mortality rates after treatment).",
+          "location": "Methods, Data collection, para 2"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A total of 62 ARDS patients were enrolled",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Observational, prospective study",
+          "location": "Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Effect of different titration methods on right heart function and prognosis in patients with acute respiratory distress syndrome",
+          "location": "Title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "prospective_cohort",
+    "study_design_verbatim": {
+      "value": "Observational, prospective study",
+      "provenance": {
+        "quote": "Observational, prospective study",
+        "location": "Abstract, Methods"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": null,
+      "provenance": null
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "derived": false,
+      "provenance": {
+        "quote": "single-center study",
+        "location": "Discussion, Limitations, para 1"
+      }
+    },
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "Department of ICU, Shaanxi Provincial People’s Hospital, Xi’an, China",
+      "location": "Title page, author affiliations"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": null,
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "Department of Intensive Care Medicine",
+      "provenance": {
+        "quote": "Department of Intensive Care Medicine, Shaanxi Provincial People’s Hospital",
+        "location": "Methods, first paragraph"
+      }
+    },
+    "enrolment_start": "2020-04",
+    "enrolment_end": "2021-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Shaanxi Provincial Key research and Development Program (Grant Number: 2021SF-257)",
+      "provenance": {
+        "quote": "This work was supported by Shaanxi Provincial Key research and Development Program (Grant Number: 2021SF-257).",
+        "location": "Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 62,
+      "provenance": {
+        "quote": "A total of 62 ARDS patients were enrolled into guide (G) group (n=40)",
+        "location": "Abstract, Results"
+      }
+    },
+    "n_analysed": {
+      "value": 62,
+      "provenance": {
+        "quote": "A total of 62 ARDS patients were enrolled into guide (G) group (n=40)",
+        "location": "Abstract, Results"
+      }
+    },
+    "population_description": {
+      "value": "A total of 62 ARDS patients hospitalized between April 2020 and December 2021 in the Department of Intensive Care Medicine, Shaanxi Provincial People’s Hospital, China were enrolled into an observational prospective study.",
+      "provenance": {
+        "quote": "A total of 62 ARDS patients hospitalized between April 2020 and December 2021 in the Department of Intensive Care Medicine, Shaanxi Provincial People’s Hospital, China were enrolled into an observational prospective study.",
+        "location": "Methods, first paragraph"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "1) patients aged 18-75 years; 2) requirement for mechanical ventilation for a duration greater than 3 days; 3) met the diagnostic criteria of the 2012 Berlin definition of ARDS.",
+      "provenance": {
+        "quote": "1) patients aged 18-75 years; 2) requirement for mechanical ventilation for a duration greater than 3 days; 3) met the diagnostic criteria of the 2012 Berlin definition of ARDS.",
+        "location": "Methods, Patients, inclusion criteria"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "1) cardiogenic pulmonary edema; 2) contraindication to esophageal instrumentation or high PEEP, such as esophageal trauma and pneumothorax; 3) pregnant or lactating women; 4) hemodynamically unstable patients and died within 24 hours of ventilator use; 5) Patients with previous chronic respiratory diseases such as COPD; 6) Patients with previous congenital heart disease or right heart dysfunction.",
+      "provenance": {
+        "quote": "1) cardiogenic pulmonary edema; 2) contraindication to esophageal instrumentation or high PEEP, such as esophageal trauma and pneumothorax; 3) pregnant or lactating women; 4) hemodynamically unstable patients and died within 24 hours of ventilator use; 5) Patients with previous chronic respiratory diseases such as COPD; 6) Patients with previous congenital heart disease or right heart dysfunction.",
+        "location": "Methods, Patients, exclusion criteria"
+      }
+    },
+    "age": {
+      "value_type": "mean",
+      "value": 55.4,
+      "dispersion_type": "sd",
+      "dispersion": 19.1,
+      "unit": "years",
+      "provenance": {
+        "quote": "age ranged from 19-75 years (mean=55.4§19.1)",
+        "location": "Results, first paragraph"
+      }
+    },
+    "sex_female": {
+      "n": 24,
+      "total": 62,
+      "provenance": {
+        "quote": "Thirty-eight patients were male and 24 female",
+        "location": "Results, first paragraph"
+      }
+    },
+    "sex_male": {
+      "n": 38,
+      "total": 62,
+      "provenance": {
+        "quote": "Thirty-eight patients were male and 24 female",
+        "location": "Results, first paragraph"
+      }
+    },
+    "bmi": null,
+    "weight_kg": {
+      "value_type": "mean",
+      "value": 64.1,
+      "dispersion_type": "sd",
+      "dispersion": 20.3,
+      "unit": "kg",
+      "provenance": {
+        "quote": "mean weight was 64.1§20.3 Kg",
+        "location": "Results, first paragraph"
+      }
+    },
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "2012 Berlin definition",
+      "provenance": {
+        "quote": "met the diagnostic criteria of the 2012 Berlin definition of ARDS",
+        "location": "Methods, Patients, inclusion criteria"
+      }
+    },
+    "n_ards": {
+      "n": 62,
+      "total": 62,
+      "provenance": {
+        "quote": "A total of 62 ARDS patients were enrolled",
+        "location": "Abstract, Results"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": 7,
+        "total": 62,
+        "derived": true,
+        "derivation": "Sum of mild cases from Table 2 per group: 5+1+1",
+        "provenance": {
+          "quote": "Mild 5 1 1",
+          "location": "Table 2, row: ARDS severity, Mild"
+        }
+      },
+      "moderate": {
+        "n": 28,
+        "total": 62,
+        "derived": true,
+        "derivation": "Sum of moderate cases from Table 2 per group: 15+7+6",
+        "provenance": {
+          "quote": "Moderate 15 7 6",
+          "location": "Table 2, row: ARDS severity, Moderate"
+        }
+      },
+      "severe": {
+        "n": 27,
+        "total": 62,
+        "derived": true,
+        "derivation": "Sum of severe cases from Table 2 per group: 20+4+3",
+        "provenance": {
+          "quote": "Severe 20 4 3",
+          "location": "Table 2, row: ARDS severity, Severe"
+        }
+      }
+    },
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "ARDS etiology was composed of trauma in 2 cases, severe pneumonia in 21 cases, severe pancreatitis in 5 cases and shock in 9 cases (3 cases of hypovolemic shock, 1 case of neurogenic shock, and 2 cases of traumatic shock).",
+      "provenance": {
+        "quote": "ARDS etiology was composed of trauma in 2 cases, severe pneumonia in 21 cases, severe pancreatitis in 5 cases and shock in 9 cases (3 cases of hypovolemic shock, 1 case of neurogenic shock, and 2 cases of traumatic shock).",
+        "location": "Results, first paragraph"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Heart rate (bpm)",
+        "arm_label": "g",
+        "continuous": {
+          "value_type": "mean",
+          "value": 107,
+          "dispersion_type": "sd",
+          "dispersion": 27,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 107 § 27",
+            "location": "Table 2, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (bpm)",
+        "arm_label": "dpo",
+        "continuous": {
+          "value_type": "mean",
+          "value": 104,
+          "dispersion_type": "sd",
+          "dispersion": 16,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 104 § 16",
+            "location": "Table 2, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate (bpm)",
+        "arm_label": "tpo",
+        "continuous": {
+          "value_type": "mean",
+          "value": 114,
+          "dispersion_type": "sd",
+          "dispersion": 28,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Heart rate (bpm) 114 § 28",
+            "location": "Table 2, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "MAP (mmHg)",
+        "arm_label": "g",
+        "continuous": {
+          "value_type": "mean",
+          "value": 75,
+          "dispersion_type": "sd",
+          "dispersion": 21,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP(mmHg) 75 § 21",
+            "location": "Table 2, row: MAP"
+          }
+        }
+      },
+      {
+        "name_verbatim": "MAP (mmHg)",
+        "arm_label": "dpo",
+        "continuous": {
+          "value_type": "mean",
+          "value": 74,
+          "dispersion_type": "sd",
+          "dispersion": 20,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP(mmHg) 74 § 20",
+            "location": "Table 2, row: MAP"
+          }
+        }
+      },
+      {
+        "name_verbatim": "MAP (mmHg)",
+        "arm_label": "tpo",
+        "continuous": {
+          "value_type": "mean",
+          "value": 71,
+          "dispersion_type": "sd",
+          "dispersion": 12,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "MAP(mmHg) 71 § 12",
+            "location": "Table 2, row: MAP"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Comorbidities, n (%)",
+        "arm_label": "g",
+        "count": {
+          "n": 33,
+          "total": 40,
+          "percent_as_reported": 82.5,
+          "provenance": {
+            "quote": "Comorbidities, n (%) 33 (82.5)",
+            "location": "Table 2, row: Comorbidities"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Comorbidities, n (%)",
+        "arm_label": "dpo",
+        "count": {
+          "n": 10,
+          "total": 12,
+          "percent_as_reported": 83.3,
+          "provenance": {
+            "quote": "Comorbidities, n (%) 10 (83.3)",
+            "location": "Table 2, row: Comorbidities"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Comorbidities, n (%)",
+        "arm_label": "tpo",
+        "count": {
+          "n": 9,
+          "total": 10,
+          "percent_as_reported": 90,
+          "provenance": {
+            "quote": "Comorbidities, n (%) 9 (90)",
+            "location": "Table 2, row: Comorbidities"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "g",
+        "n": {
+          "value": 40,
+          "provenance": {
+            "quote": "The guide group (n=40)",
+            "location": "Table 2, header"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 59,
+          "dispersion_type": "sd",
+          "dispersion": 17,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age 59 § 17",
+            "location": "Table 2, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 127.5,
+          "dispersion_type": "sd",
+          "dispersion": 61.3,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 127.5 § 61.3",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        },
+        "apache_ii": {
+          "value_type": "median",
+          "value": 24.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 17,
+          "dispersion_high": 33,
+          "provenance": {
+            "quote": "APACHEII score 24.5 (17, 33)",
+            "location": "Table 2, row: APACHEII score"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "dpo",
+        "n": {
+          "value": 12,
+          "provenance": {
+            "quote": "The driving pressure oriented group (n=12)",
+            "location": "Table 2, header"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 52,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age 52 § 18",
+            "location": "Table 2, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 96.6,
+          "dispersion_type": "sd",
+          "dispersion": 44.2,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 96.6 § 44.2",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        },
+        "apache_ii": {
+          "value_type": "median",
+          "value": 28.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 43,
+          "provenance": {
+            "quote": "APACHEII score 28.5 (7, 43)",
+            "location": "Table 2, row: APACHEII score"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "tpo",
+        "n": {
+          "value": 10,
+          "provenance": {
+            "quote": "The transpulmonary pressure oriented group (n=10)",
+            "location": "Table 2, header"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 43,
+          "dispersion_type": "sd",
+          "dispersion": 23,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age 43 § 23#",
+            "location": "Table 2, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 138.6,
+          "dispersion_type": "sd",
+          "dispersion": 74.6,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 138.6 § 74.6",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        },
+        "apache_ii": {
+          "value_type": "median",
+          "value": 12,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7,
+          "dispersion_high": 31,
+          "provenance": {
+            "quote": "APACHEII score 12 (7, 31)",
+            "location": "Table 2, row: APACHEII score"
+          }
+        },
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": {
+      "value_type": "mean",
+      "value": 1.5,
+      "unit": "ml",
+      "provenance": {
+        "quote": "1.5 ml of gas was injected through the balloon",
+        "location": "Methods, The PEEP titration methods, para on TPO group"
+      }
+    },
+    "balloon_calibration": {
+      "method": "signal_quality_verification_only",
+      "method_verbatim": {
+        "value": "An esophageal balloon catheter was inserted through the nose into the stomach to a depth of 55 cm, and 1.5 ml of gas was injected through the balloon. The catheter was then gradually withdrawn until an increased cardiac artifact appeared on the pressure tracing (35-45 cm), indicating that the balloon was located in the middle and lower third of the esophagus. The position of the esophageal balloon was confirmed by an obstruction test using chest compressions for passive patients or inspiratory effort maneuvers for spontaneously breathing patients to cause end-expiratory obstruction.",
+        "provenance": {
+          "quote": "An esophageal balloon catheter was inserted through the nose into the stomach to a depth of 55 cm, and 1.5 ml of gas was injected through the balloon. The catheter was then gradually withdrawn until an increased cardiac artifact appeared on the pressure tracing (35-45 cm), indicating that the balloon was located in the middle and lower third of the esophagus. The position of the esophageal balloon was confirmed by an obstruction test using chest compressions for passive patients or inspiratory effort maneuvers for spontaneously breathing patients to cause end-expiratory obstruction.",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "position_verification": {
+        "value": "The position of the esophageal balloon was confirmed by an obstruction test using chest compressions for passive patients or inspiratory effort maneuvers for spontaneously breathing patients to cause end-expiratory obstruction.",
+        "provenance": {
+          "quote": "The position of the esophageal balloon was confirmed by an obstruction test using chest compressions for passive patients or inspiratory effort maneuvers for spontaneously breathing patients to cause end-expiratory obstruction.",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "End-inspiratory transpulmonary pressure (Ptp-i) was calculated as the difference between airway pressure and Pes, while end-expiratory transpulmonary pressure (Ptp-e) was calculated as the difference between PEEP and Pes.",
+        "provenance": {
+          "quote": "End-inspiratory transpulmonary pressure (Ptp-i) was calculated as the difference between airway pressure and Pes, while end-expiratory transpulmonary pressure (Ptp-e) was calculated as the difference between PEEP and Pes.",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "PEEP was reduced from 20 cm H2O by 2 cm H2O increments until a value of 6 cm H2O for 5 min and finger pulse oxygen saturation (SPO2) ≥ 88% was maintained. The optimal PEEP was determined by maintaining the transpulmonary pressure between 0 and 10 cm of water during end-expiratory occlusion and ensuring that the transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion.",
+        "provenance": {
+          "quote": "PEEP was reduced from 20 cm H2O by 2 cm H2O increments until a value of 6 cm H2O for 5 min and finger pulse oxygen saturation (SPO2) ≥ 88% was maintained. The optimal PEEP was determined by maintaining the transpulmonary pressure between 0 and 10 cm of water during end-expiratory occlusion and ensuring that the transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion.",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure between 0 and 10 cm of water",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure between 0 and 10 cm of water",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": null
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": null,
+      "recruitment_manoeuvre_detail": null,
+      "tidal_volume_target": {
+        "value": "6 ml/Kg",
+        "provenance": {
+          "quote": "tidal volume of 6 ml/Kg",
+          "location": "Methods, Respiratory management, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion",
+        "provenance": {
+          "quote": "ensuring that the transpulmonary pressure remained below 25 cm of water during end-inspiratory occlusion",
+          "location": "Methods, The PEEP titration methods, para on TPO group"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Basic mechanical ventilation for 10 mins; According to the different PEEP titration methods",
+        "provenance": {
+          "quote": "Basic mechanical ventilation for 10 mins; According to the different PEEP titration methods",
+          "location": "Fig 1, Study protocol"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table",
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "The mechanical ventilation protocol for PEEP was based on low PEEP-high FiO2 strategy according to the ARDS Collaborative Group (ARDSnet) recommendations for group G. DPO patients were given adequate pulmonary resuscitation and the 'inspiratory hold' button held to measure the patient's plateau pressure. PEEP was calculated from ΔP=Pplat-PEEP in patients without spontaneous breathing. DP was titrated to below 18 cm H2O for mechanical ventilation.",
+      "provenance": {
+        "quote": "The mechanical ventilation protocol for PEEP was based on low PEEP-high FiO2 strategy according to the ARDS Collaborative Group (ARDSnet) recommendations for group G. DPO patients were given adequate pulmonary resuscitation and the 'inspiratory hold' button held to measure the patient's plateau pressure. PEEP was calculated from ΔP=Pplat-PEEP in patients without spontaneous breathing. DP was titrated to below 18 cm H2O for mechanical ventilation.",
+        "location": "Methods, The PEEP titration methods"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "g",
+      "label_verbatim": "The guide group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 40,
+        "provenance": {
+          "quote": "The guide group (n=40)",
+          "location": "Table 2, header"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 9,
+        "dispersion_type": "sd",
+        "dispersion": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm of water) 9 § 2",
+          "location": "Table 3, row: PEEP, 72h"
+        }
+      }
+    },
+    {
+      "label": "dpo",
+      "label_verbatim": "The driving pressure oriented group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 12,
+        "provenance": {
+          "quote": "The driving pressure oriented group (n=12)",
+          "location": "Table 2, header"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 10,
+        "dispersion_type": "sd",
+        "dispersion": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm of water) 10 § 2",
+          "location": "Table 3, row: PEEP, 72h"
+        }
+      }
+    },
+    {
+      "label": "tpo",
+      "label_verbatim": "The transpulmonary pressure oriented group",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": null,
+      "n_analysed": {
+        "value": 10,
+        "provenance": {
+          "quote": "The transpulmonary pressure oriented group (n=10)",
+          "location": "Table 2, header"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 12,
+        "dispersion_type": "sd",
+        "dispersion": 3,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cm of water) 12 § 3*",
+          "location": "Table 3, row: PEEP, 72h"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-d mortality rate, n (%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-d"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "events": 22,
+          "total": 40,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "dpo",
+          "events": 6,
+          "total": 12,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "tpo",
+          "events": 3,
+          "total": 10,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.368,
+          "provenance": {
+            "quote": "28-d mortality rate, n (%) 22 (55) 6 (50) 3 (30) 0.368",
+            "location": "Table 5, row: 28-d mortality rate"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "28-d mortality rate, n (%) 22 (55) 6 (50) 3 (30) 0.368",
+        "location": "Table 5, row: 28-d mortality rate"
+      }
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "MV duration (mean days ± SD,d)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "duration"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 13,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "days",
+          "provenance": {
+            "quote": "MV duration (mean days ± SD,d) 13±5",
+            "location": "Table 5, row: MV duration"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 11,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "days",
+          "provenance": {
+            "quote": "MV duration (mean days ± SD,d) 11±3",
+            "location": "Table 5, row: MV duration"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 9,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "days",
+          "provenance": {
+            "quote": "MV duration (mean days ± SD,d) 9±2",
+            "location": "Table 5, row: MV duration"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.168,
+          "provenance": {
+            "quote": "MV duration (mean days ± SD,d) 13±5 11±3 9±2 0.168",
+            "location": "Table 5, row: MV duration"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "MV duration (mean days ± SD,d) 13±5 11±3 9±2 0.168",
+        "location": "Table 5, row: MV duration"
+      }
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU duration (mean days ± SD,d)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "duration"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "days",
+          "provenance": {
+            "quote": "ICU duration (mean days ± SD,d) 16±5",
+            "location": "Table 5, row: ICU duration"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 19,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "unit": "days",
+          "provenance": {
+            "quote": "ICU duration (mean days ± SD,d) 19±6",
+            "location": "Table 5, row: ICU duration"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "unit": "days",
+          "provenance": {
+            "quote": "ICU duration (mean days ± SD,d) 16±6",
+            "location": "Table 5, row: ICU duration"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.279,
+          "provenance": {
+            "quote": "ICU duration (mean days ± SD,d) 16±5 19±6 16±6 0.279",
+            "location": "Table 5, row: ICU duration"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ICU duration (mean days ± SD,d) 16±5 19±6 16±6 0.279",
+        "location": "Table 5, row: ICU duration"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "Prone position, n (%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "during ICU stay"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "events": 16,
+          "total": 40,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "dpo",
+          "events": 7,
+          "total": 12,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "tpo",
+          "events": 4,
+          "total": 10,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.516,
+          "provenance": {
+            "quote": "Prone position, n (%) 16 (40) 7 (58) 4 (40) 0.516",
+            "location": "Table 5, row: Prone position"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Prone position, n (%) 16 (40) 7 (58) 4 (40) 0.516",
+        "location": "Table 5, row: Prone position"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "ECMO, n (%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "during ICU stay"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "events": 12,
+          "total": 40,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "dpo",
+          "events": 5,
+          "total": 12,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        },
+        {
+          "arm_label": "tpo",
+          "events": 3,
+          "total": 10,
+          "value_type": null,
+          "value": null,
+          "dispersion_type": null,
+          "dispersion": null
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.74,
+          "provenance": {
+            "quote": "ECMO, n (%) 12 (30) 5 (42) 3 (30) 0.740",
+            "location": "Table 5, row: ECMO"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ECMO, n (%) 12 (30) 5 (42) 3 (30) 0.740",
+        "location": "Table 5, row: ECMO"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "The length of prone position (mean hours ± SD, h)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "duration"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 76,
+          "dispersion_type": "sd",
+          "dispersion": 112,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of prone position (mean hours ± SD, h) 76±112",
+            "location": "Table 5, row: The length of prone position"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 117,
+          "dispersion_type": "sd",
+          "dispersion": 121,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of prone position (mean hours ± SD, h) 117±121",
+            "location": "Table 5, row: The length of prone position"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 102,
+          "dispersion_type": "sd",
+          "dispersion": 145,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of prone position (mean hours ± SD, h) 102±145",
+            "location": "Table 5, row: The length of prone position"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.534,
+          "provenance": {
+            "quote": "The length of prone position (mean hours ± SD, h) 76±112 117±121 102±145 0.534",
+            "location": "Table 5, row: The length of prone position"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The length of prone position (mean hours ± SD, h) 76±112 117±121 102±145 0.534",
+        "location": "Table 5, row: The length of prone position"
+      }
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "The length of ECMO (mean hours ± SD,h)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "duration"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 76,
+          "dispersion_type": "sd",
+          "dispersion": 125,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of ECMO (mean hours ± SD,h) 76±125",
+            "location": "Table 5, row: The length of ECMO"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 115,
+          "dispersion_type": "sd",
+          "dispersion": 151,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of ECMO (mean hours ± SD,h) 115±151",
+            "location": "Table 5, row: The length of ECMO"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 97,
+          "dispersion_type": "sd",
+          "dispersion": 158,
+          "unit": "hours",
+          "provenance": {
+            "quote": "The length of ECMO (mean hours ± SD,h) 97±158",
+            "location": "Table 5, row: The length of ECMO"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.663,
+          "provenance": {
+            "quote": "The length of ECMO (mean hours ± SD,h) 76±125 115±151 97±158 0.663",
+            "location": "Table 5, row: The length of ECMO"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The length of ECMO (mean hours ± SD,h) 76±125 115±151 97±158 0.663",
+        "location": "Table 5, row: The length of ECMO"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 127.5,
+          "dispersion_type": "sd",
+          "dispersion": 61.3,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 127.5 § 61.3",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 96.6,
+          "dispersion_type": "sd",
+          "dispersion": 44.2,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 96.6 § 44.2",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 138.6,
+          "dispersion_type": "sd",
+          "dispersion": 74.6,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 138.6 § 74.6",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.217,
+          "provenance": {
+            "quote": "PaO2:FiO2 127.5 § 61.3 96.6 § 44.2 138.6 § 74.6 0.217",
+            "location": "Table 3, row: PaO2:FiO2, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PaO2:FiO2 127.5 § 61.3 96.6 § 44.2 138.6 § 74.6 0.217",
+        "location": "Table 3, row: PaO2:FiO2, Baseline"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 179.3,
+          "dispersion_type": "sd",
+          "dispersion": 75.1,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 179.3 § 75.1",
+            "location": "Table 3, row: PaO2:FiO2, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 149.7,
+          "dispersion_type": "sd",
+          "dispersion": 52.0,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 149.7 § 52.0",
+            "location": "Table 3, row: PaO2:FiO2, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 180.7,
+          "dispersion_type": "sd",
+          "dispersion": 40.5,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2:FiO2 180.7 § 40.5",
+            "location": "Table 3, row: PaO2:FiO2, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.388,
+          "provenance": {
+            "quote": "PaO2:FiO2 179.3 § 75.1 149.7 § 52.0 180.7 § 40.5 0.388",
+            "location": "Table 3, row: PaO2:FiO2, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PaO2:FiO2 179.3 § 75.1 149.7 § 52.0 180.7 § 40.5 0.388",
+        "location": "Table 3, row: PaO2:FiO2, 72h"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cts (ml/cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 33.5,
+          "dispersion_type": "sd",
+          "dispersion": 7.9,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 33.5 § 7.9",
+            "location": "Table 3, row: Cts, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 26.3,
+          "dispersion_type": "sd",
+          "dispersion": 8.2,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 26.3 § 8.2",
+            "location": "Table 3, row: Cts, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 28.6,
+          "dispersion_type": "sd",
+          "dispersion": 12.3,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 28.6 § 12.3",
+            "location": "Table 3, row: Cts, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.033,
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 33.5 § 7.9 26.3 § 8.2 28.6 § 12.3 0.033",
+            "location": "Table 3, row: Cts, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Cts (ml/cmH2O) 33.5 § 7.9 26.3 § 8.2 28.6 § 12.3 0.033",
+        "location": "Table 3, row: Cts, Baseline"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cts (ml/cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 22.0,
+          "dispersion_type": "sd",
+          "dispersion": 8.3,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 22.0 § 8.3",
+            "location": "Table 3, row: Cts, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 33.1,
+          "dispersion_type": "sd",
+          "dispersion": 7.8,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 33.1 § 7.8#",
+            "location": "Table 3, row: Cts, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 42.4,
+          "dispersion_type": "sd",
+          "dispersion": 9.3,
+          "unit": "ml/cmH2O",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 42.4 § 9.3*#",
+            "location": "Table 3, row: Cts, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.001,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "Cts (ml/cmH2O) 22.0 § 8.3 33.1 § 7.8# 42.4 § 9.3*# <0.001",
+            "location": "Table 3, row: Cts, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Cts (ml/cmH2O) 22.0 § 8.3 33.1 § 7.8# 42.4 § 9.3*# <0.001",
+        "location": "Table 3, row: Cts, 72h"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2 (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 84.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 64.0,
+          "dispersion_high": 102,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 84.5 (64.0, 102)",
+            "location": "Table 3, row: PaO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 64,
+          "dispersion_type": "iqr",
+          "dispersion_low": 50.5,
+          "dispersion_high": 72.6,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 64 (50.5, 72.6)",
+            "location": "Table 3, row: PaO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 62.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 44.2,
+          "dispersion_high": 101.7,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 62.5 (44.2, 101.7)",
+            "location": "Table 3, row: PaO2, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.093,
+          "provenance": {
+            "quote": "PaO2 (mmHg) 84.5 (64.0, 102) 64 (50.5, 72.6) 62.5 (44.2, 101.7) 0.093",
+            "location": "Table 3, row: PaO2, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PaO2 (mmHg) 84.5 (64.0, 102) 64 (50.5, 72.6) 62.5 (44.2, 101.7) 0.093",
+        "location": "Table 3, row: PaO2, Baseline"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2 (mmHg)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 99.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 85.1,
+          "dispersion_high": 109.9,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 99.2 (85.1, 109.9)",
+            "location": "Table 3, row: PaO2, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 89.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 71.6,
+          "dispersion_high": 98.3,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 89.5 (71.6, 98.3)",
+            "location": "Table 3, row: PaO2, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 81,
+          "dispersion_type": "iqr",
+          "dispersion_low": 67.6,
+          "dispersion_high": 102.8,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2 (mmHg) 81 (67.6, 102.8)",
+            "location": "Table 3, row: PaO2, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.215,
+          "provenance": {
+            "quote": "PaO2 (mmHg) 99.2 (85.1, 109.9) 89.5 (71.6, 98.3) 81 (67.6, 102.8) 0.215",
+            "location": "Table 3, row: PaO2, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PaO2 (mmHg) 99.2 (85.1, 109.9) 89.5 (71.6, 98.3) 81 (67.6, 102.8) 0.215",
+        "location": "Table 3, row: PaO2, 72h"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 1.0,
+          "dispersion_type": "none",
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 1.0",
+            "location": "Table 3, row: FiO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 1.0,
+          "dispersion_type": "none",
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 1.0",
+            "location": "Table 3, row: FiO2, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 1.0,
+          "dispersion_type": "none",
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 1.0",
+            "location": "Table 3, row: FiO2, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 1,
+          "provenance": {
+            "quote": "FiO2 1.0 1.0 1.0 1",
+            "location": "Table 3, row: FiO2, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "FiO2 1.0 1.0 1.0 1",
+        "location": "Table 3, row: FiO2, Baseline"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 0.59,
+          "dispersion_type": "sd",
+          "dispersion": 0.16,
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 0.59 § 0.16",
+            "location": "Table 3, row: FiO2, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 0.62,
+          "dispersion_type": "sd",
+          "dispersion": 0.15,
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 0.62 § 0.15",
+            "location": "Table 3, row: FiO2, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 0.49,
+          "dispersion_type": "sd",
+          "dispersion": 0.16,
+          "unit": "fraction",
+          "provenance": {
+            "quote": "FiO2 0.49 § 0.16",
+            "location": "Table 3, row: FiO2, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.163,
+          "provenance": {
+            "quote": "FiO2 0.59 § 0.16 0.62 § 0.15 0.49 § 0.16 0.163",
+            "location": "Table 3, row: FiO2, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "FiO2 0.59 § 0.16 0.62 § 0.15 0.49 § 0.16 0.163",
+        "location": "Table 3, row: FiO2, 72h"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP (cm of water)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 5,
+          "dispersion_type": "sd",
+          "dispersion": 0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 5 § 0",
+            "location": "Table 3, row: PEEP, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 5,
+          "dispersion_type": "sd",
+          "dispersion": 0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 5 § 0",
+            "location": "Table 3, row: PEEP, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 5,
+          "dispersion_type": "sd",
+          "dispersion": 0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 5 § 0",
+            "location": "Table 3, row: PEEP, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 1,
+          "provenance": {
+            "quote": "PEEP (cm of water) 5 § 0 5 § 0 5 § 0 1",
+            "location": "Table 3, row: PEEP, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PEEP (cm of water) 5 § 0 5 § 0 5 § 0 1",
+        "location": "Table 3, row: PEEP, Baseline"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP (cm of water)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 9,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 9 § 2",
+            "location": "Table 3, row: PEEP, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 10,
+          "dispersion_type": "sd",
+          "dispersion": 2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 10 § 2",
+            "location": "Table 3, row: PEEP, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cm of water) 12 § 3*",
+            "location": "Table 3, row: PEEP, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.009,
+          "provenance": {
+            "quote": "PEEP (cm of water) 9 § 2 10 § 2 12 § 3* 0.009",
+            "location": "Table 3, row: PEEP, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PEEP (cm of water) 9 § 2 10 § 2 12 § 3* 0.009",
+        "location": "Table 3, row: PEEP, 72h"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume (ml)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 416,
+          "dispersion_type": "iqr",
+          "dispersion_low": 384,
+          "dispersion_high": 454,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 416 (384, 454)",
+            "location": "Table 3, row: Tidal volume, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 407,
+          "dispersion_type": "iqr",
+          "dispersion_low": 366,
+          "dispersion_high": 463,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 407 (366, 463)",
+            "location": "Table 3, row: Tidal volume, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 385,
+          "dispersion_type": "iqr",
+          "dispersion_low": 325,
+          "dispersion_high": 470,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 385 (325, 470)",
+            "location": "Table 3, row: Tidal volume, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.631,
+          "provenance": {
+            "quote": "Tidal volume (ml) 416 (384, 454) 407 (366, 463) 385 (325, 470) 0.631",
+            "location": "Table 3, row: Tidal volume, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Tidal volume (ml) 416 (384, 454) 407 (366, 463) 385 (325, 470) 0.631",
+        "location": "Table 3, row: Tidal volume, Baseline"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume (ml)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 406,
+          "dispersion_type": "iqr",
+          "dispersion_low": 378,
+          "dispersion_high": 415,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 406 (378, 415)",
+            "location": "Table 3, row: Tidal volume, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 382,
+          "dispersion_type": "iqr",
+          "dispersion_low": 314,
+          "dispersion_high": 414,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 382 (314, 414)",
+            "location": "Table 3, row: Tidal volume, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 432,
+          "dispersion_type": "iqr",
+          "dispersion_low": 326,
+          "dispersion_high": 494,
+          "unit": "ml",
+          "provenance": {
+            "quote": "Tidal volume (ml) 432 (326, 494)",
+            "location": "Table 3, row: Tidal volume, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.217,
+          "provenance": {
+            "quote": "Tidal volume (ml) 406 (378, 415) 382 (314, 414) 432 (326, 494) 0.217",
+            "location": "Table 3, row: Tidal volume, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Tidal volume (ml) 406 (378, 415) 382 (314, 414) 432 (326, 494) 0.217",
+        "location": "Table 3, row: Tidal volume, 72h"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate (bpm)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "none",
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 12",
+            "location": "Table 3, row: Respiratory rate, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "none",
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 12",
+            "location": "Table 3, row: Respiratory rate, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "none",
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 12",
+            "location": "Table 3, row: Respiratory rate, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 1,
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 12 12 12 1",
+            "location": "Table 3, row: Respiratory rate, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Respiratory rate (bpm) 12 12 12 1",
+        "location": "Table 3, row: Respiratory rate, Baseline"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate (bpm)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 16 § 3",
+            "location": "Table 3, row: Respiratory rate, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 1,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 16 § 1",
+            "location": "Table 3, row: Respiratory rate, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "unit": "bpm",
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 16 § 3",
+            "location": "Table 3, row: Respiratory rate, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.963,
+          "provenance": {
+            "quote": "Respiratory rate (bpm) 16 § 3 16 § 1 16 § 3 0.963",
+            "location": "Table 3, row: Respiratory rate, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Respiratory rate (bpm) 16 § 3 16 § 1 16 § 3 0.963",
+        "location": "Table 3, row: Respiratory rate, 72h"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Peak inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 37.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 34.7,
+          "dispersion_high": 37.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 37.0 (34.7, 37.9)",
+            "location": "Table 3, row: Peak inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 34.4,
+          "dispersion_type": "iqr",
+          "dispersion_low": 28.1,
+          "dispersion_high": 38.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 34.4 (28.1, 38.3)",
+            "location": "Table 3, row: Peak inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 31.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 29.8,
+          "dispersion_high": 39.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 31.6 (29.8, 39.3)",
+            "location": "Table 3, row: Peak inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.482,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 37.0 (34.7, 37.9) 34.4 (28.1, 38.3) 31.6 (29.8, 39.3) 0.482",
+            "location": "Table 3, row: Peak inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Peak inspiratory pressure (cmH2O) 37.0 (34.7, 37.9) 34.4 (28.1, 38.3) 31.6 (29.8, 39.3) 0.482",
+        "location": "Table 3, row: Peak inspiratory pressure, Baseline"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Peak inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 28.2,
+          "dispersion_type": "iqr",
+          "dispersion_low": 26.5,
+          "dispersion_high": 29.6,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 28.2 (26.5, 29.6)",
+            "location": "Table 3, row: Peak inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 32.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 29.6,
+          "dispersion_high": 38.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 32.0 (29.6, 38.0)#",
+            "location": "Table 3, row: Peak inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 32.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 23.9,
+          "dispersion_high": 36.1,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 32.6 (23.9, 36.1)#",
+            "location": "Table 3, row: Peak inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.03,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cmH2O) 28.2 (26.5, 29.6) 32.0 (29.6, 38.0)# 32.6 (23.9, 36.1)# 0.030",
+            "location": "Table 3, row: Peak inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Peak inspiratory pressure (cmH2O) 28.2 (26.5, 29.6) 32.0 (29.6, 38.0)# 32.6 (23.9, 36.1)# 0.030",
+        "location": "Table 3, row: Peak inspiratory pressure, 72h"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mean airway pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 23.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 23.7 § 3.9",
+            "location": "Table 3, row: Mean airway pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 24.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.6,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 24.9 § 4.6",
+            "location": "Table 3, row: Mean airway pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 23.7,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 23.7 § 5.0",
+            "location": "Table 3, row: Mean airway pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.704,
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 23.7 § 3.9 24.9 § 4.6 23.7 § 5.0 0.704",
+            "location": "Table 3, row: Mean airway pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Mean airway pressure (cmH2O) 23.7 § 3.9 24.9 § 4.6 23.7 § 5.0 0.704",
+        "location": "Table 3, row: Mean airway pressure, Baseline"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mean airway pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 21.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 21.6 § 5.3",
+            "location": "Table 3, row: Mean airway pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 24.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 24.4 § 5.1",
+            "location": "Table 3, row: Mean airway pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 25.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 25.7 § 4.5",
+            "location": "Table 3, row: Mean airway pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.047,
+          "provenance": {
+            "quote": "Mean airway pressure (cmH2O) 21.6 § 5.3 24.4 § 5.1 25.7 § 4.5 0.047",
+            "location": "Table 3, row: Mean airway pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Mean airway pressure (cmH2O) 21.6 § 5.3 24.4 § 5.1 25.7 § 4.5 0.047",
+        "location": "Table 3, row: Mean airway pressure, 72h"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 24.2,
+          "dispersion_type": "sd",
+          "dispersion": 7.5,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 24.2 § 7.5",
+            "location": "Table 3, row: Plateau pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 29.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.6,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 29.7 § 6.6",
+            "location": "Table 3, row: Plateau pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 29.0,
+          "dispersion_type": "sd",
+          "dispersion": 12.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 29.0 § 12.7",
+            "location": "Table 3, row: Plateau pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.075,
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 24.2 § 7.5 29.7 § 6.6 29.0 § 12.7 0.075",
+            "location": "Table 3, row: Plateau pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Plateau pressure (cmH2O) 24.2 § 7.5 29.7 § 6.6 29.0 § 12.7 0.075",
+        "location": "Table 3, row: Plateau pressure, Baseline"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 21.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 21.8 § 5.7",
+            "location": "Table 3, row: Plateau pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 23.2,
+          "dispersion_type": "sd",
+          "dispersion": 5.8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 23.2 § 5.8",
+            "location": "Table 3, row: Plateau pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 24.7,
+          "dispersion_type": "sd",
+          "dispersion": 9.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 24.7 § 9.2",
+            "location": "Table 3, row: Plateau pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.435,
+          "provenance": {
+            "quote": "Plateau pressure (cmH2O) 21.8 § 5.7 23.2 § 5.8 24.7 § 9.2 0.435",
+            "location": "Table 3, row: Plateau pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Plateau pressure (cmH2O) 21.8 § 5.7 23.2 § 5.8 24.7 § 9.2 0.435",
+        "location": "Table 3, row: Plateau pressure, 72h"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Drive pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 19.3,
+          "dispersion_type": "sd",
+          "dispersion": 7.4,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 19.3 § 7.4",
+            "location": "Table 3, row: Drive pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 24.9,
+          "dispersion_type": "sd",
+          "dispersion": 6.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 24.9 § 6.7",
+            "location": "Table 3, row: Drive pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 24.1,
+          "dispersion_type": "sd",
+          "dispersion": 12.6,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 24.1 § 12.6",
+            "location": "Table 3, row: Drive pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.068,
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 19.3 § 7.4 24.9 § 6.7 24.1 § 12.6 0.068",
+            "location": "Table 3, row: Drive pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Drive pressure (cmH2O) 19.3 § 7.4 24.9 § 6.7 24.1 § 12.6 0.068",
+        "location": "Table 3, row: Drive pressure, Baseline"
+      }
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Drive pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 12.7,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 12.7 §5.3",
+            "location": "Table 3, row: Drive pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 12.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.1,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 12.5 § 4.1",
+            "location": "Table 3, row: Drive pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 12.6,
+          "dispersion_type": "sd",
+          "dispersion": 7.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 12.6 § 7.7",
+            "location": "Table 3, row: Drive pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.995,
+          "provenance": {
+            "quote": "Drive pressure (cmH2O) 12.7 §5.3 12.5 § 4.1 12.6 § 7.7 0.995",
+            "location": "Table 3, row: Drive pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Drive pressure (cmH2O) 12.7 §5.3 12.5 § 4.1 12.6 § 7.7 0.995",
+        "location": "Table 3, row: Drive pressure, 72h"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 8.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 8.3 § 3.0",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 7.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 7.9 § 2.9",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 9.8,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 9.8 § 2.8",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.282,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 8.3 § 3.0 7.9 § 2.9 9.8 § 2.8 0.282",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 8.3 § 3.0 7.9 § 2.9 9.8 § 2.8 0.282",
+        "location": "Table 3, row: Transpulmonary end-inspiratory pressure, Baseline"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 6.0,
+          "dispersion_type": "sd",
+          "dispersion": 2.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 6.0 § 2.3",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 6.2,
+          "dispersion_type": "sd",
+          "dispersion": 1.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 6.2 § 1.9",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 5.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 5.9 § 2.8",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.929,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 6.0 § 2.3 6.2 § 1.9 5.9 § 2.8 0.929",
+            "location": "Table 3, row: Transpulmonary end-inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Transpulmonary end-inspiratory pressure (cmH2O) 6.0 § 2.3 6.2 § 1.9 5.9 § 2.8 0.929",
+        "location": "Table 3, row: Transpulmonary end-inspiratory pressure, 72h"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-expiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": -0.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -0.9 § 2.9",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": -1.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -1.4 § 3.3",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": -0.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -0.4 § 2.7",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.775,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -0.9 § 2.9 -1.4 § 3.3 -0.4 § 2.7 0.775",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Transpulmonary end-expiratory pressure (cmH2O) -0.9 § 2.9 -1.4 § 3.3 -0.4 § 2.7 0.775",
+        "location": "Table 3, row: Transpulmonary end-expiratory pressure, Baseline"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-expiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": -1.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -1.2 § 2.9",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": -1.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -1.9 § 2.2",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 0.6,
+          "dispersion_type": "sd",
+          "dispersion": 1.6,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) 0.6 § 1.6",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.079,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cmH2O) -1.2 § 2.9 -1.9 § 2.2 0.6 § 1.6 0.079",
+            "location": "Table 3, row: Transpulmonary end-expiratory pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Transpulmonary end-expiratory pressure (cmH2O) -1.2 § 2.9 -1.9 § 2.2 0.6 § 1.6 0.079",
+        "location": "Table 3, row: Transpulmonary end-expiratory pressure, 72h"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 20.0,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 20.0§ 4.2",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 19.0,
+          "dispersion_type": "sd",
+          "dispersion": 3.9,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 19.0 § 3.9",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 21.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 21.3 § 3.5",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.443,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 20.0§ 4.2 19.0 § 3.9 21.3 § 3.5 0.443",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Esophageal end-inspiratory pressure (cmH2O) 20.0§ 4.2 19.0 § 3.9 21.3 § 3.5 0.443",
+        "location": "Table 3, row: Esophageal end-inspiratory pressure, Baseline"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-inspiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 18.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 18.4 § 2.0",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 19.3,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 19.3 § 2.2",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 20.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 20.4 § 2.2#",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.027,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cmH2O) 18.4 § 2.0 19.3 § 2.2 20.4 § 2.2# 0.027",
+            "location": "Table 3, row: Esophageal end-inspiratory pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Esophageal end-inspiratory pressure (cmH2O) 18.4 § 2.0 19.3 § 2.2 20.4 § 2.2# 0.027",
+        "location": "Table 3, row: Esophageal end-inspiratory pressure, 72h"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-expiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 17.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 17.5 § 5.0",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 16.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 16.5 § 4.8",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 19.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 19.7 § 4.8",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.303,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 17.5 § 5.0 16.5 § 4.8 19.7 § 4.8 0.303",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Esophageal end-expiratory pressure (cmH2O) 17.5 § 5.0 16.5 § 4.8 19.7 § 4.8 0.303",
+        "location": "Table 3, row: Esophageal end-expiratory pressure, Baseline"
+      }
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-expiratory pressure (cmH2O)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 14.6,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 14.6 § 3.2",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 16.6,
+          "dispersion_type": "sd",
+          "dispersion": 4.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 16.6 § 4.2",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 17.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 17.3 § 3.3",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.04,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cmH2O) 14.6 § 3.2 16.6 § 4.2 17.3 § 3.3 0.040",
+            "location": "Table 3, row: Esophageal end-expiratory pressure, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Esophageal end-expiratory pressure (cmH2O) 14.6 § 3.2 16.6 § 4.2 17.3 § 3.3 0.040",
+        "location": "Table 3, row: Esophageal end-expiratory pressure, 72h"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 2.69,
+          "dispersion_type": "sd",
+          "dispersion": 0.67,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 2.69 § 0.67",
+            "location": "Table 4, row: Cardiac index, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 2.46,
+          "dispersion_type": "sd",
+          "dispersion": 0.72,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 2.46 § 0.72",
+            "location": "Table 4, row: Cardiac index, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 2.42,
+          "dispersion_type": "sd",
+          "dispersion": 0.74,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 2.42 § 0.74",
+            "location": "Table 4, row: Cardiac index, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.402,
+          "provenance": {
+            "quote": "Cardiac index 2.69 § 0.67 2.46 § 0.72 2.42 § 0.74 0.402",
+            "location": "Table 4, row: Cardiac index, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Cardiac index 2.69 § 0.67 2.46 § 0.72 2.42 § 0.74 0.402",
+        "location": "Table 4, row: Cardiac index, Baseline"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "Cardiac index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 3.17,
+          "dispersion_type": "sd",
+          "dispersion": 0.68,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 3.17 § 0.68",
+            "location": "Table 4, row: Cardiac index, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 3.2,
+          "dispersion_type": "sd",
+          "dispersion": 0.57,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 3.20 § 0.57",
+            "location": "Table 4, row: Cardiac index, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 3.07,
+          "dispersion_type": "sd",
+          "dispersion": 0.63,
+          "unit": "L/min/m2",
+          "provenance": {
+            "quote": "Cardiac index 3.07 § 0.63",
+            "location": "Table 4, row: Cardiac index, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.892,
+          "provenance": {
+            "quote": "Cardiac index 3.17 § 0.68 3.20 § 0.57 3.07 § 0.63 0.892",
+            "location": "Table 4, row: Cardiac index, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Cardiac index 3.17 § 0.68 3.20 § 0.57 3.07 § 0.63 0.892",
+        "location": "Table 4, row: Cardiac index, 72h"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "LVEF(%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 52.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.3,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 52.7 § 6.3",
+            "location": "Table 4, row: LVEF, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 50.6,
+          "dispersion_type": "sd",
+          "dispersion": 6.8,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 50.6 § 6.8",
+            "location": "Table 4, row: LVEF, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 52.8,
+          "dispersion_type": "sd",
+          "dispersion": 10.1,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 52.8 § 10.1",
+            "location": "Table 4, row: LVEF, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.667,
+          "provenance": {
+            "quote": "LVEF(%) 52.7 § 6.3 50.6 § 6.8 52.8 § 10.1 0.667",
+            "location": "Table 4, row: LVEF, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "LVEF(%) 52.7 § 6.3 50.6 § 6.8 52.8 § 10.1 0.667",
+        "location": "Table 4, row: LVEF, Baseline"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "LVEF(%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 53.0,
+          "dispersion_type": "sd",
+          "dispersion": 8.4,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 53.0 § 8.4",
+            "location": "Table 4, row: LVEF, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 54.2,
+          "dispersion_type": "sd",
+          "dispersion": 7.9,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 54.2 § 7.9",
+            "location": "Table 4, row: LVEF, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 52.8,
+          "dispersion_type": "sd",
+          "dispersion": 8.2,
+          "unit": "%",
+          "provenance": {
+            "quote": "LVEF(%) 52.8 § 8.2",
+            "location": "Table 4, row: LVEF, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.894,
+          "provenance": {
+            "quote": "LVEF(%) 53.0 § 8.4 54.2 § 7.9 52.8 § 8.2 0.894",
+            "location": "Table 4, row: LVEF, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "LVEF(%) 53.0 § 8.4 54.2 § 7.9 52.8 § 8.2 0.894",
+        "location": "Table 4, row: LVEF, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Tei index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 0.32,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.32 § 0.04",
+            "location": "Table 4, row: Tei index, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 0.31,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.31 § 0.05",
+            "location": "Table 4, row: Tei index, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 0.33,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.33 § 0.05",
+            "location": "Table 4, row: Tei index, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.556,
+          "provenance": {
+            "quote": "Tei index 0.32 § 0.04 0.31 § 0.05 0.33 § 0.05 0.556",
+            "location": "Table 4, row: Tei index, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Tei index 0.32 § 0.04 0.31 § 0.05 0.33 § 0.05 0.556",
+        "location": "Table 4, row: Tei index, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Tei index",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 0.52,
+          "dispersion_type": "sd",
+          "dispersion": 0.13,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.52 § 0.13",
+            "location": "Table 4, row: Tei index, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 0.48,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.48 § 0.04",
+            "location": "Table 4, row: Tei index, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 0.41,
+          "dispersion_type": "sd",
+          "dispersion": 0.14,
+          "unit": "dimensionless",
+          "provenance": {
+            "quote": "Tei index 0.41 § 0.14",
+            "location": "Table 4, row: Tei index, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.068,
+          "provenance": {
+            "quote": "Tei index 0.52 § 0.13 0.48 § 0.04 0.41 § 0.14 0.068",
+            "location": "Table 4, row: Tei index, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Tei index 0.52 § 0.13 0.48 § 0.04 0.41 § 0.14 0.068",
+        "location": "Table 4, row: Tei index, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "TAPSE (mm)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 19.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 19.4 § 3.7",
+            "location": "Table 4, row: TAPSE, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 20.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 20.2 § 2.6",
+            "location": "Table 4, row: TAPSE, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 20.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 20.3 § 4.5",
+            "location": "Table 4, row: TAPSE, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.723,
+          "provenance": {
+            "quote": "TAPSE (mm) 19.4 § 3.7 20.2 § 2.6 20.3 § 4.5 0.723",
+            "location": "Table 4, row: TAPSE, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "TAPSE (mm) 19.4 § 3.7 20.2 § 2.6 20.3 § 4.5 0.723",
+        "location": "Table 4, row: TAPSE, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "TAPSE (mm)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 14.1,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 14.1 § 2.4",
+            "location": "Table 4, row: TAPSE, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 15.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 15.5 § 2.5",
+            "location": "Table 4, row: TAPSE, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 17.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.4,
+          "unit": "mm",
+          "provenance": {
+            "quote": "TAPSE (mm) 17.6 § 2.4#",
+            "location": "Table 4, row: TAPSE, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.001,
+          "p_value_verbatim": "<0.001",
+          "provenance": {
+            "quote": "TAPSE (mm) 14.1 § 2.4 15.5 § 2.5 17.6 § 2.4# <0.001",
+            "location": "Table 4, row: TAPSE, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "TAPSE (mm) 14.1 § 2.4 15.5 § 2.5 17.6 § 2.4# <0.001",
+        "location": "Table 4, row: TAPSE, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "RVFAC (%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 63.3,
+          "dispersion_type": "sd",
+          "dispersion": 9.2,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 63.3 § 9.2",
+            "location": "Table 4, row: RVFAC, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 63.5,
+          "dispersion_type": "sd",
+          "dispersion": 8.2,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 63.5 § 8.2",
+            "location": "Table 4, row: RVFAC, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 65.7,
+          "dispersion_type": "sd",
+          "dispersion": 6.9,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 65.7 § 6.9",
+            "location": "Table 4, row: RVFAC, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.741,
+          "provenance": {
+            "quote": "RVFAC (%) 63.3 § 9.2 63.5 § 8.2 65.7 § 6.9 0.741",
+            "location": "Table 4, row: RVFAC, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RVFAC (%) 63.3 § 9.2 63.5 § 8.2 65.7 § 6.9 0.741",
+        "location": "Table 4, row: RVFAC, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "RVFAC (%)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 48.7,
+          "dispersion_type": "sd",
+          "dispersion": 12.6,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 48.7 § 12.6",
+            "location": "Table 4, row: RVFAC, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 49.5,
+          "dispersion_type": "sd",
+          "dispersion": 5.3,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 49.5 §5.3",
+            "location": "Table 4, row: RVFAC, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 58.2,
+          "dispersion_type": "sd",
+          "dispersion": 5.9,
+          "unit": "%",
+          "provenance": {
+            "quote": "RVFAC (%) 58.2 § 5.9#",
+            "location": "Table 4, row: RVFAC, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.049,
+          "provenance": {
+            "quote": "RVFAC (%) 48.7 § 12.6 49.5 §5.3 58.2 § 5.9# 0.049",
+            "location": "Table 4, row: RVFAC, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RVFAC (%) 48.7 § 12.6 49.5 §5.3 58.2 § 5.9# 0.049",
+        "location": "Table 4, row: RVFAC, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "TAM (cm/s)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 15.2,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 15.2 § 2.6",
+            "location": "Table 4, row: TAM, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 15.9,
+          "dispersion_type": "sd",
+          "dispersion": 2.2,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 15.9 § 2.2",
+            "location": "Table 4, row: TAM, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 14.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.0,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 14.8 § 4.0",
+            "location": "Table 4, row: TAM, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.614,
+          "provenance": {
+            "quote": "TAM (cm/s) 15.2 § 2.6 15.9 § 2.2 14.8 § 4.0 0.614",
+            "location": "Table 4, row: TAM, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "TAM (cm/s) 15.2 § 2.6 15.9 § 2.2 14.8 § 4.0 0.614",
+        "location": "Table 4, row: TAM, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "TAM (cm/s)",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 11.7,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 11.7 § 2.9",
+            "location": "Table 4, row: TAM, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 13.0,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 13.0 §2.1",
+            "location": "Table 4, row: TAM, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 13.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "unit": "cm/s",
+          "provenance": {
+            "quote": "TAM (cm/s) 13.7 § 3.5",
+            "location": "Table 4, row: TAM, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.102,
+          "provenance": {
+            "quote": "TAM (cm/s) 11.7 § 2.9 13.0 §2.1 13.7 § 3.5 0.102",
+            "location": "Table 4, row: TAM, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "TAM (cm/s) 11.7 § 2.9 13.0 §2.1 13.7 § 3.5 0.102",
+        "location": "Table 4, row: TAM, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Inferior vena cava variability",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 31.8,
+          "dispersion_type": "sd",
+          "dispersion": 13.7,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 31.8 § 13.7",
+            "location": "Table 4, row: Inferior vena cava variability, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 22.4,
+          "dispersion_type": "sd",
+          "dispersion": 12.7,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 22.4 § 12.7",
+            "location": "Table 4, row: Inferior vena cava variability, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 28.6,
+          "dispersion_type": "sd",
+          "dispersion": 12.1,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 28.6 § 12.1",
+            "location": "Table 4, row: Inferior vena cava variability, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.106,
+          "provenance": {
+            "quote": "Inferior vena cava variability 31.8 § 13.7 22.4 § 12.7 28.6 § 12.1 0.106",
+            "location": "Table 4, row: Inferior vena cava variability, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Inferior vena cava variability 31.8 § 13.7 22.4 § 12.7 28.6 § 12.1 0.106",
+        "location": "Table 4, row: Inferior vena cava variability, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Inferior vena cava variability",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 25.4,
+          "dispersion_type": "sd",
+          "dispersion": 10.8,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 25.4 § 10.8",
+            "location": "Table 4, row: Inferior vena cava variability, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 20.0,
+          "dispersion_type": "sd",
+          "dispersion": 13.1,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 20.0 § 13.1",
+            "location": "Table 4, row: Inferior vena cava variability, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 23.9,
+          "dispersion_type": "sd",
+          "dispersion": 9.9,
+          "unit": "%",
+          "provenance": {
+            "quote": "Inferior vena cava variability 23.9 § 9.9",
+            "location": "Table 4, row: Inferior vena cava variability, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.357,
+          "provenance": {
+            "quote": "Inferior vena cava variability 25.4 § 10.8 20.0 § 13.1 23.9 § 9.9 0.357",
+            "location": "Table 4, row: Inferior vena cava variability, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Inferior vena cava variability 25.4 § 10.8 20.0 § 13.1 23.9 § 9.9 0.357",
+        "location": "Table 4, row: Inferior vena cava variability, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "RVEDA",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 10.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.4,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 10.3 § 3.4",
+            "location": "Table 4, row: RVEDA, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 10.5,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 10.5 § 3.2",
+            "location": "Table 4, row: RVEDA, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 9.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.7,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 9.5 § 2.7",
+            "location": "Table 4, row: RVEDA, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.761,
+          "provenance": {
+            "quote": "RVEDA 10.3 § 3.4 10.5 § 3.2 9.5 § 2.7 0.761",
+            "location": "Table 4, row: RVEDA, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RVEDA 10.3 § 3.4 10.5 § 3.2 9.5 § 2.7 0.761",
+        "location": "Table 4, row: RVEDA, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "RVEDA",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "mean",
+          "value": 12.6,
+          "dispersion_type": "sd",
+          "dispersion": 2.9,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 12.6 § 2.9",
+            "location": "Table 4, row: RVEDA, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "mean",
+          "value": 11.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.5,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 11.5 § 2.5",
+            "location": "Table 4, row: RVEDA, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "mean",
+          "value": 11.4,
+          "dispersion_type": "sd",
+          "dispersion": 2.1,
+          "unit": "cm2",
+          "provenance": {
+            "quote": "RVEDA 11.4 § 2.1",
+            "location": "Table 4, row: RVEDA, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.291,
+          "provenance": {
+            "quote": "RVEDA 12.6 § 2.9 11.5 § 2.5 11.4 § 2.1 0.291",
+            "location": "Table 4, row: RVEDA, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RVEDA 12.6 § 2.9 11.5 § 2.5 11.4 § 2.1 0.291",
+        "location": "Table 4, row: RVEDA, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "R/L",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 0.59,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.58,
+          "dispersion_high": 0.63,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.59 (0.58, 0.63)",
+            "location": "Table 4, row: R/L, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 0.6,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.54,
+          "dispersion_high": 0.64,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.60 (0.54, 0.64)",
+            "location": "Table 4, row: R/L, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 0.58,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.53,
+          "dispersion_high": 0.67,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.58 (0.53, 0.67)",
+            "location": "Table 4, row: R/L, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.899,
+          "provenance": {
+            "quote": "R/L 0.59 (0.58, 0.63) 0.60 (0.54, 0.64) 0.58 (0.53, 0.67) 0.899",
+            "location": "Table 4, row: R/L, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "R/L 0.59 (0.58, 0.63) 0.60 (0.54, 0.64) 0.58 (0.53, 0.67) 0.899",
+        "location": "Table 4, row: R/L, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "R/L",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 0.69,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.62,
+          "dispersion_high": 0.75,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.69 (0.62, 0.75)",
+            "location": "Table 4, row: R/L, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 0.65,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.59,
+          "dispersion_high": 0.69,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.65 (0.59, 0.69)",
+            "location": "Table 4, row: R/L, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 0.67,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.62,
+          "dispersion_high": 0.7,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "R/L 0.67 (0.62, 0.7)",
+            "location": "Table 4, row: R/L, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.34,
+          "provenance": {
+            "quote": "R/L 0.69 (0.62, 0.75) 0.65 (0.59, 0.69) 0.67 (0.62, 0.7) 0.340",
+            "location": "Table 4, row: R/L, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "R/L 0.69 (0.62, 0.75) 0.65 (0.59, 0.69) 0.67 (0.62, 0.7) 0.340",
+        "location": "Table 4, row: R/L, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "E/A",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 0.94,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.91,
+          "dispersion_high": 1.01,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 0.94 (0.91, 1.01)",
+            "location": "Table 4, row: E/A, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 0.92,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.74,
+          "dispersion_high": 1.1,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 0.92 (0.74, 1.10)",
+            "location": "Table 4, row: E/A, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 1.08,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.91,
+          "dispersion_high": 1.17,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 1.08 (0.91, 1.17)",
+            "location": "Table 4, row: E/A, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.095,
+          "provenance": {
+            "quote": "E/A 0.94 (0.91, 1.01) 0.92 (0.74, 1.10) 1.08 (0.91, 1.17) 0.095",
+            "location": "Table 4, row: E/A, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "E/A 0.94 (0.91, 1.01) 0.92 (0.74, 1.10) 1.08 (0.91, 1.17) 0.095",
+        "location": "Table 4, row: E/A, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "E/A",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 0.74,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.7,
+          "dispersion_high": 0.8,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 0.74 (0.70, 0.80)",
+            "location": "Table 4, row: E/A, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 0.84,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.73,
+          "dispersion_high": 0.96,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 0.84 (0.73, 0.96)",
+            "location": "Table 4, row: E/A, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 0.92,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.71,
+          "dispersion_high": 1.03,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/A 0.92 (0.71, 1.03)",
+            "location": "Table 4, row: E/A, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.046,
+          "provenance": {
+            "quote": "E/A 0.74 (0.70, 0.80) 0.84 (0.73, 0.96) 0.92 (0.71, 1.03) 0.046",
+            "location": "Table 4, row: E/A, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "E/A 0.74 (0.70, 0.80) 0.84 (0.73, 0.96) 0.92 (0.71, 1.03) 0.046",
+        "location": "Table 4, row: E/A, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "E/e",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Baseline"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 5.07,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.32,
+          "dispersion_high": 6.04,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 5.07 (4.32, 6.04)",
+            "location": "Table 4, row: E/e, Baseline"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 5.39,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.63,
+          "dispersion_high": 8.08,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 5.39 (4.63, 8.08)",
+            "location": "Table 4, row: E/e, Baseline"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 5.67,
+          "dispersion_type": "iqr",
+          "dispersion_low": 5.04,
+          "dispersion_high": 6.81,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 5.67 (5.04, 6.81)",
+            "location": "Table 4, row: E/e, Baseline"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.407,
+          "provenance": {
+            "quote": "E/e 5.07 (4.32, 6.04) 5.39 (4.63, 8.08) 5.67 (5.04, 6.81) 0.407",
+            "location": "Table 4, row: E/e, Baseline"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "E/e 5.07 (4.32, 6.04) 5.39 (4.63, 8.08) 5.67 (5.04, 6.81) 0.407",
+        "location": "Table 4, row: E/e, Baseline"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "E/e",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 3,
+        "label_verbatim": "72h"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "g",
+          "value_type": "median",
+          "value": 6.24,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.9,
+          "dispersion_high": 7.03,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 6.24 (4.90, 7.03)",
+            "location": "Table 4, row: E/e, 72h"
+          }
+        },
+        {
+          "arm_label": "dpo",
+          "value_type": "median",
+          "value": 5.08,
+          "dispersion_type": "iqr",
+          "dispersion_low": 3.96,
+          "dispersion_high": 6.19,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 5.08 (3.96, 6.19)",
+            "location": "Table 4, row: E/e, 72h"
+          }
+        },
+        {
+          "arm_label": "tpo",
+          "value_type": "median",
+          "value": 5.27,
+          "dispersion_type": "iqr",
+          "dispersion_low": 4.38,
+          "dispersion_high": 5.55,
+          "unit": "ratio",
+          "provenance": {
+            "quote": "E/e 5.27 (4.38, 5.55)",
+            "location": "Table 4, row: E/e, 72h"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.172,
+          "provenance": {
+            "quote": "E/e 6.24 (4.90, 7.03) 5.08 (3.96, 6.19) 5.27 (4.38, 5.55) 0.172",
+            "location": "Table 4, row: E/e, 72h"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "E/e 6.24 (4.90, 7.03) 5.08 (3.96, 6.19) 5.27 (4.38, 5.55) 0.172",
+        "location": "Table 4, row: E/e, 72h"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Right heart systolic dysfunction",
+      "definition_verbatim": "Right ventricular systolic dysfunction was defined as TAPSE < 16 mm",
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "during ICU stay"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "odds_ratio",
+          "value": 0.03,
+          "ci_low": 0.0,
+          "ci_high": 0.07,
+          "ci_level": 95,
+          "p_value": 0.029,
+          "adjusted": true,
+          "adjustment_covariates": "PEEP titration methods, Vt, Pmean, compliance, PEEP, respiratory rate, PaCO2, pH, driving pressure and transpulmonary pressure end-inspiratory",
+          "test_used": "Multivariate logistic regression (backward stepwise)",
+          "provenance": {
+            "quote": "titration method (OR=0.03, 95%CI 0.00-0.07, p=0.029) and compliance (OR=0.85, 95%CI 0.74-0.97, p=0.020)",
+            "location": "Results, Statistical analysis, para 3"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Stepwise regression analysis showed that the following variables were independent predictors of right heart systolic dysfunction: titration method (OR=0.03, 95%CI 0.00-0.07, p=0.029) and compliance (OR=0.85, 95%CI 0.74-0.97, p=0.020)",
+        "location": "Results, Statistical analysis, para 3"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp",
+      "absolute_zero_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS subgroup: all patients met Berlin definition. Obesity: no BMI reported, weight mean 64.1 kg, not obese. Timing: intervention starts at enrolment; unclear relative to intubation. PTP target: end-expiratory Ptp 0-10 and end-inspiratory <25 cmH2O, so both absolute positive and zero ranges."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No check performed as no known cohort clusters in COHORTS.md mention dong_2023. This appears to be a unique single-center cohort.",
+    "unclear_items": [
+      "Sex per arm: Table 2 reports male counts only; female counts not reported per arm, so baseline_by_arm.sex_female is null. Overall female count derived from '24 female' in Results.",
+      "ARDS severity counts: text says '28 moderate and 31 severe' but Table 2 sums to 7 mild, 28 moderate, 27 severe. We used Table 2 as authoritative and derived totals.",
+      "Table 4: The results text states 'A higher but not significantly different cardiac index ... after 72 h ... (p=0.402)' but Table 4 shows p=0.892 for 72h and p=0.402 for baseline. We recorded table values.",
+      "Primary endpoint (incidence of right heart dysfunction) is defined but no frequency is reported; only continuous echo parameters and logistic regression ORs are given.",
+      "No information on randomization, allocation concealment, or blinding.",
+      "Sample size calculation not reported.",
+      "balloon_calibration method coded as 'signal_quality_verification_only' because fixed 1.5 mL volume with an occlusion test for position; no formal balloon filling calibration."
+    ],
+    "data_only_in_figure": [
+      "Figure 3 contains OR (95% CI) for right heart diastolic dysfunction, RV dilation, and ACP not fully reported in text; not extracted."
+    ],
+    "contact_author_needed": false,
+    "general_notes": "Study compares three PEEP titration strategies; the transpulmonary pressure-oriented (TPO) group is the esophageal balloon-guided intervention. The G group is ARDSnet low PEEP table, DPO group is driving pressure-guided. All groups are non-randomized."
+  }
+}

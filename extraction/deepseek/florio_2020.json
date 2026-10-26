@@ -1,0 +1,1704 @@
+{
+  "record_meta": {
+    "study_id": "florio_2020",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/a-lung-rescue-team-improves-survival-in-obesity-with-acute-respi-2020.pdf",
+    "schema_version": "1.2.0"
+  },
+  "citation": {
+    "first_author": "Florio",
+    "year": 2020,
+    "title": "A lung rescue team improves survival in obesity with acute respiratory distress syndrome",
+    "journal": "Critical Care",
+    "doi": "10.1186/s13054-019-2709-x",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Adult patients (≥18 years of age) with the following entry criteria were enrolled",
+          "location": "Methods, Patients and measurements, para 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "mechanical ventilation for > 48 h",
+          "location": "Methods, Patients and measurements, para 1"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "admission to MGH surgical or medical ICU",
+          "location": "Methods, Patients and measurements, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Within 24 h after initiation of mechanical ventilation, the lung rescue team performed esophageal manometry, LRM, and a decremental PEEP trial.",
+          "location": "Results, Ventilation settings, para 2"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The primary outcome was mortality at 28 days",
+          "location": "Methods, Statistical analysis, para 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The standard protocol-based cohort included 70 patients... and the lung rescue team cohort included 50 patients",
+          "location": "Abstract, Results"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "In this retrospective study, we enrolled adults admitted to the ICU from 2012 to 2017",
+          "location": "Methods, Patients and measurements, para 2"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A lung rescue team improves survival in obesity with acute respiratory distress syndrome",
+          "location": "Title"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "retrospective_cohort",
+    "study_design_verbatim": {
+      "value": "In this retrospective study, we enrolled adults admitted to the ICU from 2012 to 2017 who had class III obesity and ARDS and received mechanical ventilation for > 48 h.",
+      "provenance": {
+        "quote": "In this retrospective study, we enrolled adults admitted to the ICU from 2012 to 2017 who had class III obesity and ARDS and received mechanical ventilation for > 48 h.",
+        "location": "Methods, Patients and measurements, para 2"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": false,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "admission to MGH surgical or medical ICU",
+        "location": "Methods, Patients and measurements, para 1"
+      }
+    },
+    "countries": [
+      "USA"
+    ],
+    "location_provenance": {
+      "quote": "Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital, Harvard Medical School, 55 Fruit Street, Boston, MA 02141, USA",
+      "location": "Author details, affiliation 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": {
+      "value": "an a priori sample size calculation was not performed",
+      "provenance": {
+        "quote": "an a priori sample size calculation was not performed",
+        "location": "Methods, Statistical analysis, para 2"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "MGH surgical or medical ICU",
+      "provenance": {
+        "quote": "admission to MGH surgical or medical ICU",
+        "location": "Methods, Patients and measurements, para 1"
+      }
+    },
+    "enrolment_start": "2012-01",
+    "enrolment_end": "2017-12",
+    "consecutive_enrolment": true,
+    "funding_source": {
+      "value": "The study was funded by the Department of Anesthesia, Critical Care and Pain Medicine at Massachusetts General Hospital, Boston MA, USA. Dr. Lorenzo Berra was supported in part by NIH/NHLBI grant No. 1 K23 HL128882-01A1.",
+      "provenance": {
+        "quote": "The study was funded by the Department of Anesthesia, Critical Care and Pain Medicine at Massachusetts General Hospital, Boston MA, USA. Dr. Lorenzo Berra was supported in part by NIH/NHLBI grant No. 1 K23 HL128882-01A1.",
+        "location": "Funding section"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 120,
+      "derived": true,
+      "derivation": "70 standard protocol-based + 50 lung rescue team = 120 total",
+      "provenance": {
+        "quote": "The standard protocol-based cohort included 70 patients (BMI = 49 ± 9 kg/m2), and the lung rescue team cohort included 50 patients (BMI = 54 ± 13 kg/m2).",
+        "location": "Abstract, Results"
+      }
+    },
+    "n_analysed": {
+      "value": 120,
+      "derived": true,
+      "derivation": "Data from all patients admitted to the ICU that met inclusion criteria were collected and included in the analysis; so 70+50=120 analysed.",
+      "provenance": {
+        "quote": "Data from all patients admitted to the ICU that met inclusion criteria were collected and included in the analysis",
+        "location": "Methods, Statistical analysis, para 2"
+      }
+    },
+    "population_description": {
+      "value": "adults admitted to the ICU from 2012 to 2017 who had class III obesity and ARDS and received mechanical ventilation for > 48 h",
+      "provenance": {
+        "quote": "adults admitted to the ICU from 2012 to 2017 who had class III obesity and ARDS and received mechanical ventilation for > 48 h",
+        "location": "Abstract, Methods"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Adult patients (≥18 years of age) with the following entry criteria were enrolled: (I) class III obesity (BMI > 40 kg/m2), (II) diagnosis of ARDS [4], (III) mechanical ventilation for > 48 h, and (IV) admission to MGH surgical or medical ICU from January 1, 2012, to December 31, 2017.",
+      "provenance": {
+        "quote": "Adult patients (≥18 years of age) with the following entry criteria were enrolled: (I) class III obesity (BMI > 40 kg/m2), (II) diagnosis of ARDS [4], (III) mechanical ventilation for > 48 h, and (IV) admission to MGH surgical or medical ICU from January 1, 2012, to December 31, 2017.",
+        "location": "Methods, Patients and measurements, para 1"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "None of these patients participated in any MGH ARDS ongoing interventional trials.",
+      "provenance": {
+        "quote": "None of these patients participated in any MGH ARDS ongoing interventional trials.",
+        "location": "Methods, Patients and measurements, para 1"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "Berlin Definition",
+      "provenance": {
+        "quote": "diagnosis of ARDS [4]",
+        "location": "Methods, Patients and measurements, para 1"
+      }
+    },
+    "n_ards": {
+      "n": 120,
+      "total": 120,
+      "derived": true,
+      "derivation": "All enrolled patients had ARDS by inclusion criteria II; 70+50=120.",
+      "provenance": {
+        "quote": "adults admitted to the ICU from 2012 to 2017 who had class III obesity and ARDS",
+        "location": "Abstract, Methods"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "none",
+    "cause_of_respiratory_failure": null,
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [],
+    "baseline_by_arm": [
+      {
+        "arm_label": "standard_protocol",
+        "n": {
+          "value": 70,
+          "provenance": {
+            "quote": "Patients, n (%) 70 (100)",
+            "location": "Table 1, row: Patients, n (%)"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 57,
+          "dispersion_type": "sd",
+          "dispersion": 13,
+          "provenance": {
+            "quote": "Age, years, mean (SD) 57 (13)",
+            "location": "Table 1, row: Age, years"
+          }
+        },
+        "sex_female": {
+          "n": 37,
+          "total": 70,
+          "percent_as_reported": 53,
+          "provenance": {
+            "quote": "Women, n (%) 37 (53)",
+            "location": "Table 1, row: Women, n (%)"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 49,
+          "dispersion_type": "sd",
+          "dispersion": 9,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2, mean (SD) 49 (9)",
+            "location": "Table 1, row: BMI"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 197,
+          "dispersion_type": "ci95",
+          "dispersion_low": 177,
+          "dispersion_high": 217,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg, mean (CI95%) 197 (177–217)",
+            "location": "Table 2, row: PaO2/FiO2, Day 1"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 19,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "provenance": {
+            "quote": "APACHE II, mean (SD) 19 (7)",
+            "location": "Table 1, row: APACHE II"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 9.9,
+          "dispersion_type": "sd",
+          "dispersion": 3.6,
+          "provenance": {
+            "quote": "SOFA, mean (SD) 9.9 (3.6)",
+            "location": "Table 1, row: SOFA"
+          }
+        }
+      },
+      {
+        "arm_label": "lung_rescue_team",
+        "n": {
+          "value": 50,
+          "provenance": {
+            "quote": "Patients, n (%) 50 (100)",
+            "location": "Table 1, row: Patients, n (%)"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 52,
+          "dispersion_type": "sd",
+          "dispersion": 14,
+          "provenance": {
+            "quote": "Age, years, mean (SD) 52 (14)",
+            "location": "Table 1, row: Age, years"
+          }
+        },
+        "sex_female": {
+          "n": 23,
+          "total": 50,
+          "percent_as_reported": 46,
+          "provenance": {
+            "quote": "Women, n (%) 23 (46)",
+            "location": "Table 1, row: Women, n (%)"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 54,
+          "dispersion_type": "sd",
+          "dispersion": 13,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2, mean (SD) 54 (13)",
+            "location": "Table 1, row: BMI"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 154,
+          "dispersion_type": "ci95",
+          "dispersion_low": 127,
+          "dispersion_high": 179,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg, mean (CI95%) 154 (127–179)",
+            "location": "Table 2, row: PaO2/FiO2, Day 1"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 19,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "provenance": {
+            "quote": "APACHE II, mean (SD) 19 (8)",
+            "location": "Table 1, row: APACHE II"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 9.8,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "provenance": {
+            "quote": "SOFA, mean (SD) 9.8 (3.5)",
+            "location": "Table 1, row: SOFA"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "not_reported",
+      "method_verbatim": {
+        "value": "end-expiratory transpulmonary pressure measurements",
+        "provenance": {
+          "quote": "matching information from decremental PEEP trial, end-expiratory transpulmonary pressure measurements",
+          "location": "Methods, Interventions, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "other",
+      "strategy_verbatim": {
+        "value": "mechanical ventilation was accurately titrated using LRM and choosing the correct value of PEEP matching information from decremental PEEP trial, end-expiratory transpulmonary pressure measurements, and the use of electrical impedance tomography",
+        "provenance": {
+          "quote": "mechanical ventilation was accurately titrated using LRM and choosing the correct value of PEEP matching information from decremental PEEP trial, end-expiratory transpulmonary pressure measurements, and the use of electrical impedance tomography.",
+          "location": "Methods, Interventions, para 2"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "The lung rescue team evaluated patients within the first day from the beginning of mechanical ventilation. Within 24 h after initiation of mechanical ventilation, the lung rescue team performed esophageal manometry, LRM, and a decremental PEEP trial.",
+        "provenance": {
+          "quote": "The lung rescue team evaluated patients within the first day from the beginning of mechanical ventilation. ... Within 24 h after initiation of mechanical ventilation, the lung rescue team performed esophageal manometry, LRM, and a decremental PEEP trial.",
+          "location": "Methods, Interventions, para 2; Results, Ventilation settings, para 2"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "The lung rescue team used lung recruitment maneuvers (LRM) and a decremental PEEP trial.",
+        "provenance": {
+          "quote": "the lung rescue team performed esophageal manometry, LRM, and a decremental PEEP trial",
+          "location": "Results, Ventilation settings, para 2"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "tidal volumes of 4–8 mL/kg of predicted body weight",
+        "provenance": {
+          "quote": "tidal volumes of 4–8 mL/kg of predicted body weight",
+          "location": "Methods, Interventions, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "plateau pressure of < 28 cmH2O",
+        "provenance": {
+          "quote": "plateau pressure of < 28 cmH2O",
+          "location": "Methods, Interventions, para 1"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": null
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "within 24 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Within 24 h after initiation of mechanical ventilation, the lung rescue team performed esophageal manometry",
+          "location": "Results, Ventilation settings, para 2"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "For the standard protocol-based cohort, ventilation of patients with class III obesity was managed using ARDSnet PEEP/FiO2 tables. Due to the absence of benefit associated with the higher PEEP/lower FiO2 table, the lower PEEP/higher FiO2 table was used.",
+      "provenance": {
+        "quote": "For the standard protocol-based cohort, ventilation of patients with class III obesity was managed using ARDSnet PEEP/FiO2 tables. Due to the absence of benefit associated with the higher PEEP/lower FiO2 table, the lower PEEP/higher FiO2 table was used.",
+        "location": "Methods, Interventions, para 1"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "standard_protocol",
+      "label_verbatim": "Standard protocol-based cohort",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 70,
+        "provenance": {
+          "quote": "From 2012 to 2014, 70 ARDS patients (BMI = 49 ± 9 kg/m2) were managed according to a standard protocol-based approach.",
+          "location": "Results, Patient characteristics, para 1"
+        }
+      },
+      "n_analysed": {
+        "value": 70,
+        "provenance": {
+          "quote": "Data from all patients admitted to the ICU that met inclusion criteria were collected and included in the analysis",
+          "location": "Methods, Statistical analysis, para 2"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "lung_rescue_team",
+      "label_verbatim": "Lung rescue team cohort",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 50,
+        "provenance": {
+          "quote": "From 2015 to 2017, 50 ARDS patients (BMI = 54 ± 13 kg/m2) were managed by the lung rescue team.",
+          "location": "Results, Patient characteristics, para 1"
+        }
+      },
+      "n_analysed": {
+        "value": 50,
+        "provenance": {
+          "quote": "Data from all patients admitted to the ICU that met inclusion criteria were collected and included in the analysis",
+          "location": "Methods, Statistical analysis, para 2"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "ICU mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "icu_discharge",
+        "label_verbatim": "ICU mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 24,
+          "total": 70,
+          "provenance": {
+            "quote": "ICU mortality, n (%) — 24/70 (34)",
+            "location": "Table 3, row: ICU mortality, n (%)"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 9,
+          "total": 50,
+          "provenance": {
+            "quote": "ICU mortality, n (%) — 9/50 (18)",
+            "location": "Table 3, row: ICU mortality, n (%)"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.29,
+          "ci_low": 0.12,
+          "ci_high": 0.67,
+          "ci_level": 95,
+          "p_value": 0.004,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "ICU mortality, n (%) — 24/70 (34) — 9/50 (18) — 0.004 — 0.29 (0.12–0.67)",
+            "location": "Table 3, row: ICU mortality, n (%)"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ICU mortality, n (%) — 24/70 (34) — 9/50 (18) — 0.004 — 0.29 (0.12–0.67)",
+        "location": "Table 3, row: ICU mortality, n (%)"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Hospital mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "hospital_discharge",
+        "label_verbatim": "Hospital mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 29,
+          "total": 70,
+          "provenance": {
+            "quote": "Hospital mortality, n (%) — 29/70 (41)",
+            "location": "Table 3, row: Hospital mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 9,
+          "total": 50,
+          "provenance": {
+            "quote": "Hospital mortality, n (%) — 9/50 (18)",
+            "location": "Table 3, row: Hospital mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.22,
+          "ci_low": 0.1,
+          "ci_high": 0.51,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "Hospital mortality, n (%) — 29/70 (41) — 9/50 (18) — < 0.001 — 0.22 (0.10–0.51)",
+            "location": "Table 3, row: Hospital mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Hospital mortality, n (%) — 29/70 (41) — 9/50 (18) — < 0.001 — 0.22 (0.10–0.51)",
+        "location": "Table 3, row: Hospital mortality"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-day mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-day mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 22,
+          "total": 70,
+          "provenance": {
+            "quote": "28-day mortality, n (%) — 22/70 (31)",
+            "location": "Table 3, row: 28-day mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 8,
+          "total": 50,
+          "provenance": {
+            "quote": "28-day mortality, n (%) — 8/50 (16)",
+            "location": "Table 3, row: 28-day mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.31,
+          "ci_low": 0.13,
+          "ci_high": 0.78,
+          "ci_level": 95,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "28-day mortality, n (%) — 22/70 (31) — 8/50 (16) — 0.001 — 0.31 (0.13–0.78)",
+            "location": "Table 3, row: 28-day mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "28-day mortality, n (%) — 22/70 (31) — 8/50 (16) — 0.001 — 0.31 (0.13–0.78)",
+        "location": "Table 3, row: 28-day mortality"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "3-month mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 90,
+        "label_verbatim": "3-month mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 29,
+          "total": 70,
+          "provenance": {
+            "quote": "3-month mortality, n (%) — 29/70 (41)",
+            "location": "Table 3, row: 3-month mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 11,
+          "total": 50,
+          "provenance": {
+            "quote": "3-month mortality, n (%) — 11/50 (22)",
+            "location": "Table 3, row: 3-month mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.35,
+          "ci_low": 0.16,
+          "ci_high": 0.74,
+          "ci_level": 95,
+          "p_value": 0.006,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "3-month mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+            "location": "Table 3, row: 3-month mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "3-month mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+        "location": "Table 3, row: 3-month mortality"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "6-month mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 180,
+        "label_verbatim": "6-month mortality"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 29,
+          "total": 70,
+          "provenance": {
+            "quote": "6-month mortality, n (%) — 29/70 (41)",
+            "location": "Table 3, row: 6-month mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 11,
+          "total": 50,
+          "provenance": {
+            "quote": "6-month mortality, n (%) — 11/50 (22)",
+            "location": "Table 3, row: 6-month mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.35,
+          "ci_low": 0.16,
+          "ci_high": 0.74,
+          "ci_level": 95,
+          "p_value": 0.006,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "6-month mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+            "location": "Table 3, row: 6-month mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "6-month mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+        "location": "Table 3, row: 6-month mortality"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "1-year mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 365,
+        "label_verbatim": "1-year mortality"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 29,
+          "total": 70,
+          "provenance": {
+            "quote": "1-year mortality, n (%) — 29/70 (41)",
+            "location": "Table 3, row: 1-year mortality"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 11,
+          "total": 50,
+          "provenance": {
+            "quote": "1-year mortality, n (%) — 11/50 (22)",
+            "location": "Table 3, row: 1-year mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.35,
+          "ci_low": 0.16,
+          "ci_high": 0.74,
+          "ci_level": 95,
+          "p_value": 0.006,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE, age, BMI, PaO2/FiO2",
+          "test_used": "Cox proportional hazard model",
+          "provenance": {
+            "quote": "1-year mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+            "location": "Table 3, row: 1-year mortality"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "1-year mortality, n (%) — 29/70 (41) — 11/50 (22) — 0.006 — 0.35 (0.16–0.74)",
+        "location": "Table 3, row: 1-year mortality"
+      }
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU length of stay",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "ICU length of stay"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 13,
+          "dispersion_type": "ci95",
+          "dispersion_low": 9,
+          "dispersion_high": 16,
+          "unit": "days",
+          "provenance": {
+            "quote": "ICU length of stay, days, mean (CI 95%) — 13 (9–16)",
+            "location": "Table 3, row: ICU length of stay"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 17,
+          "dispersion_type": "ci95",
+          "dispersion_low": 14,
+          "dispersion_high": 20,
+          "unit": "days",
+          "provenance": {
+            "quote": "ICU length of stay, days, mean (CI 95%) — 17 (14–20)",
+            "location": "Table 3, row: ICU length of stay"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "ICU length of stay, days, mean (CI 95%) — 13 (9–16) — 17 (14–20) — < 0.001",
+            "location": "Table 3, row: ICU length of stay"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "ICU length of stay, days, mean (CI 95%) — 13 (9–16) — 17 (14–20) — < 0.001",
+        "location": "Table 3, row: ICU length of stay"
+      }
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "Hospital length of stay",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Hospital length of stay"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 19,
+          "dispersion_type": "ci95",
+          "dispersion_low": 15,
+          "dispersion_high": 23,
+          "unit": "days",
+          "provenance": {
+            "quote": "Hospital length of stay, days, mean (CI 95%) — 19 (15–23)",
+            "location": "Table 3, row: Hospital length of stay"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 28,
+          "dispersion_type": "ci95",
+          "dispersion_low": 23,
+          "dispersion_high": 33,
+          "unit": "days",
+          "provenance": {
+            "quote": "Hospital length of stay, days, mean (CI 95%) — 28 (23–33)",
+            "location": "Table 3, row: Hospital length of stay"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Hospital length of stay, days, mean (CI 95%) — 19 (15–23) — 28 (23–33) — < 0.001",
+            "location": "Table 3, row: Hospital length of stay"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Hospital length of stay, days, mean (CI 95%) — 19 (15–23) — 28 (23–33) — < 0.001",
+        "location": "Table 3, row: Hospital length of stay"
+      }
+    },
+    {
+      "domain": "icu_free_days",
+      "name_verbatim": "Days not in ICU at day 28",
+      "definition_verbatim": "If in-hospital death occurred before day 29, the days not in ICU at day 28 were considered to be zero.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "Days not in ICU at day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "ci95",
+          "dispersion_low": 9,
+          "dispersion_high": 14,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days not in ICU at day 28, days, mean (CI 95%) — 12 (9–14)",
+            "location": "Table 3, row: Days not in ICU at day 28"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 11,
+          "dispersion_type": "ci95",
+          "dispersion_low": 8,
+          "dispersion_high": 13,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days not in ICU at day 28, days, mean (CI 95%) — 11 (8–13)",
+            "location": "Table 3, row: Days not in ICU at day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.413,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Days not in ICU at day 28, days, mean (CI 95%) — 12 (9–14) — 11 (8–13) — 0.413",
+            "location": "Table 3, row: Days not in ICU at day 28"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Days not in ICU at day 28, days, mean (CI 95%) — 12 (9–14) — 11 (8–13) — 0.413",
+        "location": "Table 3, row: Days not in ICU at day 28"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Days not in hospital at day 28",
+      "definition_verbatim": "If in-hospital death occurred before day 29, the days not in hospital at day 28 were considered to be zero.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "Days not in hospital at day 28"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 7,
+          "dispersion_type": "ci95",
+          "dispersion_low": 5,
+          "dispersion_high": 9,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days not in hospital at day 28, days, mean (CI 95%) — 7 (5–9)",
+            "location": "Table 3, row: Days not in hospital at day 28"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 5,
+          "dispersion_type": "ci95",
+          "dispersion_low": 3,
+          "dispersion_high": 7,
+          "unit": "days",
+          "provenance": {
+            "quote": "Days not in hospital at day 28, days, mean (CI 95%) — 5 (3–7)",
+            "location": "Table 3, row: Days not in hospital at day 28"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.121,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Days not in hospital at day 28, days, mean (CI 95%) — 7 (5–9) — 5 (3–7) — 0.121",
+            "location": "Table 3, row: Days not in hospital at day 28"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Days not in hospital at day 28, days, mean (CI 95%) — 7 (5–9) — 5 (3–7) — 0.121",
+        "location": "Table 3, row: Days not in hospital at day 28"
+      }
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "Ventilation-free days",
+      "definition_verbatim": "If in-hospital death occurred before day 29, the ventilation-free days were considered to be zero.",
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "Ventilation-free days"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 14,
+          "dispersion_type": "ci95",
+          "dispersion_low": 11,
+          "dispersion_high": 16,
+          "unit": "days",
+          "provenance": {
+            "quote": "Ventilation-free days, days, mean (CI 95%) — 14 (11–16)",
+            "location": "Table 3, row: Ventilation-free days"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 15,
+          "dispersion_type": "ci95",
+          "dispersion_low": 12,
+          "dispersion_high": 18,
+          "unit": "days",
+          "provenance": {
+            "quote": "Ventilation-free days, days, mean (CI 95%) — 15 (12–18)",
+            "location": "Table 3, row: Ventilation-free days"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.859,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Ventilation-free days, days, mean (CI 95%) — 14 (11–16) — 15 (12–18) — 0.859",
+            "location": "Table 3, row: Ventilation-free days"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Ventilation-free days, days, mean (CI 95%) — 14 (11–16) — 15 (12–18) — 0.859",
+        "location": "Table 3, row: Ventilation-free days"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Reintubation",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "Reintubation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 12,
+          "total": 70,
+          "provenance": {
+            "quote": "Reintubation, n (%) — 12/70 (17)",
+            "location": "Table 3, row: Reintubation"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 8,
+          "total": 50,
+          "provenance": {
+            "quote": "Reintubation, n (%) — 8/50 (16)",
+            "location": "Table 3, row: Reintubation"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.868,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Reintubation, n (%) — 12/70 (17) — 8/50 (16) — 0.868",
+            "location": "Table 3, row: Reintubation"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Reintubation, n (%) — 12/70 (17) — 8/50 (16) — 0.868",
+        "location": "Table 3, row: Reintubation"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Tracheostomy",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "Tracheostomy"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 11,
+          "total": 70,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 11/70 (16)",
+            "location": "Table 3, row: Tracheostomy"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 14,
+          "total": 50,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 14/50 (28)",
+            "location": "Table 3, row: Tracheostomy"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.061,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Tracheostomy, n (%) — 11/70 (16) — 14/50 (28) — 0.061",
+            "location": "Table 3, row: Tracheostomy"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Tracheostomy, n (%) — 11/70 (16) — 14/50 (28) — 0.061",
+        "location": "Table 3, row: Tracheostomy"
+      }
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "AKI",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "AKI"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 37,
+          "total": 70,
+          "provenance": {
+            "quote": "AKI, n (%) — 37/70 (52)",
+            "location": "Table 3, row: AKI"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 26,
+          "total": 50,
+          "provenance": {
+            "quote": "AKI, n (%) — 26/50 (54)",
+            "location": "Table 3, row: AKI"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.902,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "AKI, n (%) — 37/70 (52) — 26/50 (54) — 0.902",
+            "location": "Table 3, row: AKI"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "AKI, n (%) — 37/70 (52) — 26/50 (54) — 0.902",
+        "location": "Table 3, row: AKI"
+      }
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "RRT",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study",
+        "label_verbatim": "RRT"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "events": 16,
+          "total": 70,
+          "provenance": {
+            "quote": "RRT, n (%) — 16/70 (23)",
+            "location": "Table 3, row: RRT"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "events": 12,
+          "total": 50,
+          "provenance": {
+            "quote": "RRT, n (%) — 12/50 (24)",
+            "location": "Table 3, row: RRT"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.884,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "RRT, n (%) — 16/70 (23) — 12/50 (24) — 0.884",
+            "location": "Table 3, row: RRT"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "RRT, n (%) — 16/70 (23) — 12/50 (24) — 0.884",
+        "location": "Table 3, row: RRT"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 ratio",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Day 1"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "At ICU admission",
+        "provenance": {
+          "quote": "At ICU admission, PaO2/FiO2 was higher in the standard protocol-based cohort",
+          "location": "Results, Ventilation settings, para 1"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 197,
+          "dispersion_type": "ci95",
+          "dispersion_low": 177,
+          "dispersion_high": 217,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg, mean (CI95%) 197 (177–217)",
+            "location": "Table 2, row: PaO2/FiO2, Day 1"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 154,
+          "dispersion_type": "ci95",
+          "dispersion_low": 127,
+          "dispersion_high": 179,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2, mmHg, mean (CI95%) 154 (127–179)",
+            "location": "Table 2, row: PaO2/FiO2, Day 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.003,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "two-sample t-test or Wilcoxon rank-sum test",
+          "provenance": {
+            "quote": "PaO2/FiO2 was higher in the standard protocol-based cohort (PaO2/FiO2 ratio of 197 mmHg [CI95% 177–217], compared to 154 mmHg [CI95% 127–179] in the lung rescue group, P = 0.003)",
+            "location": "Results, Ventilation settings, para 1"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "PaO2/FiO2, mmHg, mean (CI95%) 197 (177–217) vs 154 (127–179), P=0.003",
+        "location": "Table 2, row: PaO2/FiO2, Day 1"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Day 1"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 9,
+          "dispersion_type": "ci95",
+          "dispersion_low": 9,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O, mean (CI95%) — Day 1: Standard 9 (9–10)",
+            "location": "Table 2, row: PEEP, Day 1"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 9,
+          "dispersion_type": "ci95",
+          "dispersion_low": 9,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O, mean (CI95%) — Day 1: Lung rescue team 9 (9–10)",
+            "location": "Table 2, row: PEEP, Day 1"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PEEP, cmH2O, mean (CI95%) — Day 1: Standard 9 (9–10) vs Lung rescue team 9 (9–10)",
+        "location": "Table 2, row: PEEP, Day 1"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 2,
+        "label_verbatim": "Day 2"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "standard_protocol",
+          "value_type": "mean",
+          "value": 9,
+          "dispersion_type": "ci95",
+          "dispersion_low": 9,
+          "dispersion_high": 10,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O, mean (CI95%) — Day 2: Standard 9 (9–10)",
+            "location": "Table 2, row: PEEP, Day 2"
+          }
+        },
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 19,
+          "dispersion_type": "ci95",
+          "dispersion_low": 18,
+          "dispersion_high": 20,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP, cmH2O, mean (CI95%) — Day 2: Lung rescue team 19 (18–20)",
+            "location": "Table 2, row: PEEP, Day 2"
+          },
+          "within_arm_change": {
+            "value": 10,
+            "dispersion_type": "sd",
+            "dispersion": null,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<0.001",
+            "test_used": "not stated",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "PEEP increased an average of 10 cmH2O (9 ± 2 cmH2O on day 1 versus 19 ± 4 cmH2O on day 2, P < 0.001)",
+              "location": "Results, Ventilation settings, para 2"
+            }
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "PEEP, cmH2O, mean (CI95%) — Day 2: Standard 9 (9–10) vs Lung rescue team 19 (18–20)",
+        "location": "Table 2, row: PEEP, Day 2"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Day 1"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": -6.3,
+          "dispersion_type": "sd",
+          "dispersion": 3.7,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "end-expiratory transpulmonary pressure passed from −6.3 ± 3.7 cmH2O to + 1.7 ± 3.2 cmH2O",
+            "location": "Results, Ventilation settings, para 2"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "end-expiratory transpulmonary pressure passed from −6.3 ± 3.7 cmH2O to + 1.7 ± 3.2 cmH2O",
+        "location": "Results, Ventilation settings, para 2"
+      }
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory transpulmonary pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": false,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 2,
+        "label_verbatim": "Day 2"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "lung_rescue_team",
+          "value_type": "mean",
+          "value": 1.7,
+          "dispersion_type": "sd",
+          "dispersion": 3.2,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "end-expiratory transpulmonary pressure passed from −6.3 ± 3.7 cmH2O to + 1.7 ± 3.2 cmH2O (P < 0.001)",
+            "location": "Results, Ventilation settings, para 2"
+          },
+          "within_arm_change": {
+            "value": 8.0,
+            "dispersion_type": null,
+            "dispersion": null,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<0.001",
+            "test_used": "not stated",
+            "unit": "cmH2O",
+            "provenance": {
+              "quote": "end-expiratory transpulmonary pressure passed from −6.3 ± 3.7 cmH2O to + 1.7 ± 3.2 cmH2O (P < 0.001)",
+              "location": "Results, Ventilation settings, para 2"
+            }
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": {
+        "quote": "end-expiratory transpulmonary pressure passed from −6.3 ± 3.7 cmH2O to + 1.7 ± 3.2 cmH2O (P < 0.001)",
+        "location": "Results, Ventilation settings, para 2"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "other"
+    ],
+    "classification_notes": "Obesity: enrolment required BMI > 40 kg/m2, so obese_population. Timing: intervention within 24h of initiation of mechanical ventilation, so early. PTP target: described as using decremental PEEP trial and end-expiratory transpulmonary pressure measurements, but no numeric target stated, so coded as other."
+  },
+  "reported_subgroups": [
+    {
+      "subgroup_variable": "Enrolment period (first half vs second half of each cohort period)",
+      "outcome_name": "Mortality",
+      "prespecified": false,
+      "result_verbatim": "The standard protocol-based cohort mortality was 40% in the first 35 patients (2012–2013) and 42% in the second 35 patients (2013–2014). The mortality in the first 25 patients of the lung rescue team cohort was 28% (2015–2016) and 16% in the remaining 25 patients (2016–2017).",
+      "interaction_p_value": null,
+      "provenance": {
+        "quote": "The standard protocol-based cohort mortality was 40% in the first 35 patients (2012–2013) and 42% in the second 35 patients (2013–2014). The mortality in the first 25 patients of the lung rescue team cohort was 28% (2015–2016) and 16% in the remaining 25 patients (2016–2017).",
+        "location": "Results, Mortality and in-hospital outcomes, para 3"
+      }
+    }
+  ],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Considered possible overlap with fumagalli_2019 (mgh_lung_rescue cluster per COHORTS.md). The current study states 'None of these patients participated in any MGH ARDS ongoing interventional trials' and does not report a trial registration. Enrolment 2012-2017. Fumagalli (2019) is a separate study; no evidence of overlapping patients found in this report. Could not definitively confirm overlap without the other report.",
+    "unclear_items": [
+      "balloon_guided_peep_titration: The exact method of transpulmonary pressure computation (absolute subtraction vs elastance-derived) is not reported.",
+      "balloon_calibration method is not reported.",
+      "Timing subgroup: The intervention started within 24h of initiation of mechanical ventilation, but the reference event is 'initiation of mechanical ventilation', which may correspond to intubation or ICU admission; classified as early_within_48h.",
+      "Potential cohort overlap with fumagalli_2019 could not be assessed because the report was not available for comparison (see overlap_evidence)."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "This is a retrospective cohort study, so comparison groups are sequential (2012-2014 vs 2015-2017). Mortality differences may be confounded by temporal changes in care."
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "study_id": "liou_2022",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "arms[post titration after esophageal balloon insertio]",
+      "decision": "deepseek",
+      "reason": "Keep the post-titration condition: PEEP titration occurred at time 0 and the average End Insp/End Exp PL (8.32 / -2.72) are reported for the moment PL was determined after balloon insertion, not for the 4 h or 24 h conditions.",
+      "evidence": "p. 3 Methods ('PEEP titration occurred at time 0 hours'); p. 4 Results para 2"
+    },
+    {
+      "target": "arms[cohort all patients single group]",
+      "decision": "deepseek",
+      "reason": "Keep the single-group arm: the whole-stay clinical outcomes in Table 3 (pneumothorax, rescue therapies, CRRT, tracheostomy) belong to the cohort, not to the 4 h condition GLM assigned them to.",
+      "evidence": "p. 6, Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings positive end expiratory pres @baseline]",
+      "decision": "glm",
+      "reason": "Before 12 (10-16) matches; GLM's name_verbatim keeps the full row label with its unit.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "id": "04f69ed79a",
+      "decision": "deepseek",
+      "reason": "A baseline entry is never primary (codebook), and the paper names no single primary endpoint: 'primary end points reviewed changes in ventilatory support and oxygenation'.",
+      "evidence": "p. 3 Methods; CODEBOOK is_primary_outcome ruling"
+    },
+    {
+      "target": "outcomes[ventilator settings positive end expiratory pres @4h]",
+      "decision": "glm",
+      "reason": "After 4 hr 20 (16-20), p < 0.0001 Wilcoxon match; GLM's full row label and a contrast string consistent with its arm labels. DeepSeek's contrast is the same reading (no mean difference, so direction carries no sign).",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "id": "e7cdbce969",
+      "decision": "deepseek",
+      "reason": "The stated primary end points are 'changes in ventilatory support and oxygenation' (PEEP, FiO2, S/F, DP alike); flagging PEEP at 4 h alone as the primary outcome is not supported.",
+      "evidence": "p. 3 Methods"
+    },
+    {
+      "target": "outcomes[ventilator settings positive end expiratory pres @24h]",
+      "decision": "glm",
+      "reason": "After 24 hr 16 (14-20), p (4 vs 24 hr) 0.023 match; full row label.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @baseline]",
+      "decision": "glm",
+      "reason": "Before 0.8 (0.65-1) matches; Table 2 prints no unit for FiO2, so DeepSeek's 'fraction' is added. Domain difference is reserved for the co-authors.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @4h]",
+      "decision": "glm",
+      "reason": "After 4 hr 0.6 (0.5-0.7), p < 0.0001 match; no unit printed. Domain is reserved.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[ventilator settings fio2 continuous @24h]",
+      "decision": "glm",
+      "reason": "After 24 hr 0.45 (0.4-0.6), p 0.004 match; no unit printed. Domain is reserved.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation median oxygen saturation fio2 ratio @baseline]",
+      "decision": "glm",
+      "reason": "Before 120 (96-150.77) matches; n = 29 (S/F classified in all 29 patients).",
+      "evidence": "p. 4, Table 2; p. 2 Methods"
+    },
+    {
+      "target": "outcomes[oxygenation median oxygen saturation fio2 ratio @4h]",
+      "decision": "glm",
+      "reason": "After 4 hr 165 (141.43-196), p < 0.0001 match.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[oxygenation median oxygen saturation fio2 ratio @24h]",
+      "decision": "glm",
+      "reason": "After 24 hr 211.11 (156.7-247.5), p 0.001 match.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @baseline]",
+      "decision": "glm",
+      "reason": "Before 15 (12-18) matches; GLM's name keeps the verbatim row label 'Driving pressure (cm H2O)'.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @4h]",
+      "decision": "glm",
+      "reason": "After 4 hr 13 (12-16), p 0.002 match; verbatim row label.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics driving pressure cm h2o co @24h]",
+      "decision": "glm",
+      "reason": "After 24 hr 14 (11-15), p 0.379 match; verbatim row label.",
+      "evidence": "p. 4, Table 2"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat plateau pressure con @4h]",
+      "decision": "glm",
+      "reason": "Median PPLAT 33 after 4 hours is reported in the text, not Table 2; GLM's timepoint label 'after 4 hours' is the verbatim source wording and its note that PPLAT was missing in three patients is correct (Figure 1).",
+      "evidence": "p. 4 Results para 2; p. 5 Figure 1 legend"
+    },
+    {
+      "target": "outcomes[respiratory mechanics pplat plateau pressure con @24h]",
+      "decision": "glm",
+      "reason": "Median PPLAT 31 after 24 hours, text wording 'after 24 hours' is verbatim.",
+      "evidence": "p. 4 Results para 2"
+    },
+    {
+      "target": "outcomes[adverse event pneumothorax dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "0/29 pneumothorax; adverse events were counted 'any time after esophageal balloon optimization', so they belong to the cohort, not the 4 h condition GLM assigned.",
+      "evidence": "p. 6 Table 3; p. 3 Methods"
+    },
+    {
+      "id": "3269839e59",
+      "decision": "glm",
+      "reason": "'any time after esophageal balloon optimization' is the paper's wording; 'Study period' is not.",
+      "evidence": "p. 3 Methods"
+    },
+    {
+      "id": "2fd5daaea9",
+      "decision": "deepseek",
+      "reason": "The observation window is the whole period after optimization, i.e. end of study, not unreported.",
+      "evidence": "p. 3 Methods"
+    },
+    {
+      "target": "outcomes[adverse event pneumomediastinum dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "1/29 pneumomediastinum over the whole period after optimization; cohort arm, not the 4 h condition.",
+      "evidence": "p. 6 Table 3; p. 3 Methods"
+    },
+    {
+      "id": "9a32b32268",
+      "decision": "glm",
+      "reason": "Verbatim window 'any time after esophageal balloon optimization'.",
+      "evidence": "p. 3 Methods"
+    },
+    {
+      "id": "6004341d72",
+      "decision": "deepseek",
+      "reason": "Whole post-optimization window: end_of_study.",
+      "evidence": "p. 3 Methods"
+    },
+    {
+      "target": "outcomes[adverse event increased vasopressor after 4 hr d @4h]",
+      "decision": "glm",
+      "reason": "7/29 increased vasopressor after 4 hr compared with baseline is tied to the 4 h condition; GLM's name is the Table 3 row composite 'Increased vasopressor — After 4 hr', DeepSeek's is a paraphrase.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "target": "outcomes[adverse event increased vasopressor after 24 hr @24h]",
+      "decision": "glm",
+      "reason": "7/29 increased vasopressor after 24 hr, tied to the 24 h condition; verbatim table row composite.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "target": "outcomes[rescue therapy inhaled pulmonary vasodilators di @not reported]",
+      "decision": "deepseek",
+      "reason": "2/29 inhaled pulmonary vasodilators is a whole-cohort count, not a 4 h condition reading.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "id": "a84f03d550",
+      "decision": "glm",
+      "reason": "'Study period' does not appear in the paper; no window is stated for this rescue therapy.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "id": "a3b688dd38",
+      "decision": "glm",
+      "reason": "The paper states no time window for inhaled vasodilator use, so not_reported.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "target": "outcomes[rescue therapy extracorporeal membrane oxygenati @not reported]",
+      "decision": "deepseek",
+      "reason": "0/29 ECMO is a whole-cohort count, not a 4 h condition reading.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "id": "970b71d1ff",
+      "decision": "glm",
+      "reason": "'Study period' is not in the paper.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "id": "15f52319ad",
+      "decision": "glm",
+      "reason": "No time window stated for ECMO: not_reported.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[rescue therapy new prone position dichotomous @24h]",
+      "decision": "deepseek",
+      "reason": "5/29 new prone position; keep the cohort arm (the 4 h condition is wrong for an event 'within first 24 hr').",
+      "evidence": "p. 6 Table 3 footnote a; p. 4 Results"
+    },
+    {
+      "id": "3291512b56",
+      "decision": "glm",
+      "reason": "Footnote a: 'Within first 24 hr of balloon insertion' gives a 24 h window.",
+      "evidence": "p. 6 Table 3 footnote a"
+    },
+    {
+      "id": "365e952f70",
+      "decision": "glm",
+      "reason": "GLM's label is the verbatim footnote; 'Study period' is not in the paper.",
+      "evidence": "p. 6 Table 3 footnote a"
+    },
+    {
+      "id": "2096c5f375",
+      "decision": "glm",
+      "reason": "A stated 24 h window after insertion, not end of study.",
+      "evidence": "p. 6 Table 3 footnote a"
+    },
+    {
+      "target": "outcomes[other continuous renal replacement therapy dicho @not reported]",
+      "decision": "deepseek",
+      "reason": "2/29 CRRT is a whole-cohort count, not a 4 h condition reading.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "id": "6022c74f13",
+      "decision": "glm",
+      "reason": "'Study period' is not in the paper.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "id": "5f0ae9cd4f",
+      "decision": "glm",
+      "reason": "No time window stated for CRRT: not_reported.",
+      "evidence": "p. 6 Table 3"
+    },
+    {
+      "target": "outcomes[other tracheostomy dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "5/29 tracheostomy is a whole-cohort count, not a 4 h condition reading.",
+      "evidence": "p. 6 Table 3; p. 4 Results"
+    },
+    {
+      "id": "78b825ea38",
+      "decision": "glm",
+      "reason": "'Within the patient's hospital stay' is the paper's wording.",
+      "evidence": "p. 4 Results para 4"
+    },
+    {
+      "id": "5ce3202c03",
+      "decision": "unclear",
+      "reason": "Window is 'within the patient's hospital stay', which is timepoint.type hospital_discharge; GLM's not_reported and DeepSeek's end_of_study are both off.",
+      "evidence": "p. 4 Results para 4"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end insp pl end inspirat @4h]",
+      "decision": "deepseek",
+      "reason": "Drop: average End Insp PL 8.32 is kept under DeepSeek's post-titration entry; nothing in the paper places it at 4 h (titration and PL determination occurred at time 0).",
+      "evidence": "p. 3 Methods; p. 4 Results para 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end exp pl end expirator @4h]",
+      "decision": "deepseek",
+      "reason": "Drop: average End Exp PL -2.72 is kept under DeepSeek's post-titration entry; not a 4 h reading.",
+      "evidence": "p. 3 Methods; p. 4 Results para 2"
+    },
+    {
+      "target": "outcomes[ventilator settings peep set by pl guided titrat @4h]",
+      "decision": "glm",
+      "reason": "Reported comparison: PL-set PEEP differed from the ARDSNet high PEEP table in 18/29 (8 higher, 10 lower) at 4 h post-insertion; DeepSeek omitted it.",
+      "evidence": "p. 4 Results para 3; p. 5 Figure 2"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end inspiratory transpul @baseline]",
+      "decision": "deepseek",
+      "reason": "Average End Insp PL 8.32 cm H2O when PL was determined post-insertion (titration at time 0).",
+      "evidence": "p. 4 Results para 2; p. 3 Methods"
+    },
+    {
+      "target": "outcomes[transpulmonary pressure end expiratory transpulm @baseline]",
+      "decision": "deepseek",
+      "reason": "Average End Exp PL -2.72 cm H2O when PL was determined post-insertion (titration at time 0).",
+      "evidence": "p. 4 Results para 2; p. 3 Methods"
+    },
+    {
+      "id": "1a40a12267",
+      "decision": "deepseek",
+      "reason": "The ARDSNet high PEEP table was never applied; the paper only compares the PL-set PEEP with what the table would have recommended. The comparator actually run is pre-balloon usual care.",
+      "evidence": "p. 4 Results para 3"
+    },
+    {
+      "id": "3db18533ef",
+      "decision": "deepseek",
+      "reason": "No reason is recorded for contacting the authors; the protocol appendix is published online and every pooled number is in Tables 2-3.",
+      "evidence": "p. 2 Methods (Appendix 1 link); Tables 2-3"
+    },
+    {
+      "id": "93740e8fa0",
+      "decision": "deepseek",
+      "reason": "The paper makes no statement that the balloon or manometry caused, or did not cause, complications; the adverse events are not attributed to the balloon. Silence is null.",
+      "evidence": "p. 6 Table 3; Discussion"
+    },
+    {
+      "id": "d753239a0b",
+      "decision": "deepseek",
+      "reason": "48 is the count of balloons placed hospital-wide in the period (19 in patients not meeting inclusion); attempts are never reported in this retrospective series.",
+      "evidence": "p. 3 Results para 1"
+    },
+    {
+      "id": "46ca546a2e",
+      "decision": "unclear",
+      "reason": "48 counts balloons placed in all patients hospital-wide, including 19 outside the study population; for the 29 included, placement was an inclusion condition. A co-author should decide between 29 (derived: inclusion required a placed balloon) and null.",
+      "evidence": "p. 3 Results para 1; p. 2 Methods"
+    },
+    {
+      "id": "f1a915e998",
+      "decision": "deepseek",
+      "reason": "'Median days of mechanical ventilation prior to balloon insert were 1 day' is a reported interval from intubation; recorded as reported, in days, with no conversion.",
+      "evidence": "p. 3 Results para 2"
+    },
+    {
+      "id": "729429a860",
+      "decision": "deepseek",
+      "reason": "One titration strategy (End Exp PL approaching 0 +/- 2); the End Insp PL > 20 cm H2O rule is a safety limit within that strategy, not a second target strategy.",
+      "evidence": "p. 2 Methods"
+    }
+  ]
+}

@@ -1,0 +1,3911 @@
+{
+  "record_meta": {
+    "study_id": "talmor_2008",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/talmor2008.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Talmor",
+    "year": 2008,
+    "title": "Mechanical Ventilation Guided by Esophageal Pressure in Acute Lung Injury",
+    "journal": "N Engl J Med",
+    "doi": "10.1056/NEJMoa0708638",
+    "pmid": null,
+    "trial_registration": "NCT00127491",
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Patients were included in the study if they had acute lung injury or ARDS according to the American–European Consensus Conference definitions.",
+          "location": "p. 2096, Methods, Patients, para 2"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We randomly assigned patients with acute lung injury or ARDS to undergo mechanical ventilation with PEEP adjusted according to measurements of esophageal pressure (the esophageal-pressure–guided group) or according to the Acute Respiratory Distress Syndrome Network standard-of-care recommendations (the control group).",
+          "location": "p. 2095, Abstract, Methods"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We performed the trial in the medical and surgical intensive care units (ICUs) of Beth Israel Deaconess Medical Center in Boston.",
+          "location": "p. 2096, Methods, Patients, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP levels were set to achieve a transpulmonary pressure of 0 to 10 cm of water at end expiration, according to a sliding scale based on the partial pressure of arterial oxygen and the fraction of inspired oxygen (Fig. 1).",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "The primary end point of the study was arterial oxygenation, as measured by the ratio of PaO2 to FiO2 (PaO2:FiO2) 72 hours after randomization.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 3"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We stopped the study after 61 patients had been enrolled.",
+          "location": "p. 2098, Results, para 2"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "We randomly assigned patients with acute lung injury or ARDS to undergo mechanical ventilation with PEEP adjusted according to measurements of esophageal pressure... or according to the Acute Respiratory Distress Syndrome Network standard-of-care recommendations.",
+          "location": "p. 2095, Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "N Engl J Med 2008;359:2095-104.",
+          "location": "p. 2095, bottom"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "randomized, controlled pilot trial",
+      "provenance": {
+        "quote": "We report the results of a randomized, controlled pilot trial involving patients with acute lung injury or ARDS.",
+        "location": "p. 2096, Methods, para 2"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": {
+      "value": "Therapies other than mechanical ventilation were administered by members of the primary ICU team, who were unaware of the results of the esophageal-pressure measurements.",
+      "provenance": {
+        "quote": "Therapies other than mechanical ventilation were administered by members of the primary ICU team, who were unaware of the results of the esophageal-pressure measurements.",
+        "location": "p. 2097, Methods, Experimental Protocol, para 2"
+      }
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "We performed the trial in the medical and surgical intensive care units (ICUs) of Beth Israel Deaconess Medical Center in Boston.",
+        "location": "p. 2096, Methods, Patients, para 1"
+      }
+    },
+    "countries": [
+      "United States"
+    ],
+    "location_provenance": {
+      "quote": "We performed the trial in the medical and surgical intensive care units (ICUs) of Beth Israel Deaconess Medical Center in Boston.",
+      "location": "p. 2096, Methods, Patients, para 1 (Country inferred from Boston, Massachusetts, USA)"
+    },
+    "planned_sample_size": {
+      "value": 200,
+      "provenance": {
+        "quote": "on the basis of this estimate, a sample of 100 patients per group would be required to detect a difference of 40 in the PaO2:FiO2 with 80% power and a two-tailed alpha value of 0.05.",
+        "location": "p. 2098, Statistical Analysis"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "a sample of 100 patients per group would be required to detect a difference of 40 in the PaO2:FiO2 with 80% power and a two-tailed alpha value of 0.05",
+      "provenance": {
+        "quote": "We conservatively estimated the standard deviation to be 100 (equivalent to a coefficient of variation of 250%); on the basis of this estimate, a sample of 100 patients per group would be required to detect a difference of 40 in the PaO2:FiO2 with 80% power and a two-tailed alpha value of 0.05.",
+        "location": "p. 2098, Statistical Analysis"
+      }
+    },
+    "stopped_early": true,
+    "stopping_rule": {
+      "value": "Interim analysis after 60 patients with critical significance level P≤0.02, adjusted for Lan–DeMets alpha-spending function with Pocock boundary.",
+      "provenance": {
+        "quote": "The board members were instructed to perform an interim analysis after 60 patients had been enrolled, at which point they could recommend stopping the trial if an overwhelming effect was detected on the basis of the critical significance level (P≤0.02), as adjusted for the Lan–DeMets alpha-spending function with Pocock boundary.",
+        "location": "p. 2098, Statistical Analysis"
+      }
+    },
+    "setting": {
+      "value": "medical and surgical intensive care units (ICUs)",
+      "provenance": {
+        "quote": "We performed the trial in the medical and surgical intensive care units (ICUs) of Beth Israel Deaconess Medical Center in Boston.",
+        "location": "p. 2096, Methods, Patients, para 1"
+      }
+    },
+    "enrolment_start": null,
+    "enrolment_end": null,
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "Supported in part by a grant from the National Heart, Lung, and Blood Institute (HL-52586).",
+      "provenance": {
+        "quote": "Supported in part by a grant from the National Heart, Lung, and Blood Institute (HL-52586).",
+        "location": "p. 2104, footer"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 61,
+      "provenance": {
+        "quote": "We stopped the study after 61 patients had been enrolled.",
+        "location": "p. 2098, Results, para 2"
+      }
+    },
+    "n_analysed": {
+      "value": 61,
+      "provenance": {
+        "quote": "this patient is included in the analysis on the basis of the intention-to-treat principle.",
+        "location": "p. 2098, Results, para 1"
+      }
+    },
+    "population_description": {
+      "value": "patients with acute lung injury or ARDS according to the American–European Consensus Conference definitions",
+      "provenance": {
+        "quote": "Patients were included in the study if they had acute lung injury or ARDS according to the American–European Consensus Conference definitions.",
+        "location": "p. 2096, Methods, Patients, para 2"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Patients were included in the study if they had acute lung injury or ARDS according to the American–European Consensus Conference definitions.",
+      "provenance": {
+        "quote": "Patients were included in the study if they had acute lung injury or ARDS according to the American–European Consensus Conference definitions.",
+        "location": "p. 2096, Methods, Patients, para 2"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "The exclusion criteria included recent injury or other pathologic condition of the esophagus, major bronchopleural fistula, and solid-organ transplantation.",
+      "provenance": {
+        "quote": "The exclusion criteria included recent injury or other pathologic condition of the esophagus, major bronchopleural fistula, and solid-organ transplantation.",
+        "location": "p. 2096, Methods, Patients, para 2"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "mixed_some_ards",
+    "ards_definition_used": {
+      "value": "American–European Consensus Conference definitions",
+      "provenance": {
+        "quote": "acute lung injury or ARDS according to the American–European Consensus Conference definitions.",
+        "location": "p. 2096, Methods, Patients, para 2"
+      }
+    },
+    "n_ards": {
+      "n": 49,
+      "total": 61,
+      "percent_as_reported": 80,
+      "provenance": {
+        "quote": "Forty-nine patients (80%), including the one patient that we were unable to sedate, met the criteria for ARDS (PaO2:FiO2 <200 mm Hg)",
+        "location": "p. 2098, Results, Physiological Measurements, para 1"
+      }
+    },
+    "ards_severity": {
+      "mild": {
+        "n": null
+      },
+      "moderate": {
+        "n": null
+      },
+      "severe": {
+        "n": null
+      }
+    },
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Primary physiological injury: Pulmonary 7 (23%) vs 5 (16%); Abdominal 13 (43%) vs 11 (35%); Trauma 6 (20%) vs 9 (29%); Sepsis 3 (10%) vs 2 (6%); Other 1 (3%) vs 4 (13%)",
+      "provenance": {
+        "quote": "Primary physiological injury — no. (%)",
+        "location": "Table 1, row: Primary physiological injury"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Predicted body weight — kg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 67.1,
+          "dispersion_type": "sd",
+          "dispersion": 8.9,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Predicted body weight — kg 67.1±8.9",
+            "location": "Table 1, row: Predicted body weight"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Predicted body weight — kg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 63.2,
+          "dispersion_type": "sd",
+          "dispersion": 11.1,
+          "unit": "kg",
+          "provenance": {
+            "quote": "Predicted body weight — kg 63.2±11.1",
+            "location": "Table 1, row: Predicted body weight"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Male sex — no. (%)",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 19,
+          "total": 30,
+          "percent_as_reported": 63,
+          "provenance": {
+            "quote": "Male sex — no. (%) 19 (63)",
+            "location": "Table 1, row: Male sex — no. (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Male sex — no. (%)",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 17,
+          "total": 31,
+          "percent_as_reported": 55,
+          "provenance": {
+            "quote": "Male sex — no. (%) 17 (55)",
+            "location": "Table 1, row: Male sex — no. (%)"
+          }
+        }
+      },
+      {
+        "name_verbatim": "White race — no. (%)",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 26,
+          "total": 30,
+          "percent_as_reported": 87,
+          "provenance": {
+            "quote": "White race — no. (%) 26 (87)",
+            "location": "Table 1, row: White race"
+          }
+        }
+      },
+      {
+        "name_verbatim": "White race — no. (%)",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 27,
+          "total": 31,
+          "percent_as_reported": 87,
+          "provenance": {
+            "quote": "White race — no. (%) 27 (87)",
+            "location": "Table 1, row: White race"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 7.34,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "provenance": {
+            "quote": "pH 7.34±0.09",
+            "location": "Table 1, row: pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "pH",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 7.32,
+          "dispersion_type": "sd",
+          "dispersion": 0.08,
+          "provenance": {
+            "quote": "pH 7.32±0.08",
+            "location": "Table 1, row: pH"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaCO2 — mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 42,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 — mm Hg 42±8",
+            "location": "Table 1, row: PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaCO2 — mm Hg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 40,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaCO2 — mm Hg 40±8",
+            "location": "Table 1, row: PaCO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2 — mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 91,
+          "dispersion_type": "sd",
+          "dispersion": 25,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2 — mm Hg 91±25",
+            "location": "Table 1, row: PaO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "PaO2 — mm Hg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 107,
+          "dispersion_type": "sd",
+          "dispersion": 44,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "PaO2 — mm Hg 107±44",
+            "location": "Table 1, row: PaO2"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Bicarbonate — mmol/liter",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 24,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "mmol/liter",
+          "provenance": {
+            "quote": "Bicarbonate — mmol/liter 24±5",
+            "location": "Table 1, row: Bicarbonate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Bicarbonate — mmol/liter",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 22,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "unit": "mmol/liter",
+          "provenance": {
+            "quote": "Bicarbonate — mmol/liter 22±4",
+            "location": "Table 1, row: Bicarbonate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lactate — mg/dl",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.1,
+          "dispersion_type": "sd",
+          "dispersion": 3.5,
+          "unit": "mg/dl",
+          "provenance": {
+            "quote": "Lactate — mg/dl 3.1±3.5",
+            "location": "Table 1, row: Lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Lactate — mg/dl",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 3.4,
+          "dispersion_type": "sd",
+          "dispersion": 3.3,
+          "unit": "mg/dl",
+          "provenance": {
+            "quote": "Lactate — mg/dl 3.4±3.3",
+            "location": "Table 1, row: Lactate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate — beats/min",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 98,
+          "dispersion_type": "sd",
+          "dispersion": 26,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate — beats/min 98±26",
+            "location": "Table 1, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Heart rate — beats/min",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 100,
+          "dispersion_type": "sd",
+          "dispersion": 19,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Heart rate — beats/min 100±19",
+            "location": "Table 1, row: Heart rate"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systolic blood pressure — mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 108,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Systolic blood pressure — mm Hg 108±18",
+            "location": "Table 1, row: Systolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Systolic blood pressure — mm Hg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 107,
+          "dispersion_type": "sd",
+          "dispersion": 18,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Systolic blood pressure — mm Hg 107±18",
+            "location": "Table 1, row: Systolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diastolic blood pressure — mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 58,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Diastolic blood pressure — mm Hg 58±11",
+            "location": "Table 1, row: Diastolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Diastolic blood pressure — mm Hg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 54,
+          "dispersion_type": "sd",
+          "dispersion": 11,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Diastolic blood pressure — mm Hg 54±11",
+            "location": "Table 1, row: Diastolic blood pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Central venous pressure — mm Hg",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Central venous pressure — mm Hg 16±5",
+            "location": "Table 1, row: Central venous pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Central venous pressure — mm Hg",
+        "arm_label": "ardsnet_low_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "unit": "mm Hg",
+          "provenance": {
+            "quote": "Central venous pressure — mm Hg 16±4",
+            "location": "Table 1, row: Central venous pressure"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — cardiac",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 10,
+          "total": 30,
+          "percent_as_reported": 33,
+          "provenance": {
+            "quote": "Cardiac 10 (33)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — cardiac",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 10,
+          "total": 31,
+          "percent_as_reported": 32,
+          "provenance": {
+            "quote": "Cardiac 10 (32)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — renal",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 19,
+          "total": 30,
+          "percent_as_reported": 63,
+          "provenance": {
+            "quote": "Renal 19 (63)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — renal",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 16,
+          "total": 31,
+          "percent_as_reported": 52,
+          "provenance": {
+            "quote": "Renal 16 (52)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — neurologic",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 12,
+          "total": 30,
+          "percent_as_reported": 40,
+          "provenance": {
+            "quote": "Neurologic 12 (40)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — neurologic",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 12,
+          "total": 31,
+          "percent_as_reported": 39,
+          "provenance": {
+            "quote": "Neurologic 12 (39)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — hepatic",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 11,
+          "total": 30,
+          "percent_as_reported": 37,
+          "provenance": {
+            "quote": "Hepatic 11 (37)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — hepatic",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 10,
+          "total": 31,
+          "percent_as_reported": 32,
+          "provenance": {
+            "quote": "Hepatic 10 (32)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — hematologic",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 7,
+          "total": 30,
+          "percent_as_reported": 23,
+          "provenance": {
+            "quote": "Hematologic 7 (23)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Organ failure at baseline — hematologic",
+        "arm_label": "ardsnet_low_peep",
+        "count": {
+          "n": 5,
+          "total": 31,
+          "percent_as_reported": 16,
+          "provenance": {
+            "quote": "Hematologic 5 (16)",
+            "location": "Table 1, row: Organ failure at baseline"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "pes_guided",
+        "n": {
+          "value": 30,
+          "provenance": {
+            "quote": "Esophageal-Pressure–Guided (N=30)",
+            "location": "Table 1"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 54.5,
+          "dispersion_type": "sd",
+          "dispersion": 16.1,
+          "unit": "yr",
+          "provenance": {
+            "quote": "Age — yr 54.5±16.1",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 147,
+          "dispersion_type": "sd",
+          "dispersion": 56,
+          "provenance": {
+            "quote": "PaO2:FiO2 147±56",
+            "location": "Table 2, row: PaO2:FiO2, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 26.3,
+          "dispersion_type": "sd",
+          "dispersion": 6.4,
+          "provenance": {
+            "quote": "APACHE II score at admission 26.3±6.4",
+            "location": "Table 1, row: APACHE II score at admission"
+          }
+        },
+        "sofa": null
+      },
+      {
+        "arm_label": "ardsnet_low_peep",
+        "n": {
+          "value": 31,
+          "provenance": {
+            "quote": "Conventional Treatment (N=31)",
+            "location": "Table 1"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 51.2,
+          "dispersion_type": "sd",
+          "dispersion": 23.0,
+          "unit": "yr",
+          "provenance": {
+            "quote": "Age — yr 51.2±23.0",
+            "location": "Table 1, row: Age"
+          }
+        },
+        "sex_female": null,
+        "bmi": null,
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 145,
+          "dispersion_type": "sd",
+          "dispersion": 57,
+          "provenance": {
+            "quote": "PaO2:FiO2 145±57",
+            "location": "Table 2, row: PaO2:FiO2, Baseline, Conventional Treatment"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 26.8,
+          "dispersion_type": "sd",
+          "dispersion": 6.5,
+          "provenance": {
+            "quote": "APACHE II score at admission 26.8±6.5",
+            "location": "Table 1, row: APACHE II score at admission"
+          }
+        },
+        "sofa": null
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "signal_quality_verification_only",
+      "method_verbatim": {
+        "value": "An esophageal balloon catheter was passed to a depth of 60 cm from the incisors for measurement of gastric pressure and then withdrawn to a depth of 40 cm to record esophageal pressure during mechanical ventilation. Placement of the balloon in the stomach was confirmed by a transient increase in pressure during a gentle compression of the abdomen and by a qualitative change in the pressure tracing (i.e., an increased cardiac artifact) as the balloon was withdrawn into the esophagus. In approximately one third of the patients, the balloon could not be passed into the stomach, and esophageal placement was confirmed by the presence of a cardiac artifact and the changes in transpulmonary pressure during tidal ventilation.",
+        "provenance": {
+          "quote": "An esophageal balloon catheter was passed to a depth of 60 cm from the incisors for measurement of gastric pressure and then withdrawn to a depth of 40 cm to record esophageal pressure during mechanical ventilation. Placement of the balloon in the stomach was confirmed by a transient increase in pressure during a gentle compression of the abdomen and by a qualitative change in the pressure tracing (i.e., an increased cardiac artifact) as the balloon was withdrawn into the esophagus. In approximately one third of the patients, the balloon could not be passed into the stomach, and esophageal placement was confirmed by the presence of a cardiac artifact and the changes in transpulmonary pressure during tidal ventilation.",
+          "location": "p. 2096, Methods, Measurements and Experimental Protocol, para 1"
+        }
+      },
+      "position_verification": {
+        "value": "Placement confirmed by transient increase in pressure during gentle abdominal compression, increased cardiac artifact on withdrawal, and changes in transpulmonary pressure during tidal ventilation.",
+        "provenance": {
+          "quote": "Placement of the balloon in the stomach was confirmed by a transient increase in pressure during a gentle compression of the abdomen and by a qualitative change in the pressure tracing (i.e., an increased cardiac artifact) as the balloon was withdrawn into the esophagus. In approximately one third of the patients, the balloon could not be passed into the stomach, and esophageal placement was confirmed by the presence of a cardiac artifact and the changes in transpulmonary pressure during tidal ventilation.",
+          "location": "p. 2096, Methods, Measurements and Experimental Protocol, para 1"
+        }
+      },
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "transpulmonary pressure (the difference between the airway pressure and the esophageal pressure)",
+        "provenance": {
+          "quote": "transpulmonary pressure (the difference between the airway pressure and the esophageal pressure)",
+          "location": "p. 2096, Methods, Measurements and Experimental Protocol, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "PEEP levels were set to achieve a transpulmonary pressure of 0 to 10 cm of water at end expiration, according to a sliding scale based on the partial pressure of arterial oxygen and the fraction of inspired oxygen (Fig. 1). We also limited tidal volume to keep transpulmonary pressure at less than 25 cm of water at end inspiration, although this limit was rarely approached.",
+        "provenance": {
+          "quote": "PEEP levels were set to achieve a transpulmonary pressure of 0 to 10 cm of water at end expiration, according to a sliding scale based on the partial pressure of arterial oxygen and the fraction of inspired oxygen (Fig. 1). We also limited tidal volume to keep transpulmonary pressure at less than 25 cm of water at end inspiration, although this limit was rarely approached.",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure of 0 to 10 cm of water at end expiration",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 10,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "transpulmonary pressure of 0 to 10 cm of water at end expiration",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 25,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "keep transpulmonary pressure at less than 25 cm of water at end inspiration",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "driving_ptp_limit_cmh2o": null,
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours. Measurements were also performed as needed after changes were made to ventilator settings because of any clinically significant change in the patient’s condition.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours. Measurements were also performed as needed after changes were made to ventilator settings because of any clinically significant change in the patient’s condition.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume, in which airway pressure was increased to 40 cm of water for 30 seconds. If needed, a lower pressure was used to keep the transpulmonary pressure (the difference between the airway pressure and the esophageal pressure) in the physiologic range (<25 cm of water while the patient is in the supine position).",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume, in which airway pressure was increased to 40 cm of water for 30 seconds. If needed, a lower pressure was used to keep the transpulmonary pressure (the difference between the airway pressure and the esophageal pressure) in the physiologic range (<25 cm of water while the patient is in the supine position).",
+          "location": "p. 2096, Methods, Measurements and Experimental Protocol, para 2"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 ml per kilogram of predicted body weight",
+        "provenance": {
+          "quote": "Tidal volume was set at 6 ml per kilogram of predicted body weight.",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "transpulmonary pressure at less than 25 cm of water at end inspiration",
+        "provenance": {
+          "quote": "keep transpulmonary pressure at less than 25 cm of water at end inspiration",
+          "location": "p. 2097, Methods, Esophageal-pressure-guided group, para 1"
+        }
+      },
+      "protocolised_weaning": true,
+      "other_co_interventions": {
+        "value": "Therapies other than mechanical ventilation were administered by members of the primary ICU team, who were unaware of the results of the esophageal-pressure measurements. To avert complications, these team members used protocols to guide hemodynamic resuscitation, sedation, weaning from ventilation, and other standard interventions related to ventilator care.",
+        "provenance": {
+          "quote": "Therapies other than mechanical ventilation were administered by members of the primary ICU team, who were unaware of the results of the esophageal-pressure measurements. To avert complications, these team members used protocols to guide hemodynamic resuscitation, sedation, weaning from ventilation, and other standard interventions related to ventilator care.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "not_reported",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "After these initial measurements, patients were randomly assigned with the use of a block-randomization scheme to the control or esophageal-pressure–guided group.",
+        "provenance": {
+          "quote": "After these initial measurements, patients were randomly assigned with the use of a block-randomization scheme to the control or esophageal-pressure–guided group.",
+          "location": "p. 2096, Methods, Measurements and Experimental Protocol, para 1"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "Until 72 hours after randomization, after which pressure measurements were made available to caregivers.",
+      "provenance": {
+        "quote": "After the measurements at 72 hours, the results of pressure measurements were made available to the caregivers, who were free to use or not use them for decisions concerning treatment and ventilator management.",
+        "location": "p. 2097, Methods, Experimental Protocol, para 3"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_low_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "Patients in the control group were treated according to the low-tidal-volume strategy reported by the ARDSNet study of the National Heart, Lung, and Blood Institute. This strategy specifies that the tidal volume is set at 6 ml per kilogram of predicted body weight and PEEP is based on the patient’s PaO2 and FiO2 (Fig. 1).",
+      "provenance": {
+        "quote": "Patients in the control group were treated according to the low-tidal-volume strategy reported by the ARDSNet study of the National Heart, Lung, and Blood Institute. This strategy specifies that the tidal volume is set at 6 ml per kilogram of predicted body weight and PEEP is based on the patient’s PaO2 and FiO2 (Fig. 1).",
+        "location": "p. 2097, Methods, Control group, para 1"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "pes_guided",
+      "label_verbatim": "Esophageal-Pressure–Guided",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 30,
+        "provenance": {
+          "quote": "Esophageal-Pressure–Guided (N=30)",
+          "location": "Table 1"
+        }
+      },
+      "n_analysed": {
+        "value": 30,
+        "provenance": {
+          "quote": "Esophageal-Pressure–Guided (N=30)",
+          "location": "Table 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    },
+    {
+      "label": "ardsnet_low_peep",
+      "label_verbatim": "Conventional Treatment",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 31,
+        "provenance": {
+          "quote": "Conventional Treatment (N=31)",
+          "location": "Table 1"
+        }
+      },
+      "n_analysed": {
+        "value": 31,
+        "provenance": {
+          "quote": "Conventional Treatment (N=31)",
+          "location": "Table 1"
+        }
+      },
+      "peep_applied_cmh2o": null
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 147,
+          "dispersion_type": "sd",
+          "dispersion": 56,
+          "n": 30,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2:FiO2 147±56",
+            "location": "Table 2, row: PaO2:FiO2, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 145,
+          "dispersion_type": "sd",
+          "dispersion": 57,
+          "n": 31,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2:FiO2 145±57",
+            "location": "Table 2, row: PaO2:FiO2, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": true,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 280,
+          "dispersion_type": "sd",
+          "dispersion": 126,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2:FiO2 280±126",
+            "location": "Table 2, row: PaO2:FiO2, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 191,
+          "dispersion_type": "sd",
+          "dispersion": 71,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2:FiO2 191±71",
+            "location": "Table 2, row: PaO2:FiO2, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "mean_difference",
+          "value": 88,
+          "ci_low": 78.1,
+          "ci_high": 98.3,
+          "ci_level": 95,
+          "p_value": 0.002,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "Student's t-test",
+          "provenance": {
+            "quote": "The PaO2:FiO2 at 72 hours was 88 mm Hg higher in patients treated with mechanical ventilation with esophageal balloons than in control patients (95% confidence interval [CI], 78.1 to 98.3; P=0.002)",
+            "location": "p. 2098, Results, para 2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.04,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "The higher value of PaO2:FiO2 in the esophageal-pressure–guided group than in the control group was evident at 24 hours (P=0.04)",
+            "location": "p. 2099, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2:FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "This effect was persistent over the entire follow-up time (at 24, 48, and 72 hours; P=0.001 by repeated-measures analysis of variance)",
+            "location": "p. 2095, Abstract, Results"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory-system compliance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 36,
+          "dispersion_type": "sd",
+          "dispersion": 12,
+          "n": 30,
+          "unit": "ml/cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory-system compliance (ml/cm of water) 36±12",
+            "location": "Table 2, row: Respiratory-system compliance, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 36,
+          "dispersion_type": "sd",
+          "dispersion": 10,
+          "n": 31,
+          "unit": "ml/cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory-system compliance (ml/cm of water) 36±10",
+            "location": "Table 2, row: Respiratory-system compliance, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory-system compliance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 45,
+          "dispersion_type": "sd",
+          "dispersion": 14,
+          "n": 29,
+          "unit": "ml/cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory-system compliance (ml/cm of water) 45±14",
+            "location": "Table 2, row: Respiratory-system compliance, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 35,
+          "dispersion_type": "sd",
+          "dispersion": 9,
+          "n": 29,
+          "unit": "ml/cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory-system compliance (ml/cm of water) 35±9",
+            "location": "Table 2, row: Respiratory-system compliance, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.005,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "Student's t-test",
+          "provenance": {
+            "quote": "Respiratory-system compliance 45±14 vs 35±9, P=0.005",
+            "location": "Table 2, row: Respiratory-system compliance"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Respiratory-system compliance",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.01,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "Respiratory-system compliance was significantly improved and was higher in the esophageal-pressure–guided group than in the control group (P=0.01; repeated-measures analysis of variance at 24, 48, and 72 hours)",
+            "location": "p. 2099, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "Ratio of physiological dead space to tidal volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.67,
+          "dispersion_type": "sd",
+          "dispersion": 0.11,
+          "n": 30,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ratio of physiological dead space to tidal volume 0.67±0.11",
+            "location": "Table 2, row: Ratio of physiological dead space to tidal volume, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.67,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "n": 31,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ratio of physiological dead space to tidal volume 0.67±0.09",
+            "location": "Table 2, row: Ratio of physiological dead space to tidal volume, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "Ratio of physiological dead space to tidal volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.61,
+          "dispersion_type": "sd",
+          "dispersion": 0.09,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ratio of physiological dead space to tidal volume 0.61±0.09",
+            "location": "Table 2, row: Ratio of physiological dead space to tidal volume, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.64,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Ratio of physiological dead space to tidal volume 0.64±0.10",
+            "location": "Table 2, row: Ratio of physiological dead space to tidal volume, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.27,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Ratio of physiological dead space to tidal volume 0.61±0.09 vs 0.64±0.10, P=0.27",
+            "location": "Table 2, row: Ratio of physiological dead space to tidal volume"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 91,
+          "dispersion_type": "sd",
+          "dispersion": 25,
+          "n": 30,
+          "unit": "mm Hg",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2 (mm Hg) 91±25",
+            "location": "Table 2, row: PaO2, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 107,
+          "dispersion_type": "sd",
+          "dispersion": 44,
+          "n": 31,
+          "unit": "mm Hg",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2 (mm Hg) 107±44",
+            "location": "Table 2, row: PaO2, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 124,
+          "dispersion_type": "sd",
+          "dispersion": 44,
+          "n": 29,
+          "unit": "mm Hg",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2 (mm Hg) 124±44",
+            "location": "Table 2, row: PaO2, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 101,
+          "dispersion_type": "sd",
+          "dispersion": 33,
+          "n": 29,
+          "unit": "mm Hg",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PaO2 (mm Hg) 101±33",
+            "location": "Table 2, row: PaO2, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.03,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "PaO2 (mm Hg) 124±44 vs 101±33, P=0.03",
+            "location": "Table 2, row: PaO2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.66,
+          "dispersion_type": "sd",
+          "dispersion": 0.17,
+          "n": 30,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "FiO2 0.66±0.17",
+            "location": "Table 2, row: FiO2, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.77,
+          "dispersion_type": "sd",
+          "dispersion": 0.18,
+          "n": 31,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "FiO2 0.77±0.18",
+            "location": "Table 2, row: FiO2, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "FiO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.49,
+          "dispersion_type": "sd",
+          "dispersion": 0.17,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "FiO2 0.49±0.17",
+            "location": "Table 2, row: FiO2, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.57,
+          "dispersion_type": "sd",
+          "dispersion": 0.18,
+          "n": 29,
+          "unit": null,
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "FiO2 0.57±0.18",
+            "location": "Table 2, row: FiO2, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.07,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "FiO2 0.49±0.17 vs 0.57±0.18, P=0.07",
+            "location": "Table 2, row: FiO2"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 13,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP (cm of water) 13±5",
+            "location": "Table 2, row: PEEP, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 13,
+          "dispersion_type": "sd",
+          "dispersion": 3,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP (cm of water) 13±3",
+            "location": "Table 2, row: PEEP, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 17,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP (cm of water) 17±6",
+            "location": "Table 2, row: PEEP, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 10,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEP (cm of water) 10±4",
+            "location": "Table 2, row: PEEP, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "PEEP (cm of water) 17±6 vs 10±4, P<0.001",
+            "location": "Table 2, row: PEEP"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 18.7,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "mean PEEP in the esophageal-pressure–guided group of 18.7±5.1 cm of water",
+            "location": "p. 2100, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "mean_difference",
+          "value": 7.7,
+          "ci_low": 5.5,
+          "ci_high": 9.9,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "At 24 hours, the difference in PEEP between the groups reached 7.7 cm of water (95% CI, 5.5 to 9.9)",
+            "location": "p. 2100, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "significantly higher PEEP at 24, 48, and 72 hours (Fig. 2D, P<0.001)",
+            "location": "Figure 2D caption"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 484,
+          "dispersion_type": "sd",
+          "dispersion": 98,
+          "n": 30,
+          "unit": "ml",
+          "within_arm_change": {
+            "value": -44,
+            "dispersion_type": null,
+            "dispersion": null,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<0.001",
+            "test_used": "paired t-test",
+            "unit": "ml",
+            "provenance": {
+              "quote": "The average tidal volume was reduced during the first day of therapy by 67 ml in the control group (P<0.001 by paired t-test) and by 44 ml in the esophageal-pressure–guided group (P<0.001 by paired t-test).",
+              "location": "p. 2098, Results, Physiological Measurements, para 1"
+            }
+          },
+          "provenance": {
+            "quote": "Tidal volume (ml) 484±98",
+            "location": "Table 2, row: Tidal volume, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 491,
+          "dispersion_type": "sd",
+          "dispersion": 105,
+          "n": 31,
+          "unit": "ml",
+          "within_arm_change": {
+            "value": -67,
+            "dispersion_type": null,
+            "dispersion": null,
+            "ci_low": null,
+            "ci_high": null,
+            "p_value": null,
+            "p_value_verbatim": "<0.001",
+            "test_used": "paired t-test",
+            "unit": "ml",
+            "provenance": {
+              "quote": "The average tidal volume was reduced during the first day of therapy by 67 ml in the control group (P<0.001 by paired t-test) and by 44 ml in the esophageal-pressure–guided group (P<0.001 by paired t-test).",
+              "location": "p. 2098, Results, Physiological Measurements, para 1"
+            }
+          },
+          "provenance": {
+            "quote": "Tidal volume (ml) 491±105",
+            "location": "Table 2, row: Tidal volume, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 472,
+          "dispersion_type": "sd",
+          "dispersion": 98,
+          "n": 29,
+          "unit": "ml",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml) 472±98",
+            "location": "Table 2, row: Tidal volume, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 418,
+          "dispersion_type": "sd",
+          "dispersion": 80,
+          "n": 29,
+          "unit": "ml",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml) 418±80",
+            "location": "Table 2, row: Tidal volume, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.03,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Tidal volume (ml) 472±98 vs 418±80, P=0.03",
+            "location": "Table 2, row: Tidal volume"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume per predicted body weight",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 30,
+          "unit": "ml/kg PBW",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml per kg of predicted body weight) 7.3±1.3",
+            "location": "Table 2, row: Tidal volume (ml per kg of predicted body weight), Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 7.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.4,
+          "n": 31,
+          "unit": "ml/kg PBW",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml per kg of predicted body weight) 7.9±1.4",
+            "location": "Table 2, row: Tidal volume (ml per kg of predicted body weight), Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Tidal volume per predicted body weight",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 29,
+          "unit": "ml/kg PBW",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml per kg of predicted body weight) 7.1±1.3",
+            "location": "Table 2, row: Tidal volume (ml per kg of predicted body weight), 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 6.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.0,
+          "n": 29,
+          "unit": "ml/kg PBW",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Tidal volume (ml per kg of predicted body weight) 6.8±1.0",
+            "location": "Table 2, row: Tidal volume (ml per kg of predicted body weight), 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.31,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Tidal volume (ml per kg of predicted body weight) 7.1±1.3 vs 6.8±1.0, P=0.31",
+            "location": "Table 2, row: Tidal volume (ml per kg of predicted body weight)"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 26,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 30,
+          "unit": "breaths/min",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 26±6",
+            "location": "Table 2, row: Respiratory rate, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 24,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 31,
+          "unit": "breaths/min",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 24±6",
+            "location": "Table 2, row: Respiratory rate, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Respiratory rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 26,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 29,
+          "unit": "breaths/min",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 26±6",
+            "location": "Table 2, row: Respiratory rate, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 28,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 29,
+          "unit": "breaths/min",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 28±5",
+            "location": "Table 2, row: Respiratory rate, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.2,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Respiratory rate (breaths/min) 26±6 vs 28±5, P=0.20",
+            "location": "Table 2, row: Respiratory rate"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Inspiratory time",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.8,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 30,
+          "unit": "sec",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Inspiratory time (sec) 0.8±0.1",
+            "location": "Table 2, row: Inspiratory time, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.9,
+          "dispersion_type": "sd",
+          "dispersion": 0.2,
+          "n": 31,
+          "unit": "sec",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Inspiratory time (sec) 0.9±0.2",
+            "location": "Table 2, row: Inspiratory time, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "Inspiratory time",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.8,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 29,
+          "unit": "sec",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Inspiratory time (sec) 0.8±0.1",
+            "location": "Table 2, row: Inspiratory time, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 0.8,
+          "dispersion_type": "sd",
+          "dispersion": 0.1,
+          "n": 29,
+          "unit": "sec",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Inspiratory time (sec) 0.8±0.1",
+            "location": "Table 2, row: Inspiratory time, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.27,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Inspiratory time (sec) 0.8±0.1 vs 0.8±0.1, P=0.27",
+            "location": "Table 2, row: Inspiratory time"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtotal",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 14,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEPtotal (cm of water) 14±5",
+            "location": "Table 2, row: PEEPtotal, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 15,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEPtotal (cm of water) 15±4",
+            "location": "Table 2, row: PEEPtotal, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEPtotal",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 18,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEPtotal (cm of water) 18±5",
+            "location": "Table 2, row: PEEPtotal, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 12,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "PEEPtotal (cm of water) 12±5",
+            "location": "Table 2, row: PEEPtotal, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "PEEPtotal (cm of water) 18±5 vs 12±5, P<0.001",
+            "location": "Table 2, row: PEEPtotal"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Peak inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 35,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cm of water) 35±8",
+            "location": "Table 2, row: Peak inspiratory pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 35,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cm of water) 35±7",
+            "location": "Table 2, row: Peak inspiratory pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Peak inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 32,
+          "dispersion_type": "sd",
+          "dispersion": 8,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cm of water) 32±8",
+            "location": "Table 2, row: Peak inspiratory pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 28,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cm of water) 28±7",
+            "location": "Table 2, row: Peak inspiratory pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.007,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Peak inspiratory pressure (cm of water) 32±8 vs 28±7, P=0.007",
+            "location": "Table 2, row: Peak inspiratory pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mean airway pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 20,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Mean airway pressure (cm of water) 20±6",
+            "location": "Table 2, row: Mean airway pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 20,
+          "dispersion_type": "sd",
+          "dispersion": 4,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Mean airway pressure (cm of water) 20±4",
+            "location": "Table 2, row: Mean airway pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Mean airway pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 22,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Mean airway pressure (cm of water) 22±6",
+            "location": "Table 2, row: Mean airway pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 16,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Mean airway pressure (cm of water) 16±5",
+            "location": "Table 2, row: Mean airway pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Mean airway pressure (cm of water) 22±6 vs 16±5, P=0.001",
+            "location": "Table 2, row: Mean airway pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 29,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Plateau pressure (cm of water) 29±7",
+            "location": "Table 2, row: Plateau pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 29,
+          "dispersion_type": "sd",
+          "dispersion": 5,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Plateau pressure (cm of water) 29±5",
+            "location": "Table 2, row: Plateau pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 28,
+          "dispersion_type": "sd",
+          "dispersion": 7,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Plateau pressure (cm of water) 28±7",
+            "location": "Table 2, row: Plateau pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 25,
+          "dispersion_type": "sd",
+          "dispersion": 6,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Plateau pressure (cm of water) 25±6",
+            "location": "Table 2, row: Plateau pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.07,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Plateau pressure (cm of water) 28±7 vs 25±6, P=0.07",
+            "location": "Table 2, row: Plateau pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Plateau pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.003,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "The plateau airway pressure during end-inspiratory occlusion was higher in the esophageal-pressure–guided group than in the control group (P=0.003 by repeated-measures analysis of variance)",
+            "location": "p. 2100, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.9,
+          "dispersion_type": "sd",
+          "dispersion": 6.0,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cm of water) 7.9±6.0",
+            "location": "Table 2, row: Transpulmonary end-inspiratory pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 8.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.4,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cm of water) 8.6±5.4",
+            "location": "Table 2, row: Transpulmonary end-inspiratory pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 7.4,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cm of water) 7.4±4.4",
+            "location": "Table 2, row: Transpulmonary end-inspiratory pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 6.7,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cm of water) 6.7±4.9",
+            "location": "Table 2, row: Transpulmonary end-inspiratory pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.58,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Transpulmonary end-inspiratory pressure (cm of water) 7.4±4.4 vs 6.7±4.9, P=0.58",
+            "location": "Table 2, row: Transpulmonary end-inspiratory pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.13,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "transpulmonary pressures during end-inspiratory occlusion never exceeded 24 cm of water and did not differ significantly between the groups (P=0.13 by repeated-measures analysis of variance)",
+            "location": "p. 2100, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-expiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": -2.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cm of water) -2.8±5.0",
+            "location": "Table 2, row: Transpulmonary end-expiratory pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": -1.9,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cm of water) -1.9±4.7",
+            "location": "Table 2, row: Transpulmonary end-expiratory pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-expiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 0.1,
+          "dispersion_type": "sd",
+          "dispersion": 2.6,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cm of water) 0.1±2.6",
+            "location": "Table 2, row: Transpulmonary end-expiratory pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": -2.0,
+          "dispersion_type": "sd",
+          "dispersion": 4.7,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cm of water) -2.0±4.7",
+            "location": "Table 2, row: Transpulmonary end-expiratory pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.06,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Transpulmonary end-expiratory pressure (cm of water) 0.1±2.6 vs -2.0±4.7, P=0.06",
+            "location": "Table 2, row: Transpulmonary end-expiratory pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "Transpulmonary end-expiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "repeated_measures",
+        "label_verbatim": "24, 48, and 72 hours"
+      },
+      "measurement_context": null,
+      "data": [],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "repeated-measures analysis of variance",
+          "provenance": {
+            "quote": "At 24, 48, and 72 hours, the mean transpulmonary end-expiratory pressure remained above zero in the esophageal-pressure–guided group, whereas it remained negative in the control group (P<0.001 by repeated-measures analysis of variance)",
+            "location": "p. 2100, Results, Physiological Measurements, para 3"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 21.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cm of water) 21.2±4.9",
+            "location": "Table 2, row: Esophageal end-inspiratory pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 20.7,
+          "dispersion_type": "sd",
+          "dispersion": 5.1,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cm of water) 20.7±5.1",
+            "location": "Table 2, row: Esophageal end-inspiratory pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-inspiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 21.7,
+          "dispersion_type": "sd",
+          "dispersion": 7.2,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cm of water) 21.7±7.2",
+            "location": "Table 2, row: Esophageal end-inspiratory pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 17.9,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cm of water) 17.9±5.2",
+            "location": "Table 2, row: Esophageal end-inspiratory pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.03,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Esophageal end-inspiratory pressure (cm of water) 21.7±7.2 vs 17.9±5.2, P=0.03",
+            "location": "Table 2, row: Esophageal end-inspiratory pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-expiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "Each patient, while under heavy sedation or paralysis, underwent a recruitment maneuver to standardize the history of lung volume... All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2096-2097, Methods"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 17.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.4,
+          "n": 30,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cm of water) 17.2±4.4",
+            "location": "Table 2, row: Esophageal end-expiratory pressure, Baseline, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 16.9,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "n": 31,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cm of water) 16.9±5.0",
+            "location": "Table 2, row: Esophageal end-expiratory pressure, Baseline, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [],
+      "provenance": null
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "Esophageal end-expiratory pressure",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "measurement_context": {
+        "value": "After recruitment maneuver, measurements at 5 minutes, 24, 48, and 72 hours; patients under heavy sedation or paralysis.",
+        "provenance": {
+          "quote": "All measurements were repeated 5 minutes after the initiation of experimental or control ventilation and again at 24, 48, and 72 hours.",
+          "location": "p. 2097, Methods, Experimental Protocol, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 18.4,
+          "dispersion_type": "sd",
+          "dispersion": 5.9,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cm of water) 18.4±5.9",
+            "location": "Table 2, row: Esophageal end-expiratory pressure, 72 Hr, Esophageal-Pressure-Guided"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "mean",
+          "value": 14.3,
+          "dispersion_type": "sd",
+          "dispersion": 4.9,
+          "n": 29,
+          "unit": "cm H2O",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cm of water) 14.3±4.9",
+            "location": "Table 2, row: Esophageal end-expiratory pressure, 72 Hr, Conventional Treatment"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.008,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Esophageal end-expiratory pressure (cm of water) 18.4±5.9 vs 14.3±4.9, P=0.008",
+            "location": "Table 2, row: Esophageal end-expiratory pressure"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-Day mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 5,
+          "total": 30,
+          "provenance": {
+            "quote": "28-Day mortality — no. (%) 5 (17)",
+            "location": "Table 4, row: 28-Day mortality"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "events": 12,
+          "total": 31,
+          "provenance": {
+            "quote": "28-Day mortality — no. (%) 12 (39)",
+            "location": "Table 4, row: 28-Day mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_ratio",
+          "value": 0.43,
+          "ci_low": 0.17,
+          "ci_high": 1.07,
+          "ci_level": 95,
+          "p_value": 0.06,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "Poisson regression with robust error variance",
+          "provenance": {
+            "quote": "The 28-day mortality rate was lower among patients in the esophageal-pressure–guided group than among control patients, although the difference was not significant (relative risk, 0.43; 95% CI, 0.17 to 1.07; P=0.06)",
+            "location": "p. 2100, Results, Clinical Outcomes, para 2"
+          }
+        },
+        {
+          "type": "risk_ratio",
+          "value": 0.46,
+          "ci_low": 0.19,
+          "ci_high": 1.0,
+          "ci_level": 95,
+          "p_value": 0.049,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE II score at admission",
+          "test_used": "Poisson regression with robust error variance",
+          "provenance": {
+            "quote": "Multivariable analysis showed that after adjustment for baseline APACHE II score (relative risk per point of score, 1.16; 95% CI, 1.09 to 1.23; P<0.001), the esophageal-pressure protocol was associated with a significant reduction in 28-day mortality as compared with conventional treatment (relative risk, 0.46; 95% CI, 0.19 to 1.0; P=0.049)",
+            "location": "p. 2102, Results, Clinical Outcomes, para 2"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.055,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "chi-square test or Fisher's exact test",
+          "provenance": {
+            "quote": "28-Day mortality — no. (%) 5 (17) vs 12 (39), P=0.055",
+            "location": "Table 4, row: 28-Day mortality"
+          }
+        }
+      ],
+      "is_longest_reported_mortality": false,
+      "provenance": null
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "180-Day mortality",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 180
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "events": 8,
+          "total": 30,
+          "provenance": {
+            "quote": "180-Day mortality — no. (%) 8 (27)",
+            "location": "Table 4, row: 180-Day mortality"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "events": 14,
+          "total": 31,
+          "provenance": {
+            "quote": "180-Day mortality — no. (%) 14 (45)",
+            "location": "Table 4, row: 180-Day mortality"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "risk_ratio",
+          "value": 0.59,
+          "ci_low": 0.29,
+          "ci_high": 1.2,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "the point estimate for the relative risk of death in the esophageal-pressure–guided group was 0.59 (95% CI, 0.29 to 1.20) as compared with the control group.",
+            "location": "p. 2102, Results, Clinical Outcomes, para 2"
+          }
+        },
+        {
+          "type": "hazard_ratio",
+          "value": 0.52,
+          "ci_low": 0.22,
+          "ci_high": 1.25,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": null,
+          "adjusted": true,
+          "adjustment_covariates": "APACHE II score at admission",
+          "test_used": "Cox proportional-hazards regression",
+          "provenance": {
+            "quote": "Cox regression modeling showed that after adjustment for baseline APACHE II score (hazard ratio per point, 1.12; 95% CI, 1.04 to 1.22), the hazard ratio for 180-day mortality was 0.52 in the esophageal-pressure–guided group (95% CI, 0.22 to 1.25) as compared with the control group.",
+            "location": "p. 2102, Results, Clinical Outcomes, para 2"
+          }
+        },
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.13,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": "chi-square test or Fisher's exact test",
+          "provenance": {
+            "quote": "180-Day mortality — no. (%) 8 (27) vs 14 (45), P=0.13",
+            "location": "Table 4, row: 180-Day mortality"
+          }
+        }
+      ],
+      "is_longest_reported_mortality": true,
+      "provenance": null
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "Length of ICU stay",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event"
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 15.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 10.8,
+          "dispersion_high": 28.5,
+          "n": 30,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Length of ICU stay — days Median 15.5 Interquartile range 10.8–28.5",
+            "location": "Table 4, row: Length of ICU stay"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "median",
+          "value": 13.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.0,
+          "dispersion_high": 22.0,
+          "n": 31,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "Length of ICU stay — days Median 13.0 Interquartile range 7.0–22.0",
+            "location": "Table 4, row: Length of ICU stay"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.16,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "Length of ICU stay — days, P=0.16",
+            "location": "Table 4, row: Length of ICU stay"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "icu_free_days",
+      "name_verbatim": "No. of ICU-free days at 28 days",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 5.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 14.0,
+          "n": 30,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of ICU-free days at 28 days Median 5.0 Interquartile range 0.0–14.0",
+            "location": "Table 4, row: No. of ICU-free days at 28 days"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "median",
+          "value": 4.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 16.0,
+          "n": 31,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of ICU-free days at 28 days Median 4.0 Interquartile range 0.0–16.0",
+            "location": "Table 4, row: No. of ICU-free days at 28 days"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.96,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "No. of ICU-free days at 28 days, P=0.96",
+            "location": "Table 4, row: No. of ICU-free days at 28 days"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "ventilator_free_days",
+      "name_verbatim": "No. of ventilator-free days at 28 days",
+      "definition_verbatim": "* For patients who were deceased at day 28, a value of 0 days was assigned.",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 11.5,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 20.3,
+          "n": 30,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of ventilator-free days at 28 days Median 11.5 Interquartile range 0.0–20.3",
+            "location": "Table 4, row: No. of ventilator-free days at 28 days"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "median",
+          "value": 7.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 0.0,
+          "dispersion_high": 17.0,
+          "n": 31,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of ventilator-free days at 28 days Median 7.0 Interquartile range 0.0–17.0",
+            "location": "Table 4, row: No. of ventilator-free days at 28 days"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.5,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "No. of ventilator-free days at 28 days, P=0.50",
+            "location": "Table 4, row: No. of ventilator-free days at 28 days"
+          }
+        }
+      ],
+      "provenance": null
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "No. of days of ventilation among survivors",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event"
+      },
+      "data": [
+        {
+          "arm_label": "pes_guided",
+          "value_type": "median",
+          "value": 12.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.0,
+          "dispersion_high": 27.5,
+          "n": null,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of days of ventilation among survivors Median 12.0 Interquartile range 7.0–27.5",
+            "location": "Table 4, row: No. of days of ventilation among survivors"
+          }
+        },
+        {
+          "arm_label": "ardsnet_low_peep",
+          "value_type": "median",
+          "value": 16.0,
+          "dispersion_type": "iqr",
+          "dispersion_low": 7.0,
+          "dispersion_high": 20.0,
+          "n": null,
+          "unit": "days",
+          "within_arm_change": null,
+          "provenance": {
+            "quote": "No. of days of ventilation among survivors Median 16.0 Interquartile range 7.0-20.0",
+            "location": "Table 4, row: No. of days of ventilation among survivors"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": null,
+          "p_value": 0.71,
+          "p_value_verbatim": null,
+          "adjusted": false,
+          "adjustment_covariates": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "No. of days of ventilation among survivors, P=0.71",
+            "location": "Table 4, row: No. of days of ventilation among survivors"
+          }
+        }
+      ],
+      "provenance": null
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": {
+      "value": 1,
+      "provenance": {
+        "quote": "We were unable to sedate one patient in the esophageal-pressure–guided group sufficiently to obtain stable esophageal-pressure measurements.",
+        "location": "p. 2098, Results, para 1"
+      }
+    },
+    "measurement_failure_reasons": {
+      "value": "Insufficient sedation to obtain stable esophageal-pressure measurements.",
+      "provenance": {
+        "quote": "We were unable to sedate one patient in the esophageal-pressure–guided group sufficiently to obtain stable esophageal-pressure measurements.",
+        "location": "p. 2098, Results, para 1"
+      }
+    },
+    "balloon_related_complications": [],
+    "complications_explicitly_none": true,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "mixed",
+    "obesity_subgroup": "unclear",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "ARDS subgroup: mixed because 49/61 met ARDS criteria (PaO2:FiO2 <200 mm Hg), rest had ALI. Obesity: unclear because no BMI reported. Timing: unclear because intervention started after randomization, no time from ongoing reference reported."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": "epvent1",
+    "overlapping_cohort_with": [
+      "baedorf_kassis_2016"
+    ],
+    "overlap_evidence": "Confirmed by COHORTS.md: baedorf_kassis_2016 is a post hoc reanalysis including 56 patients from this EPVent-1 cohort; trial registration NCT00127491 matches.",
+    "unclear_items": [
+      "adults_18_plus: No explicit age criterion stated; assumed adult ICU population.",
+      "countries: Country inferred from Boston, MA; not explicitly stated.",
+      "allocation_ratio: Not stated; assumed 1:1 from group sizes.",
+      "blinding: Not explicitly reported; partial blinding of ICU team to esophageal measurements.",
+      "EP group N in text: '3 of the 31 patients' for EP group but table shows N=30; likely typo.",
+      "24h PaO2:FiO2 values only in Figure 2A; not in table.",
+      "Length of ICU stay timepoint type: duration_until_event."
+    ],
+    "data_only_in_figure": [
+      "24h and 48h values for PaO2:FiO2, compliance, PEEP, dead space ratio, transpulmonary pressures, plateau pressure (Figure 2)"
+    ],
+    "contact_author_needed": false,
+    "general_notes": "The study used a single-center RCT with a data safety monitoring board stopping early. One patient in EP group had no stable esophageal measurements but was included in ITT."
+  }
+}

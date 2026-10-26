@@ -1,0 +1,4338 @@
+{
+  "record_meta": {
+    "study_id": "zhao_2025",
+    "extractor": "deepseek",
+    "model": "deepseek-v4-flash-vision-exp",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/World j  surg - 2025 - Zhao - Individualized Lung‐Protective Ventilation Strategy Based on Esophageal Pressure Monitoring.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Zhao",
+    "year": 2025,
+    "title": "Individualized Lung-Protective Ventilation Strategy Based on Esophageal Pressure Monitoring in Patients With ARDS Associated With Severe Acute Pancreatitis—A Randomized Controlled Trial",
+    "journal": "World Journal of Surgery",
+    "doi": "10.1002/wjs.12676",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Inclusion criteria were as follows: (1) age ≥18 years",
+          "location": "p. 2363, left column, section 2.1, para 5"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "requiring invasive mechanical ventilation support",
+          "location": "p. 2363, left column, section 2.1, para 5"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This randomized controlled trial was conducted in the intensive care unit of Affiliated Anqing First People's Hospital of Anhui Medical University",
+          "location": "p. 2362, right column, section 2.1, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "PEEP optimization was achieved through a decremental PEEP test. Starting from 15 cmH2O, PEEP was reduced by 2 cmH2O increments every 2 min until reaching 5 cmH2O. At each PEEP level, end-expiratory PL, oxygenation index, and respiratory system compliance (Crs) were documented. The optimal PEEP was identified as the level maintaining end-expiratory PL between 0 and 2 cmH2O with the highest Crs.",
+          "location": "p. 2364, left column, section 2.2.3, para 3-4"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Clinical outcomes of the two groups of patients were evaluated, including mechanical ventilation duration, ICU length of stay, ventilator-associated pneumonia (VAP) incidence, and 28-day mortality rate.",
+          "location": "p. 2365, left column, section 2.3, para 2"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "we planned to enroll 62 patients in each group",
+          "location": "p. 2363, left column, section 2.1, para 4"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This randomized controlled trial included 124 patients",
+          "location": "p. 2361, Abstract, Methods"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "World Journal of Surgery, 2025; 49:2361–2373",
+          "location": "p. 2361, header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "This randomized controlled trial",
+      "provenance": {
+        "quote": "This randomized controlled trial included 124 patients with SAP-related ARDS admitted to our hospital from January 2023 to December 2023",
+        "location": "p. 2361, Abstract, Methods"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": "1:1",
+    "blinding": {
+      "value": "Outcome assessors remained blinded to group allocation throughout the study. Given the nature of the intervention, blinding of treating physicians was not feasible.",
+      "provenance": {
+        "quote": "Outcome assessors remained blinded to group allocation throughout the study. Given the nature of the intervention, blinding of treating physicians was not feasible.",
+        "location": "p. 2363, left column, section 2.1, para 6"
+      }
+    },
+    "centers": "single",
+    "n_centers": {
+      "value": 1,
+      "provenance": {
+        "quote": "conducted in the intensive care unit of Affiliated Anqing First People's Hospital of Anhui Medical University",
+        "location": "p. 2362, right column, section 2.1, para 1"
+      }
+    },
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "The hospital is a 1420-bed tertiary care center with a 25-bed mixed medical-surgical intensive care unit (ICU).",
+      "location": "p. 2362, right column, section 2.1, para 1"
+    },
+    "planned_sample_size": {
+      "value": 124,
+      "provenance": {
+        "quote": "we planned to enroll 62 patients in each group",
+        "location": "p. 2363, left column, section 2.1, para 4"
+      }
+    },
+    "sample_size_calculation": {
+      "value": "Based on previous studies, we assumed a mean difference in the PaO2/FiO2 ratio of 50 mmHg between groups with a standard deviation of 80 mmHg at 72 h after intervention. With α = 0.05 and power = 0.90, the minimum required sample size was 54 patients per group. Considering a potential dropout rate of 15%, we planned to enroll 62 patients in each group.",
+      "provenance": {
+        "quote": "Based on previous studies, we assumed a mean difference in the PaO2/FiO2 ratio of 50 mmHg between groups with a standard deviation of 80 mmHg at 72 h after intervention. With α = 0.05 and power = 0.90, the minimum required sample size was 54 patients per group. Considering a potential dropout rate of 15%, we planned to enroll 62 patients in each group.",
+        "location": "p. 2362, right column, section 2.1, para 3"
+      }
+    },
+    "stopped_early": false,
+    "stopping_rule": null,
+    "setting": {
+      "value": "mixed medical-surgical intensive care unit (ICU)",
+      "provenance": {
+        "quote": "a 25-bed mixed medical-surgical intensive care unit (ICU)",
+        "location": "p. 2362, right column, section 2.1, para 1"
+      }
+    },
+    "enrolment_start": "2023-01",
+    "enrolment_end": "2023-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "This study was supported by the following funding sources: the 2019 Youth Talent Cultivation Program of Guangxi Zhuang Autonomous Region Maternal and Child Health Hospital (Grant GXWCH-YMJH-2018006), the Guangxi Medical Health Appropriate Technology Development and Promotion Application Project (Grant S2023044), and the Self-funded Research Initiative of Guangxi Zhuang Autonomous Region Health Commission (Grant Z-A20240314).",
+      "provenance": {
+        "quote": "This study was supported by the following funding sources: the 2019 Youth Talent Cultivation Program of Guangxi Zhuang Autonomous Region Maternal and Child Health Hospital (Grant GXWCH-YMJH-2018006), the Guangxi Medical Health Appropriate Technology Development and Promotion Application Project (Grant S2023044), and the Self-funded Research Initiative of Guangxi Zhuang Autonomous Region Health Commission (Grant Z-A20240314).",
+        "location": "p. 2361, Funding statement"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 124,
+      "provenance": {
+        "quote": "This randomized controlled trial included 124 patients",
+        "location": "p. 2361, Abstract, Methods"
+      }
+    },
+    "n_analysed": {
+      "value": 124,
+      "provenance": {
+        "quote": "A total of 124 patients with SAP-related ARDS completed the study",
+        "location": "p. 2365, section 3.1, para 1"
+      }
+    },
+    "population_description": {
+      "value": "patients with SAP-related ARDS",
+      "provenance": {
+        "quote": "patients with SAP-related ARDS",
+        "location": "p. 2361, Abstract, Background and Objective"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "age ≥18 years; meeting the diagnostic criteria for ARDS according to the 2012 Berlin Definition; the cause of ARDS was SAP, meeting the 2012 revised Atlanta criteria; requiring invasive mechanical ventilation support; mechanical ventilation initiated within 48 h prior to enrollment; agreed to participate and signed informed consent",
+      "provenance": {
+        "quote": "Inclusion criteria were as follows: (1) age ≥18 years, (2) meeting the diagnostic criteria for ARDS according to the 2012 Berlin Definition, (3) the cause of ARDS was SAP, meeting the 2012 revised Atlanta criteria, (4) requiring invasive mechanical ventilation support, (5) mechanical ventilation initiated within 48 h prior to enrollment, and (6) the patient or his/her legal representative agreed to participate in the study and signed the informed consent form.",
+        "location": "p. 2363, left column, section 2.1, para 5"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "patients with a history of chronic respiratory diseases (such as COPD and bronchial asthma); severe cardiovascular diseases (such as acute MI and severe heart failure); acute diseases that affect respiratory function, such as pulmonary embolism or pneumothorax; pregnant or lactating women; recently (within 3 months) participated in other clinical trials; contraindications to EPM (such as esophageal varices and esophageal tumors); expected survival period less than 28 days",
+      "provenance": {
+        "quote": "Exclusion criteria were as follows: (1) patients with a history of chronic respiratory diseases (such as chronic obstructive pulmonary disease and bronchial asthma), (2) patients with severe cardiovascular diseases (such as acute myocardial infarction and severe heart failure), (3) patients with acute diseases that affect respiratory function, such as pulmonary embolism or pneumothorax, (4) pregnant or lactating women, (5) patients who have recently (within 3 months) participated in other clinical trials, (6) patients with contraindications to EPM (such as esophageal varices and esophageal tumors), and (7) patients with an expected survival period less than 28 days.",
+        "location": "p. 2363, left column, section 2.1, para 5"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "2012 Berlin Definition",
+      "provenance": {
+        "quote": "meeting the diagnostic criteria for ARDS according to the 2012 Berlin Definition",
+        "location": "p. 2363, left column, inclusion criteria item (2)"
+      }
+    },
+    "n_ards": {
+      "n": 124,
+      "total": 124,
+      "provenance": {
+        "quote": "This randomized controlled trial included 124 patients with SAP-related ARDS",
+        "location": "p. 2361, Abstract, Methods"
+      }
+    },
+    "ards_severity": {},
+    "covid19_population": "not_applicable",
+    "cause_of_respiratory_failure": {
+      "value": "Severe acute pancreatitis",
+      "provenance": {
+        "quote": "the cause of ARDS was SAP",
+        "location": "p. 2363, left column, inclusion criteria item (3)"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Modified Marshall score",
+        "arm_label": "epm_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 5.7,
+          "dispersion_type": "sd",
+          "dispersion": 1.2,
+          "n": 62,
+          "provenance": {
+            "quote": "Modified Marshall score 5.7 ± 1.2",
+            "location": "Table 1, row: Modified Marshall score, EPM-guided group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Modified Marshall score",
+        "arm_label": "conventional",
+        "continuous": {
+          "value_type": "mean",
+          "value": 5.8,
+          "dispersion_type": "sd",
+          "dispersion": 1.3,
+          "n": 62,
+          "provenance": {
+            "quote": "Modified Marshall score 5.8 ± 1.3",
+            "location": "Table 1, row: Modified Marshall score, Conventional group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressor use",
+        "arm_label": "epm_guided",
+        "count": {
+          "n": 29,
+          "total": 62,
+          "percent_as_reported": 46.8,
+          "provenance": {
+            "quote": "Vasopressor use [n (%)] 29 (46.8)",
+            "location": "Table 1, row: Vasopressor use, EPM-guided group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Vasopressor use",
+        "arm_label": "conventional",
+        "count": {
+          "n": 30,
+          "total": 62,
+          "percent_as_reported": 48.4,
+          "provenance": {
+            "quote": "Vasopressor use [n (%)] 30 (48.4)",
+            "location": "Table 1, row: Vasopressor use, Conventional group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Neuromuscular blockade use",
+        "arm_label": "epm_guided",
+        "count": {
+          "n": 36,
+          "total": 62,
+          "percent_as_reported": 58.1,
+          "provenance": {
+            "quote": "Neuromuscular blockade use [n (%)] 36 (58.1)",
+            "location": "Table 1, row: Neuromuscular blockade use, EPM-guided group"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Neuromuscular blockade use",
+        "arm_label": "conventional",
+        "count": {
+          "n": 39,
+          "total": 62,
+          "percent_as_reported": 62.9,
+          "provenance": {
+            "quote": "Neuromuscular blockade use [n (%)] 39 (62.9)",
+            "location": "Table 1, row: Neuromuscular blockade use, Conventional group"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "epm_guided",
+        "n": {
+          "value": 62,
+          "provenance": {
+            "quote": "EPM-guided group (n = 62)",
+            "location": "Table 1, header"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 54.73,
+          "dispersion_type": "sd",
+          "dispersion": 12.32,
+          "n": 62,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) 54.73 ± 12.32",
+            "location": "Table 1, row: Age (years), EPM-guided group"
+          }
+        },
+        "sex_female": {
+          "n": 26,
+          "total": 62,
+          "percent_as_reported": 41.94,
+          "provenance": {
+            "quote": "Female 26 (41.94)",
+            "location": "Table 1, row: Sex [n (%)], EPM-guided group"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 24.82,
+          "dispersion_type": "sd",
+          "dispersion": 3.43,
+          "n": 62,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI (kg/m2) 24.82 ± 3.43",
+            "location": "Table 1, row: BMI (kg/m2), EPM-guided group"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 142.86,
+          "dispersion_type": "sd",
+          "dispersion": 32.42,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio (mmHg) Baseline 142.86 ± 32.42",
+            "location": "Table 4, row: PaO2/FiO2 ratio, Baseline, EPM-guided group"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 18.43,
+          "dispersion_type": "sd",
+          "dispersion": 4.62,
+          "n": 62,
+          "provenance": {
+            "quote": "APACHE II score 18.43 ± 4.62",
+            "location": "Table 1, row: APACHE II score, EPM-guided group"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 8.92,
+          "dispersion_type": "sd",
+          "dispersion": 2.34,
+          "n": 62,
+          "provenance": {
+            "quote": "SOFA score 8.92 ± 2.34",
+            "location": "Table 1, row: SOFA score, EPM-guided group"
+          }
+        }
+      },
+      {
+        "arm_label": "conventional",
+        "n": {
+          "value": 62,
+          "provenance": {
+            "quote": "Conventional group (n = 62)",
+            "location": "Table 1, header"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 55.31,
+          "dispersion_type": "sd",
+          "dispersion": 11.94,
+          "n": 62,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age (years) 55.31 ± 11.94",
+            "location": "Table 1, row: Age (years), Conventional group"
+          }
+        },
+        "sex_female": {
+          "n": 28,
+          "total": 62,
+          "percent_as_reported": 45.16,
+          "provenance": {
+            "quote": "Female 28 (45.16)",
+            "location": "Table 1, row: Sex [n (%)], Conventional group"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 24.56,
+          "dispersion_type": "sd",
+          "dispersion": 3.21,
+          "n": 62,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI (kg/m2) 24.56 ± 3.21",
+            "location": "Table 1, row: BMI (kg/m2), Conventional group"
+          }
+        },
+        "pao2_fio2_baseline": {
+          "value_type": "mean",
+          "value": 143.73,
+          "dispersion_type": "sd",
+          "dispersion": 33.38,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio (mmHg) Baseline 143.73 ± 33.38",
+            "location": "Table 4, row: PaO2/FiO2 ratio, Baseline, Conventional group"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 18.76,
+          "dispersion_type": "sd",
+          "dispersion": 4.83,
+          "n": 62,
+          "provenance": {
+            "quote": "APACHE II score 18.76 ± 4.83",
+            "location": "Table 1, row: APACHE II score, Conventional group"
+          }
+        },
+        "sofa": {
+          "value_type": "mean",
+          "value": 8.76,
+          "dispersion_type": "sd",
+          "dispersion": 2.41,
+          "n": 62,
+          "provenance": {
+            "quote": "SOFA score 8.76 ± 2.41",
+            "location": "Table 1, row: SOFA score, Conventional group"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": {
+      "value": "SmartCath, CareFusion, USA",
+      "provenance": {
+        "quote": "specialized esophageal balloon catheters (SmartCath, CareFusion, USA)",
+        "location": "p. 2363, left column, section 2.2.1, para 3"
+      }
+    },
+    "balloon_inflation_volume_ml": {
+      "value_type": null,
+      "value": null,
+      "dispersion_type": "range",
+      "dispersion_low": 0.5,
+      "dispersion_high": 2.0,
+      "unit": "mL",
+      "provenance": {
+        "quote": "The balloon was inflated with 0.5–2.0 mL of air",
+        "location": "p. 2364, left column, section 2.2.3, para 1"
+      }
+    },
+    "balloon_calibration": {
+      "method": "dynamic_occlusion_test",
+      "method_verbatim": {
+        "value": "The correct positioning was verified by observing cardiac oscillations on the Pes tracing and by performing an occlusion test (the ratio of changes in Pes to airway pressure during occluded respiratory efforts should be 0.8–1.2). The balloon was inflated with 0.5–2.0 mL of air, with the volume titrated to obtain the highest amplitude of cardiac oscillations without damping effect.",
+        "provenance": {
+          "quote": "The correct positioning was verified by observing cardiac oscillations on the Pes tracing and by performing an occlusion test (the ratio of changes in Pes to airway pressure during occluded respiratory efforts should be 0.8–1.2). The balloon was inflated with 0.5–2.0 mL of air, with the volume titrated to obtain the highest amplitude of cardiac oscillations without damping effect.",
+          "location": "p. 2364, left column, section 2.2.3, para 1"
+        }
+      },
+      "position_verification": {
+        "value": "cardiac oscillations on the Pes tracing and occlusion test ratio 0.8-1.2; also chest X-ray",
+        "provenance": {
+          "quote": "The correct positioning was verified by observing cardiac oscillations on the Pes tracing and by performing an occlusion test (the ratio of changes in Pes to airway pressure during occluded respiratory efforts should be 0.8–1.2). The balloon was inflated with 0.5–2.0 mL of air, with the volume titrated to obtain the highest amplitude of cardiac oscillations without damping effect.",
+          "location": "p. 2364, left column, section 2.2.3, para 1"
+        }
+      },
+      "occlusion_ratio_acceptance": {
+        "value": "0.8–1.2",
+        "provenance": {
+          "quote": "the ratio of changes in Pes to airway pressure during occluded respiratory efforts should be 0.8–1.2",
+          "location": "p. 2364, left column, section 2.2.3, para 1"
+        }
+      }
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "The PL was calculated using the formula: PL = Paw—Pes, where Paw represents the airway pressure. End-inspiratory PL was calculated as Pplat minus end-inspiratory Pes, whereas end-expiratory PL was calculated as PEEP minus end-expiratory Pes.",
+        "provenance": {
+          "quote": "The PL was calculated using the formula: PL = Paw—Pes, where Paw represents the airway pressure. End-inspiratory PL was calculated as Pplat minus end-inspiratory Pes, whereas end-expiratory PL was calculated as PEEP minus end-expiratory Pes.",
+          "location": "p. 2364, left column, section 2.2.3, para 2"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "combined_end_expiratory_and_end_inspiratory",
+      "strategy_verbatim": {
+        "value": "The target was to maintain end-inspiratory PL below 20 cmH2O. When this threshold was exceeded, tidal volume was progressively decreased to a minimum of 4 mL/kg PBW. PEEP optimization was achieved through a decremental PEEP test. Starting from 15 cmH2O, PEEP was reduced by 2 cmH2O increments every 2 min until reaching 5 cmH2O. At each PEEP level, end-expiratory PL, oxygenation index, and respiratory system compliance (Crs) were documented. The optimal PEEP was identified as the level maintaining end-expiratory PL between 0 and 2 cmH2O with the highest Crs.",
+        "provenance": {
+          "quote": "The target was to maintain end-inspiratory PL below 20 cmH2O. When this threshold was exceeded, tidal volume was progressively decreased to a minimum of 4 mL/kg PBW. PEEP optimization was achieved through a decremental PEEP test. Starting from 15 cmH2O, PEEP was reduced by 2 cmH2O increments every 2 min until reaching 5 cmH2O. At each PEEP level, end-expiratory PL, oxygenation index, and respiratory system compliance (Crs) were documented. The optimal PEEP was identified as the level maintaining end-expiratory PL between 0 and 2 cmH2O with the highest Crs.",
+          "location": "p. 2364, left column, section 2.2.3, para 3-4"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": {
+        "value": 0,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "end-expiratory PL between 0 and 2 cmH2O",
+          "location": "p. 2364, left column, section 2.2.3, para 4"
+        }
+      },
+      "end_expiratory_ptp_target_high_cmh2o": {
+        "value": 2,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "end-expiratory PL between 0 and 2 cmH2O",
+          "location": "p. 2364, left column, section 2.2.3, para 4"
+        }
+      },
+      "end_inspiratory_ptp_limit_cmh2o": {
+        "value": 20,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "The target was to maintain end-inspiratory PL below 20 cmH2O",
+          "location": "p. 2364, left column, section 2.2.3, para 3"
+        }
+      },
+      "driving_ptp_limit_cmh2o": {
+        "value": 12,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "the ΔPL was kept ≤12 cmH2O",
+          "location": "p. 2364, right column, section 2.2.4, para 1"
+        }
+      },
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "Measurements were recorded every 2 h during the first 24 h, then every 4 h thereafter.",
+        "provenance": {
+          "quote": "Measurements were recorded every 2 h during the first 24 h, then every 4 h thereafter.",
+          "location": "p. 2364, left column, section 2.2.3, para 2"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Lung recruitment maneuvers were performed when severe hypoxemia (PaO2/FiO2 ratio < 150 mmHg) or atelectasis (indicated by significant Crs decrease) occurred. The recruitment process involved a stepwise increase in PEEP to 30–40 cmH2O for 30–40 s, with continuous hemodynamic monitoring.",
+        "provenance": {
+          "quote": "Lung recruitment maneuvers were performed when severe hypoxemia (PaO2/FiO2 ratio < 150 mmHg) or atelectasis (indicated by significant Crs decrease) occurred. The recruitment process involved a stepwise increase in PEEP to 30–40 cmH2O for 30–40 s, with continuous hemodynamic monitoring.",
+          "location": "p. 2364, left column, section 2.2.3, para 5"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "6 mL/kg predicted body weight",
+        "provenance": {
+          "quote": "a tidal volume of 6 mL/kg predicted body weight (PBW)",
+          "location": "p. 2363, left column, section 2.2.1, para 1"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "End-inspiratory PL below 20 cmH2O",
+        "provenance": {
+          "quote": "The target was to maintain end-inspiratory PL below 20 cmH2O",
+          "location": "p. 2364, left column, section 2.2.3, para 3"
+        }
+      },
+      "protocolised_weaning": true,
+      "other_co_interventions": {
+        "value": "Conservative fluid management, prone positioning for PaO2/FiO2 <150 mmHg, semirecumbent 45°.",
+        "provenance": {
+          "quote": "All patients were maintained in a 45° semirecumbent position. Prone positioning was implemented for patients with the PaO2/FiO2 ratio < 150 mmHg, with each session lasting at least 16 h. A conservative fluid management strategy was implemented in both groups according to a standardized protocol.",
+          "location": "p. 2364, right column, section 2.2.6 and 2.2.7"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "intubation",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Eligible patients were screened within 48 h of mechanical ventilation",
+        "provenance": {
+          "quote": "Eligible patients were screened within 48 h of mechanical ventilation",
+          "location": "p. 2363, left column, section 2.1, para 3"
+        }
+      }
+    },
+    "duration_of_pes_guidance": null
+  },
+  "comparator": {
+    "comparator_types": [
+      "ardsnet_high_peep_fio2_table"
+    ],
+    "comparator_verbatim": {
+      "value": "In the conventional group, patients received standard lung-protective ventilation strategy. The ventilator parameters were adjusted to maintain plateau pressure (Pplat) ≤30 cmH2O and driving pressure (ΔP) ≤15 cmH2O. When Pplat exceeded 30 cmH2O, tidal volume was gradually reduced to 4 mL/kg PBW. PEEP and FiO2 adjustments followed the ARDSNet high PEEP/FiO2 table with the goal of maintaining oxygenation index (PaO2/FiO2 ratio) > 150 mmHg and arterial oxygen saturation (SaO2) > 88%.",
+      "provenance": {
+        "quote": "In the conventional group, patients received standard lung-protective ventilation strategy. The ventilator parameters were adjusted to maintain plateau pressure (Pplat) ≤30 cmH2O and driving pressure (ΔP) ≤15 cmH2O. When Pplat exceeded 30 cmH2O, tidal volume was gradually reduced to 4 mL/kg PBW. PEEP and FiO2 adjustments followed the ARDSNet high PEEP/FiO2 table with the goal of maintaining oxygenation index (PaO2/FiO2 ratio) > 150 mmHg and arterial oxygen saturation (SaO2) > 88%.",
+        "location": "p. 2363, right column, section 2.2.2, para 1"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "epm_guided",
+      "label_verbatim": "EPM-guided group",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 62,
+        "provenance": {
+          "quote": "randomized to an esophageal pressure monitoring-guided group (EPM-guided group, n = 62)",
+          "location": "p. 2361, Abstract, Methods"
+        }
+      },
+      "n_analysed": {
+        "value": 62,
+        "provenance": {
+          "quote": "EPM-guided group (n = 62)",
+          "location": "p. 2365, Table 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 10.36,
+        "dispersion_type": "sd",
+        "dispersion": 1.83,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 72 h 10.36 ± 1.83",
+          "location": "Table 3, row: PEEP, time point: 72 h, EPM-guided group"
+        }
+      }
+    },
+    {
+      "label": "conventional",
+      "label_verbatim": "conventional group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 62,
+        "provenance": {
+          "quote": "randomized to a conventional lung protective ventilation group (conventional group, n = 62)",
+          "location": "p. 2361, Abstract, Methods"
+        }
+      },
+      "n_analysed": {
+        "value": 62,
+        "provenance": {
+          "quote": "Conventional group (n = 62)",
+          "location": "p. 2365, Table 1"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 10.52,
+        "dispersion_type": "sd",
+        "dispersion": 2.37,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "PEEP (cmH2O) 72 h 10.52 ± 2.37",
+          "location": "Table 3, row: PEEP, time point: 72 h, Conventional group"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-inspiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 22.86,
+          "dispersion_type": "sd",
+          "dispersion": 3.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL Baseline 22.86 ± 3.42",
+            "location": "Table 2, row: End-inspiratory PL, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 22.73,
+          "dispersion_type": "sd",
+          "dispersion": 3.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL Baseline 22.73 ± 3.38",
+            "location": "Table 2, row: End-inspiratory PL, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.832,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-inspiratory PL Baseline 22.86 ± 3.42 vs 22.73 ± 3.38, t = 0.213, p = 0.832",
+            "location": "Table 2, row: End-inspiratory PL, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-inspiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 19.42,
+          "dispersion_type": "sd",
+          "dispersion": 2.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 24 h 19.42 ± 2.83ab",
+            "location": "Table 2, row: End-inspiratory PL, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 22.52,
+          "dispersion_type": "sd",
+          "dispersion": 3.24,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 24 h 22.52 ± 3.24",
+            "location": "Table 2, row: End-inspiratory PL, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.012,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-inspiratory PL 24 h 19.42 ± 2.83 vs 22.52 ± 3.24, t = 5.624, p = 0.012",
+            "location": "Table 2, row: End-inspiratory PL, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-inspiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 17.63,
+          "dispersion_type": "sd",
+          "dispersion": 2.62,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 48 h 17.63 ± 2.62ab",
+            "location": "Table 2, row: End-inspiratory PL, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 22.38,
+          "dispersion_type": "sd",
+          "dispersion": 3.18,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 48 h 22.38 ± 3.18",
+            "location": "Table 2, row: End-inspiratory PL, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.008,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-inspiratory PL 48 h 17.63 ± 2.62 vs 22.38 ± 3.18, t = 6.326, p = 0.008",
+            "location": "Table 2, row: End-inspiratory PL, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-inspiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 16.82,
+          "dispersion_type": "sd",
+          "dispersion": 2.46,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 72 h 16.82 ± 2.46ab",
+            "location": "Table 2, row: End-inspiratory PL, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 22.41,
+          "dispersion_type": "sd",
+          "dispersion": 3.23,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-inspiratory PL 72 h 22.41 ± 3.23",
+            "location": "Table 2, row: End-inspiratory PL, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.006,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-inspiratory PL 72 h 16.82 ± 2.46 vs 22.41 ± 3.23, t = 7.124, p = 0.006",
+            "location": "Table 2, row: End-inspiratory PL, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 6.13,
+          "dispersion_type": "sd",
+          "dispersion": 1.82,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL Baseline 6.13 ± 1.82",
+            "location": "Table 2, row: End-expiratory PL, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 6.15,
+          "dispersion_type": "sd",
+          "dispersion": 1.78,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL Baseline 6.15 ± 1.78",
+            "location": "Table 2, row: End-expiratory PL, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.951,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory PL Baseline 6.13 ± 1.82 vs 6.15 ± 1.78, t = 0.062, p = 0.951",
+            "location": "Table 2, row: End-expiratory PL, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 5.1,
+          "dispersion_type": "sd",
+          "dispersion": 1.63,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 24 h 5.10 ± 1.63ab",
+            "location": "Table 2, row: End-expiratory PL, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 6.09,
+          "dispersion_type": "sd",
+          "dispersion": 1.82,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 24 h 6.09 ± 1.82",
+            "location": "Table 2, row: End-expiratory PL, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.037,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory PL 24 h 5.10 ± 1.63 vs 6.09 ± 1.82, t = 3.021, p = 0.037",
+            "location": "Table 2, row: End-expiratory PL, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 4.39,
+          "dispersion_type": "sd",
+          "dispersion": 1.35,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 48 h 4.39 ± 1.35ab",
+            "location": "Table 2, row: End-expiratory PL, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 5.9,
+          "dispersion_type": "sd",
+          "dispersion": 1.73,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 48 h 5.90 ± 1.73",
+            "location": "Table 2, row: End-expiratory PL, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.014,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory PL 48 h 4.39 ± 1.35 vs 5.90 ± 1.73, t = 5.236, p = 0.014",
+            "location": "Table 2, row: End-expiratory PL, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "End-expiratory PL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 4.46,
+          "dispersion_type": "sd",
+          "dispersion": 1.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 72 h 4.46 ± 1.38ab",
+            "location": "Table 2, row: End-expiratory PL, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 5.89,
+          "dispersion_type": "sd",
+          "dispersion": 1.81,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory PL 72 h 5.89 ± 1.81",
+            "location": "Table 2, row: End-expiratory PL, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.02,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory PL 72 h 4.46 ± 1.38 vs 5.89 ± 1.81, t = 4.852, p = 0.020",
+            "location": "Table 2, row: End-expiratory PL, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 16.73,
+          "dispersion_type": "sd",
+          "dispersion": 2.52,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL Baseline 16.73 ± 2.52",
+            "location": "Table 2, row: ΔPL, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 16.58,
+          "dispersion_type": "sd",
+          "dispersion": 2.43,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL Baseline 16.58 ± 2.43",
+            "location": "Table 2, row: ΔPL, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.733,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔPL Baseline 16.73 ± 2.52 vs 16.58 ± 2.43, t = 0.342, p = 0.733",
+            "location": "Table 2, row: ΔPL, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 14.32,
+          "dispersion_type": "sd",
+          "dispersion": 2.13,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 24 h 14.32 ± 2.13ab",
+            "location": "Table 2, row: ΔPL, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 16.43,
+          "dispersion_type": "sd",
+          "dispersion": 2.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 24 h 16.43 ± 2.38",
+            "location": "Table 2, row: ΔPL, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.015,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔPL 24 h 14.32 ± 2.13 vs 16.43 ± 2.38, t = 5.123, p = 0.015",
+            "location": "Table 2, row: ΔPL, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 13.24,
+          "dispersion_type": "sd",
+          "dispersion": 1.92,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 48 h 13.24 ± 1.92ab",
+            "location": "Table 2, row: ΔPL, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 16.48,
+          "dispersion_type": "sd",
+          "dispersion": 2.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 48 h 16.48 ± 2.42",
+            "location": "Table 2, row: ΔPL, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.009,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔPL 48 h 13.24 ± 1.92 vs 16.48 ± 2.42, t = 6.234, p = 0.009",
+            "location": "Table 2, row: ΔPL, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "transpulmonary_pressure",
+      "name_verbatim": "ΔPL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 12.36,
+          "dispersion_type": "sd",
+          "dispersion": 1.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 72 h 12.36 ± 1.83ab",
+            "location": "Table 2, row: ΔPL, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 16.52,
+          "dispersion_type": "sd",
+          "dispersion": 2.37,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔPL 72 h 16.52 ± 2.37",
+            "location": "Table 2, row: ΔPL, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.007,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔPL 72 h 12.36 ± 1.83 vs 16.52 ± 2.37, t = 6.843, p = 0.007",
+            "location": "Table 2, row: ΔPL, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-expiratory pes",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 12.83,
+          "dispersion_type": "sd",
+          "dispersion": 2.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes Baseline 12.83 ± 2.42",
+            "location": "Table 2, row: End-expiratory pes, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 12.76,
+          "dispersion_type": "sd",
+          "dispersion": 2.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes Baseline 12.76 ± 2.38",
+            "location": "Table 2, row: End-expiratory pes, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.872,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory pes Baseline 12.83 ± 2.42 vs 12.76 ± 2.38, t = 0.162, p = 0.872",
+            "location": "Table 2, row: End-expiratory pes, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-expiratory pes",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 11.42,
+          "dispersion_type": "sd",
+          "dispersion": 2.13,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 24 h 11.42 ± 2.13ab",
+            "location": "Table 2, row: End-expiratory pes, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 12.62,
+          "dispersion_type": "sd",
+          "dispersion": 2.32,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 24 h 12.62 ± 2.32",
+            "location": "Table 2, row: End-expiratory pes, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.042,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory pes 24 h 11.42 ± 2.13 vs 12.62 ± 2.32, t = 2.843, p = 0.042",
+            "location": "Table 2, row: End-expiratory pes, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-expiratory pes",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 10.86,
+          "dispersion_type": "sd",
+          "dispersion": 1.92,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 48 h 10.86 ± 1.92ab",
+            "location": "Table 2, row: End-expiratory pes, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 12.58,
+          "dispersion_type": "sd",
+          "dispersion": 2.28,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 48 h 12.58 ± 2.28",
+            "location": "Table 2, row: End-expiratory pes, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.038,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory pes 48 h 10.86 ± 1.92 vs 12.58 ± 2.28, t = 3.126, p = 0.038",
+            "location": "Table 2, row: End-expiratory pes, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "esophageal_pressure",
+      "name_verbatim": "End-expiratory pes",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 10.43,
+          "dispersion_type": "sd",
+          "dispersion": 1.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 72 h 10.43 ± 1.83ab",
+            "location": "Table 2, row: End-expiratory pes, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 12.52,
+          "dispersion_type": "sd",
+          "dispersion": 2.24,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "End-expiratory pes 72 h 12.52 ± 2.24",
+            "location": "Table 2, row: End-expiratory pes, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.032,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "End-expiratory pes 72 h 10.43 ± 1.83 vs 12.52 ± 2.24, t = 3.842, p = 0.032",
+            "location": "Table 2, row: End-expiratory pes, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 28.86,
+          "dispersion_type": "sd",
+          "dispersion": 3.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) Baseline 28.86 ± 3.42",
+            "location": "Table 3, row: Pplat, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 28.73,
+          "dispersion_type": "sd",
+          "dispersion": 3.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat (cmH2O) Baseline 28.73 ± 3.38",
+            "location": "Table 3, row: Pplat, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.832,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Pplat Baseline 28.86 ± 3.42 vs 28.73 ± 3.38, t = 0.213, p = 0.832",
+            "location": "Table 3, row: Pplat, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 25.42,
+          "dispersion_type": "sd",
+          "dispersion": 2.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 24 h 25.42 ± 2.83ab",
+            "location": "Table 3, row: Pplat, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 28.52,
+          "dispersion_type": "sd",
+          "dispersion": 3.24,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 24 h 28.52 ± 3.24",
+            "location": "Table 3, row: Pplat, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.013,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Pplat 24 h 25.42 ± 2.83 vs 28.52 ± 3.24, t = 5.624, p = 0.013",
+            "location": "Table 3, row: Pplat, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 23.63,
+          "dispersion_type": "sd",
+          "dispersion": 2.62,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 48 h 23.63 ± 2.62ab",
+            "location": "Table 3, row: Pplat, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 28.38,
+          "dispersion_type": "sd",
+          "dispersion": 3.18,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 48 h 28.38 ± 3.18",
+            "location": "Table 3, row: Pplat, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.008,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Pplat 48 h 23.63 ± 2.62 vs 28.38 ± 3.18, t = 6.326, p = 0.008",
+            "location": "Table 3, row: Pplat, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Pplat",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 22.82,
+          "dispersion_type": "sd",
+          "dispersion": 2.46,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 72 h 22.82 ± 2.46ab",
+            "location": "Table 3, row: Pplat, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 28.41,
+          "dispersion_type": "sd",
+          "dispersion": 3.23,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Pplat 72 h 28.41 ± 3.23",
+            "location": "Table 3, row: Pplat, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.006,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Pplat 72 h 22.82 ± 2.46 vs 28.41 ± 3.23, t = 7.124, p = 0.006",
+            "location": "Table 3, row: Pplat, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 8.73,
+          "dispersion_type": "sd",
+          "dispersion": 2.52,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) Baseline 8.73 ± 2.52",
+            "location": "Table 3, row: PEEP, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 8.58,
+          "dispersion_type": "sd",
+          "dispersion": 2.43,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP (cmH2O) Baseline 8.58 ± 2.43",
+            "location": "Table 3, row: PEEP, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.733,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PEEP Baseline 8.73 ± 2.52 vs 8.58 ± 2.43, t = 0.342, p = 0.733",
+            "location": "Table 3, row: PEEP, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 12.32,
+          "dispersion_type": "sd",
+          "dispersion": 2.13,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 24 h 12.32 ± 2.13ab",
+            "location": "Table 3, row: PEEP, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 10.43,
+          "dispersion_type": "sd",
+          "dispersion": 2.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 24 h 10.43 ± 2.38",
+            "location": "Table 3, row: PEEP, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.026,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PEEP 24 h 12.32 ± 2.13 vs 10.43 ± 2.38, t = 4.123, p = 0.026",
+            "location": "Table 3, row: PEEP, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 11.24,
+          "dispersion_type": "sd",
+          "dispersion": 1.92,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 48 h 11.24 ± 1.92ab",
+            "location": "Table 3, row: PEEP, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 10.48,
+          "dispersion_type": "sd",
+          "dispersion": 2.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 48 h 10.48 ± 2.42",
+            "location": "Table 3, row: PEEP, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.048,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PEEP 48 h 11.24 ± 1.92 vs 10.48 ± 2.42, t = 2.234, p = 0.048",
+            "location": "Table 3, row: PEEP, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 10.36,
+          "dispersion_type": "sd",
+          "dispersion": 1.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 72 h 10.36 ± 1.83a",
+            "location": "Table 3, row: PEEP, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 10.52,
+          "dispersion_type": "sd",
+          "dispersion": 2.37,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "PEEP 72 h 10.52 ± 2.37",
+            "location": "Table 3, row: PEEP, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.401,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PEEP 72 h 10.36 ± 1.83 vs 10.52 ± 2.37, t = 0.843, p = 0.401",
+            "location": "Table 3, row: PEEP, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 14.83,
+          "dispersion_type": "sd",
+          "dispersion": 2.42,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP (cmH2O) Baseline 14.83 ± 2.42",
+            "location": "Table 3, row: ΔP, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 14.76,
+          "dispersion_type": "sd",
+          "dispersion": 2.38,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP (cmH2O) Baseline 14.76 ± 2.38",
+            "location": "Table 3, row: ΔP, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.872,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔP Baseline 14.83 ± 2.42 vs 14.76 ± 2.38, t = 0.162, p = 0.872",
+            "location": "Table 3, row: ΔP, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 12.42,
+          "dispersion_type": "sd",
+          "dispersion": 2.13,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 24 h 12.42 ± 2.13ab",
+            "location": "Table 3, row: ΔP, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 14.62,
+          "dispersion_type": "sd",
+          "dispersion": 2.32,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 24 h 14.62 ± 2.32",
+            "location": "Table 3, row: ΔP, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.016,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔP 24 h 12.42 ± 2.13 vs 14.62 ± 2.32, t = 5.843, p = 0.016",
+            "location": "Table 3, row: ΔP, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 11.86,
+          "dispersion_type": "sd",
+          "dispersion": 1.92,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 48 h 11.86 ± 1.92ab",
+            "location": "Table 3, row: ΔP, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 14.58,
+          "dispersion_type": "sd",
+          "dispersion": 2.28,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 48 h 14.58 ± 2.28",
+            "location": "Table 3, row: ΔP, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.011,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔP 48 h 11.86 ± 1.92 vs 14.58 ± 2.28, t = 6.126, p = 0.011",
+            "location": "Table 3, row: ΔP, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "ΔP",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 11.43,
+          "dispersion_type": "sd",
+          "dispersion": 1.83,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 72 h 11.43 ± 1.83ab",
+            "location": "Table 3, row: ΔP, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 14.52,
+          "dispersion_type": "sd",
+          "dispersion": 2.24,
+          "n": 62,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "ΔP 72 h 14.52 ± 2.24",
+            "location": "Table 3, row: ΔP, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.008,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ΔP 72 h 11.43 ± 1.83 vs 14.52 ± 2.24, t = 6.842, p = 0.008",
+            "location": "Table 3, row: ΔP, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 6.01,
+          "dispersion_type": "sd",
+          "dispersion": 0.12,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) Baseline 6.01 ± 0.12",
+            "location": "Table 3, row: VT, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 6.02,
+          "dispersion_type": "sd",
+          "dispersion": 0.14,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT (mL/kg PBW) Baseline 6.02 ± 0.14",
+            "location": "Table 3, row: VT, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.667,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "VT Baseline 6.01 ± 0.12 vs 6.02 ± 0.14, t = 0.432, p = 0.667",
+            "location": "Table 3, row: VT, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 5.82,
+          "dispersion_type": "sd",
+          "dispersion": 0.24,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 24 h 5.82 ± 0.24ab",
+            "location": "Table 3, row: VT, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 6.0,
+          "dispersion_type": "sd",
+          "dispersion": 0.18,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 24 h 6.00 ± 0.18",
+            "location": "Table 3, row: VT, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.021,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "VT 24 h 5.82 ± 0.24 vs 6.00 ± 0.18, t = 4.736, p = 0.021",
+            "location": "Table 3, row: VT, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 5.64,
+          "dispersion_type": "sd",
+          "dispersion": 0.32,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 48 h 5.64 ± 0.32ab",
+            "location": "Table 3, row: VT, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 5.98,
+          "dispersion_type": "sd",
+          "dispersion": 0.32,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 48 h 5.98 ± 0.32",
+            "location": "Table 3, row: VT, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.013,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "VT 48 h 5.64 ± 0.32 vs 5.98 ± 0.32, t = 5.128, p = 0.013",
+            "location": "Table 3, row: VT, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "VT",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 5.43,
+          "dispersion_type": "sd",
+          "dispersion": 0.38,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 72 h 5.43 ± 0.38ab",
+            "location": "Table 3, row: VT, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 5.92,
+          "dispersion_type": "sd",
+          "dispersion": 0.42,
+          "n": 62,
+          "unit": "mL/kg PBW",
+          "provenance": {
+            "quote": "VT 72 h 5.92 ± 0.42",
+            "location": "Table 3, row: VT, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.006,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "VT 72 h 5.43 ± 0.38 vs 5.92 ± 0.42, t = 6.524, p = 0.006",
+            "location": "Table 3, row: VT, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cst",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 29.83,
+          "dispersion_type": "sd",
+          "dispersion": 5.42,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst (mL/cmH2O) Baseline 29.83 ± 5.42",
+            "location": "Table 3, row: Cst, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 29.76,
+          "dispersion_type": "sd",
+          "dispersion": 5.38,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst (mL/cmH2O) Baseline 29.76 ± 5.38",
+            "location": "Table 3, row: Cst, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.943,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cst Baseline 29.83 ± 5.42 vs 29.76 ± 5.38, t = 0.072, p = 0.943",
+            "location": "Table 3, row: Cst, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cst",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 33.42,
+          "dispersion_type": "sd",
+          "dispersion": 4.83,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 24 h 33.42 ± 4.83ab",
+            "location": "Table 3, row: Cst, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 29.52,
+          "dispersion_type": "sd",
+          "dispersion": 5.24,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 24 h 29.52 ± 5.24",
+            "location": "Table 3, row: Cst, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.024,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cst 24 h 33.42 ± 4.83 vs 29.52 ± 5.24, t = 4.624, p = 0.024",
+            "location": "Table 3, row: Cst, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cst",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 35.63,
+          "dispersion_type": "sd",
+          "dispersion": 4.62,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 48 h 35.63 ± 4.62ab",
+            "location": "Table 3, row: Cst, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 29.38,
+          "dispersion_type": "sd",
+          "dispersion": 5.18,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 48 h 29.38 ± 5.18",
+            "location": "Table 3, row: Cst, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.015,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cst 48 h 35.63 ± 4.62 vs 29.38 ± 5.18, t = 5.326, p = 0.015",
+            "location": "Table 3, row: Cst, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "Cst",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 37.82,
+          "dispersion_type": "sd",
+          "dispersion": 4.46,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 72 h 37.82 ± 4.46ab",
+            "location": "Table 3, row: Cst, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 29.41,
+          "dispersion_type": "sd",
+          "dispersion": 5.23,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "Cst 72 h 29.41 ± 5.23",
+            "location": "Table 3, row: Cst, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.009,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cst 72 h 37.82 ± 4.46 vs 29.41 ± 5.23, t = 6.124, p = 0.009",
+            "location": "Table 3, row: Cst, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 35.86,
+          "dispersion_type": "sd",
+          "dispersion": 4.82,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL (mL/cmH2O) Baseline 35.86 ± 4.82",
+            "location": "Table 3, row: CL, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 36.12,
+          "dispersion_type": "sd",
+          "dispersion": 4.97,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL (mL/cmH2O) Baseline 36.12 ± 4.97",
+            "location": "Table 3, row: CL, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.767,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "CL Baseline 35.86 ± 4.82 vs 36.12 ± 4.97, t = 0.298, p = 0.767",
+            "location": "Table 3, row: CL, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 40.64,
+          "dispersion_type": "sd",
+          "dispersion": 5.12,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 24 h 40.64 ± 5.12ab",
+            "location": "Table 3, row: CL, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 36.52,
+          "dispersion_type": "sd",
+          "dispersion": 4.87,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 24 h 36.52 ± 4.87",
+            "location": "Table 3, row: CL, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.027,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "CL 24 h 40.64 ± 5.12 vs 36.52 ± 4.87, t = 4.213, p = 0.027",
+            "location": "Table 3, row: CL, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 42.6,
+          "dispersion_type": "sd",
+          "dispersion": 5.18,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 48 h 42.60 ± 5.18ab",
+            "location": "Table 3, row: CL, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 36.28,
+          "dispersion_type": "sd",
+          "dispersion": 4.93,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 48 h 36.28 ± 4.93",
+            "location": "Table 3, row: CL, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.013,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "CL 48 h 42.60 ± 5.18 vs 36.28 ± 4.93, t = 5.842, p = 0.013",
+            "location": "Table 3, row: CL, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "respiratory_mechanics",
+      "name_verbatim": "CL",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 44.32,
+          "dispersion_type": "sd",
+          "dispersion": 5.26,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 72 h 44.32 ± 5.26ab",
+            "location": "Table 3, row: CL, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 35.81,
+          "dispersion_type": "sd",
+          "dispersion": 4.98,
+          "n": 62,
+          "unit": "mL/cmH2O",
+          "provenance": {
+            "quote": "CL 72 h 35.81 ± 4.98",
+            "location": "Table 3, row: CL, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.007,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "CL 72 h 44.32 ± 5.26 vs 35.81 ± 4.98, t = 6.738, p = 0.007",
+            "location": "Table 3, row: CL, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 ratio",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 142.86,
+          "dispersion_type": "sd",
+          "dispersion": 32.42,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio (mmHg) Baseline 142.86 ± 32.42",
+            "location": "Table 4, row: PaO2/FiO2 ratio, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 143.73,
+          "dispersion_type": "sd",
+          "dispersion": 33.38,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio (mmHg) Baseline 143.73 ± 33.38",
+            "location": "Table 4, row: PaO2/FiO2 ratio, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.887,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio Baseline 142.86 ± 32.42 vs 143.73 ± 33.38, t = 0.143, p = 0.887",
+            "location": "Table 4, row: PaO2/FiO2 ratio, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 ratio",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 186.42,
+          "dispersion_type": "sd",
+          "dispersion": 28.83,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 24 h 186.42 ± 28.83ab",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 165.52,
+          "dispersion_type": "sd",
+          "dispersion": 27.24,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 24 h 165.52 ± 27.24",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.028,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 24 h 186.42 ± 28.83 vs 165.52 ± 27.24, t = 4.124, p = 0.028",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 ratio",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 223.63,
+          "dispersion_type": "sd",
+          "dispersion": 30.62,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 48 h 223.63 ± 30.62ab",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 182.38,
+          "dispersion_type": "sd",
+          "dispersion": 28.18,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 48 h 182.38 ± 28.18",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.016,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 48 h 223.63 ± 30.62 vs 182.38 ± 28.18, t = 5.326, p = 0.016",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2/FiO2 ratio",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 268.82,
+          "dispersion_type": "sd",
+          "dispersion": 32.46,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 72 h 268.82 ± 32.46ab",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 195.41,
+          "dispersion_type": "sd",
+          "dispersion": 28.23,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 72 h 195.41 ± 28.23",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": "mean_difference",
+          "value": 73.41,
+          "p_value": 0.008,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "with a between-group difference of 73.41 ± 12.42 mmHg at 72h in favor of the EPM-guided group",
+            "location": "p. 2366, right column, section 3.4, para 1"
+          }
+        },
+        {
+          "type": null,
+          "p_value": 0.008,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaO2/FiO2 ratio 72 h 268.82 ± 32.46 vs 195.41 ± 28.23, t = 6.224, p = 0.008",
+            "location": "Table 4, row: PaO2/FiO2 ratio, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 46.8,
+          "dispersion_type": "sd",
+          "dispersion": 5.9,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) Baseline 46.8 ± 5.9",
+            "location": "Table 4, row: PaCO2, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 47.2,
+          "dispersion_type": "sd",
+          "dispersion": 6.1,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 (mmHg) Baseline 47.2 ± 6.1",
+            "location": "Table 4, row: PaCO2, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.709,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaCO2 Baseline 46.8 ± 5.9 vs 47.2 ± 6.1, t = 0.374, p = 0.709",
+            "location": "Table 4, row: PaCO2, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 43.5,
+          "dispersion_type": "sd",
+          "dispersion": 4.8,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 24 h 43.5 ± 4.8a",
+            "location": "Table 4, row: PaCO2, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 42.9,
+          "dispersion_type": "sd",
+          "dispersion": 5.2,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 24 h 42.9 ± 5.2a",
+            "location": "Table 4, row: PaCO2, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.496,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaCO2 24 h 43.5 ± 4.8 vs 42.9 ± 5.2, t = 0.684, p = 0.496",
+            "location": "Table 4, row: PaCO2, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 42.1,
+          "dispersion_type": "sd",
+          "dispersion": 4.5,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 48 h 42.1 ± 4.5a",
+            "location": "Table 4, row: PaCO2, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 41.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.3,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 48 h 41.2 ± 4.3a",
+            "location": "Table 4, row: PaCO2, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.248,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaCO2 48 h 42.1 ± 4.5 vs 41.2 ± 4.3, t = 1.162, p = 0.248",
+            "location": "Table 4, row: PaCO2, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 41.2,
+          "dispersion_type": "sd",
+          "dispersion": 4.3,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 72 h 41.2 ± 4.3a",
+            "location": "Table 4, row: PaCO2, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 40.8,
+          "dispersion_type": "sd",
+          "dispersion": 4.1,
+          "n": 62,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "PaCO2 72 h 40.8 ± 4.1a",
+            "location": "Table 4, row: PaCO2, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.612,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "PaCO2 72 h 41.2 ± 4.3 vs 40.8 ± 4.1, t = 0.509, p = 0.612",
+            "location": "Table 4, row: PaCO2, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 7.31,
+          "dispersion_type": "sd",
+          "dispersion": 0.06,
+          "n": 62,
+          "provenance": {
+            "quote": "pH Baseline 7.31 ± 0.06",
+            "location": "Table 4, row: pH, Baseline, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 7.3,
+          "dispersion_type": "sd",
+          "dispersion": 0.07,
+          "n": 62,
+          "provenance": {
+            "quote": "pH Baseline 7.30 ± 0.07",
+            "location": "Table 4, row: pH, Baseline, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.391,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "pH Baseline 7.31 ± 0.06 vs 7.30 ± 0.07, t = 0.862, p = 0.391",
+            "location": "Table 4, row: pH, Baseline"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 7.34,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 24 h 7.34 ± 0.05a",
+            "location": "Table 4, row: pH, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 7.33,
+          "dispersion_type": "sd",
+          "dispersion": 0.06,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 24 h 7.33 ± 0.06a",
+            "location": "Table 4, row: pH, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.307,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "pH 24 h 7.34 ± 0.05 vs 7.33 ± 0.06, t = 1.026, p = 0.307",
+            "location": "Table 4, row: pH, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 7.36,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 48 h 7.36 ± 0.04a",
+            "location": "Table 4, row: pH, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 7.35,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 48 h 7.35 ± 0.05a",
+            "location": "Table 4, row: pH, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.224,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "pH 48 h 7.36 ± 0.04 vs 7.35 ± 0.05, t = 1.224, p = 0.224",
+            "location": "Table 4, row: pH, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "pH",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 7.38,
+          "dispersion_type": "sd",
+          "dispersion": 0.04,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 72 h 7.38 ± 0.04a",
+            "location": "Table 4, row: pH, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 7.37,
+          "dispersion_type": "sd",
+          "dispersion": 0.05,
+          "n": 62,
+          "provenance": {
+            "quote": "pH 72 h 7.37 ± 0.05a",
+            "location": "Table 4, row: pH, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.758,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "pH 72 h 7.38 ± 0.04 vs 7.37 ± 0.05, t = 0.308, p = 0.758",
+            "location": "Table 4, row: pH, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid intake",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2842,
+          "dispersion_type": "sd",
+          "dispersion": 483,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 1 2842 ± 483",
+            "location": "Table 5, row: Daily fluid intake, Day 1, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2924,
+          "dispersion_type": "sd",
+          "dispersion": 512,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 1 2924 ± 512",
+            "location": "Table 5, row: Daily fluid intake, Day 1, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.353,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid intake Day 1 2842 ± 483 vs 2924 ± 512, t = 0.932, p = 0.353",
+            "location": "Table 5, row: Daily fluid intake, Day 1"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid intake",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2638,
+          "dispersion_type": "sd",
+          "dispersion": 432,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 2 2638 ± 432",
+            "location": "Table 5, row: Daily fluid intake, Day 2, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2752,
+          "dispersion_type": "sd",
+          "dispersion": 467,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 2 2752 ± 467",
+            "location": "Table 5, row: Daily fluid intake, Day 2, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.169,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid intake Day 2 2638 ± 432 vs 2752 ± 467, t = 1.382, p = 0.169",
+            "location": "Table 5, row: Daily fluid intake, Day 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid intake",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2473,
+          "dispersion_type": "sd",
+          "dispersion": 398,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 3 2473 ± 398",
+            "location": "Table 5, row: Daily fluid intake, Day 3, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2512,
+          "dispersion_type": "sd",
+          "dispersion": 423,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid intake (mL) Day 3 2512 ± 423",
+            "location": "Table 5, row: Daily fluid intake, Day 3, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.598,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid intake Day 3 2473 ± 398 vs 2512 ± 423, t = 0.528, p = 0.598",
+            "location": "Table 5, row: Daily fluid intake, Day 3"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid output",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2463,
+          "dispersion_type": "sd",
+          "dispersion": 512,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 1 2463 ± 512",
+            "location": "Table 5, row: Daily fluid output, Day 1, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2382,
+          "dispersion_type": "sd",
+          "dispersion": 483,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 1 2382 ± 483",
+            "location": "Table 5, row: Daily fluid output, Day 1, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.362,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid output Day 1 2463 ± 512 vs 2382 ± 483, t = 0.914, p = 0.362",
+            "location": "Table 5, row: Daily fluid output, Day 1"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid output",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2748,
+          "dispersion_type": "sd",
+          "dispersion": 463,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 2 2748 ± 463b",
+            "location": "Table 5, row: Daily fluid output, Day 2, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2483,
+          "dispersion_type": "sd",
+          "dispersion": 428,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 2 2483 ± 428",
+            "location": "Table 5, row: Daily fluid output, Day 2, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.038,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid output Day 2 2748 ± 463 vs 2483 ± 428, t = 3.268, p = 0.038",
+            "location": "Table 5, row: Daily fluid output, Day 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid output",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 2954,
+          "dispersion_type": "sd",
+          "dispersion": 487,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 3 2954 ± 487b",
+            "location": "Table 5, row: Daily fluid output, Day 3, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 2520,
+          "dispersion_type": "sd",
+          "dispersion": 459,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid output (mL) Day 3 2520 ± 459",
+            "location": "Table 5, row: Daily fluid output, Day 3, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.016,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid output Day 3 2954 ± 487 vs 2520 ± 459, t = 5.153, p = 0.016",
+            "location": "Table 5, row: Daily fluid output, Day 3"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 379,
+          "dispersion_type": "sd",
+          "dispersion": 216,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 1 379 ± 216",
+            "location": "Table 5, row: Daily fluid balance, Day 1, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 542,
+          "dispersion_type": "sd",
+          "dispersion": 283,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 1 542 ± 283",
+            "location": "Table 5, row: Daily fluid balance, Day 1, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.035,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid balance Day 1 379 ± 216 vs 542 ± 283, t = 3.642, p = 0.035",
+            "location": "Table 5, row: Daily fluid balance, Day 1"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": -110,
+          "dispersion_type": "sd",
+          "dispersion": 187,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 2 −110 ± 187b",
+            "location": "Table 5, row: Daily fluid balance, Day 2, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 269,
+          "dispersion_type": "sd",
+          "dispersion": 243,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 2 269 ± 243",
+            "location": "Table 5, row: Daily fluid balance, Day 2, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.022,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid balance Day 2 −110 ± 187 vs 269 ± 243, t = 4.837, p = 0.022",
+            "location": "Table 5, row: Daily fluid balance, Day 2"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Daily fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": -481,
+          "dispersion_type": "sd",
+          "dispersion": 232,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 3 −481 ± 232b",
+            "location": "Table 5, row: Daily fluid balance, Day 3, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": -8,
+          "dispersion_type": "sd",
+          "dispersion": 198,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Daily fluid balance (mL) Day 3 −8 ± 198",
+            "location": "Table 5, row: Daily fluid balance, Day 3, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.011,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Daily fluid balance Day 3 −481 ± 232 vs −8 ± 198, t = 5.926, p = 0.011",
+            "location": "Table 5, row: Daily fluid balance, Day 3"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Cumulative fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 24
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 379,
+          "dispersion_type": "sd",
+          "dispersion": 216,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 24 h 379 ± 216b",
+            "location": "Table 5, row: Cumulative fluid balance, 24 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 542,
+          "dispersion_type": "sd",
+          "dispersion": 283,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 24 h 542 ± 283",
+            "location": "Table 5, row: Cumulative fluid balance, 24 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.035,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cumulative fluid balance 24 h 379 ± 216 vs 542 ± 283, t = 3.642, p = 0.035",
+            "location": "Table 5, row: Cumulative fluid balance, 24 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Cumulative fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 269,
+          "dispersion_type": "sd",
+          "dispersion": 382,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 48 h 269 ± 382b",
+            "location": "Table 5, row: Cumulative fluid balance, 48 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 811,
+          "dispersion_type": "sd",
+          "dispersion": 497,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 48 h 811 ± 497",
+            "location": "Table 5, row: Cumulative fluid balance, 48 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.009,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cumulative fluid balance 48 h 269 ± 382 vs 811 ± 497, t = 6.438, p = 0.009",
+            "location": "Table 5, row: Cumulative fluid balance, 48 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Cumulative fluid balance",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 72
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": -352,
+          "dispersion_type": "sd",
+          "dispersion": 628,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 72 h −352 ± 628b",
+            "location": "Table 5, row: Cumulative fluid balance, 72 h, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 483,
+          "dispersion_type": "sd",
+          "dispersion": 712,
+          "n": 62,
+          "unit": "mL",
+          "provenance": {
+            "quote": "Cumulative fluid balance (mL) 72 h 483 ± 712",
+            "location": "Table 5, row: Cumulative fluid balance, 72 h, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.005,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Cumulative fluid balance 72 h −352 ± 628 vs 483 ± 712, t = 7.132, p = 0.005",
+            "location": "Table 5, row: Cumulative fluid balance, 72 h"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "Mechanical ventilation duration",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 12.32,
+          "dispersion_type": "sd",
+          "dispersion": 3.24,
+          "n": 62,
+          "unit": "d",
+          "provenance": {
+            "quote": "Mechanical ventilation duration (d x̄ ± s) 12.32 ± 3.24",
+            "location": "Table 7, row: Mechanical ventilation duration, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 16.83,
+          "dispersion_type": "sd",
+          "dispersion": 4.52,
+          "n": 62,
+          "unit": "d",
+          "provenance": {
+            "quote": "Mechanical ventilation duration (d x̄ ± s) 16.83 ± 4.52",
+            "location": "Table 7, row: Mechanical ventilation duration, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.013,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "Mechanical ventilation duration 12.32 ± 3.24 vs 16.83 ± 4.52, t = 5.824, p = 0.013",
+            "location": "Table 7, row: Mechanical ventilation duration"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "icu_length_of_stay",
+      "name_verbatim": "ICU length of stay",
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "value_type": "mean",
+          "value": 18.53,
+          "dispersion_type": "sd",
+          "dispersion": 4.62,
+          "n": 62,
+          "unit": "d",
+          "provenance": {
+            "quote": "ICU length of stay (d x̄ ± s) 18.53 ± 4.62",
+            "location": "Table 7, row: ICU length of stay, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "value_type": "mean",
+          "value": 23.72,
+          "dispersion_type": "sd",
+          "dispersion": 5.83,
+          "n": 62,
+          "unit": "d",
+          "provenance": {
+            "quote": "ICU length of stay (d x̄ ± s) 23.72 ± 5.83",
+            "location": "Table 7, row: ICU length of stay, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.018,
+          "test_used": "independent sample t test",
+          "provenance": {
+            "quote": "ICU length of stay 18.53 ± 4.62 vs 23.72 ± 5.83, t = 5.326, p = 0.018",
+            "location": "Table 7, row: ICU length of stay"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "VAP incidence",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 9,
+          "total": 62,
+          "provenance": {
+            "quote": "VAP incidence [n (%)] 9 (14.52)",
+            "location": "Table 7, row: VAP incidence, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 16,
+          "total": 62,
+          "provenance": {
+            "quote": "VAP incidence [n (%)] 16 (25.81)",
+            "location": "Table 7, row: VAP incidence, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.038,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "VAP incidence 9 (14.52) vs 16 (25.81), χ2 = 4.324, p = 0.038",
+            "location": "Table 7, row: VAP incidence"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-day mortality rate",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28
+      },
+      "is_longest_reported_mortality": true,
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 12,
+          "total": 62,
+          "provenance": {
+            "quote": "28-day mortality rate [n (%)] 12 (19.35)",
+            "location": "Table 7, row: 28-day mortality rate, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 20,
+          "total": 62,
+          "provenance": {
+            "quote": "28-day mortality rate [n (%)] 20 (32.26)",
+            "location": "Table 7, row: 28-day mortality rate, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.042,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "28-day mortality rate 12 (19.35) vs 20 (32.26), χ2 = 4.128, p = 0.042",
+            "location": "Table 7, row: 28-day mortality rate"
+          }
+        },
+        {
+          "type": "odds_ratio",
+          "value": 0.63,
+          "ci_low": 0.08,
+          "ci_high": 4.73,
+          "p_value": 0.653,
+          "adjusted": true,
+          "adjustment_covariates": "age and APACHE II score",
+          "test_used": "multivariate logistic regression",
+          "provenance": {
+            "quote": "EPM treatment strategies (OR 0.63, 95% CI 0.08–4.73, and p = 0.653)",
+            "location": "Table 6, row: EPM treatment strategies"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Stress ulcer",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 8,
+          "total": 62,
+          "provenance": {
+            "quote": "Stress ulcer 8 (12.90)",
+            "location": "Table 7, row: Complications, Stress ulcer, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 10,
+          "total": 62,
+          "provenance": {
+            "quote": "Stress ulcer 10 (16.13)",
+            "location": "Table 7, row: Complications, Stress ulcer, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.609,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "Stress ulcer 8 (12.90) vs 10 (16.13), χ2 = 0.262, p = 0.609",
+            "location": "Table 7, row: Stress ulcer"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "New-onset arrhythmia",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 6,
+          "total": 62,
+          "provenance": {
+            "quote": "New-onset arrhythmia 6 (9.68)",
+            "location": "Table 7, row: Complications, New-onset arrhythmia, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 8,
+          "total": 62,
+          "provenance": {
+            "quote": "New-onset arrhythmia 8 (12.90)",
+            "location": "Table 7, row: Complications, New-onset arrhythmia, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.569,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "New-onset arrhythmia 6 (9.68) vs 8 (12.90), χ2 = 0.324, p = 0.569",
+            "location": "Table 7, row: New-onset arrhythmia"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Acute kidney injury",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 7,
+          "total": 62,
+          "provenance": {
+            "quote": "Acute kidney injury 7 (11.29)",
+            "location": "Table 7, row: Complications, Acute kidney injury, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 9,
+          "total": 62,
+          "provenance": {
+            "quote": "Acute kidney injury 9 (14.52)",
+            "location": "Table 7, row: Complications, Acute kidney injury, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.595,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "Acute kidney injury 7 (11.29) vs 9 (14.52), χ2 = 0.282, p = 0.595",
+            "location": "Table 7, row: Acute kidney injury"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "adverse_event",
+      "name_verbatim": "Thrombosis",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 4,
+          "total": 62,
+          "provenance": {
+            "quote": "Thrombosis 4 (6.45)",
+            "location": "Table 7, row: Complications, Thrombosis, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 5,
+          "total": 62,
+          "provenance": {
+            "quote": "Thrombosis 5 (8.06)",
+            "location": "Table 7, row: Complications, Thrombosis, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.729,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "Thrombosis 4 (6.45) vs 5 (8.06), χ2 = 0.120, p = 0.729",
+            "location": "Table 7, row: Thrombosis"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "successful_extubation_or_weaning",
+      "name_verbatim": "Weaning success rate",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 53,
+          "total": 62,
+          "provenance": {
+            "quote": "Weaning success rate [n (%)] 53 (85.48)",
+            "location": "Table 7, row: Weaning success rate, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 46,
+          "total": 62,
+          "provenance": {
+            "quote": "Weaning success rate [n (%)] 46 (74.19)",
+            "location": "Table 7, row: Weaning success rate, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.032,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "Weaning success rate 53 (85.48) vs 46 (74.19), χ2 = 4.623, p = 0.032",
+            "location": "Table 7, row: Weaning success rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "successful_extubation_or_weaning",
+      "name_verbatim": "First weaning failure rate",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 12,
+          "total": 62,
+          "provenance": {
+            "quote": "First weaning failure rate [n (%)] 12 (19.35)",
+            "location": "Table 7, row: First weaning failure rate, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 18,
+          "total": 62,
+          "provenance": {
+            "quote": "First weaning failure rate [n (%)] 18 (29.03)",
+            "location": "Table 7, row: First weaning failure rate, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.042,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "First weaning failure rate 12 (19.35) vs 18 (29.03), χ2 = 4.126, p = 0.042",
+            "location": "Table 7, row: First weaning failure rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "Tracheotomy rate",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 15,
+          "total": 62,
+          "provenance": {
+            "quote": "Tracheotomy rate [n (%)] 15 (24.19)",
+            "location": "Table 7, row: Tracheotomy rate, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 21,
+          "total": 62,
+          "provenance": {
+            "quote": "Tracheotomy rate [n (%)] 21 (33.87)",
+            "location": "Table 7, row: Tracheotomy rate, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": 0.048,
+          "test_used": "chi-squared test",
+          "provenance": {
+            "quote": "Tracheotomy rate 15 (24.19) vs 21 (33.87), χ2 = 3.924, p = 0.048",
+            "location": "Table 7, row: Tracheotomy rate"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "ECCOR",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 0,
+          "total": 62,
+          "provenance": {
+            "quote": "ECCOR 0 (0)",
+            "location": "Table 7, row: Rescue therapies, ECCOR, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 0,
+          "total": 62,
+          "provenance": {
+            "quote": "ECCOR 0 (0)",
+            "location": "Table 7, row: Rescue therapies, ECCOR, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "ECCOR 0 (0) vs 0 (0), —, —",
+            "location": "Table 7, row: ECCOR"
+          }
+        }
+      ]
+    },
+    {
+      "domain": "rescue_therapy",
+      "name_verbatim": "VV-ECMO",
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "end_of_study"
+      },
+      "data": [
+        {
+          "arm_label": "epm_guided",
+          "events": 0,
+          "total": 62,
+          "provenance": {
+            "quote": "VV-ECMO 0 (0)",
+            "location": "Table 7, row: Rescue therapies, VV-ECMO, EPM-guided group"
+          }
+        },
+        {
+          "arm_label": "conventional",
+          "events": 0,
+          "total": 62,
+          "provenance": {
+            "quote": "VV-ECMO 0 (0)",
+            "location": "Table 7, row: Rescue therapies, VV-ECMO, Conventional group"
+          }
+        }
+      ],
+      "effect_estimates": [
+        {
+          "type": null,
+          "p_value": null,
+          "test_used": null,
+          "provenance": {
+            "quote": "VV-ECMO 0 (0) vs 0 (0), —, —",
+            "location": "Table 7, row: VV-ECMO"
+          }
+        }
+      ]
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "early_within_48h",
+    "ptp_target_subgroups": [
+      "absolute_positive_end_expiratory_ptp"
+    ],
+    "classification_notes": "BMI mean ~24.8 kg/m2, so non-obese. Timing: patients screened within 48h of mechanical ventilation, so early. Target: end-expiratory PL 0-2 cmH2O (positive range), absolute PES subtraction."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "No other reports suspected. No overlap with known clusters.",
+    "unclear_items": [
+      "Balloon calibration method: report describes occlusion test ratio 0.8-1.2 and balloon volume titrated to cardiac oscillations. Coded as dynamic_occlusion_test; unclear if efforts were spontaneous or passive. Flag for adjudication.",
+      "industry_funded: not explicitly stated, but funding sources are all government/health commission grants, no industry. Set to false as inferred.",
+      "Countries: inferred as China from hospital name 'Affiliated Anqing First People's Hospital of Anhui Medical University'.",
+      "Duration of PES guidance: not explicitly stated, left null."
+    ],
+    "data_only_in_figure": [],
+    "contact_author_needed": false,
+    "general_notes": "Study reports correlation and ROC analyses, not outcomes. Baseline characteristics include modified Marshall score, vasopressor use, neuromuscular blockade use; recorded in additional_baseline."
+  }
+}

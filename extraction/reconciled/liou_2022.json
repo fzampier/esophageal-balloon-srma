@@ -1,0 +1,1646 @@
+{
+ "record_meta": {
+  "study_id": "liou_2022",
+  "extractor": "reconciled",
+  "model": "Anton Nikouline (human); Fernando Zampieri (human); claude-opus-5 (model)",
+  "extraction_date": "2026-10-24",
+  "source_file": "studies/fulltext/retrospective_review_of_transpulmonary_pressure.3.pdf",
+  "schema_version": "1.2.0",
+  "adjudication_notes": "Reconciled within the analysis scope (analysis/scope.py; Option B, co-author decision 2026-09-15). 145 reviewer differences: 103 in scope. Settled by human rulings 6, model rulings 93, content-neutral rules 3; 37 outside scope were not adjudicated and carry GLM's reading. Every ruling: extraction/adjudication/rulings.csv. 6 post-merge edit(s) by Fernando Zampieri: extraction/adjudication/edits.csv."
+ },
+ "citation": {
+  "first_author": "Liou",
+  "year": 2022,
+  "title": "Retrospective Review of Transpulmonary Pressure Guided Positive End-Expiratory Pressure Titration for Mechanical Ventilation in Class II and III Obesity",
+  "journal": "Critical Care Explorations",
+  "doi": "10.1097/CCE.0000000000000690",
+  "pmid": null,
+  "trial_registration": null,
+  "trial_acronym": null,
+  "is_primary_report": true,
+  "report_type": "primary"
+ },
+ "eligibility": {
+  "include_final": true,
+  "primary_exclusion_reason": null,
+  "criteria": {
+   "adults_18_plus": {
+    "met": "yes",
+    "provenance": {
+     "quote": "All adult patients 18 years old or older requiring mechanical ventilation with class II and III obesity (BMI ≥ 35 kg/m2) with ARDS were eligible.",
+     "location": "Methods, para 2, p. 2"
+    }
+   },
+   "invasive_mechanical_ventilation": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Twenty-nine mechanically ventilated adult patients with a median BMI of 45.8 kg/m2 with acute respiratory distress syndrome (ARDS).",
+     "location": "Abstract, PATIENTS, p. 1"
+    }
+   },
+   "icu_setting": {
+    "met": "yes",
+    "provenance": {
+     "quote": "SETTING: Intensive care unit in a community based hospital system in Newark, Delaware.",
+     "location": "Abstract, SETTING, p. 1"
+    }
+   },
+   "balloon_guided_peep_titration": {
+    "met": "yes",
+    "provenance": {
+     "quote": "PEEP was titrated based on PL at end expiration (End Exp PL) until it approached 0 (±2) cm H2O to minimize atelectasis.",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "reports_eligible_outcome": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Outcomes measured include PEEP, oxygenation, and driving pressure (DP) before and after esophageal manometry at 4 and 24 hr.",
+     "location": "Abstract, MEASUREMENTS AND MAIN RESULTS, p. 1"
+    }
+   },
+   "sample_size_at_least_5": {
+    "met": "yes",
+    "provenance": {
+     "quote": "There were 48 total esophageal balloons placed at Christiana Care during the study time, 29 of which met the inclusion criteria of at least class II obesity (BMI ≥ 35 kg/m2) and ARDS.",
+     "location": "Results, para 1, p. 3"
+    }
+   },
+   "eligible_design": {
+    "met": "yes",
+    "provenance": {
+     "quote": "DESIGN: Retrospective cohort study of obese (body mass index [BMI] ≥ 35 kg/m2) patients undergoing individualized PEEP titration with esophageal manometry.",
+     "location": "Abstract, DESIGN, p. 1"
+    }
+   },
+   "full_publication_english": {
+    "met": "yes",
+    "provenance": {
+     "quote": "Critical Care Explorations www.ccejournal.org",
+     "location": "Full-text English publication, Critical Care Explorations 2022;4(5)"
+    }
+   }
+  }
+ },
+ "design": {
+  "study_design": "retrospective_cohort",
+  "study_design_verbatim": {
+   "value": "Retrospective cohort study of obese (body mass index [BMI] ≥ 35 kg/m2) patients undergoing individualized PEEP titration with esophageal manometry.",
+   "provenance": {
+    "quote": "DESIGN: Retrospective cohort study of obese (body mass index [BMI] ≥ 35 kg/m2) patients undergoing individualized PEEP titration with esophageal manometry.",
+    "location": "Abstract, DESIGN, p. 1"
+   }
+  },
+  "comparison_structure": "within_patient_crossover",
+  "randomised": false,
+  "allocation_ratio": null,
+  "blinding": null,
+  "centers": "single",
+  "n_centers": {
+   "value": 1,
+   "provenance": {
+    "quote": "We performed a single-center, retrospective, cohort study of all patients undergoing esophageal balloon placement from December 09, 2019, to January 31, 2021, at Christiana Care in Newark, DE.",
+    "location": "Methods, para 1, p. 2"
+   }
+  },
+  "countries": [
+   "United States"
+  ],
+  "location_provenance": {
+   "quote": "SETTING: Intensive care unit in a community based hospital system in Newark, Delaware.",
+   "location": "Abstract, SETTING, p. 1"
+  },
+  "planned_sample_size": null,
+  "sample_size_calculation": null,
+  "stopped_early": null,
+  "stopping_rule": null,
+  "setting": {
+   "value": "Intensive care unit in a community based hospital system; medical ICU (21), surgical ICU (4), neurologic ICU (3), cardiac ICU (1)",
+   "provenance": {
+    "quote": "Unit, n (%) — Medical ICU 21 (73); Surgical ICU 4 (14); Neurologic ICU 3 (10); Cardiac ICU 1 (3)",
+    "location": "p. 3, Table 1, rows: Unit"
+   }
+  },
+  "enrolment_start": "2019-12",
+  "enrolment_end": "2021-01",
+  "consecutive_enrolment": null,
+  "funding_source": {
+   "value": "Supported, in part, by an Institutional Development Award from the National Institute of General Medical Sciences of the National Institutes of Health under grant number U54-GM104941 (principal investigator: Hicks).",
+   "provenance": {
+    "quote": "Supported, in part, by an Institutional Development Award from the National Institute of General Medical Sciences of the National Institutes of Health under grant number U54-GM104941 (principal investigator: Hicks).",
+    "location": "Acknowledgements, p. 7"
+   }
+  },
+  "industry_funded": false,
+  "conflicts_of_interest_declared": true
+ },
+ "population": {
+  "n_enrolled": {
+   "value": 29,
+   "provenance": {
+    "quote": "There were 48 total esophageal balloons placed at Christiana Care during the study time, 29 of which met the inclusion criteria of at least class II obesity (BMI ≥ 35 kg/m2) and ARDS.",
+    "location": "Results, para 1, p. 3"
+   }
+  },
+  "n_analysed": {
+   "value": 29,
+   "provenance": {
+    "quote": "Out of all 29 patients, there were 21 patients with Pao2/Fio2 less than 150",
+    "location": "Results, p. 4"
+   }
+  },
+  "population_description": {
+   "value": "Twenty-nine mechanically ventilated adult patients with a median BMI of 45.8 kg/m2 with acute respiratory distress syndrome (ARDS).",
+   "provenance": {
+    "quote": "PATIENTS: Twenty-nine mechanically ventilated adult patients with a median BMI of 45.8 kg/m2 with acute respiratory distress syndrome (ARDS).",
+    "location": "Abstract, PATIENTS, p. 1"
+   }
+  },
+  "inclusion_criteria": {
+   "value": "All adult patients 18 years old or older requiring mechanical ventilation with class II and III obesity (BMI ≥ 35 kg/m2) with ARDS were eligible.",
+   "provenance": {
+    "quote": "All adult patients 18 years old or older requiring mechanical ventilation with class II and III obesity (BMI ≥ 35 kg/m2) with ARDS were eligible.",
+    "location": "Methods, para 2, p. 2"
+   }
+  },
+  "exclusion_criteria": {
+   "value": "Institutional protocol advises against placing esophageal balloon in patients with known esophageal varices, tumors, ulcers, or platelets less than 10,000 × 109/L.",
+   "provenance": {
+    "quote": "Institutional protocol advises against placing esophageal balloon in patients with known esophageal varices, tumors, ulcers, or platelets less than 10,000 × 109/L.",
+    "location": "Methods, para 3, p. 2"
+   }
+  },
+  "age": {
+   "value_type": "median",
+   "value": 56,
+   "dispersion_type": "iqr",
+   "dispersion_low": 40,
+   "dispersion_high": 66,
+   "n": 29,
+   "unit": "yr",
+   "provenance": {
+    "quote": "Age, yr, median (IQR) — 56 (40–66)",
+    "location": "p. 3, Table 1, row: Age, yr, median (IQR)"
+   }
+  },
+  "sex_female": {
+   "n": 13,
+   "total": 29,
+   "percent_as_reported": 45,
+   "provenance": {
+    "quote": "Gender, n (%) — Female 13 (45)",
+    "location": "p. 3, Table 1, row: Gender, Female"
+   }
+  },
+  "sex_male": {
+   "n": 16,
+   "total": 29,
+   "percent_as_reported": 55,
+   "provenance": {
+    "quote": "Gender, n (%) — Male 16 (55)",
+    "location": "p. 3, Table 1, row: Gender, Male"
+   }
+  },
+  "bmi": {
+   "value_type": "median",
+   "value": 45.8,
+   "dispersion_type": "iqr",
+   "dispersion_low": 41.1,
+   "dispersion_high": 52.1,
+   "n": 29,
+   "unit": "kg/m2",
+   "provenance": {
+    "quote": "Body mass index, kg/m2, median (IQR) — 45.8 (41.1–52.1)",
+    "location": "p. 3, Table 1, row: Body mass index"
+   }
+  },
+  "weight_kg": null,
+  "predicted_body_weight_kg": null,
+  "ards_status": "all_ards",
+  "ards_definition_used": {
+   "value": "Berlin classification (severity also classified by S/F ratio in all 29 patients)",
+   "provenance": {
+    "quote": "Severity of ARDS was defined using the Berlin classification when an arterial blood gas was available (19). Blood gas results were not always available; therefore, severity of ARDS and clinical change was also classified by oxygen saturation/Fio2 (S/F) ratio in all 29 patients",
+    "location": "Methods, para 2, p. 2"
+   }
+  },
+  "n_ards": {
+   "n": 29,
+   "total": 29,
+   "provenance": {
+    "quote": "29 of which met the inclusion criteria of at least class II obesity (BMI ≥ 35 kg/m2) and ARDS",
+    "location": "Results, para 1, p. 3"
+   }
+  },
+  "ards_severity": {
+   "mild": {
+    "n": 4,
+    "total": 26,
+    "percent_as_reported": 14,
+    "provenance": {
+     "quote": "Hypoxemia—ARDS classification,a n (%) 26 (90) — Mild (P/F < 300) 4 (14)",
+     "location": "p. 3, Table 1, rows: Hypoxemia—ARDS classification"
+    }
+   },
+   "moderate": {
+    "n": 7,
+    "total": 26,
+    "percent_as_reported": 24,
+    "provenance": {
+     "quote": "Moderate (P/F < 200) 7 (24)",
+     "location": "p. 3, Table 1, row: Moderate (P/F < 200)"
+    }
+   },
+   "severe": {
+    "n": 15,
+    "total": 26,
+    "percent_as_reported": 52,
+    "provenance": {
+     "quote": "Severe (P/F < 100) 15 (52)",
+     "location": "p. 3, Table 1, row: Severe (P/F < 100)"
+    }
+   }
+  },
+  "covid19_population": "not_reported",
+  "cause_of_respiratory_failure": {
+   "value": "Pneumonia 17 (59%), Trauma 1 (3%), Other 11 (38%)",
+   "provenance": {
+    "quote": "Etiology of ARDS, n (%) — Pneumonia 17 (59); Trauma 1 (3); Other 11 (38)",
+    "location": "p. 3, Table 1, rows: Etiology of ARDS"
+   }
+  },
+  "pao2_fio2_baseline": null,
+  "apache_ii": null,
+  "sofa": {
+   "value_type": "median",
+   "value": 8,
+   "dispersion_type": "iqr",
+   "dispersion_low": 5,
+   "dispersion_high": 12,
+   "n": 29,
+   "provenance": {
+    "quote": "Sequential Organ Failure Assessment score, median (IQR) — 8 (5–12)",
+    "location": "p. 3, Table 1, row: Sequential Organ Failure Assessment score"
+   }
+  },
+  "saps_ii": null,
+  "n_prone_positioning": {
+   "n": 5,
+   "total": 29,
+   "percent_as_reported": 17,
+   "provenance": {
+    "quote": "Prior to esophageal balloon placement, five patients (17%) had been in prone position.",
+    "location": "Results, p. 4"
+   }
+  },
+  "n_neuromuscular_blockade": null,
+  "n_ecmo": {
+   "n": 0,
+   "total": 29,
+   "provenance": {
+    "quote": "and no patients received ECMO.",
+    "location": "Results, p. 4"
+   }
+  },
+  "n_vasopressors": null,
+  "additional_baseline": [
+   {
+    "name_verbatim": "Race",
+    "arm_label": null,
+    "count": {
+     "n": 19,
+     "total": 29,
+     "percent_as_reported": 65,
+     "provenance": {
+      "quote": "Race, n (%) — Caucasian 19 (65); Other 10 (35)",
+      "location": "p. 3, Table 1, rows: Race"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Median days of mechanical ventilation prior to balloon insert",
+    "arm_label": null,
+    "continuous": {
+     "value_type": "median",
+     "value": 1,
+     "dispersion_type": "none",
+     "n": 29,
+     "unit": "days",
+     "provenance": {
+      "quote": "Median days of mechanical ventilation prior to balloon insert were 1 day.",
+      "location": "Results, para 2, p. 3"
+     }
+    }
+   },
+   {
+    "name_verbatim": "Hypoxemia—S/F",
+    "arm_label": null,
+    "count": {
+     "n": 21,
+     "total": 29,
+     "percent_as_reported": 73,
+     "provenance": {
+      "quote": "Hypoxemia—S/F, n (%) 29 (100) — Severe (S/F < 150) 21 (73)",
+      "location": "p. 3, Table 1, rows: Hypoxemia—S/F"
+     }
+    }
+   }
+  ],
+  "baseline_by_arm": []
+ },
+ "intervention": {
+  "device_brand": {
+   "value": "CooperSurgical 5F catheter, 47-9005",
+   "provenance": {
+    "quote": "The esophageal catheter used was the CooperSurgical 5F catheter, 47-9005.",
+    "location": "Methods, para 3, p. 2"
+   }
+  },
+  "balloon_inflation_volume_ml": null,
+  "balloon_calibration": {
+   "method": "not_reported",
+   "method_verbatim": null,
+   "position_verification": {
+    "value": "The catheter was inserted into the appropriate position by a trained respiratory therapist (Appendix 1, for insertion protocol).",
+    "provenance": {
+     "quote": "The catheter was inserted into the appropriate position by a trained respiratory therapist (Appendix 1, http://links.lww.com/CCX/A981, for insertion protocol).",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "occlusion_ratio_acceptance": null
+  },
+  "ptp_computation": {
+   "method": "absolute_pes_subtraction",
+   "method_verbatim": {
+    "value": "Estimating PL, defined as (PL = airway pressure − pleural pressure)",
+    "provenance": {
+     "quote": "Estimating PL, defined as (PL = airway pressure − pleural pressure), may be more accurate in obesity than the traditional use of PPLAT as a surrogate.",
+     "location": "Introduction, para 3, p. 2"
+    }
+   },
+   "pes_correction_applied": null
+  },
+  "peep_titration_target": {
+   "strategy": "combined_end_expiratory_and_end_inspiratory",
+   "strategy_verbatim": {
+    "value": "PEEP was titrated based on PL at end expiration (End Exp PL) until it approached 0 (±2) cm H2O to minimize atelectasis. The upper limit for safety to prevent overdistension and barotrauma was met if PL is greater than 20 cm H2O at end inspiration (End Insp PL) via an inspiratory hold maneuver. If this occurred, PEEP or tidal volume would be subsequently decreased until End Insp PL was less than 20 cm H2O",
+    "provenance": {
+     "quote": "PEEP was titrated based on PL at end expiration (End Exp PL) until it approached 0 (±2) cm H2O to minimize atelectasis. The upper limit for safety to prevent overdistension and barotrauma was met if PL is greater than 20 cm H2O at end inspiration (End Insp PL) via an inspiratory hold maneuver. If this occurred, PEEP or tidal volume would be subsequently decreased until End Insp PL was less than 20 cm H2O",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "end_expiratory_ptp_target_low_cmh2o": {
+    "value": -2,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "PEEP was titrated based on PL at end expiration (End Exp PL) until it approached 0 (±2) cm H2O to minimize atelectasis.",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "end_expiratory_ptp_target_high_cmh2o": {
+    "value": 2,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "PEEP was titrated based on PL at end expiration (End Exp PL) until it approached 0 (±2) cm H2O to minimize atelectasis.",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "end_inspiratory_ptp_limit_cmh2o": {
+    "value": 20,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "The upper limit for safety to prevent overdistension and barotrauma was met if PL is greater than 20 cm H2O at end inspiration (End Insp PL) via an inspiratory hold maneuver.",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "driving_ptp_limit_cmh2o": null,
+   "peep_upper_limit_cmh2o": null,
+   "titration_frequency": {
+    "value": "PEEP titration occurred at time 0 hours; outcomes assessed at 4 and 24 hours",
+    "provenance": {
+     "quote": "PEEP titration occurred at time 0 hours.",
+     "location": "Methods, para 1 of data collection, p. 3"
+    }
+   }
+  },
+  "co_interventions": {
+   "recruitment_manoeuvre": null,
+   "recruitment_manoeuvre_detail": null,
+   "tidal_volume_target": {
+    "value": "Tidal volume was kept less than 8-mL/kg predicted body weight in accordance with lung protective settings.",
+    "provenance": {
+     "quote": "Tidal volume was kept less than 8-mL/kg predicted body weight in accordance with lung protective settings.",
+     "location": "Methods, first line, p. 3"
+    }
+   },
+   "plateau_or_ptp_ceiling": {
+    "value": "End Insp PL less than 20 cm H2O",
+    "provenance": {
+     "quote": "PEEP or tidal volume would be subsequently decreased until End Insp PL was less than 20 cm H2O",
+     "location": "Methods, para 3, p. 2"
+    }
+   },
+   "protocolised_weaning": null,
+   "other_co_interventions": {
+    "value": "Initiating adjunct therapies (proning, neuromuscular blockade, and inhaled pulmonary vasodilators) were left up to the treating practitioner.",
+    "provenance": {
+     "quote": "Initiating adjunct therapies (proning, neuromuscular blockade, and inhaled pulmonary vasodilators) were left up to the treating practitioner.",
+     "location": "Methods, para 1, p. 3"
+    }
+   }
+  },
+  "timing": {
+   "reference_event": "intubation",
+   "hours_from_reference": {
+    "value_type": "median",
+    "value": 1,
+    "unit": "day",
+    "dispersion_type": "none",
+    "provenance": {
+     "quote": "Median days of mechanical ventilation prior to balloon insert were 1 day.",
+     "location": "Results, para 1"
+    }
+   },
+   "timing_verbatim": {
+    "value": "Median days of mechanical ventilation prior to balloon insert were 1 day. Sixteen underwent balloon insertion within the first day, seven between days 1 and 10, and four patients had a balloon insertion after 10 days on mechanical ventilation.",
+    "provenance": {
+     "quote": "Median days of mechanical ventilation prior to balloon insert were 1 day. Sixteen underwent balloon insertion within the first day, seven between days 1 and 10, and four patients had a balloon insertion after 10 days on mechanical ventilation.",
+     "location": "Results, para 2, p. 3–4"
+    }
+   }
+  },
+  "duration_of_pes_guidance": {
+   "value": "Ventilator settings, ventilator pressures, and hemodynamic vasopressor support were obtained before esophageal balloon placement and after optimization at 4 and 24 hours.",
+   "provenance": {
+    "quote": "Ventilator settings, ventilator pressures, and hemodynamic vasopressor support were obtained before esophageal balloon placement and after optimization at 4 and 24 hours.",
+    "location": "Methods, para 1, p. 3"
+   }
+  }
+ },
+ "comparator": {
+  "comparator_types": [
+   "clinician_discretion_usual_care"
+  ],
+  "comparator_verbatim": {
+   "value": "Pre-balloon ventilator settings (before esophageal balloon placement) served as the reference; additionally, the set individualized PEEP was compared to the PEEP that would have been set based on empirical high PEEP/Fio2 table (ARDSNet high PEEP table).",
+   "provenance": {
+    "quote": "Additionally, we compared the set individualized PEEP to previously established high PEEP tables.",
+    "location": "Methods, para 1, p. 3"
+   }
+  },
+  "crossover_order": {
+   "value": "Baseline (pre-balloon) clinician-set settings, then PL-guided titration at time 0, with measurements at 4 and 24 hours. Not randomised; retrospective.",
+   "provenance": {
+    "quote": "Ventilator settings, ventilator pressures, and hemodynamic vasopressor support were obtained before esophageal balloon placement and after optimization at 4 and 24 hours. PEEP titration occurred at time 0 hours.",
+    "location": "Methods, para 1, p. 3"
+   }
+  },
+  "washout_or_stabilisation": {
+   "value": "Measurements at 4 and 24 hours after PL-guided optimization.",
+   "provenance": {
+    "quote": "Outcomes measured include PEEP, oxygenation, and driving pressure (DP) before and after esophageal manometry at 4 and 24 hr.",
+    "location": "Abstract, MEASUREMENTS AND MAIN RESULTS, p. 1"
+   }
+  }
+ },
+ "arms": [
+  {
+   "label": "baseline_pre_balloon",
+   "label_verbatim": "Before",
+   "role": "reference_condition",
+   "sequence_position": 1,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 29,
+    "provenance": {
+     "quote": "Twenty-nine mechanically ventilated adult patients with a median BMI of 45.8 kg/m2 with acute respiratory distress syndrome (ARDS).",
+     "location": "Abstract, PATIENTS, p. 1"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 12,
+    "dispersion_type": "iqr",
+    "dispersion_low": 10,
+    "dispersion_high": 16,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure (cm H2O) — Before 12 (10–16)",
+     "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+    }
+   }
+  },
+  {
+   "label": "pl_guided_4hr",
+   "label_verbatim": "After 4 hr",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 29,
+    "provenance": {
+     "quote": "Comparison of ventilator settings between baseline, 4 hours, and 24 hours are shown in Table 2.",
+     "location": "Results, para 3, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 20,
+    "dispersion_type": "iqr",
+    "dispersion_low": 16,
+    "dispersion_high": 20,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure (cm H2O) — After 4 hr 20 (16–20)",
+     "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+    }
+   }
+  },
+  {
+   "label": "pl_guided_24hr",
+   "label_verbatim": "After 24 hr",
+   "role": "intervention",
+   "sequence_position": 3,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 29,
+    "provenance": {
+     "quote": "Comparison of ventilator settings between baseline, 4 hours, and 24 hours are shown in Table 2.",
+     "location": "Results, para 3, p. 4"
+    }
+   },
+   "peep_applied_cmh2o": {
+    "value_type": "median",
+    "value": 16,
+    "dispersion_type": "iqr",
+    "dispersion_low": 14,
+    "dispersion_high": 20,
+    "unit": "cm H2O",
+    "provenance": {
+     "quote": "Positive end-expiratory pressure (cm H2O) — After 24 hr 16 (14–20)",
+     "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+    }
+   }
+  },
+  {
+   "label": "post_titration",
+   "label_verbatim": "After esophageal balloon insertion",
+   "role": "intervention",
+   "sequence_position": 2,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 29,
+    "provenance": {
+     "quote": "There were 48 total esophageal balloons placed at Christiana Care during the study time, 29 of which met the inclusion criteria",
+     "location": "Results, para 1"
+    }
+   },
+   "peep_applied_cmh2o": null
+  },
+  {
+   "label": "cohort",
+   "label_verbatim": "All patients",
+   "role": "single_group",
+   "sequence_position": null,
+   "n_randomised": null,
+   "n_analysed": {
+    "value": 29,
+    "provenance": {
+     "quote": "There were 48 total esophageal balloons placed at Christiana Care during the study time, 29 of which met the inclusion criteria",
+     "location": "Results, para 1"
+    }
+   },
+   "peep_applied_cmh2o": null
+  }
+ ],
+ "outcomes": [
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Positive end-expiratory pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "baseline_pre_balloon",
+     "value_type": "median",
+     "value": 12,
+     "dispersion_type": "iqr",
+     "dispersion_low": 10,
+     "dispersion_high": 16,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — Before 12 (10–16)",
+      "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": {
+    "quote": "Positive end-expiratory pressure (cm H2O) | 12 (10–16)",
+    "location": "Table 2, row: PEEP"
+   },
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Positive end-expiratory pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "After 4 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "value_type": "median",
+     "value": 20,
+     "dispersion_type": "iqr",
+     "dispersion_low": 16,
+     "dispersion_high": 20,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — After 4 hr 20 (16–20)",
+      "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_4hr minus baseline_pre_balloon",
+     "arm_label_a": "pl_guided_4hr",
+     "arm_label_b": "baseline_pre_balloon",
+     "mean_difference": null,
+     "p_value": null,
+     "p_value_verbatim": "< 0.0001",
+     "test_used": "Wilcoxon signed rank test",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — Before 12 (10–16), After 4 hr 20 (16–20), p (Before vs 4 hr) < 0.0001",
+      "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "provenance": {
+    "quote": "Positive end-expiratory pressure (cm H2O) | 20 (16–20)",
+    "location": "Table 2, row: PEEP"
+   },
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Positive end-expiratory pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After 24 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "value_type": "median",
+     "value": 16,
+     "dispersion_type": "iqr",
+     "dispersion_low": 14,
+     "dispersion_high": 20,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — After 24 hr 16 (14–20)",
+      "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_24hr minus pl_guided_4hr",
+     "arm_label_a": "pl_guided_24hr",
+     "arm_label_b": "pl_guided_4hr",
+     "mean_difference": null,
+     "p_value": 0.023,
+     "p_value_verbatim": "0.023",
+     "test_used": "Wilcoxon signed rank test",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Positive end-expiratory pressure (cm H2O) — After 4 hr 20 (16–20), After 24 hr 16 (14–20), p (4 vs 24 hr) 0.023",
+      "location": "p. 4, Table 2, row: Positive end-expiratory pressure"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Fio2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "baseline_pre_balloon",
+     "value_type": "median",
+     "value": 0.8,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.65,
+     "dispersion_high": 1,
+     "n": 29,
+     "provenance": {
+      "quote": "Fio2 — Before 0.8 (0.65–1)",
+      "location": "p. 4, Table 2, row: Fio2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Fio2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "After 4 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "value_type": "median",
+     "value": 0.6,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.5,
+     "dispersion_high": 0.7,
+     "n": 29,
+     "provenance": {
+      "quote": "Fio2 — After 4 hr 0.6 (0.5–0.7)",
+      "location": "p. 4, Table 2, row: Fio2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_4hr minus baseline_pre_balloon",
+     "arm_label_a": "pl_guided_4hr",
+     "arm_label_b": "baseline_pre_balloon",
+     "p_value": null,
+     "p_value_verbatim": "< 0.0001",
+     "test_used": "Wilcoxon signed rank test",
+     "provenance": {
+      "quote": "Fio2 — Before 0.8 (0.65–1), After 4 hr 0.6 (0.5–0.7), p (Before vs 4 hr) < 0.0001",
+      "location": "p. 4, Table 2, row: Fio2"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "Fio2",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After 24 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "value_type": "median",
+     "value": 0.45,
+     "dispersion_type": "iqr",
+     "dispersion_low": 0.4,
+     "dispersion_high": 0.6,
+     "n": 29,
+     "provenance": {
+      "quote": "Fio2 — After 24 hr 0.45 (0.4–0.6)",
+      "location": "p. 4, Table 2, row: Fio2"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_24hr minus pl_guided_4hr",
+     "arm_label_a": "pl_guided_24hr",
+     "arm_label_b": "pl_guided_4hr",
+     "p_value": 0.004,
+     "p_value_verbatim": "0.004",
+     "test_used": "Wilcoxon signed rank test",
+     "provenance": {
+      "quote": "Fio2 — After 4 hr 0.6 (0.5–0.7), After 24 hr 0.45 (0.4–0.6), p (4 vs 24 hr) 0.004",
+      "location": "p. 4, Table 2, row: Fio2"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Median oxygen saturation/Fio2 ratio",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "baseline_pre_balloon",
+     "value_type": "median",
+     "value": 120,
+     "dispersion_type": "iqr",
+     "dispersion_low": 96,
+     "dispersion_high": 150.77,
+     "n": 29,
+     "provenance": {
+      "quote": "Median oxygen saturation/Fio2 ratio — Before 120 (96–150.77)",
+      "location": "p. 4, Table 2, row: Median oxygen saturation/Fio2 ratio"
+     },
+     "unit": null
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Median oxygen saturation/Fio2 ratio",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "After 4 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "value_type": "median",
+     "value": 165,
+     "dispersion_type": "iqr",
+     "dispersion_low": 141.43,
+     "dispersion_high": 196,
+     "n": 29,
+     "provenance": {
+      "quote": "Median oxygen saturation/Fio2 ratio — After 4 hr 165 (141.43–196)",
+      "location": "p. 4, Table 2, row: Median oxygen saturation/Fio2 ratio"
+     },
+     "unit": null
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_4hr minus baseline_pre_balloon",
+     "arm_label_a": "pl_guided_4hr",
+     "arm_label_b": "baseline_pre_balloon",
+     "p_value": null,
+     "p_value_verbatim": "< 0.0001",
+     "test_used": "Wilcoxon signed rank test",
+     "provenance": {
+      "quote": "Median oxygen saturation/Fio2 ratio — Before 120 (96–150.77), After 4 hr 165 (141.43–196), p (Before vs 4 hr) < 0.0001",
+      "location": "p. 4, Table 2, row: Median oxygen saturation/Fio2 ratio"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "oxygenation",
+   "name_verbatim": "Median oxygen saturation/Fio2 ratio",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After 24 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "value_type": "median",
+     "value": 211.11,
+     "dispersion_type": "iqr",
+     "dispersion_low": 156.7,
+     "dispersion_high": 247.5,
+     "n": 29,
+     "provenance": {
+      "quote": "Median oxygen saturation/Fio2 ratio — After 24 hr 211.11 (156.7–247.5)",
+      "location": "p. 4, Table 2, row: Median oxygen saturation/Fio2 ratio"
+     },
+     "unit": null
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_24hr minus pl_guided_4hr",
+     "arm_label_a": "pl_guided_24hr",
+     "arm_label_b": "pl_guided_4hr",
+     "p_value": 0.001,
+     "p_value_verbatim": "0.001",
+     "test_used": "Wilcoxon signed rank test",
+     "provenance": {
+      "quote": "Median oxygen saturation/Fio2 ratio — After 4 hr 165 (141.43–196), After 24 hr 211.11 (156.7–247.5), p (4 vs 24 hr) 0.001",
+      "location": "p. 4, Table 2, row: Median oxygen saturation/Fio2 ratio"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "baseline",
+    "label_verbatim": "Before"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "baseline_pre_balloon",
+     "value_type": "median",
+     "value": 15,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 18,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure (cm H2O) — Before 15 (12–18)",
+      "location": "p. 4, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "After 4 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "value_type": "median",
+     "value": 13,
+     "dispersion_type": "iqr",
+     "dispersion_low": 12,
+     "dispersion_high": 16,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure (cm H2O) — After 4 hr 13 (12–16)",
+      "location": "p. 4, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_4hr minus baseline_pre_balloon",
+     "arm_label_a": "pl_guided_4hr",
+     "arm_label_b": "baseline_pre_balloon",
+     "p_value": 0.002,
+     "p_value_verbatim": "0.002",
+     "test_used": "Wilcoxon signed rank test",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure (cm H2O) — Before 15 (12–18), After 4 hr 13 (12–16), p (Before vs 4 hr) 0.002",
+      "location": "p. 4, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "Driving pressure (cm H2O)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After 24 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "value_type": "median",
+     "value": 14,
+     "dispersion_type": "iqr",
+     "dispersion_low": 11,
+     "dispersion_high": 15,
+     "n": 29,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure (cm H2O) — After 24 hr 14 (11–15)",
+      "location": "p. 4, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "paired_effects": [
+    {
+     "contrast_type": "pairwise",
+     "contrast": "pl_guided_24hr minus pl_guided_4hr",
+     "arm_label_a": "pl_guided_24hr",
+     "arm_label_b": "pl_guided_4hr",
+     "p_value": 0.379,
+     "p_value_verbatim": "0.379",
+     "test_used": "Wilcoxon signed rank test",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Driving pressure (cm H2O) — After 4 hr 13 (12–16), After 24 hr 14 (11–15), p (4 vs 24 hr) 0.379",
+      "location": "p. 4, Table 2, row: Driving pressure"
+     }
+    }
+   ],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "PPLAT (plateau pressure)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "after 4 hours"
+   },
+   "is_longest_reported_mortality": null,
+   "measurement_context": {
+    "value": "Median PPLAT reported in text; plateau pressure was not obtained in three patients (Figure 1).",
+    "provenance": {
+     "quote": "Median PPLAT was 33 cm H2O after 4 hours and 31 cm H2O after 24 hours.",
+     "location": "Results, para 3, p. 4"
+    }
+   },
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "value_type": "median",
+     "value": 33,
+     "dispersion_type": "none",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Median PPLAT was 33 cm H2O after 4 hours and 31 cm H2O after 24 hours.",
+      "location": "Results, para 3, p. 4"
+     },
+     "n": null
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "respiratory_mechanics",
+   "name_verbatim": "PPLAT (plateau pressure)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "after 24 hours"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "value_type": "median",
+     "value": 31,
+     "dispersion_type": "none",
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "Median PPLAT was 33 cm H2O after 4 hours and 31 cm H2O after 24 hours.",
+      "location": "Results, para 3, p. 4"
+     },
+     "n": null
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Pneumothorax",
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "end_of_study",
+    "label_verbatim": "any time after esophageal balloon optimization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 0,
+     "total": 29,
+     "provenance": {
+      "quote": "Pneumothorax 0 (0)",
+      "location": "Table 3, row: Pneumothorax"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": {
+    "quote": "Pneumothorax 0 (0)",
+    "location": "Table 3, row: Pneumothorax"
+   },
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Pneumomediastinum",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "end_of_study",
+    "label_verbatim": "any time after esophageal balloon optimization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 1,
+     "total": 29,
+     "provenance": {
+      "quote": "Pneumomediastinum 1 (3)",
+      "location": "Table 3, row: Pneumomediastinum"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "Increased vasopressor — After 4 hr",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "After 4 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "events": 7,
+     "total": 29,
+     "provenance": {
+      "quote": "Increased vasopressor — After 4 hr 7 (24)",
+      "location": "p. 6, Table 3, row: Increased vasopressor, After 4 hr"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "adverse_event",
+   "name_verbatim": "Increased vasopressor — After 24 hr",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "After 24 hr"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_24hr",
+     "events": 7,
+     "total": 29,
+     "provenance": {
+      "quote": "Increased vasopressor — After 24 hr 7 (24)",
+      "location": "p. 6, Table 3, row: Increased vasopressor, After 24 hr"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "Inhaled pulmonary vasodilators",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 2,
+     "total": 29,
+     "provenance": {
+      "quote": "Inhaled pulmonary vasodilators 2 (7)",
+      "location": "Table 3, row: Inhaled pulmonary vasodilators"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "Extracorporeal membrane oxygenation",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 0,
+     "total": 29,
+     "provenance": {
+      "quote": "Extracorporeal membrane oxygenation 0 (0)",
+      "location": "Table 3, row: Extracorporeal membrane oxygenation"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "rescue_therapy",
+   "name_verbatim": "New prone position",
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 24,
+    "label_verbatim": "Within first 24 hr of balloon insertion"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 5,
+     "total": 29,
+     "provenance": {
+      "quote": "New prone positiona 5 (17)",
+      "location": "Table 3, row: New prone position"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": {
+    "quote": "New prone positiona 5 (17)",
+    "location": "Table 3, row: New prone position"
+   },
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Continuous renal replacement therapy",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "not_reported"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 2,
+     "total": 29,
+     "provenance": {
+      "quote": "Continuous renal replacement therapy 2 (7)",
+      "location": "Table 3, row: Continuous renal replacement therapy"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "other",
+   "name_verbatim": "Tracheostomy",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "hospital_discharge",
+    "label_verbatim": "Within the patient's hospital stay"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 5,
+     "total": 29,
+     "provenance": {
+      "quote": "Tracheostomy 5 (17)",
+      "location": "Table 3, row: Tracheostomy"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  },
+  {
+   "domain": "ventilator_settings",
+   "name_verbatim": "PEEP set by PL-guided titration versus ARDSNet high PEEP table (discordance)",
+   "definition_verbatim": null,
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 4,
+    "label_verbatim": "at 4-hr postballoon insertion"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "pl_guided_4hr",
+     "events": 18,
+     "total": 29,
+     "provenance": {
+      "quote": "The set PEEP based on our PL-guided titration did not match the PEEP recommended by the table in 18 patients (62%), with eight patients having a higher set PEEP and 10 patients with a lower set PEEP (Fig. 2).",
+      "location": "Results, para 5, p. 4"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "End Inspiratory transpulmonary pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 0,
+    "label_verbatim": "Post-esophageal balloon insertion"
+   },
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "post_titration",
+     "value_type": "mean",
+     "value": 8.32,
+     "n": null,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "The average End Insp PL was 8.32 cm H2O.",
+      "location": "Results, para 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The average End Insp PL was 8.32 cm H2O.",
+    "location": "Results, para 2"
+   }
+  },
+  {
+   "domain": "transpulmonary_pressure",
+   "name_verbatim": "End Expiratory transpulmonary pressure",
+   "measure_type": "continuous",
+   "timepoint": {
+    "type": "minutes_hours_after_intervention",
+    "hours": 0,
+    "label_verbatim": "Post-esophageal balloon insertion"
+   },
+   "is_primary_outcome": null,
+   "is_longest_reported_mortality": null,
+   "measurement_context": null,
+   "data": [
+    {
+     "arm_label": "post_titration",
+     "value_type": "mean",
+     "value": -2.72,
+     "n": null,
+     "unit": "cm H2O",
+     "provenance": {
+      "quote": "The average End Exp PL was –2.72 cm H2O.",
+      "location": "Results, para 2"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "effect_estimates": [],
+   "provenance": {
+    "quote": "The average End Exp PL was –2.72 cm H2O.",
+    "location": "Results, para 2"
+   }
+  },
+  {
+   "domain": "barotrauma",
+   "name_verbatim": "Barotrauma (pneumothorax, pneumomediastinum)",
+   "definition_verbatim": "Adverse events were defined as pneumothorax, pneumomediastinum, and increasing vasopressor support any time after esophageal balloon optimization had occurred.",
+   "is_primary_outcome": null,
+   "measure_type": "dichotomous",
+   "timepoint": {
+    "type": "end_of_study",
+    "label_verbatim": "any time after esophageal balloon optimization"
+   },
+   "is_longest_reported_mortality": null,
+   "data": [
+    {
+     "arm_label": "cohort",
+     "events": 1,
+     "total": 29,
+     "derived": true,
+     "derivation": "Any barotrauma (C31) = pneumothorax 0 + pneumomediastinum 1; no patient had a pneumothorax, so the two cannot overlap. Subcutaneous emphysema is not reported.",
+     "provenance": {
+      "quote": "No patients developed pneumothoraces, and only one patient (3%) developed pneumomediastinum.",
+      "location": "p. 4, Results; p. 6, Table 3"
+     }
+    }
+   ],
+   "paired_effects": [],
+   "provenance": null,
+   "measurement_context": null,
+   "effect_estimates": []
+  }
+ ],
+ "feasibility": {
+  "n_placement_attempted": null,
+  "n_placement_successful": {
+   "value": 29,
+   "provenance": {
+    "quote": "There were 48 total esophageal balloons placed at Christiana Care during the study time",
+    "location": "Results, para 1, p. 3"
+   },
+   "derived": true,
+   "derivation": "48 balloons placed hospital-wide, 29 of which met the inclusion criteria; every included patient had a placed balloon, so 29 successful placements in the study population (attempts and failures among the included are not reported)."
+  },
+  "placement_failure_reasons": null,
+  "n_measurement_not_obtainable": null,
+  "measurement_failure_reasons": null,
+  "balloon_related_complications": [
+   {
+    "event": "Pneumomediastinum",
+    "n_events": {
+     "value": 1,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "New prone positiona 5 (17) — aWithin first 24 hr of balloon insertion.",
+      "location": "p. 6, Table 3, row: New prone position and footnote a"
+     }
+    },
+    "n_at_risk": {
+     "value": 29,
+     "derived": false,
+     "derivation": null,
+     "provenance": {
+      "quote": "New prone positiona 5 (17) — aWithin first 24 hr of balloon insertion.",
+      "location": "p. 6, Table 3, row: New prone position and footnote a"
+     }
+    },
+    "provenance": {
+     "quote": "Adverse events — Pneumomediastinum 1 (3)",
+     "location": "p. 6, Table 3, row: Pneumomediastinum"
+    }
+   }
+  ],
+  "complications_explicitly_none": null,
+  "protocol_adherence": {
+   "value": "Within our cohort, 25 (86%) had an increase in PEEP after PL was determined postesophageal balloon insertion. No patients had an End Insp PL greater than 14 cm H2O.",
+   "provenance": {
+    "quote": "Within our cohort, 25 (86%) had an increase in PEEP after PL was determined postesophageal balloon insertion. The average End Insp PL was 8.32 cm H2O. No patients had an End Insp PL greater than 14 cm H2O.",
+    "location": "Results, para 2, p. 4"
+   }
+  },
+  "protocol_deviations": null,
+  "n_crossover_between_arms": null,
+  "n_lost_to_followup": null
+ },
+ "subgroup_flags": {
+  "ards_subgroup": "ards_only",
+  "obesity_subgroup": "obese_population",
+  "timing_subgroup": "mixed",
+  "ptp_target_subgroups": [
+   "absolute_zero_end_expiratory_ptp"
+  ],
+  "classification_notes": "obese_population: enrolment required BMI ≥ 35 kg/m2 and median BMI 45.8 kg/m2. timing_subgroup mixed: 16 balloons within first day of mechanical ventilation, 7 between days 1 and 10, 4 after day 10. ptp_target_subgroups: end-expiratory PL titrated to 0 (±2) cm H2O (absolute_zero_end_expiratory_ptp) plus an end-inspiratory PL safety limit of 20 cm H2O, which has no dedicated enum value and is coded 'other'. Mortality not evaluated in this study, so no is_longest_reported_mortality entry exists."
+ },
+ "reported_subgroups": [],
+ "extraction_flags": {
+  "cohort_id": null,
+  "overlapping_cohort_with": [],
+  "overlap_evidence": "Not listed in COHORTS.md; single center at Christiana Care, not matching any known cluster.",
+  "unclear_items": [
+   "countries: inferred United States from Newark, Delaware.",
+   "design.consecutive_enrolment: paper states 'all patients undergoing esophageal balloon placement' during the period; interpreted as consecutive but not explicitly stated.",
+   "intervention.timing.reference_event: inferred as intubation from 'median days of mechanical ventilation prior to balloon insert'.",
+   "paired_effects.n_pairs: assumed 29 for all paired tests; paper does not report per-test n.",
+   "comparator_types: inferred as usual care prior to balloon placement; exact pre-study PEEP strategy not described."
+  ],
+  "data_only_in_figure": [
+   "Figure 1: per-patient PEEP and plateau pressure at 4-hr postballoon insertion (26 patients shown; plateau pressure not obtained in three patients).",
+   "Figure 2: per-patient PEEP set by ARDSNet high PEEP table versus esophageal manometry at 4-hr postballoon insertion (29 patients)."
+  ],
+  "contact_author_needed": false,
+  "general_notes": "Complications were attributed to ventilation; no balloon-related complications explicitly reported. Plateau pressure missing in 3 patients."
+ }
+}

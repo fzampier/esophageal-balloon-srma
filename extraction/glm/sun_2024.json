@@ -1,0 +1,1876 @@
+{
+  "record_meta": {
+    "study_id": "sun_2024",
+    "extractor": "glm",
+    "model": "glm-5.3-flash",
+    "extraction_date": "2026-08-30",
+    "source_file": "studies/fulltext/Lungprotective2024.pdf",
+    "schema_version": "1.2.0",
+    "adjudication_notes": null
+  },
+  "citation": {
+    "first_author": "Sun",
+    "year": 2024,
+    "title": "The impact of a lung-protective ventilation mode using transpulmonary driving pressure titrated positive end-expiratory pressure on the prognosis of patients with acute respiratory distress syndrome",
+    "journal": "Journal of Clinical Monitoring and Computing",
+    "doi": "10.1007/s10877-024-01198-3",
+    "pmid": null,
+    "trial_registration": null,
+    "trial_acronym": null,
+    "is_primary_report": true,
+    "report_type": "primary"
+  },
+  "eligibility": {
+    "include_final": true,
+    "primary_exclusion_reason": null,
+    "criteria": {
+      "adults_18_plus": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Age between 18 and 80 years, and both genders.",
+          "location": "Methods, Inclusion and exclusion criteria, Inclusion criteria, bullet 1"
+        }
+      },
+      "invasive_mechanical_ventilation": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Initiation of invasive mechanical ventilation within 48 h of inclusion, and an anticipated need for mechanical ventilation for more than 72 h.",
+          "location": "Methods, Inclusion and exclusion criteria, Inclusion criteria, bullet 3"
+        }
+      },
+      "icu_setting": {
+        "met": "yes",
+        "provenance": {
+          "quote": "This prospective study was conducted at our hospital's intensive care unit (ICU) from January 2020 to December 2023.",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "balloon_guided_peep_titration": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, para 3"
+        }
+      },
+      "reports_eligible_outcome": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Pulmonary function parameters, including the oxygenation index (OI), arterial oxygen tension (PaO2), arterial carbon dioxide tension (PaCO2), pulmonary shunt fraction (Qs/Qt), and dead space in the respiratory tract (Vd/Vt) were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters, para 1"
+        }
+      },
+      "sample_size_at_least_5": {
+        "met": "yes",
+        "provenance": {
+          "quote": "A total of 105 ARDS patients were randomly assigned to either the control group (n = 51) or the study group (n = 53).",
+          "location": "Abstract, Methods"
+        }
+      },
+      "eligible_design": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Random assignment of patients into either the control group or the study group was performed using a random number table.",
+          "location": "Methods, Study population, para 1"
+        }
+      },
+      "full_publication_english": {
+        "met": "yes",
+        "provenance": {
+          "quote": "Journal of Clinical Monitoring and Computing (2024) 38:1405–1414",
+          "location": "Page 1 header"
+        }
+      }
+    }
+  },
+  "design": {
+    "study_design": "rct",
+    "study_design_verbatim": {
+      "value": "This prospective study was conducted at our hospital's intensive care unit (ICU) from January 2020 to December 2023.",
+      "provenance": {
+        "quote": "This prospective study was conducted at our hospital's intensive care unit (ICU) from January 2020 to December 2023.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "comparison_structure": "parallel_arms",
+    "randomised": true,
+    "allocation_ratio": null,
+    "blinding": null,
+    "centers": "single",
+    "n_centers": null,
+    "countries": [
+      "China"
+    ],
+    "location_provenance": {
+      "quote": "Emergency Medicine Department, Shanghai Sixth People's Hospital, No. 600, Yishan Road, Xuhui District, Shanghai 200233, China",
+      "location": "Page 1, author affiliations, footnote 1"
+    },
+    "planned_sample_size": null,
+    "sample_size_calculation": {
+      "value": "Based on the preliminary clinical findings, this study considers the effect size (Δ) of the new intervention compared to the existing treatment to be 10%. Assuming a probability (P0) of adverse events occurring in patients under the existing treatment is 25%, which can be estimated from historical data. The significance level (α) is set at 0.05 (i.e., a 5% probability). A desired level of statistical power (1-β) is set at 80% or above to ensure the reliability of the study results. ... Obtaining a sample size of 100–120 patients would be appropriate.",
+      "provenance": {
+        "quote": "Obtaining a sample size of 100–120 patients would be appropriate.",
+        "location": "Results, Sample size, para 1"
+      }
+    },
+    "stopped_early": null,
+    "stopping_rule": null,
+    "setting": {
+      "value": "intensive care unit (ICU) of Shanghai Sixth People's Hospital; Emergency Medicine Department",
+      "provenance": {
+        "quote": "This prospective study was conducted at our hospital's intensive care unit (ICU) from January 2020 to December 2023.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "enrolment_start": "2020-01",
+    "enrolment_end": "2023-12",
+    "consecutive_enrolment": null,
+    "funding_source": {
+      "value": "No external funding received to conduct this study.",
+      "provenance": {
+        "quote": "Funding  No external funding received to conduct this study.",
+        "location": "Declarations, Funding"
+      }
+    },
+    "industry_funded": false,
+    "conflicts_of_interest_declared": true
+  },
+  "population": {
+    "n_enrolled": {
+      "value": 105,
+      "provenance": {
+        "quote": "A total of 105 ARDS patients were randomly assigned to either the control group (n = 51) or the study group (n = 53).",
+        "location": "Abstract, Methods"
+      }
+    },
+    "n_analysed": {
+      "value": 105,
+      "derived": true,
+      "derivation": "Table 1 and Tables 2–5 report n=51 (control) and n=54 (study group); sum = 105. Note the abstract states the study group as n=53, a discrepancy flagged in unclear_items.",
+      "provenance": {
+        "quote": "n 51 54",
+        "location": "Table 1, row: n"
+      }
+    },
+    "population_description": {
+      "value": "patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies",
+      "provenance": {
+        "quote": "The study included patients diagnosed with moderate to severe acute respiratory distress syndrome (ARDS) who required mechanical ventilation with lung-protective strategies.",
+        "location": "Methods, Study population, para 1"
+      }
+    },
+    "inclusion_criteria": {
+      "value": "Age between 18 and 80 years, and both genders; Diagnosis of ARDS based on the 2012 Berlin definition; Initiation of invasive mechanical ventilation within 48 h of inclusion, and an anticipated need for mechanical ventilation for more than 72 h.",
+      "provenance": {
+        "quote": "Age between 18 and 80 years, and both genders. Diagnosis of ARDS based on the 2012 Berlin definition. Initiation of invasive mechanical ventilation within 48 h of inclusion, and an anticipated need for mechanical ventilation for more than 72 h.",
+        "location": "Methods, Inclusion and exclusion criteria, Inclusion criteria"
+      }
+    },
+    "exclusion_criteria": {
+      "value": "Pre-ICU mechanical ventilation duration exceeding 48 h; Arterial blood gas analysis showing a PaO2/FiO2 ratio greater than 150 mmHg before enrollment; Duration of ARDS exceeding 72 h; Presence of conditions such as pneumothorax, mediastinal emphysema, large pleural effusion, diaphragmatic hernia, chest wall deformities, or significant lung bullae; Patients with severe respiratory central depression, neuromuscular conduction block diseases, or severe central nervous system lesions.",
+      "provenance": {
+        "quote": "Pre-ICU mechanical ventilation duration exceeding 48 h. Arterial blood gas analysis showing a PaO2/FiO2 ratio greater than 150 mmHg before enrollment. Duration of ARDS exceeding 72 h. Presence of conditions such as pneumothorax, mediastinal emphysema, large pleural effusion, diaphragmatic hernia, chest wall deformities, or significant lung bullae. Patients with severe respiratory central depression, neuromuscular conduction block diseases, or severe central nervous system lesions.",
+        "location": "Methods, Inclusion and exclusion criteria, Exclusion criteria"
+      }
+    },
+    "age": null,
+    "sex_female": null,
+    "sex_male": null,
+    "bmi": null,
+    "weight_kg": null,
+    "predicted_body_weight_kg": null,
+    "ards_status": "all_ards",
+    "ards_definition_used": {
+      "value": "2012 Berlin definition",
+      "provenance": {
+        "quote": "Diagnosis of ARDS based on the 2012 Berlin definition.",
+        "location": "Methods, Inclusion and exclusion criteria, Inclusion criteria, bullet 2"
+      }
+    },
+    "n_ards": null,
+    "ards_severity": {},
+    "covid19_population": "not_reported",
+    "cause_of_respiratory_failure": {
+      "value": "Pulmonary factor 30 (58.82) control, 38 (70.37) study; Extra-pulmonary factor 21 (41.18) control, 16 (29.63) study",
+      "provenance": {
+        "quote": "Cause of ARDS, n(%) Pulmonary factor 30 (58.82) 38 (70.37) Extra-pulmonary factor 21 (41.18) 16 (29.63)",
+        "location": "Table 1, rows: Cause of ARDS"
+      }
+    },
+    "pao2_fio2_baseline": null,
+    "apache_ii": null,
+    "sofa": null,
+    "saps_ii": null,
+    "n_prone_positioning": null,
+    "n_neuromuscular_blockade": null,
+    "n_ecmo": null,
+    "n_vasopressors": null,
+    "additional_baseline": [
+      {
+        "name_verbatim": "Hospital stay before ICU admission, hours",
+        "arm_label": "tidal_volume_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 32.56,
+          "dispersion_type": "sd",
+          "dispersion": 9.89,
+          "n": 51,
+          "unit": "hours",
+          "provenance": {
+            "quote": "Hospital stay before ICU admission, hours 32.56 ± 9.89",
+            "location": "Table 1, row: Hospital stay before ICU admission, Control group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Hospital stay before ICU admission, hours",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 33.42,
+          "dispersion_type": "sd",
+          "dispersion": 10.75,
+          "n": 54,
+          "unit": "hours",
+          "provenance": {
+            "quote": "Hospital stay before ICU admission, hours 32.56 ± 9.89 33.42 ± 10.75",
+            "location": "Table 1, row: Hospital stay before ICU admission, Study group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Murray lung injury score",
+        "arm_label": "tidal_volume_peep",
+        "continuous": {
+          "value_type": "mean",
+          "value": 4.31,
+          "dispersion_type": "sd",
+          "dispersion": 0.94,
+          "n": 51,
+          "provenance": {
+            "quote": "Murray lung injury score 4.31 ± 0.94",
+            "location": "Table 1, row: Murray lung injury score, Control group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Murray lung injury score",
+        "arm_label": "pes_guided",
+        "continuous": {
+          "value_type": "mean",
+          "value": 4.45,
+          "dispersion_type": "sd",
+          "dispersion": 0.88,
+          "n": 54,
+          "provenance": {
+            "quote": "Murray lung injury score 4.31 ± 0.94 4.45 ± 0.88",
+            "location": "Table 1, row: Murray lung injury score, Study group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pulmonary factor",
+        "arm_label": "tidal_volume_peep",
+        "count": {
+          "n": 30,
+          "total": 51,
+          "percent_as_reported": 58.82,
+          "provenance": {
+            "quote": "Pulmonary factor 30 (58.82)",
+            "location": "Table 1, row: Pulmonary factor, Control group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Pulmonary factor",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 38,
+          "total": 54,
+          "percent_as_reported": 70.37,
+          "provenance": {
+            "quote": "Pulmonary factor 30 (58.82) 38 (70.37)",
+            "location": "Table 1, row: Pulmonary factor, Study group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Extra-pulmonary factor",
+        "arm_label": "tidal_volume_peep",
+        "count": {
+          "n": 21,
+          "total": 51,
+          "percent_as_reported": 41.18,
+          "provenance": {
+            "quote": "Extra-pulmonary factor 21 (41.18)",
+            "location": "Table 1, row: Extra-pulmonary factor, Control group column"
+          }
+        }
+      },
+      {
+        "name_verbatim": "Extra-pulmonary factor",
+        "arm_label": "pes_guided",
+        "count": {
+          "n": 16,
+          "total": 54,
+          "percent_as_reported": 29.63,
+          "provenance": {
+            "quote": "Extra-pulmonary factor 21 (41.18) 16 (29.63)",
+            "location": "Table 1, row: Extra-pulmonary factor, Study group column"
+          }
+        }
+      }
+    ],
+    "baseline_by_arm": [
+      {
+        "arm_label": "tidal_volume_peep",
+        "n": {
+          "value": 51,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "n                 51           54                               t/χ²   P",
+            "location": "Baseline characteristics table, n per arm"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 55.55,
+          "dispersion_type": "sd",
+          "dispersion": 10.51,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age, years old 55.55 ± 10.51",
+            "location": "Table 1, row: Age, Control group column"
+          }
+        },
+        "sex_female": {
+          "n": 33,
+          "total": 51,
+          "percent_as_reported": 64.71,
+          "provenance": {
+            "quote": "Female 33 (64.71)",
+            "location": "Table 1, row: Female, Control group column"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 22.5,
+          "dispersion_type": "sd",
+          "dispersion": 2.88,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2 22.50 ± 2.88",
+            "location": "Table 1, row: BMI, Control group column"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 19.08,
+          "dispersion_type": "sd",
+          "dispersion": 4.67,
+          "provenance": {
+            "quote": "APACHE II score 19.08 ± 4.67",
+            "location": "Table 1, row: APACHE II score, Control group column"
+          }
+        }
+      },
+      {
+        "arm_label": "pes_guided",
+        "n": {
+          "value": 54,
+          "derived": false,
+          "derivation": null,
+          "provenance": {
+            "quote": "n                 51           54                               t/χ²   P",
+            "location": "Baseline characteristics table, n per arm"
+          }
+        },
+        "age": {
+          "value_type": "mean",
+          "value": 57.33,
+          "dispersion_type": "sd",
+          "dispersion": 12.21,
+          "unit": "years",
+          "provenance": {
+            "quote": "Age, years old 55.55 ± 10.51 57.33 ± 12.21",
+            "location": "Table 1, row: Age, Study group column"
+          }
+        },
+        "sex_female": {
+          "n": 29,
+          "total": 54,
+          "percent_as_reported": 53.7,
+          "provenance": {
+            "quote": "Female 33 (64.71) 29 (53.70)",
+            "location": "Table 1, row: Female, Study group column"
+          }
+        },
+        "bmi": {
+          "value_type": "mean",
+          "value": 21.84,
+          "dispersion_type": "sd",
+          "dispersion": 2.83,
+          "unit": "kg/m2",
+          "provenance": {
+            "quote": "BMI, kg/m2 22.50 ± 2.88 21.84 ± 2.83",
+            "location": "Table 1, row: BMI, Study group column"
+          }
+        },
+        "apache_ii": {
+          "value_type": "mean",
+          "value": 20.23,
+          "dispersion_type": "sd",
+          "dispersion": 5.0,
+          "provenance": {
+            "quote": "APACHE II score 19.08 ± 4.67 20.23 ± 5.00",
+            "location": "Table 1, row: APACHE II score, Study group column"
+          }
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "device_brand": null,
+    "balloon_inflation_volume_ml": null,
+    "balloon_calibration": {
+      "method": "not_reported",
+      "method_verbatim": null,
+      "position_verification": null,
+      "occlusion_ratio_acceptance": null
+    },
+    "ptp_computation": {
+      "method": "absolute_pes_subtraction",
+      "method_verbatim": {
+        "value": "Inspiratory transpulmonary pressure was calculated as the difference between inspiratory airway plateau pressure and inspiratory esophageal pressure, while expiratory transpulmonary pressure was calculated as the difference between expiratory airway plateau pressure and expiratory esophageal pressure. Transpulmonary driving pressure was determined by subtracting the end-expiratory transpulmonary pressure from the end-inspiratory transpulmonary pressure.",
+        "provenance": {
+          "quote": "Inspiratory transpulmonary pressure was calculated as the difference between inspiratory airway plateau pressure and inspiratory esophageal pressure, while expiratory transpulmonary pressure was calculated as the difference between expiratory airway plateau pressure and expiratory esophageal pressure.",
+          "location": "Methods, Intervention methods, para 3–4"
+        }
+      },
+      "pes_correction_applied": null
+    },
+    "peep_titration_target": {
+      "strategy": "driving_ptp_target",
+      "strategy_verbatim": {
+        "value": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+        "provenance": {
+          "quote": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, para 4"
+        }
+      },
+      "end_expiratory_ptp_target_low_cmh2o": null,
+      "end_expiratory_ptp_target_high_cmh2o": null,
+      "end_inspiratory_ptp_limit_cmh2o": null,
+      "driving_ptp_limit_cmh2o": {
+        "value": 15,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation",
+          "location": "Methods, Intervention methods, para 4"
+        }
+      },
+      "peep_upper_limit_cmh2o": null,
+      "titration_frequency": {
+        "value": "Adjustments were made 2–4 times per day.",
+        "provenance": {
+          "quote": "Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, para 4"
+        }
+      }
+    },
+    "co_interventions": {
+      "recruitment_manoeuvre": true,
+      "recruitment_manoeuvre_detail": {
+        "value": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters.",
+          "location": "Methods, Intervention methods, para 1"
+        }
+      },
+      "tidal_volume_target": {
+        "value": "a tidal volume of 6 mL/kg (control group volume-controlled mode); tidal volume selection generally 6–8 ml/kg of predicted body weight",
+        "provenance": {
+          "quote": "A volume-controlled mode was used, with a tidal volume of 6 mL/kg, flow rate of 30–60 L/min, frequency of 16–20 breaths/min, constant flow rate, inspiratory-to-expiratory ratio of 1:1 to 1:1.5, and a plateau pressure ≤ 30–35 cmH2O.",
+          "location": "Methods, Intervention methods, para 2"
+        }
+      },
+      "plateau_or_ptp_ceiling": {
+        "value": "a plateau pressure ≤ 30–35 cmH2O",
+        "provenance": {
+          "quote": "and a plateau pressure ≤ 30–35 cmH2O",
+          "location": "Methods, Intervention methods, para 2"
+        }
+      },
+      "protocolised_weaning": null,
+      "other_co_interventions": {
+        "value": "Sedation to control spontaneous breathing; muscle relaxants administered when necessary.",
+        "provenance": {
+          "quote": "Both groups received invasive mechanical ventilation, lung recruitment maneuvers, and sedation to control spontaneous breathing and prevent its impact on measured parameters. Muscle relaxants were administered when necessary.",
+          "location": "Methods, Intervention methods, para 1"
+        }
+      }
+    },
+    "timing": {
+      "reference_event": "enrolment",
+      "hours_from_reference": null,
+      "timing_verbatim": {
+        "value": "Esophageal pressure-guided titration applied during mechanical ventilation from enrolment; adjustments 2–4 times per day.",
+        "provenance": {
+          "quote": "Tidal volume and PEEP were adjusted based on the observed end-inspiratory and end-expiratory transpulmonary pressures, aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation. Adjustments were made 2–4 times per day.",
+          "location": "Methods, Intervention methods, para 4"
+        }
+      }
+    },
+    "duration_of_pes_guidance": {
+      "value": "during mechanical ventilation",
+      "provenance": {
+        "quote": "aiming to maintain a transpulmonary driving pressure below 15 cmH2O during mechanical ventilation",
+        "location": "Methods, Intervention methods, para 4"
+      }
+    }
+  },
+  "comparator": {
+    "comparator_types": [
+      "other"
+    ],
+    "comparator_verbatim": {
+      "value": "The control group underwent PEEP titration based on tidal volume. A volume-controlled mode was used, with a tidal volume of 6 mL/kg, flow rate of 30–60 L/min, frequency of 16–20 breaths/min, constant flow rate, inspiratory-to-expiratory ratio of 1:1 to 1:1.5, and a plateau pressure ≤ 30–35 cmH2O. PEEP was adjusted to maintain oxygen saturation (SaO2) at or above 90%, taking into account blood pressure.",
+      "provenance": {
+        "quote": "The control group underwent PEEP titration based on tidal volume. ... PEEP was adjusted to maintain oxygen saturation (SaO2) at or above 90%, taking into account blood pressure.",
+        "location": "Methods, Intervention methods, para 2"
+      }
+    },
+    "crossover_order": null,
+    "washout_or_stabilisation": null
+  },
+  "arms": [
+    {
+      "label": "tidal_volume_peep",
+      "label_verbatim": "Control group",
+      "role": "comparator",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 51,
+        "provenance": {
+          "quote": "n 51",
+          "location": "Table 1, row: n, Control group column"
+        }
+      },
+      "n_analysed": {
+        "value": 51,
+        "provenance": {
+          "quote": "Control group 51 6.17 ± 1.58 37.26 ± 11.26",
+          "location": "Table 2, row: Control group"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 6.17,
+        "dispersion_type": "sd",
+        "dispersion": 1.58,
+        "n": 51,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Control group 51 6.17 ± 1.58",
+          "location": "Table 2, row: Control group, PEEP column"
+        }
+      }
+    },
+    {
+      "label": "pes_guided",
+      "label_verbatim": "Study group",
+      "role": "intervention",
+      "sequence_position": null,
+      "n_randomised": {
+        "value": 54,
+        "provenance": {
+          "quote": "n 51 54",
+          "location": "Table 1, row: n, Study group column"
+        }
+      },
+      "n_analysed": {
+        "value": 54,
+        "provenance": {
+          "quote": "Study group 54 8.36 ± 1.72 32.17 ± 9.87",
+          "location": "Table 2, row: Study group"
+        }
+      },
+      "peep_applied_cmh2o": {
+        "value_type": "mean",
+        "value": 8.36,
+        "dispersion_type": "sd",
+        "dispersion": 1.72,
+        "n": 54,
+        "unit": "cmH2O",
+        "provenance": {
+          "quote": "Study group 54 8.36 ± 1.72",
+          "location": "Table 2, row: Study group, PEEP column"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "domain": "mortality",
+      "name_verbatim": "28-day mortality rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 28,
+        "label_verbatim": "28-day mortality rate"
+      },
+      "is_longest_reported_mortality": false,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "events": 23,
+          "total": 51,
+          "provenance": {
+            "quote": "Control group 51 23 16 15.36 ± 3.39 29.26 ± 5.92",
+            "location": "Table 5, row: Control group, 28-day mortality rate column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "events": 15,
+          "total": 54,
+          "provenance": {
+            "quote": "Study group 54 15 14 11.23 ± 3.17 24.73 ± 4.85",
+            "location": "Table 5, row: Study group, 28-day mortality rate column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.065,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "chi-square test",
+          "provenance": {
+            "quote": "χ²/t 3.407 0.381 6.451 4.299 P 0.065 0.534 < 0.001 < 0.001",
+            "location": "Table 5, rows: χ²/t and P, 28-day mortality rate column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Prognostic measures included 28-day mortality, duration of mechanical ventilation, length of hospital stay, and incidence of ventilator-associated pneumonia (VAP).",
+        "location": "Methods, Outcome measures, Prognostic measures"
+      }
+    },
+    {
+      "domain": "mortality",
+      "name_verbatim": "Survival status at 60-day follow-up (Kaplan-Meier survival analysis)",
+      "definition_verbatim": "All patients were followed up for 60 days after discharge to record their survival status.",
+      "is_primary_outcome": null,
+      "measure_type": "time_to_event",
+      "timepoint": {
+        "type": "fixed_day",
+        "days": 60,
+        "label_verbatim": "60-day follow-up"
+      },
+      "is_longest_reported_mortality": true,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "events": null,
+          "total": 51,
+          "provenance": {
+            "quote": "No. at Risk Control group 51 47 32 28 26 23",
+            "location": "Fig. 1, No. at Risk row, Control group"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "events": null,
+          "total": 54,
+          "provenance": {
+            "quote": "No. at Risk Study group 54 50 45 38 37 34",
+            "location": "Fig. 1, No. at Risk row, Study group"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": "hazard_ratio",
+          "value": 0.565,
+          "ci_low": 0.32,
+          "ci_high": 0.999,
+          "ci_level": 95,
+          "p_value": 0.046,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "Kaplan-Meier curve analysis, log-rank test",
+          "provenance": {
+            "quote": "Kaplan-Meier curve analysis showed that the study group had a significantly better survival outcome than the control group (HR = 0.565, 95% CI: 0.320–0.999).",
+            "location": "Results, Prognostic analysis, para 2; P value 0.046 from Fig. 1 annotation"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "A 60-day follow-up was performed to record the survival status of the patients.",
+        "location": "Abstract, Methods"
+      }
+    },
+    {
+      "domain": "ventilator_settings",
+      "name_verbatim": "PEEP",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "after 48 h of mechanical ventilation (assumed; table does not state timing)"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "Timing of Table 2 measurements not explicitly stated; pulmonary function parameters were measured 48 h after initiation of mechanical ventilation.",
+        "provenance": {
+          "quote": "Pulmonary function parameters, including the oxygenation index (OI), arterial oxygen tension (PaO2), arterial carbon dioxide tension (PaCO2), pulmonary shunt fraction (Qs/Qt), and dead space in the respiratory tract (Vd/Vt) were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 6.17,
+          "dispersion_type": "sd",
+          "dispersion": 1.58,
+          "n": 51,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Control group 51 6.17 ± 1.58 37.26 ± 11.26",
+            "location": "Table 2, row: Control group, PEEP (cmH2O) column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 8.36,
+          "dispersion_type": "sd",
+          "dispersion": 1.72,
+          "n": 54,
+          "unit": "cmH2O",
+          "provenance": {
+            "quote": "Study group 54 8.36 ± 1.72 32.17 ± 9.87",
+            "location": "Table 2, row: Study group, PEEP (cmH2O) column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 6.783)",
+          "provenance": {
+            "quote": "t 6.783 P < 0.001",
+            "location": "Table 2, rows: t and P, PEEP column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 2 Comparison of PEEP and Vd/Vt",
+        "location": "Table 2 caption"
+      }
+    },
+    {
+      "domain": "dead_space",
+      "name_verbatim": "dead space in the respiratory tract (Vd/Vt)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h after initiation of mechanical ventilation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Pulmonary function parameters, including the oxygenation index (OI), arterial oxygen tension (PaO2), arterial carbon dioxide tension (PaCO2), pulmonary shunt fraction (Qs/Qt), and dead space in the respiratory tract (Vd/Vt) were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 37.26,
+          "dispersion_type": "sd",
+          "dispersion": 11.26,
+          "n": 51,
+          "unit": "%",
+          "provenance": {
+            "quote": "Control group 51 6.17 ± 1.58 37.26 ± 11.26",
+            "location": "Table 2, row: Control group, Vd/Vt (%) column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 32.17,
+          "dispersion_type": "sd",
+          "dispersion": 9.87,
+          "n": 54,
+          "unit": "%",
+          "provenance": {
+            "quote": "Study group 54 8.36 ± 1.72 32.17 ± 9.87",
+            "location": "Table 2, row: Study group, Vd/Vt (%) column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.015,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 2.467)",
+          "provenance": {
+            "quote": "t 2.467 P 0.015",
+            "location": "Table 2, rows: t and P, Vd/Vt column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The PEEP and Vd/Vt of the two groups were significantly lower than those of the control group, and the difference was statistically significant (all P < 0.05). (Table 2)",
+        "location": "Results, Comparison of pulmonary function parameters, para 1"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "before intervention, prior to the 48-h measurement",
+        "provenance": {
+          "quote": "Comparison of pulmonary function parameters before and 48 h after intervention in the two patient groups revealed no significant differences in PaO2, PaCO2, and OI before intervention (all P > 0.05).",
+          "location": "Results, Comparison of pulmonary function parameters, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 60.26,
+          "dispersion_type": "sd",
+          "dispersion": 12.01,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 60.26 ± 12.01 70.61 ± 10.81",
+            "location": "Table 3, row: Control group, PaO2 Before intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 62.31,
+          "dispersion_type": "sd",
+          "dispersion": 14.52,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 62.31 ± 14.52 77.05 ± 9.26",
+            "location": "Table 3, row: Study group, PaO2 Before intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.434,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 0.786)",
+          "provenance": {
+            "quote": "t 0.786 3.284 1.241 1.130 0.547 5.027 1.653 6.869 P 0.434 0.001 0.217 0.261 0.585 < 0.001 0.101 < 0.001",
+            "location": "Table 3, rows: t and P, PaO2 Before intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 3 Comparison of pulmonary function parameters",
+        "location": "Table 3 caption"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Pulmonary function parameters ... were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 70.61,
+          "dispersion_type": "sd",
+          "dispersion": 10.81,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 60.26 ± 12.01 70.61 ± 10.81",
+            "location": "Table 3, row: Control group, PaO2 After intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 77.05,
+          "dispersion_type": "sd",
+          "dispersion": 9.26,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 62.31 ± 14.52 77.05 ± 9.26",
+            "location": "Table 3, row: Study group, PaO2 After intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.001,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 3.284)",
+          "provenance": {
+            "quote": "t 0.786 3.284 ... P 0.434 0.001",
+            "location": "Table 3, rows: t and P, PaO2 After intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "the study group demonstrating significantly higher PaO2 and OI than the control group, with statistically significant differences (all P < 0.05). (Table 3)",
+        "location": "Results, Comparison of pulmonary function parameters, para 2"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "before intervention",
+        "provenance": {
+          "quote": "Comparison of pulmonary function parameters before and 48 h after intervention in the two patient groups revealed no significant differences in PaO2, PaCO2, and OI before intervention (all P > 0.05).",
+          "location": "Results, Comparison of pulmonary function parameters, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 35.61,
+          "dispersion_type": "sd",
+          "dispersion": 6.32,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 ... 35.61 ± 6.32 42.15 ± 7.25",
+            "location": "Table 3, row: Control group, PaCO2 Before intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 34.19,
+          "dispersion_type": "sd",
+          "dispersion": 5.39,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 ... 34.19 ± 5.39 43.69 ± 6.71",
+            "location": "Table 3, row: Study group, PaCO2 Before intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.217,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 1.241)",
+          "provenance": {
+            "quote": "t ... 1.241 1.130 ... P ... 0.217 0.261",
+            "location": "Table 3, rows: t and P, PaCO2 Before intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 3 Comparison of pulmonary function parameters",
+        "location": "Table 3 caption"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "PaCO2",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Pulmonary function parameters ... were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 42.15,
+          "dispersion_type": "sd",
+          "dispersion": 7.25,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 ... 35.61 ± 6.32 42.15 ± 7.25",
+            "location": "Table 3, row: Control group, PaCO2 After intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 43.69,
+          "dispersion_type": "sd",
+          "dispersion": 6.71,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 ... 34.19 ± 5.39 43.69 ± 6.71",
+            "location": "Table 3, row: Study group, PaCO2 After intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.261,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 1.130)",
+          "provenance": {
+            "quote": "t ... 1.241 1.130 ... P ... 0.217 0.261",
+            "location": "Table 3, rows: t and P, PaCO2 After intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The study group's PaCO2 was higher than the control group (42.15 ± 7.25 mmHg), but the difference was not statistically significant (P > 0.05).",
+        "location": "Abstract, Results"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "oxygenation index (OI)",
+      "definition_verbatim": "The OI, calculated as the ratio of PaO2 to FiO2, normally ranges from 400 to 500 mmHg. An OI below 300 mmHg indicates lung dysfunction.",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "before intervention",
+        "provenance": {
+          "quote": "Comparison of pulmonary function parameters before and 48 h after intervention in the two patient groups revealed no significant differences in PaO2, PaCO2, and OI before intervention (all P > 0.05).",
+          "location": "Results, Comparison of pulmonary function parameters, para 2"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 186.36,
+          "dispersion_type": "sd",
+          "dispersion": 17.22,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 ... 186.36 ± 17.22 240.26 ± 20.39",
+            "location": "Table 3, row: Control group, OI Before intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 184.59,
+          "dispersion_type": "sd",
+          "dispersion": 15.91,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 ... 184.59 ± 15.91 261.36 ± 22.49",
+            "location": "Table 3, row: Study group, OI Before intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.585,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 0.547)",
+          "provenance": {
+            "quote": "t ... 0.547 5.027 ... P ... 0.585 < 0.001",
+            "location": "Table 3, rows: t and P, OI Before intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 3 Comparison of pulmonary function parameters",
+        "location": "Table 3 caption"
+      }
+    },
+    {
+      "domain": "oxygenation",
+      "name_verbatim": "oxygenation index (OI)",
+      "definition_verbatim": "The OI, calculated as the ratio of PaO2 to FiO2, normally ranges from 400 to 500 mmHg. An OI below 300 mmHg indicates lung dysfunction.",
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Pulmonary function parameters ... were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 240.26,
+          "dispersion_type": "sd",
+          "dispersion": 20.39,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 ... 186.36 ± 17.22 240.26 ± 20.39",
+            "location": "Table 3, row: Control group, OI After intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 261.36,
+          "dispersion_type": "sd",
+          "dispersion": 22.49,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 ... 184.59 ± 15.91 261.36 ± 22.49",
+            "location": "Table 3, row: Study group, OI After intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 5.027)",
+          "provenance": {
+            "quote": "t ... 0.547 5.027 ... P ... 0.585 < 0.001",
+            "location": "Table 3, rows: t and P, OI After intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "the study group demonstrating significantly higher PaO2 and OI than the control group, with statistically significant differences (all P < 0.05). (Table 3)",
+        "location": "Results, Comparison of pulmonary function parameters, para 2"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pulmonary shunt fraction (Qs/Qt)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "baseline",
+        "label_verbatim": "Before intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "before intervention",
+        "provenance": {
+          "quote": "Pulmonary shunt fraction (Qs/Qt), and dead space in the respiratory tract (Vd/Vt) were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 20.02,
+          "dispersion_type": "sd",
+          "dispersion": 2.55,
+          "n": 51,
+          "unit": "%",
+          "provenance": {
+            "quote": "Control group 51 ... 20.02 ± 2.55 15.26 ± 2.82",
+            "location": "Table 3, row: Control group, Qs/Qt Before intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 19.21,
+          "dispersion_type": "sd",
+          "dispersion": 2.47,
+          "n": 54,
+          "unit": "%",
+          "provenance": {
+            "quote": "Study group 54 ... 19.21 ± 2.47 11.91 ± 2.15",
+            "location": "Table 3, row: Study group, Qs/Qt Before intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.101,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 1.653)",
+          "provenance": {
+            "quote": "t ... 1.653 6.869 P ... 0.101 < 0.001",
+            "location": "Table 3, rows: t and P, Qs/Qt Before intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 3 Comparison of pulmonary function parameters",
+        "location": "Table 3 caption"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "pulmonary shunt fraction (Qs/Qt)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "After intervention"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Pulmonary shunt fraction (Qs/Qt), and dead space in the respiratory tract (Vd/Vt) were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Pulmonary function parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 15.26,
+          "dispersion_type": "sd",
+          "dispersion": 2.82,
+          "n": 51,
+          "unit": "%",
+          "provenance": {
+            "quote": "Control group 51 ... 20.02 ± 2.55 15.26 ± 2.82",
+            "location": "Table 3, row: Control group, Qs/Qt After intervention column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 11.91,
+          "dispersion_type": "sd",
+          "dispersion": 2.15,
+          "n": 54,
+          "unit": "%",
+          "provenance": {
+            "quote": "Study group 54 ... 19.21 ± 2.47 11.91 ± 2.15",
+            "location": "Table 3, row: Study group, Qs/Qt After intervention column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 6.869)",
+          "provenance": {
+            "quote": "t ... 1.653 6.869 P ... 0.101 < 0.001",
+            "location": "Table 3, rows: t and P, Qs/Qt After intervention column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "Table 3 Comparison of pulmonary function parameters",
+        "location": "Table 3 caption"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "mean arterial pressure (MAP)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h after initiation of mechanical ventilation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Heart rate, mean arterial pressure, and central venous pressure were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Hemodynamic parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 82.36,
+          "dispersion_type": "sd",
+          "dispersion": 14.02,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 82.36 ± 14.02 10.36 ± 2.88 102.03 ± 18.29",
+            "location": "Table 4, row: Control group, MAP column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 80.14,
+          "dispersion_type": "sd",
+          "dispersion": 12.39,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 80.14 ± 12.39 11.21 ± 2.93 97.26 ± 20.36",
+            "location": "Table 4, row: Study group, MAP column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.391,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 0.861)",
+          "provenance": {
+            "quote": "t 0.861 1.498 1.260 P 0.391 0.137 0.210",
+            "location": "Table 4, rows: t and P, MAP column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "the mean arterial pressure (MAP) in the control group was (82.36 ± 14.02) mmHg ... In the study group, the MAP was (80.14 ± 12.39) mmHg",
+        "location": "Results, Hemodynamic parameters, para 1"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "central venous pressure (CVP)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h after initiation of mechanical ventilation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Heart rate, mean arterial pressure, and central venous pressure were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Hemodynamic parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 10.36,
+          "dispersion_type": "sd",
+          "dispersion": 2.88,
+          "n": 51,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Control group 51 82.36 ± 14.02 10.36 ± 2.88 102.03 ± 18.29",
+            "location": "Table 4, row: Control group, CVP column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 11.21,
+          "dispersion_type": "sd",
+          "dispersion": 2.93,
+          "n": 54,
+          "unit": "mmHg",
+          "provenance": {
+            "quote": "Study group 54 80.14 ± 12.39 11.21 ± 2.93 97.26 ± 20.36",
+            "location": "Table 4, row: Study group, CVP column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.137,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 1.498)",
+          "provenance": {
+            "quote": "t 0.861 1.498 1.260 P 0.391 0.137 0.210",
+            "location": "Table 4, rows: t and P, CVP column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "central venous pressure (CVP) was (10.36 ± 1.68) mmHg ... CVP was (11.21 ± 1.93) mmHg",
+        "location": "Results, Hemodynamic parameters, para 1 (note: text CVP SDs 1.68/1.93 differ from Table 4's 2.88/2.93)"
+      }
+    },
+    {
+      "domain": "hemodynamics",
+      "name_verbatim": "heart rate",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "minutes_hours_after_intervention",
+        "hours": 48,
+        "label_verbatim": "48 h after initiation of mechanical ventilation"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": {
+        "value": "measured 48 h after initiation of mechanical ventilation",
+        "provenance": {
+          "quote": "Heart rate, mean arterial pressure, and central venous pressure were measured 48 h after initiation of mechanical ventilation.",
+          "location": "Methods, Outcome measures, Hemodynamic parameters"
+        }
+      },
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 102.03,
+          "dispersion_type": "sd",
+          "dispersion": 18.29,
+          "n": 51,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Control group 51 82.36 ± 14.02 10.36 ± 2.88 102.03 ± 18.29",
+            "location": "Table 4, row: Control group, HR column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 97.26,
+          "dispersion_type": "sd",
+          "dispersion": 20.36,
+          "n": 54,
+          "unit": "beats/min",
+          "provenance": {
+            "quote": "Study group 54 80.14 ± 12.39 11.21 ± 2.93 97.26 ± 20.36",
+            "location": "Table 4, row: Study group, HR column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.21,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 1.260)",
+          "provenance": {
+            "quote": "t 0.861 1.498 1.260 P 0.391 0.137 0.210",
+            "location": "Table 4, rows: t and P, HR column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "heart rate was (102.03 ± 18.29) beats/min ... heart rate was (97.26 ± 20.36) beats/min",
+        "location": "Results, Hemodynamic parameters, para 1"
+      }
+    },
+    {
+      "domain": "duration_mechanical_ventilation",
+      "name_verbatim": "duration of mechanical ventilation",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Ventilation duration"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 15.36,
+          "dispersion_type": "sd",
+          "dispersion": 3.39,
+          "n": 51,
+          "unit": "days",
+          "provenance": {
+            "quote": "Control group 51 23 16 15.36 ± 3.39 29.26 ± 5.92",
+            "location": "Table 5, row: Control group, Ventilation duration column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 11.23,
+          "dispersion_type": "sd",
+          "dispersion": 3.17,
+          "n": 54,
+          "unit": "days",
+          "provenance": {
+            "quote": "Study group 54 15 14 11.23 ± 3.17 24.73 ± 4.85",
+            "location": "Table 5, row: Study group, Ventilation duration column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 6.451)",
+          "provenance": {
+            "quote": "χ²/t 3.407 0.381 6.451 4.299 P 0.065 0.534 < 0.001 < 0.001",
+            "location": "Table 5, rows: χ²/t and P, Ventilation duration column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "The duration of mechanical ventilation was (15.36 ± 3.39) days ... The duration of mechanical ventilation was (11.23 ± 3.17) days",
+        "location": "Results, Prognostic analysis, para 1"
+      }
+    },
+    {
+      "domain": "hospital_length_of_stay",
+      "name_verbatim": "length of hospital stay",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "continuous",
+      "timepoint": {
+        "type": "duration_until_event",
+        "label_verbatim": "Hospital stay"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "value_type": "mean",
+          "value": 29.26,
+          "dispersion_type": "sd",
+          "dispersion": 5.92,
+          "n": 51,
+          "unit": "days",
+          "provenance": {
+            "quote": "Control group 51 23 16 15.36 ± 3.39 29.26 ± 5.92",
+            "location": "Table 5, row: Control group, Hospital stay column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "value_type": "mean",
+          "value": 24.73,
+          "dispersion_type": "sd",
+          "dispersion": 4.85,
+          "n": 54,
+          "unit": "days",
+          "provenance": {
+            "quote": "Study group 54 15 14 11.23 ± 3.17 24.73 ± 4.85",
+            "location": "Table 5, row: Study group, Hospital stay column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": null,
+          "p_value_verbatim": "<0.001",
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "independent t-test (t = 4.299)",
+          "provenance": {
+            "quote": "χ²/t 3.407 0.381 6.451 4.299 P 0.065 0.534 < 0.001 < 0.001",
+            "location": "Table 5, rows: χ²/t and P, Hospital stay column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "the length of hospital stay was (29.26 ± 5.92) days ... the length of hospital stay was (24.73 ± 4.85) days",
+        "location": "Results, Prognostic analysis, para 1"
+      }
+    },
+    {
+      "domain": "other",
+      "name_verbatim": "incidence of ventilator-associated pneumonia (VAP)",
+      "definition_verbatim": null,
+      "is_primary_outcome": null,
+      "measure_type": "dichotomous",
+      "timepoint": {
+        "type": "not_reported",
+        "label_verbatim": "VAP incidence"
+      },
+      "is_longest_reported_mortality": null,
+      "measurement_context": null,
+      "data": [
+        {
+          "arm_label": "tidal_volume_peep",
+          "events": 16,
+          "total": 51,
+          "provenance": {
+            "quote": "Control group 51 23 16 15.36 ± 3.39 29.26 ± 5.92",
+            "location": "Table 5, row: Control group, VAP incidence column"
+          }
+        },
+        {
+          "arm_label": "pes_guided",
+          "events": 14,
+          "total": 54,
+          "provenance": {
+            "quote": "Study group 54 15 14 11.23 ± 3.17 24.73 ± 4.85",
+            "location": "Table 5, row: Study group, VAP incidence column"
+          }
+        }
+      ],
+      "paired_effects": [],
+      "effect_estimates": [
+        {
+          "type": null,
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "ci_level": 95,
+          "p_value": 0.534,
+          "p_value_verbatim": null,
+          "adjusted": null,
+          "adjustment_covariates": null,
+          "test_used": "chi-square test (χ² = 0.381)",
+          "provenance": {
+            "quote": "χ²/t 3.407 0.381 6.451 4.299 P 0.065 0.534 < 0.001 < 0.001",
+            "location": "Table 5, rows: χ²/t and P, VAP incidence column"
+          }
+        }
+      ],
+      "provenance": {
+        "quote": "in the control group, 23 patients died within 28 days, with a total of 16 cases of VAP ... In the study group, 15 patients died within 28 days, with a total of 14 cases of VAP.",
+        "location": "Results, Prognostic analysis, para 1"
+      }
+    }
+  ],
+  "feasibility": {
+    "n_placement_attempted": null,
+    "n_placement_successful": null,
+    "placement_failure_reasons": null,
+    "n_measurement_not_obtainable": null,
+    "measurement_failure_reasons": null,
+    "balloon_related_complications": [],
+    "complications_explicitly_none": null,
+    "protocol_adherence": null,
+    "protocol_deviations": null,
+    "n_crossover_between_arms": null,
+    "n_lost_to_followup": null
+  },
+  "subgroup_flags": {
+    "ards_subgroup": "ards_only",
+    "obesity_subgroup": "non_obese_population",
+    "timing_subgroup": "unclear",
+    "ptp_target_subgroups": [
+      "driving_ptp"
+    ],
+    "classification_notes": "ards_only: enrolment required ARDS by Berlin 2012. obesity_subgroup: mean BMI 22.50 and 21.84 kg/m2, below 30. timing_subgroup: timing known only relative to enrolment/randomisation; no interval from intubation, ICU admission, or ARDS onset is reported, so coded unclear per codebook ruling. ptp_target_subgroups: driving transpulmonary pressure <15 cmH2O via absolute Pes subtraction. Mortality ranking: 60-day KM survival outranks 28-day mortality and is marked is_longest_reported_mortality."
+  },
+  "reported_subgroups": [],
+  "extraction_flags": {
+    "cohort_id": null,
+    "overlapping_cohort_with": [],
+    "overlap_evidence": "Checked against all clusters in COHORTS.md: single centre (Shanghai Sixth People's Hospital, China), enrolment January 2020 to December 2023, no trial registration number reported, no shared authorship with the epvent1/epvent2/mgh_lung_rescue/mannheim_boesing/angers clusters. Concluded no overlap with any listed cohort.",
+    "unclear_items": [
+      "population.n_analysed / arms.n_randomised: abstract states study group n=53 but Table 1 and all results tables report n=54; recorded 54 per tables and flagged.",
+      "outcomes (mortality, 60-day): Results text states 'Among the 20 patients who died in the study group' and 'Of the 28 patients who died in the control group', which exceeds the 28-day counts (15 and 23) and suggests 60-day deaths, but no explicit 60-day mortality counts are given; 60-day deaths appear only in Fig. 1.",
+      "outcomes (ventilator_settings PEEP, dead_space Vd/Vt): Table 2 does not state its measurement timepoint; assumed 48 h after initiation of mechanical ventilation by analogy with Table 3.",
+      "outcomes (hemodynamics CVP): text reports CVP SDs of 1.68 and 1.93 mmHg while Table 4 reports 2.88 and 2.93; Table 4 values recorded, discrepancy flagged.",
+      "design.randomised: randomisation 'using a random number table' is stated but no allocation ratio, concealment, or blinding is reported.",
+      "design.location_provenance: country (China) inferred from the institutional affiliation 'Shanghai Sixth People's Hospital ... Shanghai 200233, China'; the paper does not otherwise state the country.",
+      "intervention.balloon_calibration: no balloon filling volume, calibration method, or position verification reported; coded not_reported.",
+      "intervention.device_brand: catheter brand/manufacturer not reported.",
+      "feasibility: no placement success, complication, or adherence data reported anywhere in the paper.",
+      "adults_18_plus: explicit age criterion 18–80 years is stated, so coded yes without inference."
+    ],
+    "data_only_in_figure": [
+      "60-day survival curves and numbers at risk (Fig. 1); 60-day deaths per arm would require digitisation or author contact"
+    ],
+    "contact_author_needed": true,
+    "general_notes": "Cause-of-death breakdown reported: study group 20 deaths (6 respiratory failure, 10 multi-organ failure, 4 sepsis); control group 28 deaths (9 respiratory failure, 11 multi-organ failure, 8 sepsis) — these totals conflict with the 28-day counts and likely represent 60-day deaths, but the paper does not label them. Cox regression 'to identify independent predictors of mortality' is mentioned in the statistical methods but no regression results are reported. No trial registration identifier is stated."
+  }
+}

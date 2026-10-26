@@ -1,0 +1,300 @@
+{
+  "study_id": "estoos_2023",
+  "adjudicator": "claude-opus-5",
+  "rulings": [
+    {
+      "target": "outcomes[adverse event rv dysfunction post cannulation di @not reported]",
+      "decision": "glm",
+      "reason": "RV dysfunction 2/44 vs 11/25, Fisher P 0.0001; OR 0.06 (0.01-0.27) P 0.0008 and adjusted OR 0.07 (0.004-0.47) P 0.02 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 3 (page image); p. 3, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning survival to dec @duration until event]",
+      "decision": "glm",
+      "reason": "Survival to decannulation 32/44 vs 11/25, P 0.022; ORs 3.39 (1.23-9.79) and 2.86 (0.75-12.06) in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. GLM's label is the full row label. Timepoint type ruled separately. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 3 (page image); p. 3, Table 4 (page image)"
+    },
+    {
+      "id": "58069bffbc",
+      "decision": "deepseek",
+      "reason": "Survival to decannulation is a status at an event, not an elapsed time; the schema reserves duration_until_event for durations such as length of stay, and no timepoint type names decannulation, so not_reported fits.",
+      "evidence": "Schema timepoint.type description; p. 3 Table 3"
+    },
+    {
+      "target": "outcomes[mortality survival to discharge dichotomous @hospital discharge]",
+      "decision": "glm",
+      "reason": "Survival to discharge 27/44 vs 11/25, P 0.211; ORs 2.02 (0.75-5.58) and 1.94 (0.50-8.13) in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 3 (page image); p. 3, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[mortality overall mortality dichotomous @not reported]",
+      "decision": "glm",
+      "reason": "Overall mortality 17/44 vs 14/25, P 0.211 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. The paper gives no window for 'Overall mortality', so not_reported (GLM) is the literal reading; DeepSeek's hospital_discharge is an inference (the counts equal the complement of survival to discharge: 44-27=17, 25-11=14). 'Overall mortality' is the full label.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[barotrauma barotrauma on ecmo dichotomous @not reported]",
+      "decision": "glm",
+      "reason": "Barotrauma 16/44 vs 7/25, P 0.598; ORs 0.49 (0.14-1.62) and 0.86 (0.20-3.52) in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits.",
+      "evidence": "p. 3, Table 3 (page image); p. 3, Table 4 (page image)"
+    },
+    {
+      "target": "outcomes[barotrauma pneumothorax dichotomous @not reported]",
+      "decision": "glm",
+      "reason": "Pneumothorax 9/44 vs 4/25, P 0.756 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. Label ruled separately.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "id": "f40ec55772",
+      "decision": "deepseek",
+      "reason": "Pneumothorax is indented under 'Barotrauma on ECMO, n (%)' in Table 3, so 'on ECMO' is the verbatim timing it inherits.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[barotrauma chest tube inserted dichotomous @not reported]",
+      "decision": "glm",
+      "reason": "Chest tube 7/44 vs 3/25, P 0.737 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. Label ruled separately. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "id": "801a056abc",
+      "decision": "deepseek",
+      "reason": "'Chest tube inserted' is indented under 'Barotrauma on ECMO, n (%)' in Table 3; 'on ECMO' is verbatim.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[other ecmo duration continuous @duration until event]",
+      "decision": "glm",
+      "reason": "ECMO duration 22.0 vs 21.9 days, P 0.497 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. 'ECMO duration (days)' is the verbatim row label; 'ECMO run' is not the timepoint's name.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "target": "outcomes[icu length of stay icu los continuous @icu discharge]",
+      "decision": "glm",
+      "reason": "ICU LOS 30.43 vs 26.32 days, P 0.174 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. GLM's label 'ICU LOS (days)' is the verbatim row label; timepoint type ruled separately.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "id": "a7329af7af",
+      "decision": "deepseek",
+      "reason": "Length of stay is an elapsed time; the schema names ICU length of stay as the example of duration_until_event.",
+      "evidence": "Schema timepoint.type description; p. 3 Table 3"
+    },
+    {
+      "target": "outcomes[hospital length of stay hospital los continuous @hospital discharge]",
+      "decision": "glm",
+      "reason": "Hospital LOS 40.82 vs 35.48 days, P 0.553 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. GLM's label 'Hospital LOS (days)' is verbatim; timepoint type ruled separately.",
+      "evidence": "p. 3, Table 3 (page image)"
+    },
+    {
+      "id": "4f03793633",
+      "decision": "deepseek",
+      "reason": "Hospital length of stay is an elapsed time: duration_until_event per the schema.",
+      "evidence": "Schema timepoint.type description; p. 3 Table 3"
+    },
+    {
+      "target": "outcomes[ventilator settings mean peep on ecmo day 2 cont @48h]",
+      "decision": "glm",
+      "reason": "17.9 vs 10.8 cmH2O, P <0.0001 in both. GLM's name 'Mean PEEP on ECMO day 2' is the verbatim Table 2 row label (DeepSeek drops 'Mean'). Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. value_type ruled separately.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "601877b6ed",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean PEEP on ECMO day 2 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "7fb5e5d949",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean PEEP on ECMO day 2 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings mean peep on ecmo day 7 cont @7d]",
+      "decision": "glm",
+      "reason": "14.1 vs 11.5 cmH2O, P 0.079 in both. GLM's name 'Mean PEEP on ECMO day 7' is the verbatim Table 2 row label (DeepSeek drops 'Mean'). Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. value_type ruled separately.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "a7bc76a6df",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean PEEP on ECMO day 7 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "a43e457e47",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean PEEP on ECMO day 7 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mean driving pressure on e @48h]",
+      "decision": "glm",
+      "reason": "9.53 vs 10.2 cmH2O, P 0.665 in both. GLM's name 'Mean driving pressure on ECMO day 2' is the verbatim Table 2 row label (DeepSeek drops 'Mean'). Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. value_type ruled separately.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "7359c94ef1",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean driving pressure on ECMO day 2 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "3f135d59ad",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean driving pressure on ECMO day 2 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[respiratory mechanics mean driving pressure on e @7d]",
+      "decision": "glm",
+      "reason": "10.6 vs 10.1 cmH2O, P 0.370 in both. GLM's name 'Mean driving pressure on ECMO day 7' is the verbatim Table 2 row label (DeepSeek drops 'Mean'). Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. value_type ruled separately.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "1ffa4938ee",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean driving pressure on ECMO day 7 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "58b33684ec",
+      "decision": "deepseek",
+      "reason": "The row label 'Mean driving pressure on ECMO day 7 (cm H2O)' states the values are means; value_type mean is reported, GLM leaves it null.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning extubated on ec @not reported]",
+      "decision": "glm",
+      "reason": "Extubated on ECMO 3/44 vs 18/25, P <0.0001 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. Label ruled separately.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "id": "cf1e6b1df5",
+      "decision": "deepseek",
+      "reason": "'on ECMO' is verbatim in the row label 'Extubated on ECMO, n (%)'.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[successful extubation or weaning reintubated dic @not reported]",
+      "decision": "glm",
+      "reason": "Reintubated 2/44 vs 10/25, P 0.0004 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. DeepSeek's label 'during ECMO' appears nowhere in the paper; GLM leaves it null. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[rescue therapy proning on ecmo dichotomous @not reported]",
+      "decision": "glm",
+      "reason": "Proning on ECMO 10/44 vs 0/25, P 0.011 in both. Counts and P identical in both; the only effect-estimate difference is DeepSeek's bare-P entry adding ci_level 95 with no interval, which GLM correctly omits. DeepSeek's label 'during ECMO' is not the paper's wording. The domain conflict on this element is reserved for the co-authors and not ruled here.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[oxygenation abg prior to cannulation po2 continu @baseline]",
+      "decision": "glm",
+      "reason": "Keep: pre-cannulation pO2 68.7 (optimal) vs 83.1 mmHg (standard), P 0.160, from Table 1; the codebook puts baseline values in outcomes.",
+      "evidence": "p. 2, Table 1 (page image)"
+    },
+    {
+      "target": "outcomes[other tracheostomy dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Tracheostomy' is reported and DeepSeek's reading matches the page image (24/44 vs 11/25, P 0.458); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event vte dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'VTE' is reported and DeepSeek's reading matches the page image (25/44 vs 12/25, P 0.616); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[hemodynamics vasopressors dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Vasopressors' is reported and DeepSeek's reading matches the page image (40/44 vs 19/25, P 0.152); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other crrt dichotomous @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'CRRT' is reported and DeepSeek's reading matches the page image (25/44 vs 12/25, P 0.616); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other sedative infusion at ecmo day 2 dichotomou @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Sedative infusion at ECMO day 2' is reported and DeepSeek's reading matches the page image (37/44 vs 18/25, P 0.350); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other sedative infusion at ecmo day 7 dichotomou @7d]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Sedative infusion at ECMO day 7' is reported and DeepSeek's reading matches the page image (36/44 vs 12/25, P 0.006); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other rass at ecmo day 2 continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Mean RASS at ECMO day 2' is reported and DeepSeek's reading matches the page image (-2.27 vs -1.96, P 0.219); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other rass at ecmo day 7 continuous @7d]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Mean RASS at ECMO day 7' is reported and DeepSeek's reading matches the page image (-1.76 vs -1.48, P 0.365); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other ecmo blood flow at 48 h continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Mean ECMO blood flow at 48 h' is reported and DeepSeek's reading matches the page image (4.32 vs 4.15 L/min, P 0.558); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other ecmo sweep gas flow at 48 h continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Mean ECMO sweep gas flow at 48 h' is reported and DeepSeek's reading matches the page image (6.70 vs 6.48 L/min, P 0.923); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[other ecmo rpm at 48 h continuous @48h]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Mean ECMO RPM at 48 h' is reported and DeepSeek's reading matches the page image (3131 vs 3208, P 0.855); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event blood culture positivity dichotomo @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Post-cannulation culture positivity, Blood' is reported and DeepSeek's reading matches the page image (20/44 vs 9/25, P 0.612); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event urine culture positivity dichotomo @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Post-cannulation culture positivity, Urine' is reported and DeepSeek's reading matches the page image (8/44 vs 5/25, P >0.999 (the table's '11.36%' beside 5 is a misprint; 5/25 is the reported count and group n)); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[adverse event sputum culture positivity dichotom @not reported]",
+      "decision": "deepseek",
+      "reason": "Keep: Table 2 row 'Post-cannulation culture positivity, Sputum' is reported and DeepSeek's reading matches the page image (35/44 vs 19/25, P 0.767); GLM omits it.",
+      "evidence": "p. 3, Table 2 (page image)"
+    },
+    {
+      "target": "outcomes[ventilator settings ecmo fso2 at 48 h continuous @48h]",
+      "decision": "unclear",
+      "reason": "Numbers match Table 2 (FSO2 85.3 vs 98.0, P 0.001), and the row should be kept, but DeepSeek codes the ECMO sweep-gas oxygen fraction as ventilator_settings; it is an ECMO circuit setting, not a ventilator setting (DeepSeek itself codes blood and sweep flow as other). Co-author: keep with domain other.",
+      "evidence": "p. 3, Table 2 (page image); CODEBOOK Physiologic outcomes"
+    },
+    {
+      "id": "87ca3f66ff",
+      "decision": "deepseek",
+      "reason": "A retrospective cohort has no enrolment; titration began with the ECMO run ('throughout the ECMO run'), i.e. at cannulation, which has no enum value of its own, so other.",
+      "evidence": "p. 2, Methods 2.1-2.2"
+    },
+    {
+      "id": "b767efc615",
+      "decision": "unclear",
+      "reason": "No inclusion criterion requires ARDS ('all COVID-19 ECMO patients initiated on VV ECMO'); DeepSeek's quote is from the Introduction ('COVID-19 ARDS patients requiring VV ECMO', not Methods) and the Discussion frames the cohort as ARDS. Co-author: decide whether that supports n_ards 69/69 as a derivation or null.",
+      "evidence": "p. 1 Introduction para 3; p. 2 Methods 2.1; Table 1 Murray score"
+    }
+  ]
+}
